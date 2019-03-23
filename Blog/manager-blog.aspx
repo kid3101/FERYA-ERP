@@ -1,17 +1,17 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="blog-company.aspx.cs" Inherits="Blog_blog_company" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="manager-blog.aspx.cs" Inherits="Blog_manager_blog" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-      <div class="header-blog">
+          <div class="header-blog">
           <div style="display:flex;">
             <div class="col-sm-7">
-                  <a class="title-blog" href="blog-company.aspx"><b>Blog</b></a>
+                  <a class="title-blog" href="blog-company.aspx"><b>Blog</b></a> -> <a class="title-blog" href="manager-blog.aspx"><b>Manager</b></a>
              </div>  
           <div class="col-sm-5" id="col-5">
-                  <div class="linkmanagerblog">
+                                   <div class="linkmanagerblog">
                     <div class="managerblog">
-                        <a class="btn btn-info" data-toggle="tooltip" href="#" title="Timekeeping">FOR MANAGER</a>
+                        <a class="btn btn-info" data-toggle="tooltip" href="add-new-blog-for-manager.aspx" title="Timekeeping">+ ADD NEW</a>
                     </div>
                       <br />
                     <div class="page">    
@@ -43,17 +43,8 @@
               </div>
         <br>
     </div>
-        
-<div class="zerodata">
-        <div>
-            <div class="zerodataimage"><img src="/imgs/zerodata/info.png" width="256" height="256"></div>
-            <h3>Blog is empty</h3>
-            <p>Please add new blog</p>
-            <div class="zerodatabutton"><a href="add-new-blog.aspx" class="btn btn-primary" >ADD NEW</a></div>
-        </div>
-    </div>
-    <script>
+    <div class="body-manager-blog">
 
-    </script>
+    </div>
 </asp:Content>
 

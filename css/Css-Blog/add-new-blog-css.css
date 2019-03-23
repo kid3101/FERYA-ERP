@@ -1,0 +1,18 @@
+﻿.body-add{
+    background-color:white;
+    min-height:85%;
+    padding-top:10px;
+}
+.form-horizontal {
+    margin-top: 30px;
+    margin-left: 30%
+}
+.help-block{
+    margin-left:40%;
+}
+.addnewblog{
+    margin-left:12%;
+}
+.addnewblog a{
+    text-decoration:none;
+}
