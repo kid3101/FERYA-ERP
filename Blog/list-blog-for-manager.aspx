@@ -62,7 +62,7 @@
                 <td>Active</td>
                 <td>Katewinless</td>
                 <td>22/12/2022</td>
-                <td><a href="detail-blog.aspx" style="text-decoration:none;"> Detail </a><a href="#" style="color:red;cursor:pointer; text-decoration:none;">Edit</a></td>
+                <td><a href="detail-blog.aspx" style="text-decoration:none;"> Detail </a><a href="edit-blog.aspx" style="color:red;cursor:pointer; text-decoration:none;">Edit</a></td>
             </tr>
 
              <tr>
