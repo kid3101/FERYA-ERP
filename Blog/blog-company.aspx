@@ -6,12 +6,12 @@
       <div class="header-blog">
           <div style="display:flex;">
             <div class="col-sm-7">
-                  <a class="title-blog" href="#">Blog</a>
+                  <a class="title-blog" href="blog-company.aspx"><b>Blog</b></a>
              </div>  
           <div class="col-sm-5" id="col-5">
                   <div class="linkmanagerblog">
                     <div class="managerblog">
-                        <a class="formanager" data-toggle="tooltip" href="ForManagerBlog.html" title="Timekeeping"><span class="glyphicon glyphicon-cog" style="margin-right:5px"></span>FOR MANAGER </a>
+                        <a class="btn btn-info" data-toggle="tooltip" href="#" title="Timekeeping">FOR MANAGER</a>
                     </div>
                       <br />
                     <div class="page">    
@@ -51,7 +51,7 @@
             <div class="zerodataimage"><img src="/imgs/zerodata/info.png" width="256" height="256"></div>
             <h3>Blog is empty</h3>
             <p>Please add new blog</p>
-            <div class="zerodatabutton"><a class="addnewdata" href="AddNewBlog.html">Add New</a></div>
+            <div class="zerodatabutton"><a href="add-new-blog.aspx" class="btn btn-primary" >ADD NEW</a></div>
         </div>
     </div>
     <script>

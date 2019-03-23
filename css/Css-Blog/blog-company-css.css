@@ -1,5 +1,5 @@
 ﻿.header-blog {
-    height: 115px;
+    height: 130px;
     padding-left:10px;
 }
 .title-blog {
@@ -41,6 +41,7 @@
 
 .zerodata{
     background-color:white;
+    min-height:80%;
     text-align:center;
 }
 .zerodata a{

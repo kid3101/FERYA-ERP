@@ -18,6 +18,7 @@
   <link href="/css/sb-admin-2.min.css" rel="stylesheet">
     <!-- Css Tab Blog -->
     <link href="/css/Css-Blog/blog-company-css.css" rel="stylesheet" />
+    <link href="css/Css-Blog/add-new-blog-css.css" rel="stylesheet" />
 	 <!-- Bootstrap core JavaScript-->
   <script src="/vendor/jquery/jquery.min.js"></script>
   <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -26,6 +27,26 @@
   <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
   <!-- Custom scripts for all pages-->
   <script src="/js/sb-admin-2.min.js"></script>
+    <%-- tinymce js --%>
+    <script src="/tinymce/tinymce.min.js"></script>
+    <script>
+        tinymce.init({
+            branding: false,
+            menubar: false,
+            relative_urls: false,
+            remove_script_host: false,
+            entity_encoding: "raw",
+            valid_elements: '*[*]',
+            selector: "textarea.tinymce",
+            theme: "modern",
+            height: 300,
+            forced_root_block: "",
+            plugins: [
+                "advlist autolink link image lists charmap print preview hr anchor pagebreak spellchecker", "searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking", "save table contextmenu directionality emoticons template paste textcolor"
+            ],
+            toolbar: "code insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image | print preview media fullpage | forecolor backcolor emoticons",
+        });
+    </script>
    <asp:ContentPlaceHolder id="head" runat="server">
    </asp:ContentPlaceHolder>
 </head>
