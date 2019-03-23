@@ -3,10 +3,8 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-      <div class="container-fluid">
-        <div>
-            <a class="abc tab-content" href="#"><span><h2 style="cursor:pointer;">Blog</h2></span></a>
-        </div>
+      <div class="header-blog">
+            <a class="title-blog" href="#">Blog</a>
         <ul class="nav nav-tabs" >
             <li class="active">
                 <a data-toggle="tab" href="#" style="cursor:pointer;">
@@ -15,13 +13,13 @@
                 </a>
             </li>
             <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" style="padding-right: 30px;color:black;cursor:pointer;" title="Turn on / off the search function">Filter & search ...</a>
+                <a class="dropdown-toggle" data-toggle="dropdown" title="Turn on / off the search function">Filter & search ...</a>
 
             </li>
         </ul>
         <div class="container-fluid" style="margin-top: -34px;margin-left: 75%;">
             <div class="container" style="float:left;">
-                <a class="nutchamcong" data-toggle="tooltip" href="ForManagerBlog.html" title="Timekeeping" style="color:white;margin-left: 130px; padding-right:30px; padding-left:30px;"><span class="glyphicon glyphicon-cog" style="margin-right:5px"></span>FOR MANAGER </a>
+                <a class="nutchamcong" data-toggle="tooltip" href="ForManagerBlog.html" title="Timekeeping"><span class="glyphicon glyphicon-cog" style="margin-right:5px"></span>FOR MANAGER </a>
             </div>
             <div class="container">
                 <a href="#" style="height: 20px;width: 20px;color: #555;"><i class="fa fa-chevron-left"></i></a>

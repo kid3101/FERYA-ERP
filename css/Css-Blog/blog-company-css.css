@@ -1,0 +1,11 @@
+﻿.header-blog {
+    height: 106px;
+    padding-left:10px;
+}
+.title-blog {
+    margin-top: 20px;
+    font-size:30px;
+}
+.header-blog a {
+    text-decoration: none;
+}
