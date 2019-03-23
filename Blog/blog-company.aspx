@@ -11,7 +11,7 @@
           <div class="col-sm-5" id="col-5">
                   <div class="linkmanagerblog">
                     <div class="managerblog">
-                        <a class="btn btn-info" data-toggle="tooltip" href="#" title="Timekeeping">FOR MANAGER</a>
+                        <a class="btn btn-info" data-toggle="tooltip" href="list-blog-for-manager.aspx" title="Timekeeping">FOR MANAGER</a>
                     </div>
                       <br />
                     <div class="page">    
