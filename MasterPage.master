@@ -27,6 +27,7 @@
   <!-- Custom scripts for all pages-->
   <script src="js/sb-admin-2.min.js"></script>
 
+    https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js
    <asp:ContentPlaceHolder id="head" runat="server">
    </asp:ContentPlaceHolder>
 </head>
@@ -103,8 +104,8 @@
         </a>
         <div id="collapseProject" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="#">Project List</a>
-            <a class="collapse-item" href="#">+ New Project</a>
+            <a class="collapse-item" href="/project/ListProject/ListProject.aspx">Project List</a>
+            <a class="collapse-item" href="/project/CreateProject/CreateProject.aspx">+ New Project</a>
           </div>
         </div>
       </li>
@@ -348,12 +349,7 @@
         <!-- End of Topbar -->
 
         <!-- Begin Page Content -->
-        <div class="container-fluid">
-
-          <!-- Page Heading -->
-          <h1 class="h3 mb-4 text-gray-800">Blank Page</h1>
-
-        </div>
+       
         <!-- /.container-fluid -->
 		<asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
         
