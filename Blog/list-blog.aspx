@@ -49,7 +49,7 @@
                  <tr>
                      <td>
                          <div class="col-sm-3">
-                           <a href="DetailBlog.html">  <img src="/imgs/zerodata/ys3.jpg" style="width:300px;margin-left:20px" /></a>
+                           <a href="detail-blog.aspx">  <img src="/imgs/zerodata/ys3.jpg" style="width:300px;margin-left:20px" /></a>
                          </div>
                      </td>
                      <td>
@@ -58,8 +58,8 @@
                               <br />
                                 <div><span class="glyphicon glyphicon-user" style="margin-right:5px;"></span> Kate Winlesss</div>
                                 <div><span class="glyphicon glyphicon-time" style="margin-right:5px;"></span>12:20 PM</div>
-                                <div><span class="glyphicon glyphicon-eye-open" style="margin-right:5px;"></span>6999 Lượt Xem</div>
-                                <div><span class="glyphicon glyphicon-bullhorn" style="margin-right:5px;"></span>555 Bình Luận</div>
+                                <div><span class="glyphicon glyphicon-eye-open" style="margin-right:5px;"></span>6999 Views</div>
+                                <div><span class="glyphicon glyphicon-bullhorn" style="margin-right:5px;"></span>555 Comment</div>
                           </div>
                      </td>
                  </tr>
@@ -68,7 +68,7 @@
                   <tr>
                      <td>
                          <div class="col-sm-3">
-                           <a href="DetailBlog.html">  <img src="/imgs/zerodata/ys3.jpg" style="width:300px;margin-left:20px" /></a>
+                           <a href="detail-blog.aspx">  <img src="/imgs/zerodata/ys3.jpg" style="width:300px;margin-left:20px" /></a>
                          </div>
                      </td>
                      <td>
@@ -77,8 +77,8 @@
                                <br />
                                 <div><span class="glyphicon glyphicon-user" style="margin-right:5px;"></span> Kate Winlesss</div>
                                 <div><span class="glyphicon glyphicon-time" style="margin-right:5px;"></span>12:20 PM</div>
-                                <div><span class="glyphicon glyphicon-eye-open" style="margin-right:5px;"></span>6999 Lượt Xem</div>
-                                <div><span class="glyphicon glyphicon-bullhorn" style="margin-right:5px;"></span>555 Bình Luận</div>
+                                <div><span class="glyphicon glyphicon-eye-open" style="margin-right:5px;"></span>6999 Views</div>
+                                <div><span class="glyphicon glyphicon-bullhorn" style="margin-right:5px;"></span>555 Comment</div>
                           </div>
                      </td>
                  </tr>
@@ -87,7 +87,7 @@
                   <tr>
                      <td>
                          <div class="col-sm-3">
-                           <a href="DetailBlog.html">  <img src="/imgs/zerodata/ys3.jpg" style="width:300px;margin-left:20px" /></a>
+                           <a href="detail-blog.aspx">  <img src="/imgs/zerodata/ys3.jpg" style="width:300px;margin-left:20px" /></a>
                          </div>
                      </td>
                      <td>
@@ -96,8 +96,8 @@
                                <br />
                                 <div><span class="glyphicon glyphicon-user" style="margin-right:5px;"></span> Kate Winlesss</div>
                                 <div><span class="glyphicon glyphicon-time" style="margin-right:5px;"></span>12:20 PM</div>
-                                <div><span class="glyphicon glyphicon-eye-open" style="margin-right:5px;"></span>6999 Lượt Xem</div>
-                                <div><span class="glyphicon glyphicon-bullhorn" style="margin-right:5px;"></span>555 Bình Luận</div>
+                                <div><span class="glyphicon glyphicon-eye-open" style="margin-right:5px;"></span>6999 Views</div>
+                                <div><span class="glyphicon glyphicon-bullhorn" style="margin-right:5px;"></span>555 Comment</div>
                           </div>
                      </td>
                  </tr>

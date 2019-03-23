@@ -20,6 +20,7 @@
     <link href="/css/Css-Blog/blog-company-css.css" rel="stylesheet" />
     <link href="/css/Css-Blog/add-new-blog-css.css" rel="stylesheet" />
     <link href="/css/Css-Blog/list-blog-css.css" rel="stylesheet" />
+    <link href="/css/Css-Blog/detail-blog-css.css" rel="stylesheet" />
 	 <!-- Bootstrap core JavaScript-->
   <script src="/vendor/jquery/jquery.min.js"></script>
   <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
