@@ -1,11 +1,11 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="add-new-blog.aspx.cs" Inherits="Blog_add_new_blog" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="add-new-blog-for-manager.aspx.cs" Inherits="Blog_add_new_blog_for_manager" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-          <div class="header-blog">
+    <div class="header-blog">
             <div class="col-sm-7">
-                  <a class="title-blog" href="blog-company.aspx"><b>Blog</b></a>
+                  <a class="title-blog" href="manager-blog.aspx"><b>Manager</b></a>
               </div>
          </div>
     <div class="body-add">
