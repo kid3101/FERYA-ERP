@@ -73,7 +73,7 @@
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item">
-        <a class="nav-link" href="/Dashboard/Main.aspx">
+        <a class="nav-link" href="#">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
       </li>
@@ -94,10 +94,10 @@
         </a>
         <div id="collapseAttendace" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="/Attendance/Attendant.aspx">Attendant</a>
-            <a class="collapse-item" href="/Attendance/History.aspx">History</a>
-			<a class="collapse-item" href="/Attendance/WorkingPlan.aspx">Working Plan</a>
-			<a class="collapse-item" href="/Attendance/Payroll.aspx">Payroll</a>
+            <a class="collapse-item" href="#">Attendant</a>
+            <a class="collapse-item" href="#">History</a>
+			<a class="collapse-item" href="#">Working Plan</a>
+			<a class="collapse-item" href="#">Payroll</a>
           </div>
         </div>
       </li>
@@ -139,9 +139,9 @@
         </a>
         <div id="collapseBlog" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="#">Blog</a>
+            <a class="collapse-item" href="blog-company.aspx">Blog</a>
             <a class="collapse-item" href="#">Manage Blog</a>
-            <a class="collapse-item" href="#">+ New Entry</a>
+            <a class="collapse-item" href="add-new-blog.aspx">+ New Entry</a>
           </div>
         </div>
       </li>
