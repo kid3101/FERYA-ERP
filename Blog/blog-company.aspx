@@ -40,9 +40,7 @@
                               <button type="submit"><i class="fa fa-search"></i></button>
                             </form>
                       </div>
-
               </div>
-
         <br>
     </div>
         

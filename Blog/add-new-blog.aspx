@@ -8,7 +8,7 @@
                   <a class="title-blog" href="blog-company.aspx"><b>Blog</b></a>
               </div>
          </div>
-        <div class="body-add">
+<div class="body-add">
              <div class="col-sm-9" style="margin-top:20px;">
                 <div class="container">
                     <form class="form-horizontal" role="form">
@@ -68,7 +68,7 @@
                             </div>
                         </div>
                         <div class="addnewblog">
-                        <a href="ListBlog.html"><button type="submit" class="btn btn-primary btn-block" style="width: 300px;margin-left:278px;margin-bottom:10px;border-radius:15px;">ADD NEW</button></a>
+                        <a href="list-blog.aspx"><button type="submit" class="btn btn-primary btn-block" style="width: 300px;margin-left:278px;margin-bottom:10px;border-radius:15px;">ADD NEW</button></a>
                     </div>
                             </form> <!-- /form -->
                 </div>
