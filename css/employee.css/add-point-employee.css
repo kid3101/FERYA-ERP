@@ -1,0 +1,86 @@
+﻿
+.segment {
+    padding: 0 10px;
+    border-width: 0;
+    margin: 0;
+    width: auto;
+    box-shadow: none;
+    border: none;
+}
+
+    .segment:last-child {
+        top: 0px;
+        bottom: 0px;
+        border-radius: 0 0 .28571429rem .28571429rem;
+    }
+
+input {
+    font-family: inherit !important;
+    line-height: 1 !important;
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+
+.fields {
+    display: flex;
+    flex-direction: row;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+}
+
+.addnew {
+    background-color: #3498db;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    font-size: 13px;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-left: 300px;
+}
+
+    .addnew:hover {
+        background-color: #2980b9;
+        color: white;
+    }
+
+.form-control {
+    width: 50%;
+}
+
+.title:hover {
+    color: #3498db;
+}
+
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+    .inputfile:focus + label,
+    .inputfile.has-focus + label {
+        outline: 1px dotted #000;
+        outline: -webkit-focus-ring-color auto 5px;
+    }
+
+    .inputfile + label i,
+    .inputfile + label svg {
+        width: 1em;
+        height: 1em;
+        vertical-align: middle;
+        fill: currentColor;
+        margin-top: -0.25em;
+        margin-right: 0.25em;
+    }
+
+
+    .inputfile:focus + label,
+    .inputfile.has-focus + label,
+    .inputfile + label:hover {
+        color: #FF5722;
+    }
