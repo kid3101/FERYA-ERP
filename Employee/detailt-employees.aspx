@@ -1,28 +1,27 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="detailt-employees.aspx.cs" Inherits="Employee_DetailtEmployees" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
-    <link href="../css/employee.css/detailemployee.css" rel="stylesheet" />
+    <link href="../css/employee.css/detail-employee.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-    <div class="container-fluid">
-           <div class="heading">
-            <div class="container">
-                <h3 class="title"> Employee</h3>
-                <ul class="nav nav-tabs" style="display:block; list-style-type:disc; ">
-                    <li class="active">
-                        <a data-toggle="tab" href="#" style="cursor:pointer;">
-                            <span style="color:black;"> Detail</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+           <div class="headered" style="display:flex;margin:10px">
+          <div class="lefted" style="width:25%; color:black">
+              <h2>Employee</h2>
+          </div>
+         
+      </div>
+      <div class="container">
+          <ul class="nav nav-tabs">
+            <li class="active">
+                <a data-toggle="tab" href="#" style="cursor:pointer;">
+                    <span style="color:black;">Upload</span>
+                </a>
+            </li>
+          </ul>
         </div>
-
-        <div class="row">
-            <div class="col-md-12">
-
-                        <div class="segment">
+    <div class="segment">
             <form class="ui form">
                 <div class="top" style="margin-top:10px;">
                     <div class="left" style="width:25%;">
@@ -527,6 +526,10 @@
 
             </div>
 
+        </div>
+        </div>
+        </div>
+        </div>
         </div>
 
     </div>

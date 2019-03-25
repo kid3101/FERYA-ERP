@@ -1,54 +1,9 @@
-﻿
-.asc:hover {
-    background-color: #333;
-    color: white;
+﻿.container {
+    width: 100%;
+    background: #f0f0f0;
+    margin-top: -20PX;
 }
 
-.blue {
-    background-color: #3498db;
-    border: none;
-    color: white;
-    padding: 5px 20px;
-    font-size: 13px;
-    cursor: pointer;
-    border-radius: 20px;
-}
-
-    .blue:hover {
-        background-color: #2980b9;
-        color: white;
-    }
-
-.btn-primary {
-    background-color: #aad8f7;
-    color: white;
-    padding: 5px 20px;
-    font-size: 13px;
-    cursor: pointer;
-    border-radius: 20px;
-}
-
-    .btn-primary:hover {
-        background-color: #aad8f7;
-    }
-
-.colorChooser:hover {
-    background: lightblue;
-}
-
-.filterbarfull {
-    position: absolute;
-    width: 320px;
-    background: #f8f8f8;
-    top: 130px;
-    z-index: 1;
-    padding: 5px;
-    border: 3px solid #ddd;
-    box-shadow: 4px 4px 8px #ccc;
-    border-radius: 0 0 4px 4px;
-    border-top-width: 5px;
-    margin: -7px 0 0;
-}
 
 .top {
     display: flex;
@@ -60,9 +15,6 @@
     margin-top: 10px;
 }
 
-.title:hover {
-    color: #3498db;
-}
 
 .cog:hover {
     color: black;
@@ -85,11 +37,14 @@ modal-footer {
     background: #F9FAFB;
 }
 
-
+.w3-third{
+    float:left
+}
 .w3-container, .w3-panel {
     padding: 0.01em 16px;
     margin-right: -50px;
     padding-top: 40px;
+    margin-top:15px;
 }
 
 .w3-bottombar {
@@ -97,14 +52,12 @@ modal-footer {
 }
 
 .w3-border-red, .w3-hover-border-red:hover {
-    border-color: #171515 !important;
+    border-color: #161515 !important;
 }
-
 .w3-padding {
-    padding: 8px 16px !important;
-    width: 12%;
+    padding: 5px 0px !important;
+    width:12%;
 }
-
 .w3-black, .w3-hover-black:hover {
     color: #fff !important;
     background-color: #8e8d8d !important;
@@ -133,7 +86,7 @@ element.style {
 }
 
 .w3-border {
-    border: 1px solid #ccc !important;
+    border: 2px solid #ccc !important;
 }
 
 .w3-input {

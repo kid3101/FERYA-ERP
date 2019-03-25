@@ -272,7 +272,7 @@
                                         Export data
                                     </span>
                                     <span>
-                                        <span> (</span><span>0</span><span> </span><span>current</span><span>)</span>
+                                        <span> (</span><span>1</span><span> </span><span>current</span><span>)</span>
                                     </span>
                                 </button>
                                 <div class="modal fade" id="myModal" role="dialog">
@@ -280,7 +280,7 @@
 
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <h4 class="modal-title" style="text-align:center">You want to export 0 lines from the system.</h4>
+                                                <h4 class="modal-title" style="text-align:center">You want to export 1 lines from the system.</h4>
                                             </div>
                                             <div class="modal-footer">
                                                 <a class="btn btn-default" data-dismiss="modal">Close</a>

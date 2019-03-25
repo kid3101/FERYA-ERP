@@ -122,8 +122,8 @@
                             </span>
                         </p>
                     </div>
-                    <div class="add" style=" margin-top: -45px">
-                        <a class="btn them" href="/Employee/DetailEmployees.aspx">
+                    <div class="add" style=" margin-top: -35px">
+                        <a href="detailt-employees.aspx" class="addnew" >
                             MORE
                         </a>
                     </div>

@@ -70,7 +70,7 @@
                             </span>
                         </p>
                     </div>
-                    <div class="add" style=" margin-top: -45px">
+                    <div class="add" style=" margin-top: -35px">
                         <a class="addnew" href="#">
                             SAVE
                         </a>

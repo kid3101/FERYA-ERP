@@ -16,10 +16,10 @@
                     <div style="margin-left:10px;">
                         <a style="display:block; text-decoration: none; color:#555; ">
                             <span>Page</span>
-                            <span>0</span>
+                            <span>1</span>
                             <span class="total">
                                 <span>/</span>
-                                <span>0</span>
+                                <span>1</span>
                             </span>
                         </a>
                     </div>
@@ -33,7 +33,7 @@
             <li class="active">
                 <a data-toggle="tab" href="#" style="cursor:pointer;">
                     <span style="color:black;">All</span>
-                    <span class="number">0</span>
+                    <span class="number">1</span>
                 </a>
             </li>
             <li class="dropdown">
@@ -150,7 +150,7 @@
                         <a><label style="background-color: #24c82f; color:white;padding: 5px 15px;">10</label></a>
                     </td>
                     <td style="text-align:right;">
-                        <a href="detailt-employees.aspx" style="border: 1px solid #808080;padding: 8px 8px; text-decoration:none">Detail</a>
+                        <a href="detailt-point-employee.aspx"style="border: 1px solid #808080;padding: 8px 8px; text-decoration:none">Detail</a>
                     </td>
                 </tr>
             </tbody>
