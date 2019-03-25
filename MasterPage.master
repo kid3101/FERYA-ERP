@@ -186,7 +186,7 @@
           <div class="bg-white py-2 collapse-inner rounded">
             <a class="collapse-item" href="/Setting/Office.aspx">Office</a>
             <a class="collapse-item" href="/Setting/Derpartment.aspx">Derpartment</a>
-
+            <a class="collapse-item" href="/Setting/AccessRight.aspx">Access Right</a>
           </div>
         </div>
       </li>
