@@ -18,7 +18,6 @@
   <link href="/css/sb-admin-2.min.css" rel="stylesheet">
     <!-- Css Tab Blog -->
     <link href="/css/Css-Blog/blog-company-css.css" rel="stylesheet" />
-    <link href="/css/Css-Blog/add-new-blog-css.css" rel="stylesheet" />
     <%-- Css tab Mailbox --%>
 	 <!-- Bootstrap core JavaScript-->
   <script src="/vendor/jquery/jquery.min.js"></script>
