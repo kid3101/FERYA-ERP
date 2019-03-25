@@ -16,15 +16,8 @@
   <link href="/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <!-- Custom styles for this template-->
   <link href="/css/sb-admin-2.min.css" rel="stylesheet">
-    <!--Tab Employees-->
-    <link href="css/employee.css/employee.css" rel="stylesheet" />
-    <link href="css/employee.css/addemployee.css" rel="stylesheet" />
-    <link href="css/employee.css/point-employee.css" rel="stylesheet" />
-    <link href="css/employee.css/add-point-employee.css" rel="stylesheet" />
-    <link href="css/employee.css/list-point-employee.css" rel="stylesheet" />
-    <link href="css/employee.css/detailt-point-employee.css" rel="stylesheet" />
     <!-- Css Tab Blog -->
-
+    <link href="/css/Css-Blog/blog-company-css.css" rel="stylesheet" />
     <%-- Css tab Mailbox --%>
 	 <!-- Bootstrap core JavaScript-->
   <script src="/vendor/jquery/jquery.min.js"></script>
@@ -174,10 +167,10 @@
         </a>
         <div id="collapseEmployee" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="employee.aspx">Employee</a>
-            <a class="collapse-item" href="">Pay Slip</a>
-            <a class="collapse-item" href="leave.aspx">DateOff</a>
-            <a class="collapse-item" href="point-employee.aspx">Mark Ranking</a>
+            <a class="collapse-item" href="#">Employee</a>
+            <a class="collapse-item" href="#">Pay Slip</a>
+            <a class="collapse-item" href="#">DateOff</a>
+            <a class="collapse-item" href="#">Mark Ranking</a>
           </div>
         </div>
       </li>
