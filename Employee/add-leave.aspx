@@ -21,8 +21,8 @@
         </div>
 
     <div class="segment">
-                <div class="center" style="border-top-style:outset; margin-top: -1px; ">
-                    <div class="left" style="width:25%;">
+                <div class="center" style="border-top-style:outset; margin-top: -1px; display:flex">
+                    <div class="left" style="width:35%;">
                         <h4>Leave information</h4>
                         <p>Details of reasons, leave time</p>
                     </div>
@@ -40,41 +40,36 @@
                             <br />
                             <input class="form-control" name="title" style="width:24%;" />
                         </div>
-                        <div class="col-sm-10">
+                        <div class="col-sm-10" style="display:flex">
                             <div>
                                 <label>
                                     Number of days off
                                 </label>
-                                <div style="width: 100%; font-size: 1em; position: relative; font-weight: 400; font-style: normal; padding-top: 1em; padding-bottom:1em;">
-                                    <input type="number" name="count_day_leave" style=" width:3%" value="1" />
-                                    <div style="margin: -28px 0px 0px 35px; background-color: #efeded; width: 24%;">
-                                        <span>x1</span>
+                                <div class="ui labeled input">
+                                    <input type="number"  style="border-radius:1px 0 0 1px;" value="1">
+                                    <div class="ui nocolor label" style="border-radius:0 1px 1px 0;">
+                                        <span> x 1 </span>
                                         <span>Day</span>
-                                        <span>(</span>
+                                        <span> (</span>
                                         <span>0</span>
-                                        <span>
-                                            Hours
-                                        </span>
-                                        <span>) =</span>
-                                        <span>--</span>
                                         <span> </span>
-                                        <span>
-                                            Hours
-                                        </span>
+                                        <span>Hours</span>
+                                        <span>) = </span>
+                                        <span>0</span>
+                                        <span> </span>
+                                        <span>Hours</span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-group row" style="margin-top: -68px; margin-left: 200px;">
-                                <div>
-                                    <label>
-                                        Vacation time
-                                    </label>
-                                    <input type="number" name="count_paid">
-                                </div>
-                                <div>
-                                    <label>Vacation without pay</label>
-                                    <input type="number" name="count_no_paid">
-                                </div>
+                            <div style="margin-right:20px">
+                                <label>Vacation time</label>
+                                <br />
+                                <input type="number" />
+                            </div>
+                            <div>
+                                <label>Vacation without pay</label>
+                                 <br />
+                                <input type="number" />
                             </div>
                         </div>
                         <div class="col-sm-10" style="margin-top: 25px">
@@ -102,8 +97,8 @@
                             </span>
                         </p>
                     </div>
-                    <div class="add" style=" margin-top: -40px">
-                        <a href="list-leave.aspx" class="addnew" >
+                    <div class="add" style=" margin-top: -40px; margin-left: 400px;">
+                        <a href="list-leave.aspx" class="addnew" style="text-decoration:none" >
                             MORE
                         </a>
                     </div>

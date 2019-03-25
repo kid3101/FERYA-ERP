@@ -167,16 +167,11 @@
         </a>
         <div id="collapseEmployee" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
+            <a href="/Employee/employee.aspx" class="collapse-item">Employee</a>
+            <a href="/Employee/paycheck.aspx" class="collapse-item">Pay Slip</a>
+            <a href="/Employee/leave.aspx" class="collapse-item">DateOff</a>
+            <a href="/Employee/point-employee.aspx" class="collapse-item" >Mark Ranking</a>
 
-            <a class="collapse-item" href="employee.aspx">Employee</a>
-            <a class="collapse-item" href="paycheck.aspx">Pay Slip</a>
-            <a class="collapse-item" href="leave.aspx">DateOff</a>
-            <a class="collapse-item" href="point-employee.aspx">Mark Ranking</a>
-
-            <a class="collapse-item" href="#">Employee</a>
-            <a class="collapse-item" href="#">Pay Slip</a>
-            <a class="collapse-item" href="#">DateOff</a>
-            <a class="collapse-item" href="#">Mark Ranking</a>
           </div>
         </div>
       </li>
