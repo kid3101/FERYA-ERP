@@ -54,7 +54,7 @@
             <div class="col-sm-8">
 
                 <h1 style="padding-top:40px;text-align:center;text-transform:uppercase;">Main office</h1>
-                <a href="Timekeeper.html"><i class="fa fa-chevron-left" style="font-size:20px;float: left;margin-top: -33px;color:#767676"></i></a>
+                <a href="Timekeeper.aspx"><i class="fa fa-chevron-left" style="font-size:20px;float: left;margin-top: -33px;color:#767676"></i></a>
                 <div>
 
                     <input class="form-control" placeholder="Find staff for attendance" style="height: 58px;font-size: 27px;cursor: pointer;" />

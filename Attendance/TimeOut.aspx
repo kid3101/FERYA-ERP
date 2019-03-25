@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="MainOffice2.aspx.cs" Inherits="Attendance_MainOffice2" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="TimeOut.aspx.cs" Inherits="Attendance_TimeOut" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <meta charset="utf-8">
@@ -42,7 +42,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <link href="../css/Attendance/MainOffice2.css" rel="stylesheet" />
+    <link href="../css/Attendance/TimeOut.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <div class="container-fluid">
@@ -59,34 +59,33 @@
 
                     <input class="form-control" style="height: 58px;font-size: 27px;cursor: pointer;" />
                     <a href="MainOffice.aspx" style="color:grey;"><i class="fa fa-times" style="cursor: pointer;font-size: 33px;float: right;margin-top: -46px;margin-right: 20px;"></i></a>
-                    <div class="form-control" style="margin-top: 15px;height: 78px; display: flex;">
-                        <div class="col-sm-9 sidenav" style="height: 76px;color:black;background-color:#eee;margin-left: -12px;margin-top: -6px;">
-                            <i class="fa fa-sign-in" style="font-size:39px;"></i>
+                    <div class="form-control" style="display: flex;margin-top: 15px;height: 123px;background-color: #eee;">
+                        <div class="col-sm-3 sidenav" style="background-color: white;height: 121px;margin-top: -6px;margin-left: -12px;">
+                            <i class="fa fa-sign-in" style="font-size:39px;color:grey;"></i>
                             <br />
                             <span style="font-size: 26px;">Time attendance</span>
                         </div>
-                        <div class="col-sm-3">
-                            <i class="fa fa-sign-in" style="font-size:39px;color:grey;"></i>
+                        <div class="col-sm-9" style="height: 121px;color:black;background-color:#eee;margin-top: -6px;">
+                            <i class="fa fa-sign-in" style="font-size:39px;"></i>
                             <br />
                             <span style="font-size: 26px;color:grey;">Time out</span>
                         </div>
                     </div>
-                    <div class="form-control" style="display: flex;margin-top: 15px;height: 300px;background-color:#eee" ">
+                    <div class="form-control" style="display:flex;margin-top: 15px;height: 300px;background-color:#eee" ">
                         <div class="col-sm-8 sidenav" style="color:black;">
                             <div>
-                                <label style="float: left;">Select the shift to enter</label>
-                                <select class="form-control">
-                                    <option></option>
-                                    <option></option>
-                                </select>
+                                <label style="float: left;">The shift worked</label>
+                                <br />
+                                <label style="color:red;">(09:00 - 17:00)</label>
                             </div>
+
                             <div>
                                 <label style="margin-top: 8px;float: left;">Note</label>
                                 <br />
                                 <textarea style="width: 100%;height: 83px;"></textarea>
                             </div>
                             <div>
-                                <label style="float: left;;margin-top: 8px;margin-bottom: 18px;">Webcam / camera snapshot</label>
+                                <label style="float: left;margin-top: 8px;margin-bottom: 18px;">Webcam / camera snapshot</label>
                                 <br />
                                 <a class="maychamcong">ATTENDANCE</a>
                             </div>
@@ -104,6 +103,5 @@
             </div>
         </div>
     </div>
-
 </asp:Content>
 
