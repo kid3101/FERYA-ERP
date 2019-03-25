@@ -1,12 +1,11 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="create-project.aspx.cs" Inherits="project_CreateProject_CreateProject" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="edit-project.aspx.cs" Inherits="project_edit_project" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-
-    <div class="container-fluid">
-        <h1 class="h3 mb-4 text-gray-800">Create List</h1>
+        <div class="container-fluid">
+        <h1 class="h3 mb-4 text-gray-800">Edit Project</h1>
         <div class="row">
             <div class="col-sm-3">
                 <div>
@@ -134,16 +133,15 @@
         <hr />
         <span>*:Obligatory
         </span>
-        <button type="button" onclick="createproject()" class="btn btn-facebook">Create new Project</button>
+        <button type="button" onclick="editproject()" class="btn btn-facebook">Edit Project</button>
 
     </div>
 
     <script>
 
-        function createproject() {
+        function editproject() {
             location.href = "/project/project-list.aspx";
         }
     </script>
-
 </asp:Content>
 

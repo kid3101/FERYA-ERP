@@ -123,8 +123,8 @@
         </a>
         <div id="collapseProject" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="#">Project List</a>
-            <a class="collapse-item" href="#">+ New Project</a>
+            <a class="collapse-item" href="/project/project-list.aspx">Project List</a>
+            <a class="collapse-item" href="/project/create-project.aspx">+ New Project</a>
           </div>
         </div>
       </li>
