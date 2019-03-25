@@ -77,7 +77,7 @@
                                     </tr>
                                     <tr>
                                         <td colspan="2">
-                                            <button class="timkiem"><a style="color:white;" href="SearchOffice.html">Search</a></button>
+                                            <button class="timkiem"><a style="color:white;text-decoration:none;" href="SearchOffice.aspx">Search</a></button>
                                         </td>
                                     </tr>
                                     <tr>

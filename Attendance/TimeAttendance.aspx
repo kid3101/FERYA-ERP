@@ -114,7 +114,7 @@
                                     </tr>
                                     <tr>
                                         <td colspan="2">
-                                            <button class="timkiem"><a href="SearchKeepingHistory.html" style="color:white;">Search</a></button>
+                                            <button class="timkiem"><a href="SearchKeepingHistory.aspx" style="color:white;text-decoration:none;">Search</a></button>
                                         </td>
                                     </tr>
                                     <tr>

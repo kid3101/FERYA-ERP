@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="AddOffice.aspx.cs" Inherits="Setting_AddOffice" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="SearchOffice.aspx.cs" Inherits="Setting_SearchOffice" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <meta charset="utf-8">
@@ -42,17 +42,15 @@
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <link href="../css/Setting/Office.css" rel="stylesheet" />
+    <link href="../css/Setting/SearchOffice.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <div class="container-fluid" style="margin-top: -23px;;width: 100%;height: 119px;background-color:#eee;">
         <div style="line-height: 1;display: inline-block;margin-left: 40px;vertical-align: middle;">
-            <a style="text-decoration:none;" class="abc tab-content" href="InstallationAndConfiguration.html">
-                <span><h2 style="cursor:pointer;">Install personnel <span><i style="padding-left: 20px;color: black;padding-right: 20px;" class="fa fa-angle-right"></i></span><a href="#" style="color:black;text-decoration:none;">Office</a></h2></span>
-            </a>
+            <a class="abc tab-content" href="#" style="text-decoration:none;"><span><h2 style="cursor:pointer;">Install personnel <span><i style="padding-left: 20px;color: black;padding-right: 20px;" class="fa fa-angle-right"></i></span><a href="#" style="color:black;text-decoration:none;">Office</a></h2></span></a>
         </div>
         <ul class="nav nav-tabs" style=" margin-block-start: 1em;padding-inline-start: 40px;margin-top: 48px;">
-            <li class="active " style="margin-right: 20px;">
+            <li class="active" style="margin-right: 20px;">
                 <a data-toggle="tab" href="#" style="cursor:pointer;">
                     <span style="color:black;">All</span>
                     <span class="number">1</span>
@@ -76,7 +74,7 @@
                                     </tr>
                                     <tr>
                                         <td colspan="2">
-                                            <button class="timkiem"><a style="color:white;text-decoration:none;" href="SearchOffice.aspx">Search</a></button>
+                                            <button class="timkiem">Search</button>
                                         </td>
                                     </tr>
                                     <tr>
@@ -96,9 +94,9 @@
             <div class="container" style="float:left;">
                 <div class="row">
                     <div class="col-sm-5 sidenav" style="margin-top: -52px;margin-left: -168px;">
-                        <a data-toggle="modal" data-target="#myModal" style="float:right;text-decoration:none;" class="nutchamcong" data-toggle="tooltip" href="#" title="Timekeeping" style="color:white;margin-left: 15px;"><i class="fa fa-plus-circle"></i> CREATE AN OFFICE</a>
+                        <a data-toggle="modal" data-target="#myModal" style="float:right;color:white;margin-left: 15px;text-decoration:none;" class="nutchamcong" data-toggle="tooltip" href="#" title="Timekeeping" ><i class="fa fa-plus-circle"></i> CREATE AN OFFICE</a>
                     </div>
-                  <!-- Modal -->
+                    <!-- Modal -->
                     <div class="modal fade" id="myModal" role="dialog">
                         <div class="modal-dialog modal-lg">
 
@@ -613,6 +611,18 @@
         <br>
     </div>
     <div>
+        <div style="margin-top: 20px;margin-left: 6px;">
+            <span class="aa">
+                <span>
+                    <span>Key word</span>
+                    <span>:</span>
+                    <strong>fdf</strong>
+                </span>
+                <span class="closee">
+                    <a href="AddOffice.aspx" class="closee"><i class="fa fa-times" title="Remove this condition"></i></a>
+                </span>
+            </span>
+        </div>
         <div class="table-responsive">
             <table class="table table-hover" style="width:100%; color:grey;margin-top: 20px;">
                 <thead>
@@ -639,7 +649,7 @@
                         <td>dfdf</td>
                         <td>fdfd</td>
                         <td style="float:right;">
-                            <a href="#"  data-toggle="modal" data-target="#myModal4" style="margin-right: 20px;text-decoration:none;">Edit</a>
+                            <a href="#" data-toggle="modal" data-target="#myModal4" style="margin-right: 20px;text-decoration:none;">Edit</a>
                             <a class="as" href="#" style="text-decoration:none;">Delete</a>
                         </td>
                     </tr>
@@ -1132,7 +1142,7 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal" style="border: none;border-radius: 17px;margin-right: 10px;padding-left: 20px;padding-right: 20px;">Close</button>
-                            <button type="submit" class="nutchamcong2" style="border:none;padding-left: 20px;padding-right: 20px;"><a href="#" style="color:white;text-decoration:none;">Update</a></button>
+                            <button type="submit" class="nutchamcong2" style="border:none;padding-left: 20px;padding-right: 20px;"><a href="#" style="color:white;">Update</a></button>
                         </div>
                     </div>
 
