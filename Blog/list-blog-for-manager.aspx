@@ -52,8 +52,8 @@
                 <th>ID</th>              
                 <th>Title</th>
                 <th>Status</th>
-                <th>People Create</th>
-                <th>Day Create</th>
+                <th>Creator</th>
+                <th>Day Created</th>
                 <th>Option</th>
             </tr>
         </thead>

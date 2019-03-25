@@ -32,7 +32,6 @@
                         <div class="form-group">
                             <label for="birthDate" class="col-sm-3 control-label">Avartar <i style="color:red">*</i></label>
                             <div class="col-sm-9">
-                                <form class="md-form">
                                     <div class="file-field">
                                         <a style="text-decoration:none;text-align: center;background-color: #fff;display: flex;cursor: pointer;justify-content: center;align-items: center;margin: 2px;height: 123px;width: 123px;border: 2px dotted #d0d0d0;">
                                             <i class="fa fa-cloud-upload" style="float:left;"></i>
