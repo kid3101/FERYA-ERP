@@ -51,7 +51,7 @@
             <li class="active">
                 <a data-toggle="tab" href="#" style="cursor:pointer;">
                     <span style="color:black;">All</span>
-                    <span class="number">0</span>
+                    <span class="number">0  </span>
                 </a>
             </li>
             <li class="dropdown">
