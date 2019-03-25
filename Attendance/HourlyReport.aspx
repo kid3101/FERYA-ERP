@@ -1,7 +1,7 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="Payroll.aspx.cs" Inherits="Attendance_Payroll" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="HourlyReport.aspx.cs" Inherits="Attendance_HourlyReport" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
-      <meta charset="utf-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>History</title>
@@ -42,15 +42,14 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
-    <link href="../css/Attendance/Payroll.css" rel="stylesheet" />
+    <link href="../css/Attendance/HourlyReport.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <div class="container-fluid" style="width: 100%;height: 119px;background-color:#eee;margin-top: -23px;">
+    <div class="container-fluid" style="margin-top: -23px;width: 100%;height: 119px;background-color:#eee;">
         <div style="line-height: 1;display: inline-block;margin-left: 40px;vertical-align: middle;">
-            <a style="text-decoration:none;" class="abc tab-content" href="#"><span><h2 style="cursor:pointer;">History</h2></span></a>
+            <a class="abc tab-content" href="#" style="text-decoration:none;"><span><h2 style="cursor:pointer;">Timekeeping history</h2></span></a>
         </div>
-        <ul class="nav nav-tabs" style="margin-block-start: 1em;padding-inline-start: 40px;position: absolute;padding-top: 32px;">
+         <ul class="nav nav-tabs" style="margin-block-start: 1em;padding-inline-start: 40px;position: absolute;padding-top: 32px;">
             <li class="active" style="margin-right: 20px;">
                 <a data-toggle="tab" href="#" style="cursor:pointer;text-decoration:none;">
                     <span style="color:black;">All</span>
@@ -126,7 +125,7 @@
                 </ul>
             </li>
         </ul>
-        <div class="container-fluid" style="margin-top: -34px;margin-left: 593px;">
+        <div class="container-fluid" style="margin-top: -34px;margin-left: 791px;">
             <div class="container" style="float:left;display: inline-flex;padding-left: 320px;">
                 <a class="nutchamcong" data-toggle="modal" data-target="#myModal" title="Export Excel" style="color:white;"><i class="fa fa-download"></i> EXPORT EXCEL</a>
                 <!-- Modal -->
@@ -136,7 +135,7 @@
                         <!-- Modal content-->
                         <div class="modal-content">
                             <div class="modal-header">
-                                
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
                                 <h2 class="modal-title" style="float:left;">Export Excel attendance record</h2>
                             </div>
                             <div class="modal-body">
@@ -149,7 +148,7 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal" style="border: none;border-radius: 17px;margin-right: 10px;padding-left: 20px;padding-right: 20px;">Close</button>
-                                <button type="submit" class="nutchamcong2" style="border:none;padding-left: 20px;padding-right: 20px;"><a href="File.html" style="color:white;text-decoration:none;">Download the Excel file</a></button>
+                                <button type="submit" class="nutchamcong2" style="border:none;padding-left: 20px;padding-right: 20px;"><a href="File.html" style="color:white;">Download the Excel file</a></button>
                             </div>
                         </div>
 
@@ -159,7 +158,7 @@
             <div class="container" style="display: inline-flex;padding-left: 320px;">
                 <a href="#" style="height: 20px;width: 20px;color: #555;"><i class="fa fa-chevron-left"></i></a>
                 <div style="margin-right: 6px;">
-                    <a href="#" style="color:#555;text-decoration:none;">
+                    <a href="#" style="color:#555;">
                         <span>Page</span>
                         <span>1</span>
                         <span>/</span>
@@ -174,25 +173,25 @@
     <div>
         <div style="margin:10px 0;">
             <div style="margin:0;">
-                <div style="width: 25%;float:left;">
+                <div style="width: 25%;float:left;border-right-style: groove;">
                     <div style="cursor: pointer;font-size: 40px;text-align:center;">
                         <div>0</div>
                         <div>Go late</div>
                     </div>
                 </div>
-                <div style="width: 25%;float:right;border-left-style: groove;">
+                <div style="width: 25%;float:right;">
                     <div style="cursor: pointer;font-size: 40px;text-align:center;">
                         <div>0</div>
                         <div>No more going late</div>
                     </div>
                 </div>
-                <div style="width: 25%;float:right;">
+                <div style="width: 25%;float:right;border-right-style: groove;">
                     <div style="cursor: pointer;font-size: 40px;text-align:center;">
                         <div>0</div>
                         <div>New late</div>
                     </div>
                 </div>
-                <div style="width: 25%;float:right;border-right-style: groove;border-left-style: groove;">
+                <div style="width: 25%;float:right;border-right-style: groove;">
                     <div style="cursor: pointer;font-size: 40px;text-align:center;">
                         <div>0</div>
                         <div>Come back soon</div>

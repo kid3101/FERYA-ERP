@@ -177,6 +177,20 @@
         </div>
       </li>
 
+        <!-- SETTING MENU -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseSetting" aria-expanded="true" aria-controls="collapseSetting">
+          <i class="fas fa-fw fa-cog"></i>
+          <span>SETTING</span>
+        </a>
+        <div id="collapseSetting" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <a class="collapse-item" href="/Setting/Office.aspx">Office</a>
+            <a class="collapse-item" href="/Setting/Derpartment.aspx">Derpartment</a>
+          </div>
+        </div>
+      </li>
+
       <!-- Divider -->
       <hr class="sidebar-divider">
 
