@@ -3,6 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <link href="../css/Css-Blog/add-new-blog-css.css" rel="stylesheet" />
           <div class="header-blog">
             <div class="col-sm-7">
                   <a class="title-blog" href="blog-company.aspx"><b>Blog</b></a>
@@ -30,7 +31,6 @@
                         <div class="form-group">
                             <label for="birthDate" class="col-sm-3 control-label">Avartar <i style="color:red">*</i></label>
                             <div class="col-sm-9">
-                                <form class="md-form">
                                     <div class="file-field">
                                         <a style="text-decoration:none;text-align: center;background-color: #fff;display: flex;cursor: pointer;justify-content: center;align-items: center;margin: 2px;height: 123px;width: 123px;border: 2px dotted #d0d0d0;">
                                             <i class="fa fa-cloud-upload" style="float:left;"></i>
@@ -38,7 +38,6 @@
                                             <input type="file" style="opacity: 0; position: absolute;" />
                                         </a>
                                     </div>
-
                             </div>
                         </div>
 

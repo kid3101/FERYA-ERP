@@ -3,6 +3,8 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+     <link href="../css/Css-Blog/blog-company-css.css" rel="stylesheet" />
+    <link href="../css/Css-Blog/manager-blog.css" rel="stylesheet" />
           <div class="header-blog">
           <div style="display:flex;">
             <div class="col-sm-7">

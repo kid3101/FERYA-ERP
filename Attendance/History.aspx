@@ -48,7 +48,7 @@
     <script src="../js/History/History.js"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-     <div class="container-fluid" style="width: 100%;height: 95px;background-color:#eee;margin-top: -23px;
+     <div class="container-fluid" style="width: 100%;height: 119px;background-color:#eee;margin-top: -23px;
 ">
         <div style="line-height: 1;display: inline-block;margin-left: 40px;vertical-align: middle;">
             <a class="abc tab-content" style="text-decoration:none;" href="#"><span><h2 style="cursor:pointer;">History</h2></span></a>
@@ -62,7 +62,7 @@
             </li>
             <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" style="padding-right: 30px;color:black;cursor:pointer;" title="Turn on / off the search function">Filter & search ...</a>
-                <ul class="dropdown-menu filterbarfull filterbar" style="top: 0px;transform: translate3d(0px, 26px, 0px);width: 354px;">
+                <ul class="dropdown-menu filterbarfull filterbar" style="top: 0px;transform: translate3d(0px, 26px, 0px);width: 354px;margin-top: 185px;">
                     <li>
                         <form class="ui form">
                             <table width="100%" cellpadding="10">
@@ -116,7 +116,7 @@
                                     </tr>
                                     <tr>
                                         <td colspan="2">
-                                            <button class="timkiem"><a href="SearchKeepingHistory.html" style="color:white;text-decoration:none;">Search</a></button>
+                                            <button class="timkiem"><a href="SearchKeepingHistory.aspx" style="color:white;text-decoration:none;">Search</a></button>
                                         </td>
                                     </tr>
                                     <tr>
@@ -140,17 +140,17 @@
                     <a class="ls dropdown-toggle" title="For management" style="margin-left: -10px;background-color: #eee;border-color: #eee;" data-toggle="dropdown"><i class="fa fa-cog"></i> For management</a>
 
                     <ul class="dropdown-menu " role="menu" aria-labelledby="menu1" style="width: 200px;">
-                        <li  role="presentation" style="margin-bottom: 10px;margin-left: 10px;"><a role="menuitem" tabindex="-1" href="employee.html" style="color: black;text-decoration:none;"><i class="fa fa-calendar"></i> Schedule work schedule</a></li>
+                        <li  role="presentation" style="margin-bottom: 10px;margin-left: 10px;"><a role="menuitem" tabindex="-1" href="#" style="color: black;text-decoration:none;"><i class="fa fa-calendar"></i> Schedule work schedule</a></li>
                         <li role="presentation" style="margin-bottom: 10px;margin-left: 10px;"><a role="menuitem" tabindex="-1" href="SwitchShift.aspx" style="color: black;text-decoration:none;"><i class="fa fa-sync"></i> Switch shift</a></li>
-                        <li role="presentation" style="margin-bottom: 10px;margin-left: 10px;"><a role="menuitem" tabindex="-1" href="HourlyReport.html" style="color: black;text-decoration:none;"><i class="fa fa-chart-bar"></i> Report</a></li>
-                        <li role="presentation" style="margin-bottom: 10px;margin-left: 10px;"><a role="menuitem" tabindex="-1" href="ExportExcel.html" style="color: black;text-decoration:none;"><i class="fa fa-download"></i> Export excel</a></li>
-                        <li role="presentation" style="margin-bottom: 10px;margin-left: 10px;"><a role="menuitem" tabindex="-1" href="PublicReview.html" style="color: black;text-decoration:none;"><i class="fa fa-check-circle"></i> Browse public</a></li>
+                        <li role="presentation" style="margin-bottom: 10px;margin-left: 10px;"><a role="menuitem" tabindex="-1" href="HourlyReport.aspx" style="color: black;text-decoration:none;"><i class="fa fa-chart-bar"></i> Report</a></li>
+                        <li role="presentation" style="margin-bottom: 10px;margin-left: 10px;"><a role="menuitem" tabindex="-1" href="ExportExcel.aspx" style="color: black;text-decoration:none;"><i class="fa fa-download"></i> Export excel</a></li>
+                        <li role="presentation" style="margin-bottom: 10px;margin-left: 10px;"><a role="menuitem" tabindex="-1" href="TimeAttendance.aspx" style="color: black;text-decoration:none;"><i class="fa fa-check-circle"></i> Browse public</a></li>
                     </ul>
                 </div>
 
-                <a class="ls" style="margin-left: 15px;text-decoration:none;" href="calendar.html"><i class="fa fa-calendar"></i> Calendar</a>
-                <a class="maychamcong" data-toggle="tooltip" href="Timekeeper.html" title="Allowing attendance for other employees or accessing from timekeeping equipment" style="color:white;margin-left: 15px;padding-left: 20px;padding-right: 20px;text-decoration:none;"><i class="fa fa-desktop"></i> TIMEKEEPER</a>
-                <a class="nutchamcong" data-toggle="tooltip" href="TimeKeeping.html" title="Timekeeping" style="color:white;margin-left: 15px;padding-left: 20px;padding-right: 20px;text-decoration:none;"><i class="fa fa-plus-circle"></i> TIMEKEEPING</a>
+                <a class="ls" style="margin-left: 15px;text-decoration:none;" href="WorkingPlan.aspx""><i class="fa fa-calendar"></i> Calendar</a>
+                <a class="maychamcong" data-toggle="tooltip" href="Timekeeper.aspx"" title="Allowing attendance for other employees or accessing from timekeeping equipment" style="color:white;margin-left: 15px;padding-left: 20px;padding-right: 20px;text-decoration:none;"><i class="fa fa-desktop"></i> TIMEKEEPER</a>
+                <a class="nutchamcong" data-toggle="tooltip" href="TimeKeeping.aspx" title="Timekeeping" style="color:white;margin-left: 15px;padding-left: 20px;padding-right: 20px;text-decoration:none;"><i class="fa fa-plus-circle"></i> TIMEKEEPING</a>
             </div>
             <div class="container" style="display: inline-flex;padding-left: 320px; padding-top: 20px;">
                 <a href="#" style="height: 20px;width: 20px;color: #555;"><i class="fa fa-chevron-left"></i></a>
