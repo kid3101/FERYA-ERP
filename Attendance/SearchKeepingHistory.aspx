@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="History.aspx.cs" Inherits="Attendance_History" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="SearchKeepingHistory.aspx.cs" Inherits="Attendance_SearchKeepingHistory" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <meta charset="utf-8">
@@ -42,16 +42,12 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
-    <link href="../css/Attendance/History.css" rel="stylesheet" />
-
-    <script src="../js/History/History.js"></script>
+    <link href="../css/Attendance/SearchKeepingHistory.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-     <div class="container-fluid" style="width: 100%;height: 119px;background-color:#eee;margin-top: -23px;
-">
+    <div class="container-fluid" style="margin-top: -23px;width: 100%;height: 119px;background-color:#eee;">
         <div style="line-height: 1;display: inline-block;margin-left: 40px;vertical-align: middle;">
-            <a class="abc tab-content" style="text-decoration:none;" href="#"><span><h2 style="cursor:pointer;">History</h2></span></a>
+            <a class="abc tab-content" href="#" style="text-decoration:none;"><span><h2 style="cursor:pointer;">Timekeeping history</h2></span></a>
         </div>
         <ul class="nav nav-tabs" style="margin-block-start: 1em;padding-inline-start: 40px;position: absolute;padding-top: 32px;">
             <li class="active" style="margin-right: 20px;">
@@ -116,12 +112,12 @@
                                     </tr>
                                     <tr>
                                         <td colspan="2">
-                                            <button class="timkiem"><a href="SearchKeepingHistory.aspx" style="color:white;text-decoration:none;">Search</a></button>
+                                            <button class="timkiem">Search</button>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td colspan="2" style="text-align:center;padding-top: 17px;">
-                                            <a href="#" style="text-decoration:none;">Closed</a>
+                                            <a href="#">Closed</a>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -139,7 +135,7 @@
 
                     <a class="ls dropdown-toggle" title="For management" style="margin-left: -10px;background-color: #eee;border-color: #eee;" data-toggle="dropdown"><i class="fa fa-cog"></i> For management</a>
 
-                    <ul class="dropdown-menu " role="menu" aria-labelledby="menu1" style="width: 200px;">
+                     <ul class="dropdown-menu " role="menu" aria-labelledby="menu1" style="width: 200px;">
                         <li  role="presentation" style="margin-bottom: 10px;margin-left: 10px;"><a role="menuitem" tabindex="-1" href="#" style="color: black;text-decoration:none;"><i class="fa fa-calendar"></i> Schedule work schedule</a></li>
                         <li role="presentation" style="margin-bottom: 10px;margin-left: 10px;"><a role="menuitem" tabindex="-1" href="SwitchShift.aspx" style="color: black;text-decoration:none;"><i class="fa fa-sync"></i> Switch shift</a></li>
                         <li role="presentation" style="margin-bottom: 10px;margin-left: 10px;"><a role="menuitem" tabindex="-1" href="HourlyReport.aspx" style="color: black;text-decoration:none;"><i class="fa fa-chart-bar"></i> Report</a></li>
@@ -148,11 +144,11 @@
                     </ul>
                 </div>
 
-                <a class="ls" style="margin-left: 15px;text-decoration:none;" href="WorkingPlan.aspx""><i class="fa fa-calendar"></i> Calendar</a>
-                <a class="maychamcong" data-toggle="tooltip" href="Timekeeper.aspx"" title="Allowing attendance for other employees or accessing from timekeeping equipment" style="color:white;margin-left: 15px;padding-left: 20px;padding-right: 20px;text-decoration:none;"><i class="fa fa-desktop"></i> TIMEKEEPER</a>
-                <a class="nutchamcong" data-toggle="tooltip" href="TimeKeeping.aspx" title="Timekeeping" style="color:white;margin-left: 15px;padding-left: 20px;padding-right: 20px;text-decoration:none;"><i class="fa fa-plus-circle"></i> TIMEKEEPING</a>
+                <a class="ls" style="margin-left: 15px;text-decoration:none;" href="WorkingPlan.aspx"><i class="fa fa-calendar"></i> Calendar</a>
+                <a class="maychamcong" data-toggle="tooltip" href="Timekeeper.aspx" title="Allowing attendance for other employees or accessing from timekeeping equipment" style="color:white;margin-left: 15px;text-decoration:none;"><i class="fa fa-desktop"></i> TIMEKEEPER</a>
+                <a class="nutchamcong" data-toggle="tooltip" href="TimeKeeping.aspx" title="Timekeeping" style="color:white;margin-left: 15px;text-decoration:none;"><i class="fa fa-plus-circle"></i> TIMEKEEPING</a>
             </div>
-            <div class="container" style="display: inline-flex;padding-left: 320px; padding-top: 20px;">
+            <div class="container" style="display: inline-flex;padding-left: 320px;margin-top:20px;">
                 <a href="#" style="height: 20px;width: 20px;color: #555;"><i class="fa fa-chevron-left"></i></a>
                 <div style="margin-right: 6px;">
                     <a href="#" style="color:#555;text-decoration:none;">
@@ -166,6 +162,19 @@
             </div>
         </div>
         <br>
+    </div>
+    <div style="margin-top: 20px;margin-left: 6px;">
+        <span class="aa">
+            <span>
+                <span>Time:</span>
+                <strong>00:00,06/03</strong>
+                <span>-</span>
+                <strong>23:59,16/04</strong>
+            </span>
+            <span class="closee">
+                <a href="History.aspx" class="closee"><i class="fa fa-times" title="Remove this condition"></i></a>
+            </span>
+        </span>
     </div>
     <div class="table-responsive">
         <div>
@@ -190,7 +199,5 @@
 
         </div>
     </div>
-
-    
 </asp:Content>
 

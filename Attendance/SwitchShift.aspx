@@ -62,7 +62,7 @@
                     <label style="font-size: 30px;">Source staff</label>
                 </div>
                 <div>
-                    <label>Trụ sở</label>
+                    <label>Office</label>
                     <div class="text" style="cursor:pointer;">
                         <select class="form-control" style="cursor:pointer;">
                             <option>All</option>
