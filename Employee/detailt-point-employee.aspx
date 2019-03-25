@@ -1,6 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="detailt-point-employee.aspx.cs" Inherits="Employee_detailt_point_employee" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+
+    <link href="../css/employee.css/detailt-point-employee.css" rel="stylesheet" />
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
@@ -16,7 +19,7 @@
   <div class="column">
           <div class="card2">
           <div class="card2-left" style="width:50%; margin-right:15px">
-              <table class="table">
+              <table class="table table-bordered">
                   <thead>
                       <tr>
                           <th>Species</th>
@@ -44,7 +47,7 @@
               </table>
           </div>
           <div class="card2-right" style="width:50%">
-              <table class="table">
+              <table class="table table-bordered">
                   <thead>
                       <tr>
                           <th></th>

@@ -1,8 +1,8 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="list-point-employee.aspx.cs" Inherits="Employee_list_point_employee" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="search-synthetic-point-employee.aspx.cs" Inherits="Employee_search_synthetic_point_employee" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    <link href="../css/Attendance/SearchKeepingHistory.css" rel="stylesheet" />
 
-    <link href="../css/Attendance/History.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
@@ -13,8 +13,8 @@
         <ul class="nav nav-tabs" style="margin-block-start: 1em;padding-inline-start: 40px;position: absolute;padding-top: 32px;">
             <li class="active" style="margin-right: 20px;">
                 <a data-toggle="tab" href="#" style="cursor:pointer;text-decoration:none;">
-                    <span style="color:black;">All</span>
-                    <span class="number">0</span>
+                    <span style="color:black;">Check the search</span>
+                    <span class="number">1</span>
                 </a>
             </li>
             <li class="dropdown">
@@ -137,13 +137,6 @@
             </li>
         </ul>
         <div class="container-fluid" style="margin-top: -34px;margin-left: 380px;">
-            <div class="container" style="float:left;">
-                <a class="ls" style="margin-left: 15px;text-decoration:none;" href="#"><i class="fa fa-cog"></i> Setting criteria</a>
-                <a class="ls" style="margin-left: 15px;text-decoration:none;" data-toggle="modal" data-target="#myModal"><i class="fa fa-download"></i>Export Excel</a>
-                <a class="ls" style="margin-left: 15px;text-decoration:none;" href="synthetic-point-employee.aspx"  ><i class="fas fa-chart-pie"></i> Synthetic by employess</a>
-                
-                <a class="nutchamcong"  href="add-point-employee.aspx" title="Add new" style="color:white;margin-left: 15px;padding-left: 20px;padding-right: 20px;text-decoration:none;"><i class="fa fa-plus-circle"></i> ADD THE REVIEW</a>
-            </div>
             <div class="container" style="display: inline-flex;padding-left: 500px; padding-top: 20px;">
                 <a href="#" style="height: 20px;width: 20px;color: #555;"><i class="fa fa-chevron-left"></i></a>
                 <div style="margin-right: 6px;">
@@ -159,35 +152,48 @@
         </div>
         <br>
     </div>
+    <div style="margin-top: 20px;margin-left: 6px;">
+        <span class="aa">
+            <span>
+                <span>Employee:</span>
+                <strong>Thong Huyen Trang</strong>
+            </span>
+            <span class="closee">
+                <a href="synthetic-point-employee.aspx" class="closee"><i class="fa fa-times" title="Remove this condition"></i></a>
+            </span>
+        </span>
+    </div>
         <div class="table">
             <table id="employeetable" style="margin:0;" class="table">
                 <thead>
                     <tr>
-                        <th class="clo">SID</th>
-                        <th class="clo">EMPLOYEES</th>
                         <th class="clo">HEADQUARTERS</th>
-                        <th class="clo">CRITERIA</th>
-                        <th class="clo">TYPE OF CRITERIA</th>
-                        <th class="clo">POINT</th>
-                        <th class="clo">STATUS</th>
-                        <th class="clo">CREATOR</th>
-                        <th class="clo">DATE CREATED</th>
+                        <th class="clo">EMPLOYEES</th>
+                        <th class="clo"> NUMBERS</th>
+                        <th class="clo">GOOD</th>
                         <th></th>
+                        <th class="clo">BAD</th>
+                        <th></th>
+                        <th class="clo">GOOD - BAD</th>
                     </tr>
-                    <tr>
+                    <tr >
+                        <td ></td>
                         <td>
-                            <a href="detailt-point-employee.aspx">470707</a>
+                            <span >Thông Huyền Trang</span>
                         </td>
-                        <td> a </td>
-                        <td>dsd</td>
-                        <td>sas</td>
-                        <td>Good</td>
-                        <td>10</td>
-                        <td> <label style="background-color:#93ef93;">Effective</label></td>
-                        <td> Thong Huyen Trang</td>
-                        <td>14:06, Today</td>
+                        <td >
+                            <a >0</a>
+                        </td>
+                        <td >
+                            <a >0</a>
+                        </td>
+                        <td >-</td>
+                        <td >
+                            <a>0</a>
+                        </td>
+                        <td>=</td>
                         <td>
-                            <a href="upload-point-employee.aspx"class="edit" title="Click here to update data">EDIT</a>
+                            <a>0</a>
                         </td>
                     </tr>
                 </thead>
@@ -236,5 +242,6 @@
 
         </div>
     </div>
+
 </asp:Content>
 

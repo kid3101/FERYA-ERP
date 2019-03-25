@@ -1,6 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="upload-point-employee.aspx.cs" Inherits="Employee_upload_point_employee" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    <link href="../css/employee.css/add-point-employee.css" rel="stylesheet" />
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
@@ -20,12 +22,12 @@
     </div>
      <div class="segment">
             <form class="ui form">
-                <div class="top" style="margin-top:10px;">
+                <div class="top" style="margin-top:10px; display:flex">
                     <div class="left" style="width:25%;">
                         <h2>Detailed scoring staff</h2>
                             <p>Detailed scoring information for employees</p>
                     </div>
-                    <div class="right">
+                    <div class="right" style="width:70%">
                         <div class="col-xs-5">
                             <label>Headquarters</label>
                             <input class="form-control" type="text" value="dsd" />
