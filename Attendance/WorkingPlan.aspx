@@ -85,9 +85,9 @@
 
 
             </div>
-            <button title="Show filters" style="position: fixed;margin-top: 3px;z-index: 1;" onclick="openNav()">
+            <%--<button title="Show filters" style="position: fixed;margin-top: 3px;z-index: 1;" onclick="openNav()">
                 <i class="fa fa-search"></i>
-            </button>
+            </button>--%>
 
             <div class="col-sm-9">
                 <div>

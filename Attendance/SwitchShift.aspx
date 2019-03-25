@@ -45,24 +45,24 @@
     <link href="../css/Attendance/SwitchShift.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-     <div class="container" style="background-color: #eee;height: 106px;width: 100%;">
+     <div class="container" style="background-color: #eee;height: 95px;width: 100%;margin-top: -23px;">
         <div style="margin-bottom: -11px;margin-top: -20px;">
             <br />
-            <a class="abc tab-content" href="KeepingHistory.html"><span><h2 style="cursor:pointer;">Timekeeping history</h2></span></a>
+            <a style="text-decoration:none;" class="abc tab-content" href="History.aspx"><span><h2 style="cursor:pointer;">History</h2></span></a>
             <ul class="nav nav-tabs" style="margin-right:-202px;padding-inline-start: 40px;">
-                <li class="active"><a href="#" style="cursor:pointer;height: 44px;">Switch shift</a></li>
+                <li class="active"><a href="#" style="cursor:pointer;height: 44px;text-decoration:none;">Switch shift</a></li>
             </ul>
             <br>
         </div>
     </div>
     <div>
         <div class="row content">
-            <div class="col-sm-5 sidenav">
+            <div class="col-sm-4 sidenav" style="margin-left: 90px;">
                 <div>
                     <label style="font-size: 30px;">Source staff</label>
                 </div>
                 <div>
-                    <label>Trụ sở</label>
+                    <label>Office</label>
                     <div class="text" style="cursor:pointer;">
                         <select class="form-control" style="cursor:pointer;">
                             <option>All</option>
@@ -97,7 +97,7 @@
 
             </div>
 
-            <div class="col-sm-5">
+            <div class="col-sm-4">
                 <div>
                     <label style="font-size: 30px;">Destination staff</label>
                 </div>
@@ -135,8 +135,8 @@
                 <span>*: Obligatory</span>
             </div>
 
-            <div class="col-sm-4" style="text-align:center;">
-                <div style="margin-top:25px;">
+            <div  style="text-align:center;">
+                <div>
                     <button class="nutchamcong" style="width: 30%;border: none;"> SWITCH SHIFT</button>
                 </div>
             </div>
