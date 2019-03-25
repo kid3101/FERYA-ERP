@@ -1,0 +1,20 @@
+﻿body {
+}
+.dropdown-menu filterbarfull filterbar {
+    position: absolute;
+    will-change: transform;
+    width: 300px;
+    top: 0px;
+    left: 0px;
+    transform: translate3d(0px, 22px, 0px);
+}
+.header-content {
+   margin-bottom: -11px; margin-top: -20px;
+}
+styleadd {
+    margin-right: -202px;
+}
+.all-style {
+cursor: pointer; height: 44px;
+}
+

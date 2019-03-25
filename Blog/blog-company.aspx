@@ -3,6 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <link href="../css/Css-Blog/blog-company-css.css" rel="stylesheet" />
       <div class="header-blog">
           <div style="display:flex;">
             <div class="col-sm-7">
@@ -11,7 +12,7 @@
           <div class="col-sm-5" id="col-5">
                   <div class="linkmanagerblog">
                     <div class="managerblog">
-                        <a class="btn btn-info" data-toggle="tooltip" href="#" title="Timekeeping">FOR MANAGER</a>
+                        <a class="btn btn-info" data-toggle="tooltip" href="list-blog-for-manager.aspx" title="Timekeeping">FOR MANAGER</a>
                     </div>
                       <br />
                     <div class="page">    

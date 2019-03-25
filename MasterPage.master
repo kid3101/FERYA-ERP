@@ -18,9 +18,7 @@
   <link href="/css/sb-admin-2.min.css" rel="stylesheet">
     <!-- Css Tab Blog -->
     <link href="/css/Css-Blog/blog-company-css.css" rel="stylesheet" />
-    <link href="/css/Css-Blog/add-new-blog-css.css" rel="stylesheet" />
-    <link href="/css/Css-Blog/list-blog-css.css" rel="stylesheet" />
-    <link href="/css/Css-Blog/detail-blog-css.css" rel="stylesheet" />
+    <%-- Css tab Mailbox --%>
 	 <!-- Bootstrap core JavaScript-->
   <script src="/vendor/jquery/jquery.min.js"></script>
   <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -73,7 +71,7 @@
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item">
-        <a class="nav-link" href="/Dashboard/Main.aspx">
+        <a class="nav-link" href="#">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
       </li>
@@ -94,10 +92,10 @@
         </a>
         <div id="collapseAttendace" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="/Attendance/Attendant.aspx">Attendant</a>
-            <a class="collapse-item" href="/Attendance/History.aspx">History</a>
-			<a class="collapse-item" href="/Attendance/WorkingPlan.aspx">Working Plan</a>
-			<a class="collapse-item" href="/Attendance/Payroll.aspx">Payroll</a>
+            <a class="collapse-item" href="#">Attendant</a>
+            <a class="collapse-item" href="#">History</a>
+			<a class="collapse-item" href="#">Working Plan</a>
+			<a class="collapse-item" href="#">Payroll</a>
           </div>
         </div>
       </li>
@@ -110,9 +108,9 @@
         </a>
         <div id="collapseMail" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="#">Inbox</a>
-            <a class="collapse-item" href="#">Sent</a>
-            <a class="collapse-item" href="#">Combo</a>
+            <a class="collapse-item" href="/Mailbox/mail-box.aspx">Inbox</a>
+            <a class="collapse-item" href="/Mailbox/sent-mail.aspx">Sent</a>
+            <a class="collapse-item" href="/Mailbox/compose-mail.aspx">Combo</a>
           </div>
         </div>
       </li>
@@ -139,9 +137,9 @@
         </a>
         <div id="collapseBlog" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="#">Blog</a>
-            <a class="collapse-item" href="#">Manage Blog</a>
-            <a class="collapse-item" href="#">+ New Entry</a>
+            <a class="collapse-item" href="/Blog/blog-company.aspx">Blog</a>
+            <a class="collapse-item" href="/Blog/list-blog-for-manager.aspx">Manage Blog</a>
+            <a class="collapse-item" href="/Blog/add-new-blog.aspx">+ New Entry</a>
           </div>
         </div>
       </li>
