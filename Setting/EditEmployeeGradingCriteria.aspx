@@ -57,7 +57,7 @@
         </div>
     </div>
     <div style="margin-top:20px;">
-        <div class="row content">
+        <div class="row content" style="margin-left: 20px;">
             <div class="col-sm-3">
                 <h3>Criteria Information</h3>
                 <p>Details Information Criteria</p>
@@ -116,7 +116,7 @@
 
             <div class="col-sm-4" style="text-align:center;">
                 <div style="margin-top:25px;">
-                    <button class="nutchamcong" style="width: 30%;border: none;margin-left: -442px;"><a href="EmployeeGradingCriteria2.aspx" style="color:white;text-decoration:none;"> SAVE</a></button>
+                    <button class="nutchamcong" style="width: 30%;border: none;margin-left: -399px;"><a href="EmployeeGradingCriteria2.aspx" style="color:white;text-decoration:none;"> SAVE</a></button>
                 </div>
             </div>
 

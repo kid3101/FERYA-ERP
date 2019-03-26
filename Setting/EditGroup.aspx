@@ -57,7 +57,7 @@
         </div>
     </div>
     <div style="margin-top:20px;">
-        <div class="row content">
+        <div class="row content" style="margin-left: 20px;">
             <div class="col-sm-3">
                 <h3>Staff group information</h3>
                 <p>Enter the name and description for the group of employees</p>
@@ -92,7 +92,7 @@
             </div>
         </div>
         <hr />
-        <div class="row content">
+        <div class="row content" style="margin-left: 20px;">
             <div class="col-sm-3">
                 <h3>Staff group details</h3>
                 <p>Create conditions to filter employees</p>
@@ -113,7 +113,7 @@
                         </select>
                     </div>
                     <div style="width:30%;font-size: 17px;float:right;margin-top:20px;">
-                        <a href="#" class="chuphinh" style="margin-left: -585px;text-decoration:none;">Add the selected rule</a>
+                        <a href="#" class="chuphinh" style="margin-left: -569px;text-decoration:none;">Add the selected rule</a>
                     </div>
                     <div class="table-responsive">
                         <table class="table" style="border: 1px solid rgba(34,36,38,.15);width: 95%;margin-left: 0px;margin-top:81px;">
@@ -145,7 +145,7 @@
 
             <div class="col-sm-4" style="text-align:center;">
                 <div style="margin-top:25px;">
-                    <button class="nutchamcong" style="width: 30%;border: none;margin-left: -441px;"><a href="#" style="color:white;text-decoration:none;"> SAVE</a></button>
+                    <button class="nutchamcong" style="width: 30%;border: none;margin-left: -391px;"><a href="#" style="color:white;text-decoration:none;"> SAVE</a></button>
                 </div>
             </div>
 
