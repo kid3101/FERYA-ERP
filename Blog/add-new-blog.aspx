@@ -48,13 +48,13 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="birthDate" class="col-sm-3 control-label">Attached files</i></label>
+                            <label for="birthDate" class="col-sm-3 control-label">Attached files</label>
                             <div class="col-sm-9">
                                 <form class="md-form">
                                     <div class="file-field">
                                         <a class="btn-floating peach-gradient mt-0 float-left">
                                             <i class="fa fa-paperclip" aria-hidden="true"></i>
-                                            <input type="file">
+                                            <input type="file" >
                                         </a>
                                     </div>
                                     </form>
