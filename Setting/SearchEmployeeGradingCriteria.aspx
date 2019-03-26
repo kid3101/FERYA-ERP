@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="EmployeeGradingCriteria2.aspx.cs" Inherits="Setting_EmployeeGradingCriteria2" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="SearchEmployeeGradingCriteria.aspx.cs" Inherits="Setting_SearchEmployeeGradingCriteria" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <meta charset="utf-8">
@@ -42,10 +42,10 @@
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <link href="../css/Setting/Grading2.css" rel="stylesheet" />
+    <link href="../css/Setting/SearchGrading.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <div class="container-fluid" style="margin-top:-23px;width: 100%;height: 119px;background-color:#eee;">
+     <div class="container-fluid" style="margin-top:-23px;width: 100%;height: 119px;background-color:#eee;">
         <div style="line-height: 1;display: inline-block;margin-left: 40px;vertical-align: middle;">
             <a class="abc tab-content" href="#" style="text-decoration:none;"><span><h2 style="cursor:pointer;">Install personnel <span><i style="padding-left: 20px;color: black;padding-right: 20px;" class="fa fa-angle-right"></i></span><a href="#" style="color:black;text-decoration:none;">Employee grading criteria</a></h2></span></a>
         </div>
@@ -123,7 +123,7 @@
                                     </tr>
                                     <tr>
                                         <td colspan="2">
-                                            <button style="margin-top:20px;" class="timkiem"><a href="SearchEmployeeGradingCriteria.aspx" style="color:white;text-decoration:none;">Search</a></button>
+                                            <button style="margin-top:20px;text-decoration:none;" class="timkiem">Search</button>
                                         </td>
                                     </tr>
                                     <tr>
@@ -139,7 +139,7 @@
                 </ul>
             </li>
         </ul>
-        <div class="container-fluid" style="margin-top: -82px;margin-left: 505px;">
+         <div class="container-fluid" style="margin-top: -82px;margin-left: 505px;">
             <div class="container" style="float:left;display: inline-flex;padding-left: 242px;">
                 <a href="AddNewEmployeeGradingCriteria.aspx" class="nutchamcong" data-toggle="tooltip" title="Create criteria for employee grading" style="color:white;text-decoration:none;"><i class="fa fa-plus"></i> CREATE CRITERIA FOR EMPLOYEE POINTS</a>
             </div>
@@ -158,7 +158,20 @@
         </div>
         <br>
     </div>
+
     <div>
+        <div style="margin-top: 20px;margin-left: 6px;">
+            <span class="aa">
+                <span>
+                    <span>Key word</span>
+                    <span>:</span>
+                    <strong>de</strong>
+                </span>
+                <span class="closee">
+                    <a href="EmployeeGradingCriteria2.aspx" style="text-decoration:none;" class="closee"><i class="fa fa-times" title="Remove this condition"></i></a>
+                </span>
+            </span>
+        </div>
         <div class="table-responsive">
             <table style="width: 98%;margin-left: 20px;margin-top: 25px;" class="table table-hover">
                 <thead>
