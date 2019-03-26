@@ -4,6 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <link href="../css/Css-Blog/add-new-blog-css.css" rel="stylesheet" />
+    <link href="../css/employee.css/add-point-employee.css" rel="stylesheet" />
     <div class="header-blog">
             <div class="col-sm-7">
                   <a class="title-blog" href="manager-blog.aspx"><b>Manager</b></a>
@@ -31,13 +32,12 @@
                         <div class="form-group">
                             <label for="birthDate" class="col-sm-3 control-label">Avartar <i style="color:red">*</i></label>
                             <div class="col-sm-9">
-                                    <div class="file-field">
-                                        <a style="text-decoration:none;text-align: center;background-color: #fff;display: flex;cursor: pointer;justify-content: center;align-items: center;margin: 2px;height: 123px;width: 123px;border: 2px dotted #d0d0d0;">
-                                            <i class="fa fa-cloud-upload" style="float:left;"></i>
-                                            <span style="margin-left:10px;">Upload avatar</span>
-                                            <input type="file" style="opacity: 0; position: absolute;" />
+                                     <div class="file-field">                                                               
+                                        <a class="btn-floating peach-gradient" style="text-decoration:none;text-align: center;background-color: #fff;display: flex;cursor: pointer;justify-content: center;align-items: center;margin: 2px;height: 123px;width: 123px;border: 2px dotted #d0d0d0;">                                           
+                                            <input type="file" name="file-2[]" id="file-2" class="inputfile inputfile-2" data-multiple-caption="{count} files selected" multiple="" style="opacity:0; position: absolute; height:140px;width:140px;"/>
+                                            <label for="file-2"><span>Upload avatar</span></label>
                                         </a>
-                                    </div>
+                                    </div>  
                             </div>
                         </div>
 
@@ -73,5 +73,44 @@
                 </div>
             </div>
         </div>
+      <script>
+
+        function myFunction() {
+            var x = document.getElementById("myDIV");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        'use strict';
+
+        ; (function (document) {
+            var inputs = document.querySelectorAll('.inputfile');
+            Array.prototype.forEach.call(inputs, function (input) {
+                var label = input.nextElementSibling,
+                    labelVal = label.innerHTML;
+
+                input.addEventListener('change', function (e) {
+                    var fileName = '';
+                    if (this.files && this.files.length > 1)
+                        fileName = (this.getAttribute('data-multiple-caption') || '').replace('{count}', this.files.length);
+                    else
+                        fileName = e.target.value.split('\\').pop();
+
+                    if (fileName)
+                        label.querySelector('span').innerHTML = fileName;
+                    else
+                        label.innerHTML = labelVal;
+                });
+
+                // Firefox bug fix
+                input.addEventListener('focus', function () { input.classList.add('has-focus'); });
+                input.addEventListener('blur', function () { input.classList.remove('has-focus'); });
+            });
+        }(document, window, 0));
+
+    </script>
 </asp:Content>
 
