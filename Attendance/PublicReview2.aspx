@@ -45,6 +45,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
     <link href="../css/Attendance/TimeAttendance.css" rel="stylesheet" />
+    <link href="../css/Setting/AccessRight.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <div class="container-fluid" style="width: 100%;height: 119px;background-color:#eee;margin-top: -24px;">
@@ -211,11 +212,244 @@
                         <td >Confirmed</td>
                         <td><button type="button" class="btn btn-warning" style="border-radius: 20px;"><a href="PublicReview.aspx" style="text-decoration:none;color:white;">UnBrowser</a></button></td>
                         <td>14.186.73.139 -</td>
-                        <td><a href="#" style="text-decoration:none;" title="Click here to update data">EDIT</a></td>
+                        <td><a href="#" data-toggle="modal" data-target="#myModal"  style="text-decoration:none;" title="Click here to update data">EDIT</a></td>
                     </tr>
                 </tbody>
             </table>
 
+        </div>
+         <!-- Modal -->
+                    <div class="modal fade" id="myModal" role="dialog">
+                        <div class="modal-dialog modal-lg">
+
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    
+                                    <h2 class="modal-title" style="float:left;">Update attendance time - User name (Today's Day)</h2>
+                                </div>
+                                <div class="modal-body">
+                                    <div style="background-color: antiquewhite;border-style: groove;border-color: antiquewhite;color: black;">
+                                        <div>Employees have not yet worked out</div>
+                                        <div>If confirmed, the system will automatically recognize</div>
+                                    </div>
+                                    <div style="display:flex;margin-top:20px;margin-bottom:20px;">
+                                                <div style="margin-right: 10px;">
+                                                    <span>Time attendance</span>
+                                                    <select style="display:block;height:25px;width:179px;">
+                                                        <option>---</option>
+                                                        <option>00 Hours</option>
+                                                        <option>01 Hours</option>
+                                                        <option>02 Hours</option>
+                                                        <option>03 Hours</option>
+                                                        <option>04 Hours</option>
+                                                        <option>05 Hours</option>
+                                                        <option>06 Hours</option>
+                                                        <option>07 Hours</option>
+                                                        <option>08 Hours</option>
+                                                        <option>09 Hours</option>
+                                                        <option>10 Hours</option>
+                                                        <option>11 Hours</option>
+                                                        <option>12 Hours</option>
+                                                        <option>13 Hours</option>
+                                                        <option>14 Hours</option>
+                                                        <option>15 Hours</option>
+                                                        <option>16 Hours</option>
+                                                        <option>17 Hours</option>
+                                                        <option>18 Hours</option>
+                                                        <option>19 Hours</option>
+                                                        <option>20 Hours</option>
+                                                        <option>21 Hours</option>
+                                                        <option>22 Hours</option>
+                                                        <option>23 Hours</option>
+                                                    </select>
+                                                </div>
+                                                <div style="margin-right: 10px;">
+                                                    <input type="hidden" />
+                                                    <select style="display:block;height:25px;width:178px;margin-top: 23px;">
+                                                        <option>---</option>
+                                                        <option>00 Minutes</option>
+                                                        <option>01 Minutes</option>
+                                                        <option>02 Minutes</option>
+                                                        <option>03 Minutes</option>
+                                                        <option>04 Minutes</option>
+                                                        <option>05 Minutes</option>
+                                                        <option>06 Minutes</option>
+                                                        <option>07 Minutes</option>
+                                                        <option>08 Minutes</option>
+                                                        <option>09 Minutes</option>
+                                                        <option>10 Minutes</option>
+                                                        <option>11 Minutes</option>
+                                                        <option>12 Minutes</option>
+                                                        <option>13 Minutes</option>
+                                                        <option>14 Minutes</option>
+                                                        <option>15 Minutes</option>
+                                                        <option>16 Minutes</option>
+                                                        <option>17 Minutes</option>
+                                                        <option>18 Minutes</option>
+                                                        <option>19 Minutes</option>
+                                                        <option>20 Minutes</option>
+                                                        <option>21 Minutes</option>
+                                                        <option>22 Minutes</option>
+                                                        <option>23 Minutes</option>
+                                                        <option>24 Minutes</option>
+                                                        <option>25 Minutes</option>
+                                                        <option>26 Minutes</option>
+                                                        <option>27 Minutes</option>
+                                                        <option>28 Minutes</option>
+                                                        <option>29 Minutes</option>
+                                                        <option>30 Minutes</option>
+                                                        <option>31 Minutes</option>
+                                                        <option>32 Minutes</option>
+                                                        <option>33 Minutes</option>
+                                                        <option>34 Minutes</option>
+                                                        <option>35 Minutes</option>
+                                                        <option>36 Minutes</option>
+                                                        <option>37 Minutes</option>
+                                                        <option>38 Minutes</option>
+                                                        <option>39 Minutes</option>
+                                                        <option>40 Minutes</option>
+                                                        <option>41 Minutes</option>
+                                                        <option>42 Minutes</option>
+                                                        <option>43 Minutes</option>
+                                                        <option>44 Minutes</option>
+                                                        <option>45 Minutes</option>
+                                                        <option>46 Minutes</option>
+                                                        <option>47 Minutes</option>
+                                                        <option>48 Minutes</option>
+                                                        <option>49 Minutes</option>
+                                                        <option>50 Minutes</option>
+                                                        <option>51 Minutes</option>
+                                                        <option>52 Minutes</option>
+                                                        <option>53 Minutes</option>
+                                                        <option>54 Minutes</option>
+                                                        <option>55 Minutes</option>
+                                                        <option>56 Minutes</option>
+                                                        <option>57 Minutes</option>
+                                                        <option>58 Minutes</option>
+                                                        <option>59 Minutes</option>
+                                                    </select>
+                                                </div>
+                                        <div style="margin-right: 10px;">
+                                                    <span>Time out</span>
+                                                    <select style="display:block;height:25px;width:179px;">
+                                                        <option>---</option>
+                                                        <option>00 Hours</option>
+                                                        <option>01 Hours</option>
+                                                        <option>02 Hours</option>
+                                                        <option>03 Hours</option>
+                                                        <option>04 Hours</option>
+                                                        <option>05 Hours</option>
+                                                        <option>06 Hours</option>
+                                                        <option>07 Hours</option>
+                                                        <option>08 Hours</option>
+                                                        <option>09 Hours</option>
+                                                        <option>10 Hours</option>
+                                                        <option>11 Hours</option>
+                                                        <option>12 Hours</option>
+                                                        <option>13 Hours</option>
+                                                        <option>14 Hours</option>
+                                                        <option>15 Hours</option>
+                                                        <option>16 Hours</option>
+                                                        <option>17 Hours</option>
+                                                        <option>18 Hours</option>
+                                                        <option>19 Hours</option>
+                                                        <option>20 Hours</option>
+                                                        <option>21 Hours</option>
+                                                        <option>22 Hours</option>
+                                                        <option>23 Hours</option>
+                                                    </select>
+                                                </div>
+                                                <div style="margin-right: 10px;">
+                                                    <input type="hidden" />
+                                                    <select style="display:block;height:25px;width:178px;margin-top: 23px;">
+                                                        <option>---</option>
+                                                        <option>00 Minutes</option>
+                                                        <option>01 Minutes</option>
+                                                        <option>02 Minutes</option>
+                                                        <option>03 Minutes</option>
+                                                        <option>04 Minutes</option>
+                                                        <option>05 Minutes</option>
+                                                        <option>06 Minutes</option>
+                                                        <option>07 Minutes</option>
+                                                        <option>08 Minutes</option>
+                                                        <option>09 Minutes</option>
+                                                        <option>10 Minutes</option>
+                                                        <option>11 Minutes</option>
+                                                        <option>12 Minutes</option>
+                                                        <option>13 Minutes</option>
+                                                        <option>14 Minutes</option>
+                                                        <option>15 Minutes</option>
+                                                        <option>16 Minutes</option>
+                                                        <option>17 Minutes</option>
+                                                        <option>18 Minutes</option>
+                                                        <option>19 Minutes</option>
+                                                        <option>20 Minutes</option>
+                                                        <option>21 Minutes</option>
+                                                        <option>22 Minutes</option>
+                                                        <option>23 Minutes</option>
+                                                        <option>24 Minutes</option>
+                                                        <option>25 Minutes</option>
+                                                        <option>26 Minutes</option>
+                                                        <option>27 Minutes</option>
+                                                        <option>28 Minutes</option>
+                                                        <option>29 Minutes</option>
+                                                        <option>30 Minutes</option>
+                                                        <option>31 Minutes</option>
+                                                        <option>32 Minutes</option>
+                                                        <option>33 Minutes</option>
+                                                        <option>34 Minutes</option>
+                                                        <option>35 Minutes</option>
+                                                        <option>36 Minutes</option>
+                                                        <option>37 Minutes</option>
+                                                        <option>38 Minutes</option>
+                                                        <option>39 Minutes</option>
+                                                        <option>40 Minutes</option>
+                                                        <option>41 Minutes</option>
+                                                        <option>42 Minutes</option>
+                                                        <option>43 Minutes</option>
+                                                        <option>44 Minutes</option>
+                                                        <option>45 Minutes</option>
+                                                        <option>46 Minutes</option>
+                                                        <option>47 Minutes</option>
+                                                        <option>48 Minutes</option>
+                                                        <option>49 Minutes</option>
+                                                        <option>50 Minutes</option>
+                                                        <option>51 Minutes</option>
+                                                        <option>52 Minutes</option>
+                                                        <option>53 Minutes</option>
+                                                        <option>54 Minutes</option>
+                                                        <option>55 Minutes</option>
+                                                        <option>56 Minutes</option>
+                                                        <option>57 Minutes</option>
+                                                        <option>58 Minutes</option>
+                                                        <option>59 Minutes</option>
+                                                    </select>
+                                                </div>
+                                </div>
+                                    <div style="margin-bottom:20px;">
+                                        <div>Late to have permission</div>
+                                        <label class="switch">
+                                            <input type="checkbox" checked>
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div>
+                                    <div style="display:grid;">
+                                        <div style="display:flex;">
+                                            <span>Reason for change</span>
+                                            <span style="color:red;">*</span>
+                                        </div>
+                                        <textarea></textarea>
+                                    </div>
+                                <div class="modal-footer">
+                                    <a href="#" style="text-decoration:none;">Take the full time of the shift</a>
+                                    <button type="button" class="btn btn-default" data-dismiss="modal" style="border: none;border-radius: 17px;margin-right: 10px;padding-left: 20px;padding-right: 20px;">Close</button>
+                                    <button type="submit" class="nutchamcong2" style="border:none;padding-left: 20px;padding-right: 20px;"><a href="PublicReview.aspx" style="color:white;text-decoration:none;">Save</a></button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
         </div>
     </div>
 </asp:Content>
