@@ -1,0 +1,44 @@
+﻿.bottom {
+    border-top-style: outset;
+    margin-top: 20px;
+    background-color: #f8f6f6;
+    height: 100px;
+}
+
+.add {
+    margin-top: -30px;
+    margin-left: 370px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: gainsboro;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+th, td {
+    text-align: left;
+    padding: 16px;
+}
+
+.btn-choose {
+    height: 38px;
+    font-size: 14px;
+    border-radius: inherit;
+    background-color: #bdb9b9;
+    color: white;
+}
+
+    .btn-choose:hover {
+        color: white;
+        background-color: darkgray
+    }

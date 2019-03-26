@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="import-list.aspx.cs" Inherits="Employee_import_list" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="import-transfer.aspx.cs" Inherits="Employee_import_transfer" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <link href="../css/Attendance/History.css" rel="stylesheet" />
@@ -12,7 +12,7 @@
             <br />
             <a class="abc tab-content" style="text-decoration:none;" href="KeepingHistory.html"><span><h2 style="cursor:pointer;">Employee</h2></span></a>
             <ul class="nav nav-tabs" style="margin-right:-202px;padding-inline-start: 40px;">
-                <li class="active"><a href="#" style="cursor:pointer;text-decoration:none;">Import employee list</a></li>
+                <li class="active"><a href="#" style="cursor:pointer;text-decoration:none;">Import </a></li>
             </ul>
             <br>
         </div>
@@ -45,79 +45,33 @@
                     <div class="tool">
                         <a onclick="myFunction()" href="#" data-toggle="tooltip" title="Note the value for some data columns that appear in the Excel file to import" style="text-decoration:none;"> >>See the data column notes for the sample file ..</a>
                             <div id="myDIV" style="display: none;">
-                            <table style=" color:#4e4b4b; width:178%; display:table">
-                                <tr>
-                                    <td>FULL NAME</td>
-                                    <td>Name</td>
-                                </tr>
-                                <tr>
-                                    <td>GENDER</td>
-                                    <td>
-                                        <div>
-                                            <label style="background:none; width:150px">0</label>
-                                            <span>:</span>
-                                            <label class="label" style="background-color:#1b1c1d; color:white">
-                                                Unknown
-                                            </label>
-                                        </div>
-                                        <div>
-                                            <label style="background:none; width:150px">1</label>
-                                            <span>:</span>
-                                            <label class="label" style="background-color:#1b1c1d; color:white">
-                                                Female
-                                            </label>
-                                        </div>
-                                        <div>
-                                            <label style="background:none; width:150px">2</label>
-                                            <span>:</span>
-                                            <label class="label" style="background-color:#1b1c1d; color:white">
-                                                Male
-                                            </label>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>EMAIL</td>
-                                    <td>Email</td>
-                                </tr>
-                                <tr>
-                                    <td>PASSWORD</td>
-                                    <td>Password</td>
-                                </tr>
-                                <tr>
-                                    <td>JOB_TITLE</td>
-                                    <td>Position</td>
-                                </tr>
-                                <tr>
-                                    <td>Department</td>
-                                    <td>
-                                        <div>
-                                            <label style="background:none; width:100px">6010</label>
-                                            <span>:</span>
-                                            <label class="label" style="background-color:#ac725e; color:white">
-                                                abc
-                                            </label>
-                                        </div>
-                                        <div>
-                                            <label style="background:none; width:100px">6011</label>
-                                            <span>:</span>
-                                            <label class="label" style="background-color:#ac725e; color:white">
-                                                aa
-                                            </label>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>OFFICE_ID</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>PHONE</td>
-                                    <td>Phone</td>
-                                </tr>
+                                     <table style=" color:#4e4b4b; width:178%;">
+                                        <tr>
+                                            <td>Department</td>
+                                            <td>
+                                                <div>
+                                                    <label style="background:none; width:100px">6010</label>
+                                                    <span>:</span>
+                                                    <label class="label" style="background-color:#ac725e; color:white">
+                                                        abc
+                                                    </label>
+                                                </div>
+                                                <div>
+                                                    <label style="background:none; width:100px">6011</label>
+                                                    <span>:</span>
+                                                    <label class="label" style="background-color:#ac725e; color:white">
+                                                        aa
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>PHONE</td>
+                                            <td>Phone</td>
+                                        </tr>
 
-                            </table>
-                        </div>
+                                    </table>
+                                </div>
                     </div>
                 </div>
             </div>
@@ -178,6 +132,8 @@
             }
         }
     </script>
+
+
 
 
 </asp:Content>
