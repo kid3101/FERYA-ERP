@@ -1,8 +1,8 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="list-point-employee.aspx.cs" Inherits="Employee_list_point_employee" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="search-point-employee.aspx.cs" Inherits="Employee_search_point_employee" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    <link href="../css/Attendance/SearchKeepingHistory.css" rel="stylesheet" />
 
-    <link href="../css/Attendance/History.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
@@ -159,6 +159,17 @@
         </div>
         <br>
     </div>
+    <div style="margin-top: 20px;margin-left: 6px;">
+        <span class="aa">
+            <span>
+                <span>Employee:</span>
+                <strong>Thong Huyen Trang</strong>
+            </span>
+            <span class="closee">
+                <a href="list-point-employee.aspx" class="closee"><i class="fa fa-times" title="Remove this condition"></i></a>
+            </span>
+        </span>
+    </div>
         <div class="table">
             <table id="employeetable" style="margin:0;" class="table">
                 <thead>
@@ -174,22 +185,7 @@
                         <th class="clo">DATE CREATED</th>
                         <th></th>
                     </tr>
-                    <tr>
-                        <td>
-                            <a href="detailt-point-employee.aspx">470707</a>
-                        </td>
-                        <td> a </td>
-                        <td>dsd</td>
-                        <td>sas</td>
-                        <td>Good</td>
-                        <td>10</td>
-                        <td> <label style="background-color:#93ef93;">Effective</label></td>
-                        <td> Thong Huyen Trang</td>
-                        <td>14:06, Today</td>
-                        <td>
-                            <a href="upload-point-employee.aspx"class="edit" title="Click here to update data">EDIT</a>
-                        </td>
-                    </tr>
+                    
                 </thead>
             </table>
         </div>
@@ -236,5 +232,6 @@
 
         </div>
     </div>
+
 </asp:Content>
 

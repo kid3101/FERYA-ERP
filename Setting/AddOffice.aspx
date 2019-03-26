@@ -81,7 +81,7 @@
                                     </tr>
                                     <tr>
                                         <td colspan="2" style="text-align:center;padding-top: 17px;">
-                                            <a href="#">Closed</a>
+                                            <a href="#" style="text-decoration:none;">Closed</a>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -665,7 +665,7 @@
                                 <div class="col-sm-9">
                                     <div style="display:flex;margin-bottom: 30px;">
                                         <div style="margin-right: 10px;">
-                                            <span>Tên</span>
+                                            <span>Name</span>
                                             <span style="color:red;">*</span>
                                             <input style="display:block;height:25px" type="text" />
                                         </div>
