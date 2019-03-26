@@ -36,7 +36,7 @@
                               
                                 <td>
 
-                                    <a href="/project/create-wiki.aspx"><i style="width: 25px" class="fas fa-book-open"></i></a>
+                                    <a href="/project/add-post.aspx"><i style="width: 25px" class="fas fa-book-open"></i></a>
                             
                                     <a href="/project/list-post.aspx"><i style="width: 25px" class="fas fa-exclamation-circle"></i></a>
                                             <a href=" /project/edit-post.aspx"><i style="width: 25px" class="fas fa-pen"></i></a>

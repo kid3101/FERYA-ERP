@@ -11,7 +11,7 @@
 
     <div class="container-fluid">
         <!-- Page Heading -->
-        <h1 class="h3 mb-4 text-gray-800">Wiki-Document</h1>
+        <h1 class="h3 mb-4 text-gray-800">Add Manage Post</h1>
         <div style="float: right">
             <a href="#" data-toggle="modal" data-target="#myModal" style="color: black;"><i class="fas fa-cog"></i><span>Setting</span></a>
             <a href="#" style="color: black"><i class="far fa-edit"></i><span>Manager Post</span></a>
