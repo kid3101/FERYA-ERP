@@ -1,10 +1,10 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="History.aspx.cs" Inherits="Attendance_History" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="SearchEmployeeGradingCriteria.aspx.cs" Inherits="Setting_SearchEmployeeGradingCriteria" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Timekeeping history</title>
+    <title>Personnel settings -> Employee grading criteria</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.7 -->
@@ -40,29 +40,25 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
-    <link href="../css/Attendance/History.css" rel="stylesheet" />
-
-    <script src="../js/History/History.js"></script>
+    <link href="../css/Setting/SearchGrading.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-     <div class="container-fluid" style="width: 100%;height: 119px;background-color:#eee;margin-top: -23px;
-">
+     <div class="container-fluid" style="margin-top:-23px;width: 100%;height: 119px;background-color:#eee;">
         <div style="line-height: 1;display: inline-block;margin-left: 40px;vertical-align: middle;">
-            <a class="abc tab-content" style="text-decoration:none;" href="#"><span><h2 style="cursor:pointer;">History</h2></span></a>
+            <a class="abc tab-content" href="#" style="text-decoration:none;"><span><h2 style="cursor:pointer;">Install personnel <span><i style="padding-left: 20px;color: black;padding-right: 20px;" class="fa fa-angle-right"></i></span><a href="#" style="color:black;text-decoration:none;">Employee grading criteria</a></h2></span></a>
         </div>
-        <ul class="nav nav-tabs" style="margin-block-start: 1em;padding-inline-start: 40px;position: absolute;padding-top: 32px;">
+        <ul class="nav nav-tabs" style=" margin-block-start: 1em;padding-inline-start: 40px;margin-top: 48px;">
             <li class="active" style="margin-right: 20px;">
                 <a data-toggle="tab" href="#" style="cursor:pointer;text-decoration:none;">
                     <span style="color:black;">All</span>
-                    <span class="number">0</span>
+                    <span class="number">1</span>
                 </a>
             </li>
             <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" style="padding-right: 30px;color:black;cursor:pointer;" title="Turn on / off the search function">Filter & search ...</a>
-                <ul class="dropdown-menu filterbarfull filterbar" style="top: 0px;transform: translate3d(0px, 26px, 0px);width: 354px;margin-top: 185px;">
+                <ul class="dropdown-menu filterbarfull filterbar" style="top: 41.1146px;left: -2.319px;">
                     <li>
                         <form class="ui form">
                             <table width="100%" cellpadding="10">
@@ -70,7 +66,17 @@
                                     <tr>
                                         <td>
                                             <label>
-                                                <span style="margin-right:10px;">Status</span>
+                                                <span style="padding-right: 7px;">Key word</span>
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <input type="text" style="border-radius: 6px;height: 36px;width: 100%;margin-bottom: 15px;" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label>
+                                                <span style="padding-right: 7px;">Status:</span>
                                             </label>
                                         </td>
                                         <td>
@@ -89,7 +95,7 @@
                                     <tr>
                                         <td>
                                             <label>
-                                                <span style="margin-right:10px;">Headquarters</span>
+                                                <span style="padding-right: 7px;">Headquarters:</span>
                                             </label>
                                         </td>
                                         <td>
@@ -103,20 +109,21 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                            <label>
-                                                <span style="margin-right:10px;">Date</span>
+                                            <label style="padding-right: 7px;">
+                                                <span>Date:</span>
                                             </label>
                                         </td>
                                         <td>
-                                            <div>
-                                                <input style="height: 31px;width: 221px;border-radius: 6px;margin-bottom: 12px;margin-left: 3px;border-style: groove;" />
-
+                                            <div class="text" style="cursor:pointer;">
+                                                <select class="form-control" style="cursor:pointer;border-radius: 7px;">
+                                                    <option>-----</option>
+                                                </select>
                                             </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td colspan="2">
-                                            <button class="timkiem"><a href="SearchKeepingHistory.aspx" style="color:white;text-decoration:none;">Search</a></button>
+                                            <button style="margin-top:20px;text-decoration:none;" class="timkiem">Search</button>
                                         </td>
                                     </tr>
                                     <tr>
@@ -132,34 +139,18 @@
                 </ul>
             </li>
         </ul>
-        <div class="container-fluid" style="margin-top: -34px;margin-left: 453px;">
-            <div class="container" style="float:left;">
-
-                <div class="dropdown" style="position: relative;display: inline-block;">
-
-                    <a class="ls dropdown-toggle" title="For management" style="margin-left: -10px;background-color: #eee;border-color: #eee;" data-toggle="dropdown"><i class="fa fa-cog"></i> For management</a>
-
-                    <ul class="dropdown-menu " role="menu" aria-labelledby="menu1" style="width: 200px;">
-                        <li  role="presentation" style="margin-bottom: 10px;margin-left: 10px;"><a role="menuitem" tabindex="-1" href="../Employee/employee.aspx" style="color: black;text-decoration:none;"><i class="fa fa-calendar"></i> Schedule work schedule</a></li>
-                        <li role="presentation" style="margin-bottom: 10px;margin-left: 10px;"><a role="menuitem" tabindex="-1" href="SwitchShift.aspx" style="color: black;text-decoration:none;"><i class="fa fa-sync"></i> Switch shift</a></li>
-                        <li role="presentation" style="margin-bottom: 10px;margin-left: 10px;"><a role="menuitem" tabindex="-1" href="HourlyReport.aspx" style="color: black;text-decoration:none;"><i class="fa fa-chart-bar"></i> Report</a></li>
-                        <li role="presentation" style="margin-bottom: 10px;margin-left: 10px;"><a role="menuitem" tabindex="-1" href="ExportExcel.aspx" style="color: black;text-decoration:none;"><i class="fa fa-download"></i> Export excel</a></li>
-                        <li role="presentation" style="margin-bottom: 10px;margin-left: 10px;"><a role="menuitem" tabindex="-1" href="PublicReview.aspx" style="color: black;text-decoration:none;"><i class="fa fa-check-circle"></i> Browse public</a></li>
-                    </ul>
-                </div>
-
-                <a class="ls" style="margin-left: 15px;text-decoration:none;" href="WorkingPlan.aspx""><i class="fa fa-calendar"></i> Calendar</a>
-                <a class="maychamcong" data-toggle="tooltip" href="Timekeeper.aspx"" title="Allowing attendance for other employees or accessing from timekeeping equipment" style="color:white;margin-left: 15px;padding-left: 20px;padding-right: 20px;text-decoration:none;"><i class="fa fa-desktop"></i> TIMEKEEPER</a>
-                <a class="nutchamcong" data-toggle="tooltip" href="TimeKeeping.aspx" title="Timekeeping" style="color:white;margin-left: 15px;padding-left: 20px;padding-right: 20px;text-decoration:none;"><i class="fa fa-plus-circle"></i> TIMEKEEPING</a>
+         <div class="container-fluid" style="margin-top: -82px;margin-left: 505px;">
+            <div class="container" style="float:left;display: inline-flex;padding-left: 242px;">
+                <a href="AddNewEmployeeGradingCriteria.aspx" class="nutchamcong" data-toggle="tooltip" title="Create criteria for employee grading" style="color:white;text-decoration:none;"><i class="fa fa-plus"></i> CREATE CRITERIA FOR EMPLOYEE POINTS</a>
             </div>
-            <div class="container" style="display: inline-flex;padding-left: 320px; padding-top: 20px;">
+            <div class="container" style="display: inline-flex;padding-left: 320px;">
                 <a href="#" style="height: 20px;width: 20px;color: #555;"><i class="fa fa-chevron-left"></i></a>
                 <div style="margin-right: 6px;">
                     <a href="#" style="color:#555;text-decoration:none;">
                         <span>Page</span>
-                        <span>0</span>
+                        <span>1</span>
                         <span>/</span>
-                        <span>0</span>
+                        <span>1</span>
                     </a>
                 </div>
                 <a href="#" style="height: 48px;width: 48px;color: #555;"><i class="fa fa-chevron-right"></i></a>
@@ -167,30 +158,52 @@
         </div>
         <br>
     </div>
-    <div class="table-responsive">
-        <div>
-            <table class="table" style="width:100%; color:grey;margin-top: 20px;">
+
+    <div>
+        <div style="margin-top: 20px;margin-left: 6px;">
+            <span class="aa">
+                <span>
+                    <span>Key word</span>
+                    <span>:</span>
+                    <strong>de</strong>
+                </span>
+                <span class="closee">
+                    <a href="EmployeeGradingCriteria2.aspx" style="text-decoration:none;" class="closee"><i class="fa fa-times" title="Remove this condition"></i></a>
+                </span>
+            </span>
+        </div>
+        <div class="table-responsive">
+            <table style="width: 98%;margin-left: 20px;margin-top: 25px;" class="table table-hover">
                 <thead>
                     <tr>
-                        <th style="color:black;">SID</th>
-                        <th rowspan="2">DATE</th>
-                        <th>HEADQUARTERS</th>
-                        <th>SHIFT</th>
-                        <th>TIME</th>
-                        <th>TIME</th>
-                        <th>COEFFICIENT</th>
-                        <th>OT</th>
-                        <th>ON LATE (CP)</th>
-                        <th>EARLY OUT (CP)</th>
+                        <th>SID</th>
+                        <th rowspan="2">CRITERIA NAME</th>
+                        <th>CLASSIFY</th>
+                        <th>ORDER SHOWING</th>
+                        <th>POINT</th>
                         <th>STATUS</th>
-                        <th>CONFIRMER</th>
+                        <th>CREATOR</th>
+                        <th>DATE CREATED</th>
+                        <th></th>
                     </tr>
                 </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>de</td>
+                        <td>Good</td>
+                        <td>379</td>
+                        <td>10</td>
+                        <td>sds</td>
+                        <td>sds</td>
+                        <td>sd</td>
+                        <td style="float:right;">
+                            <a href="EditEmployeeGradingCriteria.aspx" title="Click here to update data" style="margin-left:20px;text-decoration:none;">Edit</a>
+                        </td>
+                    </tr>
+                </tbody>
             </table>
-
         </div>
     </div>
-
-    
 </asp:Content>
 
