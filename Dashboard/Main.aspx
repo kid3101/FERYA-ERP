@@ -77,10 +77,10 @@
             <a class="nutchamcong" href="/Attendance/Attendant.aspx" style="color:white;margin-left: 15px;text-decoration:none;"><i class="fa fa-plus"></i><span style="padding-left: 24px;padding-right: 24px;font-size: 22px;">Timekeeping</span></a>
         </div>
         <div style="text-align: center;margin-top: 20px;margin-left: -45px">
-            <a class="nut" href="#" style="color:white;margin-left: 15px;text-decoration:none;"><i class="fa fa-envelope"></i><span style="padding-left: 50px;padding-right: 50px;font-size: 22px;">Mailing</span></a>
+            <a class="nut" href="../Mailbox/mail-box.aspx" style="color:white;margin-left: 15px;text-decoration:none;"><i class="fa fa-envelope"></i><span style="padding-left: 50px;padding-right: 50px;font-size: 22px;">Mailing</span></a>
         </div>
         <div style="text-align: center;margin-top: 20px;margin-left: -45px">
-            <a class="nut" href="#" style="color:white;margin-left: 15px;text-decoration:none;"><i class="fa fa-briefcase"></i><span style="padding-left: 14px;padding-right: 14px;font-size: 22px;">See the project</span></a>
+            <a class="nut" href="../project/project-list.aspx" style="color:white;margin-left: 15px;text-decoration:none;"><i class="fa fa-briefcase"></i><span style="padding-left: 14px;padding-right: 14px;font-size: 22px;">See the project</span></a>
         </div>
     </div>
 
