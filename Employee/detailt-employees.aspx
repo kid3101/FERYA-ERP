@@ -6,22 +6,19 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-           <div class="headered" style="display:flex;margin:10px">
-          <div class="lefted" style="width:25%; color:black">
-              <h2>Employee</h2>
-          </div>
-         
-      </div>
-      <div class="container">
-          <ul class="nav nav-tabs">
-            <li class="active">
-                <a data-toggle="tab" href="#" style="cursor:pointer;">
-                    <span style="color:black;">Upload</span>
-                </a>
-            </li>
-          </ul>
+           <div class="heading">
+            <div class="container">
+                <h3 class="title"> Employee</h3>
+                <ul class="nav nav-tabs" style="display:block; list-style-type:disc; ">
+                    <li class="active">
+                        <a data-toggle="tab" href="#" style="cursor:pointer;">
+                            <span style="color:black;"> Detail</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    <div class="segment">
+        <div class="segment">
             <form class="ui form">
                 <div class="top" style="margin-top:10px;">
                     <div class="left" style="width:25%;">
@@ -50,7 +47,7 @@
                 </div>
             </form>
         </div>
-    <div class="w3-container">
+        <div class="w3-container">
 
             <div class="w3-row">
                 <a href="javascript:void(0)" onclick="openCity(event, 'Curriculum');">
@@ -523,18 +520,7 @@
                 </div>
             </div>
         </div>
-
-            </div>
-
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-
     </div>
-
- 
 
     <div class="modal fade" id="myModal" role="dialog">
         <div class="modal-dialog">

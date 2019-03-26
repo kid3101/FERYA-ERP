@@ -155,8 +155,19 @@
         </ul>
         <div class="container-fluid" style="margin-top: -34px;margin-left: 450px;">
             <div class="container" style="float:left; margin-left:250px">
-                <a class="ls" style="margin-left: 15px;text-decoration:none;" title="Waiting for you to browse"><i class="fas fa-cloud-upload-alt"></i> Import</a>
-                
+
+                <div class="dropdown" style="position: relative;display: inline-block;">
+
+                    <a class="ls dropdown-toggle" title="For management" style="margin-left: -10px;background-color: #eee;border-color: #eee;" data-toggle="dropdown"><i class="fas fa-cloud-upload-alt"></i> Import</a>
+
+                    <ul class="dropdown-menu " role="menu" aria-labelledby="menu1" style="width: 200px;">
+                        <li  role="presentation" style="margin-bottom: 10px;margin-left: 10px;"><a role="menuitem" tabindex="-1" href="import-list.aspx" style="color: black;text-decoration:none;"><i class="fas fa-cloud-upload-alt"></i> Import employee list</a></li>
+                        <li role="presentation" style="margin-bottom: 10px;margin-left: 10px;"><a role="menuitem" tabindex="-1" href="import-vitae.aspx" style="color: black;text-decoration:none;"<i class="fas fa-cloud-upload-alt"></i> Import curriculum vitae</a></li>
+                        <li role="presentation" style="margin-bottom: 10px;margin-left: 10px;"><a role="menuitem" tabindex="-1" href="import-transfer.aspx" style="color: black;text-decoration:none;"><i class="fas fa-cloud-upload-alt"></i> Import work transfer</a></li>
+                    </ul>
+                </div>
+
+               
                 <a class="nutchamcong"  href="add-employees.aspx" title="Create a new leave application" style="color:white;margin-left: 15px;padding-left: 20px;padding-right: 20px;text-decoration:none;" > <i class="fas fa-plus-square"></i> ADD NEW STAFF</a>
             </div>
             <div class="container" style="display: inline-flex;padding-left: 500px; padding-top: 20px;">
