@@ -187,7 +187,8 @@
             <a class="collapse-item" href="/Setting/Office.aspx">Office</a>
             <a class="collapse-item" href="/Setting/Derpartment.aspx">Derpartment</a>
             <a class="collapse-item" href="/Setting/AccessRight.aspx">Access Right</a>
-              <a class="collapse-item" href="/Setting/GroupOfEmployees.aspx">Group Of Employees</a>
+            <a class="collapse-item" href="/Setting/GroupOfEmployees.aspx">Group Of Employees</a>
+             <a class="collapse-item" href="/Setting/EmployeeGradingCriteria.aspx">Employee Grading</a>
           </div>
         </div>
       </li>
