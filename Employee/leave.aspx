@@ -1,65 +1,51 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="leave.aspx.cs" Inherits="Employee_leave" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+     <link href="../css/Attendance/History.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-    <div class="headered" style="display:flex;margin:10px">
-          <div class="lefted" style="width:30%; color:black">
-              <h2> Please take leave</h2>
-          </div>
-          <div class="righted" style="margin-top: 12px;width: 100%;">
-              <div class="icon" style="text-align: right; margin-bottom:10px">
-                  <div class="imported" style="margin-right: 400px;">
-                     <span class="time">
-                            <a  href="#"  class="cog" style="text-decoration:none;">
-                                <i class="fa fa-cog"></i> Setting </a>
-                             <a   class="cog" style="text-decoration:none ;" href="browser-leave.aspx">
-                                <i class="fa fa-clock"></i> Wait for you to browse </a>
-                    </span>
-                           
-                  </div>
-                  <div class="added" style=" margin-top: -35px;">
-                    <a class="btn asc" style="margin-left:100px;" href="add-leave.aspx">
-                       <i class="fa fa-plus-circle"></i>
-                            CREATE A NEW LICENSE APPLICATION
-                    </a>
-                  </div>
-              </div>
-              <div class="paged" style="display: inline-flex; margin-left: 700px;cursor: pointer;">
-                    <a href="#" style="height:20px; width:20px; color:#555;">
-                        <i class="fa fa-angle-left"></i>
-                    </a>
-                    <div style="margin-left:7px;">
-                        <a style="display:block; text-decoration: none; color:#555; ">
-                            <span>Page</span>
-                            <span>0</span>
-                            <span class="total">
-                                <span>/</span>
-                                <span>0</span>
-                            </span>
-                        </a>
-                    </div>
-                    <a href="#" style="height:15px; color:#555; margin-left: 20px;">
-                        <i class="fa fa-angle-right"></i>
-                    </a>
-                </div>
-          </div>
-      </div>
-    <div class="container">
-          <ul class="nav nav-tabs">
-            <li class="active">
-                <a data-toggle="tab" href="#" style="cursor:pointer;">
+    <div class="container-fluid" style="width: 100%;height: 119px;background-color:#eee;margin-top: -23px;">
+        <div style="line-height: 1;display: inline-block;margin-left: 40px;vertical-align: middle;">
+            <a class="abc tab-content" style="text-decoration:none;" href="#"><span><h2 style="cursor:pointer;"> Please take leave</h2></span></a>
+        </div>
+        <ul class="nav nav-tabs" style="margin-block-start: 1em;padding-inline-start: 40px;position: absolute;padding-top: 32px;">
+            <li class="active" style="margin-right: 20px;">
+                <a data-toggle="tab" href="#" style="cursor:pointer;text-decoration:none;">
                     <span style="color:black;">All</span>
                     <span class="number">0</span>
                 </a>
             </li>
             <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" style="" title="Turn on / off the search function">Filter & search ...</a>
-             </li>
-             </ul>
+                <a  style="padding-right: 30px;color:black;cursor:pointer;" title="Turn on / off the search function">Filter & search ...</a>
+                
+            </li>
+        </ul>
+        <div class="container-fluid" style="margin-top: -34px;margin-left: 380px;">
+            <div class="container" style="float:left;">
+                <a class="ls" style="margin-left: 15px;text-decoration:none;" href="#"><i class="fa fa-cog"></i> Setting</a>
+                <a class="ls" style="margin-left: 15px;text-decoration:none;" title="Waiting for you to browse" href="browser-leave.aspx"><i class="fa fa-clock"></i> Wait for you to browse </a>
+                
+                <a class="nutchamcong"  href="add-leave.aspx" title="Create a new leave application" style="color:white;margin-left: 15px;padding-left: 20px;padding-right: 20px;text-decoration:none;" > <i class="fa fa-plus-circle"></i>CREATE A NEW LICENSE APPLICATION</a>
+            </div>
+            <div class="container" style="display: inline-flex;padding-left: 500px; padding-top: 20px;">
+                <a href="#" style="height: 20px;width: 20px;color: #555;"><i class="fa fa-chevron-left"></i></a>
+                <div style="margin-right: 6px;">
+                    <a href="#" style="color:#555;text-decoration:none;">
+                        <span>Page</span>
+                        <span>0</span>
+                        <span>/</span>
+                        <span>0</span>
+                    </a>
+                </div>
+                <a href="#" style="height: 48px;width: 48px;color: #555;"><i class="fa fa-chevron-right"></i></a>
+            </div>
         </div>
-        <div class="segment" style="display: block; min-height: 558px;">
+        <br>
+    </div>
+
+
+        <div class="segment" style="display: block; min-height: 558px; margin-top:30px">
             <div class="zerodata">
                 <div>
                     <div class="zerodataimage">
@@ -67,8 +53,8 @@
                     </div>
                     <h3 style="color: darkgray; font-size:30px;">No application for leave yet.</h3>
                     <p style="color: darkgray;">Create your first leave application by pressing the button below.</p>
-                     <div class="zerodatabutton">
-                        <a class="btn them" href="add-leave.aspx">
+                     <div class="zerodatabutton" >
+                        <a class="btn them" href="add-leave.aspx" style="background-color: gainsboro;border-radius: 10px;">
                             Add new
                         </a>
                     </div>

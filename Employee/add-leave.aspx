@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="add-leave.aspx.cs" Inherits="Employee_add_leave" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    <link href="../css/employee.css/add-point-employee.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
@@ -97,7 +98,7 @@
                             </span>
                         </p>
                     </div>
-                    <div class="add" style=" margin-top: -40px; margin-left: 400px;">
+                    <div class="add" style=" margin-top: -40px; margin-left: 100px;">
                         <a href="list-leave.aspx" class="addnew" style="text-decoration:none" >
                             MORE
                         </a>

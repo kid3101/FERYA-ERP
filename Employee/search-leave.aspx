@@ -1,8 +1,9 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="browser-leave.aspx.cs" Inherits="Employee_browser_leave" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="search-leave.aspx.cs" Inherits="Employee_search_leave" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
      <link href="../css/Attendance/History.css" rel="stylesheet" />
     <link href="../css/employee.css/list-point-employee.css" rel="stylesheet" />
+     <link href="../css/Attendance/SearchKeepingHistory.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
@@ -106,6 +107,19 @@
         </div>
         <br>
     </div>
+
+    <div style="margin-top: 20px;margin-left: 6px;">
+        <span class="aa">
+            <span>
+                <span>Employee:</span>
+                <strong>Thong Huyen Trang</strong>
+            </span>
+            <span class="closee">
+                <a href="list-leave.aspx" class="closee"><i class="fa fa-times" title="Remove this condition"></i></a>
+            </span>
+        </span>
+    </div>
+
     <div style="padding-top: 0px; padding-bottom: 0px; display: block; min-height: 724px;" class="ui segment tc-scrolled">
             <table id="employeetable" style="margin:0;" class="table">
                 <thead>
@@ -113,21 +127,11 @@
                         <th>
                             <a class="sortable" style="text-decoration:none; cursor: pointer; color:black;">SID</a>
                         </th>
-                        <th></th>
-                        <th class="clo">
-                            EMPLOYEES
-                        </th>
-                        <th class="clo">
-                            REASON
-                        </th>
-                        <th class="clo">TIME</th>
-                        <th class="clo">ROUND 1</th>
-                        <th class="clo">ROUND 2</th>
-                        <th class="clo">ROUND 3</th>
-                        <th class="clo">STATUS</th>
-                        <th class="clo">
-                            DATE CREATED
-                        </th>
+                        <th class="clo">NHÂN VIÊN</th>	
+                        <th class="clo">LÝ DO	</th>
+                        <th class="clo">THỜI GIAN	</th>
+                        <th class="clo">TRẠNG THÁI	</th>
+                        <th class="clo">NGÀY TẠO</th>
                         <th></th>
                     </tr>
                 </thead>
@@ -139,4 +143,3 @@
 
 
 </asp:Content>
-
