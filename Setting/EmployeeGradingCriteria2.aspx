@@ -123,7 +123,7 @@
                                     </tr>
                                     <tr>
                                         <td colspan="2">
-                                            <button style="margin-top:20px;" class="timkiem"><a href="SearchEmployeeGradingCriteria.aspx" style="color:white;">Search</a></button>
+                                            <button style="margin-top:20px;" class="timkiem"><a href="SearchEmployeeGradingCriteria.aspx" style="color:white;text-decoration:none;">Search</a></button>
                                         </td>
                                     </tr>
                                     <tr>

@@ -3,6 +3,8 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 
     <link href="../css/Attendance/History.css" rel="stylesheet" />
+     <link href="../css/Attendance/Payroll.css" rel="stylesheet" />
+    <link href="../css/employee.css/list-point-employee.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
@@ -14,7 +16,7 @@
             <li class="active" style="margin-right: 20px;">
                 <a data-toggle="tab" href="#" style="cursor:pointer;text-decoration:none;">
                     <span style="color:black;">All</span>
-                    <span class="number">0</span>
+                    <span class="number">1</span>
                 </a>
             </li>
             <li class="dropdown">
@@ -149,9 +151,9 @@
                 <div style="margin-right: 6px;">
                     <a href="#" style="color:#555;text-decoration:none;">
                         <span>Page</span>
-                        <span>0</span>
+                        <span>1</span>
                         <span>/</span>
-                        <span>0</span>
+                        <span>1</span>
                     </a>
                 </div>
                 <a href="#" style="height: 48px;width: 48px;color: #555;"><i class="fa fa-chevron-right"></i></a>
@@ -229,8 +231,8 @@
 
                 </div>
                 <div class="modal-footer">
-                    <a class="btn btn-default" data-dismiss="modal">Close</a>
-                    <a class="btn bg-teal-active" style="margin-left:10px; text-decoration:none;">Download the excel file</a>
+                    <button type="button" class="btn btn-default" data-dismiss="modal" style="border: none;border-radius: 17px;margin-right: 10px;padding-left: 20px;padding-right: 20px;">Close</button>
+                    <button type="submit" class="nutchamcong2" style="border:none;padding-left: 20px;padding-right: 20px;"><a href="File.html" style="color:white;text-decoration:none;">Download the Excel file</a></button>
                 </div>
             </div>
 

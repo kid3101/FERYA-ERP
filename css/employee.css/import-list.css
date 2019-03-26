@@ -1,0 +1,31 @@
+﻿tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: gainsboro;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            width: 100%;
+            border: 1px solid #ddd;
+        }
+
+th, td {
+    text-align: left;
+    padding: 16px;
+}
+
+.btn-choose:hover {
+    background: #beb9b9;
+}
+
+.btn-choose {
+    height: 34px;
+    font-size: 15px;
+    border-radius: inherit;
+    background: #E0E1E2;
+    color: #121010
+}

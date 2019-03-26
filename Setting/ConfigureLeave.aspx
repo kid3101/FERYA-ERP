@@ -1,10 +1,10 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="EditEmployeeGradingCriteria.aspx.cs" Inherits="Setting_EditEmployeeGradingCriteria" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="ConfigureLeave.aspx.cs" Inherits="Setting_ConfigureLeave" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Install personnel -> Employee</title>
+    <title>Personnel settings → Vacation configuration</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.7 -->
@@ -42,81 +42,74 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <link href="../css/Setting/EditGrading.css" rel="stylesheet" />
+    <link href="../css/Setting/CofnigureLeave.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <div class="container" style="margin-top:-23px;background-color: #eee;height: 95px;width: 100%;">
-        <div style="margin-bottom: -11px;margin-top: -20px;">
-            <br />
-            <a class="abc tab-content" href="EmployeeGradingCriteria2.aspx" style="text-decoration:none;"><span><h2 style="cursor:pointer;">Employee grading criteria</h2></span></a>
-            <ul class="nav nav-tabs" style="margin-right:-202px;padding-inline-start: 40px;
-">
-                <li class="active"><a href="#" style="cursor:pointer;height: 44px;">Update</a></li>
-            </ul>
-            <br>
+    <div class="container-fluid" style="margin-top:-23px;width: 100%;height: 89px;background-color:#eee;">
+        <div style="line-height: 1;display: inline-block;margin-left: 40px;vertical-align: middle;">
+            <a class="abc tab-content" href="#" style="text-decoration:none;"><span><h2 style="cursor:pointer;">Install personnel <span><i style="padding-left: 20px;color: black;padding-right: 20px;" class="fa fa-angle-right"></i></span><a href="#" style="color:black;text-decoration:none;">Configure leave</a></h2></span></a>
         </div>
+
+        <div class="container-fluid" style="margin-top: -34px;margin-left: 791px;">
+
+
+        </div>
+        <br>
     </div>
     <div style="margin-top:20px;">
-        <div class="row content" style="margin-left: 20px;">
+        <div class="row content" style="margin-left:20px;">
             <div class="col-sm-3">
-                <h3>Criteria Information</h3>
-                <p>Details Information Criteria</p>
+                <h3>Setting</h3>
+                <p>Set time off, approver</p>
             </div>
             <div class="col-sm-9">
                 <form>
                     <div class="form-group">
-                        <div>
-                            <label for="email">Name of criteria</label>
-                            <span style="color:red;">*</span>
-                            <input type="text" class="form-control" style="width:  30%;;">
+                        <div style="display:flex;margin-bottom: 40px;">
+                            <label for="email" style="padding-top: 7px;padding-right: 55px;">Number of hours / holidays </label>
+                            <input class="form-control" value="0" style="width:30%;" />
                         </div>
                     </div>
                     <div class="form-group">
-                        <div>
-                            <label for="email">Classify</label>
-                            <span style="color:red;">*</span>
+                        <div style="display:flex;margin-bottom: 40px;">
+                            <label for="email" style="padding-top: 7px;padding-right: 41px;">Who approved the first round</label>
                             <br />
                             <select style="width:30%;height:35px;">
-                                <option>Good</option>
-                                <option>Bad</option>
+                                <option>Not configured</option>
+                                <option>Manager</option>
+                                <option>Store manager</option>
                             </select>
                         </div>
                     </div>
                     <div class="form-group">
-                        <div>
-                            <label for="email">Point evaluation</label>
-                            <span style="color:red;">*</span>
-                            <input type="text" class="form-control" style="width:  30%;;">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div>
-                            <label for="email">Display order</label>
-                            <input type="number" class="form-control" style="width:  30%;;">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div>
-                            <label for="email">Status</label>
+                        <div style="display:flex;margin-bottom: 40px;">
+                            <label for="email" style="padding-top: 7px;padding-right: 17px;">Who approved the second round </label>
                             <br />
                             <select style="width:30%;height:35px;">
-                                <option>Effective</option>
-                                <option>Disabled</option>
+                                <option>Not configured</option>
+                                <option>Manager</option>
+                                <option>Store manager</option>
                             </select>
                         </div>
                     </div>
-
+                    <div class="form-group">
+                        <div style="display:flex;margin-bottom: 40px;">
+                            <label for="email" style="padding-top: 7px;padding-right: 44px;">Who approved the 3rd round</label>
+                            <br />
+                            <select style="width:30%;height:35px;">
+                                <option>Not configured</option>
+                                <option>Manager</option>
+                                <option>Store manager</option>
+                            </select>
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>
-        <div style="background-color:#eee;width:100%;height:80px;margin-top: -3px;display:flex;">
-            <div class="col-sm-4 sidenav" style="margin-top:20px;">
-                <span>*: Obligatory</span>
-            </div>
-
+        <div style="background-color:#eee;width:100%;height:80px;margin-top: -3px;">
             <div class="col-sm-4" style="text-align:center;">
                 <div style="margin-top:25px;">
-                    <button class="nutchamcong" style="width: 30%;border: none;margin-left: -399px;"><a href="EmployeeGradingCriteria2.aspx" style="color:white;text-decoration:none;"> SAVE</a></button>
+                    <button class="nutchamcong" style="width: 30%;border: none;margin-left: 300px;margin-top: 20px;"> SAVE</button>
                 </div>
             </div>
 

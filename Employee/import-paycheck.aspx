@@ -21,7 +21,7 @@
         </div>
         <div class="segment">
             <form class="ui form">
-                <div class="fields" style="margin-top:10px;">
+                <div class="fields" style="margin-top:10px; display:flex">
                     <div class="left" style="width:25%;">
                         <h4>
                             <span>
