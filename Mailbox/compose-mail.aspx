@@ -5,6 +5,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <link href="../css/Css-Mailbox/maibox-css.css" rel="stylesheet" />
     <link href="../css/Css-Mailbox/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+        <%--<link href="../css/employee.css/add-point-employee.css" rel="stylesheet" />--%>
      <div class="content-wrapper">
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
@@ -50,9 +51,9 @@
                                         <textarea id="compose-textarea" class="form-control" style="height: 300px" placeholder="Write something ..."></textarea>
                                     </div>
                                     <div class="form-group">
-                                        <div class="btn btn-default btn-file">
-                                            <i class="fa fa-paperclip"></i> Attachment
-                                            <input type="file" name="attachment">
+                                        <div class="btn btn-default btn-file">                                          
+                                            <input type="file" name="file-3[]" id="file-3" class="inputfile inputfile-3" data-multiple-caption="{count} files selected" multiple="">
+                                            <label for="file-3"><i class="fa fa-paperclip"></i><span>File attached...</span></label>                                   
                                         </div>
                                         <p class="help-block">Max. 32MB</p>
                                     </div>
@@ -75,5 +76,44 @@
                 </section>
                 <!-- /.content -->
             </div> 
+          <script>
+
+        function myFunction() {
+            var x = document.getElementById("myDIV");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        'use strict';
+
+        ; (function (document) {
+            var inputs = document.querySelectorAll('.inputfile');
+            Array.prototype.forEach.call(inputs, function (input) {
+                var label = input.nextElementSibling,
+                    labelVal = label.innerHTML;
+
+                input.addEventListener('change', function (e) {
+                    var fileName = '';
+                    if (this.files && this.files.length > 1)
+                        fileName = (this.getAttribute('data-multiple-caption') || '').replace('{count}', this.files.length);
+                    else
+                        fileName = e.target.value.split('\\').pop();
+
+                    if (fileName)
+                        label.querySelector('span').innerHTML = fileName;
+                    else
+                        label.innerHTML = labelVal;
+                });
+
+                // Firefox bug fix
+                input.addEventListener('focus', function () { input.classList.add('has-focus'); });
+                input.addEventListener('blur', function () { input.classList.remove('has-focus'); });
+            });
+        }(document, window, 0));
+
+    </script>
 </asp:Content>
 
