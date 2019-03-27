@@ -128,13 +128,13 @@
                     <td>employee.manage <i class="fa fa-question-circle"></i></td>
                     <td>
                         <label class="switch">
-                            <input type="checkbox" checked>
+                            <input type="checkbox"  checked>
                             <span class="slider round"></span>
                         </label>
                     </td>
                     <td>
                         <label class="switch">
-                            <input type="checkbox" checked>
+                            <input type="checkbox" >
                             <span class="slider round"></span>
                         </label>
                     </td>
@@ -152,7 +152,7 @@
                     </td>
                     <td>
                         <label class="switch">
-                            <input type="checkbox" checked>
+                            <input type="checkbox" >
                             <span class="slider round"></span>
                         </label>
                     </td>
@@ -170,7 +170,7 @@
                     </td>
                     <td>
                         <label class="switch">
-                            <input type="checkbox" checked>
+                            <input type="checkbox" >
                             <span class="slider round"></span>
                         </label>
                     </td>
@@ -188,7 +188,7 @@
                     </td>
                     <td>
                         <label class="switch">
-                            <input type="checkbox" checked>
+                            <input type="checkbox" >
                             <span class="slider round"></span>
                         </label>
                     </td>
@@ -206,7 +206,7 @@
                     </td>
                     <td>
                         <label class="switch">
-                            <input type="checkbox" checked>
+                            <input type="checkbox" >
                             <span class="slider round"></span>
                         </label>
                     </td>
@@ -224,7 +224,7 @@
                     </td>
                     <td>
                         <label class="switch">
-                            <input type="checkbox" checked>
+                            <input type="checkbox" >
                             <span class="slider round"></span>
                         </label>
                     </td>
@@ -242,7 +242,7 @@
                     </td>
                     <td>
                         <label class="switch">
-                            <input type="checkbox" checked>
+                            <input type="checkbox" >
                             <span class="slider round"></span>
                         </label>
                     </td>
@@ -260,7 +260,7 @@
                     </td>
                     <td>
                         <label class="switch">
-                            <input type="checkbox" checked>
+                            <input type="checkbox" >
                             <span class="slider round"></span>
                         </label>
                     </td>
@@ -278,7 +278,7 @@
                     </td>
                     <td>
                         <label class="switch">
-                            <input type="checkbox" checked>
+                            <input type="checkbox" >
                             <span class="slider round"></span>
                         </label>
                     </td>
@@ -296,7 +296,7 @@
                     </td>
                     <td>
                         <label class="switch">
-                            <input type="checkbox" checked>
+                            <input type="checkbox" >
                             <span class="slider round"></span>
                         </label>
                     </td>
@@ -314,7 +314,7 @@
                     </td>
                     <td>
                         <label class="switch">
-                            <input type="checkbox" checked>
+                            <input type="checkbox" >
                             <span class="slider round"></span>
                         </label>
                     </td>
@@ -332,7 +332,7 @@
                     </td>
                     <td>
                         <label class="switch">
-                            <input type="checkbox" checked>
+                            <input type="checkbox" >
                             <span class="slider round"></span>
                         </label>
                     </td>
@@ -350,7 +350,7 @@
                     </td>
                     <td>
                         <label class="switch">
-                            <input type="checkbox" checked>
+                            <input type="checkbox" >
                             <span class="slider round"></span>
                         </label>
                     </td>
@@ -368,7 +368,7 @@
                     </td>
                     <td>
                         <label class="switch">
-                            <input type="checkbox" checked>
+                            <input type="checkbox" >
                             <span class="slider round"></span>
                         </label>
                     </td>
