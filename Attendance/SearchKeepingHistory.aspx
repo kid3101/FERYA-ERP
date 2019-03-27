@@ -47,7 +47,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <div class="container-fluid" style="margin-top: -23px;width: 100%;height: 119px;background-color:#eee;">
         <div style="line-height: 1;display: inline-block;margin-left: 40px;vertical-align: middle;">
-            <a class="abc tab-content" href="#" style="text-decoration:none;"><span><h2 style="cursor:pointer;">Timekeeping history</h2></span></a>
+            <a class="abc tab-content" href="History.aspx" style="text-decoration:none;"><span><h2 style="cursor:pointer;">Timekeeping history</h2></span></a>
         </div>
         <ul class="nav nav-tabs" style="margin-block-start: 1em;padding-inline-start: 40px;position: absolute;padding-top: 32px;">
             <li class="active" style="margin-right: 20px;">
