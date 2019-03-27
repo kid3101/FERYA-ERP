@@ -128,7 +128,7 @@
                     <td>employee.manage <i class="fa fa-question-circle"></i></td>
                     <td>
                         <label class="switch">
-                            <input type="checkbox"  checked>
+                            <input type="checkbox" checked  disabled>
                             <span class="slider round"></span>
                         </label>
                     </td>
