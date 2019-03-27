@@ -68,10 +68,10 @@
                 </div>
             </div>
         <div class="center-column">
-            <span class="stepline" style="width: 2px;height: 32px;display: block;margin-top: -34px;margin-left: 541px;background: #3498db;"></span>
+            <span class="stepline" style="width: 2px;height: 32px;display: block;margin-top: -34px;margin-left: 547px;background: #3498db;"></span>
         </div>
         <div class="center-column">
-            <div class="label" style="width: 16px;height: 16px;display: block;margin-top: -7px;margin-left: 534px;background: #3498db;border-radius: 50%;"></div>
+            <div class="label" style="width: 16px;height: 16px;display: block;margin-top: -7px;margin-left: 540px;background: #3498db;border-radius: 50%;"></div>
         </div>
         <div style="text-align: center;margin-top: 20px;margin-left: -45px">
             <a class="nutchamcong" href="/Attendance/Attendant.aspx" style="color:white;margin-left: 15px;text-decoration:none;"><i class="fa fa-plus"></i><span style="padding-left: 24px;padding-right: 24px;font-size: 22px;">Timekeeping</span></a>

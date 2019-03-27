@@ -71,9 +71,17 @@
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item">
-        <a class="nav-link" href="/Dashboard/Main.aspx">
+        <a class="nav-link collapsed" data-toggle="collapse" data-target="#collapseAttendace1" aria-expanded="true" aria-controls="collapseAttendace" href="#">
           <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Dashboard</span></a>
+          <span>Dashboard</span>
+        </a>
+        <div id="collapseAttendace1" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <a class="collapse-item" href="/Dashboard/Main.aspx">Dashboard</a>
+            <a class="collapse-item" href="/Dashboard/CompanyDocuments.aspx">Company documents</a>
+            <a class="collapse-item" href="/Dashboard/ContactAndHelp.aspx">Contact & help</a>
+          </div>
+        </div>
       </li>
 
       <!-- Divider -->
