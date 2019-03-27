@@ -96,7 +96,7 @@
                     </td>
                     <td>22:21, 24/03/2019</td>
                     <td>
-                        <a href="upload-point-employee.aspx" style="text-decoration:none;padding: 8px 8px;border: 1px solid gray;">
+                        <a href="update-point-employee.aspx" style="text-decoration:none;padding: 8px 8px;border: 1px solid gray;">
                             <i class="fa fa-pencil-alt"></i>
                             <span>Update</span>
                         </a>
