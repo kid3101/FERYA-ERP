@@ -48,7 +48,7 @@
     <div class="container" style="background-color: #eee;height: 95px;width: 100%;margin-top: -23px;">
         <div style="margin-bottom: -11px;margin-top: -20px;">
             <br />
-            <a class="abc tab-content" href="#" style="text-decoration:none;"><span><h2 style="cursor:pointer;">Timekeeping history</h2></span></a>
+            <a class="abc tab-content" href="History.aspx" style="text-decoration:none;"><span><h2 style="cursor:pointer;">History</h2></span></a>
             <ul class="nav nav-tabs" style="margin-right:-202px;padding-inline-start: 40px;">
                 <li class="active"><a href="#" style="cursor:pointer;height: 44px;text-decoration:none;">Export Excel</a></li>
             </ul>

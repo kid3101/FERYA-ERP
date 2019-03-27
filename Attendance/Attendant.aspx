@@ -48,7 +48,7 @@
     <div class="container" style="background-color: #eee;height: 94px;width: 100%;">
         <div style="margin-bottom: -11px;margin-top: -23px;">
             <br />
-            <a class="abc tab-content" style="text-decoration:none;" href="KeepingHistory.html"><span><h2 style="cursor:pointer;">History</h2></span></a>
+            <a class="abc tab-content" style="text-decoration:none;" href="History.aspx"><span><h2 style="cursor:pointer;">History</h2></span></a>
             <ul class="nav nav-tabs" style="margin-right:-202px;padding-inline-start: 40px;">
                 <li class="active"><a href="#" style="cursor:pointer;text-decoration:none;">Attendant</a></li>
             </ul>

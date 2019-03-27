@@ -16,3 +16,48 @@
 .addnewblog a{
     text-decoration:none;
 }
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+    .inputfile:focus + label,
+    .inputfile.has-focus + label {
+        outline: 1px dotted #000;
+        outline: -webkit-focus-ring-color auto 5px;
+    }
+
+    .inputfile + label i,
+    .inputfile + label svg {
+        width: 1em;
+        height: 1em;
+        vertical-align: middle;
+        fill: currentColor;
+        margin-top: -0.25em;
+        margin-right: 0.25em;
+    }
+
+
+    .inputfile:focus + label,
+    .inputfile.has-focus + label,
+    .inputfile + label:hover {
+        color: #FF5722;
+    }
+input {
+    font-family: inherit !important;
+    line-height: 1 !important;
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+
+.fields {
+    display: flex;
+    flex-direction: row;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+}

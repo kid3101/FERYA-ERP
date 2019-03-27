@@ -333,6 +333,8 @@
                                                         <option>59 Minutes</option>
                                                     </select>
                                                 </div>
+                                                
+
                                             </div>
                                         </div>
                                     </div>
@@ -880,6 +882,26 @@
                                                         <option>58 Minutes</option>
                                                         <option>59 Minutes</option>
                                                     </select>
+                                                </div>
+                                            </div>
+                                            <div style="margin-top:20px;display:flex;">
+                                                <div style="margin-right: 7px;">
+                                                    <div>Public reviewer</div>
+                                                    <select style="height:25px;width:179px;">
+                                                        <option>---</option>
+                                                    </select>
+                                                </div>
+                                                <div style="margin-right: 7px;">
+                                                    <div>PLimit date of public review</div>
+                                                    <input type="text" value="0" style="height:25px;" />
+                                                </div>
+                                                <div style="margin-right: 7px;">
+                                                    <div>Time to work late <span><i class="fa fa-info-circle" style="cursor:pointer;" title="Calculated in minutes (equal to 0 if not installed)"></i></span></div>
+                                                    <input type="text" value="0" style="height:25px;width: 135px;" />
+                                                </div>
+                                                <div>
+                                                    <div>Time to leave early <span><i class="fa fa-info-circle" style="cursor:pointer;" title="Calculated in minutes (equal to 0 if not installed)"></i></span></div>
+                                                    <input type="text" value="0" style="height:25px;" />
                                                 </div>
                                             </div>
                                 </div>

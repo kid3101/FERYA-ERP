@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <link href="../css/Css-Blog/add-new-blog-css.css" rel="stylesheet" />
-    <link href="../css/employee.css/add-point-employee.css" rel="stylesheet" />
+ <%--   <link href="../css/employee.css/add-point-employee.css" rel="stylesheet" />--%>
           <div class="header-blog">
             <div class="col-sm-7">
                   <a class="title-blog" href="blog-company.aspx"><b>Blog</b></a>
@@ -47,14 +47,13 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="birthDate" class="col-sm-3 control-label">Attached files</label>
                             <div class="col-sm-9">
                                 <form class="md-form">
                                     <div class="file-field">
-                                        <a class="btn-floating peach-gradient mt-0 float-left">
-                                            <i class="fa fa-paperclip" aria-hidden="true"></i>
-                                            <input type="file" >
-                                        </a>
+                                         <div class="box">
+                                    <input type="file" name="file-3[]" id="file-3" class="inputfile inputfile-3" data-multiple-caption="{count} files selected" multiple="">
+                                    <label for="file-3"><i class="fa fa-paperclip"></i><span>File attached...</span></label>
+                                </div>
                                     </div>
                                     </form>
                             </div>

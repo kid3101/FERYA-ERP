@@ -1,10 +1,10 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="Main.aspx.cs" Inherits="Dashboard_Main" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="Workschedule.aspx.cs" Inherits="Attendance_Workschedule" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
-    <meta charset="utf-8">
+      <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Main</title>
+    <title>Attendant</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.7 -->
@@ -36,54 +36,51 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <!-- Google Font -->
+    <link href="Style/Trang.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <link href="../css/Dashboard/Main.css" rel="stylesheet" />
+    <link href="../css/Attendance/Attendant.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <div>
-            <h1 style="text-align:center;">
-                <span>Hi</span>
-                <span> </span>
-                <em>User Name</em>
-                <span>, what action do you want to perform ?</span>
-            </h1>
-            <div style="height: 320px;border-bottom-style: dotted;border-bottom-color: #47d4c7;">
-                <div class="row">
-                    <div class="col-sm-4">
-
-                    </div>
-
-                    <div class=" hoverimage" style="text-align: center;background-color: #1510100d;height: 200px;width: 200px;border-radius: 99px;margin-top: 30px;margin-left: 77px;">
-                        <img src="../img/store.png"" width="100" height="100" style="margin-top: 46px;">
-                        <h2 style="text-transform:uppercase;margin-top:70px;">Store</h2>
-                    </div>
-
-                    <div class="col-sm-4">
-
-                    </div>
-                </div>
-            </div>
-        <div class="center-column">
-            <span class="stepline" style="width: 2px;height: 32px;display: block;margin-top: -34px;margin-left: 547px;background: #3498db;"></span>
-        </div>
-        <div class="center-column">
-            <div class="label" style="width: 16px;height: 16px;display: block;margin-top: -7px;margin-left: 540px;background: #3498db;border-radius: 50%;"></div>
-        </div>
-        <div style="text-align: center;margin-top: 20px;margin-left: -45px">
-            <a class="nutchamcong" href="/Attendance/Attendant.aspx" style="color:white;margin-left: 15px;text-decoration:none;"><i class="fa fa-plus"></i><span style="padding-left: 24px;padding-right: 24px;font-size: 22px;">Timekeeping</span></a>
-        </div>
-        <div style="text-align: center;margin-top: 20px;margin-left: -45px">
-            <a class="nut" href="../Mailbox/mail-box.aspx" style="color:white;margin-left: 15px;text-decoration:none;"><i class="fa fa-envelope"></i><span style="padding-left: 50px;padding-right: 50px;font-size: 22px;">Mailing</span></a>
-        </div>
-        <div style="text-align: center;margin-top: 20px;margin-left: -45px">
-            <a class="nut" href="../project/project-list.aspx" style="color:white;margin-left: 15px;text-decoration:none;"><i class="fa fa-briefcase"></i><span style="padding-left: 14px;padding-right: 14px;font-size: 22px;">See the project</span></a>
+    <div class="container" style="background-color: #eee;height: 94px;width: 100%;">
+        <div style="margin-bottom: -11px;margin-top: -23px;">
+            <br />
+            <a class="abc tab-content" style="text-decoration:none;" href="History.aspx"><span><h2 style="cursor:pointer;">History</h2></span></a>
+            <ul class="nav nav-tabs" style="margin-right:-202px;padding-inline-start: 40px;">
+                <li class="active"><a href="#" style="cursor:pointer;text-decoration:none;">Calender</a></li>
+            </ul>
+            <br>
         </div>
     </div>
-
-   
+    <div>
+        <form>
+            <div style="margin-top: 30px;">
+                <div style="margin-left: 24px; width: 40%;float:left;">
+                    <h3><strong>Office</strong></h3>
+                    <p style="font-size: 17px;">Select the Head Office you worked on before starting your schedule.</p>
+                </div>
+                <div style="width:60%;font-size: 17px; display:inline;">
+                    <div style="width:30%;font-size: 17px;float:left;">
+                        <div class="form-group" style="margin-left: -12px;">
+                            <label for="usr">Headquarters<span style="color:red;"> *</span></label>
+                            <div>
+                                <select class="form-control" id="sel1" style="width: 55%;">
+                                    <option>All</option>
+                                    
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="float:left;margin-left:24px;display: inline-flex;">
+                    <br />
+                </div>
+            </div>
+        </form>
+    </div>
+    <div style="background-color:#eee;width:100%;height:80px;margin-top: 144px;">
 </asp:Content>
 

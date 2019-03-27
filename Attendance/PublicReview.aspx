@@ -50,7 +50,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <div class="container-fluid" style="width: 100%;height: 119px;background-color:#eee;margin-top: -24px;">
         <div style="line-height: 1;display: inline-block;margin-left: 40px;vertical-align: middle;">
-            <a class="abc tab-content" style="text-decoration:none;" href="#"><span><h2 style="cursor:pointer;">History</h2></span></a>
+            <a class="abc tab-content" style="text-decoration:none;" href="History.aspx"><span><h2 style="cursor:pointer;">History</h2></span></a>
         </div>
         <ul class="nav nav-tabs" style="margin-block-start: 1em;padding-inline-start: 40px;position: absolute;padding-top: 32px;">
             <li class="active" style="margin-right: 20px;">
@@ -234,7 +234,7 @@
                                     <div style="display:flex;margin-top:20px;margin-bottom:20px;">
                                                 <div style="margin-right: 10px;">
                                                     <span>Time attendance</span>
-                                                    <select style="display:block;height:25px;width:179px;">
+                                                    <select style="display:block;height:25px;width:130px;">
                                                         <option>---</option>
                                                         <option>00 Hours</option>
                                                         <option>01 Hours</option>
@@ -264,7 +264,7 @@
                                                 </div>
                                                 <div style="margin-right: 10px;">
                                                     <input type="hidden" />
-                                                    <select style="display:block;height:25px;width:178px;margin-top: 23px;">
+                                                    <select style="display:block;height:25px;width:130px;margin-top: 23px;">
                                                         <option>---</option>
                                                         <option>00 Minutes</option>
                                                         <option>01 Minutes</option>
@@ -330,7 +330,7 @@
                                                 </div>
                                         <div style="margin-right: 10px;">
                                                     <span>Time out</span>
-                                                    <select style="display:block;height:25px;width:179px;">
+                                                    <select style="display:block;height:25px;width:130px;">
                                                         <option>---</option>
                                                         <option>00 Hours</option>
                                                         <option>01 Hours</option>
@@ -360,7 +360,7 @@
                                                 </div>
                                                 <div style="margin-right: 10px;">
                                                     <input type="hidden" />
-                                                    <select style="display:block;height:25px;width:178px;margin-top: 23px;">
+                                                    <select style="display:block;height:25px;width:130px;margin-top: 23px;">
                                                         <option>---</option>
                                                         <option>00 Minutes</option>
                                                         <option>01 Minutes</option>
@@ -422,6 +422,15 @@
                                                         <option>57 Minutes</option>
                                                         <option>58 Minutes</option>
                                                         <option>59 Minutes</option>
+                                                    </select>
+                                                </div>
+                                                <div style="margin-right: 10px;">
+                                                    <span>OT</span>
+                                                    <select style="display:block;height:25px;width:130px;">
+                                                        <option>No OT</option>
+                                                        <option>OT first time shift</option>
+                                                        <option>OT late shift time</option>
+                                                        <option>OT full time</option>
                                                     </select>
                                                 </div>
                                 </div>
