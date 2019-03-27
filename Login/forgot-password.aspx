@@ -48,10 +48,10 @@
                   </form>
                   <hr>
                   <div class="text-center">
-                    <a class="small" href="register.html">Create an Account!</a>
+                    <a class="small" href="../register.aspx">Create an Account!</a>
                   </div>
                   <div class="text-center">
-                    <a class="small" href="login.html">Already have an account? Login!</a>
+                    <a class="small" href="../login.aspx">Already have an account? Login!</a>
                   </div>
                 </div>
               </div>
