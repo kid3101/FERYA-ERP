@@ -262,7 +262,7 @@
                                         Export data
                                     </span>
                                     <span>
-                                        <span> (</span><span>1</span><span> </span><span>current</span><span>)</span>
+                                        <span> (</span><span>0</span><span> </span><span>current</span><span>)</span>
                                     </span>
                                 </button>
                                 <div class="modal fade" id="myModal" role="dialog">
