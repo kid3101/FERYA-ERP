@@ -139,8 +139,8 @@
                     <td>employee.manage <i class="fa fa-question-circle"></i></td>
                     <td>
                         <label class="switch">
-                            <input type="checkbox" checked>
-                            <span class="slider round"></span>
+                            <input type="checkbox" checked disabled>
+                            <span class="slider round" style="background-color: #ccc;"></span>
                         </label>
                     </td>
                     <td></td>
@@ -151,8 +151,8 @@
                     <td>employee.add <i class="fa fa-question-circle"></i></td>
                     <td>
                         <label class="switch">
-                            <input type="checkbox" checked>
-                            <span class="slider round"></span>
+                            <input type="checkbox" checked disabled>
+                            <span class="slider round" style="background-color: #ccc;"></span>
                         </label>
                     </td>
                     <td></td>
@@ -163,8 +163,8 @@
                     <td>employee.detail <i class="fa fa-question-circle"></i></td>
                     <td>
                         <label class="switch">
-                            <input type="checkbox" checked>
-                            <span class="slider round"></span>
+                            <input type="checkbox" checked disabled>
+                            <span class="slider round" style="background-color: #ccc;"></span>
                         </label>
                     </td>
                     <td></td>
@@ -175,8 +175,8 @@
                     <td>employee.manageworktime <i class="fa fa-question-circle"></i></td>
                     <td>
                         <label class="switch">
-                            <input type="checkbox" checked>
-                            <span class="slider round"></span>
+                            <input type="checkbox" checked disabled>
+                            <span class="slider round" style="background-color: #ccc;"></span>
                         </label>
                     </td>
                     <td></td>
@@ -187,8 +187,8 @@
                     <td>employee.checkinterminal <i class="fa fa-question-circle"></i></td>
                     <td>
                         <label class="switch">
-                            <input type="checkbox" checked>
-                            <span class="slider round"></span>
+                            <input type="checkbox" checked disabled>
+                            <span class="slider round" style="background-color: #ccc;"></span>
                         </label>
                     </td>
                     <td></td>
@@ -199,8 +199,8 @@
                     <td>employee.managepoin <i class="fa fa-question-circle"></i></td>
                     <td>
                         <label class="switch">
-                            <input type="checkbox" checked>
-                            <span class="slider round"></span>
+                            <input type="checkbox" checked disabled>
+                            <span class="slider round" style="background-color: #ccc;"></span>
                         </label>
                     </td>
                     <td></td>
@@ -211,8 +211,8 @@
                     <td>project.manage <i class="fa fa-question-circle"></i></td>
                     <td>
                         <label class="switch">
-                            <input type="checkbox" checked>
-                            <span class="slider round"></span>
+                            <input type="checkbox" checked disabled>
+                            <span class="slider round" style="background-color: #ccc;"></span>
                         </label>
                     </td>
                     <td></td>
@@ -223,8 +223,8 @@
                     <td>file.manage <i class="fa fa-question-circle"></i></td>
                     <td>
                         <label class="switch">
-                            <input type="checkbox" checked>
-                            <span class="slider round"></span>
+                            <input type="checkbox" checked disabled />
+                            <span class="slider round" style="background-color: #ccc;"></span>
                         </label>
                     </td>
                     <td></td>
@@ -235,8 +235,8 @@
                     <td>workschedule.review <i class="fa fa-question-circle"></i></td>
                     <td>
                         <label class="switch">
-                            <input type="checkbox" checked>
-                            <span class="slider round"></span>
+                            <input type="checkbox" checked disabled>
+                            <span class="slider round" style="background-color: #ccc;"></span>
                         </label>
                     </td>
                     <td></td>
@@ -247,8 +247,8 @@
                     <td>workschedule.change <i class="fa fa-question-circle"></i></td>
                     <td>
                         <label class="switch">
-                            <input type="checkbox" checked>
-                            <span class="slider round"></span>
+                            <input type="checkbox" checked disabled>
+                            <span class="slider round" style="background-color: #ccc;"></span>
                         </label>
                     </td>
                     <td></td>
@@ -259,8 +259,8 @@
                     <td>elearning.manage <i class="fa fa-question-circle"></i></td>
                     <td>
                         <label class="switch">
-                            <input type="checkbox" checked>
-                            <span class="slider round"></span>
+                            <input type="checkbox" checked disabled>
+                            <span class="slider round" style="background-color: #ccc;"></span>
                         </label>
                     </td>
                     <td></td>
@@ -271,8 +271,8 @@
                     <td>blog.managepost <i class="fa fa-question-circle"></i></td>
                     <td>
                         <label class="switch">
-                            <input type="checkbox" checked>
-                            <span class="slider round"></span>
+                            <input type="checkbox" checked disabled>
+                            <span class="slider round" style="background-color: #ccc;"></span>
                         </label>
                     </td>
                     <td></td>
@@ -283,8 +283,8 @@
                     <td>blog.managecomment <i class="fa fa-question-circle"></i></td>
                     <td>
                         <label class="switch">
-                            <input type="checkbox" checked>
-                            <span class="slider round"></span>
+                            <input type="checkbox" checked disabled>
+                            <span class="slider round" style="background-color: #ccc;"></span>
                         </label>
                     </td>
                     <td></td>
@@ -295,8 +295,8 @@
                     <td>employee.checkinedit <i class="fa fa-question-circle"></i></td>
                     <td>
                         <label class="switch">
-                            <input type="checkbox" checked>
-                            <span class="slider round"></span>
+                            <input type="checkbox" checked disabled>
+                            <span class="slider round" style="background-color: #ccc;"></span>
                         </label>
                     </td>
                     <td></td>
