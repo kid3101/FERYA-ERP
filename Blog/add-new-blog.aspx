@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <link href="../css/Css-Blog/add-new-blog-css.css" rel="stylesheet" />
-    <link href="../css/employee.css/add-point-employee.css" rel="stylesheet" />
+ <%--   <link href="../css/employee.css/add-point-employee.css" rel="stylesheet" />--%>
           <div class="header-blog">
             <div class="col-sm-7">
                   <a class="title-blog" href="blog-company.aspx"><b>Blog</b></a>

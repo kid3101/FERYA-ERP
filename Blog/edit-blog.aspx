@@ -5,7 +5,6 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
      <link href="../css/Css-Blog/blog-company-css.css" rel="stylesheet" />
     <link href="../css/Css-Blog/add-new-blog-css.css" rel="stylesheet" />
-    <link href="../css/employee.css/add-point-employee.css" rel="stylesheet" />
           <div class="header-blog">
             <div class="col-sm-7">
                   <a class="title-blog" href="list-blog-for-manager.aspx"><b>Manager</b></a>
@@ -49,7 +48,7 @@
                                 <textarea class="tinymce" placeholder="Write something ..." style="border-radius:10px;"></textarea>
                             </div>
                         </div>
-                    <div class="form-group">
+                         <div class="form-group">
                             <div class="col-sm-9">
                                 <form class="md-form">
                                     <div class="file-field">

@@ -51,10 +51,10 @@
                             <div class="col-sm-9">
                                 <form class="md-form">
                                     <div class="file-field">
-                                         <div class="box">
+                                     <div class="box">
                                     <input type="file" name="file-3[]" id="file-3" class="inputfile inputfile-3" data-multiple-caption="{count} files selected" multiple="">
                                     <label for="file-3"><i class="fa fa-paperclip"></i><span>File attached...</span></label>
-                                </div>
+                                     </div>
                                     </div>
                                     </form>
                             </div>
