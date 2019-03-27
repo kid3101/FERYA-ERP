@@ -87,7 +87,7 @@
                             <div>
                                 <label style="float: left;margin-top: 8px;margin-bottom: 18px;">Webcam / camera snapshot</label>
                                 <br />
-                                <a class="maychamcong">ATTENDANCE</a>
+                                <a class="maychamcong" style="color:white;">ATTENDANCE</a>
                             </div>
                         </div>
                         <div class="col-sm-4 " style="margin-top: 192px;">

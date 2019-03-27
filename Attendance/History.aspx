@@ -140,7 +140,7 @@
                     <a class="ls dropdown-toggle" title="For management" style="margin-left: -10px;background-color: #eee;border-color: #eee;" data-toggle="dropdown"><i class="fa fa-cog"></i> For management</a>
 
                     <ul class="dropdown-menu " role="menu" aria-labelledby="menu1" style="width: 200px;">
-                        <li  role="presentation" style="margin-bottom: 10px;margin-left: 10px;"><a role="menuitem" tabindex="-1" href="../Employee/employee.aspx" style="color: black;text-decoration:none;"><i class="fa fa-calendar"></i> Schedule work schedule</a></li>
+                        <li  role="presentation" style="margin-bottom: 10px;margin-left: 10px;"><a role="menuitem" tabindex="-1" href="Workschedule.aspx" style="color: black;text-decoration:none;"><i class="fa fa-calendar"></i> Schedule work schedule</a></li>
                         <li role="presentation" style="margin-bottom: 10px;margin-left: 10px;"><a role="menuitem" tabindex="-1" href="SwitchShift.aspx" style="color: black;text-decoration:none;"><i class="fa fa-sync"></i> Switch shift</a></li>
                         <li role="presentation" style="margin-bottom: 10px;margin-left: 10px;"><a role="menuitem" tabindex="-1" href="HourlyReport.aspx" style="color: black;text-decoration:none;"><i class="fa fa-chart-bar"></i> Report</a></li>
                         <li role="presentation" style="margin-bottom: 10px;margin-left: 10px;"><a role="menuitem" tabindex="-1" href="ExportExcel.aspx" style="color: black;text-decoration:none;"><i class="fa fa-download"></i> Export excel</a></li>
