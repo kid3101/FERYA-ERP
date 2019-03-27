@@ -1,18 +1,21 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="detailt-employees.aspx.cs" Inherits="Employee_DetailtEmployees" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="update-employee.aspx.cs" Inherits="Employee_DetailtEmployees" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
-    <link href="../css/employee.css/detail-employee.css" rel="stylesheet" />
+    <link href="../css/employee.css/update-employee.css" rel="stylesheet" />
+    <link href="../css/Setting/Office.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
            <div class="heading">
             <div class="container">
+            <div class="container">
                 <h3 class="title"> Employee</h3>
                 <ul class="nav nav-tabs" style="display:block; list-style-type:disc; ">
                     <li class="active">
                         <a data-toggle="tab" href="#" style="cursor:pointer;">
-                            <span style="color:black;"> Detail</span>
+                            <span style="color:black;"> Update</span>
                         </a>
                     </li>
                 </ul>
@@ -51,28 +54,28 @@
 
             <div class="w3-row">
                 <a href="javascript:void(0)" onclick="openCity(event, 'Curriculum');">
-                    <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Curriculum vitae</div>
+                    <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding" style="width:15%">Curriculum vitae</div>
                 </a>
                 <a href="javascript:void(0)" onclick="openCity(event, 'Account');">
-                    <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Account</div>
+                    <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding"  style="width:10%">Account</div>
                 </a>
                 <a href="javascript:void(0)" onclick="openCity(event, 'Contact');">
-                    <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Contact</div>
+                    <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding"  style="width:10%">Contact</div>
                 </a>
                 <a href="javascript:void(0)" onclick="openCity(event, 'Work');">
-                    <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Work progress</div>
+                    <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding" style="width:15%">Work progress</div>
                 </a>
                 <a href="javascript:void(0)" onclick="openCity(event, 'Timekeeping');">
-                    <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Timekeeping</div>
+                    <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding" style="width:10%">Timekeeping</div>
                 </a>
                 <a href="javascript:void(0)" onclick="openCity(event, 'Salary');">
-                    <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Salary</div>
+                    <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding" style="width:10%">Salary</div>
                 </a>
                 <a href="javascript:void(0)" onclick="openCity(event, 'Vacation');">
-                    <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Vacation</div>
+                    <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding" style="width:10%">Vacation</div>
                 </a>
                 <a href="javascript:void(0)" onclick="openCity(event, 'Discipline');">
-                    <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Discipline reward</div>
+                    <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding" style="width:15%">Discipline reward</div>
                 </a>
             </div>
 
@@ -322,7 +325,7 @@
 
 
             <div id="Account" class="w3-container city" style="display:none">
-                <table class="w3-table w3-bordered">
+                <table class="w3-table w3-bordered" style="width:90%">
                     <tr style="color: darkgrey; font-size:10px;">
                         <th>BANK NAME</th>
                         <th>ACCOUNT NUMBER</th>
@@ -346,11 +349,11 @@
 
                         <td>
                             <span class="cog" data-toggle="modal" data-target="#myModal">
-                                <i class="fa fa-pencil"></i>
+                               <i class="fas fa-pencil-alt"></i>
                             </span>
 
                         </td>
-                        <td><i class="fa fa-trash-o"></i></td>
+                        <td ><i class="fas fa-trash"></i></td>
                     </tr>
                 </table>
                 <div class="cog" style="padding-top:20px">
@@ -363,7 +366,7 @@
             </div>
 
             <div id="Contact" class="w3-container city" style="display:none">
-                <table class="w3-table w3-bordered">
+                <table class="w3-table w3-bordered" style="width:90%">
                     <tr style="color: darkgrey; font-size:10px;">
                         <th>NAME</th>
                         <th>SOME CONTRACTS</th>
@@ -387,11 +390,11 @@
                         <td></td>
                         <td>
                             <span class="cog" data-toggle="modal" data-target="#myModal2">
-                                <i class="fa fa-pencil"></i>
+                               <i class="fas fa-pencil-alt"></i>
                             </span>
 
                         </td>
-                        <td><i class="fa fa-trash-o"></i></td>
+                        <td><i class="fas fa-trash"></i></td>
                     </tr>
                 </table>
 
@@ -404,7 +407,7 @@
             </div>
 
             <div id="Work" class="w3-container city" style="display:none">
-                <table class="w3-table w3-bordered">
+                <table class="w3-table w3-bordered" style="width:90%">
                     <tr style="color: darkgrey; font-size:10px;">
                         <th>TIME</th>
                         <th>TITLE</th>
@@ -428,11 +431,11 @@
                         <td></td>
                         <td>
                             <span class="cog" data-toggle="modal" data-target="#myModal4">
-                                <i class="fa fa-pencil"></i>
+                                 <i class="fas fa-pencil-alt"></i>
                             </span>
 
                         </td>
-                        <td><i class="fa fa-trash-o"></i></td>
+                        <td><i class="fas fa-trash"></i></td>
                     </tr>
                 </table>
                 <div class="cog" data-toggle="modal" data-target="#myModal5" style="padding-top:20px">
@@ -480,7 +483,7 @@
                     </tr>
                 </table>
                 <div style="padding-top:20px">
-                    <a class="w3-btn w3-white w3-border w3-border-blue w3-round-large" style="text-decoration:none;" href="addmore_employee.html">Add more</a>
+                    <a class="w3-btn w3-white w3-border w3-border-blue w3-round-large" style="text-decoration:none;" href="search-paycheck.aspx">Add more</a>
                 </div>
             </div>
 
@@ -496,7 +499,7 @@
                     </tr>
                 </table>
                 <div style="padding-top:20px">
-                    <a class="w3-btn w3-white w3-border w3-border-blue w3-round-large" style="text-decoration:none;" href="addmore_employee.html">Add more</a>
+                    <a class="w3-btn w3-white w3-border w3-border-blue w3-round-large" style="text-decoration:none;" href="search-leave.aspx">Add more</a>
                 </div>
             </div>
 
@@ -516,7 +519,7 @@
                     </tr>
                 </table>
                 <div style="padding-top:20px">
-                    <a class="w3-btn w3-white w3-border w3-border-blue w3-round-large" style="text-decoration:none;" href="addmore_history.html">Add more</a>
+                    <a class="w3-btn w3-white w3-border w3-border-blue w3-round-large" style="text-decoration:none;" href="search-point-employee.aspx">Add more</a>
                 </div>
             </div>
         </div>
@@ -534,15 +537,15 @@
                     <form class="w3-container " style="padding: 0.01em 16px;margin-right: 0px;padding-top: 0px;">
                         <p>
                             <label>Bank name<a style="margin-top: -0.2em; margin-left:0.2em;color: #DB2828;">*</a></label>
-                            <input class="w3-input w3-border" type="text">
+                            <input class="w3-input w3-border" type="text" value="abc">
                         </p>
                         <p>
                             <label>Account number<a style="margin-top: -0.2em; margin-left:0.2em;color: #DB2828;">*</a></label>
-                            <input class="w3-input w3-border" type="text">
+                            <input class="w3-input w3-border" type="text" value="123">
                         </p>
                         <p>
                             <label>Note</label>
-                            <input class="w3-input w3-border" type="text">
+                            <input class="w3-input w3-border" type="text" value="wellcome">
                         </p>
                         <p>
                             <label>Status</label>
@@ -555,8 +558,8 @@
 
                 </div>
                 <div class="modal-footer">
-                    <a class="btn btn-default" data-dismiss="modal">Close</a>
-                    <a class="btn bg-teal-active" style="margin-left:10px; text-decoration:none;">Save</a>
+                    <button type="button" class="btn btn-default" data-dismiss="modal" style="border: none;border-radius: 17px;margin-right: 10px;padding-left: 20px;padding-right: 20px;">Close</button>
+                    <button type="submit" class="nutchamcong2" style="border:none;padding: 8px;"><a href="#"  style="color:white;text-decoration:none;">Save</a></button>
                 </div>
             </div>
 
@@ -589,8 +592,8 @@
 
                 </div>
                 <div class="modal-footer">
-                    <a class="btn btn-default" data-dismiss="modal">Close</a>
-                    <a class="btn bg-teal-active" style="margin-left:10px; text-decoration:none;">Add new</a>
+                    <button type="button" class="btn btn-default" data-dismiss="modal" style="border: none;border-radius: 17px;margin-right: 10px;padding-left: 20px;padding-right: 20px;">Close</button>
+                    <button type="submit" class="nutchamcong2" style="border:none;padding: 8px;"><a href="#"  style="color:white;text-decoration:none;">Add new</a></button>
                 </div>
             </div>
 
@@ -606,21 +609,21 @@
                     <h4 class="modal-title" style="color:black;"><b>Update the contract</b></h4>
                 </div>
                 <div class="modal-body">
-                    <div class="w3-cell-row">
+                    <div class="w3-cell-row" style="display:flex">
                         <div class="col-sm-6">
                             <label for="inputdefault">Some contracts</label>
-                            <input class="form-control" type="text" value="">
+                            <input class="form-control" type="text" value="1">
                         </div>
                         <div class="col-sm-6">
                             <label>Sign day</label>
-                            <input class="form-control" type="date">
+                            <input class="form-control" value="24/03/2019">
                         </div>
                     </div>
 
                     <div class="w3-cell-row">
                         <div class="col-sm-12">
                             <label>Name</label>
-                            <input class="form-control" type="text">
+                            <input class="form-control" type="1">
                         </div>
                     </div>
 
@@ -629,10 +632,10 @@
                             <label>Contract type</label>
                             <select class="form-control">
                                 <option>
-                                    Official
+                                    Probation
                                 </option>
                                 <option>
-                                    Probation
+                                    Official
                                 </option>
                                 <option>
                                     Appendix
@@ -641,18 +644,18 @@
                         </div>
                     </div>
 
-                    <div class="w3-cell-row">
+                    <div class="w3-cell-row" style="display:flex">
                         <div class="col-sm-6">
                             <label for="inputdefault">Effective date</label>
-                            <input class="form-control" type="date">
+                            <input class="form-control" value="24/03/2019">
                         </div>
                         <div class="col-sm-6">
                             <label>Expiry date</label>
-                            <input class="form-control" type="date">
+                            <input class="form-control" value="31/03/2019">
                         </div>
                     </div>
 
-                    <div class="w3-cell-row">
+                    <div class="w3-cell-row" style="display:flex">
                         <div class="col-sm-6">
                             <label>Office</label>
                             <select class="form-control">
@@ -674,7 +677,7 @@
                         </div>
                     </div>
 
-                    <div class="w3-cell-row">
+                    <div class="w3-cell-row" style="display:flex">
                         <div class="col-sm-6">
                             <label>Type of work</label>
                             <select class="form-control">
@@ -705,21 +708,21 @@
                         </div>
                     </div>
 
-                    <div class="w3-cell-row">
+                    <div class="w3-cell-row" style="display:flex">
                         <div class="col-sm-6">
                             <label for="inputdefault">Gross salary</label>
-                            <input class="form-control" type="text" value="0">
+                            <input class="form-control" type="text" value="4,000">
                         </div>
                         <div class="col-sm-6">
                             <label>Real wages</label>
-                            <input class="form-control" type="text" value="0">
+                            <input class="form-control" type="text" value="4,454">
                         </div>
                     </div>
 
-                    <div class="w3-cell-row">
+                    <div class="w3-cell-row" style="display:flex">
                         <div class="col-sm-6">
                             <label>Basic salary</label>
-                            <input class="form-control" type="text" value="0" />
+                            <input class="form-control" type="text" value="12,333" />
                         </div>
                         <div class="col-sm-6">
                             <label>Pay forms</label>
@@ -731,25 +734,25 @@
                         </div>
                     </div>
 
-                    <div class="w3-cell-row">
+                    <div class="w3-cell-row" style="display:flex">
                         <div class="col-sm-6">
                             <label>Salary insurance</label>
-                            <input class="form-control" type="text" value="0" />
+                            <input class="form-control" type="text" value="4,334,556" />
                         </div>
                         <div class="col-sm-6">
                             <label>Percentage of salaries</label>
-                            <input class="form-control" type="text" value="0" />
+                            <input class="form-control" type="text" value="12,232" />
                         </div>
                     </div>
 
                     <div class="w3-cell-row">
                         <div class="col-sm-12">
                             <label>Wage allowance</label>
-                            <input class="form-control" type="text" value="0">
+                            <input class="form-control" type="text" value="12,343,565">
                         </div>
                     </div>
 
-                    <div class="w3-cell-row">
+                    <div class="w3-cell-row" style="display:flex">
                         <div class="col-sm-6">
                             <label>Company representative signed</label>
                             <select class="form-control">
@@ -771,7 +774,7 @@
                     <div class="w3-cell-row">
                         <div class="col-sm-12">
                             <label>Note</label>
-                            <input class="form-control" type="text" value="">
+                            <input class="form-control" type="text" value="ahihi">
                         </div>
                     </div>
 
@@ -785,9 +788,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer">
-                    <a class="btn btn-default" data-dismiss="modal">Close</a>
-                    <a class="btn bg-teal-active" style="margin-left:10px; text-decoration:none;">Save</a>
+                 <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" style="border: none;border-radius: 17px;margin-right: 10px;padding-left: 20px;padding-right: 20px;">Close</button>
+                    <button type="submit" class="nutchamcong2" style="border:none;padding: 8px;"><a href="#"  style="color:white;text-decoration:none;">Save</a></button>
                 </div>
             </div>
 
@@ -803,7 +806,7 @@
                     <h4 class="modal-title" style="color:black;"><b>Update the contract</b></h4>
                 </div>
                 <div class="modal-body">
-                    <div class="w3-cell-row">
+                    <div class="w3-cell-row" style="display:flex">
                         <div class="col-sm-6">
                             <label for="inputdefault">Some contracts</label>
                             <input class="form-control" type="text" value="">
@@ -838,7 +841,7 @@
                         </div>
                     </div>
 
-                    <div class="w3-cell-row">
+                    <div class="w3-cell-row" style="display:flex">
                         <div class="col-sm-6">
                             <label for="inputdefault">Effective date</label>
                             <input class="form-control" type="date">
@@ -849,7 +852,7 @@
                         </div>
                     </div>
 
-                    <div class="w3-cell-row">
+                    <div class="w3-cell-row" style="display:flex">
                         <div class="col-sm-6">
                             <label>Office</label>
                             <select class="form-control">
@@ -871,7 +874,7 @@
                         </div>
                     </div>
 
-                    <div class="w3-cell-row">
+                    <div class="w3-cell-row" style="display:flex">
                         <div class="col-sm-6">
                             <label>Type of work</label>
                             <select class="form-control">
@@ -902,7 +905,7 @@
                         </div>
                     </div>
 
-                    <div class="w3-cell-row">
+                    <div class="w3-cell-row" style="display:flex">
                         <div class="col-sm-6">
                             <label for="inputdefault">Gross salary</label>
                             <input class="form-control" type="text" value="0">
@@ -913,7 +916,7 @@
                         </div>
                     </div>
 
-                    <div class="w3-cell-row">
+                    <div class="w3-cell-row" style="display:flex">
                         <div class="col-sm-6">
                             <label>Basic salary</label>
                             <input class="form-control" type="text" value="0" />
@@ -928,7 +931,7 @@
                         </div>
                     </div>
 
-                    <div class="w3-cell-row">
+                    <div class="w3-cell-row" style="display:flex">
                         <div class="col-sm-6">
                             <label>Salary insurance</label>
                             <input class="form-control" type="text" value="0" />
@@ -946,7 +949,7 @@
                         </div>
                     </div>
 
-                    <div class="w3-cell-row">
+                    <div class="w3-cell-row" style="display:flex">
                         <div class="col-sm-6">
                             <label>Company representative signed</label>
                             <select class="form-control">
@@ -983,8 +986,8 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <a class="btn btn-default" data-dismiss="modal">Close</a>
-                    <a class="btn bg-teal-active" style="margin-left:10px; text-decoration:none;">Add new</a>
+                    <button type="button" class="btn btn-default" data-dismiss="modal" style="border: none;border-radius: 17px;margin-right: 10px;padding-left: 20px;padding-right: 20px;">Close</button>
+                    <button type="submit" class="nutchamcong2" style="border:none;padding: 8px;"><a href="#"  style="color:white;text-decoration:none;">Add new</a></button>
                 </div>
             </div>
         </div>
@@ -1081,9 +1084,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer">
-                    <a class="btn btn-default" data-dismiss="modal">Close</a>
-                    <a class="btn bg-teal-active" style="margin-left:10px; text-decoration:none;">Save</a>
+                 <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" style="border: none;border-radius: 17px;margin-right: 10px;padding-left: 20px;padding-right: 20px;">Close</button>
+                    <button type="submit" class="nutchamcong2" style="border:none;padding: 8px;"><a href="#"  style="color:white;text-decoration:none;">Save</a></button>
                 </div>
             </div>
         </div>
@@ -1180,9 +1183,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer">
-                    <a class="btn btn-default" data-dismiss="modal">Close</a>
-                    <a class="btn bg-teal-active" style="margin-left:10px; text-decoration:none;">Add new</a>
+                 <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" style="border: none;border-radius: 17px;margin-right: 10px;padding-left: 20px;padding-right: 20px;">Close</button>
+                    <button type="submit" class="nutchamcong2" style="border:none;padding: 8px;"><a href="#"  style="color:white;text-decoration:none;">Add new</a></button>
                 </div>
             </div>
         </div>

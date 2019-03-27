@@ -1,16 +1,19 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="add-employees.aspx.cs" Inherits="Employee_AddEmployees" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+     <link href="../css/Attendance/History.css" rel="stylesheet" />
     <link href="../css/employee.css/addemployee.css" rel="stylesheet" />
-     <link href="../css/employee.css/add-point-employee.css" rel="stylesheet" />
     <link href="../css/Setting/AccessRight.css" rel="stylesheet" />
+    <link href="../css/employee.css/add-point-employee.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <div class="container">
-    <h3 class="title">Employees</h3>
-    <ul class="nav nav-tabs" style="display:block; list-style-type:disc; ">
-            <li class="active">
-                <a data-toggle="tab" href="#" style="cursor:pointer;">
+    <div class="container-fluid" style="width: 100%;height: 119px;background-color:#eee;margin-top: -23px;">
+        <div style="line-height: 1;display: inline-block;margin-left: 40px;vertical-align: middle;">
+            <a class="abc tab-content" style="text-decoration:none;" href="#"><span><h2 style="cursor:pointer;"> Employee</h2></span></a>
+        </div>
+        <ul class="nav nav-tabs" style="margin-block-start: 1em;padding-inline-start: 40px;position: absolute;padding-top: 32px;">
+            <li class="active" style="margin-right: 20px;">
+                <a data-toggle="tab" href="#" style="cursor:pointer;text-decoration:none;">
                     <span style="color:black;">Add new</span>
                 </a>
             </li>
@@ -20,8 +23,8 @@
     <div class="segment">
             <form class="ui form">
                 <div class="top" style="margin-top:10px;">
-                    <div class="left" style="width:25%;">
-                        <h2>Personal information </h2>
+                    <div class="left" style="width:30%;">
+                        <h4>Personal information </h4>
                         <p></p>
                     </div>
                     <div class="right">
@@ -31,7 +34,7 @@
                         </div>
                         <div class="col-xs-5">
                             <label>
-                                Sex
+                                Gender
                             </label>
                             <select class="form-control">
                                 <option>Woman</option>
@@ -51,7 +54,7 @@
                     </div>
                 </div>
                 <div class="center" style="border-top-style:outset; margin-top: 15px; ">
-                    <div class="left" style="width:25%;">
+                    <div class="left" style="width:30%;">
                         <h4>Staff information</h4>
                         <p>Detailed employee information</p>
                     </div>
@@ -115,21 +118,20 @@
                         </div>
                     </div>  
                 </div>
-                <div class="bottom" style="border-top-style:outset; margin-top: 10px;">
-                    <div class="Begin" style=" margin-top: 10px;">
-                        <p class="requirebox">
-                            <span>* : </span>
-                            <span>
-                                Obligatory
-                            </span>
-                        </p>
-                    </div>
-                    <div class="add" style=" margin-top: -35px">
-                        <a href="detailt-employees.aspx" class="addnew" >
-                            MORE
-                        </a>
-                    </div>
+
+                  <div style="background-color:#eee;width:100%;height:80px;">
+            <div class="col-sm-4 sidenav" style="margin-top:20px;">
+                <span>*: Obligatory</span>
+            </div>
+
+            <div class="col-sm-8" style="text-align:center;">
+                <div style="margin-top:-13px;">
+                    <a href="update-employee.aspx" class="addnew" style="width: 30%;border: none;"> MORE</a>
                 </div>
+            </div>
+        </div>
+           
+
             </form>
         </div>
 </asp:Content>

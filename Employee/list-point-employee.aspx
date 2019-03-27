@@ -189,7 +189,7 @@
                         <td> Thong Huyen Trang</td>
                         <td>14:06, Today</td>
                         <td>
-                            <a href="upload-point-employee.aspx"class="edit" title="Click here to update data">EDIT</a>
+                            <a href="update-point-employee.aspx"class="edit" title="Click here to update data">EDIT</a>
                         </td>
                     </tr>
                 </thead>

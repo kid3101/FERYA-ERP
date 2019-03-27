@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="search-point-employee.aspx.cs" Inherits="Employee_search_point_employee" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+
     <link href="../css/Attendance/SearchKeepingHistory.css" rel="stylesheet" />
 
 </asp:Content>

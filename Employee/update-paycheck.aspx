@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="upload-paycheck.aspx.cs" Inherits="Employee_detail_paycheck" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="update-paycheck.aspx.cs" Inherits="Employee_detail_paycheck" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <link href="../css/employee.css/add-point-employee.css" rel="stylesheet" />
@@ -15,7 +15,7 @@
           <ul class="nav nav-tabs">
             <li class="active">
                 <a data-toggle="tab" href="#" style="cursor:pointer;">
-                    <span style="color:black;">Upload</span>
+                    <span style="color:black;">Update</span>
                 </a>
             </li>
         </ul>

@@ -1,16 +1,15 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="manage-paycheck.aspx.cs" Inherits="Employee_manage_paycheck" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="search-paycheck.aspx.cs" Inherits="Employee_search_paycheck" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
      <link href="../css/Attendance/History.css" rel="stylesheet" />
     <link href="../css/employee.css/list-point-employee.css" rel="stylesheet" />
+     <link href="../css/Attendance/SearchKeepingHistory.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-
-
-              <div class="container-fluid" style="width: 100%;height: 119px;background-color:#eee;margin-top: -23px;">
+     <div class="container-fluid" style="width: 100%;height: 119px;background-color:#eee;margin-top: -23px;">
         <div style="line-height: 1;display: inline-block;margin-left: 40px;vertical-align: middle;">
-            <a class="abc tab-content" style="text-decoration:none;" href="#"><span><h2 style="cursor:pointer;">Company paycheck</h2></span></a>
+            <a class="abc tab-content" style="text-decoration:none;" href="#"><span><h2 style="cursor:pointer;"> My paycheck</h2></span></a>
         </div>
         <ul class="nav nav-tabs" style="margin-block-start: 1em;padding-inline-start: 40px;position: absolute;padding-top: 32px;">
             <li class="active" style="margin-right: 20px;">
@@ -154,10 +153,9 @@
                 </ul>
             </li>
         </ul>
-        <div class="container-fluid" style="margin-top: -34px;margin-left: 450px;">
+        <div class="container-fluid" style="margin-top: -34px;margin-left: 380px;">
             <div class="container" style="float:left;">
-                <a class="nutchamcong" href="add-paycheck.aspx" title="For management" style="color:white;margin-left:300px;padding-left: 20px;padding-right: 20px;text-decoration:none;" >  <i class="fa fa-plus-circle"></i> ADD NEW</a>
-                <a class="nutchamcong" title="For management" style="color:white;margin-left: 50px;padding-left: 20px;padding-right: 20px;text-decoration:none;" href="import-paycheck.aspx"><i class="fas fa-cloud-upload-alt"></i>  IMPORT</a>
+                <a class="nutchamcong"  href="manage-paycheck.aspx" title="For management" style="color:white;margin-left: 450px;padding-left: 20px;padding-right: 20px;text-decoration:none;" >  <i class="fa fa-cog"></i>  FOR MANAGEMENT</a>
             </div>
             <div class="container" style="display: inline-flex;padding-left: 500px; padding-top: 20px;">
                 <a href="#" style="height: 20px;width: 20px;color: #555;"><i class="fa fa-chevron-left"></i></a>
@@ -175,60 +173,106 @@
         <br>
     </div>
 
-        <div style="padding-top: 0px; padding-bottom: 0px; display: block; min-height: 724px;" class="ui segment tc-scrolled">
-            <table id="employeetable" style="margin:0;" class="table">
-                <thead>
-                    <tr>
-                        <th>
-                            <a class="sortable" style="text-decoration:none; cursor: pointer; color:black;">SID</a>
-                        </th>
-                        <th class="clo">EMPLOYEES</th>
-                        <th class="clo">GRADE ROADS</th>
-                        <th class="clo">TOTAL SALARY</th>
-                        <th class="clo">FORM OF PAYMENT</th>
-                        <th class="clo">SALARY</th>
-                        <th class="clo">STATUS</th>
-                        <th class="clo">CREATOR</th>
-                        <th class="clo">DATE CREATED</th>
-                        <th></th>
-                    </tr>
-                </thead>
-                <tbody>
+     <div style="margin-top: 20px;margin-left: 6px;">
+        <span class="aa">
+            <span>
+                <span>Employee:</span>
+                <strong>Huynh Thi Nhu Y 1</strong>
+            </span>
+            <span class="closee">
+                <a href="list-paycheck.aspx" class="closee"><i class="fa fa-times" title="Remove this condition"></i></a>
+            </span>
+        </span>
+    </div>
+
+    <div style="padding-top: 0px; padding-bottom: 0px; display: block; min-height: 558px;" class="segment">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        <a class="sortable mytip" href="javascript:(void(0))" title="System ID" data-sortby="id" data-nameorigin="SID" data-reactid=".9.0.2.0.0.0.0.0">SID</a>
+                    </th>
+                    <th>Employee</th>
+                    <th>Title of paycheck</th>
+                    <th>Total salary</th>
+                    <th>Form of payment</th>
+                    <th>Salary</th>
+                    <th >Status</th>
+                    <th>Date created</th>
+                </tr>
+            </thead>
+            <tbody>
                 <tr>
                     <td>18787</td>
                     <td>Thông Huyền Trang</td>
                     <td>
-                        <a href="update-paycheck.aspx" >s</a>
+                        <a href="javascript:void(0)" data-toggle="modal" data-target="#myModal">s</a>
                     </td>
                     <td>134,234,467</td>
                     <td>Pay 1 time</td>
                     <td>
-                        <span >-</span>
+                        <span >03/2021</span>
                         <span>(</span><span>Lần #</span><span>23</span><span>)</span>
                     </td>
                     <td>
                         <span style="background-color: #fdd!important;color: #ab0707;">Disabled</span>
                     </td>
-                    <td>
-                        <span>Thong Huyen Trang</span>
-                    </td>
                     <td >
                         <span class="" title="14:41, 25/03/2019" >14:41, To day</span>
                     </td>
-                    <td>
-                        <span>
-                            <a href="update-paycheck.aspx" style="padding:0 5px 0 5px;" title="Click here to update data">
-                                <small>EDIT</small>
-                            </a>
-
-                        </span>
-                    </td>
                 </tr>
             </tbody>
-            </table>
+        </table>
+    </div>
+    <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title">Detail</h3>
         </div>
-
-
-
+        <div class="modal-body">
+                <div style="border-bottom: 1px solid gainsboro;">
+                    <label>Employee</label>
+                    <p>
+                        <img class="ui avatar image" src="https://api.teamcrop.com/v1/photoavatar/t/6fe428/113bd/40.jpg">Thong Huyen Trang
+                    </p>
+                </div>
+            <div style="border-bottom: 1px solid gainsboro;">
+                    <label>Form of payment</label>
+                <p>Pay 1 time </p>
+                </div>
+                <div style="border-bottom: 1px solid gainsboro;">
+                    <label>Title of paycheck</label>
+                    <p>
+                        s
+                    </p>
+                </div>
+                <div style="border-bottom: 1px solid gainsboro;">
+                    <label>Total salary</label>
+                    <p>
+                        134,234,467
+                    </p>
+                </div>
+                <div style="border-bottom: 1px solid gainsboro;">
+                    <label>Order in pay period</label>
+                    <p>
+                        23
+                    </p>
+                </div>
+            <div style="border-bottom: 1px solid gainsboro;">
+                    <label>Status</label>
+                    <p>
+                        Disabled
+                    </p>
+                </div>
+        </div>
+         <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal" style="border: none;border-radius: 17px;margin-right: 10px;padding-left: 20px;padding-right: 20px;color: white;background-color: #0048ff;">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
 </asp:Content>
-
