@@ -43,9 +43,15 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" href="dist/fastselect.min.css">
-    <script src="dist/fastselect.standalone.js"></script>
     <link href="../css/Setting/AccessRight.css" rel="stylesheet" />
+
+    <link href="../dist/fastselect.css" rel="stylesheet" />
+    <script src="../dist/fastselect.js"></script>
+    <link href="../dist/fastselect.min.css" rel="stylesheet" />
+    <script src="../dist/fastselect.min.js"></script>
+    <script src="../dist/fastselect.standalone.js"></script>
+    <script src="../dist/fastselect.standalone.min.js"></script>
+    
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <div class="container" style="background-color: #eee;height: 70px;width: 100%;margin-top: -23px;;">
@@ -106,8 +112,14 @@
         <div class="col-sm-8">
 
             <!--<input type="text" multiple class="tagsInput"/>-->
-            <select style="display:block;height:35px;width:60%;">
+            <%--<select style="display:block;height:35px;width:60%;">
                 <option>---------</option>
+            </select>--%>
+            <select class="multipleSelect" multiple name="language">
+                <option value="Bangladesh">Bangladesh</option>
+                <option selected value="Barbados">Barbados</option>
+                <option selected value="Belarus">Belarus</option>
+                <option value="Belgium">Belgium</option>
             </select>
         </div>
     </div>
@@ -377,5 +389,8 @@
             </tbody>
         </table>
     </div>
+    <script>
+        $('.multipleSelect').fastselect();
+    </script>
 </asp:Content>
 
