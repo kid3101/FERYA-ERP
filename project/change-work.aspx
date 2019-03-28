@@ -48,7 +48,7 @@
                 <div>  </div>
                 <br />
                 <button type="button" class="btn btn-danger" onclick="updatework()">Update</button>
-                   
+                   <button type="button" class="btn btn-info" onclick="historywork()">HistoryUpdate</button>
             </div>
 
 
@@ -58,7 +58,10 @@
     </div>
     <script>
         function updatework() {
-            location.href = "/project/list-work.aspx";
+            location.href = "/project/change-work.aspx";
+        }
+        function historywork() {
+            location.href = "/project/history-changework.aspx";
         }
 </script>
 </asp:Content>

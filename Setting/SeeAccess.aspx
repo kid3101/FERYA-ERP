@@ -1,7 +1,7 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="AccessRight.aspx.cs" Inherits="Setting_AccessRight" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="SeeAccess.aspx.cs" Inherits="Setting_SeeAccess" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
-    <meta charset="utf-8">
+     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personnel settings -> Access rsight</title>
@@ -151,7 +151,10 @@
                 <option value="Belgium">Belgium</option>
             </select>
             <div style="margin-top: 20px;margin-left: 20px;">
-                <button type="button" class="btn btn-success" style="border-radius: 20px;width: 80px;"><a href="SeeAccess.aspx" style="color:white;text-decoration:none;">See</a></button>
+                <button type="button" class="btn btn-success" style="border-radius: 20px;width: 80px;"><a href="#" style="color:white;text-decoration:none;">See</a></button>
+            </div>
+            <div style="margin-top: 20px;margin-left: 20px;">
+                <button type="button" class="btn btn-default" style="background-color: white;border-color: gray;border-radius: 20px;"><a href="AddAccessRight.aspx" style="color:black;text-decoration:none;">Delete form</a></button>
             </div>
         </div>
     </div>
@@ -161,176 +164,106 @@
                 <tr>
                     <th>SID</th>
                     <th rowspan="2">Function</th>
-                    <th>Root Admin</th>
-                    <th><button type="submit" data-toggle="modal" data-target="#myModal" class="nutchamcong2" style="border:none;padding-left: 20px;padding-right: 20px;"><a href="#" style="color:white;text-decoration:none;"><i class="fa fa-plus"></i> Add permissions group</a></button></th>
+                    <th>User Name</th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>262</td>
-                    <td>employee.manage <i class="fa fa-question-circle"></i></td>
-                    <td>
-                        <label class="switch">
-                            <input type="checkbox" checked disabled>
-                            <span class="slider round" style="background-color: #ccc;"></span>
-                        </label>
-                    </td>
+                    <td>employee.manage</td>
+                    <td></td>
                     <td></td>
 
                 </tr>
                 <tr>
                     <td>307</td>
-                    <td>employee.add <i class="fa fa-question-circle"></i></td>
-                    <td>
-                        <label class="switch">
-                            <input type="checkbox" checked disabled>
-                            <span class="slider round" style="background-color: #ccc;"></span>
-                        </label>
-                    </td>
+                    <td>employee.add</td>
+                    <td></td>
                     <td></td>
 
                 </tr>
                 <tr>
                     <td>308</td>
-                    <td>employee.detail <i class="fa fa-question-circle"></i></td>
-                    <td>
-                        <label class="switch">
-                            <input type="checkbox" checked disabled>
-                            <span class="slider round" style="background-color: #ccc;"></span>
-                        </label>
-                    </td>
+                    <td>employee.detail</td>
+                    <td></td>
                     <td></td>
 
                 </tr>
                 <tr>
                     <td>263</td>
-                    <td>employee.manageworktime <i class="fa fa-question-circle"></i></td>
-                    <td>
-                        <label class="switch">
-                            <input type="checkbox" checked disabled>
-                            <span class="slider round" style="background-color: #ccc;"></span>
-                        </label>
-                    </td>
+                    <td>employee.manageworktime</td>
+                    <td></td>
                     <td></td>
 
                 </tr>
                 <tr>
                     <td>326</td>
-                    <td>employee.checkinterminal <i class="fa fa-question-circle"></i></td>
-                    <td>
-                        <label class="switch">
-                            <input type="checkbox" checked disabled>
-                            <span class="slider round" style="background-color: #ccc;"></span>
-                        </label>
-                    </td>
+                    <td>employee.checkinterminal</td>
+                    <td></td>
                     <td></td>
 
                 </tr>
                 <tr>
                     <td>264</td>
-                    <td>employee.managepoin <i class="fa fa-question-circle"></i></td>
-                    <td>
-                        <label class="switch">
-                            <input type="checkbox" checked disabled>
-                            <span class="slider round" style="background-color: #ccc;"></span>
-                        </label>
-                    </td>
+                    <td>employee.managepoin</td>
+                    <td></td>
                     <td></td>
 
                 </tr>
                 <tr>
                     <td>266</td>
-                    <td>project.manage <i class="fa fa-question-circle"></i></td>
-                    <td>
-                        <label class="switch">
-                            <input type="checkbox" checked disabled>
-                            <span class="slider round" style="background-color: #ccc;"></span>
-                        </label>
-                    </td>
+                    <td>project.manage</td>
+                    <td></td>
                     <td></td>
 
                 </tr>
                 <tr>
                     <td>268</td>
-                    <td>file.manage <i class="fa fa-question-circle"></i></td>
-                    <td>
-                        <label class="switch">
-                            <input type="checkbox" checked disabled />
-                            <span class="slider round" style="background-color: #ccc;"></span>
-                        </label>
-                    </td>
+                    <td>file.manage</td>
+                    <td></td>
                     <td></td>
 
                 </tr>
                 <tr>
                     <td>287</td>
-                    <td>workschedule.review <i class="fa fa-question-circle"></i></td>
-                    <td>
-                        <label class="switch">
-                            <input type="checkbox" checked disabled>
-                            <span class="slider round" style="background-color: #ccc;"></span>
-                        </label>
-                    </td>
+                    <td>workschedule.review</td>
+                    <td></td>
                     <td></td>
 
                 </tr>
                 <tr>
                     <td>306</td>
-                    <td>workschedule.change <i class="fa fa-question-circle"></i></td>
-                    <td>
-                        <label class="switch">
-                            <input type="checkbox" checked disabled>
-                            <span class="slider round" style="background-color: #ccc;"></span>
-                        </label>
-                    </td>
+                    <td>workschedule.change</td>
+                    <td></td>
                     <td></td>
 
                 </tr>
                 <tr>
                     <td>301</td>
-                    <td>elearning.manage <i class="fa fa-question-circle"></i></td>
-                    <td>
-                        <label class="switch">
-                            <input type="checkbox" checked disabled>
-                            <span class="slider round" style="background-color: #ccc;"></span>
-                        </label>
-                    </td>
+                    <td>elearning.manage</td>
+                    <td></td>
                     <td></td>
 
                 </tr>
                 <tr>
                     <td>320</td>
-                    <td>blog.managepost <i class="fa fa-question-circle"></i></td>
-                    <td>
-                        <label class="switch">
-                            <input type="checkbox" checked disabled>
-                            <span class="slider round" style="background-color: #ccc;"></span>
-                        </label>
-                    </td>
+                    <td>blog.managepost</td>
+                    <td></td>
                     <td></td>
 
                 </tr>
                 <tr>
                     <td>321</td>
-                    <td>blog.managecomment <i class="fa fa-question-circle"></i></td>
-                    <td>
-                        <label class="switch">
-                            <input type="checkbox" checked disabled>
-                            <span class="slider round" style="background-color: #ccc;"></span>
-                        </label>
-                    </td>
+                    <td>blog.managecomment</td>
+                    <td></td>
                     <td></td>
 
                 </tr>
                 <tr>
                     <td>327</td>
-                    <td>employee.checkinedit <i class="fa fa-question-circle"></i></td>
-                    <td>
-                        <label class="switch">
-                            <input type="checkbox" checked disabled>
-                            <span class="slider round" style="background-color: #ccc;"></span>
-                        </label>
-                    </td>
+                    <td>employee.checkinedit</td>
+                    <td></td>
                     <td></td>
                 </tr>
             </tbody>

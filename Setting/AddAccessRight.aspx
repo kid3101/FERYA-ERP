@@ -43,9 +43,25 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" href="dist/fastselect.min.css">
-    <script src="dist/fastselect.standalone.js"></script>
     <link href="../css/Setting/AccessRight.css" rel="stylesheet" />
+
+    <link href="../dist/fastselect.css" rel="stylesheet" />
+    <script src="../dist/fastselect.js"></script>
+    <link href="../dist/fastselect.min.css" rel="stylesheet" />
+    <script src="../dist/fastselect.min.js"></script>
+    <script src="../dist/fastselect.standalone.js"></script>
+    <script src="../dist/fastselect.standalone.min.js"></script>
+    
+    <style>
+        .fstMultipleMode .fstControls 
+        {
+            box-sizing: border-box;
+            padding: 0.5em 0.5em 0em 0.5em;
+            overflow: hidden;
+            width: 26em;
+            cursor: text;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <div class="container" style="background-color: #eee;height: 70px;width: 100%;margin-top: -23px;;">
@@ -76,8 +92,14 @@
                                     </div>
                                     <div class="form-group">
                                         <label>Assign employees</label>
-                                        <select style="display:block;height:35px;width:100%;">
+                                        <%--<select style="display:block;height:35px;width:100%;">
                                             <option>---------</option>
+                                        </select>--%>
+                                        <select class="multipleSelect" multiple name="language">
+                                            <option value="Bangladesh">Bangladesh</option>
+                                            <option selected value="Barbados">Barbados</option>
+                                            <option selected value="Belarus">Belarus</option>
+                                            <option value="Belgium">Belgium</option>
                                         </select>
                                     </div>
 
@@ -103,12 +125,21 @@
             <h3>See rights</h3>
             <p>See the rights of a specific employee</p>
         </div>
-        <div class="col-sm-8">
+        <div class="col-sm-8" style="display:flex;">
 
             <!--<input type="text" multiple class="tagsInput"/>-->
-            <select style="display:block;height:35px;width:60%;">
+            <%--<select style="display:block;height:35px;width:60%;">
                 <option>---------</option>
+            </select>--%>
+            <select class="multipleSelect" multiple name="language">
+                <option value="Bangladesh">Bangladesh</option>
+                <option selected value="Barbados">Barbados</option>
+                <option selected value="Belarus">Belarus</option>
+                <option value="Belgium">Belgium</option>
             </select>
+            <div style="margin-top: 20px;margin-left: 20px;">
+                <button type="button" class="btn btn-success" style="border-radius: 20px;width: 80px;"><a href="SeeAccess.aspx" style="color:white;text-decoration:none;">See</a></button>
+            </div>
         </div>
     </div>
     <div class="table-responsive" style="margin-top: -115px;">
@@ -377,5 +408,8 @@
             </tbody>
         </table>
     </div>
+    <script>
+        $('.multipleSelect').fastselect();
+    </script>
 </asp:Content>
 
