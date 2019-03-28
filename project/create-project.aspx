@@ -126,7 +126,7 @@
 
                     </label>
 
-                    <span>Can you</span>
+                    <span>Can create work</span>
                 </div>
             </div>
         </div>
@@ -157,7 +157,7 @@
 
                     </label>
 
-                    <span>Can you</span>
+                    <span>Can create work</span>
                 </div>
             </div>
         </div>
