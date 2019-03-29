@@ -41,9 +41,9 @@
                       <td>2</td>            
                     
                          <td>
-
+                             
                         <a href="/project/list-post.aspx">    <i style="width:25px" class="fas fa-book-open"></i></a>
-                             <a href="/project/category-list.aspx"><i style="width:25px" class="fas fa-exclamation-circle"></i></a>
+                             <a href="/project/category-list.aspx">   <i style="width:25px" class="fas fa-trash-alt"></i></a>
                           <a href="/project/edit-category.aspx"  <i style="width:25px" class="fas fa-pen"></i></a>
                         </td>
                     </tr>

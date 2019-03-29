@@ -8,6 +8,7 @@
         <!-- Page Heading -->
         <h1 class="h3 mb-4 text-gray-800">List-Work</h1>
         <button  type="button" class="btn btn-info" onclick="addwork()">Add Work</button>
+        <button  type="button" class="btn btn-danger" onclick="addvision()"> Vision</button>
         <br />
 
         <div class="row">
@@ -45,7 +46,7 @@
                                 <td>
 
                                     <a href="/project/change-work.aspx"><i style="width: 25px" class="fas fa-book-open"></i></a>
-                                    <a href="/project/list-work.aspx"><i style="width: 25px" class="fas fa-exclamation-circle"></i></a>
+                                    <a href="/project/list-work.aspx"> <i style="width: 25px" class="fas fa-trash-alt"></i></a>
                                     <a href=" /project/edit-work.aspx"><i style="width: 25px" class="fas fa-pen"></i></a>
                                      <a href=" /project/comment-work.aspx"> <i style="width: 25px" class="fas fa-comments"></i></a>
                                    
@@ -63,6 +64,10 @@
         function addwork() {
             location.href = "/project/add-work.aspx";
         }
+        function vision() {
+            location.href = "/project/list-vision.aspx";
+        }
+       
     </script>
 </asp:Content>
 

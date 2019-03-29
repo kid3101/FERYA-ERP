@@ -41,6 +41,8 @@
                             
                                     <a href="/project/list-work.aspx"><i style="width: 25px" class="fas fa-exclamation-circle"></i></a>
                                             <a href=" /project/edit-project.aspx"><i style="width: 25px" class="fas fa-pen"></i></a>
+                                     <a href=" /project/project-list.aspx"> <i style="width: 25px" class="fas fa-trash-alt"></i></a>
+                                
                                 </td>
                             </tr>
                            
