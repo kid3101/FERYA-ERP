@@ -65,7 +65,7 @@
 
             <div class="col-sm-6">
                 <form class="ui form">
-                    <table width="100%" cellpadding="10">
+                    <table width="100%" cellpadding="10" id="mytable" >
                         <tbody>
                             <tr>
                                 <td>
@@ -132,12 +132,19 @@
 
             <div class="col-sm-8" style="text-align:center;">
                 <div style="margin-top:-13px;margin-left: 200px;">
-                    <button class="nutchamcong" style="width: 30%;border: none;"> EXPORT EXCEL</button>
+                    <button id="btnExport" class="nutchamcong" style="width: 30%;border: none;"> EXPORT EXCEL</button>
                 </div>
             </div>
 
            
         </div>
     </div>
+    <script>
+        $("#btnExport").click(function(e) {
+    window.open('data:application/vnd.ms-excel,' + 
+                '<table>' + $('#mytable > table').html() + '</table>');
+    e.preventDefault();
+});
+    </script>
 </asp:Content>
 

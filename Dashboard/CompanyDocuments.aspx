@@ -117,7 +117,7 @@
                                 </div>
                                 <div class="modal-body linkk">
                                     <div >
-                                    <input style="position: absolute;opacity: 0;" type="file" name="file-2[]" id="file-2" class="inputfile inputfile-2" data-multiple-caption="{count} files selected" multiple="">
+                                    <input onchange="readURL(this);" style="position: absolute;opacity: 0;" type="file" name="file-2[]" id="file-2" class="inputfile inputfile-2" data-multiple-caption="{count} files selected" multiple="">
                                     <label style="float:left;" for="file-2"><i class="fa fa-paperclip"></i><span>File attached...</span></label>
                                 </div>
                                 </div>
