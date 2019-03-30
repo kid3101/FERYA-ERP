@@ -3,6 +3,15 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+
+     <link href="../css/Setting/AccessRight.css" rel="stylesheet" />
+    <link href="../dist/fastselect.css" rel="stylesheet" />
+    <script src="../dist/fastselect.js"></script>
+    <link href="../dist/fastselect.min.css" rel="stylesheet" />
+    <script src="../dist/fastselect.min.js"></script>
+    <script src="../dist/fastselect.standalone.js"></script>
+    <script src="../dist/fastselect.standalone.min.js"></script>
+
     <link href="../css/Css-Mailbox/maibox-css.css" rel="stylesheet" />
     <link href="../css/Css-Mailbox/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
         <%--<link href="../css/employee.css/add-point-employee.css" rel="stylesheet" />--%>
@@ -42,7 +51,12 @@
                                 <!-- /.box-header -->
                                 <div class="box-body">
                                     <div class="form-group">
-                                        <input class="form-control" placeholder="To:">
+                                         <select style="height:8px" class="multipleSelect" multiple name="language">
+                <option value="Bangladesh">Bangladesh</option>
+                <option selected value="Barbados">Barbados</option>
+                <option selected value="Belarus">Belarus</option>
+                <option value="Belgium">Belgium</option>
+            </select>
                                     </div>
                                     <div class="form-group">
                                         <input class="form-control" placeholder="Subject:">
@@ -77,7 +91,7 @@
                 <!-- /.content -->
             </div> 
           <script>
-
+ $('.multipleSelect').fastselect();
         function myFunction() {
             var x = document.getElementById("myDIV");
             if (x.style.display === "none") {
