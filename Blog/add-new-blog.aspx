@@ -9,9 +9,9 @@
     <div class="container-fluid">
           <div class="header-blog">
             <div class="col-sm-7" style="display:flex;">
-             <h1 class="h3 mb-4 text-gray-800">Blog</h1>
-             <i style="padding-left: 20px;color: black;padding-right: 20px;margin-top:10px;" class="fa fa-angle-right"></i>
-             <h1 class="h3 mb-4 text-gray-800">Add new
+               <div class="col-sm-7" style="display:flex;">
+             <h1 class="h3 mb-4 text-gray-800">Blog > Add new</h1>
+             </div>
              </div>
          </div>
     
