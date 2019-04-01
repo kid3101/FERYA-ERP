@@ -6,7 +6,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-    <div class="container-fluid" style="width: 100%;height: 119px;background-color:#eee;margin-top: -23px;">
+    <div class="container-fluid">
         <div style="line-height: 1;display: inline-block;margin-left: 40px;vertical-align: middle;">
             <a class="abc tab-content" style="text-decoration:none;" href="#"><span><h2 style="cursor:pointer;"> Please take leave</h2></span></a>
         </div>
@@ -121,9 +121,6 @@
                             REASON
                         </th>
                         <th class="clo">TIME</th>
-                        <th class="clo">ROUND 1</th>
-                        <th class="clo">ROUND 2</th>
-                        <th class="clo">ROUND 3</th>
                         <th class="clo">STATUS</th>
                         <th class="clo">
                             DATE CREATED

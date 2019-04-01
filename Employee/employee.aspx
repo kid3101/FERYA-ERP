@@ -7,7 +7,7 @@
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-    <div class="container-fluid" style="width: 100%;height: 119px;background-color:#eee;margin-top: -23px;">
+    <div class="container-fluid">
         <div style="line-height: 1;display: inline-block;margin-left: 40px;vertical-align: middle;">
             <a class="abc tab-content" style="text-decoration:none;" href="#"><span><h2 style="cursor:pointer;">Employee</h2></span></a>
         </div>
@@ -18,16 +18,16 @@
                     <span class="number">1</span>
                 </a>
             </li>
-            <li class="dropdown">
+            <li class="dropdown" style="box-shadow: inset 0 2px 3px #ccc; border-radius: 4px 4px 0 0; background: #ddd;">
                 <a class="dropdown-toggle" data-toggle="dropdown" style="padding-right: 30px;color:black;cursor:pointer;" title="Turn on / off the search function">Filter & search ...</a>
-                <ul class="dropdown-menu filterbarfull filterbar" style="top: 0px;transform: translate3d(0px, 26px, 0px);width: 354px;margin-top: 185px;">
+                <ul class="dropdown-menu filterbarfull filterbar" style="top: 0px;transform: translate3d(0px, 26px, 0px);width: 354px;margin-top: 185px; left:0px">
                     <li>
                         <form class="ui form">
-                            <table width="100%" cellpadding="10">
+                            <table width="100%" cellpadding="3">
                                 <tbody>
                                     <tr>
                                         <td>
-                                            <label>
+                                            <label style="font-size:17px">
                                                 <span style="margin-right:10px;">Key word</span>
                                             </label>
                                         </td>
@@ -39,7 +39,7 @@
                                     </tr>
                                      <tr>
                                         <td>
-                                            <label>
+                                            <label style="font-size:17px">
                                                 <span style="margin-right:10px;">Office</span>
                                             </label>
                                         </td>
@@ -56,7 +56,7 @@
                                     
                                      <tr>
                                         <td>
-                                            <label>
+                                            <label style="font-size:17px">
                                                 <span style="margin-right:10px;">Department</span>
                                             </label>
                                         </td>
@@ -72,7 +72,7 @@
                                     </tr>
                                      <tr>
                                         <td>
-                                            <label>
+                                            <label style="font-size:17px">
                                                 <span style="margin-right:10px;">Status</span>
                                             </label>
                                         </td>
@@ -89,7 +89,7 @@
                                     </tr>
                                          <tr>
                                         <td>
-                                            <label>
+                                            <label style="font-size:17px">
                                                 <span style="margin-right:10px;">Rank</span>
                                             </label>
                                         </td>
@@ -117,8 +117,8 @@
 
                                     <tr>
                                         <td>
-                                            <label>
-                                                <span style="margin-right:10px;">Type of work</span>
+                                            <label style="font-size:17px">
+                                                <span >Type of work</span>
                                             </label>
                                         </td>
                                         <td>
@@ -158,7 +158,7 @@
 
                 <div class="dropdown" style="position: relative;display: inline-block;">
 
-                    <a class="ls dropdown-toggle" title="For management" style="margin-left: -10px;background-color: #eee;border-color: #eee;" data-toggle="dropdown"><i class="fas fa-cloud-upload-alt"></i> Import</a>
+                    <a class="ls dropdown-toggle" title="For management"  data-toggle="dropdown"><i class="fas fa-cloud-upload-alt"></i> Import</a>
 
                     <ul class="dropdown-menu " role="menu" aria-labelledby="menu1" style="width: 200px;">
                         <li  role="presentation" style="margin-bottom: 10px;margin-left: 10px;"><a role="menuitem" tabindex="-1" href="import-list.aspx" style="color: black;text-decoration:none;"><i class="fas fa-cloud-upload-alt"></i> Import employee list</a></li>
@@ -209,6 +209,7 @@
                         <th></th>
                     </tr>
                     <tr>
+                         
                         <td>
                             <%--<input type="checkbox" />--%>
 
@@ -218,7 +219,7 @@
                             <img style="width:35px;height:35px;" src="https://api.teamcrop.com/v1/photoavatar/a/5c53f5/7a013/40.jpg">
                         </td>
                         <td>
-                            <a href="#employee/detail/18169" data-toggle="tooltip" title="View details" style="text-decoration:none">ed</a>
+                            <a href="#employee/detail/18169" data-toggle="tooltip" title="View details" style="text-decoration:none">my</a>
                             <br />
                             <span>Employees @</span>
                         </td>
@@ -226,20 +227,21 @@
                         <td> Employees </td>
                         <td>Official staff</td>
                         <td>
-                            <span>a@gmail.com</span>
+                            <span>u@gmail.com</span>
                             <br />
-                            <span>0327825991</span>
+                            <span>345678</span>
                         </td>
                         <td>7</td>
                         <td> <label style="background-color:#93ef93;">Effective</label></td>
                         <td> Thong Huyen Trang</td>
                         <td>14:06, Today</td>
                         <td style="width:5px">
-                            <a href="edit_employee.html" class="edit" title="Click here to update data"><i style="width: 25px" class="fas fa-pen"></i></a>
+                            <a href="edit-employee.aspx" class="edit" title="Click here to update data"><i style="width: 25px" class="fas fa-pen"></i></a>
                         </td>
                         <td style="width:5px" >
                             <a href="#" ><i style="width: 25px" class="fas fa-trash-alt"></i></a>                                                                                                                                                                                                                                                                                                                    
                         </td>
+                       
                     </tr>
                 </thead>
             </table>
@@ -248,10 +250,7 @@
                     <tr>
                         
                         <th style=" margin-top:30px; ">
-                          <%--  <input type="checkbox" />
-                                <span>
-                                    Selected
-                                </span>--%>
+                          
                                 <span>&nbsp;</span>
                                 <span>0</span>
                                 <span>&nbsp;</span>
@@ -310,6 +309,7 @@
         $(document).ready(function () {
             $('[data-toggle="tooltip"]').tooltip();
         });
+
     </script>
 </asp:Content>
 

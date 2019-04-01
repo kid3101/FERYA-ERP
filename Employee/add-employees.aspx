@@ -7,7 +7,7 @@
     <link href="../css/employee.css/add-point-employee.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <div class="container-fluid" style="width: 100%;height: 119px;background-color:#eee;margin-top: -23px;">
+    <div class="container-fluid" >
         <div style="line-height: 1;display: inline-block;margin-left: 40px;vertical-align: middle;">
             <a class="abc tab-content" style="text-decoration:none;" href="#"><span><h2 style="cursor:pointer;"> Employee</h2></span></a>
         </div>
@@ -30,7 +30,8 @@
                     <div class="right">
                         <div class="col-xs-5">
                             <label>Name<a style="margin-top: -0.2em; margin-left:0.2em;color: #DB2828;">*</a></label>
-                            <input class="form-control" type="text">
+                            <input class="form-control" type="text" id="txtName">
+
                         </div>
                         <div class="col-xs-5">
                             <label>
@@ -45,11 +46,11 @@
                         </div>
                         <div class="col-xs-5">
                             <label>Email<a style="margin-top: -0.2em; margin-left:0.2em;color: #DB2828;">*</a></label>
-                            <input class="form-control" type="text">
+                            <input class="form-control" type="text" id="txtEmail">
                         </div>
                         <div class="col-xs-5">
-                            <label>Tel</label>
-                            <input class="form-control" type="text">
+                            <label>Phone</label>
+                            <input class="form-control" type="text" id="txtPhone">
                         </div>
                     </div>
                 </div>
@@ -62,7 +63,10 @@
 
                         <div class="col-xs-5">
                             <label>Office</label>
-                            <select class="form-control"></select>
+                            <select class="form-control">
+                                <option></option>
+                            </select>
+                            
                         </div>
 
                         <div class="col-xs-5">
@@ -99,14 +103,16 @@
                         </div>
 
                         <div class="col-xs-5" >
-                            <label>Internal ID</label>
-                            <a href="#" data-toggle="tooltip" title="If your company / group is running (or has) a system to manage all accounts, this field will store the user ID of your current system. (Allow A-Z, 0-9 characters). Example: E16217, CE40128 ..." style="text-decoration:none;"><i class="fa fa-exclamation-circle"></i></a>
-                            <select class="form-control"></select>
+                            <label>Internal ID<i class="fa fa-exclamation-circle" data-toggle="tooltip" title="If your company / group is running (or has) a system to manage all accounts, this field will store the user ID of your current system. (Allow A-Z, 0-9 characters). Example: E16217, CE40128 ..." ></i></label>
+                            <div class="ui right labeled input">
+                                <input name="internalid" type="text" value="" >
+                                <lable style="background-color: gray; padding: 3px 1px; color: white;">@acb560</lable>
+                            </div>
                         </div>
 
                         <div class="col-xs-5">
                             <label>Position<a style="margin-top: -0.2em; margin-left:0.2em;color: #DB2828;">*</a></label>
-                            <input class="form-control" type="text">
+                            <input class="form-control" type="text" id="txtPosition">
                         </div>
 
                         <div class="col-xs-5" >
@@ -126,7 +132,7 @@
 
             <div class="col-sm-8" style="text-align:center;">
                 <div style="margin-top:-13px;">
-                    <a href="update-employee.aspx" class="addnew" style="width: 30%;border: none;"> MORE</a>
+                    <a href="update-employee.aspx" class="addnew" style="width: 30%;border: none;" onclick="addnew()"> MORE</a>
                 </div>
             </div>
         </div>
@@ -134,5 +140,31 @@
 
             </form>
         </div>
+
+    <script> function addnew()
+        {
+            var name = $("#txtName").val();
+            var email = $("#txtEmail").val();
+            var phone = $("#txtPhone").val();
+   
+            $.post ("/do/add-employee.aspx", {
+                name: name,
+                email: email,
+                phone: phone,   
+             
+            }, function (data) {
+                if (data == 1) {
+                    alertify.alert("Success");
+                    location.href = "employee.aspx";
+                }
+                else {
+                    alertify.alert("Error", data);
+                }
+            });
+            }
+           
+    </script>
+
+
 </asp:Content>
 

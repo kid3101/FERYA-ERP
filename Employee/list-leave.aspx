@@ -117,9 +117,6 @@
                         <th class="clo">EMPLOYEES</th>
                         <th class="clo">REASON</th>
                         <th class="clo">TIME</th>
-                        <th class="clo">ROUND 1</th>
-                        <th class="clo">ROUND 2</th>
-                        <th class="clo">ROUND 3</th>
                         <th class="clo">STATUS</th>
                         <th class="clo">DATE CREATED</th>
                         <th></th>
@@ -129,7 +126,7 @@
                 <thead id="data" onclick="myFunction()">
                     <tr>
                         <td>
-                            <a style="text-decoration:none; cursor: pointer; color:black;">9281</a>
+                            <a style="text-decoration:none; cursor: pointer; color:black;">9431</a>
                         </td>
                         <td></td>
                         <td>
@@ -141,27 +138,18 @@
                             </span>
                         </td>
                         <td>
-                            ưer
+                            	wewre
                         </td>
-                        <td>18/03/2019 - 18/03/2019</td>
-                        <td>
-                            <button class="w3-button w3-white w3-border">Pending</button>
-                        </td>
-                        <td>
-                            <a data-toggle="tooltip" title="Wait for round 1" style="color:#3498db"><i class="fa fa-ellipsis-h"></i></a>
-                        </td>
-                        <td>
-                            <a data-toggle="tooltip" title="Wait for round 2" style="color:#3498db"><i class="fa fa-ellipsis-h"></i></a>
-                        </td>
+                        <td>26/03/2019 - 29/03/2019</td>
                         <td><label style="background-color: #E8E8E8!important;padding:5px 20px;"><span style="font-size:12px;">Wait for round 1</span></label></td>
                         <td>
-                            16:44, 18/03
+                           13:21, 28/03
                         </td>
                         <td><i class="fa fa-trash"></i></td>
                     </tr>
                 </thead>
             </table>
-            <div id="myDIV" style="display: none; margin: 10px 300px 0px 20px;">
+            <div id="myDIV" style="display: none; margin: 10px 300px 0px 20px; width:93%">
                 <div class="w3-table  w3-border " style="border: 15px solid #3498db!important;">
                     <table class=" table " style="width:100%;">
                         <tr style="background-color: #f0f0f0;padding: 15px;">
@@ -170,29 +158,12 @@
                         </tr>
                         <tr>
                             <td>
-                                <p>Time: 18/03/2019 - 18/03/2019</p>
-                                <p>Number of breaks: 0</p>
-                                <p>Paid holidays: 2</p>
-                                <p>Unpaid time off: 4</p>
-                                <p>Reason: er</p>
-                                <p>Note: ẻ</p>
-                            </td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td style="display:flex">
-                                <span style="margin-right:20px">
-                                    <p>Round 1:</p>
-                                    <p>Status: <label style="background-color:gainsboro;color:#0e0e0e">Pending</label></p>
-                                </span>
-                                <span style="margin-right:20px">
-                                    <p>Round 1:</p>
-                                    <p>Status: <label style="background-color:gainsboro;color:#0e0e0e">Pending</label></p>
-                                </span>
-                                <span>
-                                    <p>Round 1:</p>
-                                    <p>Status: <label style="background-color:gainsboro;color:#0e0e0e">Pending</label></p>
-                                </span>
+                                <p>Time: 26/03/2019 - 29/03/2019</p>
+                                <p>Number of vacation hours: 136</p>
+                                <p>Paid holidays: 1</p>
+                                <p>Unpaid time off: 1</p>
+                                <p>Reason: wewre</p>
+                                <p>Note: ruacon</p>
                             </td>
                             <td></td>
                         </tr>
