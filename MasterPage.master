@@ -132,7 +132,7 @@
         <div id="collapseProject" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <a class="collapse-item" href="/project/project-list.aspx">Project List</a>
-            <a class="collapse-item" href="/project/create-project.aspx">+ New Project</a>
+            <a class="collapse-item" href="/project/create-project.aspx">New Project</a>
           </div>
         </div>
       </li>
@@ -147,7 +147,7 @@
           <div class="bg-white py-2 collapse-inner rounded">
             <a class="collapse-item" href="/Blog/blog-company.aspx">Blog</a>
             <a class="collapse-item" href="/Blog/list-blog-for-manager.aspx">Manage Blog</a>
-            <a class="collapse-item" href="/Blog/add-new-blog.aspx">+ New Entry</a>
+            <a class="collapse-item" href="/Blog/add-new-blog.aspx">New Entry</a>
           </div>
         </div>
       </li>
@@ -160,8 +160,8 @@
         </a>
         <div id="collapseTraining" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="Trainning/AllCourses.aspx">All Courses</a>
-            <a class="collapse-item" href="#">My Courses</a>
+            <a class="collapse-item" href="/online-learning/all-courses.aspx">All Courses</a>
+            <a class="collapse-item" href="/online-learning/my-courses.aspx">My Courses</a>
           </div>
         </div>
       </li>

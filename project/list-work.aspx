@@ -7,8 +7,27 @@
     <div class="container-fluid">
         <!-- Page Heading -->
         <h1 class="h3 mb-4 text-gray-800">List-Work</h1>
-        <button  type="button" class="btn btn-info" onclick="addwork()">Add Work</button>
-        <button  type="button" class="btn btn-danger" onclick="addvision()"> Vision</button>
+        <div> 
+            <button type="button" class="btn btn-info" onclick="addwork()">Add Work</button>
+           
+             <a  href="/project/list-version.aspx" style="margin-left: 700px;font-size:20px"><i class="far fa-folder-open"></i>Version</a>
+               
+      </div>
+        <div style="color:white"> 0</div>
+        
+        <select class="form-control" style="width:400px" >
+            <option>Search Work</option>
+            <option>Assigned the job</option>
+            <option>Solving</option>
+            <option>Need to be approved</option>
+            <option>Browsing</option>
+            <option>Complete but error</option>
+            <option>Completed</option>
+            <option>Cancel</option>
+        </select>
+       
+       
+          
         <br />
 
         <div class="row">
@@ -22,7 +41,7 @@
                                 <th>Critical Level</th>
                                 <th>Name</th>
                                 <th>Code Work</th>
-                                <th>Vision</th>
+                                <th>Version</th>
                                 <th>Type</th>
                                 <th>Appoint</th>
                                 <th>Day create</th>
@@ -37,19 +56,19 @@
                                 <td>12</td>
                                 <td>TAG1</td>
                                 <td>api</td>
-                                <td>vision</td>
+                                <td>version</td>
                                 <td>type1</td>
                                 <td>Appoint</td>
                                 <td>25/3</td>
-                                <td>1</td>
+                                <td>Finish</td>
 
                                 <td>
 
                                     <a href="/project/change-work.aspx"><i style="width: 25px" class="fas fa-book-open"></i></a>
-                                    <a href="/project/list-work.aspx"> <i style="width: 25px" class="fas fa-trash-alt"></i></a>
+                                    <a href="/project/list-work.aspx"><i style="width: 25px" class="fas fa-trash-alt"></i></a>
                                     <a href=" /project/edit-work.aspx"><i style="width: 25px" class="fas fa-pen"></i></a>
-                                     <a href=" /project/comment-work.aspx"> <i style="width: 25px" class="fas fa-comments"></i></a>
-                                   
+                                    <a href=" /project/comment-work.aspx"><i style="width: 25px" class="fas fa-comments"></i></a>
+
                                 </td>
                             </tr>
 
@@ -64,10 +83,10 @@
         function addwork() {
             location.href = "/project/add-work.aspx";
         }
-        function vision() {
-            location.href = "/project/list-vision.aspx";
+        function version() {
+            location.href = "/project/list-version.aspx";
         }
-       
+
     </script>
 </asp:Content>
 
