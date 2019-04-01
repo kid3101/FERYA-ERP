@@ -47,7 +47,7 @@
                 </div>
                 <div>  </div>
                 <br />
-                <button type="button" class="btn btn-danger" onclick="updatework()">Update</button>
+                <button type="button" class="btn btn-dark" onclick="updatework()">Update</button>
                    <button type="button" class="btn btn-info" onclick="historywork()">HistoryUpdate</button>
             </div>
 

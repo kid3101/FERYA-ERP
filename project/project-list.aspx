@@ -47,7 +47,7 @@
                                 <td>New</td>
                                 <td>
 
-                                    <a href="/project/category-list.aspx"><i style="width: 25px" class="fas fa-book-open"></i></a>
+                                   <%-- <a href="/project/category-list.aspx"><i style="width: 25px" class="fas fa-book-open"></i></a>--%>
 
                                     <a href="/project/list-work.aspx"><i style="width: 25px" class="fas fa-exclamation-circle"></i></a>
                                     <a href=" /project/edit-project.aspx"><i style="width: 25px" class="fas fa-pen"></i></a>

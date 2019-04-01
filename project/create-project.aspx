@@ -30,7 +30,7 @@
 
 
     <div class="container-fluid">
-        <h1 class="h3 mb-4 text-gray-800">Create List</h1>
+        <h1 class="h3 mb-4 text-gray-800">Create Project</h1>
         <div class="row">
             <div class="col-sm-3">
                 <div>
@@ -50,7 +50,7 @@
                 <div>
                     <input style="height: 60px" class="form-control" type="text">
                 </div>
-                <div class="col-sm" style="display: flex">
+                <div class="col-sm" style="display: flex;margin-left:-22px;">
                     <div class="col-sm-8">
                         <label for="ex1">Start Day</label>
 
@@ -67,21 +67,19 @@
                             <input class="form-control" type="date">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
                         </div>
-                    </div>
-                    <div class="col-sm-4">
-
+                    </div>                   
+                </div>
+                <div class="col-sm-5" style="margin-left:-10px;">
                         <label>Status </label>
                         <select class="form-control">
-                            <option value="">New</option>
-                            <option value="">Working</option>
-                            <option value="">Finish</option>
-                            <option value="">Close</option>
+                            <option> New </option>
+                            <option> Working </option>
+                            <option> Finish </option>
+                            <option> Close </option>
                         </select>
                     </div>
-                </div>
 
             </div>
-
             <div class="col-sm-4">
                 <br>
                 <label>Position</label>

@@ -24,8 +24,19 @@
     background-color: #43A2F3;
     -webkit-animation: fstAnimationEnter 0.2s;
     -moz-animation: fstAnimationEnter 0.2s;
-    animation: fstAnimationEnter 0.2s
-}</style>
+    animation: fstAnimationEnter 0.2s;
+}
+.fstMultipleMode .fstControls {
+    box-sizing: border-box;
+    padding: 0.5em 0.5em 0em 0.5em;
+    overflow: hidden;
+    width: 50em;
+    cursor: text;
+    border: 1px solid #d1d3e2;
+    border-radius: .35rem;
+    height: 60px;
+}
+</style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
 
