@@ -51,25 +51,6 @@
                                             <span class="mailbox-read-time pull-right">15 Feb. 2016 11:03 PM</span>
                                         </h5>
                                     </div>
-                                    <!-- /.mailbox-read-info -->
-                                    <div class="mailbox-controls with-border text-center">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-default btn-sm" data-toggle="tooltip" data-container="body" title="Delete">
-                                                <i class="fa fa-trash-o"></i>
-                                            </button>
-                                           <a href="reply-mail.aspx"> <button type="button" class="btn btn-default btn-sm" data-toggle="tooltip" data-container="body" title="Reply">
-                                                <i class="fa fa-reply"></i>
-                                            </button></a>
-                                            <button type="button" class="btn btn-default btn-sm" data-toggle="tooltip" data-container="body" title="Forward">
-                                                <i class="fa fa-share"></i>
-                                            </button>
-                                        </div>
-                                        <!-- /.btn-group -->
-                                        <button type="button" class="btn btn-default btn-sm" data-toggle="tooltip" title="Print">
-                                            <i class="fa fa-print"></i>
-                                        </button>
-                                    </div>
-                                    <!-- /.mailbox-controls -->
                                     <div class="mailbox-read-message">
                                         <p>Hello John,</p>
                                         <p>
