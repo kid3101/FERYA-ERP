@@ -8,9 +8,9 @@
     <div class="container-fluid">
           <div class="header-blog">
           <div style="display:flex;">
-            <div class="col-sm-7">
-                  <a class="title-blog" href="blog-company.aspx">Blog List</a>
-             </div>  
+            <div class="col-sm-7" style="display:flex;">
+             <h1 class="h3 mb-4 text-gray-800">Blog List</h1>          
+             </div>
           <div class="col-sm-5" id="col-5">
                   <div class="linkmanagerblog">
                     <div class="managerblog">
