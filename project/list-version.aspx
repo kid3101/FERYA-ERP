@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="list-vision.aspx.cs" Inherits="project_list_vision" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="list-version.aspx.cs" Inherits="project_list_vision" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
@@ -46,8 +46,8 @@
 
                                     <a href="/project/create-vision.aspx"><i onclick="createvision()" style="width: 25px" class="fas fa-book-open"></i></a>
 
-                                    <a href="/project/list-vision.aspx"><i onclick="deletevision()" style="width: 25px" class="fas fa-trash-alt"></i></a>
-                                    <a href=" /project/edit-vision.aspx"><i onclick="editvision()" style="width: 25px" class="fas fa-pen"></i></a>
+                                    <a href="/project/list-version.aspx"><i onclick="deletevision()" style="width: 25px" class="fas fa-trash-alt"></i></a>
+                                    <a href=" /project/edit-version.aspx"><i onclick="editvision()" style="width: 25px" class="fas fa-pen"></i></a>
                                 </td>
                             </tr>
 

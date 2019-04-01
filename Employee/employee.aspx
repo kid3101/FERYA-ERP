@@ -190,29 +190,29 @@
             <table id="employeetable" style="margin:0;" class="table">
                 <thead>
                     <tr>
-                        <th>
-                            <input type="checkbox" />
+                        <th style="width:5px">
+                           <%-- <input type="checkbox" />--%>
 
-                            <a class="sortable" style="text-decoration:none; cursor: pointer;color:black;">SID</a>
+                            <a <%--class="sortable" style="text-decoration:none; cursor: pointer;color:black;"--%> style="width:5px">SID</a>
                         </th>
-                        <th></th>
-                        <th class="clo">NAME</th>
-                        <th class="clo"> OFFICE</th>
-                        <th class="clo"> RANK</th>
-                        <th class="clo">TYPE OF WORK</th>
-                        <th class="clo">EMAIL</th>
-                        <th class="clo">INTERNAL ID</th>
-                        <th class="clo"> STATUS</th>
-                        <th class="clo"> CREATOR</th>
-                        <th class="clo"> DATE CREATED</th>
+                        <th style="width:5px"></th>
+                        <th style="width:20px" class="clo">NAME</th>
+                        <th style="width:20px" class="clo">OFFICE</th>
+                        <th style="width:10px" class="clo">RANK</th>
+                        <th style="width:25px" class="clo">TYPE</th>
+                        <th style="width:20px" class="clo">EMAIL</th>
+                        <th style="width:25px" class="clo">INTERNAL</th>
+                        <th style="width:20px" class="clo">STATUS</th>
+                        <th style="width:20px" class="clo">CREATOR</th>
+                        <th style="width:25px" class="clo">CREATED</th>
                         <th></th>
                         <th></th>
                     </tr>
                     <tr>
                         <td>
-                            <input type="checkbox" />
+                            <%--<input type="checkbox" />--%>
 
-                            <a class="sortable" style="text-decoration:none; cursor: pointer;color:black;">18169</a>
+                            <a class="sortable" style="text-decoration:none; cursor: pointer;color:black;">1</a>
                         </td>
                         <td>
                             <img style="width:35px;height:35px;" src="https://api.teamcrop.com/v1/photoavatar/a/5c53f5/7a013/40.jpg">
@@ -234,11 +234,11 @@
                         <td> <label style="background-color:#93ef93;">Effective</label></td>
                         <td> Thong Huyen Trang</td>
                         <td>14:06, Today</td>
-                        <td>
-                            <a href="edit_employee.html" class="edit" title="Click here to update data">EDIT</a>
+                        <td style="width:5px">
+                            <a href="edit_employee.html" class="edit" title="Click here to update data"><i style="width: 25px" class="fas fa-pen"></i></a>
                         </td>
-                        <td>
-                            <a href="#" class="delete     >                                                                                                                                                                                                                                                                                                                      " title="Click here to delete this data line ..">DELETE</a>
+                        <td style="width:5px" >
+                            <a href="#" ><i style="width: 25px" class="fas fa-trash-alt"></i></a>                                                                                                                                                                                                                                                                                                                    
                         </td>
                     </tr>
                 </thead>
@@ -248,10 +248,10 @@
                     <tr>
                         
                         <th style=" margin-top:30px; ">
-                            <input type="checkbox" />
+                          <%--  <input type="checkbox" />
                                 <span>
                                     Selected
-                                </span>
+                                </span>--%>
                                 <span>&nbsp;</span>
                                 <span>0</span>
                                 <span>&nbsp;</span>
