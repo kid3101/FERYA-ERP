@@ -125,7 +125,7 @@
             <h3>See rights</h3>
             <p>See the rights of a specific employee</p>
         </div>
-        <div class="col-sm-8" style="display:flex;">
+        <div class="col-sm-8" style="display:-webkit-inline-box;">
 
             <!--<input type="text" multiple class="tagsInput"/>-->
             <%--<select style="display:block;height:35px;width:60%;">
