@@ -50,7 +50,7 @@
                 <div>
                     <input style="height: 60px" class="form-control" type="text">
                 </div>
-                <div class="col-sm" style="display: flex">
+                <div class="col-sm" style="display: flex;margin-left:-22px;">
                     <div class="col-sm-8">
                         <label for="ex1">Start Day</label>
 
@@ -68,18 +68,18 @@
                             <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
                         </div>
                     </div>
-                    <div class="col-sm-4">
 
+                </div>
+                <br />
+                 <div class="col-sm-5" style="margin-left:-10px;">
                         <label>Status </label>
                         <select class="form-control">
-                            <option value="">New</option>
-                            <option value="">Working</option>
-                            <option value="">Finish</option>
-                            <option value="">Close</option>
+                            <option> New </option>
+                            <option> Working </option>
+                            <option> Finish </option>
+                            <option> Close </option>
                         </select>
                     </div>
-                </div>
-
             </div>
 
             <div class="col-sm-4">
