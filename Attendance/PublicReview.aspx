@@ -148,8 +148,8 @@
                 </div>
 
                 <a class="ls" style="margin-left: 15px;text-decoration:none;" href="WorkingPlan.aspx""><i class="fa fa-calendar"></i> Calendar</a>
-                <a class="maychamcong" data-toggle="tooltip" href="Timekeeper.aspx"" title="Allowing attendance for other employees or accessing from timekeeping equipment" style="color:white;margin-left: 15px;padding-left: 20px;padding-right: 20px;text-decoration:none;"><i class="fa fa-desktop"></i> TIMEKEEPER</a>
-                <a class="nutchamcong" data-toggle="tooltip" href="TimeKeeping.aspx" title="Timekeeping" style="color:white;margin-left: 15px;padding-left: 20px;padding-right: 20px;text-decoration:none;"><i class="fa fa-plus-circle"></i> TIMEKEEPING</a>
+                <a class="maychamcong" data-toggle="tooltip" href="Timekeeper.aspx"" title="Allowing attendance for other employees or accessing from timekeeping equipment" style="color:white;margin-left: 15px;padding-left: 20px;padding-right: 20px;text-decoration:none;"><i class="fa fa-desktop"></i> ATTENDANCE</a>
+                <a class="nutchamcong" data-toggle="tooltip" href="TimeKeeping.aspx" title="Timekeeping" style="color:white;margin-left: 15px;padding-left: 20px;padding-right: 20px;text-decoration:none;"><i class="fa fa-plus-circle"></i> ATTENDANCING</a>
             </div>
             <div class="container" style="display: inline-flex;padding-left: 320px; padding-top: 20px;">
                 <a href="#" style="height: 20px;width: 20px;color: #555;"><i class="fa fa-chevron-left"></i></a>
@@ -206,9 +206,9 @@
                         </td>
                         <td style="text-align:center;">-</td>
                         <td style="text-align:center;">0</td>
-                        <td><i class="fa fa-square-o" title=" - "></i></td>
-                        <td style="text-align: center;"><i class="fa fa-square-o" title="Arrive later than specified"></i></td>
-                        <td style="text-align: center;"><i class="fa fa-square-o" title=" Out early "></i></td>
+                        <td><i class="fa fa-square" title=" - "></i></td>
+                        <td style="text-align: center;"><i class="fa fa-square" title="Arrive later than specified"></i></td>
+                        <td style="text-align: center;"><i class="fa fa-square" title=" Out early "></i></td>
                         <td>Doing</td>
                         <td><button type="button" class="btn btn-success" style="border-radius: 20px;"><a href="PublicReview2.aspx" style="text-decoration:none;color:white;">Browse</a></button></td>
                         <td>14.186.73.139 -</td>

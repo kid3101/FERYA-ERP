@@ -55,7 +55,7 @@
 
             <div class="col-sm-8">
 
-                <h1 style="padding-top:40px;text-align:center;text-transform:uppercase;">Timekeeper</h1>
+                <h1 style="padding-top:40px;text-align:center;text-transform:uppercase;">ATTENDANCE</h1>
                 <div>
                     <select class="form-control">
                         <option>Choose an office for attendance</option>

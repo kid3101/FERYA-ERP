@@ -149,8 +149,8 @@
                 </div>
 
                 <a class="ls" style="margin-left: 15px;text-decoration:none;" href="WorkingPlan.aspx""><i class="fa fa-calendar"></i> Calendar</a>
-                <a class="maychamcong" data-toggle="tooltip" href="Timekeeper.aspx"" title="Allowing attendance for other employees or accessing from timekeeping equipment" style="color:white;margin-left: 15px;padding-left: 20px;padding-right: 20px;text-decoration:none;"><i class="fa fa-desktop"></i> TIMEKEEPER</a>
-                <a class="nutchamcong" data-toggle="tooltip" href="TimeKeeping.aspx" title="Timekeeping" style="color:white;margin-left: 15px;padding-left: 20px;padding-right: 20px;text-decoration:none;"><i class="fa fa-plus-circle"></i> TIMEKEEPING</a>
+                <a class="maychamcong" data-toggle="tooltip" href="Timekeeper.aspx"" title="Allowing attendance for other employees or accessing from timekeeping equipment" style="color:white;margin-left: 15px;padding-left: 20px;padding-right: 20px;text-decoration:none;"><i class="fa fa-desktop"></i> ATTENDANCE</a>
+                <a class="nutchamcong" data-toggle="tooltip" href="TimeKeeping.aspx" title="Timekeeping" style="color:white;margin-left: 15px;padding-left: 20px;padding-right: 20px;text-decoration:none;"><i class="fa fa-plus-circle"></i> ATTENDANCING</a>
             </div>
             <div class="container" style="display: inline-flex;padding-left: 320px; padding-top: 20px;">
                 <a href="#" style="height: 20px;width: 20px;color: #555;"><i class="fa fa-chevron-left"></i></a>
@@ -186,6 +186,48 @@
                         <th>CONFIRMER</th>
                     </tr>
                 </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>01/01/2019</td>
+                        <td>Main Ofice</td>
+                        <td>
+                            <a href="Shift.aspx" style="background: #FFF;padding-top: 3px;padding-right: 14px;border: 2px solid rgba(34,36,38,.15);border-radius: 5px;font-size: 0.642857rem;"></a>
+                            <span style="margin-left: 6px;">
+                                <span>09:00</span>
+                                <span>17:00</span>
+                            </span>
+                        </td>
+                        <td>10:00-17:00</td>
+                        <td>-</td>
+                        <td>0</td>
+                        <td style="text-align: center;"><i class="fa fa-square" title="Arrive later than specified"></i></td>
+                        <td style="text-align: center;"><i class="fa fa-square" title=" Out early "></i></td>
+                        <td style="text-align: center;"><i class="fa fa-square" ></i></td>
+                        <td>Doing</td>
+                        <td>Jonh</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>30/01/2019</td>
+                        <td>Main Ofice</td>
+                        <td>
+                            <a href="Shift.aspx" style="background: #FFF;padding-top: 3px;padding-right: 14px;border: 2px solid rgba(34,36,38,.15);border-radius: 5px;font-size: 0.642857rem;"></a>
+                            <span style="margin-left: 6px;">
+                                <span>08:00</span>
+                                <span>18:00</span>
+                            </span>
+                        </td>
+                        <td>08:00-17:00</td>
+                        <td>-</td>
+                        <td>0</td>
+                        <td style="text-align: center;"><i class="fa fa-square" title="Arrive later than specified"></i></td>
+                        <td style="text-align: center;"><i class="fa fa-square" title=" Out early "></i></td>
+                        <td style="text-align: center;"><i class="fa fa-square" ></i></td>
+                        <td>Doing</td>
+                        <td>Dan</td>
+                    </tr>
+                </tbody>
             </table>
 
         </div>
