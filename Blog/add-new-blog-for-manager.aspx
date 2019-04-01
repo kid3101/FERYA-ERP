@@ -6,9 +6,11 @@
     <link href="../css/Css-Blog/add-new-blog-css.css" rel="stylesheet" />
     <div class="container-fluid">
     <div class="header-blog">
-            <div class="col-sm-7">
-                  <a class="title-blog" href="manager-blog.aspx">Manager</a>
-              </div>
+            <div class="col-sm-7" style="display:flex;">
+             <h1 class="h3 mb-4 text-gray-800">Manager</h1>
+             <i style="padding-left: 20px;color: black;padding-right: 20px;margin-top:10px;" class="fa fa-angle-right"></i>
+             <h1 class="h3 mb-4 text-gray-800"/>Add new
+             </div>
          </div>
     <div class="body-add">
              <div class="col-sm-9" style="margin-top:20px;">
