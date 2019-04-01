@@ -11,7 +11,7 @@
             <div class="col-sm-7" style="display:flex;">
              <h1 class="h3 mb-4 text-gray-800">Blog</h1>
              <i style="padding-left: 20px;color: black;padding-right: 20px;margin-top:10px;" class="fa fa-angle-right"></i>
-             <h1 class="h3 mb-4 text-gray-800"/>Marnager List Blog
+             <h1 class="h3 mb-4 text-gray-800"/>Manager List Blog
              </div>
             <div class="col-sm-5" id="col-5">
                 <div class="linkmanagerblog">
