@@ -68,8 +68,8 @@
                             <label for="usr">Headquarters<span style="color:red;"> *</span></label>
                             <div>
                                 <select class="form-control" id="sel1" style="width: 55%;">
-                                    <option></option>
-
+                                    <option>Main Ofice</option>
+                                    
                                 </select>
                             </div>
                         </div>
