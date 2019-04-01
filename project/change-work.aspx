@@ -7,10 +7,7 @@
     <div class="container-fluid">
         <!-- Page Heading -->
         <div style="display:flex;">
-             <h1 class="h3 mb-4 text-gray-800">System Architect</h1>
-             <i style="padding-left: 20px;color: black;padding-right: 20px;margin-top:10px;" class="fa fa-angle-right"></i>
-             <h1 class="h3 mb-4 text-gray-800">TAG 1</h1><i style="padding-left: 20px;color: black;padding-right: 20px;margin-top:10px;" class="fa fa-angle-right"></i>
-             <h1 class="h3 mb-4 text-gray-800">Update Status</h1>
+             <h1 class="h3 mb-4 text-gray-800">System Architect > TAG 1 > Update Status</h1>
 
          </div>
         <div style="float: right">
