@@ -6,7 +6,7 @@
     <link href="../css/Css-Blog/add-new-blog-css.css" rel="stylesheet" />
     <div class="header-blog">
             <div class="col-sm-7">
-                  <a class="title-blog" href="manager-blog.aspx"><b>Manager</b></a>
+                  <a class="title-blog" href="manager-blog.aspx">Manager</a>
               </div>
          </div>
     <div class="body-add">

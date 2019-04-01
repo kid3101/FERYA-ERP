@@ -8,12 +8,12 @@
           <div class="header-blog">
           <div style="display:flex;">
             <div class="col-sm-7">
-                  <a class="title-blog" href="blog-company.aspx"><b>Blog List</b></a>
+                  <a class="title-blog" href="blog-company.aspx">Blog List</a>
              </div>  
           <div class="col-sm-5" id="col-5">
                   <div class="linkmanagerblog">
                     <div class="managerblog">
-                        <a class="btn btn-info" data-toggle="tooltip" href="list-blog-for-manager.aspx" title="Timekeeping">FOR MANAGER</a>
+                        <a class="btn btn-info" data-toggle="tooltip" href="list-blog-for-manager.aspx" title="Timekeeping">For Manager</a>
                     </div>
                       <br />
                     <div class="page">    

@@ -6,7 +6,7 @@
     <link href="../css/Css-Blog/detail-blog-css.css" rel="stylesheet" />
             <div class="header-blog">
                 <div class="col-sm-7">
-                      <a class="title-blog" href="list-blog.aspx"><b>Blog List</b></a>
+                      <a class="title-blog" href="list-blog.aspx">Blog List</a>
                  </div>  
             </div>
             <div class="body-detail">
