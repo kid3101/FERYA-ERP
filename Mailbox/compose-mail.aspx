@@ -51,12 +51,12 @@
                                 <!-- /.box-header -->
                                 <div class="box-body">
                                     <div class="form-group">
-                                         <select style="height:8px" class="multipleSelect" multiple name="language">
-                <option value="Bangladesh">Bangladesh</option>
-                <option selected value="Barbados">Barbados</option>
-                <option selected value="Belarus">Belarus</option>
-                <option value="Belgium">Belgium</option>
-            </select>
+                                         <select style="height:8px;" class="multipleSelect" multiple name="language">
+                                                <option value="Bangladesh">Từ Nguyên</option>
+                                                <option selected value="Barbados">Trang</option>
+                                                <option selected value="Belarus">Ý</option>
+                                                <option value="Belgium">Đinh</option>
+                                          </select>
                                     </div>
                                     <div class="form-group">
                                         <input class="form-control" placeholder="Subject:">
