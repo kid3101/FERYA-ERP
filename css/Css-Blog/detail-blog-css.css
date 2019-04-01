@@ -1,6 +1,5 @@
 ﻿.header-blog {
     height: 50px;
-    ;
     padding-left: 10px;
 }
 
@@ -10,7 +9,7 @@
 }
 
 .body-detail {
-    background-color: white;
+    /*background-color: white;*/
     min-height: 80%;
 }
 #bodydetail{

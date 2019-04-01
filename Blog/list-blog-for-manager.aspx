@@ -5,6 +5,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <link href="../css/Css-Blog/blog-company-css.css" rel="stylesheet" />
     <link href="../css/Css-Blog/list-blog-for-manager.css" rel="stylesheet" />
+    <div class="container-fluid">
     <div class="header-blog">
         <div style="display: flex;">
             <div class="col-sm-7">
@@ -102,5 +103,6 @@
             </tbody>
         </table>
     </div>
+        </div>
 </asp:Content>
 
