@@ -4,10 +4,11 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <link href="../css/Css-Blog/add-new-blog-css.css" rel="stylesheet" />
+
  <%--   <link href="../css/employee.css/add-point-employee.css" rel="stylesheet" />--%>
           <div class="header-blog">
             <div class="col-sm-7">
-                  <a class="title-blog" href="blog-company.aspx"><b>Blog</b></a>
+                  <a class="title-blog" href="blog-company.aspx">Blog</a>
               </div>
          </div>
     <div class="body-add">
@@ -65,7 +66,7 @@
                             </div>
                         </div>
                         <div class="addnewblog">
-                        <a href="list-blog.aspx"><button type="submit" class="btn btn-primary btn-block" style="width: 120px;margin-left:180px;margin-bottom:10px;border-radius:15px;">ADD NEW</button></a>
+                        <a href="list-blog.aspx"><button type="submit" class="btn btn-primary btn-block" style="width: 120px;margin-left:180px;margin-bottom:10px;border-radius:15px;">Add New</button></a>
                     </div>
                             </form> <!-- /form -->
                 </div>

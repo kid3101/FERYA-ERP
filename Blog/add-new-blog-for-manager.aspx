@@ -6,7 +6,7 @@
     <link href="../css/Css-Blog/add-new-blog-css.css" rel="stylesheet" />
     <div class="header-blog">
             <div class="col-sm-7">
-                  <a class="title-blog" href="manager-blog.aspx"><b>Manager</b></a>
+                  <a class="title-blog" href="manager-blog.aspx">Manager</a>
               </div>
          </div>
     <div class="body-add">
@@ -65,7 +65,7 @@
                             </div>
                         </div>
                         <div class="addnewblog">
-                        <a href="list-blog-for-manager.aspx"><button type="submit" class="btn btn-primary btn-block" style="width: 120px;margin-left:180px;margin-bottom:10px;border-radius:15px;">ADD NEW</button></a>
+                        <a href="list-blog-for-manager.aspx"><button type="submit" class="btn btn-primary btn-block" style="width: 120px;margin-left:180px;margin-bottom:10px;border-radius:15px;">Add New</button></a>
                     </div>
                             </form> <!-- /form -->
                 </div>

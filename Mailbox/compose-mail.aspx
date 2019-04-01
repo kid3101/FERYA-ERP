@@ -55,7 +55,7 @@
                                                 <option value="Bangladesh">Từ Nguyên</option>
                                                 <option selected value="Barbados">Trang</option>
                                                 <option selected value="Belarus">Ý</option>
-                                                <option value="Belgium">Đinh</option>
+                                                <option value="Belgium">Đinh Quang</option>
                                           </select>
                                     </div>
                                     <div class="form-group">

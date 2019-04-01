@@ -1,4 +1,15 @@
-﻿.body-detail {
+﻿.header-blog {
+    height: 50px;
+    ;
+    padding-left: 10px;
+}
+
+.title-blog {
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.body-detail {
     background-color: white;
     min-height: 80%;
 }
