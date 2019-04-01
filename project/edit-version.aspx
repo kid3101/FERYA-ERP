@@ -1,16 +1,13 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="edit-vision.aspx.cs" Inherits="project_edit_vision" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="edit-version.aspx.cs" Inherits="project_edit_version" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-
-     <div class="container-fluid">
-        <h1 class="h3 mb-4 text-gray-800">Edit Vision</h1>
+<div class="container-fluid">
+        <h1 class="h3 mb-4 text-gray-800">Edit Version</h1>
         <div class="row">
             <div class="col-sm-3">
-                <div>
-                    
-
+                <div>                  
                 </div>
             </div>
             <div class="col-sm-4">
@@ -55,22 +52,13 @@
                     </div>
                 </div>
                 <br />
-  <button type="button"class="btn btn-danger" onclick="createvision()">Edit Vision</button>
+  <button type="button"class="btn btn-danger" onclick="createversion()">Edit Vision</button>
             </div>
-            
-         
-         
-
-
         </div>
-
-
     </div>
-
-    <script>
-    
-        function createvision() {
-            location.href = "/project/list-vision.aspx";
+    <script>  
+        function createversion() {
+            location.href = "/project/list-version.aspx";
         }
     </script>
 </asp:Content>

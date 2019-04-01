@@ -6,7 +6,8 @@
 
     <div class="container-fluid">
         <!-- Page Heading -->
-        <h1 class="h3 mb-4 text-gray-800">List Vision</h1>
+        <h1 class="h3 mb-4 text-gray-800">List Version</h1>
+        <button type="button" class="btn btn-info" style="margin-left: 950px; margin-top: -90px" onclick="addversion()">Create Version</button>
         <div class="row">
             <div class="col-md-12">
                 <div class="table-responsive">
@@ -44,10 +45,10 @@
                                 <td>Finish Day</td>
                                 <td>
 
-                                    <a href="/project/create-vision.aspx"><i onclick="createvision()" style="width: 25px" class="fas fa-book-open"></i></a>
+                                 <%--   <a href="/project/create-vision.aspx"><i onclick="createvision()" style="width: 25px" class="fas fa-book-open"></i></a>--%>
 
                                     <a href="/project/list-version.aspx"><i onclick="deletevision()" style="width: 25px" class="fas fa-trash-alt"></i></a>
-                                    <a href=" /project/edit-version.aspx"><i onclick="editvision()" style="width: 25px" class="fas fa-pen"></i></a>
+                                    <a href="/project/edit-version.aspx"><i onclick="editversion()" style="width: 25px" class="fas fa-pen"></i></a>
                                 </td>
                             </tr>
 
@@ -58,8 +59,13 @@
             </div>
         </div>
     </div>
-    <script>
-       
+     <script>
+        function addversion() {
+            location.href = "/project/create-vision.aspx";
+         }
+        function editversion() {
+            location.href = "/project/edit-version.aspx";
+         }
     </script>
 </asp:Content>
 

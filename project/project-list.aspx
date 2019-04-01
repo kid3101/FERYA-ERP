@@ -39,9 +39,30 @@
 
                         <tbody>
                             <tr>
-                                <td>No</td>
+                                <td>1</td>
                                 <td>System Architect</td>
                                 <td>Edinburgh</td>
+                                <td>61</td>
+                                <td>2011/04/25</td>
+                                <td>New</td>
+                                <td>
+
+                                   <%-- <a href="/project/category-list.aspx"><i style="width: 25px" class="fas fa-book-open"></i></a>--%>
+
+                                    <a href="/project/list-work.aspx"><i style="width: 25px" class="fas fa-exclamation-circle"></i></a>
+                                    <a href=" /project/edit-project.aspx"><i style="width: 25px" class="fas fa-pen"></i></a>
+                                    <a href=" /project/project-list.aspx"><i style="width: 25px" class="fas fa-trash-alt"></i></a>
+
+                                </td>
+                            </tr>
+
+
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>2</td>
+                                <td>App ERP</td>
+                                <td>Create app</td>
                                 <td>61</td>
                                 <td>2011/04/25</td>
                                 <td>New</td>

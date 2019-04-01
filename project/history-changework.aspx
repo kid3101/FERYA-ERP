@@ -5,7 +5,15 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
      <div class="container-fluid">
         <!-- Page Heading -->
-        <h1 class="h3 mb-4 text-gray-800"> History Work</h1>
+      <div style="display:flex;">
+             <h1 class="h3 mb-4 text-gray-800">System Architect</h1>
+             <i style="padding-left: 20px;color: black;padding-right: 20px;margin-top:10px;" class="fa fa-angle-right"></i>
+             <h1 class="h3 mb-4 text-gray-800">TAG 1</h1><i style="padding-left: 20px;color: black;padding-right: 20px;margin-top:10px;" class="fa fa-angle-right"></i>
+             <h1 class="h3 mb-4 text-gray-800">Update Status</h1>
+          <i style="padding-left: 20px;color: black;padding-right: 20px;margin-top:10px;" class="fa fa-angle-right"></i>
+          <h1 class="h3 mb-4 text-gray-800">History</h1>
+
+         </div>
         <div class="row">
             <div class="col-md-12">
                 <div class="table-responsive">
@@ -38,6 +46,6 @@
                 </div>
             </div>
         </div>
-    </div>s
+    </div>
 </asp:Content>
 

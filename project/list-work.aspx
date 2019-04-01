@@ -6,7 +6,7 @@
 
     <div class="container-fluid">
         <!-- Page Heading -->
-        <h1 class="h3 mb-4 text-gray-800">List-Work</h1>
+         <div style="display:flex;">  <h1 class="h3 mb-4 text-gray-800">System Architect</h1><i style="padding-left: 20px;color: black;padding-right: 20px;margin-top:10px;" class="fa fa-angle-right"></i><h1 class="h3 mb-4 text-gray-800">List Work</h1></div>
         <div> 
             <button type="button" class="btn btn-info" onclick="addwork()">Add Work</button>
            
