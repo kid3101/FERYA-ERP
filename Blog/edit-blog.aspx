@@ -68,7 +68,7 @@
                             </div>
                         </div>
                         <div class="addnewblog">
-                        <a href="list-blog-for-manager.aspx"><button type="submit" class="btn btn-primary btn-block" style="width: 120px;margin-left:180px;margin-bottom:10px;border-radius:15px;">Save</button></a>
+                        <a href="list-blog-for-manager.aspx"><button type="submit" class="btn btn-facebook" style="width: 120px;margin-left:180px;margin-bottom:10px;border-radius:15px;">Save</button></a>
                     </div>
                             </form> <!-- /form -->
                 </div>
