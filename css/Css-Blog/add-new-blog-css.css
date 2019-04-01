@@ -1,4 +1,16 @@
-﻿.body-add{
+﻿.header-blog {
+    height: 50px;;
+    padding-left: 10px;
+}
+.title-blog {
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.header-blog a {
+    text-decoration: none;
+}
+.body-add{
     background-color:white;
     min-height:85%;
     padding-top:10px;
