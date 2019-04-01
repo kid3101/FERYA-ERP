@@ -50,6 +50,7 @@
                 <div>
                     <input style="height: 60px" class="form-control" type="text">
                 </div>
+                <br />
                 <div class="col-sm" style="display: flex;margin-left:-22px;">
                     <div class="col-sm-8">
                         <label for="ex1">Start Day</label>
@@ -69,6 +70,7 @@
                         </div>
                     </div>                   
                 </div>
+                <br />
                 <div class="col-sm-5" style="margin-left:-10px;">
                         <label>Status </label>
                         <select class="form-control">
