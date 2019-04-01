@@ -5,6 +5,7 @@
     <link href="../css/Css-Mailbox/maibox-css.css" rel="stylesheet" />
     <link href="../css/Css-Mailbox/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
     <link href="../css/Css-Mailbox/plugins/iCheck/flat/blue.css" rel="stylesheet" />
+       <div class="container-fluid">
      <div class="content-wrapper">
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
@@ -262,6 +263,7 @@
                 </section>
                 <!-- /.content -->
             </div>
+           </div>
     <!-- Bootstrap 3.3.7 -->
     <script src="../css/Css-Mailbox/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- Slimscroll -->

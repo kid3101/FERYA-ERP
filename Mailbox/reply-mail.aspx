@@ -6,6 +6,7 @@
     <link href="../css/Css-Mailbox/maibox-css.css" rel="stylesheet" />
     <link href="../css/Css-Mailbox/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
    <%--  <link href="../css/employee.css/add-point-employee.css" rel="stylesheet" />--%>
+    <div class="container-fluid">
      <div class="content-wrapper">
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
@@ -76,6 +77,7 @@
                 </section>
                 <!-- /.content -->
             </div> 
+        </div>
             <script>
 
         function myFunction() {
