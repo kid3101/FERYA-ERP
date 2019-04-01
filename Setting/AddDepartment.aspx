@@ -44,9 +44,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
     <link href="../css/Setting/AddDepartment.css" rel="stylesheet" />
-
-    <link href="dist/vanillatree.css" rel="stylesheet" />
-    <script src="dist/vanillatree.js"></script>
+    <script src="../dist/vanillatree.js"></script>
+    <script src="../dist/vanillatree.min.js"></script>
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
@@ -153,6 +152,77 @@
 
         </div>
     </div>
-    
+        <%--<script>
+        var main = document.querySelector('main'),
+            tree = new VanillaTree(main, {
+                contextmenu: [{
+                    label: 'Menu 1',
+                    action: function (id) {
+                        alert('Menu 1 ' + id);
+                    }
+                }, {
+                    label: 'Menu 2',
+                    action: function (id) {
+                        alert('Menu 2 ' + id);
+                    }
+                }]
+            });
+        tree.add({
+            label: 'Label A',
+            id: 'a',
+            opened: true
+        });
+
+        tree.add({
+            label: 'Label B',
+            id: 'b'
+        });
+
+        tree.add({
+            label: 'Label A.A',
+            parent: 'a',
+            id: 'a.a',
+            opened: true,
+            selected: true
+        });
+
+        tree.add({
+            label: 'Label A.A.A',
+            parent: 'a.a'
+        });
+        tree.add({
+            label: 'Label A.A.B',
+            parent: 'a.a'
+        });
+
+        tree.add({
+            label: 'Label B.A',
+            parent: 'b'
+        });
+
+        // add new nodes
+        tree.add(options);
+
+        // move a node to parent
+        tree.move(id, parentId);
+
+        // remove a node
+        tree.remove(id);
+
+        // open a node
+        tree.open(id);
+
+        // close a node
+        tree.close(id);
+
+        // toggle a node
+        tree.toggle(id);
+
+        // select a node
+        tree.select(id);
+
+
+
+    </script>--%>
 </asp:Content>
 

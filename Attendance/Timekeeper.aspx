@@ -62,6 +62,12 @@
                         <option>Main office</option>
                     </select>
                 </div>
+                 <div>
+
+                    <input class="form-control" placeholder="Find staff for attendance" style="height: 35px;cursor: pointer;margin-top:20px;" />
+                    <i class="fa fa-search" style="cursor: pointer;font-size: 33px;float: right;margin-top: -35px;margin-right: 20px;"></i>
+                    <a href="MainOffice2.aspx" style="margin-left: 641px;"><button class="btn btn-primary" style="margin-top: 20px;">Continue</button></a>
+                </div>
             </div>
             <div class="col-sm-2 sidenav">
 
