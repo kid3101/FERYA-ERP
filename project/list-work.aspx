@@ -12,7 +12,7 @@
         <div> 
             <button type="button" class="btn btn-info" onclick="addwork()">Add Work</button>
            
-             <a  href="/project/list-version.aspx" style="margin-left: 700px;font-size:20px"><i class="far fa-folder-open"></i>Version</a>
+             <a  href="/project/list-version.aspx" style="margin-left: 700px;font-size:20px;"><i class="far fa-folder-open"></i>Version</a>
                
       </div>
         <div style="color:white"> 0</div>

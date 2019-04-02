@@ -52,7 +52,7 @@
                     </div>
                 </div>
                 <br />
-  <button type="button"class="btn btn-danger" onclick="createversion()">Edit Vision</button>
+  <button type="button"class="btn btn-facebook" onclick="createversion()">Edit Vision</button>
             </div>
         </div>
     </div>
