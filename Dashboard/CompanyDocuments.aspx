@@ -45,16 +45,14 @@
     <link href="../css/Dashboard/CompanyDocument.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <div class="container" style="margin-top:-23px;background-color: #eee;height: 70px;width: 100%;">
-        <div style="margin-bottom: -11px;margin-top: -20px;">
+    <div class="container-fluid" >
+        <div class="tong">
             <div class="row content">
-                <div class="col-sm-6 sidenav">
-                    <a class="abc tab-content" style="text-decoration:none;" href="CompanyDocuments.aspx"><span><h2 style="cursor:pointer;padding-top: 3px;">Files</h2></span></a>
-                </div>
-                <div class="col-sm-6">
-                    <div style="font-size:20px;margin-top: 24px;float: right;">
-                        <a class="ls" data-toggle="modal" data-target="#myModal" style="text-decoration:none;"><span style="margin-right: 25px;"><i class="fa fa-folder"></i> Create folder</span></a>
-                        <a class="ls" data-toggle="modal" data-target="#myModal2" style="text-decoration:none;"><span><i class="fa fa-cloud-upload"></i> Upload the file</span></a>
+                <h1 class="h3 mb-4 text-gray-800">Files</h1>
+                <div class="col-sm-10">
+                    <div class="hk">
+                        <a class="ls" data-toggle="modal" data-target="#myModal" ><span class="folderr"><i class="fa fa-folder"></i> Create folder</span></a>
+                        <a class="ls" data-toggle="modal" data-target="#myModal2" ><span><i class="fa fa-cloud-upload"></i> Upload the file</span></a>
 
                     </div>
                 </div>
@@ -67,12 +65,12 @@
             <div class="col-sm-2 sidenav">
 
             </div>
-            <div class="col-sm-8" style="text-align:center;margin-top: 50px;">
+            <div class="col-sm-8 coll" >
                 <img src="../img/general.png" style="height: 300px;">
-                <div><h1 style="color:#777;">No documents yet</h1></div>
-                <div><h3 style="color:rgba(0,0,0,0.2)">Click the button below to upload the document.</h3></div>
-                <div style="margin-top: 20px;">
-                    <a class="nut2" style="text-decoration:none;" href="#" data-toggle="modal" data-target="#myModal">Create folder</a>
+                <div><h1 class="textt">No documents yet</h1></div>
+                <div><h3 class="textt2">Click the button below to upload the document.</h3></div>
+                <div class="kc">
+                    <a class="nut2" href="#" data-toggle="modal" data-target="#myModal">Create folder</a>
                     <!-- Modal -->
                     <div class="modal fade" id="myModal" role="dialog">
                         <div class="modal-dialog">
@@ -81,7 +79,7 @@
                             <div class="modal-content">
                                 <div class="modal-header">
                                     
-                                    <h2 class="modal-title" style="float:left;">Create new folder</h2>
+                                    <h2 class="modal-title kc2" >Create new folder</h2>
                                 </div>
                                 <div class="modal-body">
                                     <form>
@@ -97,14 +95,14 @@
                                     </form>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal" style="border: none;border-radius: 17px;margin-right: 10px;padding-left: 20px;padding-right: 20px;">Close</button>
-                                    <button type="submit" class="nutchamcong" style="border:none;padding-left: 20px;padding-right: 20px;"><a href="File.aspx" style="color:white;text-decoration:none;">Create</a></button>
+                                    <button type="button" class="btn btn-default closee" data-dismiss="modal" >Close</button>
+                                    <button type="submit" class="btn btn-info createe" ><a href="File.aspx" class="createe2">Create</a></button>
                                 </div>
                             </div>
 
                         </div>
                     </div>
-                    <a class="nut2" href="#" style="text-decoration:none;" data-toggle="modal" data-target="#myModal2">Upload the file</a>
+                    <a class="nut2" href="#" data-toggle="modal" data-target="#myModal2">Upload the file</a>
                     <!-- Modal -->
                     <div class="modal fade" id="myModal2" role="dialog">
                         <div class="modal-dialog">
@@ -113,16 +111,16 @@
                             <div class="modal-content">
                                 <div class="modal-header">
                                     
-                                    <h2 class="modal-title" style="float:left;">Upload documents / files</h2>
+                                    <h2 class="modal-title kc2">Upload documents / files</h2>
                                 </div>
                                 <div class="modal-body linkk">
                                     <div >
-                                    <input onchange="readURL(this);" style="position: absolute;opacity: 0;" type="file" name="file-2[]" id="file-2" class="inputfile inputfile-2" data-multiple-caption="{count} files selected" multiple="">
-                                    <label style="float:left;" for="file-2"><i class="fa fa-paperclip"></i><span>File attached...</span></label>
+                                    <input onchange="readURL(this);"  type="file" name="file-2[]" id="file-2" class="inputfile inputfile-2 inputt" data-multiple-caption="{count} files selected" multiple="">
+                                    <label class="kc2" for="file-2"><i class="fa fa-paperclip"></i><span>File attached...</span></label>
                                 </div>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="submit" class="nutchamcong" style="border:none;padding-left: 20px;padding-right: 20px;"><a href="UpFile.aspx" style="color:white;text-decoration:none;">Completed</a></button>
+                                    <button type="submit" class="btn btn-info upfilee" ><a href="UpFile.aspx" class="up">Completed</a></button>
                                 </div>
                             </div>
 

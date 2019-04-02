@@ -45,13 +45,11 @@
     <link href="../css/Dashboard/UpFile.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <div class="container" style="margin-top:-23px;background-color: #eee;height: 70px;width: 100%;">
+    <div class="container-fluid">
         <div style="margin-bottom: -11px;margin-top: -20px;">
             <div class="row content">
-                <div class="col-sm-6 sidenav">
-                    <a class="abc tab-content" href="CompanyDocuments.aspx" style="text-decoration:none;"><span><h2 style="cursor:pointer;padding-top: 3px;">Files</h2></span></a>
-                </div>
-                <div class="col-sm-6">
+                <h1 class="h3 mb-4 text-gray-800">Files</h1>
+                <div class="col-sm-10">
                     <div style="font-size:20px;margin-top: 24px;float: right;">
                         <a class="ls" data-toggle="modal" data-target="#myModal"><span style="margin-right: 25px;"><i class="fa fa-folder"></i> Create folder</span></a>
                         <a class="ls" data-toggle="modal" data-target="#myModal2"><span><i class="fa fa-cloud-upload"></i> Upload the file</span></a>
@@ -132,13 +130,13 @@
             </thead>
             <tbody>
                 <tr>
-                    <td><i class="fa fa-folder"></i> dfd</td>
-                    <td>fdfd</td>
-                    <td>fdf</td>
-                    <td>dfd</td>
-                    <td>dfdf</td>
+                    <td><i class="fa fa-folder"></i> Demo</td>
+                    <td>Directory</td>
+                    <td>2 Kb</td>
+                    <td>16:23, 23/02/2019</td>
+                    <td>Jonh</td>
                     <td style="float: right;">
-                        <a href="SearchFile.html" title="See directory contents" style="margin-right:20px;color:grey;"><i class="fa fa-search" style="color:grey;"></i></a>
+                        <a href="#" title="See directory contents" style="margin-right:20px;color:grey;"><i class="fa fa-search" style="color:grey;"></i></a>
                         <a data-toggle="modal" data-target="#myModal3" title="Edit content" style="margin-right:20px;"><i class="fa fa-cog" style="color:grey;"></i></a>
                         <a title="Delete this folder" style="margin-right:20px;"><i class="fa fa-trash " style="color:grey;"></i></a>
                         <!-- Modal -->
@@ -175,11 +173,11 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>trtr</td>
-                    <td>trtrt</td>
-                    <td>trt</td>
-                    <td>trtr</td>
-                    <td>rttr</td>
+                    <td>FileDemo</td>
+                    <td>Directory</td>
+                    <td>1 Kb</td>
+                    <td>18:00, 01/01/2019</td>
+                    <td>Anna</td>
                     <td>
                         <div style="float: right;">
                             <a href="#" data-toggle="modal" data-target="#myModal6" title="Preview" style="margin-right: 20px;"><i class="fa fa-eye" style="color:grey;"></i></a>

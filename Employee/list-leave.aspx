@@ -6,10 +6,9 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-    <div class="container-fluid" style="width: 100%;height: 119px;background-color:#eee;margin-top: -23px;">
-        <div style="line-height: 1;display: inline-block;margin-left: 40px;vertical-align: middle;">
-            <a class="abc tab-content" style="text-decoration:none;" href="#"><span><h2 style="cursor:pointer;"> Please take leave</h2></span></a>
-        </div>
+    <div class="container-fluid">
+        <h1 class ="h3 mb-4 text-gray-800"> Please take leave</h1>
+
         <ul class="nav nav-tabs" style="margin-block-start: 1em;padding-inline-start: 40px;position: absolute;padding-top: 32px;">
             <li class="active" style="margin-right: 20px;">
                 <a data-toggle="tab" href="#" style="cursor:pointer;text-decoration:none;">
@@ -89,7 +88,7 @@
                 <a class="ls" style="margin-left: 15px;text-decoration:none;" href="#"><i class="fa fa-cog"></i> Setting</a>
                 <a class="ls" style="margin-left: 15px;text-decoration:none;" title="Waiting for you to browse" href="browser-leave.aspx"><i class="fa fa-clock"></i> Wait for you to browse </a>
                 
-                <a class="nutchamcong"  href="add-leave.aspx" title="Create a new leave application" style="color:white;margin-left: 15px;padding-left: 20px;padding-right: 20px;text-decoration:none;" > <i class="fa fa-plus-circle"></i>CREATE A NEW LICENSE APPLICATION</a>
+                <a class="btn btn-info"  href="add-leave.aspx" title="Create a new leave application"> <i class="fa fa-plus-circle"></i>CREATE A NEW LICENSE APPLICATION</a>
             </div>
             <div class="container" style="display: inline-flex;padding-left: 500px; padding-top: 20px;">
                 <a href="#" style="height: 20px;width: 20px;color: #555;"><i class="fa fa-chevron-left"></i></a>
@@ -117,9 +116,6 @@
                         <th class="clo">EMPLOYEES</th>
                         <th class="clo">REASON</th>
                         <th class="clo">TIME</th>
-                        <th class="clo">ROUND 1</th>
-                        <th class="clo">ROUND 2</th>
-                        <th class="clo">ROUND 3</th>
                         <th class="clo">STATUS</th>
                         <th class="clo">DATE CREATED</th>
                         <th></th>
@@ -127,35 +123,26 @@
                 </thead>
 
                 <thead id="data" onclick="myFunction()">
-                    <tr>
+                   <tr>
                         <td>
-                            <a style="text-decoration:none; cursor: pointer; color:black;">9281</a>
+                            <a style="text-decoration:none; cursor: pointer; color:black;">9431</a>
                         </td>
                         <td></td>
                         <td>
                             <span>
-                                <a style="text-decoration:none; color:#111010;" data-toggle="tooltip" title="Thông Huyền Trang">
+                                <a style="text-decoration:none; color:#111010;" data-toggle="tooltip" title="Ferya">
                                     <img style="width:19px;height:19px;" src="#">
-                                    <span>Thông Huyền Trang</span>
+                                    <span>Ferya</span>
                                 </a>
                             </span>
                         </td>
                         <td>
-                            ưer
+                            	wellcom
                         </td>
-                        <td>18/03/2019 - 18/03/2019</td>
-                        <td>
-                            <button class="w3-button w3-white w3-border">Pending</button>
-                        </td>
-                        <td>
-                            <a data-toggle="tooltip" title="Wait for round 1" style="color:#3498db"><i class="fa fa-ellipsis-h"></i></a>
-                        </td>
-                        <td>
-                            <a data-toggle="tooltip" title="Wait for round 2" style="color:#3498db"><i class="fa fa-ellipsis-h"></i></a>
-                        </td>
+                        <td>26/03/2019 - 29/03/2019</td>
                         <td><label style="background-color: #E8E8E8!important;padding:5px 20px;"><span style="font-size:12px;">Wait for round 1</span></label></td>
                         <td>
-                            16:44, 18/03
+                           13:21, 28/03
                         </td>
                         <td><i class="fa fa-trash"></i></td>
                     </tr>
@@ -170,29 +157,12 @@
                         </tr>
                         <tr>
                             <td>
-                                <p>Time: 18/03/2019 - 18/03/2019</p>
-                                <p>Number of breaks: 0</p>
-                                <p>Paid holidays: 2</p>
-                                <p>Unpaid time off: 4</p>
-                                <p>Reason: er</p>
-                                <p>Note: ẻ</p>
-                            </td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td style="display:flex">
-                                <span style="margin-right:20px">
-                                    <p>Round 1:</p>
-                                    <p>Status: <label style="background-color:gainsboro;color:#0e0e0e">Pending</label></p>
-                                </span>
-                                <span style="margin-right:20px">
-                                    <p>Round 1:</p>
-                                    <p>Status: <label style="background-color:gainsboro;color:#0e0e0e">Pending</label></p>
-                                </span>
-                                <span>
-                                    <p>Round 1:</p>
-                                    <p>Status: <label style="background-color:gainsboro;color:#0e0e0e">Pending</label></p>
-                                </span>
+                                <p>Time: 26/03/2019 - 29/03/2019</p>
+                                <p>Number of vacation hours: 136</p>
+                                <p>Paid holidays: 1</p>
+                                <p>Unpaid time off: 1</p>
+                                <p>Reason: wellcom</p>
+                                <p>Note: hello</p>
                             </td>
                             <td></td>
                         </tr>

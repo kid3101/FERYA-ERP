@@ -45,14 +45,10 @@
     <link href="../css/Setting/AddGrading.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <div class="container" style="margin-top:-23px;background-color: #eee;height: 95px;width: 100%;">
+    <div class="container-fluid">
         <div style="margin-bottom: -11px;margin-top: -20px;">
             <br />
-            <a class="abc tab-content" href="EmployeeGradingCriteria.aspx" style="text-decoration:none;"><span><h2 style="cursor:pointer;">Employee grading criteria</h2></span></a>
-            <ul class="nav nav-tabs" style="margin-right:-202px;padding-inline-start: 40px;
-">
-                <li class="active"><a href="#" style="cursor:pointer;height: 44px;text-decoration:none;">Add new</a></li>
-            </ul>
+           <h1 class="h3 mb-4 text-gray-800">Employee grading criteria > Add new</h1>
             <br>
         </div>
     </div>
@@ -92,14 +88,14 @@
                 </form>
             </div>
         </div>
-        <div style="background-color:#eee;width:100%;height:80px;margin-top: -3px;display: flex;">
+        <div style="width:100%;height:80px;margin-top: -3px;display: flex;">
             <div class="col-sm-4 sidenav" style="margin-top:20px;">
                 <span>*: Obligatory</span>
             </div>
 
             <div class="col-sm-4" style="text-align:center;">
                 <div style="margin-top:25px;">
-                    <button class="nutchamcong" style="width: 30%;border: none;margin-left: -399px;"><a href="EmployeeGradingCriteria2.aspx" style="color:white;text-decoration:none;"> ADD NEW</a></button>
+                    <button class="btn btn-info" style="width: 30%;border: none;margin-left: -399px;"><a href="EmployeeGradingCriteria2.aspx" style="color:white;text-decoration:none;"> ADD NEW</a></button>
                 </div>
             </div>
 

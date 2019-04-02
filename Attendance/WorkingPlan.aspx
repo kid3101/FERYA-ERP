@@ -49,19 +49,19 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <div class="container-fluid">
         <div class="row content">
-            <div class="col-sm-3 sidenav sidepanel" style="border-right-style: inset;" id="mySidepanel">
-                <h4 style="color: #777;">
-                    <span>DATA FILTER</span>
-                    <a href="javascript:void(0)" data-toggle="collapse" onclick="closeNav()" style="float: right;" title="Hide filters" class="anboloc">
+            <div class="col-sm-2 sidenav sidepanel tong"  id="mySidepanel">
+                <h4 class="hh">
+                    <h1 class="h3 mb-4 text-gray-800">DATA FILTER</h1>
+                    <a href="javascript:void(0)" data-toggle="collapse" onclick="closeNav()" title="Hide filters" class="anboloc an">
                         <i class="fa fa-minus"></i>
                     </a>
                 </h4>
                 <hr />
-                <div style="height: 585px;overflow: hidden;outline: none;display: block;">
+                <div class="divv">
                     <form>
                         <span></span>
-                        <div style="margin-bottom: 15px;">
-                            <label style="color:#777;">HEADQUARTERS</label>
+                        <div class="divv2">
+                            <label class="office">HEADQUARTERS</label>
                             <br />
                             <select class="form-control">
                                 <option>All</option>
@@ -73,7 +73,7 @@
                             <label>SHIFT</label>
                             <div>
                                 <a>
-                                    <span style="color:black;cursor:pointer;">All</span>
+                                    <span class="all">All</span>
                                     <i class="fa fa-circle" style="cursor:pointer;float:right;color:black;"></i>
                                 </a>
                             </div>
@@ -89,12 +89,12 @@
                 <i class="fa fa-search"></i>
             </button>--%>
 
-            <div class="col-sm-9">
+            <div class="col-sm-10">
                 <div>
                     <div>
-                        <a href="KeepingHistory.html" style="font-size: 20px;margin: 6px;color:black;text-decoration:none;">History</a>
+                        <a href="#" class="history">History</a>
                         <i class="fa fa-chevron-right" style="color:#777;"></i>
-                        <a href="#" style="font-size: 20px;margin: 6px;color:black;text-decoration:none;">Calendar</a>
+                        <a href="#" class="history">Calendar</a>
                         <hr>
                     </div>
                     <div>
@@ -110,43 +110,47 @@
                         </span>
                     </div>
                 </div>
-                <div style="padding: 20px;min-height: 625px;height: 550px;">
-                    <div style="font-size:28px;float:left;">
+                <div class="tong2">
+                    <div class="tongg">
                         <span>Time to start</span>
                         <span> - </span>
                         <span>End time</span>
                     </div>
-                    <div style="float: right;">
-                        <div style="float:left;">
-                            <button title="Last week" style="border: none;background: #E0E1E2;color: rgba(0,0,0,.6);margin-right: -8px;width: 42px;height: 28px;font-size: 20px;border-radius: 5px;">
+                    <div class="ben">
+                        <div class="ben2">
+                            <button title="Last week" class="but">
                                 <i class="fa fa-angle-left"></i>
                             </button>
-                            <button title="Next week" style="border: none;background: #E0E1E2;color: rgba(0,0,0,.6);width: 42px;height: 28px;font-size: 20px;border-radius: 5px;">
+                            <button title="Next week" class="but">
                                 <i class="fa fa-angle-right"></i>
                             </button>
                         </div>
-                        <div style="float:right;margin-left: 8px;">
+                        <div class="m">
                             <input type="date" />
                             <i class="fa fa-calendar" style="margin-left: -64px;"></i>
                         </div>
                     </div>
-                    <div style="width: 100%;" class="table-responsive">
-                        <table style="margin-top:20px;margin-bottom:0;background-color: #E0E1E2;color: rgba(0,0,0,.87);overflow:scroll;">
+                    <div class="table-responsive tb">
+                        <table class="tablee">
                             <thead>
                                 <tr>
-                                    <th style="color:#666;text-align:center;">Monday</th>
-                                    <th style="color:#666;text-align:center;">Tuesday</th>
-                                    <th style="color:#666;text-align:center;">Wednesday</th>
-                                    <th style="color:#666;text-align:center;">Thursday</th>
-                                    <th style="color:#666;text-align:center;">Friday</th>
-                                    <th style="color:#666;text-align:center;">Saturday</th>
-                                    <th style="color:#666;text-align:center;">Sunday</th>
+                                    <th class="datee">Monday</th>
+                                    <th class="datee">Tuesday</th>
+                                    <th class="datee">Wednesday</th>
+                                    <th class="datee">Thursday</th>
+                                    <th class="datee">Friday</th>
+                                    <th class="datee">Saturday</th>
+                                    <th class="datee">Sunday</th>
 
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td></td>
+                                    <td class="Shift2" title="Shift 1">
+                                        <div class="Shift" style="background-image: url(../img/shift-item-hash.png);">
+                                            08:00 - 17:30
+                                        </div>
+                                    </td>
                                     <td></td>
                                     <td></td>
                                     <td></td>
@@ -157,11 +161,11 @@
                             </tbody>
                         </table>
                     </div>
-                    <div style="height: 360px;">
+                    <div class="rong">
 
                     </div>
                     <div>
-                        <table style="margin-top:20px;margin-bottom:0;background-color: #E0E1E2;color: rgba(0,0,0,.87);">
+                        <table class="tablee2">
                             <thead>
                                 <tr>
                                     <th style="color:#666;text-align:center;">0</th>

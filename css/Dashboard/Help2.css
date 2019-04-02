@@ -95,7 +95,11 @@ h3 a {
 
 .abc {
     color: black;
+    text-decoration: none;
 }
+    .abc:hover {
+        text-decoration: none;
+    }
 
 .chuphinh {
     background-color: #767676;
@@ -210,3 +214,24 @@ h3 a {
     .timkiem:hover {
         background-color: #1678c2;
     }
+.tong {
+    line-height: 1;
+    display: inline-block;
+    margin-left: 40px;
+    vertical-align: middle;
+}
+.roww {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.tablee {
+    width: 80%;
+    color: grey;
+    margin-top: 20px;
+}
+.textt {
+    text-transform: uppercase;
+}
+.mau {
+    color: black;
+}

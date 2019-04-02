@@ -52,8 +52,14 @@
             </div>
 
             <div class="col-sm-8">
-
-                <h1 style="padding-top:40px;text-align:center;text-transform:uppercase;">Main office</h1>
+                <div>
+                    <h1 style="padding-top:40px;text-align:center;">
+                        Office 1
+                        >
+                        <span style="text-transform: capitalize;"> Employees 1 </span>
+                    </h1>
+                    
+                </div>
                 <a href="MainOffice.aspx"><i class="fa fa-chevron-left" style="font-size:20px;float: left;margin-top: -33px;color:#767676"></i></a>
                 <div>
 
@@ -76,8 +82,8 @@
                             <div>
                                 <label style="float: left;">Select the shift to enter</label>
                                 <select class="form-control">
-                                    <option></option>
-                                    <option></option>
+                                    <option>Shift 1 (8:00-13:00)</option>
+                                    <option>Shift 1 (13:00-19:00)</option>
                                 </select>
                             </div>
                             <div>

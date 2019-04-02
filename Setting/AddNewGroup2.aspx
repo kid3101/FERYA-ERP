@@ -45,11 +45,9 @@
     <link href="../css/Setting/AddGroup2.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <div class="container-fluid" style="margin-top:-23px;width: 100%;height: 119px;background-color:#eee;">
-        <div style="line-height: 1;display: inline-block;margin-left: 40px;vertical-align: middle;">
-            <a class="abc tab-content" href="#" style="text-decoration:none;"><span><h2 style="cursor:pointer;">Install personnel <span><i style="padding-left: 20px;color: black;padding-right: 20px;" class="fa fa-angle-right"></i></span><a href="#" style="color:black;text-decoration:none;">Group of employees</a></h2></span></a>
-        </div>
-        <ul class="nav nav-tabs" style="margin-block-start: 1em;padding-inline-start: 40px;position: absolute;padding-top: 32px;">
+    <div class="container-fluid">
+        <h1 class="h3 mb-4 text-gray-800">Setting > Group of employees</h1>
+        <ul class="nav" style="margin-block-start: 1em;padding-inline-start: 40px;position: absolute;padding-top: 32px;">
             <li class="active" style="margin-right: 20px;">
                 <a data-toggle="tab" href="#" style="cursor:pointer;">
                     <span style="color:black;">All</span>
@@ -121,14 +119,14 @@
                 </ul>
             </li>
         </ul>
-        <div class="container-fluid" style="margin-top: -34px;margin-left: 791px;">
-            <div class="container" style="float:left;display: inline-flex;padding-left: 320px;">
-                <a href="AddNewGroup.html" class="nutchamcong" data-toggle="tooltip" title="Create group of employees" style="color:white;"><i class="fa fa-plus"></i> CREATE ANY WORKING GROUP</a>
+          <div class="container-fluid" style="margin-top: -34px;margin-left: 522px;">
+            <div class="container" style="float:left;display: inline-flex;padding-left: 264px;">
+                <a href="AddNewGroup.aspx" class="btn btn-info" data-toggle="tooltip" title="Create group of employees" style="color:white;"><i class="fa fa-plus"></i> CREATE ANY WORKING GROUP</a>
             </div>
             <div class="container" style="display: inline-flex;padding-left: 320px;">
                 <a href="#" style="height: 20px;width: 20px;color: #555;"><i class="fa fa-chevron-left"></i></a>
                 <div style="margin-right: 6px;">
-                    <a href="#" style="color:#555;">
+                    <a href="#" style="color:#555;text-decoration:none;">
                         <span>Page</span>
                         <span>1</span>
                         <span>/</span>
@@ -139,8 +137,7 @@
             </div>
         </div>
         <br>
-    </div>
-    <div class="table-responsive">
+        <div class="table-responsive">
         <table style="width: 98%;margin-left: 20px;margin-top: 25px;" class="table table-hover">
             <thead>
                 <tr>
@@ -158,13 +155,35 @@
             <tbody>
                 <tr>
                     <td>1</td>
-                    <td>de</td>
-                    <td>dsd</td>
-                    <td>sds</td>
-                    <td>sds</td>
-                    <td>sds</td>
-                    <td>sds</td>
-                    <td>sd</td>
+                    <td>
+                        <div style="width: 20px;height: 20px;background-color: red;">
+
+                        </div>
+                    </td>
+                    <td>Group 1</td>
+                    <td>234</td>
+                    <td>Demo</td>
+                    <td>50</td>
+                    <td>Jonh</td>
+                    <td>21:10, To day</td>
+                    <td style="float:right;">
+                        <a href="#" title="Click here to update data" style="text-transform:uppercase;text-decoration:none;">Employee synchronization</a>
+                        <a href="EditGroup.aspx" title="Click here to update data" style="text-decoration:none;margin-left:20px;text-transform:uppercase;">Edit</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>
+                        <div style="width: 20px;height: 20px;background-color: yellow;">
+
+                        </div>
+                    </td>
+                    <td>Group 2</td>
+                    <td>454</td>
+                    <td>Demo</td>
+                    <td>20</td>
+                    <td>Anna</td>
+                    <td>12:10, 20/03/2019</td>
                     <td style="float:right;">
                         <a href="#" title="Click here to update data" style="text-transform:uppercase;text-decoration:none;">Employee synchronization</a>
                         <a href="EditGroup.aspx" title="Click here to update data" style="text-decoration:none;margin-left:20px;text-transform:uppercase;">Edit</a>
@@ -173,5 +192,7 @@
             </tbody>
         </table>
     </div>
+    </div>
+  
 </asp:Content>
 

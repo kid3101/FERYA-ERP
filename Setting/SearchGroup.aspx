@@ -45,11 +45,9 @@
     <link href="../css/Setting/SearrchGroup.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <div class="container-fluid" style="margin-top:-23px;width: 100%;height: 119px;background-color:#eee;">
-        <div style="line-height: 1;display: inline-block;margin-left: 40px;vertical-align: middle;">
-            <a class="abc tab-content" href="#" style="text-decoration:none;"><span><h2 style="cursor:pointer;">Install personnel <span><i style="padding-left: 20px;color: black;padding-right: 20px;" class="fa fa-angle-right"></i></span><a href="#" style="color:black;text-decoration:none;">Group of employees</a></h2></span></a>
-        </div>
-        <ul class="nav nav-tabs" style="margin-block-start: 1em;padding-inline-start: 40px;position: absolute;padding-top: 32px;">
+    <div class="container-fluid">
+        <h1 class="h3 mb-4 text-gray-800">Setting > Group of employees</h1>
+        <ul class="nav" style="margin-block-start: 1em;padding-inline-start: 40px;position: absolute;padding-top: 32px;">
             <li class="active" style="margin-right: 20px;">
                 <a data-toggle="tab" href="#" style="cursor:pointer;text-decoration:none;">
                     <span style="color:black;">All</span>
@@ -170,13 +168,17 @@
             <tbody>
                 <tr>
                     <td>1</td>
-                    <td>de</td>
-                    <td>dsd</td>
-                    <td>sds</td>
-                    <td>sds</td>
-                    <td>sds</td>
-                    <td>sds</td>
-                    <td>sd</td>
+                    <td>
+                        <div style="width: 20px;height: 20px;background-color: red;">
+
+                        </div>
+                    </td>
+                    <td>Group 1</td>
+                    <td>234</td>
+                    <td>Demo</td>
+                    <td>50</td>
+                    <td>Jonh</td>
+                    <td>21:10, To day</td>
                     <td style="float:right;">
                         <a href="#" title="Click here to update data" style="text-transform:uppercase;text-decoration:none;">Employee synchronization</a>
                         <a href="EditGroup.aspx" title="Click here to update data" style="margin-left:20px;text-transform:uppercase;text-decoration:none;">Edit</a>

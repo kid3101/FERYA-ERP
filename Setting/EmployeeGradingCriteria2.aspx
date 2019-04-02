@@ -45,11 +45,9 @@
     <link href="../css/Setting/Grading2.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <div class="container-fluid" style="margin-top:-23px;width: 100%;height: 119px;background-color:#eee;">
-        <div style="line-height: 1;display: inline-block;margin-left: 40px;vertical-align: middle;">
-            <a class="abc tab-content" href="#" style="text-decoration:none;"><span><h2 style="cursor:pointer;">Install personnel <span><i style="padding-left: 20px;color: black;padding-right: 20px;" class="fa fa-angle-right"></i></span><a href="#" style="color:black;text-decoration:none;">Employee grading criteria</a></h2></span></a>
-        </div>
-        <ul class="nav nav-tabs" style=" margin-block-start: 1em;padding-inline-start: 40px;margin-top: 48px;">
+    <div class="container-fluid">
+        <h1 class="h3 mb-4 text-gray-800">Setting > Employee grading criteria</h1>
+        <ul class="nav" style=" margin-block-start: 1em;padding-inline-start: 40px;margin-top: 48px;">
             <li class="active" style="margin-right: 20px;">
                 <a data-toggle="tab" href="#" style="cursor:pointer;text-decoration:none;">
                     <span style="color:black;">All</span>
@@ -177,15 +175,28 @@
                 <tbody>
                     <tr>
                         <td>1</td>
-                        <td>de</td>
+                        <td>Criteria 1</td>
                         <td>Good</td>
                         <td>379</td>
                         <td>10</td>
-                        <td>sds</td>
-                        <td>sds</td>
-                        <td>sd</td>
+                        <td>Effective</td>
+                        <td>Jonh</td>
+                        <td>13:39, 27/03</td>
                         <td style="float:right;">
-                            <a href="EditEmployeeGradingCriteria.aspx" title="Click here to update data" style="margin-left:20px;text-decoration:none;">Edit</a>
+                            <a href="EditEmployeeGradingCriteria.aspx" title="Click here to update data" style="margin-left:20px;text-decoration:none;"><i class="fa fa-pen"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Criteria 2</td>
+                        <td>Good</td>
+                        <td>564</td>
+                        <td>10</td>
+                        <td>Effective</td>
+                        <td>Anna</td>
+                        <td>20:05, 01/0a</td>
+                        <td style="float:right;">
+                            <a href="EditEmployeeGradingCriteria.aspx" title="Click here to update data" style="margin-left:20px;text-decoration:none;"><i class="fa fa-pen"></i></a>
                         </td>
                     </tr>
                 </tbody>

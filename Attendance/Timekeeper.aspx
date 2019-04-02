@@ -48,25 +48,33 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <div class="container-fluid">
-        <div class="row content" style="text-align:center;">
+        <div class="row content tong">
             <div class="col-sm-2 sidenav">
 
             </div>
 
             <div class="col-sm-8">
 
-                <h1 style="padding-top:40px;text-align:center;text-transform:uppercase;">ATTENDANCE</h1>
+                <h1 class="att">ATTENDANCE</h1>
                 <div>
                     <select class="form-control">
                         <option>Choose an office for attendance</option>
-                        <option>Main office</option>
+                        <option>Office 1</option>
+                        <option>Office 2</option>
+                        <option>Office 3</option>
                     </select>
                 </div>
                  <div>
 
-                    <input class="form-control" placeholder="Find staff for attendance" style="height: 35px;cursor: pointer;margin-top:20px;" />
+                    <%--<input class="form-control" placeholder="Find staff for attendance" style="height: 35px;cursor: pointer;margin-top:20px;" />--%>
+                     <select class="form-control selectt" >
+                        <option>Find staff for attendance</option>
+                        <option>Employees 1</option>
+                        <option>Employees 2</option>
+                        <option>Employees 3</option>
+                    </select>
                     <i class="fa fa-search" style="cursor: pointer;font-size: 33px;float: right;margin-top: -35px;margin-right: 20px;"></i>
-                    <a href="MainOffice2.aspx" style="margin-left: 641px;"><button class="btn btn-primary" style="margin-top: 20px;">Continue</button></a>
+                    <a href="MainOffice2.aspx" class="main"><button class="btn btn-primary but" >Continue</button></a>
                 </div>
             </div>
             <div class="col-sm-2 sidenav">

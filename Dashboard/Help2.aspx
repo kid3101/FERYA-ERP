@@ -45,20 +45,15 @@
     <link href="../css/Dashboard/Help2.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <div class="container-fluid" style="margin-top:-23px;width: 100%;height: 118px;background-color:#eee;">
-        <div style="line-height: 1;display: inline-block;margin-left: 40px;vertical-align: middle;">
-            <a class="abc tab-content" href="ContactAndHelp.aspx" style="text-decoration:none;"><span><h2 style="cursor:pointer;">Help</h2></span></a>
+    <div class="container-fluid" >
+        <div class="tong">
+            <a class="abc tab-content" href="ContactAndHelp.aspx" ><span><h1 class="h3 mb-4 text-gray-800" >Help</h1></span></a>
         </div>
-        <ul class="nav nav-tabs" style="margin-block-start: 1em;padding-inline-start: 40px;position: absolute;padding-top: 32px;">
-            <li class="active" style="margin-right: 20px;">
-                <a data-toggle="tab" href="#" style="cursor:pointer;text-decoration:none;">
-                    <span style="color:black;">Cache information management</span>
-                </a>
-            </li>
+       
 
     </div>
     <div>
-        <div class="row content"  style="margin-top: 20px;margin-left: 20px;">
+        <div class="row content roww"  >
             <div class="col-sm-3 sidenav">
                 <div>
                     <h2>Company data resources</h2>
@@ -71,17 +66,17 @@
             <div class="col-sm-9">
                 <div class="container">
                     <div class="table-responsive">
-                        <table class="table table-hover" style="width:80%; color:grey;margin-top: 20px;">
+                        <table class="table table-hover tablee" >
                             <thead>
                                 <tr>
-                                    <th style="text-transform:uppercase;">Numerical order</th>
+                                    <th class="textt">Numerical order</th>
                                     <th rowspan="2">RESOURCES</th>
                                     <th>MEANING</th>
                                     <th>VERSION</th>
 
                                 </tr>
                             </thead>
-                            <tbody style="color:black;">
+                            <tbody class="mau">
                                 <tr>
                                     <td>1</td>
                                     <td>companydepartment</td>

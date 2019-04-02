@@ -5,20 +5,15 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-   <div class="headered" style="display:flex;margin:10px">
-          <div class="lefted" style="width:30%; color:black">
-              <h2> Company paychecks</h2>
-          </div>
-    </div>
-    <div class="container">
-          <ul class="nav nav-tabs">
-            <li class="active">
-                <a data-toggle="tab" href="#" style="cursor:pointer;">
-                    <span style="color:black;">Import</span>
-                </a>
-            </li>
-              </ul>
-        </div>
+  
+
+    <h1 class ="h3 mb-4 text-gray-800">Company paychecks
+        <span> > </span>
+        Import
+        </h1>
+
+        
+
         <div class="segment">
             <form class="ui form">
                 <div class="fields" style="margin-top:10px; display:flex">
@@ -89,8 +84,8 @@
                             </span>
                         </p>
                     </div>
-                    <div class="add" style=" margin-top: -30px; margin-left:200px">
-                        <a class="btn file" href="my_paycheck.html">
+                    <div>
+                        <a class="btn btn-facebook" href="#" style="margin-left:250px; margin-top:-60px">
                             Upload file
                         </a>
                     </div>

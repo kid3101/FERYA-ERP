@@ -45,11 +45,12 @@
     <link href="../css/Attendance/HourlyReport.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <div class="container-fluid" style="margin-top: -23px;width: 100%;height: 119px;background-color:#eee;">
+    <div class="container-fluid" >
+
         <div style="line-height: 1;display: inline-block;margin-left: 40px;vertical-align: middle;">
             <a class="abc tab-content" href="History.aspx" style="text-decoration:none;"><span><h2 style="cursor:pointer;">Timekeeping history</h2></span></a>
         </div>
-         <ul class="nav nav-tabs" style="margin-block-start: 1em;padding-inline-start: 40px;position: absolute;padding-top: 32px;">
+         <ul class="nav " style="margin-block-start: 1em;padding-inline-start: 40px;position: absolute;padding-top: 32px;">
             <li class="active" style="margin-right: 20px;">
                 <a data-toggle="tab" href="#" style="cursor:pointer;text-decoration:none;">
                     <span style="color:black;">All</span>
@@ -169,9 +170,9 @@
             </div>
         </div>
         <br>
-    </div>
-    <div>
-        <div style="margin:10px 0;">
+
+          <div>
+        <%--<div style="margin:10px 0;">
             <div style="margin:0;">
                 <div style="width: 25%;float:left;border-right-style: groove;">
                     <div style="cursor: pointer;font-size: 40px;text-align:center;">
@@ -199,7 +200,7 @@
                 </div>
             </div>
             <div style="border-top-style: dotted;clear: both;color: #eee;"></div>
-        </div>
+        </div>--%>
         <div>
             <div class="table-responsive">
                 <table class="table table-hover" style="width:100%; color:grey;margin-top: 20px;">
@@ -218,20 +219,20 @@
                     <tbody>
                         <tr>
                             <td></td>
-                            <td>fdfd</td>
-                            <td>fdf</td>
-                            <td>dfdf</td>
-                            <td>dfd</td>
+                            <td>Employees 1</td>
+                            <td>Secretary</td>
+                            <td>Department 1</td>
+                            <td>Hoa sứ</td>
                             <td>-</td>
                             <td>0</td>
                             <td>0</td>
                         </tr>
                         <tr>
-                            <td>1</td>
-                            <td>fdfd</td>
-                            <td>fdf</td>
-                            <td>dfdf</td>
-                            <td>dfd</td>
+                            <td></td>
+                            <td>Employees 2</td>
+                            <td>Cashier</td>
+                            <td>Department 1</td>
+                            <td>Hoa sứ</td>
                             <td>-</td>
                             <td>0</td>
                             <td>0</td>
@@ -241,6 +242,8 @@
             </div>
         </div>
     </div>
+    </div>
+  
 
 </asp:Content>
 

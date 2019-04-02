@@ -45,19 +45,10 @@
     <link href="../css/Setting/AddGroup.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <div class="container-fluid" style="margin-top:-23px;width: 100%;height: 118px;background-color:#eee;">
-        <div style="line-height: 1;display: inline-block;margin-left: 40px;vertical-align: middle;">
-            <a class="abc tab-content" href="#" style="text-decoration:none;"><span><h2 style="cursor:pointer;">Group of employees</h2></span></a>
-        </div>
-        <ul class="nav nav-tabs" style="margin-block-start: 1em;padding-inline-start: 40px;position: absolute;padding-top: 32px;">
-            <li class="active " style="margin-right: 20px;">
-                <a data-toggle="tab" href="#" style="cursor:pointer;text-decoration:none;">
-                    <span style="color:black;">Add new</span>
-                </a>
-            </li>
-
-    </div>
-    <div style="margin-top:20px;">
+    <div class="container-fluid">
+        <h1 class="h3 mb-4 text-gray-800"> Group of employees > Add new</h1>
+        
+            <div style="margin-top:20px;">
         <div class="row content" style="margin-left: 20px;">
             <div class="col-sm-3">
                 <h3>Staff group information</h3>
@@ -139,14 +130,14 @@
                 </form>
             </div>
         </div>
-        <div style="background-color:#eee;width:100%;height:80px;margin-top: -3px;display:flex;">
+        <div style="width:100%;height:80px;margin-top: -3px;display:flex;">
             <div class="col-sm-4 sidenav" style="margin-top:20px;">
                 <span>*: Obligatory</span>
             </div>
 
             <div class="col-sm-4" style="text-align:center;">
                 <div style="margin-top:25px; margin-left: -90px;">
-                    <button class="nutchamcong" style="width: 30%;border: none;margin-left: -280px"><a href="AddNewGroup2.aspx" style="color:white;text-decoration:none;"> ADD NEW</a></button>
+                    <button class="btn btn-info" style="width: 30%;border: none;margin-left: -280px"><a href="AddNewGroup2.aspx" style="color:white;text-decoration:none;"> ADD NEW</a></button>
                 </div>
             </div>
 
@@ -155,5 +146,7 @@
             </div>
         </div>
     </div>
+    </div>
+    
 </asp:Content>
 

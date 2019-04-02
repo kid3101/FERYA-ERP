@@ -48,21 +48,18 @@
     <script src="../js/History/History.js"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-     <div class="container-fluid" style="width: 100%;height: 119px;background-color:#eee;margin-top: -23px;
-">
-        <div style="line-height: 1;display: inline-block;margin-left: 40px;vertical-align: middle;">
-            <a class="abc tab-content" style="text-decoration:none;" href="History.aspx"><span><h2 style="cursor:pointer;">History</h2></span></a>
-        </div>
-        <ul class="nav nav-tabs" style="margin-block-start: 1em;padding-inline-start: 40px;position: absolute;padding-top: 32px;">
-            <li class="active" style="margin-right: 20px;">
-                <a data-toggle="tab" href="#" style="cursor:pointer;text-decoration:none;">
-                    <span style="color:black;">All</span>
+     <div class="container-fluid">
+        <h1 class="h3 mb-4 text-gray-800">History</h1>
+        <ul class="nav ull">
+            <%--<li class="active lii" >
+                <a data-toggle="tab" href="#" class="lt">
+                    <span class="mau">All</span>
                     <span class="number">0</span>
                 </a>
-            </li>
+            </li>--%>
             <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" style="padding-right: 30px;color:black;cursor:pointer;" title="Turn on / off the search function">Filter & search ...</a>
-                <ul class="dropdown-menu filterbarfull filterbar" style="top: 0px;transform: translate3d(0px, 26px, 0px);width: 354px;margin-top: 185px;">
+                <button class="dropdown-toggle aa" data-toggle="dropdown"  title="Turn on / off the search function">Filter & search ...</button>
+                <ul class="dropdown-menu filterbarfull filterbar ul2" >
                     <li>
                         <form class="ui form">
                             <table width="100%" cellpadding="10">
@@ -70,12 +67,12 @@
                                     <tr>
                                         <td>
                                             <label>
-                                                <span style="margin-right:10px;">Status</span>
+                                                <span class="kc">Status</span>
                                             </label>
                                         </td>
                                         <td>
-                                            <div class="text" style="cursor:pointer;">
-                                                <select class="form-control" style="border-radius: 7px;">
+                                            <div class="text texx" >
+                                                <select class="form-control selectt" >
                                                     <option>All</option>
                                                     <option>Doing</option>
                                                     <option>Finish</option>
@@ -89,12 +86,12 @@
                                     <tr>
                                         <td>
                                             <label>
-                                                <span style="margin-right:10px;">Headquarters</span>
+                                                <span class="kc">Headquarters</span>
                                             </label>
                                         </td>
                                         <td>
-                                            <div class="text" style="cursor:pointer;">
-                                                <select class="form-control" style="cursor:pointer;border-radius: 7px;">
+                                            <div class="text texx" >
+                                                <select class="form-control haizz" >
                                                     <option>All</option>
                                                 </select>
                                             </div>
@@ -104,24 +101,24 @@
                                     <tr>
                                         <td>
                                             <label>
-                                                <span style="margin-right:10px;">Date</span>
+                                                <span class="datee">Date</span>
                                             </label>
                                         </td>
                                         <td>
                                             <div>
-                                                <input style="height: 31px;width: 221px;border-radius: 6px;margin-bottom: 12px;margin-left: 3px;border-style: groove;" />
+                                                <input class="bor" />
 
                                             </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td colspan="2">
-                                            <button class="timkiem"><a href="SearchKeepingHistory.aspx" style="color:white;text-decoration:none;">Search</a></button>
+                                            <button class="timkiem"><a href="SearchKeepingHistory.aspx" class="nut">Search</a></button>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td colspan="2" style="text-align:center;padding-top: 17px;">
-                                            <a href="#" style="text-decoration:none;">Closed</a>
+                                        <td colspan="2" class="text-align:center;padding-top: 17px;">
+                                            <a href="#" class="nut">Closed</a>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -132,47 +129,47 @@
                 </ul>
             </li>
         </ul>
-        <div class="container-fluid" style="margin-top: -34px;margin-left: 453px;">
-            <div class="container" style="float:left;">
+        <div class="container-fluid tongg" >
+            <div class="container kk" >
 
-                <div class="dropdown" style="position: relative;display: inline-block;">
+                <div class="dropdown dro" >
 
-                    <a class="ls dropdown-toggle" title="For management" style="margin-left: -10px;background-color: #eee;border-color: #eee;" data-toggle="dropdown"><i class="fa fa-cog"></i> For management</a>
+                    <a class="ls dropdown-toggle" title="For management"  data-toggle="dropdown"><i class="fa fa-cog"></i> For management</a>
 
-                    <ul class="dropdown-menu " role="menu" aria-labelledby="menu1" style="width: 200px;">
-                        <li  role="presentation" style="margin-bottom: 10px;margin-left: 10px;"><a role="menuitem" tabindex="-1" href="Workschedule.aspx" style="color: black;text-decoration:none;"><i class="fa fa-calendar"></i> Schedule work schedule</a></li>
-                        <li role="presentation" style="margin-bottom: 10px;margin-left: 10px;"><a role="menuitem" tabindex="-1" href="SwitchShift.aspx" style="color: black;text-decoration:none;"><i class="fa fa-sync"></i> Switch shift</a></li>
-                        <li role="presentation" style="margin-bottom: 10px;margin-left: 10px;"><a role="menuitem" tabindex="-1" href="HourlyReport.aspx" style="color: black;text-decoration:none;"><i class="fa fa-chart-bar"></i> Report</a></li>
-                        <li role="presentation" style="margin-bottom: 10px;margin-left: 10px;"><a role="menuitem" tabindex="-1" href="ExportExcel.aspx" style="color: black;text-decoration:none;"><i class="fa fa-download"></i> Export excel</a></li>
-                        <li role="presentation" style="margin-bottom: 10px;margin-left: 10px;"><a role="menuitem" tabindex="-1" href="PublicReview.aspx" style="color: black;text-decoration:none;"><i class="fa fa-check-circle"></i> Browse public</a></li>
+                    <ul class="dropdown-menu menuu" role="menu" aria-labelledby="menu1" >
+                        <li  role="presentation" class="li2"><a role="menuitem" tabindex="-1" href="Workschedule.aspx" class="meto"><i class="fa fa-calendar"></i> Schedule work schedule</a></li>
+                        <li role="presentation" class="li2"><a role="menuitem" tabindex="-1" href="SwitchShift.aspx" class="meto"><i class="fa fa-sync"></i> Switch shift</a></li>
+                        <li role="presentation" class="li2"><a role="menuitem" tabindex="-1" href="HourlyReport.aspx" class="meto"><i class="fa fa-chart-bar"></i> Report</a></li>
+                        <li role="presentation" class="li2"><a role="menuitem" tabindex="-1" href="ExportExcel.aspx" class="meto"><i class="fa fa-download"></i> Export excel</a></li>
+                        <li role="presentation" class="li2"><a role="menuitem" tabindex="-1" href="PublicReview.aspx" class="meto"><i class="fa fa-check-circle"></i> Browse public</a></li>
                     </ul>
                 </div>
 
-                <a class="ls" style="margin-left: 15px;text-decoration:none;" href="WorkingPlan.aspx""><i class="fa fa-calendar"></i> Calendar</a>
-                <a class="maychamcong" data-toggle="tooltip" href="Timekeeper.aspx"" title="Allowing attendance for other employees or accessing from timekeeping equipment" style="color:white;margin-left: 15px;padding-left: 20px;padding-right: 20px;text-decoration:none;"><i class="fa fa-desktop"></i> ATTENDANCE</a>
-                <a class="nutchamcong" data-toggle="tooltip" href="TimeKeeping.aspx" title="Timekeeping" style="color:white;margin-left: 15px;padding-left: 20px;padding-right: 20px;text-decoration:none;"><i class="fa fa-plus-circle"></i> ATTENDANCING</a>
+                <a class="ls ls2" href="WorkingPlan.aspx""><i class="fa fa-calendar"></i> Calendar</a>
+                <a class="maychamcong att2" data-toggle="tooltip" href="Timekeeper.aspx"" title="Allowing attendance for other employees or accessing from timekeeping equipment"><i class="fa fa-desktop"></i> ATTENDANCE</a>
+                <a class="nutchamcong att" data-toggle="tooltip" href="TimeKeeping.aspx" title="Atendancing" ><i class="fa fa-plus-circle"></i> ATTENDANCING</a>
             </div>
-            <div class="container" style="display: inline-flex;padding-left: 320px; padding-top: 20px;">
-                <a href="#" style="height: 20px;width: 20px;color: #555;"><i class="fa fa-chevron-left"></i></a>
-                <div style="margin-right: 6px;">
-                    <a href="#" style="color:#555;text-decoration:none;">
+            <div class="container tong2">
+                <a href="#" class="aaa"><i class="fa fa-chevron-left"></i></a>
+                <div class="kk2">
+                    <a href="#" class="au">
                         <span>Page</span>
                         <span>0</span>
                         <span>/</span>
                         <span>0</span>
                     </a>
                 </div>
-                <a href="#" style="height: 48px;width: 48px;color: #555;"><i class="fa fa-chevron-right"></i></a>
+                <a href="#" class="mau2"><i class="fa fa-chevron-right"></i></a>
             </div>
         </div>
         <br>
-    </div>
-    <div class="table-responsive">
+
+         <div class="table-responsive">
         <div>
-            <table class="table" style="width:100%; color:grey;margin-top: 20px;">
+            <table class="table table-hover tablee" >
                 <thead>
                     <tr>
-                        <th style="color:black;">SID</th>
+                        <th class="mg">SID</th>
                         <th rowspan="2">DATE</th>
                         <th>HEADQUARTERS</th>
                         <th>SHIFT</th>
@@ -190,10 +187,10 @@
                     <tr>
                         <td>1</td>
                         <td>01/01/2019</td>
-                        <td>Main Ofice</td>
+                        <td>Hoa Sứ</td>
                         <td>
-                            <a href="Shift.aspx" style="background: #FFF;padding-top: 3px;padding-right: 14px;border: 2px solid rgba(34,36,38,.15);border-radius: 5px;font-size: 0.642857rem;"></a>
-                            <span style="margin-left: 6px;">
+                            <a href="Shift.aspx" class="shift"></a>
+                            <span class="kk1">
                                 <span>09:00</span>
                                 <span>17:00</span>
                             </span>
@@ -201,19 +198,19 @@
                         <td>10:00-17:00</td>
                         <td>-</td>
                         <td>0</td>
-                        <td style="text-align: center;"><i class="fa fa-square" title="Arrive later than specified"></i></td>
-                        <td style="text-align: center;"><i class="fa fa-square" title=" Out early "></i></td>
-                        <td style="text-align: center;"><i class="fa fa-square" ></i></td>
+                        <td class="g"><i class="fa fa-square" title="Arrive later than specified"></i></td>
+                        <td class="g"><i class="fa fa-square" title=" Out early "></i></td>
+                        <td class="g"><i class="fa fa-square" ></i></td>
                         <td>Doing</td>
                         <td>Jonh</td>
                     </tr>
                     <tr>
                         <td>2</td>
                         <td>30/01/2019</td>
-                        <td>Main Ofice</td>
+                        <td>Hoa Hồng</td>
                         <td>
-                            <a href="Shift.aspx" style="background: #FFF;padding-top: 3px;padding-right: 14px;border: 2px solid rgba(34,36,38,.15);border-radius: 5px;font-size: 0.642857rem;"></a>
-                            <span style="margin-left: 6px;">
+                            <a href="Shift.aspx" class="shift"></a>
+                            <span class="kk1">
                                 <span>08:00</span>
                                 <span>18:00</span>
                             </span>
@@ -221,10 +218,10 @@
                         <td>08:00-17:00</td>
                         <td>-</td>
                         <td>0</td>
-                        <td style="text-align: center;"><i class="fa fa-square" title="Arrive later than specified"></i></td>
-                        <td style="text-align: center;"><i class="fa fa-square" title=" Out early "></i></td>
-                        <td style="text-align: center;"><i class="fa fa-square" ></i></td>
-                        <td>Doing</td>
+                        <td class="g"><i class="fa fa-square" title="Arrive later than specified"></i></td>
+                        <td class="g"><i class="fa fa-square" title=" Out early "></i></td>
+                        <td class="g"><i class="fa fa-square" ></i></td>
+                        <td>Working</td>
                         <td>Dan</td>
                     </tr>
                 </tbody>
@@ -232,6 +229,8 @@
 
         </div>
     </div>
+    </div>
+    
 
     
 </asp:Content>

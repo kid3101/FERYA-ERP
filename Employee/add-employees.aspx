@@ -7,29 +7,24 @@
     <link href="../css/employee.css/add-point-employee.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <div class="container-fluid" style="width: 100%;height: 119px;background-color:#eee;margin-top: -23px;">
-        <div style="line-height: 1;display: inline-block;margin-left: 40px;vertical-align: middle;">
-            <a class="abc tab-content" style="text-decoration:none;" href="#"><span><h2 style="cursor:pointer;"> Employee</h2></span></a>
-        </div>
-        <ul class="nav nav-tabs" style="margin-block-start: 1em;padding-inline-start: 40px;position: absolute;padding-top: 32px;">
-            <li class="active" style="margin-right: 20px;">
-                <a data-toggle="tab" href="#" style="cursor:pointer;text-decoration:none;">
-                    <span style="color:black;">Add new</span>
-                </a>
-            </li>
-        </ul>
+
+    <div class="container-fluid" >
+        <h1 class ="h3 mb-4 text-gray-800">Employee 
+          <span> > </span>
+            Add new
+        </h1>
     </div>
 
     <div class="segment">
             <form class="ui form">
-                <div class="top" style="margin-top:10px;">
-                    <div class="left" style="width:30%;">
+                <div class="top" >
+                    <div class="left">
                         <h4>Personal information </h4>
                         <p></p>
                     </div>
                     <div class="right">
                         <div class="col-xs-5">
-                            <label>Name<a style="margin-top: -0.2em; margin-left:0.2em;color: #DB2828;">*</a></label>
+                            <label>Name<span class="star-sign">*</span></label>
                             <input class="form-control" type="text">
                         </div>
                         <div class="col-xs-5">
@@ -44,8 +39,9 @@
                             </select>
                         </div>
                         <div class="col-xs-5">
-                            <label>Email<a style="margin-top: -0.2em; margin-left:0.2em;color: #DB2828;">*</a></label>
+                            <label>Email<span class="star-sign">*</span></label>
                             <input class="form-control" type="text">
+                            <div class="email">Email must work. Password will be sent to this email address.</div>
                         </div>
                         <div class="col-xs-5">
                             <label>Tel</label>
@@ -53,8 +49,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="center" style="border-top-style:outset; margin-top: 15px; ">
-                    <div class="left" style="width:30%;">
+                <div class="center" >
+                    <div class="left" >
                         <h4>Staff information</h4>
                         <p>Detailed employee information</p>
                     </div>
@@ -99,13 +95,15 @@
                         </div>
 
                         <div class="col-xs-5" >
-                            <label>Internal ID</label>
-                            <a href="#" data-toggle="tooltip" title="If your company / group is running (or has) a system to manage all accounts, this field will store the user ID of your current system. (Allow A-Z, 0-9 characters). Example: E16217, CE40128 ..." style="text-decoration:none;"><i class="fa fa-exclamation-circle"></i></a>
-                            <select class="form-control"></select>
+                            <label>Internal ID<i class="fa fa-exclamation-circle" data-toggle="tooltip" title="If your company / group is running (or has) a system to manage all accounts, this field will store the user ID of your current system. (Allow A-Z, 0-9 characters). Example: E16217, CE40128 ..." ></i></label>
+                            <div class="ui right labeled input">
+                                <input name="internalid" type="text" value="" >
+                                <lable class="lab">@acb560</lable>
+                            </div>
                         </div>
 
                         <div class="col-xs-5">
-                            <label>Position<a style="margin-top: -0.2em; margin-left:0.2em;color: #DB2828;">*</a></label>
+                            <label>Position<span class="star-sign">*</span></label>
                             <input class="form-control" type="text">
                         </div>
 
@@ -119,14 +117,14 @@
                     </div>  
                 </div>
 
-                  <div style="background-color:#eee;width:100%;height:80px;">
-            <div class="col-sm-4 sidenav" style="margin-top:20px;">
+        <div >
+            <div class="col-sm-4 sidenav">
                 <span>*: Obligatory</span>
             </div>
 
-            <div class="col-sm-8" style="text-align:center;">
-                <div style="margin-top:-13px;">
-                    <a href="update-employee.aspx" class="addnew" style="width: 30%;border: none;"> MORE</a>
+            <div class="col-sm-8" id="col-8" >
+                <div >
+                    <a href="update-employee.aspx" class="btn btn-info"> Add</a>
                 </div>
             </div>
         </div>

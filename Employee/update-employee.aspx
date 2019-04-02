@@ -9,42 +9,36 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
            <div class="heading">
-            <div class="container">
-            <div class="container">
-                <h3 class="title"> Employee</h3>
-                <ul class="nav nav-tabs" style="display:block; list-style-type:disc; ">
-                    <li class="active">
-                        <a data-toggle="tab" href="#" style="cursor:pointer;">
-                            <span style="color:black;"> Update</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+            <div class="container-fluid" >
+        <h1 class ="h3 mb-4 text-gray-800">Employee 
+          <span> > </span>
+            Update
+        </h1>
+    </div>
         <div class="segment">
             <form class="ui form">
                 <div class="top" style="margin-top:10px;">
                     <div class="left" style="width:25%;">
                         <div class="image">
-                            <img src="#" style="width:180px; height:180px;margin-left:20px" />
+                            <img src="https://api.teamcrop.com/v1/photoavatar/a/5c53f5/7a013/40.jpg" style="width:180px; height:180px;margin-left:20px" />
                         </div>
                     </div>
                     <div class="right" style="width:100% ; margin-top: 8px; margin-right:-250px">
-                        <a style="color:#000;">Name</a>
+                        <a style="color:#000;">Ferya</a>
                         <div class="meta">
-                            <span>Office</span>
+                            <span>Office 1</span>
                             <span>-</span>
-                            <span>Type of work</span>
+                            <span></span>
                         </div>
                         <div class="meta">
-                            <span>Rank</span>
+                            <span>Manager</span>
                             <span>-</span>
-                            <span>Position</span>
+                            <span>Official staff</span>
                         </div>
                         <div class="meta">
-                            <span>Email</span>
+                            <span>ferya@gmail.com</span>
                             <span>-</span>
-                            <span>Phone</span>
+                            <span>0327825991</span>
                         </div>
                     </div>
                 </div>
@@ -357,7 +351,7 @@
                     </tr>
                 </table>
                 <div class="cog" style="padding-top:20px">
-                    <button class="w3-button w3-black w3-round-xxlarge" data-toggle="modal" data-target="#myModal1">
+                    <button class="btn btn-info" data-toggle="modal" data-target="#myModal1">
                         <i class="fa fa-plus" title="Add a new account"></i>
                         <span>Add a new account</span>
                     </button>
@@ -399,7 +393,7 @@
                 </table>
 
                 <div class="cog" data-toggle="modal" data-target="#myModal3" style="padding-top:20px">
-                    <button class="w3-button w3-black w3-round-xxlarge">
+                    <button class="btn btn-info">
                         <i class="fa fa-plus" title="Add a new account"></i>
                         <span>Add a new account</span>
                     </button>
@@ -439,7 +433,7 @@
                     </tr>
                 </table>
                 <div class="cog" data-toggle="modal" data-target="#myModal5" style="padding-top:20px">
-                    <button class="w3-button w3-black w3-round-xxlarge">
+                    <button class="btn btn-info">
                         <i class="fa fa-plus" title="Add a new account"></i>
                         <span>Add a new account</span>
                     </button>

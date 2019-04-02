@@ -58,7 +58,7 @@
                   </thead>
                     <tbody>
                         <tr>
-                            <td>Thông Huyền Trang</td>
+                            <td>Ferya</td>
                             <td class="employeepointaddpoint" style="background-size:100%;" title="100%">10 point</td>
                             <td class="employeepointsubpoint" style="background-size:100%; background-color: #fdf0df;" title="100%">0 point</td>
                             <td>1 criterion</td>
@@ -84,12 +84,12 @@
               <tbody>
                   <tr>
                     <td>
-                        <a href="#" class="label blue">sas</a>
+                        <a href="#" class="label blue">bye</a>
                     </td>
                     <td>
                         <lable style="padding: 10px 10px;background-color: gainsboro;">10</lable>
                     </td>
-                    <td>Thông Huyền Trang</td>
+                    <td>Ferya</td>
                     <td>
                         <span> </span>
                         <lable style="padding: 10px 10px;background-color:#08ef38; color:white">Effective</lable>

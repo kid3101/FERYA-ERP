@@ -45,34 +45,38 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
     <link href="../css/Attendance/TimeKeeping.css" rel="stylesheet" />
+    <script src="../dist/webcam.js"></script>
+    <script src="../dist/webcam.min.js"></script>
+    <style type="text/css">
+		body { font-family: Helvetica, sans-serif; }
+		h2, h3 { margin-top:0; }
+		form { margin-top: 15px; }
+		form > input { margin-right: 15px; }
+		#results { float:right; margin:20px; padding:20px; border:1px solid; background:#ccc; }
+	</style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <div class="container" style="background-color: #eee;height: 95px;width: 100%;">
-        <div style="margin-bottom: -11px;margin-top: -23px;">
-            <br />
-            <a class="abc tab-content" href="History.aspx" style="text-decoration:none;"><span><h2 style="cursor:pointer;">Timekeeping history</h2></span></a>
-            <ul class="nav nav-tabs" style="margin-right:-202px;padding-inline-start: 40px;
-">
-                <li class="active"><a href="#" style="cursor:pointer;height: 44px;text-decoration:none;">Timekeeping</a></li>
-            </ul>
-            <br>
-        </div>
-    </div>
-    <div class="container">
+    <div class="container-fluid">
+       <h1 class="h3 mb-4 text-gray-800">Attendance > Timekeeping information</h1>
+        
+        <div class="container tong" >
         <form>
             <div class="container">
-                <div class="container" style="margin-left: 24px; width: 40%;float:left;">
-                    <h3><strong>Timekeeping information</strong></h3>
-                    <p style="font-size: 17px;">Enter the information to conduct the in-out attendance.</p>
+                <div class="container tongg" >
+                    <p class="textt">Enter the information to conduct the in-out attendance.</p>
+                    <div id="my_camera" >
+                <video autoplay="autoplay" style="width: 320px;height: 240px;margin-top: -239px;margin-left: 2px;"></video>
+            </div>
                 </div>
-                <div class="container" style="width:60%;font-size: 17px; display:inline;">
-                    <div style="width:30%;font-size: 17px;float:left;">
+                <div class="container tong2" >
+                    <div class="hp">
                         <div class="form-group">
-                            <label for="usr">User Name (<a href="Attendant.aspx" style="text-decoration:none;">Change office</a>)<span style="color:red;"> *</span></label>
+                            <label for="usr">Office 1 (<a href="Attendant.aspx" class="nut">Change office</a>)<span class="mau"> *</span></label>
                             <div>
                                 <select class="form-control" id="sel1">
                                     <option>---</option>
-
+                                    <option>Shift 1 (7:00 - 17:00)</option>
+                                    <option>Shift 2 (10:00 - 19:00)</option>
                                 </select>
                             </div>
                         </div>
@@ -81,28 +85,56 @@
                             <textarea class="form-control" rows="5" id="comment"></textarea>
                         </div>
                         <div>
+                            <div id="results">Your captured image will appear here...</div>
+                        </div>
+                        <div>
                             <label>Webcam / camera snapshot</label>
                         </div>
                     </div>
-                    <div style="width:30%;font-size: 17px;float:right;">
-                        <a href="#" class="chuphinh" style="text-decoration:none;">Take a picture</a>
+                    <div class="nuttt">
+                        <a href="#" class="chuphinh" onClick="take_snapshot()">Take a picture</a>
                     </div>
                 </div>
             </div>
-            <div style="float: left;margin-left: -25px;display: inline-flex;width: 110%;background-color: #eee;height: 80px;margin-top: 33px;">
+            <div class="aa">
                 <br />
                 <div class="container">
-                    <p style="font-size:20px;">
+                    <p class="sizee">
                         <span>* : </span>
                         <span>Obligatory</span>
                     </p>
                 </div>
-                <div class="container" style="margin-left: -253px;margin-top: 20px;">
-                    <button class="nutchamcong" style="border: none;padding-left: 20px;padding-right: 20px;"><a href="TimeAttendance.aspx" style="color:white;text-decoration:none;">ATTENDANCE</a></button>
+                <div class="container nut2" >
+                    <button class="nutchamcong nut3" ><a href="TimeAttendance.aspx" class="nut4">ATTENDANCE</a></button>
                 </div>
             </div>
-
+            
+            
+            
+            <script language="JavaScript">
+		        Webcam.set({
+			        width: 320,
+                    height: 240,
+			        image_format: 'jpeg',
+                    jpeg_quality: 90,
+                      force_flash: true
+		        });
+		        Webcam.attach( '#my_camera' );
+	</script>
+            
         </form>
     </div>
+    </div>
+    <script language="JavaScript">
+		function take_snapshot() {
+			// take snapshot and get image data
+			Webcam.snap( function(data_uri) {
+				// display results in page
+				document.getElementById('results').innerHTML = 
+					'<h2>Here is your image:</h2>' + 
+					'<img src="'+data_uri+'"/>';
+			} );
+		}
+	</script>
 </asp:Content>
 

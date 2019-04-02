@@ -48,11 +48,11 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-    <div class="container-fluid" style="width: 100%;height: 119px;background-color:#eee;margin-top: -24px;">
+    <div class="container-fluid">
         <div style="line-height: 1;display: inline-block;margin-left: 40px;vertical-align: middle;">
             <a class="abc tab-content" style="text-decoration:none;" href="History.aspx"><span><h2 style="cursor:pointer;">History</h2></span></a>
         </div>
-        <ul class="nav nav-tabs" style="margin-block-start: 1em;padding-inline-start: 40px;position: absolute;padding-top: 32px;">
+        <ul class="nav" style="margin-block-start: 1em;padding-inline-start: 40px;position: absolute;padding-top: 32px;">
             <li class="active" style="margin-right: 20px;">
                 <a data-toggle="tab" href="#" style="cursor:pointer;text-decoration:none;">
                     <span style="color:black;">All</span>
@@ -136,10 +136,10 @@
 
                 <div class="dropdown" style="position: relative;display: inline-block;">
 
-                    <a class="ls dropdown-toggle" title="For management" style="margin-left: -10px;background-color: #eee;border-color: #eee;" data-toggle="dropdown"><i class="fa fa-cog"></i> For management</a>
+                    <a class="ls dropdown-toggle" title="For management" style="margin-left: -10px;" data-toggle="dropdown"><i class="fa fa-cog"></i> For management</a>
 
                     <ul class="dropdown-menu " role="menu" aria-labelledby="menu1" style="width: 200px;">
-                        <li  role="presentation" style="margin-bottom: 10px;margin-left: 10px;"><a role="menuitem" tabindex="-1" href="employee.html" style="color: black;text-decoration:none;"><i class="fa fa-calendar"></i> Schedule work schedule</a></li>
+                        <li  role="presentation" style="margin-bottom: 10px;margin-left: 10px;"><a role="menuitem" tabindex="-1" href="#" style="color: black;text-decoration:none;"><i class="fa fa-calendar"></i> Schedule work schedule</a></li>
                         <li role="presentation" style="margin-bottom: 10px;margin-left: 10px;"><a role="menuitem" tabindex="-1" href="SwitchShift.aspx" style="color: black;text-decoration:none;"><i class="fa fa-sync"></i> Switch shift</a></li>
                         <li role="presentation" style="margin-bottom: 10px;margin-left: 10px;"><a role="menuitem" tabindex="-1" href="HourlyReport.html" style="color: black;text-decoration:none;"><i class="fa fa-chart-bar"></i> Report</a></li>
                         <li role="presentation" style="margin-bottom: 10px;margin-left: 10px;"><a role="menuitem" tabindex="-1" href="ExportExcel.html" style="color: black;text-decoration:none;"><i class="fa fa-download"></i> Export excel</a></li>
@@ -148,8 +148,8 @@
                 </div>
 
                 <a class="ls" style="margin-left: 15px;text-decoration:none;" href="WorkingPlan.aspx""><i class="fa fa-calendar"></i> Calendar</a>
-                <a class="maychamcong" data-toggle="tooltip" href="Timekeeper.aspx"" title="Allowing attendance for other employees or accessing from timekeeping equipment" style="color:white;margin-left: 15px;padding-left: 20px;padding-right: 20px;text-decoration:none;"><i class="fa fa-desktop"></i> TIMEKEEPER</a>
-                <a class="nutchamcong" data-toggle="tooltip" href="TimeKeeping.aspx" title="Timekeeping" style="color:white;margin-left: 15px;padding-left: 20px;padding-right: 20px;text-decoration:none;"><i class="fa fa-plus-circle"></i> TIMEKEEPING</a>
+                <a class="maychamcong" data-toggle="tooltip" href="Timekeeper.aspx"" title="Allowing attendance for other employees or accessing from timekeeping equipment" style="color:white;margin-left: 15px;padding-left: 20px;padding-right: 20px;text-decoration:none;"><i class="fa fa-desktop"></i> ATTENDANCE</a>
+                <a class="nutchamcong" data-toggle="tooltip" href="TimeKeeping.aspx" title="Attendancing" style="color:white;margin-left: 15px;padding-left: 20px;padding-right: 20px;text-decoration:none;"><i class="fa fa-plus-circle"></i> ATTENDANCING</a>
             </div>
             <div class="container" style="display: inline-flex;padding-left: 320px; padding-top: 20px;">
                 <a href="#" style="height: 20px;width: 20px;color: #555;"><i class="fa fa-chevron-left"></i></a>
@@ -165,8 +165,7 @@
             </div>
         </div>
         <br>
-    </div>
-    <div style="margin-top: 20px;margin-left: 6px;">
+        <div style="margin-top: 20px;margin-left: 6px;">
         <span class="aa">
             <span>
                 <span>Shift:</span>
@@ -199,10 +198,10 @@
                 <tbody>
                     <tr>
                         <td>4545</td>
-                        <td>To day</td>
-                        <td>ffdf</td>
+                        <td>20:00, 23/01/2019</td>
+                        <td>Office 1</td>
                         <td>
-                            <a href="#" style="background: #FFF;padding-top: 3px;;padding-right: 14px;;border: 2px solid rgba(34,36,38,.15);border-radius: 5px;font-size: 0.642857rem;"></a>
+                            <a href="#" style="background: #FFF;padding-top: 3px;padding-right: 14px;;border: 2px solid rgba(34,36,38,.15);border-radius: 5px;font-size: 0.642857rem;"></a>
                             <span style="margin-left: 6px;">
                                 <span>09:00</span>
                                 <span>17:00</span>
@@ -215,17 +214,19 @@
                         </td>
                         <td>-</td>
                         <td>0</td>
-                        <td><i class="fa fa-square-o" title=" - "></i></td>
-                        <td style="text-align: center;"><i class="fa fa-square-o" title="Arrive later than specified"></i></td>
-                        <td></td>
+                        <td><i class="fa fa-square" title=" - "></i></td>
+                        <td style="text-align: center;"><i class="fa fa-square" title="Arrive later than specified"></i></td>
+                        <td><i class="fa fa-square" ></i></td>
                         <td>Doing</td>
-                        <td></td>
+                        <td>Anna</td>
                     </tr>
                 </tbody>
             </table>
 
         </div>
     </div>
+    </div>
+    
 
 </asp:Content>
 

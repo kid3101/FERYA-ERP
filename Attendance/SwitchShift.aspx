@@ -45,13 +45,10 @@
     <link href="../css/Attendance/SwitchShift.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-     <div class="container" style="background-color: #eee;height: 95px;width: 100%;margin-top: -23px;">
+     <div class="container-fluid">
         <div style="margin-bottom: -11px;margin-top: -20px;">
             <br />
-            <a style="text-decoration:none;" class="abc tab-content" href="History.aspx"><span><h2 style="cursor:pointer;">History</h2></span></a>
-            <ul class="nav nav-tabs" style="margin-right:-202px;padding-inline-start: 40px;">
-                <li class="active"><a href="#" style="cursor:pointer;height: 44px;text-decoration:none;">Switch shift</a></li>
-            </ul>
+            <h1 class="h3 mb-4 text-gray-800">History > Switch shift</h1>
             <br>
         </div>
     </div>
@@ -130,7 +127,7 @@
                 </div>
             </div>
         </div>
-        <div style="background-color:#eee;width:100%;height:80px;">
+        <div >
             <div class="col-sm-4 sidenav" style="margin-top:20px;">
                 <span>*: Obligatory</span>
             </div>

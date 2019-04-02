@@ -64,11 +64,11 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <div class="container" style="background-color: #eee;height: 70px;width: 100%;margin-top: -23px;;">
+    <div class="container-fluid">
         <div style="margin-bottom: -11px;margin-top: -20px;">
             <div class="row content">
                 <div class="col-sm-6 sidenav">
-                    <a class="abc tab-content" href="#" style="text-decoration:none;"><span><h2 style="cursor:pointer;">Install personnel <span><i style="padding-left: 20px;color: black;padding-right: 20px;" class="fa fa-angle-right"></i></span><a href="#" style="color:black;text-decoration:none;">Access right</a></h2></span></a>
+                    <h1 class="h3 mb-4 text-gray-800">Install personnel > Access right</h1>
                 </div>
                 <div class="col-sm-6 sidenav">
                     <a style="float:right;font-size: 18px;margin-top:26px;text-decoration:none;" href="#" class="ls"><i class="fa fa-history"></i> See the whole Log works</a>
@@ -108,7 +108,7 @@
                             <div class="modal-footer">
                                 <span style="float: left;">* Obligatory</span>
                                 <button type="button" class="btn btn-default" data-dismiss="modal" style="border: none;border-radius: 17px;margin-right: 10px;padding-left: 20px;padding-right: 20px;">Close</button>
-                                <button type="submit" class="nutchamcong2" style="border:none;padding-left: 20px;padding-right: 20px;"><a href="AddAccessRight.aspx" style="color:white;text-decoration:none;">Add new</a></button>
+                                <button type="submit" class="btn btn-info" style="border:none;padding-left: 20px;padding-right: 20px;"><a href="AddAccessRight.aspx" style="color:white;text-decoration:none;">Add new</a></button>
                             </div>
                         </div>
 
@@ -149,8 +149,8 @@
                     <th>SID</th>
                     <th rowspan="2">Function</th>
                     <th>Root Admin</th>
-                    <th>sds</th>
-                    <th><button type="submit" data-toggle="modal" data-target="#myModal" class="nutchamcong2" style="border:none;padding-left: 20px;padding-right: 20px;"><a href="#" style="color:white;text-decoration:none;"><i class="fa fa-plus"></i> Add permissions group</a></button></th>
+                    <th>Anna</th>
+                    <th><button type="submit" data-toggle="modal" data-target="#myModal" class="btn btn-info" style="border:none;padding-left: 20px;padding-right: 20px;"><a href="#" style="color:white;text-decoration:none;"><i class="fa fa-plus"></i> Add permissions group</a></button></th>
                 </tr>
             </thead>
             <tbody>

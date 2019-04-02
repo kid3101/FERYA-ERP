@@ -45,21 +45,21 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <div>
-            <h1 style="text-align:center;">
+            <h1 class="hh">
                 <span>Hi</span>
                 <span> </span>
                 <em>User Name</em>
                 <span>, what action do you want to perform ?</span>
             </h1>
-            <div style="height: 320px;border-bottom-style: dotted;border-bottom-color: #47d4c7;">
+            <div class="tong">
                 <div class="row">
                     <div class="col-sm-4">
 
                     </div>
 
-                    <div class=" hoverimage" style="text-align: center;background-color: #1510100d;height: 200px;width: 200px;border-radius: 99px;margin-top: 30px;margin-left: 77px;">
+                    <div class=" hoverimage hoverimage2" >
                         <img src="../img/store.png"" width="100" height="100" style="margin-top: 46px;">
-                        <h2 style="text-transform:uppercase;margin-top:70px;">Store</h2>
+                        <h2 class="store">Store</h2>
                     </div>
 
                     <div class="col-sm-4">
@@ -68,19 +68,19 @@
                 </div>
             </div>
         <div class="center-column">
-            <span class="stepline" style="width: 2px;height: 32px;display: block;margin-top: -34px;margin-left: 547px;background: #3498db;"></span>
+            <span class="stepline stepline2" ></span>
         </div>
         <div class="center-column">
-            <div class="label" style="width: 16px;height: 16px;display: block;margin-top: -7px;margin-left: 540px;background: #3498db;border-radius: 50%;"></div>
+            <div class="label lable2" ></div>
+        </div>
+        <div class="nutt">
+            <a class="nutchamcong attendancing2" href="/Attendance/TimeKeeping.aspx" ><i class="fa fa-plus"></i><span class="attendancing">Attendancing</span></a>
+        </div>
+        <div class="project">
+            <a class="nut attendancing2" href="../Mailbox/mail-box.aspx" ><i class="fa fa-envelope"></i><span class="mail">Mailing</span></a>
         </div>
         <div style="text-align: center;margin-top: 20px;margin-left: -45px">
-            <a class="nutchamcong" href="/Attendance/Attendant.aspx" style="color:white;margin-left: 15px;text-decoration:none;"><i class="fa fa-plus"></i><span style="padding-left: 24px;padding-right: 24px;font-size: 22px;">Timekeeping</span></a>
-        </div>
-        <div style="text-align: center;margin-top: 20px;margin-left: -45px">
-            <a class="nut" href="../Mailbox/mail-box.aspx" style="color:white;margin-left: 15px;text-decoration:none;"><i class="fa fa-envelope"></i><span style="padding-left: 50px;padding-right: 50px;font-size: 22px;">Mailing</span></a>
-        </div>
-        <div style="text-align: center;margin-top: 20px;margin-left: -45px">
-            <a class="nut" href="../project/project-list.aspx" style="color:white;margin-left: 15px;text-decoration:none;"><i class="fa fa-briefcase"></i><span style="padding-left: 14px;padding-right: 14px;font-size: 22px;">See the project</span></a>
+            <a class="nut attendancing2" href="../project/project-list.aspx" ><i class="fa fa-briefcase"></i><span class="project2">See the project</span></a>
         </div>
     </div>
 

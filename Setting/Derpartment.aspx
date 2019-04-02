@@ -46,11 +46,10 @@
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <div class="container-fluid" style="width: 100%;height: 119px;background-color:#eee;margin-top: -23px;">
-        <div style="line-height: 1;display: inline-block;margin-left: 40px;vertical-align: middle;">
-            <a class="abc tab-content" href="InstallationAndConfiguration.html" style="text-decoration:none;"><span><h2 style="cursor:pointer;">Install personnel <span><i style="padding-left: 20px;color: black;padding-right: 20px;" class="fa fa-angle-right"></i></span><a href="#" style="color:black;text-decoration:none;">Department</a></h2></span></a>
-        </div>
-       <ul class="nav nav-tabs" style=" margin-block-start: 1em;padding-inline-start: 40px;margin-top: 48px;">
+    <div class="container-fluid">
+        <h1 class="h3 mb-4 text-gray-800">Setting > Department</h1>
+        
+       <ul class="nav" style=" margin-block-start: 1em;padding-inline-start: 40px;margin-top: 48px;">
             <li class="active " style="margin-right: 20px;">
                 <a data-toggle="tab" href="#" style="cursor:pointer;">
                     <span style="color:black;">All</span>
@@ -63,7 +62,7 @@
             <div class="container" style="float:left;">
                 <div class="row">
                     <div class="col-sm-5 sidenav" style="margin-top: -52px;margin-left: -168px;">
-                        <a data-toggle="modal" data-target="#myModal" style="float:right;text-decoration:none;" class="nutchamcong" data-toggle="tooltip" href="#" style="color:white;margin-left: 15px;"><i class="fa fa-plus-circle"></i> CREATE BOARD ROOM</a>
+                        <a data-toggle="modal" data-target="#myModal" style="float:right;text-decoration:none;" class="btn btn-info" data-toggle="tooltip" href="#" style="color:white;margin-left: 15px;"><i class="fa fa-plus-circle"></i> CREATE BOARD ROOM</a>
                     </div>
                     <!-- Modal -->
                     <div class="modal fade" id="myModal" role="dialog">
@@ -85,7 +84,8 @@
                                         <div class="form-group">
                                             <label>Departmental</label>
                                             <select style="display:block;height:35px;width:100%;">
-                                                <option>---------</option>
+                                                <option>Departmental 1</option>
+                                                <option>Departmental 2</option>
                                             </select>
                                         </div>
 
@@ -93,7 +93,7 @@
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-default" data-dismiss="modal" style="border: none;border-radius: 17px;margin-right: 10px;padding-left: 20px;padding-right: 20px;">Close</button>
-                                    <button type="submit" class="nutchamcong2" style="border:none;padding-left: 20px;padding-right: 20px;"><a href="AddDepartment.aspx" style="color:white;text-decoration:none;">Create departments</a></button>
+                                    <button type="submit" class="btn btn-info" style="border:none;padding-left: 20px;padding-right: 20px;"><a href="AddDepartment.aspx" style="color:white;text-decoration:none;">Create departments</a></button>
                                 </div>
                             </div>
 

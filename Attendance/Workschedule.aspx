@@ -45,42 +45,41 @@
     <link href="../css/Attendance/Attendant.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <div class="container" style="background-color: #eee;height: 94px;width: 100%;">
-        <div style="margin-bottom: -11px;margin-top: -23px;">
+    <div class="container-fluid" >
+        <div class="tonng">
             <br />
-            <a class="abc tab-content" style="text-decoration:none;" href="History.aspx"><span><h2 style="cursor:pointer;">History</h2></span></a>
-            <ul class="nav nav-tabs" style="margin-right:-202px;padding-inline-start: 40px;">
-                <li class="active"><a href="#" style="cursor:pointer;text-decoration:none;">Calender</a></li>
-            </ul>
+            <h1 class="h3 mb-4 text-gray-800">History > Calender</h1>
             <br>
         </div>
     </div>
     <div>
         <form>
-            <div style="margin-top: 30px;">
-                <div style="margin-left: 24px; width: 40%;float:left;">
+            <div class="k">
+                <div class="office">
                     <h3><strong>Office</strong></h3>
-                    <p style="font-size: 17px;">Select the Head Office you worked on before starting your schedule.</p>
+                    <p class="textt">Select the Head Office you worked on before starting your schedule.</p>
                 </div>
-                <div style="width:60%;font-size: 17px; display:inline;">
-                    <div style="width:30%;font-size: 17px;float:left;">
-                        <div class="form-group" style="margin-left: -12px;">
-                            <label for="usr">Headquarters<span style="color:red;"> *</span></label>
+                <div class="dtong">
+                    <div class="dtong2">
+                        <div class="form-group formm">
+                            <label for="usr">Headquarters<span class="mau"> *</span></label>
                             <div>
-                                <select class="form-control" id="sel1" style="width: 55%;">
+                                <select class="form-control rong" id="sel1" >
                                     <option>All</option>
                                     
                                 </select>
+                                <button class="btn btn-info but" ><a href="WorkingPlan2.aspx" class="aa"> Calendar </a></button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div style="float:left;margin-left:24px;display: inline-flex;">
+                
+                <div class="divv">
                     <br />
                 </div>
             </div>
         </form>
     </div>
-    <div style="background-color:#eee;width:100%;height:80px;margin-top: 144px;">
+    <div class="dend">
 </asp:Content>
 
