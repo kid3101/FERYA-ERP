@@ -47,3 +47,7 @@
 .zerodata a{
     text-decoration:none;
 }
+.zerodataimage img {
+    width: 256px;
+    height:256px;
+}

@@ -6,7 +6,7 @@
     <link href="../css/Css-Blog/detail-blog-css.css" rel="stylesheet" />
     <div class="container-fluid">
             <div class="header-blog">
-  <div class="col-sm-7" style="display:flex;">
+                <div class="col-sm-7" id="header1">
              <h1 class="h3 mb-4 text-gray-800">Blog list > Degital Marketing</h1>
              </div>
             </div>
@@ -25,18 +25,18 @@
 
                     “Do you know about their art project?” asked Amy. “It’s about graffiti, I think,” said Tara. “They’re working on it at the old house behind the factory.” “But that building is dangerous,” said Amy. “Aah, are you worried he’s going to get hurt?" Tara teased. “Shut up, Tara! Hey look, here they come!”
                 </div>             
-                <div style="margin-top:20px;">
-                    <a style="margin-right:10px;">1 Comment</a>
-                    <a style="margin-right:10px;">1 View </a>
-                    <a style="margin-right:10px;">Kate Winlesss</a>
-                    <span style="margin-right:10px;">Created: 10:00, Today</span>
+                <div class="comment" >
+                    <a>1 Comment</a>
+                    <a >1 View </a>
+                    <a >Kate Winlesss</a>
+                    <span>Created: 10:00, Today</span>
                 </div>
             </div>
-            <hr style="margin-left:100px" />
-            <span style="margin-bottom:50px;margin-top:20px; margin-left:50%"><b>Comment For Blog</b></span>
-            <hr style="margin-left:100px" />
-            <div style="margin-left:400px;">
-                <div style="margin-left:-300px;">
+            <hr/>
+            <span class="cmtblog"><b>Comment For Blog</b></span>
+            <hr/>
+            <div class="formcmt">
+                <div class="cmt" >
                     <b>User 123:</b> today, 20:20pm : Hello, .................
                     <br />
                     <b>User 456:</b> today, 20:20pm : Hi, ......................
@@ -46,9 +46,9 @@
                     <b>User 999:</b> today, 20:20pm : Hi, ......................
                 </div>
             </div>
-            <div style="margin-left:100px;">
-                <form style="margin-bottom:20px;">
-                    <textarea class="form-control" id="exampleFormControlTextarea3" rows="7" placeholder="Write comment ..." style="border-radius:20px; margin-top:30px;"></textarea>
+            <div class="entercmt">
+                <form>
+                    <textarea class="form-control" id="exampleFormControlTextarea3" rows="7" placeholder="Write comment ..."></textarea>
                 </form>
                 <button type="button" class="btn btn-facebook" ><b>Comment</b></button>
             </div>

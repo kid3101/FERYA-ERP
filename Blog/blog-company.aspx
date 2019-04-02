@@ -17,7 +17,7 @@
                     </div>
                       <br />
                     <div class="page">    
-                        <div style="margin-right: 6px;">
+                        <div >
                                 <a href="#"><i class="fa fa-chevron-left"></i></a>
                                 <span>Page</span>
                                 <span>0</span>
@@ -48,10 +48,10 @@
         
 <div class="zerodata">
         <div>
-            <div class="zerodataimage"><img src="/imgs/zerodata/info.png" width="256" height="256"></div>
+            <div class="zerodataimage"><img src="/imgs/zerodata/info.png"></div>
             <h3>Blog is empty</h3>
             <p>Please add new blog</p>
-            <div class="zerodatabutton"><a href="add-new-blog.aspx" class="btn btn-primary" >Add New</a></div>
+            <div class="zerodatabutton"><a href="add-new-blog.aspx" class="btn btn-facebook">Add New</a></div>
         </div>
     </div>
         </div>

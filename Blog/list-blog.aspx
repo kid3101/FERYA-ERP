@@ -52,17 +52,17 @@
                  <tr>
                      <td>
                          <div class="col-sm-3">
-                           <a href="detail-blog.aspx">  <img src="/imgs/zerodata/ys3.jpg" style="width:300px;margin-left:20px" /></a>
+                           <a href="detail-blog.aspx">  <img src="/imgs/zerodata/ys3.jpg"/></a>
                          </div>
                      </td>
                      <td>
-                          <div class="col-sm-7">
-                                <div style="margin-bottom:20px;"><b>Leaning digital marketing...................</b></div>
+                            <div class="col-sm-7">
+                                <div class="nametitle"><b>Leaning digital marketing...................</b></div>
                               <br />
-                                <div><span class="glyphicon glyphicon-user" style="margin-right:5px;"></span> Kate Winlesss</div>
-                                <div><span class="glyphicon glyphicon-time" style="margin-right:5px;"></span>12:20 PM</div>
-                                <div><span class="glyphicon glyphicon-eye-open" style="margin-right:5px;"></span>6999 Views</div>
-                                <div><span class="glyphicon glyphicon-bullhorn" style="margin-right:5px;"></span>555 Comment</div>
+                                <div><span class="fas fa-user-edit" ></span>   Kate Winlesss</div>
+                                <div><span class="far fa-clock" ></span>  12:20 PM</div>
+                                <div><span class="far fa-eye"></span>  6999 Views</div>
+                                <div><span class="far fa-comments"></span>  555 Comment</div>
                           </div>
                      </td>
                  </tr>
@@ -71,36 +71,52 @@
                   <tr>
                      <td>
                          <div class="col-sm-3">
-                           <a href="detail-blog.aspx">  <img src="/imgs/zerodata/ys3.jpg" style="width:300px;margin-left:20px" /></a>
+                           <a href="detail-blog.aspx">  <img src="/imgs/zerodata/ys3.jpg"/></a>
                          </div>
                      </td>
                      <td>
-                          <div class="col-sm-7">
-                                <div style="margin-bottom:20px;"><b>Leaning digital marketing...................</b></div>
-                               <br />
-                                <div><span class="glyphicon glyphicon-user" style="margin-right:5px;"></span> Kate Winlesss</div>
-                                <div><span class="glyphicon glyphicon-time" style="margin-right:5px;"></span>12:20 PM</div>
-                                <div><span class="glyphicon glyphicon-eye-open" style="margin-right:5px;"></span>6999 Views</div>
-                                <div><span class="glyphicon glyphicon-bullhorn" style="margin-right:5px;"></span>555 Comment</div>
+                            <div class="col-sm-7">
+                                <div class="nametitle"><b>Leaning digital marketing...................</b></div>
+                              <br />
+                                <div><span class="fas fa-user-edit" ></span>   Kate Winlesss</div>
+                                <div><span class="far fa-clock" ></span>  12:20 PM</div>
+                                <div><span class="far fa-eye"></span>  6999 Views</div>
+                                <div><span class="far fa-comments"></span>  555 Comment</div>
                           </div>
                      </td>
                  </tr>
 
-
-                  <tr>
+                 <tr>
                      <td>
                          <div class="col-sm-3">
-                           <a href="detail-blog.aspx">  <img src="/imgs/zerodata/ys3.jpg" style="width:300px;margin-left:20px" /></a>
+                           <a href="detail-blog.aspx">  <img src="/imgs/zerodata/ys3.jpg" /></a>
                          </div>
                      </td>
                      <td>
                           <div class="col-sm-7">
-                                <div style="margin-bottom:20px;"><b>Leaning digital marketing...................</b></div>
-                               <br />
-                                <div><span class="glyphicon glyphicon-user" style="margin-right:5px;"></span> Kate Winlesss</div>
-                                <div><span class="glyphicon glyphicon-time" style="margin-right:5px;"></span>12:20 PM</div>
-                                <div><span class="glyphicon glyphicon-eye-open" style="margin-right:5px;"></span>6999 Views</div>
-                                <div><span class="glyphicon glyphicon-bullhorn" style="margin-right:5px;"></span>555 Comment</div>
+                                <div class="nametitle"><b>Leaning digital marketing...................</b></div>
+                              <br />
+                                <div><span class="fas fa-user-edit" ></span>   Kate Winlesss</div>
+                                <div><span class="far fa-clock" ></span>  12:20 PM</div>
+                                <div><span class="far fa-eye"></span>  6999 Views</div>
+                                <div><span class="far fa-comments"></span>  555 Comment</div>
+                          </div>
+                     </td>
+                 </tr>
+                 <tr>
+                     <td>
+                         <div class="col-sm-3">
+                           <a href="detail-blog.aspx">  <img src="/imgs/zerodata/ys3.jpg"/></a>
+                         </div>
+                     </td>
+                     <td>
+                            <div class="col-sm-7">
+                                <div class="nametitle"><b>Leaning digital marketing...................</b></div>
+                              <br />
+                                <div><span class="fas fa-user-edit" ></span>   Kate Winlesss</div>
+                                <div><span class="far fa-clock" ></span>  12:20 PM</div>
+                                <div><span class="far fa-eye"></span>  6999 Views</div>
+                                <div><span class="far fa-comments"></span>  555 Comment</div>
                           </div>
                      </td>
                  </tr>

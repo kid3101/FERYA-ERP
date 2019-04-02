@@ -22,13 +22,13 @@
                         <div class="form-group">
                             <label for="title" class="col-sm-3 control-label">Title<i style="color:red">*</i></label>
                             <div class="col-sm-9">
-                                <input type="text" id="title" placeholder="Title blog" class="form-control" autofocus style="border-radius:10px;">
+                                <input type="text" id="title" placeholder="Title blog" class="form-control" autofocus>
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="birthDate" class="col-sm-3 control-label">Status</label>
                             <div class="col-sm-9">
-                                <select style="width:100%;height:35px;border-radius:10px;">
+                                <select>
                                     <option>Active</option>
                                     <option>Non-Active</option>
                                 </select>
@@ -70,7 +70,7 @@
                             </div>
                         </div>
                         <div class="addnewblog">
-                        <a href="list-blog.aspx"><button type="submit" class="btn btn-primary btn-block" style="width: 120px;margin-left:180px;margin-bottom:10px;border-radius:15px;">Add New</button></a>
+                        <a href="list-blog.aspx"><button type="submit" class="btn btn-facebook">Add New</button></a>
                     </div>
                             </form> <!-- /form -->
                 </div>

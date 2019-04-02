@@ -3,3 +3,10 @@
     min-height: 85%;
     padding-top: 10px;
 }
+.nametitle {
+    margin-bottom: 20px;
+}
+.body-list table tbody tr td .col-sm-3 a img {
+    width: 300px;
+    margin-left: 20px;
+}
