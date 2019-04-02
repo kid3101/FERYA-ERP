@@ -1,19 +1,14 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="project-list.aspx.cs" Inherits="ListProject" %>
-
-
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
-
-
-
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
-
+    <link href="../css/css-project/project-list.css" rel="stylesheet" />
     <div class="container-fluid">
         <!-- Page Heading -->
         <h1 class="h3 mb-4 text-gray-800">Project List</h1>
-        <button type="button" class="btn btn-info" style="margin-left: 950px; margin-top: -90px" onclick="addproject()">Create Project</button>
+        <button id="btn1" type="button" class="btn btn-info" style="" onclick="addproject()">Create Project</button>
         <div>
-            <select style="width: 400px" class="form-control">
+            <select id="slt1"class="form-control">
                 <option value="">Search</option>
                 <option value="">New</option>
                 <option value="">Working</option>
@@ -23,8 +18,8 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <div class="table-responsive" style="margin-top:10px">
-                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <div class="table-responsive">
+                    <table class="table table-bordered" id="dataTable" >
                         <thead>
                             <tr>
                                 <th>No</th>

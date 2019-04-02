@@ -3,11 +3,11 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
-
+    <link href="../css/css-project/list-version.css" rel="stylesheet" />
     <div class="container-fluid">
         <!-- Page Heading -->
         <h1 class="h3 mb-4 text-gray-800">List Version</h1>
-        <button type="button" class="btn btn-info" style="margin-left: 950px; margin-top: -90px" onclick="addversion()">Create Version</button>
+        <button id="bnt1" type="button" class="btn btn-info"onclick="addversion()">Create Version</button>
         <div class="row">
             <div class="col-md-12">
                 <div class="table-responsive">
