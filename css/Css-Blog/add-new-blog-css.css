@@ -21,8 +21,9 @@
 .help-block{
     margin-left:40%;
 }
-.addnewblog{
-    margin-left:12%;
+.addnewblog {
+    margin-left: 31%;
+    margin-bottom: 5px;
 }
 .addnewblog a{
     text-decoration:none;
@@ -78,11 +79,4 @@ select {
     border-radius: 10px;
     border: 1px solid #d1d3e2;
     border-radius: .35rem;
-}
-
-.btn-facebook {
-    width: 120px;
-    margin-left: 180px;
-    margin-bottom: 10px;
-    border-radius: 15px;
 }
