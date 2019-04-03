@@ -7,7 +7,7 @@
         <!-- Page Heading -->
         <h1 class="h3 mb-4 text-gray-800">Project List</h1>
         <button id="btn1" type="button" class="btn btn-info" style="" onclick="addproject()">Create Project</button>
-        <div>
+<%--        <div>
             <select id="slt1"class="form-control">
                 <option value="">Search</option>
                 <option value="">New</option>
@@ -15,7 +15,7 @@
                 <option value="">Finish</option>
                 <option value="">Close</option>
             </select>
-        </div>
+        </div>--%>
         <div class="row">
             <div class="col-md-12">
                 <div class="table-responsive">
@@ -44,7 +44,7 @@
 
                                    <%-- <a href="/project/category-list.aspx"><i style="width: 25px" class="fas fa-book-open"></i></a>--%>
 
-                                    <a href="/project/list-work.aspx" title="Add word"><i style="width: 25px" class="fas fa-exclamation-circle"></i></a>
+                                    <a href="/project/list-work.aspx" title="Add work"><i style="width: 25px" class="fas fa-exclamation-circle"></i></a>
                                     <a href=" /project/edit-project.aspx" title="Edit"><i style="width: 25px" class="fas fa-pen"></i></a>
                                     <button type="button" style="border:none;background-color:floralwhite"  onclick="del()" title="Delete"><i class="fas fa-trash-alt" style="color:red"></i></button>
 
@@ -63,7 +63,7 @@
                                 <td>New</td>
                                 <td>
                                    <%-- <a href="/project/category-list.aspx"><i style="width: 25px" class="fas fa-book-open"></i></a>--%>
-                                     <a href="/project/list-work.aspx" title="Add word"><i style="width: 25px" class="fas fa-exclamation-circle"></i></a>
+                                     <a href="/project/list-work.aspx" title="Add work"><i style="width: 25px" class="fas fa-exclamation-circle"></i></a>
                                     <a href=" /project/edit-project.aspx" title="Edit"><i style="width: 25px" class="fas fa-pen"></i></a>
                                     <button type="button" style="border:none;background-color:floralwhite"  onclick="del()" title="Delete"><i class="fas fa-trash-alt" style="color:red"></i></button>
                                 </td>
@@ -80,7 +80,7 @@
                                 <td>New</td>
                                 <td>
                                    <%-- <a href="/project/category-list.aspx"><i style="width: 25px" class="fas fa-book-open"></i></a>--%>
-                                     <a href="/project/list-work.aspx" title="Add word"><i style="width: 25px" class="fas fa-exclamation-circle"></i></a>
+                                     <a href="/project/list-work.aspx" title="Add work"><i style="width: 25px" class="fas fa-exclamation-circle"></i></a>
                                     <a href=" /project/edit-project.aspx" title="Edit"><i style="width: 25px" class="fas fa-pen"></i></a>
                                     <button type="button" style="border:none;background-color:floralwhite"  onclick="del()" title="Delete"><i class="fas fa-trash-alt" style="color:red"></i></button>
                                 </td>

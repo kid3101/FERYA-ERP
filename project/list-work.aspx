@@ -15,7 +15,7 @@
              <a  href="/project/list-version.aspx" style="margin-left: 700px;font-size:20px;"><i class="far fa-folder-open"></i>Version</a>
                
       </div>
-        <div style="color:white"> 0</div>
+        <%--<div style="color:white"> 0</div>
         
         <select class="form-control" style="width:400px" >
             <option>Search Work</option>
@@ -26,7 +26,7 @@
             <option>Complete but error</option>
             <option>Completed</option>
             <option>Cancel</option>
-        </select>
+        </select>--%>
        
        
           
