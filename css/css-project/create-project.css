@@ -14,3 +14,11 @@
     -moz-animation: fstAnimationEnter 0.2s;
     animation: fstAnimationEnter 0.2s
 }
+.fstResultItem {
+    font-size: 1em;
+    display: block;
+    padding: .5em .71429em;
+    margin: 0;
+    cursor: pointer;
+    border-top: 1px solid #fff;
+}

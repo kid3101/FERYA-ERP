@@ -55,7 +55,7 @@
                     </div>
                 </div>
                 <br />
-  <button type="button"class="btn btn-info" onclick="createversion()">Create Vision</button>
+  <button type="button"class="btn btn-info" onclick="createversion()">Create Version</button>
             </div>         
         </div>
     </div>

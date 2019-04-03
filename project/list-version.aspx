@@ -32,23 +32,27 @@
                                 <td>vision1</td>
 
 
-                                <td>
-                                    <select>
+                                <td style=" width:25%;">
+                                    <select class="form-control" style=" width:70%;">
                                         <option>Waiting for progressing</option>
 
                                         <option>Doing</option>
                                         <option>Accomplished</option>
                                         <option>Expired</option>
 
-                                    </select></td>
+                                    </select>
+
+                                </td>
                                 <td>Start Day</td>
                                 <td>Finish Day</td>
                                 <td>
 
                                  <%--   <a href="/project/create-vision.aspx"><i onclick="createvision()" style="width: 25px" class="fas fa-book-open"></i></a>--%>
 
-                                    <a href="/project/list-version.aspx"><i onclick="deletevision()" style="width: 25px" class="fas fa-trash-alt"></i></a>
+                                    <%--<a href="/project/list-version.aspx"><i onclick="deletevision()" style="width: 25px" class="fas fa-trash-alt"></i></a>--%>
                                     <a href="/project/edit-version.aspx"><i onclick="editversion()" style="width: 25px" class="fas fa-pen"></i></a>
+                                    <button type="button" style="border:none;background-color:floralwhite" onclick="del()"><i class="fas fa-trash-alt" style="color:red" title="Delete" ></i></button>
+
                                 </td>
                             </tr>
 
@@ -66,6 +70,10 @@
         function editversion() {
             location.href = "/project/edit-version.aspx";
          }
+                 function del(){
+            alert("Are You Sure?");
+        }
+
     </script>
 </asp:Content>
 
