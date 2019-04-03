@@ -124,8 +124,8 @@
                 </ul>
             </li>
         </ul>--%>
-        <div class="container-fluid" style="margin-top: -34px;margin-left: 593px;">
-            <div class="container" style="float:left;display: inline-flex;padding-left: 320px;">
+        <div class="container-fluid tongg">
+            <div class="container tongg2">
                 <a class="nutchamcong" data-toggle="modal" data-target="#myModal" title="Export Excel" style="color:white;"><i class="fa fa-download"></i> EXPORT EXCEL</a>
                 <!-- Modal -->
                 <div class="modal fade" id="myModal" role="dialog">
@@ -135,7 +135,7 @@
                         <div class="modal-content">
                             <div class="modal-header">
                                 
-                                <h2 class="modal-title" style="float:left;">Export Excel attendance record</h2>
+                                <h2 class="modal-title ng">Export Excel attendance record</h2>
                             </div>
                             <div class="modal-body">
                                 <form id="mytable">
@@ -146,25 +146,25 @@
                                 </form>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal" style="border: none;border-radius: 17px;margin-right: 10px;padding-left: 20px;padding-right: 20px;">Close</button>
-                                <button type="submit" class="nutchamcong2" style="border:none;padding-left: 20px;padding-right: 20px;"><a href="#" id="btnExport" style="color:white;text-decoration:none;">Download the Excel file</a></button>
+                                <button type="button" class="btn btn-default nutt" data-dismiss="modal" >Close</button>
+                                <button type="submit" class="nutchamcong2 nut2" ><a href="#" id="btnExport" style="color:white;text-decoration:none;">Download the Excel file</a></button>
                             </div>
                         </div>
 
                     </div>
                 </div>
             </div>
-            <div class="container" style="display: inline-flex;padding-left: 320px;">
-                <a href="#" style="height: 20px;width: 20px;color: #555;"><i class="fa fa-chevron-left"></i></a>
-                <div style="margin-right: 6px;">
-                    <a href="#" style="color:#555;text-decoration:none;">
+            <div class="container tong" >
+                <a href="#" class="tong2"><i class="fa fa-chevron-left"></i></a>
+                <div class="kk">
+                    <a href="#" class="pagee">
                         <span>Page</span>
                         <span>1</span>
                         <span>/</span>
                         <span>1</span>
                     </a>
                 </div>
-                <a href="#" style="height: 48px;width: 48px;color: #555;"><i class="fa fa-chevron-right"></i></a>
+                <a href="#" class="nut"><i class="fa fa-chevron-right"></i></a>
             </div>
         </div>
         <br>
@@ -201,17 +201,17 @@
         </div>--%>
         <div>
             <div class="table-responsive">
-                <table class="table table-bordered" style="width:100%; color:grey;margin-top: 20px;">
+                <table class="table table-bordered tablee" >
                     <thead>
                         <tr>
-                            <th>INTERNAL CODE</th>
-                            <th rowspan="2">EMPLOYEES</th>
-                            <th>POSITION</th>
-                            <th>DEPARTMENT</th>
-                            <th>HEADQUARTERS</th>
-                            <th>TIME</th>
-                            <th>COEFFICIENT</th>
-                            <th>LATE TIME NUMBER</th>
+                            <th>Internal Code</th>
+                            <th rowspan="2">Employees</th>
+                            <th>Positone</th>
+                            <th>Department</th>
+                            <th>Headquaertes</th>
+                            <th>Time</th>
+                            <th>Coefficient</th>
+                            <th>Late Time Number</th>
                         </tr>
                     </thead>
                     <tbody>
