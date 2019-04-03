@@ -241,3 +241,12 @@ h3 a {
         background-color: #7676764d;
         color: black;
     }
+.tong {
+    margin-top: -34px;
+    margin-left: 791px;
+}
+.divv {
+    float: left;
+    display: inline-flex;
+    padding-left: 320px;
+}

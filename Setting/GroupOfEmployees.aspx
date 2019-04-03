@@ -59,9 +59,9 @@
 
             </li>
         </ul>--%>
-        <div class="container-fluid" style="margin-top: -34px;margin-left: 791px;">
-            <div class="container" style="float:left;display: inline-flex;padding-left: 320px;">
-                <a href="AddNewGroup.html" class="nutchamcong" data-toggle="tooltip" title="Create group of employees" style="color:white;"><i class="fa fa-plus"></i> CREATE ANY WORKING GROUP</a>
+        <div class="container-fluid tong">
+            <%--<div class="container divv">
+                <a href="AddNewGroup.aspx" class="nutchamcong" data-toggle="tooltip" title="Create group of employees" style="color:white;"><i class="fa fa-plus"></i> CREATE ANY WORKING GROUP</a>
             </div>
             <div class="container" style="display: inline-flex;padding-left: 320px;">
                 <a href="#" style="height: 20px;width: 20px;color: #555;"><i class="fa fa-chevron-left"></i></a>
@@ -74,7 +74,7 @@
                     </a>
                 </div>
                 <a href="#" style="height: 48px;width: 48px;color: #555;"><i class="fa fa-chevron-right"></i></a>
-            </div>
+            </div>--%>
         </div>
         <br>
         <div class="container">
