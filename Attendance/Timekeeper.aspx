@@ -55,7 +55,7 @@
 
             <div class="col-sm-8">
 
-                <h1 class="att">ATTENDANCE</h1>
+                <h1 class="h3 mb-4 text-gray-800">ATTENDANCE</h1>
                 <div>
                     <select class="form-control">
                         <option>Choose an office for attendance</option>

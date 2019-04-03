@@ -49,7 +49,7 @@
         <div style="line-height: 1;display: inline-block;margin-left: 40px;vertical-align: middle;">
             <h1 class="h3 mb-4 text-gray-800">Setting > Office</h1>
         </div>
-        <ul class="nav " style=" margin-block-start: 1em;padding-inline-start: 40px;margin-top: 48px;">
+        <%--<ul class="nav " style=" margin-block-start: 1em;padding-inline-start: 40px;margin-top: 48px;">
             <li class="active " style="margin-right: 20px;">
                 <a data-toggle="tab" href="#" style="cursor:pointer;">
                     <span style="color:black;">All</span>
@@ -89,12 +89,12 @@
 
                 </ul>
             </li>
-        </ul>
+        </ul>--%>
         <div class="container-fluid" style="margin-top: -34px;margin-left: 791px;">
             <div class="container" style="float:left;">
                 <div class="row">
-                    <div class="col-sm-5 sidenav" style="margin-top: -52px;margin-left: -168px;">
-                        <a data-toggle="modal" data-target="#myModal" style="float:right;text-decoration:none;" class="nutchamcong" data-toggle="tooltip" href="#" title="Timekeeping" style="color:white;margin-left: 15px;"><i class="fa fa-plus-circle"></i> CREATE AN OFFICE</a>
+                    <div class="col-sm-5 sidenav" style="margin-top: -38px;margin-left: -168px;">
+                        <a data-toggle="modal" data-target="#myModal" style="float:right;text-decoration:none;" class="nutchamcong" data-toggle="tooltip" href="#" title="Creat Office" style="color:white;margin-left: 15px;"><i class="fa fa-plus-circle"></i> CREATE OFFICE</a>
                     </div>
                   <!-- Modal -->
                     <div class="modal fade" id="myModal" role="dialog">
@@ -565,7 +565,7 @@
                                                     <input type="text" />
                                                 </td>
                                                 <td>
-                                                    <button><i class="fa fa-trash"></i></button>
+                                                    <button type="button" style="border:none;background-color:floralwhite" onclick="del()"><i class="fas fa-trash-alt" style="color:red"></i></button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -577,7 +577,10 @@
                                                 <td>Enable</td>
                                                 <td>1.00</td>
                                                 <td>30 Minutes</td>
-                                                <td></td>
+                                                <td>
+                                                    <button type="button" style="border:none;background-color:floralwhite" onclick="del()"><i class="fas fa-trash-alt" style="color:red"></i></button>
+
+                                                </td>
                                                 <td></td>
                                             </tr>
                                             <tr>
@@ -589,7 +592,10 @@
                                                 <td>Enable</td>
                                                 <td>1.00</td>
                                                 <td>30 Minutes</td>
-                                                <td></td>
+                                                <td>
+                                                    <button type="button" style="border:none;background-color:floralwhite" onclick="del()"><i class="fas fa-trash-alt" style="color:red"></i></button>
+
+                                                </td>
                                                 <td></td>
                                             </tr>
                                             <tr>
@@ -609,7 +615,7 @@
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-default" data-dismiss="modal" style="border: none;border-radius: 17px;margin-right: 10px;padding-left: 20px;padding-right: 20px;">Close</button>
-                                    <button type="submit" class="btn btn-info" style="border:none;padding: 8px;"><a href="AddOffice.aspx"  style="color:white;text-decoration:none;">Create an office</a></button>
+                                    <button type="submit" class="btn btn-info" style="border:none;padding: 8px;"><a href="AddOffice.aspx"  style="color:white;text-decoration:none;">Create office</a></button>
                                 </div>
                             </div>
 
@@ -640,14 +646,14 @@
             <table class="table table-bordered" style="width:100%; color:grey;margin-top: 20px;">
                 <thead>
                     <tr>
-                        <th style="color:black;">SID</th>
-                        <th rowspan="2">NAME</th>
-                        <th>ADDRESS</th>
-                        <th>WORKING TIME</th>
-                        <th>PUBLIC PEOPLE</th>
-                        <th>IP ATTENDED</th>
-                        <th>CREATOR</th>
-                        <th>DATE CREATED <i class="fa fa-info-circle" style="cursor:pointer;" title="Your current IP is 15.169.34.171"></i></th>
+                        <th style="color:black;">Sid</th>
+                        <th rowspan="2">Name</th>
+                        <th>Address</th>
+                        <th>Working Time</th>
+                        <th>Public People</th>
+                        <%--<th>IP ATTENDED</th>--%>
+                        <th>Creator</th>
+                        <th>Date Created <i class="fa fa-info-circle" style="cursor:pointer;" title="Your current IP is 15.169.34.171"></i></th>
                         <th></th>
                     </tr>
                 </thead>
@@ -658,12 +664,12 @@
                         <td>37 Hoa Sứ</td>
                         <td>9:00 - 17:30</td>
                         <td>Jonh</td>
-                        <td>14.169.31.164</td>
+                        <%--<td>14.169.31.164</td>--%>
                         <td>Jonh</td>
                         <td>05:00, 26/03</td>
                         <td>
                             <a href="#"  data-toggle="modal" data-target="#myModal4" style="margin-right: 20px;text-decoration:none;"><i style="width: 25px" class="fas fa-pen"></i></a>
-                            <a class="as" href="#" style="text-decoration:none;"><i style="width: 25px" class="fas fa-trash-alt"></i></a>
+                            <button type="button" style="border:none;background-color:floralwhite" onclick="del()"><i class="fas fa-trash-alt" style="color:red"></i></button>
                         </td>
                     </tr>
                     <tr>
@@ -672,12 +678,12 @@
                         <td>50 Hoa Hồng</td>
                         <td>8:00 - 17:00</td>
                         <td>Hana</td>
-                        <td>11.161.03.154</td>
+                        <%--<td>11.161.03.154</td>--%>
                         <td>Jonh</td>
                         <td>09:00, 21/03</td>
                         <td >
                            <a href="#"  data-toggle="modal" data-target="#myModal4" style="margin-right: 20px;text-decoration:none;"><i style="width: 25px" class="fas fa-pen"></i></a>
-                            <a class="as" href="#" style="text-decoration:none;"><i style="width: 25px" class="fas fa-trash-alt"></i></a>
+                            <button type="button" style="border:none;background-color:floralwhite" onclick="del()"><i class="fas fa-trash-alt" style="color:red"></i></button>
                         </td>
                     </tr>
                 </tbody>
@@ -1169,7 +1175,7 @@
                                                     <input type="text" />
                                                 </td>
                                                 <td>
-                                                    <button><i class="fa fa-trash"></i></button>
+                                                    <button type="button" style="border:none;background-color:floralwhite" onclick="del()"><i class="fas fa-trash-alt" style="color:red"></i></button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -1181,7 +1187,10 @@
                                                 <td>Enable</td>
                                                 <td>1.00</td>
                                                 <td>30 Minutes</td>
-                                                <td><button><i class="fa fa-trash"></i></button></td>
+                                                <td>
+                                                    <button type="button" style="border:none;background-color:floralwhite" onclick="del()"><i class="fas fa-trash-alt" style="color:red"></i></button>
+
+                                                </td>
                                                 <td></td>
                                             </tr>
                                             <tr>
@@ -1193,7 +1202,10 @@
                                                 <td>Enable</td>
                                                 <td>1.00</td>
                                                 <td>30 Minutes</td>
-                                                <td><button><i class="fa fa-trash"></i></button></td>
+                                                <td>
+                                                    <button type="button" style="border:none;background-color:floralwhite" onclick="del()"><i class="fas fa-trash-alt" style="color:red"></i></button>
+
+                                                </td>
                                                 <td></td>
                                             </tr>
                                             <tr>
@@ -1223,5 +1235,10 @@
     </div>
     
     </div>
+    <script>
+        function del(){
+            alert("Are You Sure?");
+        }
+    </script>
 </asp:Content>
 

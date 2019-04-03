@@ -101,7 +101,7 @@
         </a>
         <div id="collapseAttendace" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="/Attendance/Attendant.aspx">Attendant</a>
+            <a class="collapse-item" href="/Attendance/TimeKeeping.aspx">Attendant</a>
             <a class="collapse-item" href="/Attendance/History.aspx">History</a>
 			<a class="collapse-item" href="/Attendance/WorkingPlan.aspx">Working Plan</a>
 			<a class="collapse-item" href="/Attendance/Payroll.aspx">Payroll</a>

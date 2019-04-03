@@ -49,7 +49,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <div class="container-fluid">
         <div class="row content">
-            <div class="col-sm-3 sidenav sidepanel" style="border-right-style: inset;" id="mySidepanel">
+            <div class="col-sm-2 sidenav sidepanel" style="border-right-style: inset;" id="mySidepanel">
                 <h4 style="color: #777;">
                     <span>DATA FILTER</span>
                     <a href="javascript:void(0)" data-toggle="collapse" onclick="closeNav()" style="float: right;" title="Hide filters" class="anboloc">
@@ -89,7 +89,7 @@
                 <i class="fa fa-search"></i>
             </button>--%>
 
-            <div class="col-sm-9">
+            <div class="col-sm-10">
                 <div>
                     <div>
                         <a href="#" style="font-size: 20px;margin: 6px;color:black;text-decoration:none;">History</a>
