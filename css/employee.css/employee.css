@@ -1,16 +1,25 @@
-﻿
+﻿table {
+    margin: 20px 20px 20px 20px;
+}
+
+.tables {
+    margin-right: 20px
+}
 
 .star-sign {
     margin-top: -0.2em;
     margin-left: 0.2em;
     color: #DB2828;
 }
+
 .lables {
     font-size: 16px;
 }
+
 .text {
     cursor: pointer;
 }
+
 .sea {
     color: white;
     text-decoration: none;
@@ -22,63 +31,77 @@
     width: 20px;
     color: #555;
 }
+
 .chevron-right {
     height: 48px;
     width: 48px;
     color: #555;
 }
+
 .page {
     margin-right: 6px;
 }
+
 .sortable {
     text-decoration: none;
     cursor: pointer;
     color: black;
 }
+
 .nav {
     margin-block-start: 1em;
     padding-inline-start: 40px;
     position: absolute;
     padding-top: 32px;
 }
+
 .active {
     margin-right: 20px;
 }
+
 .tabs {
     cursor: pointer;
     text-decoration: none;
 }
+
 .dropdown-toggle {
     padding-right: 30px;
     color: black;
     cursor: pointer;
 }
+
 .close {
     text-decoration: none;
     font-size: 16px;
     margin-right: 140px;
     padding-top: 17px;
 }
+
 .bottom {
     margin-top: 30px;
     margin-left: 10px
 }
+
 .right {
     text-align: right;
     margin-top: -30px;
 }
+
 .img {
     width: 35px;
     height: 35px;
 }
+
 .selection {
     height: 30px;
     margin-right: 5px;
 }
+
 .icons {
     margin-bottom: 10px;
     margin-left: 10px;
 }
+
 #icons {
     color: black;
     text-decoration: none;
@@ -88,7 +111,11 @@
     cursor: pointer;
     border-radius: 7px;
 }
+
 #container {
     float: left;
     margin-left: 300px
+}
+.tables{
+    margin:20px
 }

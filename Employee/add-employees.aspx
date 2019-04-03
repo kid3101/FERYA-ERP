@@ -8,7 +8,6 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-
     <div class="container-fluid" >
         <h1 class ="h3 mb-4 text-gray-800">Employee 
           <span> > </span>
@@ -19,13 +18,12 @@
     <div class="segment">
             <form class="ui form">
                 <div class="top" >
-                <div class="left">
+                    <div class="left">
                         <h4>Personal information </h4>
                         <p></p>
                     </div>
                     <div class="right">
                         <div class="col-xs-5">
-
                             <label>Name<span class="star-sign">*</span></label>
                             <input class="form-control" type="text">
                         </div>
@@ -41,10 +39,13 @@
                             </select>
                         </div>
                         <div class="col-xs-5">
-                                    </div>
+                            <label>Email<span class="star-sign">*</span></label>
+                            <input class="form-control" type="text">
+                            <div class="email">Email must work. Password will be sent to this email address.</div>
+                        </div>
                         <div class="col-xs-5">
-                            <label>Phone</label>
-                            <input class="form-control" type="text" id="txtPhone">
+                            <label>Tel</label>
+                            <input class="form-control" type="text">
                         </div>
                     </div>
                 </div>
@@ -58,9 +59,10 @@
                         <div class="col-xs-5">
                             <label>Office</label>
                             <select class="form-control">
-                                <option></option>
+                                <option>Office 1</option>
+                                <option>Office 2</option>
+                                <option>Office 3</option>
                             </select>
-                            
                         </div>
 
                         <div class="col-xs-5">
@@ -81,7 +83,11 @@
 
                         <div class="col-xs-5" >
                             <label>Department</label>
-                            <select class="form-control"></select>
+                            <select class="form-control">
+                                <option>Hoa Su</option>
+                                <option>Hoa Lan</option>
+                                <option>Hoa Hong</option>
+                            </select>
                         </div>
 
                         <div class="col-xs-5" >
@@ -96,33 +102,25 @@
                             </select>
                         </div>
 
-                        <div class="col-xs-5" >
+                        <%--<div class="col-xs-4" >
                             <label>Internal ID<i class="fa fa-exclamation-circle" data-toggle="tooltip" title="If your company / group is running (or has) a system to manage all accounts, this field will store the user ID of your current system. (Allow A-Z, 0-9 characters). Example: E16217, CE40128 ..." ></i></label>
-                            <div class="ui right labeled input">
-                                <input name="internalid" type="text" value="" >
-                                        </div>
-                        </div>
+                            <br />  
+                            <input  type="text">
+                            <lable class="lab">@acb560</lable>
+                        </div>--%>
 
                         <div class="col-xs-5">
-
-                        </div>
-
-                        <div class="col-xs-5" >
-                            <label>Unlimited IP timekeeping</label><br />
-                            <label class="switch">
-                                <input type="checkbox">
-                                <span class="slider round"></span>
-                            </label>
+                            <label>Position<span class="star-sign">*</span></label>
+                            <input class="form-control" type="text">
                         </div>
                     </div>  
                 </div>
 
         <div >
-            <div class="col-sm-4 sidenav">
-                <span>*: Obligatory</span>
-            </div>
 
-
+            <div class="col-sm-8" id="col-8" >
+                <div >
+                    <a href="update-employee.aspx" class="btn btn-info"> Add</a>
                 </div>
             </div>
         </div>
@@ -130,31 +128,4 @@
 
             </form>
         </div>
-
-    <script> function addnew()
-        {
-            var name = $("#txtName").val();
-            var email = $("#txtEmail").val();
-            var phone = $("#txtPhone").val();
-   
-            $.post ("/do/add-employee.aspx", {
-                name: name,
-                email: email,
-                phone: phone,   
-             
-            }, function (data) {
-                if (data == 1) {
-                    alertify.alert("Success");
-                    location.href = "employee.aspx";
-                }
-                else {
-                    alertify.alert("Error", data);
-                }
-            });
-            }
-           
-    </script>
-
-
 </asp:Content>
-

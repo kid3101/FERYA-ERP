@@ -2,6 +2,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <link href="../css/employee.css/add-leave.css" rel="stylesheet" />
+    <link href="../css/employee.css/addemployee.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
@@ -14,17 +15,17 @@
     </div>
 
     <div class="segment">
-                <div class="center" >
+                <div class="center" style="border-top-style: hidden;" >
                     <div class="left">
                         <h4>Payroll details</h4>
                         <p>Details</p>
                     </div>
                     <div class="right" >
-                        <div class="col-sm-6">
+                        <div class="col-sm-8">
                             <label>Title of paycheck</label>
                             <input class="form-control"  />
                         </div>
-                        <div class="col-sm-4">
+                        <div class="col-sm-6">
                             <label>
                                 Employees<span class="star-sign">*</span>
                             </label>
@@ -33,7 +34,7 @@
                                 <option>User Name</option>
                             </select>
                         </div>
-                         <div class="col-sm-4">
+                         <div class="col-sm-6">
                            <label>
                                 Form of payment<span class="star-sign">*</span>
                             </label>
@@ -45,17 +46,17 @@
                                 <option>Pay by year</option>
                             </select>
                         </div>
-                        <div class="col-sm-4">
+                        <div class="col-sm-6">
                             <label>Total salary<span class="star-sign">*</span></label>
                             <br />
                             <input class="form-control" name="total" value="0" />
                         </div>
-                        <div class="col-sm-4">
+                        <div class="col-sm-6">
                             <label>Order in pay period</label>
                             <br />
                             <input class="form-control" name="paidindex" type="number" value="1">
                         </div>
-                        <div class="col-sm-4">
+                        <div class="col-sm-6">
                              <label>
                                 Status
                             </label>
@@ -70,21 +71,14 @@
                         </div>
                     </div>  
                 </div>
-                <div class="bottom" >
-                    <div >
-                        <p class="requirebox">
-                            <span>* : </span>
-                            <span>
-                                Obligatory
-                            </span>
-                        </p>
-                    </div>
-                    <div class="add">
-                        <a href="list-paycheck.aspx" class="btn btn-info" >
-                            Add
-                        </a>
-                    </div>
+                <div >
+
+            <div class="col-sm-8" id="col-8" >
+                <div >
+                    <a href="list-paycheck.aspx" class="btn btn-info"> Add</a>
                 </div>
+            </div>
+        </div>
         </div>
     
 </asp:Content>
