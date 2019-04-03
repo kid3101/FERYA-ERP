@@ -52,7 +52,7 @@
                 <div class="col-sm-10">
                     <div class="hk">
                         <a class="ls" data-toggle="modal" data-target="#myModal" ><span class="folderr"><i class="fa fa-folder"></i> Create folder</span></a>
-                        <a class="ls" data-toggle="modal" data-target="#myModal2" ><span><i class="fa fa-cloud-upload"></i> Upload the file</span></a>
+                        <a class="ls" data-toggle="modal" data-target="#myModal2" ><span><i class="fas fa-cloud-upload-alt"></i> Upload the file</span></a>
 
                     </div>
                 </div>

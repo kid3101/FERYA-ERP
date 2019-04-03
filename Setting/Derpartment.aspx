@@ -154,7 +154,7 @@
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <a href="#" style="color:red;float: left;text-decoration:none;">Delete this department</a>
+                    <a href="#" onclick="del()" style="color:red;float: left;text-decoration:none;">Delete this department</a>
                     <button type="button" class="btn btn-default" data-dismiss="modal" style="border: none;border-radius: 17px;margin-right: 10px;padding-left: 20px;padding-right: 20px;">Close</button>
                     <button type="submit" class="btn btn-facebook" style="border:none;padding-left: 20px;padding-right: 20px;"><a href="Derpartment.aspx" style="color:white;text-decoration:none;">Update</a></button>
                 </div>
@@ -163,6 +163,10 @@
         </div>
     </div>
     </div>
-
+    <script>
+        function del(){
+            alert("Are You Sure?");
+        }
+    </script>
 </asp:Content>
 
