@@ -46,7 +46,7 @@
 
                                     <a href="/project/list-work.aspx"><i style="width: 25px" class="fas fa-exclamation-circle"></i></a>
                                     <a href=" /project/edit-project.aspx"><i style="width: 25px" class="fas fa-pen"></i></a>
-                                    <a href=" /project/project-list.aspx"><i style="width: 25px" class="fas fa-trash-alt"></i></a>
+                                    <button type="button" style="border:none;background-color:floralwhite"  onclick="del()"><i class="fas fa-trash-alt" style="color:red"></i></button>
 
                                 </td>
                             </tr>
@@ -67,7 +67,7 @@
 
                                     <a href="/project/list-work.aspx"><i style="width: 25px" class="fas fa-exclamation-circle"></i></a>
                                     <a href=" /project/edit-project.aspx"><i style="width: 25px" class="fas fa-pen"></i></a>
-                                    <a href=" /project/project-list.aspx"><i style="width: 25px" class="fas fa-trash-alt"></i></a>
+                                    <button type="button" style="border:none;background-color:floralwhite"  onclick="del()"><i class="fas fa-trash-alt" style="color:red"></i></button>
 
                                 </td>
                             </tr>
@@ -82,6 +82,9 @@
     <script>
         function addproject() {
             location.href = "/project/create-project.aspx";
+        }
+         function del(){
+            alert("Are You Sure?");
         }
     </script>
 

@@ -33,7 +33,7 @@
         </div>
 
         <div class="col-sm-5" id="searchblog">
-            <div class="count">
+           <%-- <div class="count">
                 <span>All</span>
                 <span class="number">0</span>
             </div>
@@ -42,12 +42,12 @@
                     <input type="text" placeholder="Search.." name="search">
                     <button type="submit"><i class="fa fa-search"></i></button>
                 </form>
-            </div>
+            </div>--%>
         </div>
         <br>
     </div>
     <div class="body-manager-list-blog">
-        <table class="table table-condensed">
+         <table class="table table-bordered" id="dataTable" >
             <thead>
                 <tr>
                     <th>ID</th>
@@ -69,6 +69,7 @@
                         <a href="detail-blog.aspx" style="text-decoration: none;"><i style="width: 25px" class="fas fa-exclamation-circle"></i></a>
 
                         <a href="edit-blog.aspx" style="text-decoration: none;"><i style="width: 25px" class="fas fa-pen"></i></a>
+                         <button type="button" style="border:none;background-color:floralwhite"  onclick="del()"><i class="fas fa-trash-alt" style="color:red"></i></button>
 
                     </td>
                 </tr>
@@ -83,6 +84,7 @@
                         <a href="detail-blog.aspx" style="text-decoration: none;"><i style="width: 25px" class="fas fa-exclamation-circle"></i></a>
 
                         <a href="edit-blog.aspx" style="text-decoration: none;"><i style="width: 25px" class="fas fa-pen"></i></a>
+                         <button type="button" style="border:none;background-color:floralwhite"  onclick="del()"><i class="fas fa-trash-alt" style="color:red"></i></button>
 
                     </td>
                 </tr>
@@ -97,6 +99,35 @@
                         <a href="detail-blog.aspx" style="text-decoration: none;"><i style="width: 25px" class="fas fa-exclamation-circle"></i></a>
 
                         <a href="edit-blog.aspx" style="text-decoration: none;"><i style="width: 25px" class="fas fa-pen"></i></a>
+                        <button type="button" style="border:none;background-color:floralwhite"  onclick="del()"><i class="fas fa-trash-alt" style="color:red"></i></button>
+
+                    </td>
+                </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>DELTAIL MARKETING</td>
+                    <td>Active</td>
+                    <td>Katewinless</td>
+                    <td>22/12/2022</td>
+                    <td>
+                        <a href="detail-blog.aspx" style="text-decoration: none;"><i style="width: 25px" class="fas fa-exclamation-circle"></i></a>
+
+                        <a href="edit-blog.aspx" style="text-decoration: none;"><i style="width: 25px" class="fas fa-pen"></i></a>
+                         <button type="button" style="border:none;background-color:floralwhite"  onclick="del()"><i class="fas fa-trash-alt" style="color:red"></i></button>
+
+                    </td>
+                </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>DELTAIL MARKETING</td>
+                    <td>Active</td>
+                    <td>Katewinless</td>
+                    <td>22/12/2022</td>
+                    <td>
+                        <a href="detail-blog.aspx" style="text-decoration: none;"><i style="width: 25px" class="fas fa-exclamation-circle"></i></a>
+
+                        <a href="edit-blog.aspx" style="text-decoration: none;"><i style="width: 25px" class="fas fa-pen"></i></a>
+                         <button type="button" style="border:none;background-color:floralwhite"  onclick="del()"><i class="fas fa-trash-alt" style="color:red"></i></button>
 
                     </td>
                 </tr>
@@ -104,5 +135,10 @@
         </table>
     </div>
         </div>
+    <script>
+        function del(){
+            alert("Are You Sure?");
+        }
+    </script>
 </asp:Content>
 
