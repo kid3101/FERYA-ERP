@@ -34,7 +34,7 @@
 
                     <div class="col-md-12">
                         Note change
-                        <input type="text" class="form-control" style="height: 90px" />
+                        <textarea class="form-control"></textarea>
                     </div>
 
                     <div class="col-md-4">
