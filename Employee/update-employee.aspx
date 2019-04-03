@@ -79,10 +79,10 @@
                     <button class="tablinks" onclick="openCity1(event, 'contact')"><i class="fa fa-home"></i><p>Contact</p></button>
                     <button class="tablinks" onclick="openCity1(event, 'professional')"><i class="fa fa-briefcase"></i><p>Professional</p></button>
                     <button class="tablinks" onclick="openCity1(event, 'health')"><i class="fa fa-heart"></i><p>Health</p></button>
-                </div>
-            </div>
 
-            <div id="personal" class="tabcontent">
+                </div>
+                <div>
+                    <div id="personal" class="tabcontent">
                 <div style="display:block">
                     <div style="display:flex;margin-bottom: 10px;">
                         <div class="tableft">
@@ -316,6 +316,10 @@
                 </div>
             </div>
 
+                </div>
+            </div>
+
+            
 
 
             <div id="Account" class="w3-container city" style="display:none">
