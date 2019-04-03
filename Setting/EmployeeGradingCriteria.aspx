@@ -46,9 +46,9 @@
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <div class="container-fluid" style="margin-top:-23px;width: 100%;height: 119px;background-color:#eee;">
+    <div class="container-fluid">
         <h1 class="h3 mb-4 text-gray-800">Setting > Employee grading criteria</h1>
-        <ul class="nav" style=" margin-block-start: 1em;padding-inline-start: 40px;margin-top: 48px;">
+        <%--<ul class="nav" style=" margin-block-start: 1em;padding-inline-start: 40px;margin-top: 48px;">
             <li class="active" style="margin-right: 20px;">
                 <a data-toggle="tab" href="#" style="cursor:pointer;">
                     <span style="color:black;">All</span>
@@ -59,9 +59,9 @@
                 <a class="dropdown-toggle" data-toggle="dropdown" style="padding-right: 30px;color:black;cursor:pointer;" title="Turn on / off the search function">Filter & search ...</a>
 
             </li>
-        </ul>
+        </ul>--%>
         <div class="container" style="margin-top: -82px;margin-left: 503px;">
-            <div class="container" style="float:left;display: inline-flex;padding-left: 320px;">
+            <div class="container" style="float:left;display: inline-flex;padding-left: 320px;margin-top: 20px;">
                 <a href="AddNewEmployeeGradingCriteria.aspx" class="nutchamcong" data-toggle="tooltip" title="Create criteria for employee grading" style="color:white;margin-left: -78px;text-decoration:none;"><i class="fa fa-plus"></i>  CREATE CRITERIA FOR EMPLOYEE POINTS</a>
             </div>
             <div class="container" style="display: inline-flex;padding-left: 320px;">
