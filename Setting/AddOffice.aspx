@@ -133,10 +133,10 @@
                                                         <option>Can Tho</option>
                                                     </select>
                                                 </div>
-                                                <div style="margin-right: 10px;">
+                                                <%--<div style="margin-right: 10px;">
                                                     <span>IP is timed <i class="fa fa-info-circle" style="cursor:pointer;" title="Your current IP is 15.169.34.171"></i></span>
                                                     <input style="display:block;height:25px" type="text" />
-                                                </div>
+                                                </div>--%>
                                             </div>
                                             <div style="display:flex;">
                                                 <div style="margin-right: 10px;">
@@ -569,6 +569,30 @@
                                                 </td>
                                             </tr>
                                             <tr>
+                                                <td>1</td>
+                                                <td>Shift 1</td>
+                                                <td><input type="color" name="favcolor" value="#0cf380"></td>
+                                                <td>8:15</td>
+                                                <td>17:30</td>
+                                                <td>Enable</td>
+                                                <td>1.00</td>
+                                                <td>30 Minutes</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Shift 2</td>
+                                                <td><input type="color" name="favcolor" value="#e2dc15"></td>
+                                                <td>12:00</td>
+                                                <td>18:30</td>
+                                                <td>Enable</td>
+                                                <td>1.00</td>
+                                                <td>30 Minutes</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
                                                 <td><button type="submit" class="btn btn-info" style="border:none;padding-left: 20px;padding-right: 20px;width: 200px;"><a href="#" style="color:white;text-decoration:none;"><i class="fa fa-plus"></i> Add shift</a></button></td>
                                                 <td></td>
                                                 <td></td>
@@ -613,7 +637,7 @@
         <br>
         <div>
         <div class="table-responsive">
-            <table class="table table-hover" style="width:100%; color:grey;margin-top: 20px;">
+            <table class="table table-bordered" style="width:100%; color:grey;margin-top: 20px;">
                 <thead>
                     <tr>
                         <th style="color:black;">SID</th>
@@ -637,7 +661,7 @@
                         <td>14.169.31.164</td>
                         <td>Jonh</td>
                         <td>05:00, 26/03</td>
-                        <td style="float:right;">
+                        <td>
                             <a href="#"  data-toggle="modal" data-target="#myModal4" style="margin-right: 20px;text-decoration:none;"><i style="width: 25px" class="fas fa-pen"></i></a>
                             <a class="as" href="#" style="text-decoration:none;"><i style="width: 25px" class="fas fa-trash-alt"></i></a>
                         </td>
@@ -651,7 +675,7 @@
                         <td>11.161.03.154</td>
                         <td>Jonh</td>
                         <td>09:00, 21/03</td>
-                        <td style="float:right;">
+                        <td >
                            <a href="#"  data-toggle="modal" data-target="#myModal4" style="margin-right: 20px;text-decoration:none;"><i style="width: 25px" class="fas fa-pen"></i></a>
                             <a class="as" href="#" style="text-decoration:none;"><i style="width: 25px" class="fas fa-trash-alt"></i></a>
                         </td>
@@ -666,8 +690,8 @@
                     <div class="modal-content" style="width: 1000px;">
                         <div class="modal-header">
                             
-                            <h2 class="modal-title" style="float:left;">Office update:</h2>
-                            <span style="font-size: 30px;"> fdf</span>
+                            <h2 class="modal-title" style="float:left;">Office update:fdf</h2>
+                            
                         </div>
                         <div class="modal-body" style="margin-bottom: -116px;height:300px;">
                             <div class="row content">
@@ -696,10 +720,10 @@
                                                 <option>Can Tho</option>
                                             </select>
                                         </div>
-                                        <div style="margin-right: 10px;">
+                                        <%--<div style="margin-right: 10px;">
                                             <span>IP is timed <i class="fa fa-info-circle" style="cursor:pointer;" title="Your current IP is 15.169.34.171"></i></span>
                                             <input style="display:block;height:25px" type="text" />
-                                        </div>
+                                        </div>--%>
                                     </div>
                                     <div style="display:flex;">
                                                 <div style="margin-right: 10px;">
@@ -1149,7 +1173,31 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><button type="submit" class="nutchamcong2" style="border:none;padding-left: 20px;padding-right: 20px;width: 200px;"><a href="#" style="color:white;text-decoration:none;"><i class="fa fa-plus"></i> Add shift</a></button></td>
+                                                <td>1</td>
+                                                <td>Shift 1</td>
+                                                <td><input type="color" name="favcolor" value="#0cf380"></td>
+                                                <td>8:15</td>
+                                                <td>17:30</td>
+                                                <td>Enable</td>
+                                                <td>1.00</td>
+                                                <td>30 Minutes</td>
+                                                <td><button><i class="fa fa-trash"></i></button></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Shift 2</td>
+                                                <td><input type="color" name="favcolor" value="#e2dc15"></td>
+                                                <td>12:00</td>
+                                                <td>18:30</td>
+                                                <td>Enable</td>
+                                                <td>1.00</td>
+                                                <td>30 Minutes</td>
+                                                <td><button><i class="fa fa-trash"></i></button></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td><button type="submit" class="btn btn-info" style="border:none;padding-left: 20px;padding-right: 20px;width: 200px;"><a href="#" style="color:white;text-decoration:none;"><i class="fa fa-plus"></i> Add shift</a></button></td>
                                                 <td></td>
                                                 <td></td>
                                                 <td></td>
@@ -1165,7 +1213,7 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal" style="border: none;border-radius: 17px;margin-right: 10px;padding-left: 20px;padding-right: 20px;">Close</button>
-                            <button type="submit" class="nutchamcong2" style="border:none;padding-left: 20px;padding-right: 20px;"><a href="#" style="color:white;text-decoration:none;">Update</a></button>
+                            <button type="submit" class="btn btn-facebook" style="border:none;padding-left: 20px;padding-right: 20px;"><a href="AddOffice.aspx" style="color:white;text-decoration:none;">Update</a></button>
                         </div>
                     </div>
 

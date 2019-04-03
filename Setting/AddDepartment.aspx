@@ -54,10 +54,10 @@
         <h1 class="h3 mb-4 text-gray-800">Setting > Derpartment</h1>
         <ul class="nav" style=" margin-block-start: 1em;padding-inline-start: 40px;margin-top: 48px;">
             <li class="active " style="margin-right: 20px;">
-                <a data-toggle="tab" href="#" style="cursor:pointer;text-decoration:none;">
+                <%--<a data-toggle="tab" href="#" style="cursor:pointer;text-decoration:none;">
                     <span style="color:black;">All</span>
                     <span class="number">1</span>
-                </a>
+                </a>--%>
             </li>
 
         </ul>
@@ -85,11 +85,11 @@
                                             <input class="form-control">
                                         </div>
                                         <div class="form-group">
-                                            <label>Departmental</label>
+                                            <label>Office</label>
                                             <select style="display:block;height:35px;width:100%;">
-                                                <option>Departmental 1</option>
-                                                <option>Departmental 2</option>
-                                                <option>Departmental 3</option>
+                                                <option>Office 1</option>
+                                                <option>Office 2</option>
+                                                <option>Office 3</option>
                                             </select>
                                         </div>
 
@@ -114,7 +114,30 @@
         <br>
         <div class="content">
         <main>
-            <div data-toggle="modal" data-target="#myModal2" style="margin-left: 40px;margin-top: 20px;"><a href="#" style="text-decoration:none;"><i class="fa fa-folder"></i> #6010.abc (0)</a></div>
+            <%--<div data-toggle="modal" data-target="#myModal2" style="margin-left: 40px;margin-top: 20px;"><a href="#" style="text-decoration:none;"><i class="fa fa-folder"></i> #6010.abc (0)</a></div>--%>
+            <div style="text-align:center;">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Department name</th>
+                        <th>Office name</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Department 1</td>
+                        <td>Office 1</td>
+                        <td data-toggle="modal" data-target="#myModal2"><i class="fa fa-pen"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Department 2</td>
+                        <td>Office 2</td>
+                        <td data-toggle="modal" data-target="#myModal2"><i class="fa fa-pen"></i></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
         </main>
     </div>
     <!-- Modal -->
@@ -132,12 +155,13 @@
                         <div class="form-group">
                             <label style="float:left;">Name</label>
                             <span style="color:red;">*</span>
-                            <input class="form-control">
+                            <input class="form-control" value="Department 1">
                         </div>
                         <div class="form-group">
-                            <label>Departmental</label>
+                            <label>Office</label>
                             <select style="display:block;height:35px;width:100%;">
-                                <option>---------</option>
+                                <option>Office 1</option>
+                                <option>Office 2</option>
                             </select>
                         </div>
 
@@ -146,7 +170,7 @@
                 <div class="modal-footer">
                     <a href="#" style="color:red;float: left;text-decoration:none;">Delete this department</a>
                     <button type="button" class="btn btn-default" data-dismiss="modal" style="border: none;border-radius: 17px;margin-right: 10px;padding-left: 20px;padding-right: 20px;">Close</button>
-                    <button type="submit" class="nutchamcong2" style="border:none;padding-left: 20px;padding-right: 20px;"><a href="#" style="color:white;text-decoration:none;">Update</a></button>
+                    <button type="submit" class="btn btn-facebook" style="border:none;padding-left: 20px;padding-right: 20px;"><a href="AddDepartment.aspx" style="color:white;text-decoration:none;">Update</a></button>
                 </div>
             </div>
 

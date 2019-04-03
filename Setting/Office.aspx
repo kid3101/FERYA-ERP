@@ -133,10 +133,10 @@
                                                         <option>Can Tho</option>
                                                     </select>
                                                 </div>
-                                                <div style="margin-right: 10px;">
+                                                <%--<div style="margin-right: 10px;">
                                                     <span>IP is timed <i class="fa fa-info-circle" style="cursor:pointer;" title="Your current IP is 15.169.34.171"></i></span>
                                                     <input style="display:block;height:25px" type="text" />
-                                                </div>
+                                                </div>--%>
                                             </div>
                                             <div style="display:flex;">
                                                 <div style="margin-right: 10px;">
@@ -337,7 +337,7 @@
                                 </div>
                                 <hr />
                                 <div class="table-responsive">
-                                    <table class="table table-hover" style="border: 1px solid rgba(34,36,38,.15);margin-left: 3px;">
+                                    <table class="table table-boreded" style="border: 1px solid rgba(34,36,38,.15);margin-left: 3px;">
                                         <thead>
                                             <tr>
                                                 <th>Order</th>
@@ -567,6 +567,34 @@
                                                 </td>
                                             </tr>
                                             <tr>
+                                                <td>1</td>
+                                                <td>Shift 1</td>
+                                                <td><input type="color" name="favcolor" value="#0cf380"></td>
+                                                <td>8:15</td>
+                                                <td>17:30</td>
+                                                <td>Enable</td>
+                                                <td>1.00</td>
+                                                <td>30 Minutes</td>
+                                                <td>
+                                                    <button><i class="fa fa-trash"></i></button>
+                                                </td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Shift 2</td>
+                                                <td><input type="color" name="favcolor" value="#e2dc15"></td>
+                                                <td>12:00</td>
+                                                <td>18:30</td>
+                                                <td>Enable</td>
+                                                <td>1.00</td>
+                                                <td>30 Minutes</td>
+                                                <td>
+                                                    <button><i class="fa fa-trash"></i></button>
+                                                </td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
                                                 <td><button type="submit" class="btn btn-info" style="border:none;padding-left: 20px;padding-right: 20px;width: 200px;"><a href="#" style="color:white;text-decoration:none;"><i class="fa fa-plus"></i> Add shift</a></button></td>
                                                 <td></td>
                                                 <td></td>
@@ -612,7 +640,7 @@
 
         <div>
         <div class="table-responsive">
-            <table class="table" style="width:100%; color:grey;margin-top: 20px;">
+            <table class="table table-bordered" style="width:100%; color:grey;margin-top: 20px;">
                 <thead>
                     <tr>
                         <th style="color:black;">SID</th>
@@ -623,6 +651,8 @@
                         <th>IP ATTENDED</th>
                         <th>CREATOR</th>
                         <th>DATE CREATED <i class="fa fa-info-circle" style="cursor:pointer;" title="Your current IP is 15.169.34.171"></i></th>
+                        <th></th>
+                        
                     </tr>
                 </thead>
                 <tbody>
@@ -635,8 +665,9 @@
                         <td>14.169.31.164</td>
                         <td>Jonh</td>
                         <td>05:00, 26/03</td>
-                        <td style="float:right;">
+                        <td>
                             <a href="#"  data-toggle="modal" data-target="#myModal4" style="margin-right: 20px;text-decoration:none;"><i style="width: 25px" class="fas fa-pen"></i></a>
+                         
                             <a class="as" href="#" style="text-decoration:none;"><i style="width: 25px" class="fas fa-trash-alt"></i></a>
                         </td>
                     </tr>
