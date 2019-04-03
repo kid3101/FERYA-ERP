@@ -20,7 +20,7 @@
                 <div class="container">
                     <form class="form-horizontal" role="form">
                         <div class="form-group">
-                            <label for="title" class="col-sm-3 control-label">Title<i style="color:red">*</i></label>
+                            <label for="title" class="col-sm-3 control-label">Title <i style="color:red">*</i></label>
                             <div class="col-sm-9">
                                 <input type="text" id="title" placeholder="Title blog" class="form-control" autofocus>
                             </div>
