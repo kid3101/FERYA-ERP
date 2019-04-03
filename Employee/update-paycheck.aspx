@@ -1,33 +1,26 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="update-paycheck.aspx.cs" Inherits="Employee_detail_paycheck" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+<asp:Content ID="Content3" ContentPlaceHolderID="head" Runat="Server">
+    <link href="../css/employee.css/addemployee.css" rel="stylesheet" />
     <link href="../css/employee.css/add-point-employee.css" rel="stylesheet" />
-
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+<asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-    <div class="headered" style="display:flex;margin:10px">
-          <div class="lefted" style="color:black">
-              <h2>Company paycheck</h2>
-          </div>
-      </div>
-    <div class="container">
-          <ul class="nav nav-tabs">
-            <li class="active">
-                <a data-toggle="tab" href="#" style="cursor:pointer;">
-                    <span style="color:black;">Update</span>
-                </a>
-            </li>
-        </ul>
+    <div class="container-fluid" >
+        <h1 class ="h3 mb-4 text-gray-800">Company paycheck 
+          <span> > </span>
+            Update
+        </h1>
     </div>
-     <div class="segment">
+
+    <div class="segment">
             <form class="ui form">
-                <div class="top" style="margin-top:10px; display:flex">
-                    <div class="left" style="width:25%;">
-                        <h2>Payroll details</h2>
+                <div class="top" >
+                    <div class="left">
+                        <h4>Payroll details </h4>
                         <p>Details</p>
                     </div>
-                    <div class="right" style="width:70%">
+                    <div class="right">
                         <div class="col-xs-5">
                             <label>Title of paycheck</label>
                             <input class="form-control" type="text" value="s" />
@@ -63,26 +56,19 @@
                                 <option>Disabled</option>
                             </select>
                         </div>
-                    </div>  
-                </div>
-                <div class="bottom" style="border-top-style:outset; margin-top: 10px;">
-                    <div class="Begin" style=" margin-top: 10px;">
-                        <p class="requirebox">
-                            <span>* : </span>
-                            <span>
-                                Obligatory
-                            </span>
-                        </p>
-                    </div>
-                    <div class="add" style=" margin-top: -35px">
-                        <a class="addnew" href="#">
-                            SAVE
-                        </a>
                     </div>
                 </div>
+
+        <div >
+
+            <div class="col-sm-8" id="col-8" >
+                <div >
+                    <a class="btn btn-facebook"> Save</a>
+                </div>
+            </div>
+        </div>
+           
+
             </form>
         </div>
 </asp:Content>
-
-
-
