@@ -9,27 +9,19 @@
 <asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
     <div class="container-fluid">
-        
-            <h1 class ="h3 mb-4 text-gray-800">Employee </h1>
-       
-        <ul class="nav" >
-            <li class="active">
-                <a data-toggle="tab" href="#" class="tabs">
+
                     <span style="color:black;">All</span>
                     <span class="number">1</span>
                 </a>
             </li>
-            <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" title="Turn on / off the search function">Filter & search ...</a>
-                <ul class="dropdown-menu filterbarfull filterbar" style="top: 0px; transform: translate3d(0px, 26px, 0px); width: 354px; margin-top: 215px;" >
+
                     <li>
                         <form class="ui form">
                             <table width="100%" cellpadding="3">
                                 <tbody>
                                     <tr>
                                         <td>
-                                            <label class="lables" >
-                                                <span>Key word</span>
+
                                             </label>
                                         </td>
                                         <td>
@@ -40,8 +32,7 @@
                                     </tr>
                                      <tr>
                                         <td>
-                                            <label  class="lables">
-                                                <span >Office</span>
+
                                             </label>
                                         </td>
                                         <td>
@@ -57,8 +48,7 @@
                                     
                                      <tr>
                                         <td>
-                                            <label class="lables">
-                                                <span >Department</span>
+
                                             </label>
                                         </td>
                                         <td>
@@ -73,8 +63,7 @@
                                     </tr>
                                      <tr>
                                         <td>
-                                            <label class="lables">
-                                                <span>Status</span>
+
                                             </label>
                                         </td>
                                         <td>
@@ -90,8 +79,7 @@
                                     </tr>
                                          <tr>
                                         <td>
-                                            <label class="lables">
-                                                <span>Rank</span>
+
                                             </label>
                                         </td>
                                         <td>
@@ -118,7 +106,7 @@
 
                                     <tr>
                                         <td>
-                                            <label class="lables">
+
                                                 <span >Type of work</span>
                                             </label>
                                         </td>
@@ -159,7 +147,7 @@
 
                 <div class="dropdown" style="position: relative;display: inline-block;">
 
-                    <a class="ls dropdown-toggle" title="For management" style="margin-left: -10px;" data-toggle="dropdown"><i class="fas fa-cloud-upload-alt"></i> Import</a>
+
 
                     <ul class="dropdown-menu " role="menu" aria-labelledby="menu1" style="width: 200px;">
                         <li role="presentation" class="icons"><a role="menuitem" tabindex="-1" class="iconses" href="import-list.aspx"><i class="fas fa-cloud-upload-alt"></i> Import employee list</a></li>
@@ -210,6 +198,7 @@
                         <th></th>
                     </tr>
                     <tr>
+                         
                         <td>
                             <input type="checkbox" />
 
@@ -219,7 +208,7 @@
                             <img class="img" src="https://api.teamcrop.com/v1/photoavatar/a/5c53f5/7a013/40.jpg">
                         </td>
                         <td>
-                            <a href="update-employee.aspx" data-toggle="tooltip" title="View details">Ferya</a>
+
                             <br />
                             <span>ferya@</span>
                         </td>
@@ -227,20 +216,21 @@
                         <td> Manager </td>
                         <td>Official staff</td>
                         <td>
-                            <span>ferya@gmail.com</span>
+
                             <br />
-                            <span>0327825991</span>
+                            <span>345678</span>
                         </td>
                         <td>7</td>
                         <td> <label style="background-color:#93ef93;">Effective</label></td>
                         <td> Nguyen Van A</td>
                         <td>14:06, Today</td>
                         <td style="width:5px">
-                            <a href="edit_employee.html" class="edit" title="Click here to update data"><i style="width: 25px" class="fas fa-pen"></i></a>
+                            <a href="edit-employee.aspx" class="edit" title="Click here to update data"><i style="width: 25px" class="fas fa-pen"></i></a>
                         </td>
                         <td style="width:5px" >
                             <a href="#" ><i style="width: 25px" class="fas fa-trash-alt"></i></a>                                                                                                                                                                                                                                                                                                                    
                         </td>
+                       
                     </tr>
                 </thead>
             </table>
@@ -248,11 +238,7 @@
              
                     <tr>
                         
-                        <th>
-                            <input type="checkbox" />
-                                <span>
-                                    Selected
-                                </span>
+
                                 <span>&nbsp;</span>
                                 <span>1</span>
                                 <span>&nbsp;</span>
@@ -311,6 +297,7 @@
         $(document).ready(function () {
             $('[data-toggle="tooltip"]').tooltip();
         });
+
     </script>
 </asp:Content>
 

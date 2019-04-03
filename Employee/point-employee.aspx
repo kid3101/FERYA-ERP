@@ -68,7 +68,7 @@
         </div>
 
     <div class="modal fade" id="myModal" role="dialog">
-        <div class="modal-dialog">
+        <div class="modal-dialog" id="dvData">
 
             <div class="modal-content">
                 <div class="modal-header">
@@ -104,11 +104,21 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal" style="border: none;border-radius: 17px;margin-right: 10px;padding-left: 20px;padding-right: 20px;">Close</button>
-                    <button type="submit" class="btn btn-info"><a href="#" style="color:white;text-decoration:none;">Download the Excel file</a></button>
+
                 </div>
             </div>
 
         </div>
     </div>
+
+    <script>
+        $("#btnExport").click(function(e) {
+            window.open('data:application/vnd.ms-excel,' + 
+                        '<table>' + $('#dvData > table').html() + '</table>');
+            e.preventDefault();
+        });
+    </script>
+
+
 </asp:Content>
 

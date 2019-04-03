@@ -137,7 +137,7 @@
                             </span>
                         </td>
                         <td>
-                            	wellcom
+
                         </td>
                         <td>26/03/2019 - 29/03/2019</td>
                         <td><label style="background-color: #E8E8E8!important;padding:5px 20px;"><span style="font-size:12px;">Wait for round 1</span></label></td>
@@ -148,7 +148,7 @@
                     </tr>
                 </thead>
             </table>
-            <div id="myDIV" style="display: none; margin: 10px 300px 0px 20px;">
+            <div id="myDIV" style="display: none; margin: 10px 300px 0px 20px; width:93%">
                 <div class="w3-table  w3-border " style="border: 15px solid #3498db!important;">
                     <table class=" table " style="width:100%;">
                         <tr style="background-color: #f0f0f0;padding: 15px;">
@@ -161,8 +161,7 @@
                                 <p>Number of vacation hours: 136</p>
                                 <p>Paid holidays: 1</p>
                                 <p>Unpaid time off: 1</p>
-                                <p>Reason: wellcom</p>
-                                <p>Note: hello</p>
+
                             </td>
                             <td></td>
                         </tr>
