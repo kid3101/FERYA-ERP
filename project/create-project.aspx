@@ -114,8 +114,6 @@
                 </div>
             </div>
         </div>
-
-
         <div class="row">
 
             <div class="col-sm-3">
@@ -138,9 +136,7 @@
                     <label class="switch">
                         <input type="checkbox" checked>
                         <span class="slider round"></span>
-
                     </label>
-
                     <span>Can create work</span>
                 </div>
             </div>

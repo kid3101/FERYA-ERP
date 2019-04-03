@@ -45,7 +45,6 @@
                         </div>
                     </div>
                     <div class="col-sm-4">
-
                         <label>Status </label>
                         <select class="form-control">
                             <option value="">New</option>
@@ -57,19 +56,10 @@
                 </div>
                 <br />
   <button type="button"class="btn btn-info" onclick="createversion()">Create Vision</button>
-            </div>
-            
-         
-         
-
-
+            </div>         
         </div>
-
-
     </div>
-
-    <script>
-    
+    <script>   
         function createversion() {
             location.href = "/project/list-version.aspx";
         }
