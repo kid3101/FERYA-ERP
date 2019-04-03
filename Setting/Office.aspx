@@ -651,7 +651,7 @@
                        <%-- <th>Ip Attenđe</th>--%>
                         <th>Creator</th>
                         <th>Date Created <i class="fa fa-info-circle" style="cursor:pointer;" title="Your current IP is 15.169.34.171"></i></th>
-                        <th></th>
+                        <th>Action</th>
                         
                     </tr>
                 </thead>

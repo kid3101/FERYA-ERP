@@ -98,17 +98,17 @@
                                             <option>---------</option>
                                         </select>--%>
                                         <select class="multipleSelect" multiple name="language">
-                                            <option value="Bangladesh">Bangladesh</option>
-                                            <option selected value="Barbados">Barbados</option>
-                                            <option selected value="Belarus">Belarus</option>
-                                            <option value="Belgium">Belgium</option>
+                                            <option value="Bangladesh">Mr.Hung</option>
+                                            <option selected value="Barbados">Mr.Trung</option>
+                                            <option selected value="Belarus">Mr.Ti</option>
+                                            <option value="Belgium">Mr.Quang</option>
                                         </select>
                                     </div>
 
                                 </form>
                             </div>
                             <div class="modal-footer">
-                                <span style="float: left;">* Obligatory</span>
+                               
                                 <button type="button" class="btn btn-default" data-dismiss="modal" style="border: none;border-radius: 17px;margin-right: 10px;padding-left: 20px;padding-right: 20px;">Close</button>
                                 <button type="submit" class="btn btn-info" style="border:none;padding-left: 20px;padding-right: 20px;"><a href="AddAccessRight.aspx" style="color:white;text-decoration:none;">Add new</a></button>
                             </div>
@@ -124,11 +124,11 @@
     </div>
     <br>
     <div class="row content" style="margin-bottom: 133px;">
-        <div class="col-sm-4 sidenav">
+        <div class="col-sm-4 sidenav" style="padding-left:34px;">
             <h3>See rights</h3>
             <p>See the rights of a specific employee</p>
         </div>
-        <div class="col-sm-8" style="display:-webkit-inline-box;;">
+        <div class="col-sm-6" style="display:-webkit-inline-box;;">
 
             <!--<input type="text" multiple class="tagsInput"/>-->
             <%--<select style="display:block;height:35px;width:60%;">
@@ -136,10 +136,10 @@
             </select>--%>
 
             <select class="multipleSelect" multiple name="language">
-                <option value="Bangladesh">Bangladesh</option>
-                <option selected value="Barbados">Barbados</option>
-                <option selected value="Belarus">Belarus</option>
-                <option value="Belgium">Belgium</option>
+                <option value="Bangladesh">Mr.Hung</option>
+                <option selected value="Barbados">Mr.Trung</option>
+                <option selected value="Belarus">Mr.Ti</option>
+                <option value="Belgium">Mr.Quang</option>
             </select>
             <div style="margin-top: 20px;margin-left: 20px;">
                 <button type="button" class="btn btn-success" style="border-radius: 20px;width: 80px;"><a href="SeeAccess.aspx" style="color:white;text-decoration:none;">See</a></button>

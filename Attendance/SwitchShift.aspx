@@ -64,6 +64,8 @@
                         <select class="form-control" style="cursor:pointer;">
                             <option>All</option>
                             <option>Main office</option>
+                            <option>Office 1</option>
+                            <option>Office 2</option>
                         </select>
                     </div>
                 </div>
@@ -73,7 +75,8 @@
                     <div class="text" style="cursor:pointer;">
                         <select class="form-control" style="cursor:pointer;">
                             <option>---</option>
-                            <option></option>
+                            <option>Employee 1</option>
+                            <option>Employee 2</option>
                         </select>
                     </div>
                 </div>
@@ -104,6 +107,8 @@
                         <select class="form-control" style="cursor:pointer;">
                             <option>All</option>
                             <option>Main office</option>
+                            <option>Office 1</option>
+                            <option>Office 2</option>
                         </select>
                     </div>
                 </div>
@@ -113,7 +118,8 @@
                     <div class="text" style="cursor:pointer;">
                         <select class="form-control" style="cursor:pointer;">
                             <option>---</option>
-                            <option></option>
+                            <option>Employee 1</option>
+                            <option>Employee 2</option>
                         </select>
                     </div>
                 </div>
@@ -129,7 +135,7 @@
         </div>
         <div >
             <div class="col-sm-4 sidenav" style="margin-top:20px;">
-                <span>*: Obligatory</span>
+                
             </div>
 
             <div  style="text-align:center;">

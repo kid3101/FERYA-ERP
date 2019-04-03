@@ -10,7 +10,7 @@
 
         <h1  class ="h3 mb-4 text-gray-800"> My paycheck</h1>
 
-        <ul class="nav nav-tabs" style="margin-block-start: 1em;padding-inline-start: 40px;position: absolute;padding-top: 32px;">
+        <%--<ul class="nav nav-tabs" style="margin-block-start: 1em;padding-inline-start: 40px;position: absolute;padding-top: 32px;">
             <li class="active" style="margin-right: 20px;">
                 <a data-toggle="tab" href="#" style="cursor:pointer;text-decoration:none;">
                     <span style="color:black;">All</span>
@@ -21,7 +21,16 @@
                 <a  style="padding-right: 30px;color:black;cursor:pointer;" title="Turn on / off the search function">Filter & search ...</a>
                 
             </li>
-        </ul>
+        </ul>--%>
+        <div class="col-sm-5" id="searchblog"> 
+        <div class="search-container">
+                <form action="#">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+
         <div class="container-fluid" style="margin-top: -34px;margin-left: 380px;">
             <div class="container" style="float:left;">
                 <a class="btn btn-info"  href="add-paycheck.aspx" title="For management" style="color:white;margin-left: 450px;padding-left: 20px;padding-right: 20px;text-decoration:none;" >  <i class="fa fa-cog"></i>  FOR MANAGEMENT</a>
@@ -52,7 +61,7 @@
                     <p style="color: darkgray;">Create salary data for employees of the company with the button below.</p>
 
                     <div class="zerodatabutton" >
-                        <a class="btn btn-info" href="add-paycheck.aspx" >
+                        <a class="btn btn-facebook" href="add-paycheck.aspx" >
                             Add new
                         </a>
                     </div>

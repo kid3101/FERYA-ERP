@@ -50,7 +50,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <div class="container-fluid">
         <h1 class="h3 mb-4 text-gray-800">History</h1>
-        <ul class="nav" style="margin-block-start: 1em;padding-inline-start: 40px;position: absolute;padding-top: 32px;">
+        <%--<ul class="nav" style="margin-block-start: 1em;padding-inline-start: 40px;position: absolute;padding-top: 32px;">
             <li class="active" style="margin-right: 20px;">
                 <a data-toggle="tab" href="#" style="cursor:pointer;text-decoration:none;">
                     <span style="color:black;">All</span>
@@ -128,7 +128,7 @@
 
                 </ul>
             </li>
-        </ul>
+        </ul>--%>
         <div class="container-fluid" style="margin-top: -34px;margin-left: 453px;">
             <div class="container" style="float:left;">
 
@@ -166,22 +166,22 @@
     </div>
     <div class="table-responsive">
         <div>
-            <table class="table table-hover" style="width:100%; color:grey;margin-top: 20px;">
+            <table class="table table-bordered" style="width:100%; color:grey;margin-top: 20px;">
                 <thead>
                     <tr>
-                        <th style="color:black;">SID</th>
-                        <th rowspan="2">DATE</th>
-                        <th>HEADQUARTERS</th>
-                        <th>SHIFT</th>
+                        <th style="color:black;">Sid</th>
+                        <th rowspan="2">Date</th>
+                        <th>Headquaters</th>
+                        <th>Shift</th>
+                        <th>Time</th>
                         <th>TIME</th>
-                        <th>TIME</th>
-                        <th>COEFFICIENT</th>
-                        <th>OT</th>
-                        <th>ON LATE (CP)</th>
-                        <th>EARLY OUT (CP)</th>
-                        <th>STATUS</th>
+                        <th>Coefficient</th>
+                        <th>Ot</th>
+                        <th>On Late (CP)</th>
+                        <th>Early Out (CP)</th>
+                        <th>Status</th>
                         <th></th>
-                        <th>IP ADDRESS</th>
+                        <%--<th>IP ADDRESS</th>--%>
                         <th></th>
                     </tr>
                 </thead>
@@ -209,7 +209,7 @@
                         <td style="text-align: center;"><i class="fa fa-square" title=" Out early "></i></td>
                         <td>Doing</td>
                         <td><button type="button" class="btn btn-success" style="border-radius: 20px;"><a href="PublicReview2.aspx" style="text-decoration:none;color:white;">Browse</a></button></td>
-                        <td>14.186.73.139 -</td>
+                        <%--<td>14.186.73.139 -</td>--%>
                         <td><a href="#" data-toggle="modal" data-target="#myModal" style="text-decoration:none;" title="Click here to update data"><i class="fa fa-pen"></i></a></td>
                     </tr>
                 </tbody>
