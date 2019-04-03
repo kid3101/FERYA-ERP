@@ -30,9 +30,9 @@
                     <br>
                 </div>
 
-                <label>Position</label>
+                <label>Describe</label>
                 <div>
-                    <input style="height: 60px" class="form-control" type="text">
+                    <textarea class="form-control" ></textarea>
                 </div>
                 <br />
                 <div class="col-sm" style="display: flex;margin-left:-22px;">
