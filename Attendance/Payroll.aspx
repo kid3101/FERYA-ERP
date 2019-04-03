@@ -47,10 +47,8 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <div class="container-fluid">
-        <div style="line-height: 1;display: inline-block;margin-left: 40px;vertical-align: middle;">
-            <a style="text-decoration:none;" class="abc tab-content" href="History.aspx"><span><h2 style="cursor:pointer;">History</h2></span></a>
-        </div>
-        <ul class="nav" style="margin-block-start: 1em;padding-inline-start: 40px;position: absolute;padding-top: 32px;">
+        <h1 class="h3 mb-4 text-gray-800">History</h1>
+        <%--<ul class="nav" style="margin-block-start: 1em;padding-inline-start: 40px;position: absolute;padding-top: 32px;">
             <li class="active" style="margin-right: 20px;">
                 <a data-toggle="tab" href="#" style="cursor:pointer;text-decoration:none;">
                     <span style="color:black;">All</span>
@@ -125,7 +123,7 @@
 
                 </ul>
             </li>
-        </ul>
+        </ul>--%>
         <div class="container-fluid" style="margin-top: -34px;margin-left: 593px;">
             <div class="container" style="float:left;display: inline-flex;padding-left: 320px;">
                 <a class="nutchamcong" data-toggle="modal" data-target="#myModal" title="Export Excel" style="color:white;"><i class="fa fa-download"></i> EXPORT EXCEL</a>
@@ -203,7 +201,7 @@
         </div>--%>
         <div>
             <div class="table-responsive">
-                <table class="table table-hover" style="width:100%; color:grey;margin-top: 20px;">
+                <table class="table table-bordered" style="width:100%; color:grey;margin-top: 20px;">
                     <thead>
                         <tr>
                             <th>INTERNAL CODE</th>
@@ -218,7 +216,7 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td></td>
+                            <td>123</td>
                             <td>Employees 1</td>
                             <td>Secretary</td>
                             <td>Department 1</td>
@@ -228,7 +226,7 @@
                             <td>0</td>
                         </tr>
                         <tr>
-                            <td>1</td>
+                            <td>124</td>
                             <td>Employees 2</td>
                             <td>Cashier</td>
                             <td>Department 2</td>
