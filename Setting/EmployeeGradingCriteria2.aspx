@@ -139,7 +139,7 @@
         </ul>--%>
         <div class="container-fluid" style="margin-top: -82px;margin-left: 505px;">
             <div class="container" style="float:left;display: inline-flex;padding-left: 242px;margin-top:20px;">
-                <a href="AddNewEmployeeGradingCriteria.aspx" class="nutchamcong" data-toggle="tooltip" title="Create criteria for employee grading" style="color:white;text-decoration:none;"><i class="fa fa-plus"></i> CREATE CRITERIA FOR EMPLOYEE POINTS</a>
+                <a href="AddNewEmployeeGradingCriteria.aspx" class="btn btn-info" data-toggle="tooltip" title="Create criteria for employee grading" style="color:white;text-decoration:none;"><i class="fa fa-plus"></i> CREATE CRITERIA FOR EMPLOYEE POINTS</a>
             </div>
             <div class="container" style="display: inline-flex;padding-left: 320px;">
                 <a href="#" style="height: 20px;width: 20px;color: #555;"><i class="fa fa-chevron-left"></i></a>
