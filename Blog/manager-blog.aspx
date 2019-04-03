@@ -32,8 +32,8 @@
               </div>
               </div>
 
-          <div class="col-sm-5" id="searchblog"> 
-                   <%--  <div class="count">
+        <%--  <div class="col-sm-5" id="searchblog"> 
+                     <div class="count">
                             <span>All</span>
                             <span class="number">0</span>
                        </div>
@@ -42,8 +42,8 @@
                               <input type="text" placeholder="Search.." name="search">
                               <button type="submit"><i class="fa fa-search"></i></button>
                             </form>
-                      </div>--%>
-              </div>
+                      </div>
+              </div>--%>
         <br>
     </div>
     <div class="body-manager-blog">

@@ -1,0 +1,13 @@
+﻿.setting {
+    color: black;
+}
+.setting:hover {
+  text-decoration:none;
+}
+.mnpost {
+    color: black;
+}
+
+    .mnpost:hover {
+        text-decoration: none;
+    }

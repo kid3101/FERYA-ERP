@@ -3,17 +3,17 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
-
+    <link href="../css/css-project/change-work.css" rel="stylesheet" />
     <div class="container-fluid">
         <!-- Page Heading -->
         <div style="display:flex;">
              <h1 class="h3 mb-4 text-gray-800">System Architect > TAG 1 > Update Status</h1>
 
          </div>
-        <div style="float: right">
-            <a href="#" data-toggle="modal" data-target="#myModal" style="color: black;"><i class="fas fa-cog"></i><span>Setting</span></a>
-            <a href="#" style="color: black"><i class="far fa-edit"></i><span>Manager Post</span></a>
-        </div>
+<%--        <div style="float: right">
+            <a class="setting" href="#" data-toggle="modal" data-target="#myModal"><i class="fas fa-cog"></i><span>Setting</span></a>
+            <a class="mnpost" href="#" style="color: black"><i class="far fa-edit"></i><span>Manager Post</span></a>
+        </div>--%>
         <br />
         <div class="row">
 

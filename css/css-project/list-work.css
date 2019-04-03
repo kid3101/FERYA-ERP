@@ -1,0 +1,15 @@
+﻿
+.btn-info {
+    float: right;
+    margin-top: -4em;
+}
+
+.version {
+    float: right;
+    margin-right: 10em;
+    margin-top: -3em;
+    text-decoration:none;
+}
+    .version:hover {
+        text-decoration: none;
+    }

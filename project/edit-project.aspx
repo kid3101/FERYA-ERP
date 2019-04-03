@@ -26,15 +26,14 @@
             </div>
             <div class="col-sm-4">
                 <br>
-                <label>Name</label>
+                <label>Name <i style="color:red">*</i></label>
                 <div>
                     <input class="form-control" type="text">
                     <br>
                 </div>
-
-                <label>Position</label>
+                <label>Describe</label>
                 <div>
-                    <input style="height: 60px" class="form-control" type="text">
+                    <textarea class="form-control" ></textarea>
                 </div>
                 <div class="col-sm" style="display: flex;margin-left:-22px;">
                     <div class="col-sm-8">
@@ -88,7 +87,7 @@
                 <br /><br />
                 <br />
                 <br /><br />
-                <div>Assign employees to the project</div>
+                <div>Assign employees to the project <i style="color:red">*</i></div>
             </div>
 
             <div class="col-sm-6">
@@ -148,7 +147,7 @@
             </div>
         </div>
         <hr />
-        <span>*:Obligatory
+        <span><i style="color:red">*</i>:Obligatory
         </span>
         <button type="button" onclick="editproject()" class="btn btn-facebook">Edit Project</button>
 
