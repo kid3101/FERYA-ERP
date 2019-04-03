@@ -142,7 +142,6 @@ element.style {
     float: right;
     width: 80%;
     height: 250px;
-    /*margin-top: -460px;*/
     display: none;
 }
 
@@ -197,4 +196,46 @@ element.style {
     border-top: none;
     box-shadow: none;
     font-size: 10px;
+}
+#close {
+    border: none;
+    border-radius: 17px;
+    margin-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.star-sign {
+    margin-top: -0.2em;
+    margin-left: 0.2em;
+    color: #DB2828;
+}
+.w3-container {
+    padding: 0.01em 16px;
+    margin-right: 0px;
+    padding-top: 0px;
+}
+.cm {
+    border: 1px solid #b6b5b5;
+    margin-left: -9px;
+    padding: 1px 3px;
+}
+#cm {
+    border: 1px solid #c0bdbc;
+    border-radius: 3px;
+    width: 65%;
+}
+.kg {
+    border: 1px solid #b6b5b5; 
+    margin-left:-9px;
+    padding: 1px 6px;
+}
+#kg {
+    border: 1px solid #c0bdbc;
+    border-radius: 3px;
+    width: 65%;
+}
+.tab-right {
+    border: 1px solid #c0bdbc;
+    border-radius: 3px;
+    width: 70%;
 }
