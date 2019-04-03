@@ -226,4 +226,178 @@ h3 a {
     .timkiem:hover {
         background-color: #1678c2;
     }
-
+.ull {
+    margin-block-start: 1em;
+    padding-inline-start: 40px;
+    position: absolute;
+    padding-top: 32px;
+}
+.lii {
+    margin-right: 20px;
+}
+.lt {
+    cursor: pointer;
+    text-decoration: none;
+}
+    .lt:hover {
+        cursor: pointer;
+        text-decoration: none;
+    }
+.mau {
+    color: black;
+}
+.aa {
+    padding-right: 30px;
+    color: black;
+    cursor: pointer;
+}
+.ul2 {
+    top: 0px;
+    transform: translate3d(0px, 26px, 0px);
+    width: 354px;
+    margin-top: 185px;
+}
+.kc {
+    margin-right: 10px;
+}
+.texx{
+    cursor:pointer;
+}
+.selectt {
+    border-radius: 7px;
+}
+.haizz {
+    cursor: pointer;
+    border-radius: 7px;
+}
+.datee {
+    margin-right: 10px;
+}
+.bor {
+    height: 31px;
+    width: 221px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    margin-left: 3px;
+    border-style: groove;
+}
+.nut {
+    color: white;
+    text-decoration: none;
+}
+    .nut:hover {
+        color: white;
+        text-decoration: none;
+    }
+.coll {
+    text-align: center;
+    padding-top: 17px;
+}
+.tong {
+    margin-top: -34px;
+    margin-left: 453px;
+}
+.kk {
+    float: left;
+}
+.dro {
+    position: relative;
+    display: inline-block;
+}
+.menuu {
+    width: 200px;
+}
+.li2 {
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.meto {
+    color: black;
+    text-decoration: none;
+}
+    .meto:hover {
+        color: black;
+        text-decoration: none;
+    }
+.ls2 {
+    margin-left: 15px;
+    text-decoration: none;
+}
+.att {
+    color: white;
+    margin-left: -3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+}
+    .att:hover {
+        color: white;
+        text-decoration: none;
+    }
+.att2 {
+    color: white;
+    margin-left: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+}
+    .att2:hover {
+        color: white;
+        margin-left: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-decoration: none;
+    }
+.tong2 {
+    display: inline-flex;
+    padding-left: 320px;
+    padding-top: 20px;
+}
+.aaa {
+    height: 20px;
+    width: 20px;
+    color: #555;
+}
+.kk2 {
+    margin-right: 6px;
+}
+.au {
+    color: #555;
+    text-decoration: none;
+}
+.au:hover {
+    color: #555;
+    text-decoration: none;
+}
+.mau2 {
+    height: 48px;
+    width: 48px;
+    color: #555;
+}
+.tablee {
+    width: 100%;
+    color: grey;
+    margin-top: 20px;
+}
+.mg {
+    color: black;
+}
+.shift {
+    background: #FFF;
+    padding-top: 3px;
+    padding-right: 14px;
+    border: 2px solid rgba(34,36,38,.15);
+    border-radius: 5px;
+    font-size: 0.642857rem;
+   
+}
+.kk1 {
+    margin-left: 6px;
+}
+.g {
+    text-align: center;
+}
+.tongg {
+    margin-top: -34px;
+    margin-left: 466px;
+}

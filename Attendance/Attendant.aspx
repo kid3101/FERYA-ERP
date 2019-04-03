@@ -45,42 +45,38 @@
     <link href="../css/Attendance/Attendant.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <div class="container" style="background-color: #eee;height: 94px;width: 100%;">
-        <div style="margin-bottom: -11px;margin-top: -23px;">
-            <br />
-            <a class="abc tab-content" style="text-decoration:none;" href="History.aspx"><span><h2 style="cursor:pointer;">History</h2></span></a>
-            <ul class="nav nav-tabs" style="margin-right:-202px;padding-inline-start: 40px;">
-                <li class="active"><a href="#" style="cursor:pointer;text-decoration:none;">Attendant</a></li>
-            </ul>
-            <br>
+    <div class="container-fluid">
+        <div class="tong">
+            <h1 class="h3 mb-4 text-gray-800"> Attendant</h1>
         </div>
     </div>
     <div>
         <form>
-            <div style="margin-top: 30px;">
-                <div style="margin-left: 24px; width: 40%;float:left;">
+            <div class="tongg">
+                <div class="tong2">
                     <h3><strong>Attendant information</strong></h3>
-                    <p style="font-size: 17px;">Enter the information to conduct the in-out attendance.</p>
+                    <p class="sizee">Enter the information to conduct the in-out attendance.</p>
                 </div>
-                <div style="width:60%;font-size: 17px; display:inline;">
-                    <div style="width:30%;font-size: 17px;float:left;">
-                        <div class="form-group" style="margin-left: -12px;">
-                            <label for="usr">Headquarters<span style="color:red;"> *</span></label>
+                <div class="togg">
+                    <div class="togg2">
+                        <div class="form-group kc" >
+                            <label for="usr">Headquarters<span class="mau"> *</span></label>
                             <div>
-                                <select class="form-control" id="sel1" style="width: 55%;">
-                                    <option>Main Ofice</option>
-                                    
+                                <select class="form-control r" id="sel1">
+                                    <option>Office 1</option>
+                                    <option>Office 2</option>
+                                    <option>Office 3</option>
                                 </select>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div style="float:left;margin-left:24px;display: inline-flex;">
+                <div class="kp">
                     <br />
                 </div>
             </div>
         </form>
     </div>
-    <div style="background-color:#eee;width:100%;height:80px;margin-top: 144px;">
+    
 </asp:Content>
 

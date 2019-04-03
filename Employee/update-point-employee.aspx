@@ -6,19 +6,12 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-    <div class="headered" style="display:flex;margin:10px">
-          <div class="lefted" style="color:black">
-              <h2>Employee grading history</h2>
-          </div>
-      </div>
-    <div class="container">
-          <ul class="nav nav-tabs">
-            <li class="active">
-                <a data-toggle="tab" href="#" style="cursor:pointer;">
-                    <span style="color:black;">Update</span>
-                </a>
-            </li>
-        </ul>
+    <div class="container-fluid">
+        
+            <h1 class ="h3 mb-4 text-gray-800">Employee grading history
+                <span> > </span>
+                Update
+            </h1>
     </div>
      <div class="segment">
             <form class="ui form">
@@ -33,11 +26,11 @@
                             <input class="form-control" type="text" value="dsd" />
                         </div>
                         <div class="col-xs-5">
-                            <label>Creator<a style="margin-top: -0.2em; margin-left:0.2em;color: #DB2828;">*</a></label>
-                            <input class="form-control" type="text" value="Thông Huyền Trang" />
+                            <label>Creator <a class="star-sign">*</a></label>
+                            <input class="form-control" type="text" value="Ferya" />
                         </div>
                         <div class="col-xs-5">
-                            <label>Criteria <a style="margin-top: -0.2em; margin-left:0.2em;color: #DB2828;">*</a></label>
+                            <label>Criteria <a class="star-sign">*</a></label>
                            <select class="form-control">
                                 <option>sas</option>
                                 <option></option>
@@ -72,8 +65,8 @@
                             </span>
                         </p>
                     </div>
-                    <div class="add" style=" margin-top: -35px">
-                        <a class="addnew" href="#">
+                    <div class="add" style=" margin-top: -35px; margin-left:280px">
+                        <a class="btn btn-info" href="#">
                             SAVE
                         </a>
                     </div>

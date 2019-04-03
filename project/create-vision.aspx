@@ -6,7 +6,7 @@
 
     
     <div class="container-fluid">
-        <h1 class="h3 mb-4 text-gray-800">Create Vision</h1>
+        <h1 class="h3 mb-4 text-gray-800">Create Verion</h1>
         <div class="row">
             <div class="col-sm-3">
                 <div>
@@ -56,7 +56,7 @@
                     </div>
                 </div>
                 <br />
-  <button type="button"class="btn btn-danger" onclick="createvision()">Create Vision</button>
+  <button type="button"class="btn btn-info" onclick="createversion()">Create Vision</button>
             </div>
             
          
@@ -70,8 +70,8 @@
 
     <script>
     
-        function createvision() {
-            location.href = "/project/list-vision.aspx";
+        function createversion() {
+            location.href = "/project/list-version.aspx";
         }
     </script>
 

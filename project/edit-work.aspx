@@ -8,29 +8,17 @@
     <script src="../dist/fastselect.min.js"></script>
     <script src="../dist/fastselect.standalone.js"></script>
     <script src="../dist/fastselect.standalone.min.js"></script>
-<style>
-    .fstChoiceItem {
-    display: inline-block;
-    font-size: 15px;
-    position: relative;
-    margin: 0 .41667em .41667em 0;
-    padding: .33333em .33333em .33333em 1.5em;
-    float: left;
-    border-radius: .25em;
-    border: 1px solid #43A2F3;
-    cursor: auto;
-    color: #fff;
-    background-color: #43A2F3;
-    -webkit-animation: fstAnimationEnter 0.2s;
-    -moz-animation: fstAnimationEnter 0.2s;
-    animation: fstAnimationEnter 0.2s
-}</style>
+    <link href="../css/css-project/edit-work.css" rel="stylesheet" />
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
     <div class="container-fluid">
         <!-- Page Heading -->
-        <h1 class="h3 mb-4 text-gray-800">Edit Work</h1>
+         <div style="display:flex;">
+             <h1 class="h3 mb-4 text-gray-800">System Architect > TAG 1 > Edit Work</h1>
+
+         </div>
         <div style="float: right">
          <%--   <a href="#" data-toggle="modal" data-target="#myModal" style="color: black;"><i class="fas fa-cog"></i><span>Setting</span></a>
             <a href="#" style="color: black"><i class="far fa-edit"></i><span>Manager Post</span></a>--%>
@@ -146,7 +134,7 @@
          
 
         </div><div style="color:white"> 0</div>
-           <button type="button" onclick="editwork1()" class="btn btn-info">Edit infomation</button>
+          <a href="list-work.aspx"> <button type="button" onclick="editwork1()" class="btn btn-facebook">Edit infomation</button></a>
     </div>
 <script>
          $('.multipleSelect').fastselect();

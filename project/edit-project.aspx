@@ -8,29 +8,15 @@
     <script src="../dist/fastselect.min.js"></script>
     <script src="../dist/fastselect.standalone.js"></script>
     <script src="../dist/fastselect.standalone.min.js"></script>
-<style>
-    .fstChoiceItem {
-    display: inline-block;
-    font-size: 15px;
-    position: relative;
-    margin: 0 .41667em .41667em 0;
-    padding: .33333em .33333em .33333em 1.5em;
-    float: left;
-    border-radius: .25em;
-    border: 1px solid #43A2F3;
-    cursor: auto;
-    color: #fff;
-    background-color: #43A2F3;
-    -webkit-animation: fstAnimationEnter 0.2s;
-    -moz-animation: fstAnimationEnter 0.2s;
-    animation: fstAnimationEnter 0.2s
-}</style>
+    <link href="../css/css-project/edit-project.css" rel="stylesheet" />
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
 
 
     <div class="container-fluid">
-        <h1 class="h3 mb-4 text-gray-800">Edit List</h1>
+      <div style="display:flex;">
+          <h1 class="h3 mb-4 text-gray-800">System Architect > Edit</h1></div>
         <div class="row">
             <div class="col-sm-3">
                 <div>

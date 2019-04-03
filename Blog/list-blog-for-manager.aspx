@@ -8,13 +8,13 @@
     <div class="container-fluid">
     <div class="header-blog">
         <div style="display: flex;">
-            <div class="col-sm-7">
-                <a class="title-blog" href="blog-company.aspx">Blog</a> -> <a class="title-blog" href="manager-blog.aspx">Manager</a>
-            </div>
+            <div class="col-sm-7" style="display:flex;">
+             <h1 class="h3 mb-4 text-gray-800">Blog > Manager List Blog</h1>
+             </div>
             <div class="col-sm-5" id="col-5">
                 <div class="linkmanagerblog">
                     <div class="managerblog">
-                        <a class="btn btn-info" data-toggle="tooltip" href="add-new-blog-for-manager.aspx" title="Timekeeping">+ Add New</a>
+                        <a class="btn btn-info" data-toggle="tooltip" href="add-new-blog-for-manager.aspx" title="Timekeeping"> Add New</a>
                     </div>
                     <br />
                     <div class="page">

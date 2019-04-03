@@ -6,7 +6,10 @@
 
     <div class="container-fluid">
         <!-- Page Heading -->
-        <h1 class="h3 mb-4 text-gray-800">Update Status</h1>
+        <div style="display:flex;">
+             <h1 class="h3 mb-4 text-gray-800">System Architect > TAG 1 > Update Status</h1>
+
+         </div>
         <div style="float: right">
             <a href="#" data-toggle="modal" data-target="#myModal" style="color: black;"><i class="fas fa-cog"></i><span>Setting</span></a>
             <a href="#" style="color: black"><i class="far fa-edit"></i><span>Manager Post</span></a>
@@ -47,7 +50,7 @@
                 </div>
                 <div>  </div>
                 <br />
-                <button type="button" class="btn btn-dark" onclick="updatework()">Update</button>
+                <button type="button" class="btn btn-facebook" onclick="updatework()">Update</button>
                    <button type="button" class="btn btn-info" onclick="historywork()">HistoryUpdate</button>
             </div>
 

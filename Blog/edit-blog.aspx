@@ -3,13 +3,12 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-     <link href="../css/Css-Blog/blog-company-css.css" rel="stylesheet" />
     <link href="../css/Css-Blog/add-new-blog-css.css" rel="stylesheet" />
     <div class="container-fluid">
           <div class="header-blog">
-            <div class="col-sm-7">
-                  <a class="title-blog" href="list-blog-for-manager.aspx">Manager</a>
-              </div>
+              <div class="col-sm-7" style="display:flex;">
+             <h1 class="h3 mb-4 text-gray-800">Degital Marketing > Edit</h1>
+             </div>
          </div>
     <div class="body-add">
              <div class="col-sm-9" style="margin-top:20px;">
@@ -68,7 +67,7 @@
                             </div>
                         </div>
                         <div class="addnewblog">
-                        <a href="list-blog-for-manager.aspx"><button type="submit" class="btn btn-primary btn-block" style="width: 120px;margin-left:180px;margin-bottom:10px;border-radius:15px;">Save</button></a>
+                        <a href="list-blog-for-manager.aspx"><button type="submit" class="btn btn-facebook">Save</button></a>
                     </div>
                             </form> <!-- /form -->
                 </div>

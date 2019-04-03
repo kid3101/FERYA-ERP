@@ -5,7 +5,9 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
      <div class="container-fluid">
         <!-- Page Heading -->
-        <h1 class="h3 mb-4 text-gray-800"> History Work</h1>
+      <div style="display:flex;">
+             <h1 class="h3 mb-4 text-gray-800">System Architect > TAG 1 > Update Status > History </h1>        
+         </div>
         <div class="row">
             <div class="col-md-12">
                 <div class="table-responsive">
@@ -38,6 +40,6 @@
                 </div>
             </div>
         </div>
-    </div>s
+    </div>
 </asp:Content>
 

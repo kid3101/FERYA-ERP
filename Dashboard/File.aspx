@@ -45,24 +45,22 @@
     <link href="../css/Dashboard/File.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <div class="container" style="margin-top:-23px;background-color: #eee;height: 70px;width: 100%;">
-        <div style="margin-bottom: -11px;margin-top: -20px;">
+    <div class="container-fluid">
+        <div class="tong">
             <div class="row content">
-                <div class="col-sm-6 sidenav">
-                    <a class="abc tab-content" style="text-decoration:none;" href="CompanyDocuments.aspx"><span><h2 style="cursor:pointer;padding-top: 3px;">Files</h2></span></a>
-                </div>
-                <div class="col-sm-6">
-                    <div style="font-size:20px;margin-top: 24px;float: right;">
-                        <a class="ls" data-toggle="modal" data-target="#myModal" style="text-decoration:none;"><span style="margin-right: 25px;"><i class="fa fa-folder"></i> Create folder</span></a>
-                        <a class="ls" data-toggle="modal" data-target="#myModal2" style="text-decoration:none;"><span><i class="fa fa-cloud-upload"></i> Upload the file</span></a>
+                <h1 class="h3 mb-4 text-gray-800">Files</h1>
+                <div class="col-sm-10">
+                    <div class="tong2">
+                        <a class="ls" data-toggle="modal" data-target="#myModal" ><span class="createe"><i class="fa fa-folder"></i> Create folder</span></a>
+                        <a class="ls" data-toggle="modal" data-target="#myModal2" ><span><i class="fa fa-cloud-upload"></i> Upload the file</span></a>
 
                     </div>
                 </div>
             </div>
 
         </div>
-    </div>
-    <div class="container">
+
+        <div class="container-fluid">
         <!-- Modal -->
         <div class="modal fade" id="myModal" role="dialog">
             <div class="modal-dialog">
@@ -71,24 +69,24 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         
-                        <h2 class="modal-title" style="float:left;">Create new folder</h2>
+                        <h2 class="modal-title kc" >Create new folder</h2>
                     </div>
                     <div class="modal-body">
                         <form>
                             <div class="form-group">
-                                <label style="float:left;">Folder name</label>
+                                <label class="kc">Folder name</label>
                                 <input class="form-control">
                             </div>
                             <div class="form-group">
-                                <label style="float:left;">Describe</label>
+                                <label class="kc">Describe</label>
                                 <input class="form-control">
                             </div>
 
                         </form>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal" style="border: none;border-radius: 17px;margin-right: 10px;padding-left: 20px;padding-right: 20px;">Close</button>
-                        <button type="submit" class="nutchamcong" style="border:none;padding-left: 20px;padding-right: 20px;"><a href="File.aspx" style="color:white;text-decoration:none;">Create</a></button>
+                        <button type="button" class="btn btn-default closee" data-dismiss="modal" >Close</button>
+                        <button type="submit" class="btn btn-info creatt" ><a href="File.aspx" class="creatt2">Create</a></button>
                     </div>
                 </div>
 
@@ -103,26 +101,26 @@
                 <div class="modal-content">
                                 <div class="modal-header">
                                     
-                                    <h2 class="modal-title" style="float:left;">Upload documents / files</h2>
+                                    <h2 class="modal-title kc" >Upload documents / files</h2>
                                 </div>
                                 <div class="modal-body linkk">
                                     <div >
                                     <input style="position: absolute;opacity: 0;" type="file" name="file-2[]" id="file-2" class="inputfile inputfile-2" data-multiple-caption="{count} files selected" multiple="">
-                                    <label style="float:left;" for="file-2"><i class="fa fa-paperclip"></i><span>File attached...</span></label>
+                                    <label class="kc" for="file-2"><i class="fa fa-paperclip"></i><span>File attached...</span></label>
                                 </div>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="submit" class="nutchamcong" style="border:none;padding-left: 20px;padding-right: 20px;"><a href="UpFile.aspx" style="color:white;text-decoration:none;">Completed</a></button>
+                                    <button type="submit" class="btn btn-info upfiless"><a href="UpFile.aspx" class="creatt2">Completed</a></button>
                                 </div>
                             </div>
                 </div>
         </div>
     </div>
     <div class="table-responsive">
-        <table class="table table-hover" style="width:100%; color:grey;margin-top: 20px;">
+        <table class="table table-hover tablee" >
             <thead>
                 <tr>
-                    <th style="text-transform:uppercase;">NAME</th>
+                    <th class="textname">NAME</th>
                     <th rowspan="2">TYPE</th>
                     <th>SIZE</th>
                     <th> DATE CREATED</th>
@@ -132,15 +130,15 @@
             </thead>
             <tbody>
                 <tr>
-                    <td><i class="fa fa-folder"></i> dfd</td>
-                    <td>fdfd</td>
-                    <td>fdf</td>
-                    <td>dfd</td>
-                    <td>dfdf</td>
+                    <td><i class="fa fa-folder"></i> Demo</td>
+                    <td>Directory</td>
+                    <td>2 Kb</td>
+                    <td>16:23, 23/02/2019</td>
+                    <td>Jonh</td>
                     <td style="float: right;">
-                        <a href="SearchFile.html" style="color:grey;margin-right: 20px;" title="See directory contents"><i class="fa fa-search"></i></a>
-                        <a href="#" style="color:grey;margin-right: 20px;" data-toggle="modal" data-target="#myModal3" title="Edit content"><i class="fa fa-cog"></i></a>
-                        <a href="#" style="color:grey;" title="Delete this folder"><i class="fa fa-trash"></i></a>
+                        <a href="#" class="iconn" title="See directory contents"><i class="fa fa-search"></i></a>
+                        <a href="#" class="iconn" data-toggle="modal" data-target="#myModal3" title="Edit content"><i class="fa fa-cog"></i></a>
+                        <a href="#" class="iconn" title="Delete this folder"><i class="fa fa-trash"></i></a>
                         <!-- Modal -->
                         <div class="modal fade" id="myModal3" role="dialog">
                             <div class="modal-dialog">
@@ -149,24 +147,24 @@
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         
-                                        <h2 class="modal-title" style="float:left;">Change directory information</h2>
+                                        <h2 class="modal-title kc" >Change directory information</h2>
                                     </div>
                                     <div class="modal-body">
                                         <form>
                                             <div class="form-group">
-                                                <label style="float:left;">Folder name</label>
+                                                <label class="kc">Folder name</label>
                                                 <input class="form-control">
                                             </div>
                                             <div class="form-group">
-                                                <label style="float:left;">Describe</label>
+                                                <label class="kc">Describe</label>
                                                 <input class="form-control">
                                             </div>
 
                                         </form>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal" style="border: none;border-radius: 17px;margin-right: 10px;padding-left: 20px;padding-right: 20px;">Close</button>
-                                        <button type="submit" class="nutchamcong" style="border:none;padding-left: 20px;padding-right: 20px;"><a href="File.aspx" style="color:white;text-decoration:none;">Save</a></button>
+                                        <button type="button" class="btn btn-default closee" data-dismiss="modal" >Close</button>
+                                        <button type="submit" class="btn btn-info creatt" ><a href="File.aspx" class="creatt2">Save</a></button>
                                     </div>
                                 </div>
 
@@ -177,6 +175,8 @@
             </tbody>
         </table>
     </div>
+    </div>
+    
     <script>
 
         function myFunction() {

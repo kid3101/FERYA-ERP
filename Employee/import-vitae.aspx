@@ -6,15 +6,12 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-    <div class="container" style="background-color: #eee;height: 94px;width: 100%;">
-        <div style="margin-bottom: -11px;margin-top: -20px;">
-            <br />
-            <a class="abc tab-content" style="text-decoration:none;" href="KeepingHistory.html"><span><h2 style="cursor:pointer;">Employee</h2></span></a>
-            <ul class="nav nav-tabs" style="margin-right:-202px;padding-inline-start: 40px;">
-                <li class="active"><a href="#" style="cursor:pointer;text-decoration:none;">Import resume</a></li>
-            </ul>
-            <br>
-        </div>
+    <div class="container-fluid" >
+        <h1 >
+            <a style="text-decoration:none;" href="KeepingHistory.html">Employee</a>
+            <span> > </span>
+            Import resume
+        </h1>
     </div>
     <div class="segment">
             <form class="ui form">
@@ -61,8 +58,8 @@
                             </span>
                         </p>
                     </div>
-                    <div class="add">
-                        <a class="btn them" href="#">
+                    <div>
+                        <a class="btn btn-facebook" href="#">
                             UPLOAD FILE
                         </a>
                     </div>

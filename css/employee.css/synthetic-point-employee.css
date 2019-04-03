@@ -1,0 +1,23 @@
+.detail {
+    border: 1px solid #808080;
+    padding: 8px 8px;
+    text-decoration: none
+}
+.container-1 {
+    display: inline-flex;
+    padding-left: 500px;
+    padding-top: 20px;
+}
+.good {
+    border: 1px solid #00ff31;
+    padding: 8px 8px;
+}
+.bad {
+    border: 1px solid #ff0000;
+    padding: 8px 8px;
+}
+.good-bad {
+    background-color: #24c82f;
+    color: white;
+    padding: 5px 15px;
+}

@@ -45,11 +45,9 @@
     <link href="../css/Setting/Group.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <div class="container-fluid" style="margin-top: -23px;width: 100%;height: 119px;background-color:#eee;">
-        <div style="line-height: 1;display: inline-block;margin-left: 40px;vertical-align: middle;">
-            <a class="abc tab-content" href="#" style="text-decoration:none;"><span><h2 style="cursor:pointer;">Install personnel <span><i style="padding-left: 20px;color: black;padding-right: 20px;" class="fa fa-angle-right"></i></span><a href="#" style="color:black;text-decoration:none;">Group of employees</a></h2></span></a>
-        </div>
-        <ul class="nav nav-tabs" style="margin-block-start: 1em;padding-inline-start: 40px;position: absolute;padding-top: 32px;">
+    <div class="container-fluid">
+        <h1 class="h3 mb-4 text-gray-800">Setting > Group of employees</h1>
+        <ul class="nav" style="margin-block-start: 1em;padding-inline-start: 40px;position: absolute;padding-top: 32px;">
             <li class="active" style="margin-right: 20px;">
                 <a data-toggle="tab" href="#" style="cursor:pointer;text-decoration:none;">
                     <span style="color:black;">All</span>
@@ -79,8 +77,7 @@
             </div>
         </div>
         <br>
-    </div>
-    <div class="container">
+        <div class="container">
         <div class="row content">
             <div class="col-sm-2 sidenav">
 
@@ -89,7 +86,7 @@
                 <img src="../img/contact.png"  style="height: 300px;">
                 <div><h1 style="color:#777;">No groups yet.</h1></div>
                 <div><h3 style="color:rgba(0,0,0,0.2)">Create the first group of employees by pressing the button below.</h3></div>
-                <div style="margin-top: 25px;"><a class="nut2" href="AddNewGroup.Aspx" style="text-decoration:none;">Add new</a></div>
+                <div style="margin-top: 25px;"><a class="btn btn-info" href="AddNewGroup.Aspx" style="text-decoration:none;">Add new</a></div>
             </div>
             <div class="col-sm-2">
 
@@ -97,5 +94,7 @@
             </div>
         </div>
     </div>
+    </div>
+    
 </asp:Content>
 

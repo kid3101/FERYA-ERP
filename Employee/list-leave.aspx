@@ -6,10 +6,9 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-    <div class="container-fluid" style="width: 100%;height: 119px;background-color:#eee;margin-top: -23px;">
-        <div style="line-height: 1;display: inline-block;margin-left: 40px;vertical-align: middle;">
-            <a class="abc tab-content" style="text-decoration:none;" href="#"><span><h2 style="cursor:pointer;"> Please take leave</h2></span></a>
-        </div>
+    <div class="container-fluid">
+        <h1 class ="h3 mb-4 text-gray-800"> Please take leave</h1>
+
         <ul class="nav nav-tabs" style="margin-block-start: 1em;padding-inline-start: 40px;position: absolute;padding-top: 32px;">
             <li class="active" style="margin-right: 20px;">
                 <a data-toggle="tab" href="#" style="cursor:pointer;text-decoration:none;">
@@ -89,7 +88,7 @@
                 <a class="ls" style="margin-left: 15px;text-decoration:none;" href="#"><i class="fa fa-cog"></i> Setting</a>
                 <a class="ls" style="margin-left: 15px;text-decoration:none;" title="Waiting for you to browse" href="browser-leave.aspx"><i class="fa fa-clock"></i> Wait for you to browse </a>
                 
-                <a class="nutchamcong"  href="add-leave.aspx" title="Create a new leave application" style="color:white;margin-left: 15px;padding-left: 20px;padding-right: 20px;text-decoration:none;" > <i class="fa fa-plus-circle"></i>CREATE A NEW LICENSE APPLICATION</a>
+                <a class="btn btn-info"  href="add-leave.aspx" title="Create a new leave application"> <i class="fa fa-plus-circle"></i>CREATE A NEW LICENSE APPLICATION</a>
             </div>
             <div class="container" style="display: inline-flex;padding-left: 500px; padding-top: 20px;">
                 <a href="#" style="height: 20px;width: 20px;color: #555;"><i class="fa fa-chevron-left"></i></a>
@@ -124,21 +123,21 @@
                 </thead>
 
                 <thead id="data" onclick="myFunction()">
-                    <tr>
+                   <tr>
                         <td>
                             <a style="text-decoration:none; cursor: pointer; color:black;">9431</a>
                         </td>
                         <td></td>
                         <td>
                             <span>
-                                <a style="text-decoration:none; color:#111010;" data-toggle="tooltip" title="Thông Huyền Trang">
+                                <a style="text-decoration:none; color:#111010;" data-toggle="tooltip" title="Ferya">
                                     <img style="width:19px;height:19px;" src="#">
-                                    <span>Thông Huyền Trang</span>
+                                    <span>Ferya</span>
                                 </a>
                             </span>
                         </td>
                         <td>
-                            	wewre
+
                         </td>
                         <td>26/03/2019 - 29/03/2019</td>
                         <td><label style="background-color: #E8E8E8!important;padding:5px 20px;"><span style="font-size:12px;">Wait for round 1</span></label></td>
@@ -162,8 +161,7 @@
                                 <p>Number of vacation hours: 136</p>
                                 <p>Paid holidays: 1</p>
                                 <p>Unpaid time off: 1</p>
-                                <p>Reason: wewre</p>
-                                <p>Note: ruacon</p>
+
                             </td>
                             <td></td>
                         </tr>

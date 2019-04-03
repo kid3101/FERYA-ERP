@@ -19,3 +19,39 @@
 .contentblog {
     padding-left: 11%;
 }
+#header1 {
+    display: flex;
+}
+.comment {
+    margin-top:20px;
+}
+    .comment a {
+        margin-right: 10px;
+    }
+    .comment span {
+        margin-right: 10px;
+    }
+hr {
+    margin-left: 100px
+}
+.cmtblog {
+    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-left: 50%
+}
+.formcmt {
+    margin-left: 400px;
+}
+.cmt {
+    margin-left: -300px;
+}
+.entercmt {
+    margin-left: 100px;
+}
+    .entercmt form {
+        margin-bottom: 20px;
+    }
+        .entercmt form textarea {
+            border-radius: 20px;
+            margin-top: 30px;
+        }

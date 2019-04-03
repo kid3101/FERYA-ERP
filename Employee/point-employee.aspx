@@ -7,10 +7,10 @@
      <link href="../css/Attendance/Payroll.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-     <div class="container-fluid" style="width: 100%;height: 119px;background-color:#eee;margin-top: -23px;">
-        <div style="line-height: 1;display: inline-block;margin-left: 40px;vertical-align: middle;">
-            <a class="abc tab-content" style="text-decoration:none;" href="#"><span><h2 style="cursor:pointer;">Employee grading history</h2></span></a>
-        </div>
+     <div class="container-fluid" >
+        <h1 class ="h3 mb-4 text-gray-800">Employee grading history</h1>
+
+
         <ul class="nav nav-tabs" style="margin-block-start: 1em;padding-inline-start: 40px;position: absolute;padding-top: 32px;">
             <li class="active" style="margin-right: 20px;">
                 <a data-toggle="tab" href="#" style="cursor:pointer;text-decoration:none;">
@@ -29,7 +29,7 @@
                 <a class="ls" style="margin-left: 15px;text-decoration:none;" data-toggle="modal" data-target="#myModal"><i class="fa fa-download"></i>Export Excel</a>
                 <a class="ls" style="margin-left: 15px;text-decoration:none;" href="synthetic-point-employee.aspx"  ><i class="fas fa-chart-pie"></i> Synthetic by employess</a>
                 
-                <a class="nutchamcong"  href="add-point-employee.aspx" title="Add new" style="color:white;margin-left: 15px;padding-left: 20px;padding-right: 20px;text-decoration:none;"><i class="fa fa-plus-circle"></i> ADD THE REVIEW</a>
+                <a class="btn btn-info"  href="add-point-employee.aspx" title="Add new"><i class="fa fa-plus-circle"></i> ADD THE REVIEW</a>
             </div>
             <div class="container" style="display: inline-flex;padding-left: 500px; padding-top: 20px;">
                 <a href="#" style="height: 20px;width: 20px;color: #555;"><i class="fa fa-chevron-left"></i></a>
@@ -47,7 +47,7 @@
         <br>
     </div>
         <div class="segment" style="display: block; min-height: 558px;">
-            <div class="zerodata">
+            <div class="zerodata" style="text-align:center">
                 <div>
                     <div class="zerodataimage">
                         <img src="/img/employee.png" width="240" height="240">
@@ -59,7 +59,7 @@
                         You start evaluating employees by pressing the button below.
                     </p>
                      <div class="zerodatabutton" >
-                        <a class="btn them" href="add-point-employee.aspx" style="background-color: gainsboro;border-radius: 10px;">
+                        <a class="btn btn-info" href="add-point-employee.aspx">
                             Add new
                         </a>
                     </div>
@@ -104,7 +104,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal" style="border: none;border-radius: 17px;margin-right: 10px;padding-left: 20px;padding-right: 20px;">Close</button>
-                    <button id="btnExport" type="submit" class="nutchamcong2" style="border:none;padding-left: 20px;padding-right: 20px;"><a href="#" style="color:white;text-decoration:none;">Download the Excel file</a></button>
+
                 </div>
             </div>
 

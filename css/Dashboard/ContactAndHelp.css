@@ -167,3 +167,22 @@ h3 a {
         background-color: cornflowerblue;
         cursor: pointer;
     }
+.tong {
+    margin-bottom: -11px;
+    margin-top: -20px;
+}
+.tong2 {
+    border-style: solid;
+    border-color: #eee;
+    margin-top: 20px;
+}
+.nutt {
+
+    text-decoration: none;
+}
+    .nutt:hover {
+        text-decoration: none;
+    }
+.kk {
+    margin-left: 20px;
+}

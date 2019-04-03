@@ -45,19 +45,17 @@
     <link href="../css/Dashboard/ContactAndHelp.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <div class="container" style="margin-top:-23px;background-color: #eee;height: 70px;width: 100%;">
-        <div style="margin-bottom: -11px;margin-top: -20px;">
+    <div class="container-fluid">
+        <div class="tong">
             <div class="row content">
-                <div class="col-sm-6 sidenav">
-                    <a class="abc tab-content" href="ContactAndHelp.aspx" style="text-decoration:none;"><span><h2 style="cursor:pointer;padding-top: 3px;">Contact and help</h2></span></a>
-                </div>
+                <h1 class="h3 mb-4 text-gray-800">Contact and help</h1>
 
             </div>
 
         </div>
     </div>
     <div class="container">
-        <div style="border-style: solid;border-color: #eee;margin-top: 20px;">
+        <div class="tong2">
             <div style="margin-left:20px;">
                 <h4>Software information</h4>
                 <p>
@@ -66,12 +64,12 @@
                 </p>
                 <p>
                     <span>Cache company data: </span>
-                    <span><a href="Help2.aspx" style="text-decoration:none;">See details</a></span>
+                    <span><a href="Help2.aspx" class="nutt">See details</a></span>
                 </p>
             </div>
         </div>
-        <div style="border-style: solid;border-color: #eee;margin-top: 20px;">
-            <div style="margin-left:20px;">
+        <div class="tong2">
+            <div class="kk">
                 <h4>Account information</h4>
                 <p>
                     <span>Here are some information of the account you are logged in and using, please provide this information in case you need assistance: </span>
@@ -98,27 +96,27 @@
                 </p>
             </div>
         </div>
-        <div style="border-style: solid;border-color: #eee;margin-top: 20px;">
-            <div style="margin-left:20px;">
+        <div class="tong2">
+            <div class="kk">
                 <h4>Email support</h4>
                 <p>
                     <span>If you have any questions, please email to: support@gmail.com </span>
                 </p>
             </div>
         </div>
-        <div style="border-style: solid;border-color: #eee;margin-top: 20px;">
-            <div style="margin-left:20px;">
+        <div class="tong2">
+            <div class="kk">
                 <h4>Chat online</h4>
                 <p>
-                    <a href="#" style="text-decoration:none;"><span>Click here to enter Facebook Chat with support team </span></a>
+                    <a href="#" class="nutt"><span>Click here to enter Facebook Chat with support team </span></a>
                 </p>
             </div>
         </div>
-        <div style="border-style: solid;border-color: #eee;margin-top: 20px;margin-bottom:20px;">
-            <div style="margin-left:20px;">
+        <div class="tong2">
+            <div class="kk">
                 <h4>Instruction document</h4>
                 <p>
-                    <a href="#" style="text-decoration:none;"><span>See the user guide articles </span></a>
+                    <a href="#" class="nutt"><span>See the user guide articles </span></a>
                 </p>
             </div>
         </div>

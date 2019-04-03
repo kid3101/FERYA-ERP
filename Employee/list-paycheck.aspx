@@ -6,10 +6,9 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-     <div class="container-fluid" style="width: 100%;height: 119px;background-color:#eee;margin-top: -23px;">
-        <div style="line-height: 1;display: inline-block;margin-left: 40px;vertical-align: middle;">
-            <a class="abc tab-content" style="text-decoration:none;" href="#"><span><h2 style="cursor:pointer;"> My paycheck</h2></span></a>
-        </div>
+     <div class="container-fluid">
+          <h1 class ="h3 mb-4 text-gray-800">My paycheck</h1>
+
         <ul class="nav nav-tabs" style="margin-block-start: 1em;padding-inline-start: 40px;position: absolute;padding-top: 32px;">
             <li class="active" style="margin-right: 20px;">
                 <a data-toggle="tab" href="#" style="cursor:pointer;text-decoration:none;">
@@ -154,7 +153,7 @@
         </ul>
         <div class="container-fluid" style="margin-top: -34px;margin-left: 380px;">
             <div class="container" style="float:left;">
-                <a class="nutchamcong"  href="manage-paycheck.aspx" title="For management" style="color:white;margin-left: 450px;padding-left: 20px;padding-right: 20px;text-decoration:none;" >  <i class="fa fa-cog"></i>  FOR MANAGEMENT</a>
+                <a class="btn btn-info"  href="manage-paycheck.aspx" title="For management" style="margin-left:390px" >  <i class="fa fa-cog"></i>  FOR MANAGEMENT</a>
             </div>
             <div class="container" style="display: inline-flex;padding-left: 500px; padding-top: 20px;">
                 <a href="#" style="height: 20px;width: 20px;color: #555;"><i class="fa fa-chevron-left"></i></a>

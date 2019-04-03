@@ -128,4 +128,21 @@ h3 a {
     .chamcong:hover {
         background-color: #6764ed;
     }
+.tong {
+    text-align: center;
+}
+.att {
+    padding-top: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.selectt {
+    margin-top: 20px;
+}
+.main {
+    margin-left: 641px;
+}
+.but {
+    margin-top: 20px;
+}
 

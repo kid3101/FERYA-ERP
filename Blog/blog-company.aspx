@@ -7,9 +7,9 @@
     <div class="container-fluid">
       <div class="header-blog">
           <div style="display:flex;">
-            <div class="col-sm-7">
-                  <a class="title-blog" href="blog-company.aspx">Blog</a>
-             </div>  
+             <div class="col-sm-7" style="display:flex;">
+             <h1 class="h3 mb-4 text-gray-800">Blog</h1>
+             </div>
           <div class="col-sm-5" id="col-5">
                   <div class="linkmanagerblog">
                     <div class="managerblog">
@@ -17,7 +17,7 @@
                     </div>
                       <br />
                     <div class="page">    
-                        <div style="margin-right: 6px;">
+                        <div >
                                 <a href="#"><i class="fa fa-chevron-left"></i></a>
                                 <span>Page</span>
                                 <span>0</span>
@@ -48,10 +48,10 @@
         
 <div class="zerodata">
         <div>
-            <div class="zerodataimage"><img src="/imgs/zerodata/info.png" width="256" height="256"></div>
+            <div class="zerodataimage"><img src="/imgs/zerodata/info.png"></div>
             <h3>Blog is empty</h3>
             <p>Please add new blog</p>
-            <div class="zerodatabutton"><a href="add-new-blog.aspx" class="btn btn-primary" >Add New</a></div>
+            <div class="zerodatabutton"><a href="add-new-blog.aspx" class="btn btn-facebook">Add New</a></div>
         </div>
     </div>
         </div>

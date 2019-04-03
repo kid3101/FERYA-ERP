@@ -46,11 +46,11 @@
     <link href="../css/Attendance/Payroll.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <div class="container-fluid" style="width: 100%;height: 119px;background-color:#eee;margin-top: -23px;">
+    <div class="container-fluid">
         <div style="line-height: 1;display: inline-block;margin-left: 40px;vertical-align: middle;">
             <a style="text-decoration:none;" class="abc tab-content" href="History.aspx"><span><h2 style="cursor:pointer;">History</h2></span></a>
         </div>
-        <ul class="nav nav-tabs" style="margin-block-start: 1em;padding-inline-start: 40px;position: absolute;padding-top: 32px;">
+        <ul class="nav" style="margin-block-start: 1em;padding-inline-start: 40px;position: absolute;padding-top: 32px;">
             <li class="active" style="margin-right: 20px;">
                 <a data-toggle="tab" href="#" style="cursor:pointer;text-decoration:none;">
                     <span style="color:black;">All</span>
@@ -140,7 +140,7 @@
                                 <h2 class="modal-title" style="float:left;">Export Excel attendance record</h2>
                             </div>
                             <div class="modal-body">
-                                <form>
+                                <form id="mytable">
                                     <div class="form-group">
                                         <label style="float:left;">Time</label>
                                         <input class="form-control">
@@ -149,7 +149,7 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal" style="border: none;border-radius: 17px;margin-right: 10px;padding-left: 20px;padding-right: 20px;">Close</button>
-                                <button type="submit" class="nutchamcong2" style="border:none;padding-left: 20px;padding-right: 20px;"><a href="../Dashboard/File.aspx" style="color:white;text-decoration:none;">Download the Excel file</a></button>
+                                <button type="submit" class="nutchamcong2" style="border:none;padding-left: 20px;padding-right: 20px;"><a href="#" id="btnExport" style="color:white;text-decoration:none;">Download the Excel file</a></button>
                             </div>
                         </div>
 
@@ -170,9 +170,9 @@
             </div>
         </div>
         <br>
-    </div>
-    <div>
-        <div style="margin:10px 0;">
+
+        <div>
+        <%--<div style="margin:10px 0;">
             <div style="margin:0;">
                 <div style="width: 25%;float:left;">
                     <div style="cursor: pointer;font-size: 40px;text-align:center;">
@@ -200,7 +200,7 @@
                 </div>
             </div>
             <div style="border-top-style: dotted;clear: both;color: #eee;"></div>
-        </div>
+        </div>--%>
         <div>
             <div class="table-responsive">
                 <table class="table table-hover" style="width:100%; color:grey;margin-top: 20px;">
@@ -219,20 +219,20 @@
                     <tbody>
                         <tr>
                             <td></td>
-                            <td>fdfd</td>
-                            <td>fdf</td>
-                            <td>dfdf</td>
-                            <td>dfd</td>
+                            <td>Employees 1</td>
+                            <td>Secretary</td>
+                            <td>Department 1</td>
+                            <td>Office 1</td>
                             <td>-</td>
                             <td>0</td>
                             <td>0</td>
                         </tr>
                         <tr>
                             <td>1</td>
-                            <td>fdfd</td>
-                            <td>fdf</td>
-                            <td>dfdf</td>
-                            <td>dfd</td>
+                            <td>Employees 2</td>
+                            <td>Cashier</td>
+                            <td>Department 2</td>
+                            <td>Office 2</td>
                             <td>-</td>
                             <td>0</td>
                             <td>0</td>
@@ -243,5 +243,14 @@
         </div>
     </div>
 
+    </div>
+    
+    <script>
+        $("#btnExport").click(function(e) {
+    window.open('data:application/vnd.ms-excel,' + 
+                '<table>' + $('#mytable > table').html() + '</table>');
+    e.preventDefault();
+});
+    </script>
 </asp:Content>
 

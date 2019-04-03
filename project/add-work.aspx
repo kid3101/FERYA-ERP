@@ -9,40 +9,15 @@
     <script src="../dist/fastselect.min.js"></script>
     <script src="../dist/fastselect.standalone.js"></script>
     <script src="../dist/fastselect.standalone.min.js"></script>
-<style>
-    .fstChoiceItem {
-    display: inline-block;
-    font-size: 15px;
-    position: relative;
-    margin: 0 .41667em .41667em 0;
-    padding: .33333em .33333em .33333em 1.5em;
-    float: left;
-    border-radius: .25em;
-    border: 1px solid #43A2F3;
-    cursor: auto;
-    color: #fff;
-    background-color: #43A2F3;
-    -webkit-animation: fstAnimationEnter 0.2s;
-    -moz-animation: fstAnimationEnter 0.2s;
-    animation: fstAnimationEnter 0.2s;
-}
-.fstMultipleMode .fstControls {
-    box-sizing: border-box;
-    padding: 0.5em 0.5em 0em 0.5em;
-    overflow: hidden;
-    width: 50em;
-    cursor: text;
-    border: 1px solid #d1d3e2;
-    border-radius: .35rem;
-    height: 60px;
-}
-</style>
+    <link href="../css/css-project/add-work.css" rel="stylesheet" />
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
 
     <div class="container-fluid">
         <!-- Page Heading -->
-        <h1 class="h3 mb-4 text-gray-800">Add Work</h1>
+        <div style="display:flex;">
+            <h1 class="h3 mb-4 text-gray-800">System Architect > Add Work</h1></div>
         <div style="float: right">
          <%--   <a href="#" data-toggle="modal" data-target="#myModal" style="color: black;"><i class="fas fa-cog"></i><span>Setting</span></a>
             <a href="#" style="color: black"><i class="far fa-edit"></i><span>Manager Post</span></a>--%>

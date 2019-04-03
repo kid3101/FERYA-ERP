@@ -5,16 +5,12 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-    <div class="heading">
-            <div class="container">
-                <h3 class="title">Employee grading history</h3>
-                <ul class="nav nav-tabs" style="display:block; list-style-type:disc; ">
-                    <a data-toggle="tab" href="#" style="cursor:pointer;">
-                        <span style="color:black;">Add new</span>
-                    </a>
-                </ul>
-            </div>
-        </div>
+    <div class="container-fluid">     
+            <h1 class ="h3 mb-4 text-gray-800">Employee grading history
+                <span> > </span>
+                Add new
+            </h1>
+    </div>
     <div class="segment">
             <form class="ui form">
                 <div class="fields" style="margin-top:10px;display:flex">
@@ -58,7 +54,7 @@
                                     </thead>
                                     <tfoot>
                                     <tr>
-                                        <td>1. sas</td>
+                                        <td>1. bye</td>
                             <td>
                                 <select  style="width:200px;">
                                     <option value="" disabled selected>-----</option>
@@ -93,17 +89,18 @@
                         </div>
                     </div>
                 </div>
-        <div style="background-color:#eee;width:100%;height:80px;">
-            <div class="col-sm-4 sidenav" style="margin-top:20px;">
-                <span>*: Obligatory</span>
-            </div>
 
-            <div class="col-sm-8" style="text-align:center;">
-                <div style="margin-top:-13px;">
-                    <a href="list-point-employee.aspx" class="addnew" style="width: 30%;border: none;"> MORE</a>
+                <div >
+                    <div class="col-sm-4 sidenav" style="margin-top:20px;">
+                        <span>*: Obligatory</span>
+                    </div>
+
+                    <div class="col-sm-8" >
+                        <div  style="margin: -15px 30px 22px 280px;">
+                            <a href="list-point-employee.aspx" class="btn btn-info"> Add</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
             </form>
         </div>
     <script>

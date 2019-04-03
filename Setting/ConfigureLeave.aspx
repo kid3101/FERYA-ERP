@@ -45,10 +45,8 @@
     <link href="../css/Setting/CofnigureLeave.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <div class="container-fluid" style="margin-top:-23px;width: 100%;height: 89px;background-color:#eee;">
-        <div style="line-height: 1;display: inline-block;margin-left: 40px;vertical-align: middle;">
-            <a class="abc tab-content" href="#" style="text-decoration:none;"><span><h2 style="cursor:pointer;">Install personnel <span><i style="padding-left: 20px;color: black;padding-right: 20px;" class="fa fa-angle-right"></i></span><a href="#" style="color:black;text-decoration:none;">Configure leave</a></h2></span></a>
-        </div>
+    <div class="container-fluid">
+       <h1 class="h3 mb-4 text-gray-800">Setting > Configure leave</h1>
 
         <div class="container-fluid" style="margin-top: -34px;margin-left: 791px;">
 
@@ -106,7 +104,7 @@
                 </form>
             </div>
         </div>
-        <div style="background-color:#eee;width:100%;height:80px;margin-top: -3px;">
+        <div>
             <div class="col-sm-4" style="text-align:center;">
                 <div style="margin-top:25px;">
                     <button class="nutchamcong" style="width: 30%;border: none;margin-left: 300px;margin-top: 20px;"> SAVE</button>

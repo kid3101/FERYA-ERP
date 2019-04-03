@@ -3,27 +3,28 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <link href="../css/Css-Blog/add-new-blog-css.css" rel="stylesheet" />
+    <link href="../css/Css-Blog/add-new-blog-for-manager-css.css" rel="stylesheet" />
+
     <div class="container-fluid">
     <div class="header-blog">
-            <div class="col-sm-7">
-                  <a class="title-blog" href="manager-blog.aspx">Manager</a>
-              </div>
+            <div class="col-sm-7" id ="divheader">
+             <h1 class="h3 mb-4 text-gray-800">Manager > Add new</h1>
+             </div>
          </div>
     <div class="body-add">
-             <div class="col-sm-9" style="margin-top:20px;">
+             <div class="col-sm-9" id="divcontent">
                 <div class="container">
                     <form class="form-horizontal" role="form">
                         <div class="form-group">
                             <label for="title" class="col-sm-3 control-label">Title<i style="color:red">*</i></label>
                             <div class="col-sm-9">
-                                <input type="text" id="title" placeholder="Title blog" class="form-control" autofocus style="border-radius:10px;">
+                                <input type="text" id="title" placeholder="Title blog" class="form-control" autofocus>
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="birthDate" class="col-sm-3 control-label">Status</label>
                             <div class="col-sm-9">
-                                <select style="width:100%;height:35px;border-radius:10px;">
+                                <select class="slt-status">
                                     <option>Active</option>
                                     <option>Non-Active</option>
                                 </select>
@@ -66,7 +67,7 @@
                             </div>
                         </div>
                         <div class="addnewblog">
-                        <a href="list-blog-for-manager.aspx"><button type="submit" class="btn btn-primary btn-block" style="width: 120px;margin-left:180px;margin-bottom:10px;border-radius:15px;">Add New</button></a>
+                        <a href="list-blog-for-manager.aspx"><button type="submit" class="btn btn-info">Add New</button></a>
                     </div>
                             </form> <!-- /form -->
                 </div>

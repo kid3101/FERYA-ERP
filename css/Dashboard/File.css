@@ -136,6 +136,7 @@ h3 a {
     .ls:hover {
         color: black;
         cursor: pointer;
+        text-decoration: none;
     }
 
 .nut2 {
@@ -176,3 +177,55 @@ h3 a {
         color: #ff6a00;
         cursor: pointer;
     }
+.tong {
+    margin-bottom: -11px;
+    margin-top: -20px;
+}
+.tong2 {
+    font-size: 20px;
+    margin-top: 24px;
+    float: right;
+}
+.createe {
+    margin-right: 25px;
+}
+.kc {
+    float: left;
+}
+.closee {
+    border: none;
+    border-radius: 17px;
+    margin-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.creatt {
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.creatt2 {
+    color: white;
+    text-decoration: none;
+}
+    .creatt2:hover {
+        color: white;
+        text-decoration: none;
+    }
+.upfiless {
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.tablee {
+    width: 100%;
+    color: grey;
+    margin-top: 20px;
+}
+.textname {
+    text-transform: uppercase;
+}
+.iconn {
+    color: grey;
+    margin-right: 20px;
+}

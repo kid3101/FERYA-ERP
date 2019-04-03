@@ -218,6 +218,7 @@ ul {
 
 .closee {
     margin: 6px;
+    color:white;
 }
 
     .closee:hover {
@@ -249,3 +250,155 @@ th, td {
         right: 25px;
         font-size: 36px;
     }
+.Shift {
+    background-color: #d726ba;
+    border-color: #d726ba;
+    background-position: -5px 0;
+    border-radius: 2px;
+    text-align: center;
+    height: 30px;
+    padding: 3px;
+    margin: 3px 3px 0;
+    overflow: hidden;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    border-width: 3px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-repeat: initial;
+    border-style: solid;
+}
+.tong {
+    border-right-style: inset;
+}
+.hh {
+    color: #777;
+}
+.an {
+    float: right;
+}
+.divv {
+    height: 585px;
+    overflow: hidden;
+    outline: none;
+    display: block;
+}
+.divv2 {
+    margin-bottom: 15px;
+}
+.office {
+    color: #777;
+}
+.all {
+    color: black;
+    cursor: pointer;
+}
+.history {
+    font-size: 20px;
+    margin: 6px;
+    color: black;
+    text-decoration: none;
+}
+    .history:hover {
+        color: black;
+        text-decoration: none;
+    }
+.tong2 {
+    padding: 20px;
+    min-height: 625px;
+    height: 550px;
+}
+.tongg {
+    font-size: 28px;
+    float: left;
+}
+.ben {
+    float: right;
+}
+.ben2 {
+    float: left;
+}
+.but {
+    border: none;
+    background: #E0E1E2;
+    color: rgba(0,0,0,.6);
+    margin-right: -8px;
+    width: 42px;
+    height: 28px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.m {
+    float: right;
+    margin-left: 8px;
+}
+.tb {
+    width: 100%;
+}
+.tablee {
+    margin-top: 20px;
+    margin-bottom: 0;
+    background-color: #E0E1E2;
+    color: rgba(0,0,0,.87);
+    overflow: scroll;
+
+}
+.datee {
+    color: #666;
+    text-align: center;
+}
+.Shift2 {
+    text-align: center;
+}
+.rong {
+    height: 360px;
+}
+.tablee2 {
+    margin-top: 20px;
+    margin-bottom: 0;
+    background-color: #E0E1E2;
+    color: rgba(0,0,0,.87);
+}
+.work {
+    text-decoration: none;
+    color: white;
+}
+    .work:hover {
+        text-decoration: none;
+        color: white;
+    }
+.ha {
+    border-radius: 20px;
+}
+.ab {
+    border: none;
+    background: #E0E1E2;
+    color: rgba(0,0,0,.6);
+    margin-right: -8px;
+    width: 42px;
+    height: 28px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.ab2 {
+    border: none;
+    background: #E0E1E2;
+    color: rgba(0,0,0,.6);
+    width: 42px;
+    height: 28px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.but2 {
+    border: none;
+    border-radius: 17px;
+    margin-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.but3 {
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
