@@ -51,7 +51,7 @@
             <div class="zerodataimage"><img src="/imgs/zerodata/info.png"></div>
             <h3>Blog is empty</h3>
             <p>Please add new blog</p>
-            <div class="zerodatabutton"><a href="add-new-blog.aspx" class="btn btn-facebook">Add New</a></div>
+            <div class="zerodatabutton"><a href="add-new-blog.aspx" class="btn btn-info">Add New</a></div>
         </div>
     </div>
         </div>
