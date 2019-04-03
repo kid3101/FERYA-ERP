@@ -52,7 +52,7 @@
                 <div class="col-sm-10">
                     <div class="tong2">
                         <a class="ls" data-toggle="modal" data-target="#myModal" ><span class="createe"><i class="fa fa-folder"></i> Create folder</span></a>
-                        <a class="ls" data-toggle="modal" data-target="#myModal2" ><span><i class="fa fa-cloud-upload"></i> Upload the file</span></a>
+                        <a class="ls" data-toggle="modal" data-target="#myModal2" ><span><i class="fas fa-cloud-upload-alt"></i> Upload the file</span></a>
 
                     </div>
                 </div>
@@ -116,16 +116,16 @@
                 </div>
         </div>
     </div>
-    <div class="table-responsive">
-        <table class="table table-hover tablee" >
+    <div class="table-responsive" style="margin-top:40px;">
+        <table class="table table-bordered tablee" >
             <thead>
                 <tr>
-                    <th class="textname">NAME</th>
-                    <th rowspan="2">TYPE</th>
-                    <th>SIZE</th>
-                    <th> DATE CREATED</th>
-                    <th>MADE BY</th>
-                    <th></th>
+                    <th>Name</th>
+                    <th rowspan="2">Type</th>
+                    <th>Size</th>
+                    <th> Date Created</th>
+                    <th>Made By</th>
+                    <th>Action</th>
                 </tr>
             </thead>
             <tbody>
@@ -135,10 +135,10 @@
                     <td>2 Kb</td>
                     <td>16:23, 23/02/2019</td>
                     <td>Jonh</td>
-                    <td style="float: right;">
-                        <a href="#" class="iconn" title="See directory contents"><i class="fa fa-search"></i></a>
-                        <a href="#" class="iconn" data-toggle="modal" data-target="#myModal3" title="Edit content"><i class="fa fa-cog"></i></a>
-                        <a href="#" class="iconn" title="Delete this folder"><i class="fa fa-trash"></i></a>
+                    <td>
+                        <a href="#" title="See directory contents" style="margin-right:20px;color:grey;"><i class="fa fa-search" style="color:grey;"></i></a>
+                        <a data-toggle="modal" data-target="#myModal3" title="Edit content" style="margin-right:20px;"><i class="fa fa-cog" style="color:grey;"></i></a>
+                        <button type="button" style="border:none;background-color:floralwhite" onclick="del()"><i class="fas fa-trash-alt" style="color:red"></i></button>
                         <!-- Modal -->
                         <div class="modal fade" id="myModal3" role="dialog">
                             <div class="modal-dialog">
@@ -153,11 +153,11 @@
                                         <form>
                                             <div class="form-group">
                                                 <label class="kc">Folder name</label>
-                                                <input class="form-control">
+                                                <input class="form-control" value="Demo">
                                             </div>
                                             <div class="form-group">
                                                 <label class="kc">Describe</label>
-                                                <input class="form-control">
+                                                <input class="form-control" value="Text Demo">
                                             </div>
 
                                         </form>
@@ -215,6 +215,11 @@
             });
         }(document, window, 0));
 
+    </script>
+    <script>
+        function del(){
+            alert("Are You Sure?");
+        }
     </script>
 </asp:Content>
 
