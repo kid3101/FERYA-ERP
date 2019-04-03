@@ -46,7 +46,7 @@
 
     <link href="../css/Attendance/TimeKeeping.css" rel="stylesheet" />
     <script src="../dist/webcam.js"></script>
-    <script src="../dist/webcam.min.js"></script>
+    
     <style type="text/css">
 		body { font-family: Helvetica, sans-serif; }
 		h2, h3 { margin-top:0; }

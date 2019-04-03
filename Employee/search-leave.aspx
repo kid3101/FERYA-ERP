@@ -127,11 +127,11 @@
                         <th>
                             <a class="sortable" style="text-decoration:none; cursor: pointer; color:black;">SID</a>
                         </th>
-                        <th class="clo">NHÂN VIÊN</th>	
-                        <th class="clo">LÝ DO	</th>
-                        <th class="clo">THỜI GIAN	</th>
-                        <th class="clo">TRẠNG THÁI	</th>
-                        <th class="clo">NGÀY TẠO</th>
+                        <th class="clo">EMPLOYEES
+                        <th class="clo">REASON</th>
+                        <th class="clo">TIME</th>
+                        <th class="clo">STATUS</th>
+                        <th class="clo">DATE CREATED</th>
                         <th></th>
                     </tr>
                 </thead>

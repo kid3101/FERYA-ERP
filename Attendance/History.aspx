@@ -50,13 +50,13 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
      <div class="container-fluid">
         <h1 class="h3 mb-4 text-gray-800">History</h1>
-        <ul class="nav ull">
-            <%--<li class="active lii" >
+        <%--<ul class="nav ull">
+            <li class="active lii" >
                 <a data-toggle="tab" href="#" class="lt">
                     <span class="mau">All</span>
                     <span class="number">0</span>
                 </a>
-            </li>--%>
+            </li>
             <li class="dropdown">
                 <button class="dropdown-toggle aa" data-toggle="dropdown"  title="Turn on / off the search function">Filter & search ...</button>
                 <ul class="dropdown-menu filterbarfull filterbar ul2" >
@@ -128,7 +128,7 @@
 
                 </ul>
             </li>
-        </ul>
+        </ul>--%>
         <div class="container-fluid tongg" >
             <div class="container kk" >
 
@@ -166,21 +166,21 @@
 
          <div class="table-responsive">
         <div>
-            <table class="table table-hover tablee" >
+            <table class="table table-bordered tablee" >
                 <thead>
                     <tr>
-                        <th class="mg">SID</th>
-                        <th rowspan="2">DATE</th>
-                        <th>HEADQUARTERS</th>
-                        <th>SHIFT</th>
+                        <th class="mg">Sid</th>
+                        <th rowspan="2">Date</th>
+                        <th>Headquaters</th>
+                        <th>Shift</th>
+                        <th>Time</th>
                         <th>TIME</th>
-                        <th>TIME</th>
-                        <th>COEFFICIENT</th>
-                        <th>OT</th>
-                        <th>ON LATE (CP)</th>
-                        <th>EARLY OUT (CP)</th>
-                        <th>STATUS</th>
-                        <th>CONFIRMER</th>
+                        <th>Coefficient</th>
+                        <th>Ot</th>
+                        <th>On Late (CP)</th>
+                        <th>Early Out (CP)</th>
+                        <th>Status</th>
+                        <th>Confirmer</th>
                     </tr>
                 </thead>
                 <tbody>

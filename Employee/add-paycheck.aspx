@@ -39,15 +39,9 @@
                             </label>
                             <select class="form-control">
                                 <option>-----</option>
-                                <option >
-                                    Pay once
-                                </option>
-                                <option>
-                                    Pay by day
-                                </option>
-                                <option>
-                                    Pay by month
-                                </option>
+                                <option > Pay once</option>
+                                <option> Pay by day</option>
+                                <option>Pay by month</option>
                                 <option>Pay by year</option>
                             </select>
                         </div>

@@ -51,10 +51,10 @@
         
        <ul class="nav" style=" margin-block-start: 1em;padding-inline-start: 40px;margin-top: 48px;">
             <li class="active " style="margin-right: 20px;">
-                <a data-toggle="tab" href="#" style="cursor:pointer;">
+                <%--<a data-toggle="tab" href="#" style="cursor:pointer;">
                     <span style="color:black;">All</span>
                     <span class="number">0</span>
-                </a>
+                </a>--%>
             </li>
 
         </ul>
@@ -82,10 +82,10 @@
                                             <input class="form-control">
                                         </div>
                                         <div class="form-group">
-                                            <label>Departmental</label>
+                                            <label>Office</label>
                                             <select style="display:block;height:35px;width:100%;">
-                                                <option>Departmental 1</option>
-                                                <option>Departmental 2</option>
+                                                <option>Office 1</option>
+                                                <option>Office 2</option>
                                             </select>
                                         </div>
 
@@ -108,6 +108,60 @@
 
         </div>
         <br>
+        <div style="text-align:center;">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Department name</th>
+                        <th>Office name</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Department 1</td>
+                        <td>Office 1</td>
+                        <td data-toggle="modal" data-target="#myModal2"><i class="fa fa-pen"></i></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- Modal -->
+    <div class="modal fade" id="myModal2" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    
+                    <h2 class="modal-title" style="float:left;">Update departments</h2>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label style="float:left;">Name</label>
+                            <span style="color:red;">*</span>
+                            <input class="form-control" value="Department 1">
+                        </div>
+                        <div class="form-group">
+                            <label>Office</label>
+                            <select style="display:block;height:35px;width:100%;">
+                                <option>Office 1</option>
+                                <option>Office 2</option>
+                            </select>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" style="color:red;float: left;text-decoration:none;">Delete this department</a>
+                    <button type="button" class="btn btn-default" data-dismiss="modal" style="border: none;border-radius: 17px;margin-right: 10px;padding-left: 20px;padding-right: 20px;">Close</button>
+                    <button type="submit" class="btn btn-facebook" style="border:none;padding-left: 20px;padding-right: 20px;"><a href="Derpartment.aspx" style="color:white;text-decoration:none;">Update</a></button>
+                </div>
+            </div>
+
+        </div>
+    </div>
     </div>
 
 </asp:Content>

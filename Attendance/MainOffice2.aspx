@@ -53,7 +53,7 @@
 
             <div class="col-sm-8">
                 <div>
-                    <h1 style="padding-top:40px;text-align:center;">
+                    <h1 class="h3 mb-4 text-gray-800">
                         Office 1
                         >
                         <span style="text-transform: capitalize;"> Employees 1 </span>
