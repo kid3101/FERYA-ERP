@@ -644,32 +644,45 @@
                 <thead>
                     <tr>
                         <th style="color:black;">Sid</th>
-                        <th rowspan="2">Name</th>
+                        <th rowspan="2">Office Name</th>
+                        <th>Company Name</th>
                         <th>Address</th>
                         <th>Working Time</th>
-                        <th>Public People</th>
+                        <%--<th>Public People</th>--%>
                        <%-- <th>Ip Attenđe</th>--%>
-                        <th>Creator</th>
+                        <th>Telephone</th>
                         <th>Date Created <i class="fa fa-info-circle" style="cursor:pointer;" title="Your current IP is 15.169.34.171"></i></th>
                         <th>Action</th>
                         
                     </tr>
                 </thead>
                 <tbody>
+                    <%for (int i = listOffice.Count - 1; i > -1; i--)
+                    {%>
                     <tr>
-                        <td>1</td>
+                        <%--<td>1</td>
                         <td>Ofice 1</td>
                         <td>37 Hoa Sứ</td>
                         <td>9:00 - 17:30</td>
-                        <td>Jonh</td>
+                        <td>Jonh</td>--%>
                         <%--<td>14.169.31.164</td>--%>
-                        <td>Jonh</td>
-                        <td>05:00, 26/03</td>
+                        <%--<td>Jonh</td>
+                        <td>05:00, 26/03</td>--%>
+                        <td><%=listOffice[i].OfficeId %></td>
+                        <td><%=listOffice[i].OfficeName%></td>
+                        <td><%=listOffice[i].Company.CompanyName%></td>
+                        <td><%=listOffice[i].OfficeAddress%></td>
+                        <td></td>
+                        <td><%=listOffice[i].Phone%></td>
+                        <td><%=listOffice[i].CreatedDate%></td>
+                        
+
                         <td>
                             <a href="#"  data-toggle="modal" data-target="#myModal7" style="margin-right: 20px;text-decoration:none;"><i style="width: 25px" class="fas fa-pen"></i></a>
                          
                             <button type="button" style="border:none;background-color:floralwhite" onclick="del()"><i class="fas fa-trash-alt" style="color:red"></i></button>
                         </td>
+                         <%}%>
                     </tr>
                 </tbody>
             </table>

@@ -7,8 +7,10 @@ using System.Web.UI.WebControls;
 
 public partial class Setting_Office : System.Web.UI.Page
 {
+    public List<Office> listOffice;
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        OfficeManager om = new OfficeManager();
+        listOffice = om.GetOffice();
     }
 }
