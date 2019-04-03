@@ -198,9 +198,14 @@ h3 a {
     padding-left: 20px;
     padding-right: 20px;
 }
+.nut3:hover{
+    color:white;
+    text-decoration:none;
+}
 .nut4{
     color:white;
 }
 .nut4:hover{
+    color:white;
     text-decoration:none;
 }

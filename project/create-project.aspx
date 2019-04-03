@@ -24,15 +24,15 @@
             </div>
             <div class="col-sm-4">
                 <br>
-                <label>Name</label>
+                <label>Name <i style="color:red">*</i></label>
                 <div>
                     <input class="form-control" type="text">
                     <br>
                 </div>
 
-                <label>Position</label>
+                <label>Describe</label>
                 <div>
-                    <input style="height: 60px" class="form-control" type="text">
+                    <textarea class="form-control" ></textarea>
                 </div>
                 <br />
                 <div class="col-sm" style="display: flex;margin-left:-22px;">
@@ -86,7 +86,7 @@
                 <br /><br />
                 <br />
                 <br /><br />
-                <div>Assign employees to the project</div>
+                <div>Assign employees to the project <i style="color:red">*</i></div>
             </div>
 
             <div class="col-sm-6">
@@ -103,7 +103,7 @@
                 </div>
             </div>
             <div class="col-sm-3">
-                <div class="flew" style=" margin-top:43px">
+                <div class="flew" style=" margin-top:31px">
                     <label class="switch">
                         <input type="checkbox" checked>
                         <span class="slider round"></span>
@@ -114,8 +114,6 @@
                 </div>
             </div>
         </div>
-
-
         <div class="row">
 
             <div class="col-sm-3">
@@ -134,19 +132,17 @@
                 </div>
             </div>
             <div class="col-sm-3">
-                <div class="flew" style=" margin-top:43px" >
+                <div class="flew" style=" margin-top:31px" >
                     <label class="switch">
                         <input type="checkbox" checked>
                         <span class="slider round"></span>
-
                     </label>
-
                     <span>Can create work</span>
                 </div>
             </div>
         </div>
         <hr />
-        <span>*:Obligatory
+        <span><i style="color:red">*</i>:Obligatory
         </span>
         <button type="button" onclick="createproject()" class="btn btn-info">Create new Project</button>
 

@@ -47,7 +47,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <div class="container-fluid">
         <h1 class="h3 mb-4 text-gray-800">Setting > Group of employees</h1>
-        <ul class="nav" style="margin-block-start: 1em;padding-inline-start: 40px;position: absolute;padding-top: 32px;">
+        <%--<ul class="nav" style="margin-block-start: 1em;padding-inline-start: 40px;position: absolute;padding-top: 32px;">
             <li class="active" style="margin-right: 20px;">
                 <a data-toggle="tab" href="#" style="cursor:pointer;">
                     <span style="color:black;">All</span>
@@ -118,7 +118,7 @@
 
                 </ul>
             </li>
-        </ul>
+        </ul>--%>
           <div class="container-fluid" style="margin-top: -34px;margin-left: 522px;">
             <div class="container" style="float:left;display: inline-flex;padding-left: 264px;">
                 <a href="AddNewGroup.aspx" class="btn btn-info" data-toggle="tooltip" title="Create group of employees" style="color:white;"><i class="fa fa-plus"></i> CREATE ANY WORKING GROUP</a>
@@ -138,18 +138,18 @@
         </div>
         <br>
         <div class="table-responsive">
-        <table style="width: 98%;margin-left: 20px;margin-top: 25px;" class="table table-hover">
+        <table style="width: 98%;margin-left: 20px;margin-top: 25px;" class="table table-bordered">
             <thead>
                 <tr>
-                    <th>SID</th>
-                    <th rowspan="2">COLOR</th>
-                    <th>NAME</th>
-                    <th>CODE</th>
-                    <th>DESCRIBE</th>
-                    <th>NUMBER OF EMPLOYEES</th>
-                    <th>CREATOR</th>
-                    <th>DATE CREATED</th>
-                    <th></th>
+                    <th>Sid</th>
+                    <th rowspan="2">Color</th>
+                    <th>Name</th>
+                    <th>Code</th>
+                    <th>Describe</th>
+                    <th>Number Of Employees</th>
+                    <th>Creator</th>
+                    <th>Date Created</th>
+                    <th>Action</th>
                 </tr>
             </thead>
             <tbody>
@@ -166,9 +166,9 @@
                     <td>50</td>
                     <td>Jonh</td>
                     <td>21:10, To day</td>
-                    <td style="float:right;">
-                        <a href="#" title="Click here to update data" style="text-transform:uppercase;text-decoration:none;">Employee synchronization</a>
-                        <a href="EditGroup.aspx" title="Click here to update data" style="text-decoration:none;margin-left:20px;text-transform:uppercase;">Edit</a>
+                    <td>
+                        <a href="#" title="Click here to update data" style="text-transform:uppercase;text-decoration:none;"><i class="fas fa-sync-alt"></i></a>
+                        <a href="EditGroup.aspx" title="Click here to update data" style="text-decoration:none;margin-left:20px;text-transform:uppercase;"><i class="fa fa-pen"></i></a>
                     </td>
                 </tr>
                 <tr>
@@ -184,9 +184,9 @@
                     <td>20</td>
                     <td>Anna</td>
                     <td>12:10, 20/03/2019</td>
-                    <td style="float:right;">
-                        <a href="#" title="Click here to update data" style="text-transform:uppercase;text-decoration:none;">Employee synchronization</a>
-                        <a href="EditGroup.aspx" title="Click here to update data" style="text-decoration:none;margin-left:20px;text-transform:uppercase;">Edit</a>
+                    <td>
+                        <a href="#" title="Click here to update data" style="text-transform:uppercase;text-decoration:none;"><i class="fas fa-sync-alt"></i></a>
+                        <a href="EditGroup.aspx" title="Click here to update data" style="text-decoration:none;margin-left:20px;text-transform:uppercase;"><i class="fa fa-pen"></i></a>
                     </td>
                 </tr>
             </tbody>

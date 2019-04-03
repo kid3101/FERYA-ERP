@@ -48,15 +48,15 @@
     <div class="container-fluid">
         <div style="margin-bottom: -11px;margin-top: -20px;">
             <br />
-            <h1 class="h3 mb-4 text-gray-800">History > Export Excel</h1>
+            <h1 class="h3 mb-4 text-gray-800">History > Export Excel > Details Export Excel</h1>
             <br>
         </div>
     </div>
     <div>
         <div class="row content">
-            <div class="col-sm-4 sidenav">
-                <div><h2>Export Excel</h2></div>
-                <div><h3>Details Export Excel</h3></div>
+            <div class="col-sm-2 sidenav">
+                
+                
 
             </div>
 
@@ -124,7 +124,7 @@
         </div>
         <div >
             <div class="col-sm-4 sidenav" style="margin-top:20px;">
-                <span>*: Obligatory</span>
+                
             </div>
 
             <div class="col-sm-8" style="text-align:center;">

@@ -225,3 +225,41 @@ h3 a {
         background-color: cornflowerblue;
         cursor: pointer;
     }
+.tong {
+    margin-top: -34px;
+    margin-left: 791px;
+    margin-top: -24px;
+}
+.kk {
+    float: left;
+}
+.divv {
+    margin-top: -52px;
+    margin-left: -168px;
+}
+.aa {
+    float: right;
+    text-decoration: none;
+}
+.aa:hover{
+    text-decoration:none;
+}
+.mmg {
+    color: white;
+    margin-left: 15px;
+}
+.r {
+    width: 1000px;
+}
+.div2 {
+    margin-bottom: -116px;
+    height: 300px;
+}
+.ld {
+    display: flex;
+    margin-bottom: 30px;
+}
+.inputt {
+    display: block;
+    height: 25px;
+}

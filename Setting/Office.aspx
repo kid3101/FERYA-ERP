@@ -94,7 +94,7 @@
             <div class="container" style="float:left;">
                 <div class="row">
                     <div class="col-sm-5 sidenav" style="margin-top: -52px;margin-left: -168px;">
-                        <a data-toggle="modal" data-target="#myModal" style="float:right;text-decoration:none;" class="btn btn-info" data-toggle="tooltip" href="#" title="Timekeeping" style="color:white;margin-left: 15px;"><i class="fa fa-plus-circle"></i> CREATE OFFICE</a>
+                        <a data-toggle="modal" data-target="#myModal" style="float:right;text-decoration:none;" class="btn btn-info" href="#" title="Create Office" style="color:white;margin-left: 15px;"><i class="fa fa-plus-circle"></i> CREATE OFFICE</a>
                     </div>
                     <!-- Modal -->
                     <div class="modal fade" id="myModal" role="dialog">
@@ -651,7 +651,7 @@
                        <%-- <th>Ip Attenđe</th>--%>
                         <th>Creator</th>
                         <th>Date Created <i class="fa fa-info-circle" style="cursor:pointer;" title="Your current IP is 15.169.34.171"></i></th>
-                        <th></th>
+                        <th>Action</th>
                         
                     </tr>
                 </thead>

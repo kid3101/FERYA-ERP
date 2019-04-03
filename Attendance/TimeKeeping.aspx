@@ -65,7 +65,9 @@
                 <div class="container tongg" >
                     <p class="textt">Enter the information to conduct the in-out attendance.</p>
                     <div id="my_camera" >
-                <video autoplay="autoplay" style="width: 320px;height: 240px;margin-top: -239px;margin-left: 2px;"></video>
+
+                <video autoplay="autoplay" style="width: 320px;height: 240px;"></video>
+                        <script src="../dist/webcam.js"></script>
             </div>
                 </div>
                 <div class="container tong2" >
@@ -84,11 +86,12 @@
                             <label for="comment">Note</label>
                             <textarea class="form-control" rows="5" id="comment"></textarea>
                         </div>
-                        <div>
-                            <div id="results">Your captured image will appear here...</div>
-                        </div>
+                        
                         <div>
                             <label>Webcam / camera snapshot</label>
+                        </div>
+                        <div>
+                            <div id="results">Your captured image will appear here...</div>
                         </div>
                     </div>
                     <div class="nuttt">
@@ -99,10 +102,7 @@
             <div class="aa">
                 <br />
                 <div class="container">
-                    <p class="sizee">
-                        <span>* : </span>
-                        <span>Obligatory</span>
-                    </p>
+                    
                 </div>
                 <div class="container nut2" >
                     <button class="nutchamcong nut3" ><a href="TimeAttendance.aspx" class="nut4">ATTENDANCE</a></button>
@@ -137,4 +137,5 @@
 		}
 	</script>
 </asp:Content>
+
 

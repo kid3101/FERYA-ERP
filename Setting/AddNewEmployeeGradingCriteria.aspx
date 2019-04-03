@@ -90,7 +90,7 @@
         </div>
         <div style="width:100%;height:80px;margin-top: -3px;display: flex;">
             <div class="col-sm-4 sidenav" style="margin-top:20px;">
-                <span>*: Obligatory</span>
+               
             </div>
 
             <div class="col-sm-4" style="text-align:center;">
