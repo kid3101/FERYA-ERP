@@ -563,7 +563,7 @@
                                                     <input type="text" />
                                                 </td>
                                                 <td>
-                                                    <button><i class="fas fa-trash-alt" style="color:red;"></i></button>
+                                                    <button type="button" style="border:none;background-color:floralwhite" onclick="del()"><i class="fas fa-trash-alt" style="color:red"></i></button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -576,7 +576,7 @@
                                                 <td>1.00</td>
                                                 <td>30 Minutes</td>
                                                 <td>
-                                                    <button><i class="fas fa-trash-alt" style="color:red;"></i></button>
+                                                    <button type="button" style="border:none;background-color:floralwhite" onclick="del()"><i class="fas fa-trash-alt" style="color:red"></i></button>
                                                 </td>
                                                 <td></td>
                                             </tr>
@@ -590,7 +590,7 @@
                                                 <td>1.00</td>
                                                 <td>30 Minutes</td>
                                                 <td>
-                                                    <button><i class="fas fa-trash-alt" style="color:red;"></i></button>
+                                                    <button type="button" style="border:none;background-color:floralwhite" onclick="del()"><i class="fas fa-trash-alt" style="color:red"></i></button>
                                                 </td>
                                                 <td></td>
                                             </tr>
@@ -668,7 +668,7 @@
                         <td>
                             <a href="#"  data-toggle="modal" data-target="#myModal7" style="margin-right: 20px;text-decoration:none;"><i style="width: 25px" class="fas fa-pen"></i></a>
                          
-                            <a class="as" href="#" style="text-decoration:none;"><i style="width: 25px;color:red;" class="fas fa-trash-alt"></i></a>
+                            <button type="button" style="border:none;background-color:floralwhite" onclick="del()"><i class="fas fa-trash-alt" style="color:red"></i></button>
                         </td>
                     </tr>
                 </tbody>
@@ -1164,7 +1164,7 @@
                                                     <input type="text" />
                                                 </td>
                                                 <td>
-                                                    <button><i class="fas fa-trash-alt" style="color:red;"></i></button>
+                                                    <button type="button" style="border:none;background-color:floralwhite" onclick="del()"><i class="fas fa-trash-alt" style="color:red"></i></button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -1177,7 +1177,7 @@
                                                 <td>1.00</td>
                                                 <td>30 Minutes</td>
                                                 <td>
-                                                    <button><i class="fas fa-trash-alt" style="color:red;"></i></button>
+                                                    <button type="button" style="border:none;background-color:floralwhite" onclick="del()"><i class="fas fa-trash-alt" style="color:red"></i></button>
 
                                                 </td>
                                                 <td></td>
@@ -1192,7 +1192,7 @@
                                                 <td>1.00</td>
                                                 <td>30 Minutes</td>
                                                 <td>
-                                                    <button><i class="fas fa-trash-alt" style="color:red;"></i></button>
+                                                    <button type="button" style="border:none;background-color:floralwhite" onclick="del()"><i class="fas fa-trash-alt" style="color:red"></i></button>
 
                                                 </td>
                                                 <td></td>
@@ -1220,5 +1220,10 @@
 
                 </div>
             </div>
+    <script>
+        function del(){
+            alert("Are You Sure?");
+        }
+    </script>
 </asp:Content>
 
