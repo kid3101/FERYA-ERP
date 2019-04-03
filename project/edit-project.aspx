@@ -104,7 +104,7 @@
                 </div>
             </div>
             <div class="col-sm-3">
-                <div class="flew" style=" margin-top:43px">
+                <div class="flew" style=" margin-top:31px">
                     <label class="switch">
                         <input type="checkbox" checked>
                         <span class="slider round"></span>
@@ -135,7 +135,7 @@
                 </div>
             </div>
             <div class="col-sm-3">
-                <div class="flew" style=" margin-top:43px" >
+                <div class="flew" style=" margin-top:31px" >
                     <label class="switch">
                         <input type="checkbox" checked>
                         <span class="slider round"></span>

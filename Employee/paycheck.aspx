@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="paycheck.aspx.cs" Inherits="Employee_paycheck" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
-     <link href="../css/Attendance/History.css" rel="stylesheet" />
+     <link href="../css/employee.css/employee.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
@@ -36,7 +36,7 @@
                 <a class="btn btn-info"  href="add-paycheck.aspx" title="For management" style="color:white;margin-left: 450px;padding-left: 20px;padding-right: 20px;text-decoration:none;" >  <i class="fa fa-cog"></i>  FOR MANAGEMENT</a>
             </div>
             <div class="container" style="display: inline-flex;padding-left: 500px; padding-top: 20px;">
-                <a href="#" style="height: 20px;width: 20px;color: #555;"><i class="fa fa-chevron-left"></i></a>
+                <a href="#" class="chevron-left"><i class="fa fa-chevron-left"></i></a>
                 <div style="margin-right: 6px;">
                     <a href="#" style="color:#555;text-decoration:none;">
                         <span>Page</span>
@@ -45,7 +45,7 @@
                         <span>0</span>
                     </a>
                 </div>
-                <a href="#" style="height: 48px;width: 48px;color: #555;"><i class="fa fa-chevron-right"></i></a>
+                <a href="#" class="chevron-right"><i class="fa fa-chevron-right"></i></a>
             </div>
         </div>
         <br>

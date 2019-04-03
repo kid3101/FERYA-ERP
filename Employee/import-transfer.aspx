@@ -1,7 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="import-transfer.aspx.cs" Inherits="Employee_import_transfer" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
-    <link href="../css/Attendance/History.css" rel="stylesheet" />
     <link href="../css/employee.css/import-list.css" rel="stylesheet" />
     <link href="../css/employee.css/addemployee.css" rel="stylesheet" />
     <link href="../css/employee.css/import-transfer.css" rel="stylesheet" />

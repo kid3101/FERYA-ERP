@@ -6,7 +6,7 @@
 
     
     <div class="container-fluid">
-        <h1 class="h3 mb-4 text-gray-800">Create Verion</h1>
+        <h1 class="h3 mb-4 text-gray-800">Create Version</h1>
         <div class="row">
             <div class="col-sm-3">
                 <div>
@@ -55,7 +55,7 @@
                     </div>
                 </div>
                 <br />
-  <button type="button"class="btn btn-info" onclick="createversion()">Create Vision</button>
+  <button type="button"class="btn btn-info" onclick="createversion()">Create Version</button>
             </div>         
         </div>
     </div>

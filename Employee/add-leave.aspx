@@ -3,6 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <link href="../css/employee.css/add-point-employee.css" rel="stylesheet" />
     <link href="../css/employee.css/add-leave.css" rel="stylesheet" />
+    <link href="../css/employee.css/addemployee.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
@@ -24,15 +25,13 @@
                         <div class="col-sm-8">
                             <label>Time<span class="star-sign">*</span></label>
                             <input class="form-control" type="date" />
-
-
                         </div>
                         <div class="col-sm-8">
                             <label>
                                 Contact phone
                             </label>
                             <br />
-                            <input class="form-control" type="number"   />
+                            <input class="form-control" type="text"   />
                         </div>
                         <div class="col-sm-10" id="col-10">
                             <div>
@@ -80,21 +79,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="bottom" >
-                    <div >
-                        <p class="requirebox">
-                            <span>* : </span>
-                            <span>
-                                Obligatory
-                            </span>
-                        </p>
-                    </div>
-                    <div class="add">
-                        <a href="list-leave.aspx" class="btn btn-info" >
-                            Add
-                        </a>
-                    </div>
+
+        <div >
+
+            <div class="col-sm-8" id="col-8" >
+                <div >
+                    <a href="list-leave.aspx" class="btn btn-info"> Add</a>
                 </div>
+            </div>
+        </div>
+                
         </div>
 
     
