@@ -1,10 +1,10 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="manage-paycheck.aspx.cs" Inherits="Employee_manage_paycheck" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
-     <link href="../css/Attendance/History.css" rel="stylesheet" />
+ <asp:Content ID="Content3" ContentPlaceHolderID="head" Runat="Server">
     <link href="../css/employee.css/list-point-employee.css" rel="stylesheet" />
+    <link href="../css/employee.css/employee.css" rel="stylesheet" />
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+<asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
 
 
@@ -12,7 +12,7 @@
                     <h1 class ="h3 mb-4 text-gray-800">Company paycheck</h1>
 
         
-        <ul class="nav nav-tabs" style="margin-block-start: 1em;padding-inline-start: 40px;position: absolute;padding-top: 32px;">
+        <%--<ul class="nav nav-tabs" style="margin-block-start: 1em;padding-inline-start: 40px;position: absolute;padding-top: 32px;">
             <li class="active" style="margin-right: 20px;">
                 <a data-toggle="tab" href="#" style="cursor:pointer;text-decoration:none;">
                     <span style="color:black;">All</span>
@@ -153,15 +153,27 @@
 
                 </ul>
             </li>
-        </ul>
-        <div class="container-fluid" style="margin-top: -34px;margin-left: 450px;">
-            <div class="container" style="float:left;">
-                <a class="btn btn-info" href="add-paycheck.aspx" title="For management" style="color:white;margin-left:300px;padding-left: 20px;padding-right: 20px;text-decoration:none;" >  <i class="fa fa-plus-circle"></i> ADD NEW</a>
-                <a class="btn btn-info" title="For management" style="color:white;margin-left: 50px;padding-left: 20px;padding-right: 20px;text-decoration:none;" href="import-paycheck.aspx"><i class="fas fa-cloud-upload-alt"></i>  IMPORT</a>
+        </ul>--%>
+       
+
+        
+        
+                  <div class="col-sm-5" id="searchblog"> 
+        <div class="search-container">
+                <form action="#">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+         <div class="container-fluid" style="margin-top: -34px;margin-left: 450px;">
+            <div class="container" id="container">  
+                <a class="btn btn-info"  href="add-paycheck.aspx" title="Add new" > <i class="fa fa-plus-circle"></i> ADD NEW</a>
+                <a class="btn btn-info"  href="import-paycheck.aspx"><i class="fas fa-cloud-upload-alt"></i>  IMPORT</a>
             </div>
             <div class="container" style="display: inline-flex;padding-left: 500px; padding-top: 20px;">
-                <a href="#" style="height: 20px;width: 20px;color: #555;"><i class="fa fa-chevron-left"></i></a>
-                <div style="margin-right: 6px;">
+                <a href="#" class="chevron-left" ><i class="fa fa-chevron-left"></i></a>
+                <div class="page">
                     <a href="#" style="color:#555;text-decoration:none;">
                         <span>Page</span>
                         <span>1</span>
@@ -169,18 +181,20 @@
                         <span>1</span>
                     </a>
                 </div>
-                <a href="#" style="height: 48px;width: 48px;color: #555;"><i class="fa fa-chevron-right"></i></a>
+                <a href="#" class="chevron-right" ><i class="fa fa-chevron-right"></i></a>
             </div>
         </div>
+
+
         <br>
     </div>
 
-        <div style="padding-top: 0px; padding-bottom: 0px; display: block; min-height: 724px;" class="ui segment tc-scrolled">
-            <table id="employeetable" style="margin:0;" class="table">
+       <div class="table">
+            <table  class="tables">
                 <thead>
                     <tr>
                         <th>
-                            <a class="sortable" style="text-decoration:none; cursor: pointer; color:black;">SID</a>
+                            <a class="sortable" >SID</a>
                         </th>
                         <th class="clo">EMPLOYEES</th>
                         <th class="clo">GRADE ROADS</th>
@@ -207,7 +221,7 @@
                         <span>(</span><span>Lần #</span><span>23</span><span>)</span>
                     </td>
                     <td>
-                        <span style="background-color: #fdd!important;color: #ab0707;">Disabled</span>
+                        <span style="background-color: #fdd;color: #ab0707;">Disabled</span>
                     </td>
                     <td>
                         <span>Thong Huyen Trang</span>
@@ -217,7 +231,7 @@
                     </td>
                     <td>
                         <span>
-                            <a href="update-paycheck.aspx" style="padding:0 5px 0 5px;" title="Click here to update data">
+                            <a href="update-paycheck.aspx"  title="Click here to update data">
                                 <small>EDIT</small>
                             </a>
 

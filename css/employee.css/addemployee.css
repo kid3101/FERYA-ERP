@@ -39,107 +39,41 @@ input {
     border-top-style: outset;
     margin-top: 15px;
 }
-.right{
-    width:50%
-}
 
-.them {
-    background-color: #3498db;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    font-size: 15px;
-    cursor: pointer;
-    border-radius: 20px;
-    margin-left: 400px;
-}
-
-    .them:hover {
-        background-color: #2980b9;
-        color: white;
-    }
-
-
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-}
-
-    .switch input {
-        opacity: 0;
-        width: 0;
-        height: 0;
-    }
-
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: .4s;
-    transition: .4s;
-}
-
-    .slider:before {
-        position: absolute;
-        content: "";
-        height: 26px;
-        width: 26px;
-        left: 4px;
-        bottom: 4px;
-        background-color: white;
-        -webkit-transition: .4s;
-        transition: .4s;
-    }
-
-input:checked + .slider {
-    background-color: #2196F3;
-}
-
-input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
+.right {
+    width: 50%
 }
 
 
-.slider.round {
-    border-radius: 34px;
-}
-
-    .slider.round:before {
-        border-radius: 50%;
-    }
-
-.title:hover {
-    color: #3498db;
-}
 .star-sign {
     margin-top: -0.2em;
     margin-left: 0.2em;
     color: #DB2828;
 }
+
 #col-8 {
     text-align: center;
-    margin-top: -13px;
+    margin-top: 20px;
+    color:white
 }
+
 .lab {
-   background-color: gray; 
-   padding: 3px 1px; 
-   color: white;
+    background-color: gray;
+    padding: 3px 1px;
+    color: white;
 }
+
 .email {
-    line-height:1.2;
-    margin-top:5px;
-    color:red;
-    font-size:11px;
+    line-height: 1.2;
+    margin-top: 5px;
+    color: red;
+    font-size: 11px;
 }
+
 .top {
     margin-top: 10px;
 }
-.left{
-    width:30%;
+
+.left {
+    width: 30%;
 }

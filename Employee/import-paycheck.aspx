@@ -76,14 +76,14 @@
                     </div>
                 </div>
                 <div class="bottom" style="border-top-style:outset; margin-top: 10px;">
-                    <div class="field wide hideonsmall four" style=" margin-top: 10px;">
+                 <%--   <div class="field wide hideonsmall four" style=" margin-top: 10px;">
                         <p class="requirebox">
                             <span>* : </span>
                             <span>
                                 Obligatory
                             </span>
                         </p>
-                    </div>
+                    </div>--%>
                     <div>
                         <a class="btn btn-facebook" href="#" style="margin-left:250px; margin-top:-60px">
                             Upload file
