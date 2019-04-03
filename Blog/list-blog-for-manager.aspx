@@ -14,7 +14,7 @@
             <div class="col-sm-5" id="col-5">
                 <div class="linkmanagerblog">
                     <div class="managerblog">
-                        <a class="btn btn-info" data-toggle="tooltip" href="add-new-blog-for-manager.aspx" title="Timekeeping"> Add New</a>
+                        <a class="btn btn-info" data-toggle="tooltip" href="add-new-blog-for-manager.aspx"> Add New</a>
                     </div>
                     <br />
                     <div class="page">
@@ -32,8 +32,8 @@
             </div>
         </div>
 
-        <div class="col-sm-5" id="searchblog">
-           <%-- <div class="count">
+<%--        <div class="col-sm-5" id="searchblog">
+            <div class="count">
                 <span>All</span>
                 <span class="number">0</span>
             </div>
@@ -42,12 +42,12 @@
                     <input type="text" placeholder="Search.." name="search">
                     <button type="submit"><i class="fa fa-search"></i></button>
                 </form>
-            </div>--%>
-        </div>
+            </div>
+        </div>--%>
         <br>
     </div>
     <div class="body-manager-list-blog">
-         <table class="table table-bordered" id="dataTable" >
+         <table class="table table-bordered" id="dataTable">
             <thead>
                 <tr>
                     <th>ID</th>
@@ -73,14 +73,13 @@
 
                     </td>
                 </tr>
-
                 <tr>
                     <td>2</td>
                     <td>DELTAIL MARKETING</td>
                     <td>Active</td>
                     <td>Katewinless</td>
                     <td>22/12/2022</td>
-                    <<td>
+                    <td>
                         <a href="detail-blog.aspx" style="text-decoration: none; "  title="Detail"><i style="width: 25px" class="fas fa-exclamation-circle"></i></a>
 
                         <a href="edit-blog.aspx" style="text-decoration: none;"title="Edit"><i style="width: 25px" class="fas fa-pen"></i></a>
@@ -88,7 +87,6 @@
 
                     </td>
                 </tr>
-
                 <tr>
                     <td>3</td>
                     <td>DELTAIL MARKETING</td>
