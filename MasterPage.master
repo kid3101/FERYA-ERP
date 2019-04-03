@@ -146,7 +146,7 @@
         </a>
         <div id="collapseBlog" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="/Blog/blog-company.aspx">Blog</a>
+            <a class="collapse-item" href="/Blog/list-blog.aspx">Blog</a>
             <a class="collapse-item" href="/Blog/list-blog-for-manager.aspx">Manage Blog</a>
             <a class="collapse-item" href="/Blog/add-new-blog.aspx">New Entry</a>
           </div>
