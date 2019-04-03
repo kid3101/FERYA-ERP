@@ -44,9 +44,9 @@
 
                                    <%-- <a href="/project/category-list.aspx"><i style="width: 25px" class="fas fa-book-open"></i></a>--%>
 
-                                    <a href="/project/list-work.aspx"><i style="width: 25px" class="fas fa-exclamation-circle"></i></a>
-                                    <a href=" /project/edit-project.aspx"><i style="width: 25px" class="fas fa-pen"></i></a>
-                                    <button type="button" style="border:none;background-color:floralwhite"  onclick="del()"><i class="fas fa-trash-alt" style="color:red"></i></button>
+                                    <a href="/project/list-work.aspx" title="Add word"><i style="width: 25px" class="fas fa-exclamation-circle"></i></a>
+                                    <a href=" /project/edit-project.aspx" title="Edit"><i style="width: 25px" class="fas fa-pen"></i></a>
+                                    <button type="button" style="border:none;background-color:floralwhite"  onclick="del()" title="Delete"><i class="fas fa-trash-alt" style="color:red"></i></button>
 
                                 </td>
                             </tr>
@@ -62,18 +62,31 @@
                                 <td>2011/04/25</td>
                                 <td>New</td>
                                 <td>
-
                                    <%-- <a href="/project/category-list.aspx"><i style="width: 25px" class="fas fa-book-open"></i></a>--%>
-
-                                    <a href="/project/list-work.aspx"><i style="width: 25px" class="fas fa-exclamation-circle"></i></a>
-                                    <a href=" /project/edit-project.aspx"><i style="width: 25px" class="fas fa-pen"></i></a>
-                                    <button type="button" style="border:none;background-color:floralwhite"  onclick="del()"><i class="fas fa-trash-alt" style="color:red"></i></button>
-
+                                     <a href="/project/list-work.aspx" title="Add word"><i style="width: 25px" class="fas fa-exclamation-circle"></i></a>
+                                    <a href=" /project/edit-project.aspx" title="Edit"><i style="width: 25px" class="fas fa-pen"></i></a>
+                                    <button type="button" style="border:none;background-color:floralwhite"  onclick="del()" title="Delete"><i class="fas fa-trash-alt" style="color:red"></i></button>
                                 </td>
                             </tr>
-
-
                         </tbody>
+
+                        <tbody>
+                            <tr>
+                                <td>3</td>
+                                <td>App ERP333</td>
+                                <td>Create app33</td>
+                                <td>61</td>
+                                <td>2011/04/25</td>
+                                <td>New</td>
+                                <td>
+                                   <%-- <a href="/project/category-list.aspx"><i style="width: 25px" class="fas fa-book-open"></i></a>--%>
+                                     <a href="/project/list-work.aspx" title="Add word"><i style="width: 25px" class="fas fa-exclamation-circle"></i></a>
+                                    <a href=" /project/edit-project.aspx" title="Edit"><i style="width: 25px" class="fas fa-pen"></i></a>
+                                    <button type="button" style="border:none;background-color:floralwhite"  onclick="del()" title="Delete"><i class="fas fa-trash-alt" style="color:red"></i></button>
+                                </td>
+                            </tr>
+                        </tbody>
+
                     </table>
                 </div>
             </div>

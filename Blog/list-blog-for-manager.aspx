@@ -55,7 +55,7 @@
                     <th>Status</th>
                     <th>Creator</th>
                     <th>Day Created</th>
-                    <th>Option</th>
+                    <th>Action</th>
                 </tr>
             </thead>
             <tbody>
@@ -66,10 +66,10 @@
                     <td>Katewinless</td>
                     <td>22/12/2022</td>
                     <td>
-                        <a href="detail-blog.aspx" style="text-decoration: none;"><i style="width: 25px" class="fas fa-exclamation-circle"></i></a>
+                        <a href="detail-blog.aspx" style="text-decoration: none; "  title="Detail"><i style="width: 25px" class="fas fa-exclamation-circle"></i></a>
 
-                        <a href="edit-blog.aspx" style="text-decoration: none;"><i style="width: 25px" class="fas fa-pen"></i></a>
-                         <button type="button" style="border:none;background-color:floralwhite"  onclick="del()"><i class="fas fa-trash-alt" style="color:red"></i></button>
+                        <a href="edit-blog.aspx" style="text-decoration: none;"title="Edit"><i style="width: 25px" class="fas fa-pen"></i></a>
+                         <button type="button" style="border:none;background-color:floralwhite"  onclick="del()"title="Delete"><i class="fas fa-trash-alt" style="color:red"></i></button>
 
                     </td>
                 </tr>
@@ -80,11 +80,11 @@
                     <td>Active</td>
                     <td>Katewinless</td>
                     <td>22/12/2022</td>
-                    <td>
-                        <a href="detail-blog.aspx" style="text-decoration: none;"><i style="width: 25px" class="fas fa-exclamation-circle"></i></a>
+                    <<td>
+                        <a href="detail-blog.aspx" style="text-decoration: none; "  title="Detail"><i style="width: 25px" class="fas fa-exclamation-circle"></i></a>
 
-                        <a href="edit-blog.aspx" style="text-decoration: none;"><i style="width: 25px" class="fas fa-pen"></i></a>
-                         <button type="button" style="border:none;background-color:floralwhite"  onclick="del()"><i class="fas fa-trash-alt" style="color:red"></i></button>
+                        <a href="edit-blog.aspx" style="text-decoration: none;"title="Edit"><i style="width: 25px" class="fas fa-pen"></i></a>
+                         <button type="button" style="border:none;background-color:floralwhite"  onclick="del()"title="Delete"><i class="fas fa-trash-alt" style="color:red"></i></button>
 
                     </td>
                 </tr>
@@ -96,10 +96,10 @@
                     <td>Katewinless</td>
                     <td>22/12/2022</td>
                     <td>
-                        <a href="detail-blog.aspx" style="text-decoration: none;"><i style="width: 25px" class="fas fa-exclamation-circle"></i></a>
+                        <a href="detail-blog.aspx" style="text-decoration: none; "  title="Detail"><i style="width: 25px" class="fas fa-exclamation-circle"></i></a>
 
-                        <a href="edit-blog.aspx" style="text-decoration: none;"><i style="width: 25px" class="fas fa-pen"></i></a>
-                        <button type="button" style="border:none;background-color:floralwhite"  onclick="del()"><i class="fas fa-trash-alt" style="color:red"></i></button>
+                        <a href="edit-blog.aspx" style="text-decoration: none;"title="Edit"><i style="width: 25px" class="fas fa-pen"></i></a>
+                         <button type="button" style="border:none;background-color:floralwhite"  onclick="del()"title="Delete"><i class="fas fa-trash-alt" style="color:red"></i></button>
 
                     </td>
                 </tr>
@@ -109,11 +109,11 @@
                     <td>Active</td>
                     <td>Katewinless</td>
                     <td>22/12/2022</td>
-                    <td>
-                        <a href="detail-blog.aspx" style="text-decoration: none;"><i style="width: 25px" class="fas fa-exclamation-circle"></i></a>
+                   <td>
+                        <a href="detail-blog.aspx" style="text-decoration: none; "  title="Detail"><i style="width: 25px" class="fas fa-exclamation-circle"></i></a>
 
-                        <a href="edit-blog.aspx" style="text-decoration: none;"><i style="width: 25px" class="fas fa-pen"></i></a>
-                         <button type="button" style="border:none;background-color:floralwhite"  onclick="del()"><i class="fas fa-trash-alt" style="color:red"></i></button>
+                        <a href="edit-blog.aspx" style="text-decoration: none;"title="Edit"><i style="width: 25px" class="fas fa-pen"></i></a>
+                         <button type="button" style="border:none;background-color:floralwhite"  onclick="del()"title="Delete"><i class="fas fa-trash-alt" style="color:red"></i></button>
 
                     </td>
                 </tr>
@@ -124,10 +124,10 @@
                     <td>Katewinless</td>
                     <td>22/12/2022</td>
                     <td>
-                        <a href="detail-blog.aspx" style="text-decoration: none;"><i style="width: 25px" class="fas fa-exclamation-circle"></i></a>
+                        <a href="detail-blog.aspx" style="text-decoration: none; "  title="Detail"><i style="width: 25px" class="fas fa-exclamation-circle"></i></a>
 
-                        <a href="edit-blog.aspx" style="text-decoration: none;"><i style="width: 25px" class="fas fa-pen"></i></a>
-                         <button type="button" style="border:none;background-color:floralwhite"  onclick="del()"><i class="fas fa-trash-alt" style="color:red"></i></button>
+                        <a href="edit-blog.aspx" style="text-decoration: none;"title="Edit"><i style="width: 25px" class="fas fa-pen"></i></a>
+                         <button type="button" style="border:none;background-color:floralwhite"  onclick="del()"title="Delete"><i class="fas fa-trash-alt" style="color:red"></i></button>
 
                     </td>
                 </tr>
