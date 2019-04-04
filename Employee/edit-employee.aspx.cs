@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class Blog_add_new_blog : System.Web.UI.Page
+public partial class Employee_edit_employee : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
