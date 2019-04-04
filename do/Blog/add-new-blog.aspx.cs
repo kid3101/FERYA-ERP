@@ -12,9 +12,8 @@ public partial class do_Blog_add_new_blog : System.Web.UI.Page
         BlogManager bm = new BlogManager();
         Blog blog = new Blog();
         blog.BlogTitle = Request["title"];
-        blog.BlogDesc = Request["desx"];
-        blog.BlogContent = Request["content"];
-        if(Request["status"] == "Active")
+        blog.BlogDesc = Request["desc"];
+        if (Request["status"] == "Active")
         {
             blog.Status = 1;
         }
@@ -22,6 +21,11 @@ public partial class do_Blog_add_new_blog : System.Web.UI.Page
         {
             blog.Status = -1;
         }
+        blog.BlogContent = Request["content"];
+        blog.CreatedDate = DateTime.Now;
+        blog.CompanyId = 1;
+        blog.CreatedByEmployeeId = 1;
+        
         bm.AddNew(blog);
         bm.Save();
     }
