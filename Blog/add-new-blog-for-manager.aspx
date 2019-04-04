@@ -84,9 +84,9 @@
           function addnew()
           {
               var title = $("#txttitle").val();
-              var desc = $("#txtdesx").val();
+              var desc = $("#txtdesc").val();
               var status = $("txtstatus").val();
-              var content = $("#txtcontent").val()
+              var content = $("#txtcontent").val();
               try {
                   $.post("/do/Blog/add-new-blog.aspx", {
                       title: title,

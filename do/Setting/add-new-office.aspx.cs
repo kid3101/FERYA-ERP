@@ -14,15 +14,17 @@ public partial class do_add_new_office : System.Web.UI.Page
         {
             string name = Request["name"];
             string address = Request["address"];
+            string company = Request["company"];
 
             addnewoffice.OfficeName = name;
             addnewoffice.OfficeAddress = address;
+            addnewoffice.CompanyId = Convert.ToInt32(company);
             addnewoffice.Status = 1;
 
             OfficeManager om = new OfficeManager();
 
             om.AddNew(addnewoffice);
-            Response.Write(1);
+            Response.Write("1");
         }
         catch (Exception EX)
         {
