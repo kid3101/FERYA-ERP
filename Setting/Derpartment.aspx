@@ -114,7 +114,7 @@
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-default closee" data-dismiss="modal" >Close</button>
-                                    <button type="submit" class="btn btn-info addd"><a onclick="addnew()" class="hv">Create departments</a></button>
+                                    <button type="button" class="btn btn-info addd" onclick="addnew()">Create departments</button>
                                 </div>
                             </div>
 
@@ -219,21 +219,23 @@
         function addnew()
         {
             var name = $("#txtName").val();
-            var office = $("#lstOffice").val();
-            var company = $("#lstCompany")
+            var office = $("#selectListOffice").val();
+            var company = $("#selectListCompany").val();
+            var manager = $("#selectListManager").val();
    
-            $.post ("../do/add-new-department.aspx", {
+            $.post ("../do/Setting/add-new-department.aspx", {
                 name: name,
                 office: office,
                 company: company,
+                manager: manager
              
             }, function (data) {
                 if (data == 1) {
-                    alertify.alert("Success");
-                    location.href = "Derpartment.aspx";
+                    alert("Create new success!");
+                    location.href = "/Setting/Derpartment.aspx";
                 }
                 else {
-                    alertify.alert("Error", data);
+                    alert("Error", data);
                 }
             });
             }
