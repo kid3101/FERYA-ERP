@@ -18,19 +18,19 @@
                         <div class="form-group">
                             <label for="title" class="col-sm-3 control-label">Title<i style="color:red">*</i></label>
                             <div class="col-sm-9">
-                                <input type="text" id="title" placeholder="Title blog" class="form-control" autofocus>
+                                <input type="text" id="txttitle" placeholder="Title blog" class="form-control" autofocus>
                             </div>
                         </div>
                            <div class="form-group">
                             <label for="title" class="col-sm-3 control-label">Describe</label>
                             <div class="col-sm-9">
-                                <input type="text" id="desc" placeholder="Describe" class="form-control" autofocus>
+                                <input type="text" id="txtdesc" placeholder="Describe" class="form-control" autofocus>
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="birthDate" class="col-sm-3 control-label">Status</label>
                             <div class="col-sm-9">
-                                <select class="slt-status">
+                                <select class="slt-status" id="txtstatus">
                                     <option>Active</option>
                                     <option>Non-Active</option>
                                 </select>
@@ -51,7 +51,7 @@
                         <div class="form-group">
                             <label for="birthDate" class="col-sm-3 control-label">Content</label>
                             <div class="col-sm-9">
-                                <textarea class="tinymce" placeholder="Write something ..." style="border-radius:10px;"></textarea>
+                                <textarea id="txtcontent" class="tinymce" placeholder="Write something ..." style="border-radius:10px;"></textarea>
                             </div>
                         </div>
                          <div class="form-group">
@@ -73,7 +73,7 @@
                             </div>
                         </div>
                         <div class="addnewblog">
-                        <a href="manager-blog.aspx"><button type="submit" class="btn btn-info">Add New</button></a>
+                        <button type="button" class="btn btn-info" onclick="addnew()">Add New</button>
                     </div>
                             </form> <!-- /form -->
                 </div>
@@ -81,6 +81,31 @@
         </div>
         </div>
       <script>
+          function addnew()
+          {
+              var title = $("#txttitle").val();
+              var desc = $("#txtdesx").val();
+              var status = $("txtstatus").val();
+              var content = $("#txtcontent").val()
+              try {
+                  $.post("/do/Blog/add-new-blog.aspx", {
+                      title: title,
+                      desc: desc,
+                      status: status,
+                      content: content
+                  }, function (data) {
+                      if (data == -1) {
+                          alert("Error");
+                      }
+                      else {
+                           alert("success")
+                      }
+                  }
+                  )
+              } catch (e) {
+                  alert("Error");
+              }
+          }
 
         function myFunction() {
             var x = document.getElementById("myDIV");
@@ -116,8 +141,9 @@
                 input.addEventListener('focus', function () { input.classList.add('has-focus'); });
                 input.addEventListener('blur', function () { input.classList.remove('has-focus'); });
             });
-        }(document, window, 0));
+          }(document, window, 0));
 
+        
     </script>
 </asp:Content>
 

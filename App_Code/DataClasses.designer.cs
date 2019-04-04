@@ -21,7 +21,7 @@ using System.Reflection;
 
 
 
-[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="erpDBx")]
+[global::System.Data.Linq.Mapping.DatabaseAttribute(Name= "erpDBxConnectionString")]
 public partial class DataClassesDataContext : System.Data.Linq.DataContext
 {
 	

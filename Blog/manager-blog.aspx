@@ -14,7 +14,7 @@
             <div class="col-sm-5" id="col-5">
                 <div class="linkmanagerblog">
                     <div class="managerblog">
-                        <a class="btn btn-info" data-toggle="tooltip" href="add-new-blog-for-manager.aspx"> Add New</a>
+                        <a class="btn btn-info" data-toggle="tooltip" href="add-new-blog-for-manager.aspx" > Add New</a>
                     </div>
                     <br />
                     <div class="page">
@@ -56,9 +56,9 @@
                     <th>Content</th>
                     <th>CreateDate</th>
                     <th>Status</th>
-                    <th>CompanyID</th>
-                    <th>CreatedByID</th>
-                   <%-- <th>Action</th>--%>
+                    <th>Company</th>
+                    <th>Creator</th>
+                    <th>Action</th>
                 </tr>
             </thead>
             <tbody>
@@ -73,8 +73,8 @@
                     <td><%=Listblog[i].Company.CompanyName %></td>
                     <td><%=Listblog[i].Employee.FirstName %></td>
                     <td>
-                        <button type="button" style="border:none;background-color:floralwhite"  title="Detail" onclick="detail(<%=Listblog[i] %>)"><i style="width: 25px" class="fas fa-exclamation-circle"></i></button>
-                        <button type="button" style="border:none;background-color:floralwhite" title="Edit" onclick="edit(<%=Listblog[i] %>)"><i style="width: 25px" class="fas fa-pen"></i> </button>
+                         <a href="/project/list-work.aspx" title="Detail"><i style="width: 25px" class="fas fa-exclamation-circle"></i><a>
+                         <a href="/project/list-work.aspx" title="Edit"><i style="width: 25px" class="fas fa-pen"></i></a>
                          <button type="button" style="border:none;background-color:floralwhite"  onclick="del(<%=Listblog[i] %>)"title="Delete"><i class="fas fa-trash-alt" style="color:red"></i></button>
 
                     </td>
@@ -89,6 +89,7 @@
         function del(){
             alert("Are You Sure?");
         }
+       
     </script>
 </asp:Content>
 
