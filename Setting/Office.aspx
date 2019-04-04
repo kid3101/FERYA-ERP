@@ -696,7 +696,7 @@
                         <td><%=listOffice[i].CreatedDate%></td>
 
                         <td>
-                            <a href="#" <%--onclick="edit1(<%=listOffice[i].OfficeId%>)"--%> data-toggle="modal" data-target="#myModal7" style="margin-right: 20px;text-decoration:none;" data-id="<%=listOffice[i].OfficeId %>" ><i style="width: 25px" class="fas fa-pen"></i></a>
+                            <a  onclick="edit1(<%=listOffice[i].OfficeId%>)" <%--data-toggle="modal" data-target="#myModal7"--%> style="margin-right: 20px;text-decoration:none;"  ><i style="width: 25px" class="fas fa-pen"></i></a>
                          
                             <button type="button" style="border:none;background-color:floralwhite" onclick="clickdelete(<%=listOffice[i].OfficeId%>)"><i class="fas fa-trash-alt" style="color:red"></i></button>
                         </td>
@@ -1305,32 +1305,10 @@
                 }
         }
 
-        function edit(id)
-        {
-            var name = $("#txtName1").val();
-            var address = $("#txtAddress1").val();
-            var company = $("#selectList1").val();
-            $.post('/do/Setting/edit-office.aspx', {
-                id:id,
-                name: name,
-                address: address,
-                company: company
-
-            }, function (data) {
-                    if (data == 1) {
-                        alert("Success");
-                        location.href = "/Setting/Office.aspx";
-                    }
-                    else {
-                        alert("Error", data)
-                    }
-                });
-
-
-        }
+        
 
         function edit1(id) {
-            location.href = "/cp/Edit-User.aspx?id=" + id;
+            location.href = "/Setting/EditOffice.aspx?id=" + id;
         }
     </script>
 </asp:Content>

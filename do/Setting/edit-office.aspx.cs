@@ -11,8 +11,6 @@ public partial class do_Setting_edit_office : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
-        try
-        {
             int id = Convert.ToInt32(Request["id"]);
             string name = Request["name"];
             string address = Request["address"];
@@ -26,11 +24,6 @@ public partial class do_Setting_edit_office : System.Web.UI.Page
             editoffice.CompanyId = Convert.ToInt32(company);
             om.Save();
             Response.Write("1");
-        }
-        catch (Exception EX)
-        {
-
-            Response.Write(EX);
-        }
+        
     }
 }
