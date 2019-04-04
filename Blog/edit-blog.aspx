@@ -17,7 +17,7 @@
                         <div class="form-group">
                             <label for="title" class="col-sm-3 control-label">Title<i style="color:red">*</i></label>
                             <div class="col-sm-9">
-                                <input type="text" id="title" value="<%=blog.BlogTitle %>"; class="form-control" autofocus style="border-radius:10px;">
+                                <input type="text" id="txttitle" value="<%=blog.BlogTitle %>"; class="form-control" autofocus style="border-radius:10px;">
                             </div>
                         </div>
                             <div class="form-group">
@@ -29,7 +29,7 @@
                         <div class="form-group">
                             <label for="birthDate" class="col-sm-3 control-label">Status</label>
                             <div class="col-sm-9">
-                                <select style="width:100%;height:35px;border-radius:10px;">
+                                <select style="width:100%;height:35px;border-radius:10px;" id="txtstatus">
                                     <option>Active</option>
                                     <option>Non-Active</option>
                                 </select>
@@ -73,7 +73,7 @@
                             </div>
                         </div>
                         <div class="addnewblog">
-                        <a href="#"><button type="submit" class="btn btn-facebook">Save</button></a>
+                        <a href="#"><button type="button" onclick="edit(<%=blog.BlogId %>)" class="btn btn-facebook">Save</button></a>
                     </div>
                             </form> <!-- /form -->
                 </div>
@@ -81,6 +81,32 @@
         </div>
         </div>
       <script>
+          function edit(id) {
+               var title = $("#txttitle").val();
+              var desc = $("#txtdesc").val();
+              var status = $("#txtstatus").val();
+              var content = tinymce.get("txtContent").getContent();
+              try {
+                  $.post("/do/Blog/edit-blog.aspx", {
+                      title: title,
+                      desc: desc,
+                      status: status,
+                      content: content,
+                      id:id
+                  }, function (data) {
+                      if (data == -1) {
+                          alert("Error");
+                      }
+                      else {
+                          alert("Update Success")
+                          location.href = "/Blog/manager-blog.aspx";
+                      }
+                  }
+                  )
+              } catch (e) {
+                  alert("Error");
+              }
+          }
 
         function myFunction() {
             var x = document.getElementById("myDIV");
