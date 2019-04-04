@@ -73,7 +73,7 @@
                             </div>
                         </div>
                         <div class="addnewblog">
-                        <a href="list-blog-for-manager.aspx"><button type="submit" class="btn btn-info">Add New</button></a>
+                        <a href="manager-blog.aspx"><button type="submit" class="btn btn-info">Add New</button></a>
                     </div>
                             </form> <!-- /form -->
                 </div>

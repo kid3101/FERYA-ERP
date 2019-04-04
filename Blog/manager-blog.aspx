@@ -62,8 +62,7 @@
                 </tr>
             </thead>
             <tbody>
-                <% for (int i = Listblog.Count -1; i>-1;i--) 
-                { %>
+                <% for (int i = Listblog.Count -1; i>-1;i--)  { %>
                 <tr>
                     <td><%=Listblog[i].BlogId %></td>
                     <td><%=Listblog[i].BlogTitle %></td>
@@ -79,8 +78,9 @@
                          <button type="button" style="border:none;background-color:floralwhite"  onclick="del(<%=Listblog[i] %>)"title="Delete"><i class="fas fa-trash-alt" style="color:red"></i></button>
 
                     </td>
-                    <%} %>
-                </tr>               
+                  
+                </tr>    
+                  <%} %>
             </tbody>
         </table>
     </div>
