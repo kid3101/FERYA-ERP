@@ -7,12 +7,22 @@ using System.Web.UI.WebControls;
 
 public partial class do_add_new_office : System.Web.UI.Page
 {
-    public Office addnewuser = new Office();
+    public Office addnewoffice = new Office();
     protected void Page_Load(object sender, EventArgs e)
     {
         try
         {
-            
+            string name = Request["name"];
+            string address = Request["address"];
+
+            addnewoffice.OfficeName = name;
+            addnewoffice.OfficeAddress = address;
+            addnewoffice.Status = 1;
+
+            OfficeManager om = new OfficeManager();
+
+            om.AddNew(addnewoffice);
+            Response.Write(1);
         }
         catch (Exception EX)
         {

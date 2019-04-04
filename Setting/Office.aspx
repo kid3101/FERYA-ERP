@@ -117,11 +117,11 @@
                                                 <div style="margin-right: 10px;">
                                                     <span>Name</span>
                                                     <span style="color:red;">*</span>
-                                                    <input style="display:block;height:25px" type="text" />
+                                                    <input id="txtName" style="display:block;height:25px" type="text" />
                                                 </div>
                                                 <div style="margin-right: 10px;">
                                                     <span>Address</span>
-                                                    <input style="display:block;height:25px" type="text" />
+                                                    <input id="txtAddress" style="display:block;height:25px" type="text" />
                                                 </div>
                                                 <div style="margin-right: 10px;">
                                                     <span>City</span>
@@ -611,7 +611,7 @@
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-default" data-dismiss="modal" style="border: none;border-radius: 17px;margin-right: 10px;padding-left: 20px;padding-right: 20px;">Close</button>
-                                    <button type="submit" class="btn btn-info" style="border:none;padding: 8px;"><a href="AddOffice.aspx"  style="color:white;text-decoration:none;">Create office</a></button>
+                                    <button type="submit" class="btn btn-info" style="border:none;padding: 8px;"><a <%--href="AddOffice.aspx"--%> onclick="addnew()" style="color:white;text-decoration:none;">Create office</a></button>
                                 </div>
                             </div>
 
@@ -670,17 +670,17 @@
                         <td>05:00, 26/03</td>--%>
                         <td><%=listOffice[i].OfficeId %></td>
                         <td><%=listOffice[i].OfficeName%></td>
-                        <td><%=listOffice[i].Company.CompanyName%></td>
+                        <%--<td><%=listOffice[i].Company.CompanyName%></td>--%>
                         <td><%=listOffice[i].OfficeAddress%></td>
                         <td></td>
                         <td><%=listOffice[i].Phone%></td>
                         <td><%=listOffice[i].CreatedDate%></td>
-                        
+                        <td></td>
 
                         <td>
                             <a href="#"  data-toggle="modal" data-target="#myModal7" style="margin-right: 20px;text-decoration:none;"><i style="width: 25px" class="fas fa-pen"></i></a>
                          
-                            <button type="button" style="border:none;background-color:floralwhite" onclick="del()"><i class="fas fa-trash-alt" style="color:red"></i></button>
+                            <button type="button" style="border:none;background-color:floralwhite" onclick="clickdelete(<%=listOffice[i].OfficeId%>)" <%--onclick="del()"--%>><i class="fas fa-trash-alt" style="color:red"></i></button>
                         </td>
                          <%}%>
                     </tr>
@@ -1237,6 +1237,42 @@
         function del(){
             alert("Are You Sure?");
         }
+
+        function addnew()
+        {
+            var name = $("#txtName").val();
+            var address = $("#txtAddress").val();
+   
+            $.post ("../do/add-new-office.aspx", {
+                name: name,
+                address: address,
+             
+            }, function (data) {
+                if (data == 1) {
+                    alertify.alert("Success");
+                    location.href = "Office.aspx";
+                }
+                else {
+                    alertify.alert("Error", data);
+                }
+            });
+            }
+        function clickdelete(id) {
+            alertify.confirm("Are you sure Delete?", function () {
+                $.post("../do/delete-office.aspx", {
+                    id: id,
+                }, function (data) {
+                    if (data == 1) {
+                        alertify.alert("Success")
+                        location.href = "Office.aspx";
+                    }
+                    else {
+                        alerify.alert("Error", data)
+                    }
+                })
+            });
+        }
+        
     </script>
 </asp:Content>
 
