@@ -11,7 +11,7 @@
     <div class="container-fluid">
         <h1 class ="h3 mb-4 text-gray-800">Employee grading history</h1>
 
-        <ul class="nav nav-tabs" style="margin-block-start: 1em;padding-inline-start: 40px;position: absolute;padding-top: 32px;">
+        <%--<ul class="nav nav-tabs" style="margin-block-start: 1em;padding-inline-start: 40px;position: absolute;padding-top: 32px;">
             <li class="active" style="margin-right: 20px;">
                 <a data-toggle="tab" href="#" style="cursor:pointer;text-decoration:none;">
                     <span style="color:black;">All</span>
@@ -136,7 +136,17 @@
 
                 </ul>
             </li>
-        </ul>
+        </ul>--%>
+
+        <div class="col-sm-5" id="searchblog"> 
+        <div class="search-container">
+                <form action="#">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+
         <div class="container-fluid" style="margin-top: -34px;margin-left: 380px;">
             <div class="container" style="float:left;">
                 <a class="ls" style="margin-left: 15px;text-decoration:none;" href="#"><i class="fa fa-cog"></i> Setting criteria</a>
@@ -145,7 +155,7 @@
                 
                 <a class="btn btn-info"  href="add-point-employee.aspx" title="Add new"><i class="fa fa-plus-circle"></i> ADD THE REVIEW</a>
             </div>
-            <div class="container" style="display: inline-flex;padding-left: 500px; padding-top: 20px;">
+<%--            <div class="container" style="display: inline-flex;padding-left: 500px; padding-top: 20px;">
                 <a href="#" style="height: 20px;width: 20px;color: #555;"><i class="fa fa-chevron-left"></i></a>
                 <div style="margin-right: 6px;">
                     <a href="#" style="color:#555;text-decoration:none;">
@@ -156,24 +166,29 @@
                     </a>
                 </div>
                 <a href="#" style="height: 48px;width: 48px;color: #555;"><i class="fa fa-chevron-right"></i></a>
-            </div>
+            </div>--%>
         </div>
-        <br>
+       
     </div>
-        <div class="table">
-            <table id="employeetable" style="margin:0;" class="table">
-                <thead>
+    <br />
+    <br />
+    <br />
+    <br />
+            <div class="col-md-12">
+                <div>
+                    <table class="table table-bordered" id="dataTable" >
+                        <thead>
                     <tr>
-                        <th class="clo">SID</th>
-                        <th class="clo">EMPLOYEES</th>
-                        <th class="clo">HEADQUARTERS</th>
-                        <th class="clo">CRITERIA</th>
-                        <th class="clo">TYPE OF CRITERIA</th>
-                        <th class="clo">POINT</th>
-                        <th class="clo">STATUS</th>
-                        <th class="clo">CREATOR</th>
-                        <th class="clo">DATE CREATED</th>
-                        <th></th>
+                        <th>Id</th>
+                        <th>Employees</th>
+                        <th>Headquarters</th>
+                        <th>Criteria</th>
+                        <th>Type Of Criteria</th>
+                        <th>Point</th>
+                        <th>Status</th>
+                        <th>Creator</th>
+                        <th>Date Created</th>
+                        <th>Action</th>
                     </tr>
                     <tr>
                         <td>
@@ -188,11 +203,14 @@
                         <td> Thong Huyen Trang</td>
                         <td>14:06, Today</td>
                         <td>
-                            <a href="update-point-employee.aspx"class="edit" title="Click here to update data">EDIT</a>
+                            <a href=" update-point-employee.aspx" title="Edit"><i class="fas fa-pen"></i></a>
+                            <button type="button" style="border:none;background-color:floralwhite"  onclick="del()" title="Delete"><i class="fas fa-trash-alt" style="color:red"></i></button>
+
                         </td>
                     </tr>
                 </thead>
             </table>
+        </div>
         </div>
     <div class="modal fade" id="myModal" role="dialog">
         <div class="modal-dialog">

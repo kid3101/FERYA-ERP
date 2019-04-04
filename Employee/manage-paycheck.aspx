@@ -189,22 +189,21 @@
         <br>
     </div>
 
-       <div class="table">
-            <table  class="tables">
+       <div class="col-md-12">
+            <div>
+                <table class="table table-bordered" id="dataTable" >
                 <thead>
                     <tr>
-                        <th>
-                            <a class="sortable" >SID</a>
-                        </th>
-                        <th class="clo">EMPLOYEES</th>
-                        <th class="clo">GRADE ROADS</th>
-                        <th class="clo">TOTAL SALARY</th>
-                        <th class="clo">FORM OF PAYMENT</th>
-                        <th class="clo">SALARY</th>
-                        <th class="clo">STATUS</th>
-                        <th class="clo">CREATOR</th>
-                        <th class="clo">DATE CREATED</th>
-                        <th></th>
+                        <th>Id</th>
+                        <th>Employees</th>
+                        <th>Grade Roads</th>
+                        <th>Total Salary</th>
+                        <th>Form Of Payment</th>
+                        <th>Salary</th>
+                        <th>Status</th>
+                        <th>Creator</th>
+                        <th>Date Created</th>
+                        <th>Action</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -230,17 +229,15 @@
                         <span class="" title="14:41, 25/03/2019" >14:41, To day</span>
                     </td>
                     <td>
-                        <span>
-                            <a href="update-paycheck.aspx"  title="Click here to update data">
-                                <small>EDIT</small>
-                            </a>
+                         <a href="update-paycheck.aspx" title="Edit"><i class="fas fa-pen"></i></a>
+                            <button type="button" style="border:none;background-color:floralwhite"  onclick="del()" title="Delete"><i class="fas fa-trash-alt" style="color:red"></i></button>
 
-                        </span>
                     </td>
                 </tr>
             </tbody>
             </table>
         </div>
+    </div>
 
 
 

@@ -11,7 +11,7 @@
      <div class="container-fluid">
         <h1 class ="h3 mb-4 text-gray-800">Employee grading history</h1>
        
-        <ul class="nav" style="margin-top: -21px;">
+       <%-- <ul class="nav" style="margin-top: -21px;">
             <li class="active">
                 <a data-toggle="tabs" href="#" >
                     <span style="color:black;">All</span>
@@ -87,7 +87,17 @@
                     </li>
                 </ul>
             </li>
-        </ul>
+        </ul>--%>
+
+         <div class="col-sm-5" id="searchblog"> 
+        <div class="search-container">
+                <form action="#">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+
         <div class="container-fluid" style="margin-top: -34px;margin-left: 450px;">
             <div class="container-1" style="">
                 <a href="#" class="chevron-left" ><i class="fa fa-chevron-left"></i></a>

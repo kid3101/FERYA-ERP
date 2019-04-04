@@ -2,3 +2,12 @@
     float: right;
     margin-top: -58px;
 }
+.icons {
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+#icons {
+    color: black;
+    text-decoration: none;
+}

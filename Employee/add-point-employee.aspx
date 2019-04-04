@@ -2,6 +2,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <link href="../css/employee.css/add-point-employee.css" rel="stylesheet" />
+    <link href="../css/employee.css/addemployee.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
@@ -27,7 +28,7 @@
                     <div class="right" style="width:100% ; margin-top: 8px;">
                         <div class="col-sm-7" style="margin-left:50px">
                             <label>
-                                Headquarters<a style="margin-top: -0.2em; margin-left:0.2em;color: #DB2828;">*</a>
+                                Headquarters<span class=".star-sign">*</span>
                             </label>
                             <select onclick="myFunction()" class="form-control">
                                 <option disabled="" selected="">-----</option>
@@ -91,18 +92,20 @@
                 </div>
 
                 <div >
-                    <div class="col-sm-4 sidenav" style="margin-top:20px;">
-                        <span>*: Obligatory</span>
-                    </div>
 
-                    <div class="col-sm-8" >
-                        <div  style="margin: -15px 30px 22px 280px;">
+                    <div class="col-sm-8" id="col-8" >
+                         <div >
                             <a href="list-point-employee.aspx" class="btn btn-info"> Add</a>
                         </div>
                     </div>
                 </div>
             </form>
         </div>
+
+
+
+
+
     <script>
 
         function myFunction() {

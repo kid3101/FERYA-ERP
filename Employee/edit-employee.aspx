@@ -35,7 +35,7 @@
                         </div>
                         <div class="col-xs-5">
                             <label>Email<span class="star-sign">*</span></label>
-                            <input class="form-control" type="text" placeholder="Email" autofocus="autofocus" value="<%=editEmployee.Email %>">
+                            <input class="form-control" type="text" placeholder="Email" value="<%=editEmployee.Email %>">
                             <div class="email">Email must work. Password will be sent to this email address.</div>
                         </div>
                         <div class="col-xs-5">
@@ -73,13 +73,12 @@
                         </div>
                     </div>  
                 </div>
-           
-
             </form>
+        <button type="button" class="btn btn-facebook" onclick="edit(<%=editEmployee.EmployeeId%>)">Save</button>
         </div>
 
     <script>
-         function submit(id)
+         function edit(id)
         {
            var code = $("#txtEmployeeCode").val();
             var first = $("#txtFirstName").val();
@@ -90,8 +89,10 @@
             var position = $("#txtPosition").val();
             var manager = $("#txtManagerId").val();
             var basic = $("#txtBasicSalary").val();
-            var kpi = $("#txtKPISalary").val();
-            $.post('../do/Employee/edit-employee.aspx', {
+             var kpi = $("#txtKPISalary").val();
+            try {
+                $.post('/do/Employee/edit-employee.aspx', {
+                id: id,
                 code: code,
                 first: first,
                 last: last,
@@ -102,17 +103,19 @@
                 manager: manager,
                 basic: basic,
                 kpi: kpi,
-
-            }, function (data) {
-                    if (data == 1) {
-                        alertify.alert("Success");
-                        location.href = "employee.aspx" ; 
-                    }
-                    else {
-                        alertify.alert("Error", data)
-                    }
-                });
-
+                  }, function (data) {
+                      if (data == -1) {
+                          alert("Error");
+                      }
+                      else {
+                          alert("Update Success")
+                          location.href = "employee.aspx";
+                      }
+                  }
+                  )
+              } catch (e) {
+                  alert("Error");
+              }
 
         }
     </script>

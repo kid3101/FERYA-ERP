@@ -134,17 +134,17 @@
                     </div>  
                 </div>
         <div >
-
+            
             <div class="col-sm-8" id="col-8" >
                 <div >
                     <a  class="btn btn-facebook"> Upload file</a>
                 </div>
             </div>
         </div>
+               
             </form>
+         
         </div>
-
-
 
     <script>
     function bs_input_file() {

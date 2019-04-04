@@ -163,9 +163,6 @@
          <div class="container-fluid" style="margin-top: -34px;margin-left: 450px;">
             <div class="container" id="container">
 
-                <div class="dropdown" style="position: relative;display: inline-block;">
-                </div>
-
                
                 <a class="btn btn-info"  href="manage-paycheck.aspx" title="For management" > <i class="fa fa-cog"></i>  FOR MANAGEMENT</a>
             </div>
@@ -182,13 +179,14 @@
                 <a href="#" class="chevron-right" ><i class="fa fa-chevron-right"></i></a>
             </div>
         </div>
-        <br>
+        <br />
     </div>
 
 
 
-    <div class="table">
-        <table class="tables">
+    <div class="col-md-12">
+        <div>
+            <table class="table table-bordered" id="dataTable" >
             <thead>
                 <tr>
                     <th>
@@ -225,6 +223,7 @@
                 </tr>
             </tbody>
         </table>
+    </div>
     </div>
     <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
