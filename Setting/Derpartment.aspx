@@ -79,21 +79,27 @@
                                         <div class="form-group">
                                             <label class="kk">Name</label>
                                             <span class="mau">*</span>
-                                            <input class="form-control">
+                                            <input id="txtName" class="form-control">
                                         </div>
                                         <div class="form-group">
                                             <label>Office</label>
-                                            <select class="selectt">
-                                                <option>Office 1</option>
-                                                <option>Office 2</option>
+                                            <select id="lstOffice" class="selectt">
+                                                <option value="office1">Office 1</option>
+                                                <option value="office2">Office 2</option>
                                             </select>
                                         </div>
-
+                                        <div class="form-group">
+                                            <label>Company</label>
+                                            <select id="lstCompany" class="officee">
+                                                <option value="company1">Company 1</option>
+                                                <option value="company2">Company 2</option>
+                                            </select>
+                                        </div>
                                     </form>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-default closee" data-dismiss="modal" >Close</button>
-                                    <button type="submit" class="btn btn-info addd"><a href="AddDepartment.aspx" class="hv">Create departments</a></button>
+                                    <button type="submit" class="btn btn-info addd"><a <%--href="AddDepartment.aspx"--%> onclick="addnew()" class="hv">Create departments</a></button>
                                 </div>
                             </div>
 
@@ -111,17 +117,29 @@
         <div class="dii">
             <table class="table table-bordered">
                 <thead>
+                   
                     <tr>
                         <th>Department name</th>
                         <th>Office name</th>
-                        <th></th>
+                        <th>Company name</th>
+                        <th>Create Date</th>
+                        <th>Curent Employee</th>
+                        <th>Manager Employee</th>
+                        <th>Action</th>
                     </tr>
                 </thead>
                 <tbody>
+                     <%for (int i = listDepartment.Count - 1; i > -1; i--)
+                    {%>
                     <tr>
-                        <td>Department 1</td>
-                        <td>Office 1</td>
+                        <td><%=listDepartment[i].DeparmentName %></td>
+                        <td><%=listDepartment[i].Office.OfficeName %></td>
+                        <td><%=listDepartment[i].Company.CompanyName %></td>
+                        <td><%=listDepartment[i].CreatedDate %></td>
+                        <td><%=listDepartment[i].Employee.LastName %></td>
+                        <td><%=listDepartment[i].Employee.LastName %></td>
                         <td data-toggle="modal" data-target="#myModal2"><i class="fa fa-pen"></i></td>
+                        <%}%>
                     </tr>
                 </tbody>
             </table>
@@ -144,13 +162,19 @@
                             <input class="form-control" value="Department 1">
                         </div>
                         <div class="form-group">
-                            <label>Office</label>
+                            <label >Office</label>
                             <select class="officee">
-                                <option>Office 1</option>
-                                <option>Office 2</option>
+                                <option value="office1">Office 1</option>
+                                <option value="office2">Office 2</option>
                             </select>
                         </div>
-
+                        <div class="form-group">
+                            <label>Company</label>
+                            <select class="officee">
+                                <option value="company1">Company 1</option>
+                                <option value="company2">Company 2</option>
+                            </select>
+                        </div>
                     </form>
                 </div>
                 <div class="modal-footer">
@@ -167,6 +191,28 @@
         function del(){
             alert("Are You Sure?");
         }
+
+        function addnew()
+        {
+            var name = $("#txtName").val();
+            var office = $("#lstOffice").val();
+            var company = $("#lstCompany")
+   
+            $.post ("../do/add-new-department.aspx", {
+                name: name,
+                office: office,
+                company: company,
+             
+            }, function (data) {
+                if (data == 1) {
+                    alertify.alert("Success");
+                    location.href = "Derpartment.aspx";
+                }
+                else {
+                    alertify.alert("Error", data);
+                }
+            });
+            }
     </script>
 </asp:Content>
 

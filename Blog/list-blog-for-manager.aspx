@@ -51,84 +51,36 @@
             <thead>
                 <tr>
                     <th>ID</th>
-                    <th>Title</th>
+                    <th>Title</th>               
+                    <th>Describe</th>                  
+                    <th>Content</th>
+                    <th>CreateDate</th>
                     <th>Status</th>
-                    <th>Creator</th>
-                    <th>Day Created</th>
-                    <th>Action</th>
+                    <th>CompanyID</th>
+                    <th>CreatedByID</th>
+                   <%-- <th>Action</th>--%>
                 </tr>
             </thead>
             <tbody>
+                <% for (int i = Listblog.Count -1; i>-1;i--) 
+                { %>
                 <tr>
-                    <td>1</td>
-                    <td>DELTAIL MARKETING</td>
-                    <td>Active</td>
-                    <td>Katewinless</td>
-                    <td>22/12/2022</td>
+                    <td><%=Listblog[i].BlogId %></td>
+                    <td><%=Listblog[i].BlogTitle %></td>
+                    <td><%=Listblog[i].BlogDesc %></td>
+                    <td><%=Listblog[i].BlogContent %></td>
+                    <td><%=Listblog[i].CreatedDate %></td>
+                    <td><%=Listblog[i].Status %></td>
+                    <td><%=Listblog[i].Company.CompanyName %></td>
+                    <td><%=Listblog[i].Employee.FirstName %></td>
                     <td>
-                        <a href="detail-blog.aspx" style="text-decoration: none; "  title="Detail"><i style="width: 25px" class="fas fa-exclamation-circle"></i></a>
-
-                        <a href="edit-blog.aspx" style="text-decoration: none;"title="Edit"><i style="width: 25px" class="fas fa-pen"></i></a>
-                         <button type="button" style="border:none;background-color:floralwhite"  onclick="del()"title="Delete"><i class="fas fa-trash-alt" style="color:red"></i></button>
-
-                    </td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>DELTAIL MARKETING</td>
-                    <td>Active</td>
-                    <td>Katewinless</td>
-                    <td>22/12/2022</td>
-                    <td>
-                        <a href="detail-blog.aspx" style="text-decoration: none; "  title="Detail"><i style="width: 25px" class="fas fa-exclamation-circle"></i></a>
-
-                        <a href="edit-blog.aspx" style="text-decoration: none;"title="Edit"><i style="width: 25px" class="fas fa-pen"></i></a>
-                         <button type="button" style="border:none;background-color:floralwhite"  onclick="del()"title="Delete"><i class="fas fa-trash-alt" style="color:red"></i></button>
+                        <button type="button" style="border:none;background-color:floralwhite"  title="Detail" onclick="detail(<%=Listblog[i] %>)"><i style="width: 25px" class="fas fa-exclamation-circle"></i></button>
+                        <button type="button" style="border:none;background-color:floralwhite" title="Edit" onclick="edit(<%=Listblog[i] %>)"><i style="width: 25px" class="fas fa-pen"></i> </button>
+                         <button type="button" style="border:none;background-color:floralwhite"  onclick="del(<%=Listblog[i] %>)"title="Delete"><i class="fas fa-trash-alt" style="color:red"></i></button>
 
                     </td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>DELTAIL MARKETING</td>
-                    <td>Active</td>
-                    <td>Katewinless</td>
-                    <td>22/12/2022</td>
-                    <td>
-                        <a href="detail-blog.aspx" style="text-decoration: none; "  title="Detail"><i style="width: 25px" class="fas fa-exclamation-circle"></i></a>
-
-                        <a href="edit-blog.aspx" style="text-decoration: none;"title="Edit"><i style="width: 25px" class="fas fa-pen"></i></a>
-                         <button type="button" style="border:none;background-color:floralwhite"  onclick="del()"title="Delete"><i class="fas fa-trash-alt" style="color:red"></i></button>
-
-                    </td>
-                </tr>
-                  <tr>
-                    <td>4</td>
-                    <td>DELTAIL MARKETING</td>
-                    <td>Active</td>
-                    <td>Katewinless</td>
-                    <td>22/12/2022</td>
-                   <td>
-                        <a href="detail-blog.aspx" style="text-decoration: none; "  title="Detail"><i style="width: 25px" class="fas fa-exclamation-circle"></i></a>
-
-                        <a href="edit-blog.aspx" style="text-decoration: none;"title="Edit"><i style="width: 25px" class="fas fa-pen"></i></a>
-                         <button type="button" style="border:none;background-color:floralwhite"  onclick="del()"title="Delete"><i class="fas fa-trash-alt" style="color:red"></i></button>
-
-                    </td>
-                </tr>
-                  <tr>
-                    <td>5</td>
-                    <td>DELTAIL MARKETING</td>
-                    <td>Active</td>
-                    <td>Katewinless</td>
-                    <td>22/12/2022</td>
-                    <td>
-                        <a href="detail-blog.aspx" style="text-decoration: none; "  title="Detail"><i style="width: 25px" class="fas fa-exclamation-circle"></i></a>
-
-                        <a href="edit-blog.aspx" style="text-decoration: none;"title="Edit"><i style="width: 25px" class="fas fa-pen"></i></a>
-                         <button type="button" style="border:none;background-color:floralwhite"  onclick="del()"title="Delete"><i class="fas fa-trash-alt" style="color:red"></i></button>
-
-                    </td>
-                </tr>
+                    <%} %>
+                </tr>               
             </tbody>
         </table>
     </div>

@@ -4,11 +4,11 @@ using System.Linq;
 using System.Web;
 
 /// <summary>
-/// Summary description for CompanyManager
+/// Summary description for DepartmentManager
 /// </summary>
-public class CompanyManager
+public class DepartmentManager
 {
-    public CompanyManager()
+    public DepartmentManager()
     {
         //
         // TODO: Add constructor logic here
@@ -20,37 +20,33 @@ public class CompanyManager
         DB.SubmitChanges();
     }
 
-    public void AddNew(Company company)
+    public void AddNew(Department department)
     {
-        DB.Companies.InsertOnSubmit(company);
+        DB.Departments.InsertOnSubmit(department);
         Save();
     }
-    public Company GetById(int id)
+    public Department GetById(int id)
     {
         try
         {
-            return DB.Companies.Where(e => e.CompanyId == id && e.Status != -1).First();
+            return DB.Departments.Where(e => e.DepartmentId == id && e.Status != -1).First();
         }
         // lay id va khac -1;
         catch (Exception)
         {
 
-            return new Company();
+            return new Department();
         }
     }
-    public List<Company> GetCompany()
+    public List<Department> GetDepartment()
     {
         try
         {
-            return DB.Companies.Where(u => u.Status != -1).ToList();
+            return DB.Departments.Where(u => u.Status != -1).ToList();
         }
         catch (Exception)
         {
             return null;
         }
-    }
-    public List<Company> GetListID(long id)
-    {
-        return DB.Companies.Where(u => u.CompanyId == id).ToList();
     }
 }

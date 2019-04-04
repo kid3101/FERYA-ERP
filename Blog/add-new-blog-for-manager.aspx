@@ -21,6 +21,12 @@
                                 <input type="text" id="title" placeholder="Title blog" class="form-control" autofocus>
                             </div>
                         </div>
+                           <div class="form-group">
+                            <label for="title" class="col-sm-3 control-label">Describe</label>
+                            <div class="col-sm-9">
+                                <input type="text" id="desc" placeholder="Describe" class="form-control" autofocus>
+                            </div>
+                        </div>
                         <div class="form-group">
                             <label for="birthDate" class="col-sm-3 control-label">Status</label>
                             <div class="col-sm-9">
@@ -30,7 +36,7 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="form-group">
+       <%--                 <div class="form-group">
                             <label for="birthDate" class="col-sm-3 control-label">Avartar <i style="color:red">*</i></label>
                             <div class="col-sm-9">
                                      <div class="file-field">                                                               
@@ -40,7 +46,7 @@
                                         </a>
                                     </div>  
                             </div>
-                        </div>
+                        </div>--%>
 
                         <div class="form-group">
                             <label for="birthDate" class="col-sm-3 control-label">Content</label>
@@ -48,15 +54,15 @@
                                 <textarea class="tinymce" placeholder="Write something ..." style="border-radius:10px;"></textarea>
                             </div>
                         </div>
-                                              <div class="form-group">
+                         <div class="form-group">
                             <div class="col-sm-9">
                                 <form class="md-form">
-                                    <div class="file-field">
+                                  <%--  <div class="file-field">
                                      <div class="box">
                                     <input type="file" name="file-3[]" id="file-3" class="inputfile inputfile-3" data-multiple-caption="{count} files selected" multiple="">
                                     <label for="file-3"><i class="fa fa-paperclip"></i><span>File attached...</span></label>
                                      </div>
-                                    </div>
+                                    </div>--%>
                                     </form>
                             </div>
                         </div>
@@ -67,7 +73,7 @@
                             </div>
                         </div>
                         <div class="addnewblog">
-                        <a href="list-blog-for-manager.aspx"><button type="submit" class="btn btn-info">Add New</button></a>
+                        <a href="manager-blog.aspx"><button type="submit" class="btn btn-info">Add New</button></a>
                     </div>
                             </form> <!-- /form -->
                 </div>
