@@ -83,23 +83,38 @@
                                         </div>
                                         <div class="form-group">
                                             <label>Office</label>
-                                            <select id="lstOffice" class="selectt">
-                                                <option value="office1">Office 1</option>
-                                                <option value="office2">Office 2</option>
+                                            <select class="officee form-control" id="selectListOffice">
+                                                <%for (int j = 0; j < listOffice.Count; j++)
+                                                { %>
+                                                    <option value="<%=listOffice[j].OfficeId %>"><%=listOffice[j].OfficeName %></option>
+                                                <%} %>
                                             </select>
                                         </div>
                                         <div class="form-group">
                                             <label>Company</label>
-                                            <select id="lstCompany" class="officee">
-                                                <option value="company1">Company 1</option>
-                                                <option value="company2">Company 2</option>
+                                            <select class="officee form-control" id="selectListCompany">
+                                                <%for (int j = 0; j < listCompany.Count; j++)
+                                            { %>
+                                                <option value="<%=listCompany[j].CompanyId %>"><%=listCompany[j].CompanyName %></option>
+                                            <%} %>            
                                             </select>
                                         </div>
+                                        <div class="form-group">
+                                            <label>Manager</label>
+                                            <select class="officee form-control" id="selectListManager">
+                                                <%for (int j = 0; j < listEmployees.Count; j++)
+                                            { %>
+                                                <option value="<%=listEmployees[j].ManagerId %>"><%=listEmployees[j].LastName %></option>
+                                            <%} %>            
+                                            </select>
+                                        </div>
+                                
+                                        
                                     </form>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-default closee" data-dismiss="modal" >Close</button>
-                                    <button type="submit" class="btn btn-info addd"><a <%--href="AddDepartment.aspx"--%> onclick="addnew()" class="hv">Create departments</a></button>
+                                    <button type="submit" class="btn btn-info addd"><a onclick="addnew()" class="hv">Create departments</a></button>
                                 </div>
                             </div>
 
@@ -138,7 +153,12 @@
                         <td><%=listDepartment[i].CreatedDate %></td>
                         <td><%=listDepartment[i].Employee.LastName %></td>
                         <td><%=listDepartment[i].Employee.LastName %></td>
-                        <td data-toggle="modal" data-target="#myModal2"><i class="fa fa-pen"></i></td>
+                        <td>
+                            <a data-toggle="modal" data-target="#myModal2">
+                                <i class="fa fa-pen"></i>
+                            </a>
+                            <button type="button" style="border:none;background-color:floralwhite" onclick="del()"><i class="fas fa-trash-alt" style="color:red"></i></button>
+                        </td>
                         <%}%>
                     </tr>
                 </tbody>
@@ -163,16 +183,20 @@
                         </div>
                         <div class="form-group">
                             <label >Office</label>
-                            <select class="officee">
-                                <option value="office1">Office 1</option>
-                                <option value="office2">Office 2</option>
+                            <select class="officee" id="selectList3">
+                                <%for (int j = 0; j < listOffice.Count; j++)
+                                { %>
+                                    <option value="<%=listOffice[j].OfficeId %>"><%=listOffice[j].OfficeName %></option>
+                                <%} %>
                             </select>
                         </div>
                         <div class="form-group">
                             <label>Company</label>
-                            <select class="officee">
-                                <option value="company1">Company 1</option>
-                                <option value="company2">Company 2</option>
+                            <select class="officee" id="selectList4">
+                                <%for (int j = 0; j < listCompany.Count; j++)
+                                { %>
+                                    <option value="<%=listCompany[j].CompanyId %>"><%=listCompany[j].CompanyName %></option>
+                                <%} %>
                             </select>
                         </div>
                     </form>

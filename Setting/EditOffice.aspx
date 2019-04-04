@@ -7,7 +7,7 @@
         <h1 class="h3 mb-4 text-gray-800">Setting  > Update Office</h1>
         <div style="display: flex;">
             <div class="col-sm-2"></div>
-            <div class="col-sm-8">
+            <div class="col-sm-8" >
         <div style="display:flex;margin-bottom: 30px;">
         <div style="margin-right: 10px;" >
             <span>Name</span>
