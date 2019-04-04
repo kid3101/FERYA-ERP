@@ -134,7 +134,7 @@
                                                     </select>
                                                 </div>
                                                 <div style="margin-right: 10px;">
-                                                    <label for="pwd">Company:</label>
+                                                    <label for="pwd">Company</label>
                                                      <select id="selectList" class="form-control" style="height: 38px;margin-top: -10px;width: 175px;">
                                                          <%for (int j = 0; j < listCompany.Count; j++)
                                                              { %>
@@ -632,7 +632,7 @@
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-default" data-dismiss="modal" style="border: none;border-radius: 17px;margin-right: 10px;padding-left: 20px;padding-right: 20px;">Close</button>
-                                    <button type="submit" class="btn btn-info" style="border:none;padding: 8px;"><a <%--href="AddOffice.aspx"--%> onclick="addnew()" style="color:white;text-decoration:none;">Create office</a></button>
+                                    <button type="button" class="btn btn-info" style="border:none;padding: 8px; " onclick="addnew()">Create office</button>
                                 </div>
                             </div>
 
@@ -681,18 +681,15 @@
                     <%for (int i = listOffice.Count - 1; i > -1; i--)
                     {%>
                     <tr>
-                        <%--<td>1</td>
-                        <td>Ofice 1</td>
-                        <td>37 Hoa Sứ</td>
-                        <td>9:00 - 17:30</td>
-                        <td>Jonh</td>--%>
-                        <%--<td>14.169.31.164</td>--%>
-                        <%--<td>Jonh</td>
-                        <td>05:00, 26/03</td>--%>
-                        <td><%=listOffice[i].OfficeId %></td>
+                       <td><%=listOffice[i].OfficeId %></td>
                         <td><%=listOffice[i].OfficeName%></td>
-                        <td></td>
-                        <%--<td><%=listOffice[i].Company.CompanyName%></td>--%>
+                        <td>
+                        <%for(int j=0;j<listCompany.Count;j++) {
+                            if(listCompany[j].CompanyId==listOffice[i].CompanyId){%>
+                        <%=listCompany[j].CompanyName %>
+                        <% break;}%>
+                        <%}%>  
+                            </td>
                         <td><%=listOffice[i].OfficeAddress%></td>
                         <td></td>
                         <td><%=listOffice[i].Phone%></td>
@@ -1266,14 +1263,16 @@
         {
             var name = $("#txtName").val();
             var address = $("#txtAddress").val();
-   
-            $.post ("/do/add-new-office.aspx", {
+            var company = $("#selectList").val();
+            
+            $.post ("/do/Setting/add-new-office.aspx", {
                 name: name,
                 address: address,
+                company: company
              
             }, function (data) {
                 if (data == 1) {
-                    alertify.alert("Success");
+                    alert("Success");
                     location.href = "/Setting/Office.aspx";
                 }
                 else {
@@ -1288,7 +1287,7 @@
                 }, function (data) {
                     if (data == 1) {
                         alertify.alert("Success")
-                        location.href = "Office.aspx";
+                        location.href = "/Setting/Office.aspx";
                     }
                     else {
                         alerify.alert("Error", data)
