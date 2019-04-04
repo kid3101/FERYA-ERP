@@ -50,4 +50,8 @@ public class OfficeManager
             return null;
         }
     }
+    public List<Office> GetListID(long id)
+    {
+        return DB.Offices.Where(u => u.OfficeId == id).ToList();
+    }
 }

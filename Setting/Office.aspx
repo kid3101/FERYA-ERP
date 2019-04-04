@@ -133,6 +133,27 @@
                                                         <option>Can Tho</option>
                                                     </select>
                                                 </div>
+                                                <div style="margin-right: 10px;">
+                                                    <label for="pwd">Company:</label>
+                                                     <select id="selectList" class="form-control" style="height: 38px;margin-top: -10px;width: 175px;">
+                                                         <%for (int j = 0; j < listCompany.Count; j++)
+                                                             { %>
+                                                            <option value="<%=listCompany[j].CompanyId %>"><%=listCompany[j].CompanyName %></option>
+                                                            <%} %>
+                                                        </select>
+                                                </div>
+                                               <%-- <%for (int i = 0; i < listOffice.Count; i++) { %>
+                                                <div style="margin-right: 10px;">
+                                                    <%List<Company> listOfficeCat = new List<Company>();
+                                                        CompanyManager om = new CompanyManager();
+                                                        listOfficeCat = om.GetListID(listOffice[i].OfficeId);
+                                                        for(int e=0;e<listOfficeCat.Count;e++)
+                                                        {%>
+                                                            <%=listOfficeCat[e].CompanyName %></br>
+                                                       <% }
+                                                            %>
+                                                </div>
+                                                 <%} %>--%>
                                                 <%--<div style="margin-right: 10px;">
                                                     <span>IP is timed <i class="fa fa-info-circle" style="cursor:pointer;" title="Your current IP is 15.169.34.171"></i></span>
                                                     <input style="display:block;height:25px" type="text" />
@@ -670,12 +691,12 @@
                         <td>05:00, 26/03</td>--%>
                         <td><%=listOffice[i].OfficeId %></td>
                         <td><%=listOffice[i].OfficeName%></td>
+                        <td></td>
                         <%--<td><%=listOffice[i].Company.CompanyName%></td>--%>
                         <td><%=listOffice[i].OfficeAddress%></td>
                         <td></td>
                         <td><%=listOffice[i].Phone%></td>
                         <td><%=listOffice[i].CreatedDate%></td>
-                        <td></td>
 
                         <td>
                             <a href="#"  data-toggle="modal" data-target="#myModal7" style="margin-right: 20px;text-decoration:none;"><i style="width: 25px" class="fas fa-pen"></i></a>
@@ -727,6 +748,9 @@
                                                 <option>Da Nang</option>
                                                 <option>Can Tho</option>
                                             </select>
+                                        </div>
+                                        <div style="margin-right:10px;">
+                                            
                                         </div>
                                         <%--<div style="margin-right: 10px;">
                                             <span>IP is timed <i class="fa fa-info-circle" style="cursor:pointer;" title="Your current IP is 15.169.34.171"></i></span>
@@ -1243,14 +1267,14 @@
             var name = $("#txtName").val();
             var address = $("#txtAddress").val();
    
-            $.post ("../do/add-new-office.aspx", {
+            $.post ("/do/add-new-office.aspx", {
                 name: name,
                 address: address,
              
             }, function (data) {
                 if (data == 1) {
                     alertify.alert("Success");
-                    location.href = "Office.aspx";
+                    location.href = "/Setting/Office.aspx";
                 }
                 else {
                     alertify.alert("Error", data);
@@ -1259,7 +1283,7 @@
             }
         function clickdelete(id) {
             alertify.confirm("Are you sure Delete?", function () {
-                $.post("../do/delete-office.aspx", {
+                $.post("/do/delete-office.aspx", {
                     id: id,
                 }, function (data) {
                     if (data == 1) {

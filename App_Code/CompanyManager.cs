@@ -49,4 +49,8 @@ public class CompanyManager
             return null;
         }
     }
+    public List<Company> GetListID(long id)
+    {
+        return DB.Companies.Where(u => u.CompanyId == id).ToList();
+    }
 }
