@@ -89,7 +89,7 @@
                             <label>Place of birth</label>
                         </div>
                         <div class="tabright">
-                            <input type="text" style="border: 1px solid #c0bdbc; border-radius:3px;width: 70%;" />
+                            <input type="text" class="tab-right" />
                         </div>
                     </div>
                     <div style="display:flex;margin-bottom: 10px;">
@@ -97,7 +97,7 @@
                             <label>Home town</label>
                         </div>
                         <div class="tabright">
-                            <input type="text" style="border: 1px solid #c0bdbc; border-radius:3px;width: 70%;" />
+                            <input type="text" class="tab-right" />
                         </div>
                     </div>
                     <div style="display:flex;margin-bottom: 10px;">
@@ -105,7 +105,7 @@
                             <label>Home town</label>
                         </div>
                         <div class="tabright">
-                            <input type="text" style="border: 1px solid #c0bdbc; border-radius:3px;width: 70%;" />
+                            <input type="text" class="tab-right" />
                         </div>
                     </div>
                     <div style="display:flex;margin-bottom: 10px;">
@@ -113,7 +113,7 @@
                             <label>Religion</label>
                         </div>
                         <div class="tabright">
-                            <input type="text" style="border: 1px solid #c0bdbc; border-radius:3px;width: 70%;" />
+                            <input type="text" class="tab-right" />
                         </div>
                     </div>
                     <div style="display:flex;margin-bottom: 10px;">
@@ -121,7 +121,7 @@
                             <label>Permanent address</label>
                         </div>
                         <div class="tabright">
-                            <input type="text" style="border: 1px solid #c0bdbc; border-radius:3px;width: 70%;" />
+                            <input type="text" class="tab-right" />
                         </div>
                     </div>
                     <div style="display:flex;margin-bottom: 10px;">
@@ -129,7 +129,7 @@
                             <label>Temporary residence address</label>
                         </div>
                         <div class="tabright">
-                            <input type="text" style="border: 1px solid #c0bdbc; border-radius:3px;width: 70%;" />
+                            <input type="text" class="tab-right" />
                         </div>
                     </div>
                     <div style="display:flex;margin-bottom: 10px;">
@@ -137,7 +137,7 @@
                             <label>Birthday</label>
                         </div>
                         <div class="tabright">
-                            <input type="date" style="border: 1px solid #c0bdbc; border-radius:3px;width: 70%;" />
+                            <input type="date" class="tab-right" />
                         </div>
                     </div>
                     <div style="display:flex;margin-bottom: 10px;">
@@ -157,7 +157,7 @@
                             <label>Tax code</label>
                         </div>
                         <div class="tabright">
-                            <input type="text" style="border: 1px solid #c0bdbc; border-radius:3px;width: 70%;" />
+                            <input type="text" class="tab-right" />
                         </div>
                     </div>
                     <div style="display:flex;margin-bottom: 10px;">
@@ -165,7 +165,7 @@
                             <label>ID number</label>
                         </div>
                         <div class="tabright">
-                            <input type="text" style="border: 1px solid #c0bdbc; border-radius:3px;width: 70%;" />
+                            <input type="text" class="tab-right" />
                         </div>
                     </div>
                     <div style="display:flex;margin-bottom: 10px;">
@@ -173,7 +173,7 @@
                             <label>Place of issuing ID card</label>
                         </div>
                         <div class="tabright">
-                            <input type="text" style="border: 1px solid #c0bdbc; border-radius:3px;width: 70%;" />
+                            <input type="text" class="tab-right" />
                         </div>
                     </div>
                     <div style="display:flex;margin-bottom: 10px;">
@@ -181,7 +181,7 @@
                             <label>Date of issuing ID card</label>
                         </div>
                         <div class="tabright">
-                            <input type="date" style="border: 1px solid #c0bdbc; border-radius:3px;width: 70%;" />
+                            <input type="date" class="tab-right" />
                         </div>
                     </div>
                     <div style="display:flex;margin-bottom: 10px;">
@@ -201,7 +201,7 @@
                             <label>Foreign Language</label>
                         </div>
                         <div class="tabright">
-                            <input type="text" style="border: 1px solid #c0bdbc; border-radius:3px;width: 70%;" />
+                            <input type="text" class="tab-right" />
                         </div>
                     </div>
                     <div style="display:flex;margin-bottom: 10px;">
@@ -209,7 +209,7 @@
                             <label>Computer skill</label>
                         </div>
                         <div class="tabright">
-                            <input type="text" style="border: 1px solid #c0bdbc; border-radius:3px;width: 70%;" />
+                            <input type="text" class="tab-right" />
                         </div>
                     </div>
                     <div style="display:flex;margin-bottom: 10px;">
@@ -217,7 +217,7 @@
                             <label>Educational level</label>
                         </div>
                         <div class="tabright">
-                            <input type="text" style="border: 1px solid #c0bdbc; border-radius:3px;width: 70%;" />
+                            <input type="text" class="tab-right" />
                         </div>
                     </div>
                     <div style="display:flex;margin-bottom: 10px;">
@@ -225,7 +225,7 @@
                             <label>Academic level</label>
                         </div>
                         <div class="tabright">
-                            <input type="text" style="border: 1px solid #c0bdbc; border-radius:3px;width: 70%;" />
+                            <input type="text" class="tab-right" />
                         </div>
                     </div>
                     <div style="display:flex;margin-bottom: 10px;">
@@ -233,7 +233,7 @@
                             <label>Specialized</label>
                         </div>
                         <div class="tabright">
-                            <input type="text" style="border: 1px solid #c0bdbc; border-radius:3px;width: 70%;" />
+                            <input type="text" class="tab-right" />
                         </div>
                     </div>
                     <div style="display:flex;margin-bottom: 10px;">
@@ -253,7 +253,7 @@
                             <label>Insurance number</label>
                         </div>
                         <div class="tabright">
-                            <input type="text" style="border: 1px solid #c0bdbc; border-radius:3px;width: 70%;" />
+                            <input type="text" class="tab-right" />
                         </div>
                     </div>
                     <div style="display:flex;margin-bottom: 10px;">
@@ -261,7 +261,7 @@
                             <label>Date of insurance participation</label>
                         </div>
                         <div class="tabright">
-                            <input type="date" style="border: 1px solid #c0bdbc; border-radius:3px;width: 70%;" />
+                            <input type="date" class="tab-right" />
                         </div>
                     </div>
                     <div style="display:flex;margin-bottom: 10px;">
@@ -269,7 +269,7 @@
                             <label>Registered address</label>
                         </div>
                         <div class="tabright">
-                            <input type="text" style="border: 1px solid #c0bdbc; border-radius:3px;width: 70%;" />
+                            <input type="text" class="tab-right" />
                         </div>
                     </div>
                     <div style="display:flex;margin-bottom: 10px;">
@@ -277,7 +277,7 @@
                             <label>Medical treatment</label>
                         </div>
                         <div class="tabright">
-                            <input type="text" style="border: 1px solid #c0bdbc; border-radius:3px;width: 70%;" />
+                            <input type="text" class="tab-right" />
                         </div>
                     </div>
                     <div style="display:flex;margin-bottom: 10px;">
@@ -285,7 +285,7 @@
                             <label>Health</label>
                         </div>
                         <div class="tabright">
-                            <input type="text" style="border: 1px solid #c0bdbc; border-radius:3px;width: 70%;" />
+                            <input type="text" class="tab-right" />
                         </div>
                     </div>
                     <div style="display:flex;margin-bottom: 10px;">
@@ -293,8 +293,8 @@
                             <label>Weight</label>
                         </div>
                         <div class="tabright">
-                            <input type="text" style="border: 1px solid #c0bdbc; border-radius:3px;width: 65%;" value="0" />
-                            <label style="border: 1px solid #b6b5b5; margin-left:-9px;padding: 1px 6px;">kg</label>
+                            <input type="text" id="kg" value="0" />
+                            <label class="kg">kg</label>
                         </div>
                     </div>
                     <div style="display:flex;margin-bottom: 10px;">
@@ -302,8 +302,8 @@
                             <label>Height</label>
                         </div>
                         <div class="tabright">
-                            <input type="text" style="border: 1px solid #c0bdbc; border-radius:3px;width: 65%;" value="0" />
-                            <label style="border: 1px solid #b6b5b5; margin-left:-9px;padding: 1px 3px;">cm</label>
+                            <input type="text" id="cm" value="0" />
+                            <label class="cm">cm</label>
                         </div>
                     </div>
                     <div style="display:flex;margin-bottom: 10px;">
@@ -532,13 +532,13 @@
                     <h4 class="modal-title" style="color:black;"><b>Update account</b></h4>
                 </div>
                 <div class="modal-body">
-                    <form class="w3-container " style="padding: 0.01em 16px;margin-right: 0px;padding-top: 0px;">
+                    <form class="w3-container " >
                         <p>
-                            <label>Bank name<a style="margin-top: -0.2em; margin-left:0.2em;color: #DB2828;">*</a></label>
+                            <label>Bank name<span class="star-sign">*</span></label>
                             <input class="w3-input w3-border" type="text" value="abc">
                         </p>
                         <p>
-                            <label>Account number<a style="margin-top: -0.2em; margin-left:0.2em;color: #DB2828;">*</a></label>
+                            <label>Account number<span class="star-sign">*</span></label>
                             <input class="w3-input w3-border" type="text" value="123">
                         </p>
                         <p>
@@ -556,8 +556,8 @@
 
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal" style="border: none;border-radius: 17px;margin-right: 10px;padding-left: 20px;padding-right: 20px;">Close</button>
-                    <button type="submit" class="nutchamcong2" style="border:none;padding: 8px;"><a href="#"  style="color:white;text-decoration:none;">Save</a></button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal" id="close">Close</button>
+                    <button type="submit" class="btn btn-info"><a href="#">Save</a></button>
                 </div>
             </div>
 
@@ -573,13 +573,13 @@
                     <h4 class="modal-title" style="color:black;"><b>Add a new account</b></h4>
                 </div>
                 <div class="modal-body">
-                    <form class="w3-container " style="padding: 0.01em 16px;margin-right: 0px;padding-top: 0px;">
+                    <form class="w3-container" >
                         <p>
-                            <label>Bank name<a style="margin-top: -0.2em; margin-left:0.2em;color: #DB2828;">*</a></label>
+                            <label>Bank name<span class="star-sign">*</span></label>
                             <input class="w3-input w3-border" type="text">
                         </p>
                         <p>
-                            <label>Account number<a style="margin-top: -0.2em; margin-left:0.2em;color: #DB2828;">*</a></label>
+                            <label>Account number<span class="star-sign">*</span></label>
                             <input class="w3-input w3-border" type="text">
                         </p>
                         <p>
@@ -590,8 +590,8 @@
 
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal" style="border: none;border-radius: 17px;margin-right: 10px;padding-left: 20px;padding-right: 20px;">Close</button>
-                    <button type="submit" class="nutchamcong2" style="border:none;padding: 8px;"><a href="#"  style="color:white;text-decoration:none;">Add new</a></button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal" id="close">Close</button>
+                    <button type="submit" class="btn btn-info" ><a href="#" >Add new</a></button>
                 </div>
             </div>
 
@@ -787,8 +787,8 @@
                     </div>
                 </div>
                  <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal" style="border: none;border-radius: 17px;margin-right: 10px;padding-left: 20px;padding-right: 20px;">Close</button>
-                    <button type="submit" class="nutchamcong2" style="border:none;padding: 8px;"><a href="#"  style="color:white;text-decoration:none;">Save</a></button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal" id="close">Close</button>
+                    <button type="submit" class="btn btn-info"><a href="#">Save</a></button>
                 </div>
             </div>
 
@@ -984,8 +984,8 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal" style="border: none;border-radius: 17px;margin-right: 10px;padding-left: 20px;padding-right: 20px;">Close</button>
-                    <button type="submit" class="nutchamcong2" style="border:none;padding: 8px;"><a href="#"  style="color:white;text-decoration:none;">Add new</a></button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal" id="close">Close</button>
+                    <button type="submit" class="btn btn-info"><a href="#">Add new</a></button>
                 </div>
             </div>
         </div>
@@ -1083,8 +1083,8 @@
                     </div>
                 </div>
                  <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal" style="border: none;border-radius: 17px;margin-right: 10px;padding-left: 20px;padding-right: 20px;">Close</button>
-                    <button type="submit" class="nutchamcong2" style="border:none;padding: 8px;"><a href="#"  style="color:white;text-decoration:none;">Save</a></button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal" id="close">Close</button>
+                    <button type="submit" class="btn btn-info"><a href="#" >Save</a></button>
                 </div>
             </div>
         </div>
@@ -1182,8 +1182,8 @@
                     </div>
                 </div>
                  <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal" style="border: none;border-radius: 17px;margin-right: 10px;padding-left: 20px;padding-right: 20px;">Close</button>
-                    <button type="submit" class="nutchamcong2" style="border:none;padding: 8px;"><a href="#"  style="color:white;text-decoration:none;">Add new</a></button>
+                    <button type="button" class="btn btn-default" id="close" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-info" ><a href="#"  >Add new</a></button>
                 </div>
             </div>
         </div>

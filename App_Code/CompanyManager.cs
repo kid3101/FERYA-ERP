@@ -4,16 +4,15 @@ using System.Linq;
 using System.Web;
 
 /// <summary>
-/// Summary description for OfficeManager
+/// Summary description for CompanyManager
 /// </summary>
-public class OfficeManager
+public class CompanyManager
 {
-    public OfficeManager()
+    public CompanyManager()
     {
         //
         // TODO: Add constructor logic here
         //
-        
     }
     DataClassesDataContext DB = new DataClassesDataContext();
     public void Save()
@@ -21,29 +20,29 @@ public class OfficeManager
         DB.SubmitChanges();
     }
 
-    public void AddNew(Office office)
+    public void AddNew(Company office)
     {
-        DB.Offices.InsertOnSubmit(office);
+        DB.Companies.InsertOnSubmit(office);
         Save();
     }
-    public Office GetById(int id)
+    public Company GetById(int id)
     {
         try
         {
-            return DB.Offices.Where(e => e.OfficeId == id && e.Status != -1).First();
+            return DB.Companies.Where(e => e.CompanyId == id && e.Status != -1).First();
         }
         // lay id va khac -1;
         catch (Exception)
         {
 
-            return new Office();
+            return new Company();
         }
     }
-    public List<Office> GetOffice()
+    public List<Company> GetCompany()
     {
         try
         {
-            return DB.Offices.Where(u => u.Status != -1).ToList();
+            return DB.Companies.Where(u => u.Status != -1).ToList();
         }
         catch (Exception)
         {
