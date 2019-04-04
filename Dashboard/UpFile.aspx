@@ -52,15 +52,15 @@
                 <div class="col-sm-10">
                     <div style="font-size:20px;margin-top: 24px;float: right;">
                         <a class="ls" data-toggle="modal" data-target="#myModal"><span style="margin-right: 25px;"><i class="fa fa-folder"></i> Create folder</span></a>
-                        <a class="ls" data-toggle="modal" data-target="#myModal2"><span><i class="fa fa-cloud-upload"></i> Upload the file</span></a>
+                        <a class="ls" data-toggle="modal" data-target="#myModal2"><span><i class="fas fa-cloud-upload-alt"></i> Upload the file</span></a>
 
                     </div>
                 </div>
             </div>
 
         </div>
-    </div>
-    <div class="container">
+
+        <div class="container">
         <!-- Modal -->
         <div class="modal fade" id="myModal" role="dialog">
             <div class="modal-dialog">
@@ -116,16 +116,16 @@
                 </div>
         </div>
     </div>
-    <div class="table-responsive">
-        <table class="table table-hover" style="width:100%; color:grey;margin-top: 20px;">
+    <div class="table-responsive" style="margin-top: 40px;">
+        <table class="table table-bordered" id="mytable" style="width:100%; color:grey;margin-top: 20px;">
             <thead>
                 <tr>
-                    <th style="text-transform:uppercase;">NAME</th>
-                    <th rowspan="2">TYPE</th>
-                    <th>SIZE</th>
-                    <th> DATE CREATED</th>
-                    <th>MADE BY</th>
-                    <th></th>
+                    <th>Name</th>
+                    <th rowspan="2">Type</th>
+                    <th>Size</th>
+                    <th> Date Created</th>
+                    <th>Made By</th>
+                    <th>Action</th>
                 </tr>
             </thead>
             <tbody>
@@ -135,10 +135,11 @@
                     <td>2 Kb</td>
                     <td>16:23, 23/02/2019</td>
                     <td>Jonh</td>
-                    <td style="float: right;">
+                    <td>
+                        
                         <a href="#" title="See directory contents" style="margin-right:20px;color:grey;"><i class="fa fa-search" style="color:grey;"></i></a>
                         <a data-toggle="modal" data-target="#myModal3" title="Edit content" style="margin-right:20px;"><i class="fa fa-cog" style="color:grey;"></i></a>
-                        <a title="Delete this folder" style="margin-right:20px;"><i class="fa fa-trash " style="color:grey;"></i></a>
+                        <button type="button" style="border:none;background-color:floralwhite" onclick="del()"><i class="fas fa-trash-alt" style="color:red"></i></button>
                         <!-- Modal -->
                         <div class="modal fade" id="myModal3" role="dialog">
                             <div class="modal-dialog">
@@ -146,25 +147,25 @@
                                 <!-- Modal content-->
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        
                                         <h2 class="modal-title" style="float:left;">Change directory information</h2>
                                     </div>
                                     <div class="modal-body">
                                         <form>
                                             <div class="form-group">
                                                 <label style="float:left;">Folder name</label>
-                                                <input class="form-control">
+                                                <input class="form-control" value="Demo">
                                             </div>
                                             <div class="form-group">
                                                 <label style="float:left;">Describe</label>
-                                                <input class="form-control">
+                                                <input class="form-control" value="Text Demo">
                                             </div>
 
                                         </form>
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-default" data-dismiss="modal" style="border: none;border-radius: 17px;margin-right: 10px;padding-left: 20px;padding-right: 20px;">Close</button>
-                                        <button type="submit" class="nutchamcong" style="border:none;padding-left: 20px;padding-right: 20px;"><a href="File.html" style="color:white;">Save</a></button>
+                                        <button type="submit" class="btn btn-facebook" style="border:none;padding-left: 20px;padding-right: 20px;"><a href="UpFile.aspx" style="color:white;text-decoration:none;">Save</a></button>
                                     </div>
                                 </div>
 
@@ -173,17 +174,17 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>FileDemo</td>
+                    <td><i class="fa fa-file"></i> FileDemo</td>
                     <td>Directory</td>
                     <td>1 Kb</td>
                     <td>18:00, 01/01/2019</td>
                     <td>Anna</td>
                     <td>
-                        <div style="float: right;">
+                        <div>
                             <a href="#" data-toggle="modal" data-target="#myModal6" title="Preview" style="margin-right: 20px;"><i class="fa fa-eye" style="color:grey;"></i></a>
-                            <a href="#" title="Download" style="margin-right: 20px;"><i class="fa fa-download" style="color:grey;"></i></a>
+                            <a href="#" id="btnExport4" title="Download" style="margin-right: 20px;"><i class="fa fa-download" style="color:grey;"></i></a>
                             <a href="#" data-toggle="modal" data-target="#myModal7" title="Edit content" style="margin-right: 20px;"><i class="fa fa-cog" style="color:grey;"></i></a>
-                            <a href="#" title="Delete" style="margin-right: 20px;"><i class="fa fa-trash" style="color:grey;"></i></a>
+                            <button type="button" style="border:none;background-color:floralwhite" onclick="del()"><i class="fas fa-trash-alt" style="color:red"></i></button>
                             <!-- Modal -->
                             <div class="modal fade" id="myModal6" role="dialog">
                                 <div class="modal-dialog">
@@ -194,14 +195,14 @@
                                             
                                             <h2 class="modal-title" style="float:left;">[Preview]</h2>
                                             <span style="font-size: 30px;margin-left: -251px;">trtr</span>
-                                            <a href="#" title="Download" style="float: right;font-size: 23px;margin-top: 7px;text-decoration:none;"><i class="fa fa-download" style="color:grey;"></i></a>
+                                            <a id="btnExport2" href="#" title="Download" style="float: right;font-size: 23px;margin-top: 7px;text-decoration:none;"><i class="fa fa-download" style="color:grey;"></i></a>
                                         </div>
                                         <div class="modal-body">
                                             <form></form>
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-default" data-dismiss="modal" style="border: none;border-radius: 17px;margin-right: 10px;padding-left: 20px;padding-right: 20px;">Close</button>
-                                            <button type="submit" class="nutchamcong" style="border:none;padding-left: 20px;padding-right: 20px;"><a href="#" style="color:white;">Download</a></button>
+                                            <button id="btnExport" type="submit" class="nutchamcong" style="border:none;padding-left: 20px;padding-right: 20px;"><a href="#" style="color:white;text-decoration:none;">Download</a></button>
                                         </div>
                                     </div>
 
@@ -220,16 +221,16 @@
                                         <div class="modal-body">
                                             <div class="form-group">
                                                 <label style="float:left;">File name</label>
-                                                <input class="form-control">
+                                                <input class="form-control" value="FileDemo">
                                             </div>
                                             <div class="form-group">
                                                 <label style="float:left;">Describe</label>
-                                                <input class="form-control">
+                                                <input class="form-control" value="Text FileDemo">
                                             </div>
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-default" data-dismiss="modal" style="border: none;border-radius: 17px;margin-right: 10px;padding-left: 20px;padding-right: 20px;">Close</button>
-                                            <button type="submit" class="nutchamcong" style="border:none;padding-left: 20px;padding-right: 20px;"><a href="#" style="color:white;text-decoration:none;">Download</a></button>
+                                            <button id="btnExport3" type="submit"  class="nutchamcong" style="border:none;padding-left: 20px;padding-right: 20px;"><a href="#" style="color:white;text-decoration:none;">Download</a></button>
                                         </div>
                                     </div>
 
@@ -241,6 +242,9 @@
             </tbody>
         </table>
     </div>
+
+    </div>
+    
     <script>
 
         function myFunction() {
@@ -279,6 +283,39 @@
             });
         }(document, window, 0));
 
+    </script>
+    <script>
+        function del(){
+            alert("Are You Sure?");
+        }
+    </script>
+    <script>
+        $("#btnExport").click(function(e) {
+    window.open('data:application/vnd.ms-excel,' + 
+                '<table>' + $('#mytable > table').html() + '</table>');
+    e.preventDefault();
+});
+    </script>
+    <script>
+        $("#btnExport2").click(function(e) {
+    window.open('data:application/vnd.ms-excel,' + 
+                '<table>' + $('#mytable > table').html() + '</table>');
+    e.preventDefault();
+});
+    </script>
+    <script>
+        $("#btnExport3").click(function(e) {
+    window.open('data:application/vnd.ms-excel,' + 
+                '<table>' + $('#mytable > table').html() + '</table>');
+    e.preventDefault();
+});
+    </script>
+    <script>
+        $("#btnExport4").click(function(e) {
+    window.open('data:application/vnd.ms-excel,' + 
+                '<table>' + $('#mytable > table').html() + '</table>');
+    e.preventDefault();
+});
     </script>
 </asp:Content>
 

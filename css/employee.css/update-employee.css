@@ -142,7 +142,7 @@ element.style {
     float: right;
     width: 80%;
     height: 250px;
-    margin-top: -460px;
+    /*margin-top: -460px;*/
     display: none;
 }
 

@@ -13,7 +13,7 @@
           <div class="col-sm-5" id="col-5">
                   <div class="linkmanagerblog">
                     <div class="managerblog">
-                        <a class="btn btn-info" data-toggle="tooltip" href="list-blog-for-manager.aspx" title="Timekeeping">For Manager</a>
+                        <a class="btn btn-info" data-toggle="tooltip" href="list-blog-for-manager.aspx">For Manager</a>
                     </div>
                       <br />
                     <div class="page">    
@@ -32,7 +32,7 @@
               </div>
 
           <div class="col-sm-5" id="searchblog"> 
-                     <div class="count">
+           <%--          <div class="count">
                             <span>All</span>
                             <span class="number">0</span>
                        </div>
@@ -41,7 +41,7 @@
                               <input type="text" placeholder="Search.." name="search">
                               <button type="submit"><i class="fa fa-search"></i></button>
                             </form>
-                      </div>
+                      </div>--%>
               </div>
         <br>
     </div>
@@ -51,7 +51,7 @@
             <div class="zerodataimage"><img src="/imgs/zerodata/info.png"></div>
             <h3>Blog is empty</h3>
             <p>Please add new blog</p>
-            <div class="zerodatabutton"><a href="add-new-blog.aspx" class="btn btn-facebook">Add New</a></div>
+            <div class="zerodatabutton"><a href="add-new-blog.aspx" class="btn btn-info">Add New</a></div>
         </div>
     </div>
         </div>

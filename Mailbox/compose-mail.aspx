@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-
+    
      <link href="../css/Setting/AccessRight.css" rel="stylesheet" />
     <link href="../dist/fastselect.css" rel="stylesheet" />
     <script src="../dist/fastselect.js"></script>
@@ -11,9 +11,9 @@
     <script src="../dist/fastselect.min.js"></script>
     <script src="../dist/fastselect.standalone.js"></script>
     <script src="../dist/fastselect.standalone.min.js"></script>
-
     <link href="../css/Css-Mailbox/maibox-css.css" rel="stylesheet" />
     <link href="../css/Css-Mailbox/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../css/Css-Mailbox/composemail.css" rel="stylesheet" />
         <%--<link href="../css/employee.css/add-point-employee.css" rel="stylesheet" />--%>
     <div class="container-fluid">
      <div class="content-wrapper">
@@ -52,7 +52,8 @@
                                 <!-- /.box-header -->
                                 <div class="box-body">
                                     <div class="form-group">
-                                         <select style="height:8px;" class="multipleSelect" multiple name="language">
+
+                                         <select style="height:10px;" class="multipleSelect" multiple name="language">
                                                 <option value="Bangladesh">Từ Nguyên</option>
                                                 <option selected value="Barbados">Trang</option>
                                                 <option selected value="Belarus">Ý</option>

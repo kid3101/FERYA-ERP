@@ -6,7 +6,7 @@
 
     
     <div class="container-fluid">
-        <h1 class="h3 mb-4 text-gray-800">Create Verion</h1>
+        <h1 class="h3 mb-4 text-gray-800">Create Version</h1>
         <div class="row">
             <div class="col-sm-3">
                 <div>
@@ -27,7 +27,7 @@
                     <textarea style="height: 60px" class="form-control" type="text"></textarea>
                 </div>
                 <div class="col-sm" style="display: flex">
-                    <div class="col-sm-8">
+                    <div class="col-sm-8" style="margin-left:-20px;">
                         <label for="ex1">Start Day</label>
 
                         <div id="datepicker" class="input-group date" data-date-format="dd-mm-yyyy">
@@ -45,7 +45,6 @@
                         </div>
                     </div>
                     <div class="col-sm-4">
-
                         <label>Status </label>
                         <select class="form-control">
                             <option value="">New</option>
@@ -56,20 +55,11 @@
                     </div>
                 </div>
                 <br />
-  <button type="button"class="btn btn-info" onclick="createversion()">Create Vision</button>
-            </div>
-            
-         
-         
-
-
+  <button type="button"class="btn btn-info" onclick="createversion()">Create Version</button>
+            </div>         
         </div>
-
-
     </div>
-
-    <script>
-    
+    <script>   
         function createversion() {
             location.href = "/project/list-version.aspx";
         }

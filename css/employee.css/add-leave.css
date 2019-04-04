@@ -6,6 +6,7 @@
 .center {
     margin-top: -1px;
     display: flex;
+    border-top-style:hidden;
 }
 .left {
     width: 35%;
@@ -15,16 +16,13 @@
     margin-top: 8px;
     margin-right: -250px
 }
-.add {
-    margin-top: -40px; 
-    margin-left: 370px;
-}
-.bottom{
-    margin-top:20px
-}
 .vacation {
     margin-right: 20px;
+    margin-left:20px
 }
 #col-10 {
     display: flex
+}
+.nocolor-label{
+    font-size:13px
 }

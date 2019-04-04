@@ -23,7 +23,7 @@
                     <textarea style="height: 60px" class="form-control" type="text"></textarea>
                 </div>
                 <div class="col-sm" style="display: flex">
-                    <div class="col-sm-8">
+                    <div class="col-sm-8" style="margin-left:-20px;">
                         <label for="ex1">Start Day</label>
 
                         <div id="datepicker" class="input-group date" data-date-format="dd-mm-yyyy">
@@ -52,7 +52,7 @@
                     </div>
                 </div>
                 <br />
-  <button type="button"class="btn btn-facebook" onclick="createversion()">Edit Vision</button>
+  <button type="button"class="btn btn-facebook" onclick="createversion()">Edit Version</button>
             </div>
         </div>
     </div>

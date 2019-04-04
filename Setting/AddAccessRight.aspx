@@ -51,27 +51,18 @@
     <script src="../dist/fastselect.min.js"></script>
     <script src="../dist/fastselect.standalone.js"></script>
     <script src="../dist/fastselect.standalone.min.js"></script>
+    <link href="../css/Setting/AccessRight.css" rel="stylesheet" />
     
-    <style>
-        .fstMultipleMode .fstControls 
-        {
-            box-sizing: border-box;
-            padding: 0.5em 0.5em 0em 0.5em;
-            overflow: hidden;
-            width: 26em;
-            cursor: text;
-        }
-    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <div class="container-fluid">
-        <div style="margin-bottom: -11px;margin-top: -20px;">
+        <div class="tong">
             <div class="row content">
                 <div class="col-sm-6 sidenav">
                     <h1 class="h3 mb-4 text-gray-800">Install personnel > Access right</h1>
                 </div>
                 <div class="col-sm-6 sidenav">
-                    <a style="float:right;font-size: 18px;margin-top:26px;text-decoration:none;" href="#" class="ls"><i class="fa fa-history"></i> See the whole Log works</a>
+                    <a href="#" class="ls l"><i class="fa fa-history"></i> See the whole Log works</a>
                 </div>
                 <!-- Modal -->
                 <div class="modal fade" id="myModal" role="dialog">
@@ -81,13 +72,13 @@
                         <div class="modal-content">
                             <div class="modal-header">
                                 
-                                <h2 class="modal-title" style="float:left;">Install / Add new</h2>
+                                <h2 class="modal-title kk">Install / Add new</h2>
                             </div>
                             <div class="modal-body">
                                 <form>
                                     <div class="form-group">
-                                        <label style="float:left;">Name</label>
-                                        <span style="color:red;">*</span>
+                                        <label class="kk">Name</label>
+                                        <span class="mau">*</span>
                                         <input class="form-control">
                                     </div>
                                     <div class="form-group">
@@ -96,19 +87,19 @@
                                             <option>---------</option>
                                         </select>--%>
                                         <select class="multipleSelect" multiple name="language">
-                                            <option value="Bangladesh">Bangladesh</option>
-                                            <option selected value="Barbados">Barbados</option>
-                                            <option selected value="Belarus">Belarus</option>
-                                            <option value="Belgium">Belgium</option>
+                                            <option value="Bangladesh">Mr.Hung</option>
+                                            <option selected value="Barbados">Mr.Trung</option>
+                                            <option selected value="Belarus">Mr.Ti</option>
+                                            <option value="Belgium">Mr.Quang</option>
                                         </select>
                                     </div>
 
                                 </form>
                             </div>
                             <div class="modal-footer">
-                                <span style="float: left;">* Obligatory</span>
-                                <button type="button" class="btn btn-default" data-dismiss="modal" style="border: none;border-radius: 17px;margin-right: 10px;padding-left: 20px;padding-right: 20px;">Close</button>
-                                <button type="submit" class="btn btn-info" style="border:none;padding-left: 20px;padding-right: 20px;"><a href="AddAccessRight.aspx" style="color:white;text-decoration:none;">Add new</a></button>
+                                
+                                <button type="button" class="btn btn-default closse" data-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-info addd"><a href="AddAccessRight.aspx" class="hv">Add new</a></button>
                             </div>
                         </div>
 
@@ -120,37 +111,37 @@
         </div>
 
     </div>
-    <div class="row content" style="margin-bottom: 133px;margin-top: 20px;">
-        <div class="col-sm-4 sidenav">
+    <div class="row content col2" >
+        <div class="col-sm-4 sidenav coll">
             <h3>See rights</h3>
             <p>See the rights of a specific employee</p>
         </div>
-        <div class="col-sm-8" style="display:-webkit-inline-box;">
+        <div class="col-sm-6 dis">
 
             <!--<input type="text" multiple class="tagsInput"/>-->
             <%--<select style="display:block;height:35px;width:60%;">
                 <option>---------</option>
             </select>--%>
             <select class="multipleSelect" multiple name="language">
-                <option value="Bangladesh">Bangladesh</option>
-                <option selected value="Barbados">Barbados</option>
-                <option selected value="Belarus">Belarus</option>
-                <option value="Belgium">Belgium</option>
+                <option value="Bangladesh">Mr.Hung</option>
+                <option selected value="Barbados">Mr.Trung</option>
+                <option selected value="Belarus">Mr.Ti</option>
+                <option value="Belgium">Mr.Quang</option>
             </select>
-            <div style="margin-top: 20px;margin-left: 20px;">
-                <button type="button" class="btn btn-success" style="border-radius: 20px;width: 80px;"><a href="SeeAccess.aspx" style="color:white;text-decoration:none;">See</a></button>
+            <div class="divv">
+                <button type="button" class="btn btn-success seee" ><a href="SeeAccess.aspx" class="hv">See</a></button>
             </div>
         </div>
     </div>
     <div class="table-responsive" style="margin-top: -115px;">
-        <table class="table" style="border: 1px solid rgba(34,36,38,.15);width: 95%;margin-left: 20px;">
+        <table class="table tablee" >
             <thead>
                 <tr>
                     <th>SID</th>
                     <th rowspan="2">Function</th>
                     <th>Root Admin</th>
                     <th>Anna</th>
-                    <th><button type="submit" data-toggle="modal" data-target="#myModal" class="btn btn-info" style="border:none;padding-left: 20px;padding-right: 20px;"><a href="#" style="color:white;text-decoration:none;"><i class="fa fa-plus"></i> Add permissions group</a></button></th>
+                    <th><button type="submit" data-toggle="modal" data-target="#myModal" class="btn btn-info addd"><a href="#" class="hv"><i class="fa fa-plus"></i> Add permissions group</a></button></th>
                 </tr>
             </thead>
             <tbody>
@@ -160,7 +151,7 @@
                     <td>
                         <label class="switch">
                             <input type="checkbox" checked  disabled>
-                            <span class="slider round" style="background-color: #ccc;"></span>
+                            <span class="slider round nen"></span>
                         </label>
                     </td>
                     <td>
@@ -178,7 +169,7 @@
                     <td>
                         <label class="switch">
                             <input type="checkbox" checked disabled>
-                            <span class="slider round" style="background-color: #ccc;"></span>
+                            <span class="slider round nen"></span>
                         </label>
                     </td>
                     <td>
@@ -196,7 +187,7 @@
                     <td>
                         <label class="switch">
                             <input type="checkbox" checked disabled>
-                            <span class="slider round" style="background-color: #ccc;"></span>
+                            <span class="slider round nen"></span>
                         </label>
                     </td>
                     <td>
@@ -214,7 +205,7 @@
                     <td>
                         <label class="switch">
                             <input type="checkbox" checked disabled>
-                            <span class="slider round" style="background-color: #ccc;"></span>
+                            <span class="slider round nen"></span>
                         </label>
                     </td>
                     <td>
@@ -232,7 +223,7 @@
                     <td>
                         <label class="switch">
                             <input type="checkbox" checked disabled>
-                            <span class="slider round" style="background-color: #ccc;"></span>
+                            <span class="slider round nen"></span>
                         </label>
                     </td>
                     <td>
@@ -250,7 +241,7 @@
                     <td>
                         <label class="switch">
                             <input type="checkbox" checked disabled>
-                            <span class="slider round" style="background-color: #ccc;"></span>
+                            <span class="slider round nen"></span>
                         </label>
                     </td>
                     <td>
@@ -268,7 +259,7 @@
                     <td>
                         <label class="switch">
                             <input type="checkbox" checked disabled>
-                            <span class="slider round" style="background-color: #ccc;"></span>
+                            <span class="slider round nen"></span>
                         </label>
                     </td>
                     <td>
@@ -286,7 +277,7 @@
                     <td>
                         <label class="switch">
                             <input type="checkbox" checked disabled>
-                            <span class="slider round" style="background-color: #ccc;"></span>
+                            <span class="slider round nen"></span>
                         </label>
                     </td>
                     <td>
@@ -304,7 +295,7 @@
                     <td>
                         <label class="switch">
                             <input type="checkbox" checked disabled>
-                            <span class="slider round" style="background-color: #ccc;"></span>
+                            <span class="slider round nen"></span>
                         </label>
                     </td>
                     <td>
@@ -322,7 +313,7 @@
                     <td>
                         <label class="switch">
                             <input type="checkbox" checked disabled>
-                            <span class="slider round" style="background-color: #ccc;"></span>
+                            <span class="slider round nen"></span>
                         </label>
                     </td>
                     <td>
@@ -340,7 +331,7 @@
                     <td>
                         <label class="switch">
                             <input type="checkbox" checked disabled>
-                            <span class="slider round" style="background-color: #ccc;"></span>
+                            <span class="slider round nen"></span>
                         </label>
                     </td>
                     <td>
@@ -358,7 +349,7 @@
                     <td>
                         <label class="switch">
                             <input type="checkbox" checked disabled>
-                            <span class="slider round" style="background-color: #ccc;"></span>
+                            <span class="slider round nen"></span>
                         </label>
                     </td>
                     <td>
@@ -376,7 +367,7 @@
                     <td>
                         <label class="switch">
                             <input type="checkbox" checked disabled>
-                            <span class="slider round" style="background-color: #ccc;"></span>
+                            <span class="slider round nen"></span>
                         </label>
                     </td>
                     <td>
@@ -394,7 +385,7 @@
                     <td>
                         <label class="switch">
                             <input type="checkbox" checked disabled>
-                            <span class="slider round" style="background-color: #ccc;"></span>
+                            <span class="slider round nen"></span>
                         </label>
                     </td>
                     <td>

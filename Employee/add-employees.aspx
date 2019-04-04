@@ -1,9 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="add-employees.aspx.cs" Inherits="Employee_AddEmployees" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
-     <link href="../css/Attendance/History.css" rel="stylesheet" />
     <link href="../css/employee.css/addemployee.css" rel="stylesheet" />
-    <link href="../css/Setting/AccessRight.css" rel="stylesheet" />
     <link href="../css/employee.css/add-point-employee.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
@@ -58,7 +56,11 @@
 
                         <div class="col-xs-5">
                             <label>Office</label>
-                            <select class="form-control"></select>
+                            <select class="form-control">
+                                <option>Office 1</option>
+                                <option>Office 2</option>
+                                <option>Office 3</option>
+                            </select>
                         </div>
 
                         <div class="col-xs-5">
@@ -79,7 +81,11 @@
 
                         <div class="col-xs-5" >
                             <label>Department</label>
-                            <select class="form-control"></select>
+                            <select class="form-control">
+                                <option>Hoa Su</option>
+                                <option>Hoa Lan</option>
+                                <option>Hoa Hong</option>
+                            </select>
                         </div>
 
                         <div class="col-xs-5" >
@@ -94,33 +100,21 @@
                             </select>
                         </div>
 
-                        <div class="col-xs-5" >
+                        <%--<div class="col-xs-4" >
                             <label>Internal ID<i class="fa fa-exclamation-circle" data-toggle="tooltip" title="If your company / group is running (or has) a system to manage all accounts, this field will store the user ID of your current system. (Allow A-Z, 0-9 characters). Example: E16217, CE40128 ..." ></i></label>
-                            <div class="ui right labeled input">
-                                <input name="internalid" type="text" value="" >
-                                <lable class="lab">@acb560</lable>
-                            </div>
-                        </div>
+                            <br />  
+                            <input  type="text">
+                            <lable class="lab">@acb560</lable>
+                        </div>--%>
 
                         <div class="col-xs-5">
                             <label>Position<span class="star-sign">*</span></label>
                             <input class="form-control" type="text">
                         </div>
-
-                        <div class="col-xs-5" >
-                            <label>Unlimited IP timekeeping</label><br />
-                            <label class="switch">
-                                <input type="checkbox">
-                                <span class="slider round"></span>
-                            </label>
-                        </div>
                     </div>  
                 </div>
 
         <div >
-            <div class="col-sm-4 sidenav">
-                <span>*: Obligatory</span>
-            </div>
 
             <div class="col-sm-8" id="col-8" >
                 <div >
@@ -133,4 +127,3 @@
             </form>
         </div>
 </asp:Content>
-

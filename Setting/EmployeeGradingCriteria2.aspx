@@ -47,7 +47,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <div class="container-fluid">
         <h1 class="h3 mb-4 text-gray-800">Setting > Employee grading criteria</h1>
-        <ul class="nav" style=" margin-block-start: 1em;padding-inline-start: 40px;margin-top: 48px;">
+        <%--<ul class="nav" style=" margin-block-start: 1em;padding-inline-start: 40px;margin-top: 48px;">
             <li class="active" style="margin-right: 20px;">
                 <a data-toggle="tab" href="#" style="cursor:pointer;text-decoration:none;">
                     <span style="color:black;">All</span>
@@ -136,10 +136,10 @@
 
                 </ul>
             </li>
-        </ul>
+        </ul>--%>
         <div class="container-fluid" style="margin-top: -82px;margin-left: 505px;">
-            <div class="container" style="float:left;display: inline-flex;padding-left: 242px;">
-                <a href="AddNewEmployeeGradingCriteria.aspx" class="nutchamcong" data-toggle="tooltip" title="Create criteria for employee grading" style="color:white;text-decoration:none;"><i class="fa fa-plus"></i> CREATE CRITERIA FOR EMPLOYEE POINTS</a>
+            <div class="container" style="float:left;display: inline-flex;padding-left: 242px;margin-top:20px;">
+                <a href="AddNewEmployeeGradingCriteria.aspx" class="btn btn-info" data-toggle="tooltip" title="Create criteria for employee grading" style="color:white;text-decoration:none;"><i class="fa fa-plus"></i> CREATE CRITERIA FOR EMPLOYEE POINTS</a>
             </div>
             <div class="container" style="display: inline-flex;padding-left: 320px;">
                 <a href="#" style="height: 20px;width: 20px;color: #555;"><i class="fa fa-chevron-left"></i></a>
@@ -158,18 +158,18 @@
     </div>
     <div>
         <div class="table-responsive">
-            <table style="width: 98%;margin-left: 20px;margin-top: 25px;" class="table table-hover">
+            <table style="width: 98%;margin-left: 20px;margin-top: 25px;" class="table table-bordered">
                 <thead>
                     <tr>
-                        <th>SID</th>
-                        <th rowspan="2">CRITERIA NAME</th>
-                        <th>CLASSIFY</th>
-                        <th>ORDER SHOWING</th>
-                        <th>POINT</th>
-                        <th>STATUS</th>
-                        <th>CREATOR</th>
-                        <th>DATE CREATED</th>
-                        <th></th>
+                        <th>Sid</th>
+                        <th rowspan="2">Criteria Name</th>
+                        <th>Classify</th>
+                        <th>Order Showing</th>
+                        <th>Point</th>
+                        <th>Status</th>
+                        <th>Creator</th>
+                        <th>Date Created</th>
+                        <th>Action</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -182,7 +182,7 @@
                         <td>Effective</td>
                         <td>Jonh</td>
                         <td>13:39, 27/03</td>
-                        <td style="float:right;">
+                        <td>
                             <a href="EditEmployeeGradingCriteria.aspx" title="Click here to update data" style="margin-left:20px;text-decoration:none;"><i class="fa fa-pen"></i></a>
                         </td>
                     </tr>
@@ -195,7 +195,7 @@
                         <td>Effective</td>
                         <td>Anna</td>
                         <td>20:05, 01/0a</td>
-                        <td style="float:right;">
+                        <td>
                             <a href="EditEmployeeGradingCriteria.aspx" title="Click here to update data" style="margin-left:20px;text-decoration:none;"><i class="fa fa-pen"></i></a>
                         </td>
                     </tr>

@@ -1,7 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="leave.aspx.cs" Inherits="Employee_leave" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
-     <link href="../css/Attendance/History.css" rel="stylesheet" />
+    <link href="../css/Attendance/History.css" rel="stylesheet" />
+     <link href="../css/employee.css/employee.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
@@ -9,7 +10,7 @@
         <h1 class ="h3 mb-4 text-gray-800">
              Please take leave
         </h1>
-        <ul class="nav nav-tabs" style="margin-block-start: 1em;padding-inline-start: 40px;position: absolute;padding-top: 32px;">
+        <%--<ul class="nav nav-tabs" style="margin-block-start: 1em;padding-inline-start: 40px;position: absolute;padding-top: 32px;">
             <li class="active" style="margin-right: 20px;">
                 <a data-toggle="tab" href="#" style="cursor:pointer;text-decoration:none;">
                     <span style="color:black;">All</span>
@@ -20,7 +21,16 @@
                 <a  style="padding-right: 30px;color:black;cursor:pointer;" title="Turn on / off the search function">Filter & search ...</a>
                 
             </li>
-        </ul>
+        </ul>--%>
+        <div class="col-sm-5" id="searchblog"> 
+        <div class="search-container">
+                <form action="#">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+
         <div class="container-fluid"  style="margin-top: -34px;margin-left: 380px;">
             <div class="container" style="float:left;">
                 <a class="ls" style="margin-left: 15px;text-decoration:none;" href="#"><i class="fa fa-cog"></i> Setting</a>
@@ -28,8 +38,9 @@
                 
                 <a class="btn btn-info"  href="add-leave.aspx" title="Create a new leave application"> <i class="fa fa-plus-circle"></i>CREATE A NEW LICENSE APPLICATION</a>
             </div>
+
             <div class="container" style="display: inline-flex;padding-left: 500px; padding-top: 20px;">
-                <a href="#" style="height: 20px;width: 20px;color: #555;"><i class="fa fa-chevron-left"></i></a>
+                <a href="#" class="chevron-left"><i class="fa fa-chevron-left"></i></a>
                 <div style="margin-right: 6px;">
                     <a href="#" style="color:#555;text-decoration:none;">
                         <span>Page</span>
@@ -38,7 +49,7 @@
                         <span>0</span>
                     </a>
                 </div>
-                <a href="#" style="height: 48px;width: 48px;color: #555;"><i class="fa fa-chevron-right"></i></a>
+                <a href="#" class="chevron-right"><i class="fa fa-chevron-right"></i></a>
             </div>
         </div>
         <br>
@@ -54,7 +65,7 @@
                     <h3 style="color: darkgray; font-size:30px;">No application for leave yet.</h3>
                     <p style="color: darkgray;">Create your first leave application by pressing the button below.</p>
                      <div class="zerodatabutton" >
-                        <a class="btn btn-info" href="add-leave.aspx" >
+                        <a class="btn btn-facebook" href="add-leave.aspx" >
                             Add new
                         </a>
                     </div>

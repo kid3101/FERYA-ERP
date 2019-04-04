@@ -47,12 +47,12 @@
 
     <link href="dist/vanillatree.css" rel="stylesheet" />
     <script src="dist/vanillatree.js"></script>
-
+    <link href="../css/Setting/Derpartment.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <div class="container-fluid">
         <h1 class="h3 mb-4 text-gray-800">Setting > Derpartment</h1>
-        <ul class="nav" style=" margin-block-start: 1em;padding-inline-start: 40px;margin-top: 48px;">
+        <%--<ul class="nav" style=" margin-block-start: 1em;padding-inline-start: 40px;margin-top: 48px;">
             <li class="active " style="margin-right: 20px;">
                 <a data-toggle="tab" href="#" style="cursor:pointer;text-decoration:none;">
                     <span style="color:black;">All</span>
@@ -60,12 +60,12 @@
                 </a>
             </li>
 
-        </ul>
-        <div class="container-fluid" style="margin-top: -34px;margin-left: 791px;">
-            <div class="container" style="float:left;">
+        </ul>--%>
+        <div class="container-fluid tong">
+            <div class="container kk">
                 <div class="row">
-                    <div class="col-sm-5 sidenav" style="margin-top: -52px;margin-left: -168px;">
-                        <a data-toggle="modal" data-target="#myModal" style="float:right;color:white;margin-left: 15px;text-decoration:none;" class="btn btn-info" data-toggle="tooltip" href="#" ><i class="fa fa-plus-circle"></i> CREATE BOARD ROOM</a>
+                    <div class="col-sm-5 sidenav coll">
+                        <a data-toggle="modal" data-target="#myModal"  class="btn btn-info aa" href="#" ><i class="fa fa-plus-circle"></i> CREATE BOARD ROOM</a>
                     </div>
                     <!-- Modal -->
                     <div class="modal fade" id="myModal" role="dialog">
@@ -75,29 +75,29 @@
                             <div class="modal-content">
                                 <div class="modal-header">
                                     
-                                    <h2 class="modal-title" style="float:left;">Add a new department</h2>
+                                    <h2 class="modal-title kk">Add a new department</h2>
                                 </div>
                                 <div class="modal-body">
                                     <form>
                                         <div class="form-group">
-                                            <label style="float:left;">Name</label>
-                                            <span style="color:red;">*</span>
+                                            <label class="kk">Name</label>
+                                            <span class="mau">*</span>
                                             <input class="form-control">
                                         </div>
                                         <div class="form-group">
-                                            <label>Departmental</label>
-                                            <select style="display:block;height:35px;width:100%;">
-                                                <option>Departmental 1</option>
-                                                <option>Departmental 2</option>
-                                                <option>Departmental 3</option>
+                                            <label>Office</label>
+                                            <select class="officee">
+                                                <option>Office 1</option>
+                                                <option>Office 2</option>
+                                                <option>Office 3</option>
                                             </select>
                                         </div>
 
                                     </form>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal" style="border: none;border-radius: 17px;margin-right: 10px;padding-left: 20px;padding-right: 20px;">Close</button>
-                                    <button type="submit" class="btn btn-info" style="border:none;padding-left: 20px;padding-right: 20px;"><a href="AddDepartment.aspx" style="color:white;text-decoration:none;">Create departments</a></button>
+                                    <button type="button" class="btn btn-default" data-dismiss="modal" class="closee">Close</button>
+                                    <button type="submit" class="btn btn-info" class="addd"><a href="AddDepartment.aspx" class="hv">Create departments</a></button>
                                 </div>
                             </div>
 
@@ -114,7 +114,30 @@
         <br>
         <div class="content">
         <main>
-            <div data-toggle="modal" data-target="#myModal2" style="margin-left: 40px;margin-top: 20px;"><a href="#" style="text-decoration:none;"><i class="fa fa-folder"></i> #6010.abc (0)</a></div>
+            <%--<div data-toggle="modal" data-target="#myModal2" style="margin-left: 40px;margin-top: 20px;"><a href="#" style="text-decoration:none;"><i class="fa fa-folder"></i> #6010.abc (0)</a></div>--%>
+            <div class="dii">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Department name</th>
+                        <th>Office name</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Department 1</td>
+                        <td>Office 1</td>
+                        <td data-toggle="modal" data-target="#myModal2"><i class="fa fa-pen"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Department 2</td>
+                        <td>Office 2</td>
+                        <td data-toggle="modal" data-target="#myModal2"><i class="fa fa-pen"></i></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
         </main>
     </div>
     <!-- Modal -->
@@ -125,35 +148,40 @@
             <div class="modal-content">
                 <div class="modal-header">
                     
-                    <h2 class="modal-title" style="float:left;">Update departments</h2>
+                    <h2 class="modal-title kk">Update departments</h2>
                 </div>
                 <div class="modal-body">
                     <form>
                         <div class="form-group">
-                            <label style="float:left;">Name</label>
-                            <span style="color:red;">*</span>
-                            <input class="form-control">
+                            <label class="kk">Name</label>
+                            <span class="mau">*</span>
+                            <input class="form-control" value="Department 1">
                         </div>
                         <div class="form-group">
-                            <label>Departmental</label>
-                            <select style="display:block;height:35px;width:100%;">
-                                <option>---------</option>
+                            <label>Office</label>
+                            <select class="officee">
+                                <option>Office 1</option>
+                                <option>Office 2</option>
                             </select>
                         </div>
 
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <a href="#" style="color:red;float: left;text-decoration:none;">Delete this department</a>
-                    <button type="button" class="btn btn-default" data-dismiss="modal" style="border: none;border-radius: 17px;margin-right: 10px;padding-left: 20px;padding-right: 20px;">Close</button>
-                    <button type="submit" class="nutchamcong2" style="border:none;padding-left: 20px;padding-right: 20px;"><a href="#" style="color:white;text-decoration:none;">Update</a></button>
+                    <a href="#" onclick="del()" class="av">Delete this department</a>
+                    <button type="button" class="btn btn-default" data-dismiss="modal closee">Close</button>
+                    <button type="submit" class="btn btn-facebook addd" ><a href="AddDepartment.aspx" class="hv">Update</a></button>
                 </div>
             </div>
 
         </div>
     </div>
     </div>
-    
+     <script>
+        function del(){
+            alert("Are You Sure?");
+        }
+    </script>
     
 </asp:Content>
 
