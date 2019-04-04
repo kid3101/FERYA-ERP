@@ -21,7 +21,7 @@ using System.Reflection;
 
 
 
-[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="ERP4")]
+[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="erpDBx")]
 public partial class DataClassesDataContext : System.Data.Linq.DataContext
 {
 	
@@ -68,7 +68,7 @@ public partial class DataClassesDataContext : System.Data.Linq.DataContext
   #endregion
 	
 	public DataClassesDataContext() : 
-			base(global::System.Configuration.ConfigurationManager.ConnectionStrings["ERP4"].ConnectionString, mappingSource)
+			base(global::System.Configuration.ConfigurationManager.ConnectionStrings["erpDBxConnectionString"].ConnectionString, mappingSource)
 	{
 		OnCreated();
 	}

@@ -125,7 +125,7 @@
                         <th>Create Date</th>
                         <th>Curent Employee</th>
                         <th>Manager Employee</th>
-                        <th></th>
+                        <th>Action</th>
                     </tr>
                 </thead>
                 <tbody>
