@@ -11,6 +11,8 @@ public partial class Setting_Office : System.Web.UI.Page
 
     public List<Company> listCompany;
 
+    public Office editoffice;
+
     protected void Page_Load(object sender, EventArgs e)
     {
         OfficeManager om = new OfficeManager();
@@ -18,5 +20,9 @@ public partial class Setting_Office : System.Web.UI.Page
 
         CompanyManager cm = new CompanyManager();
         listCompany = cm.GetCompany();
+
+        int id = Convert.ToInt32(Request["id"]);
+
+        editoffice = om.GetById(id);
     }
 }

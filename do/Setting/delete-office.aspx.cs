@@ -17,7 +17,7 @@ public partial class do_delete_office : System.Web.UI.Page
             deleteoffice = OM.GetById(id);
             deleteoffice.Status = -1;
             OM.Save();
-            Response.Write(1);
+            Response.Write("1");
         }
         catch (Exception ex)
         {
