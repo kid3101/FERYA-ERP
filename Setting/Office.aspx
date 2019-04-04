@@ -696,9 +696,9 @@
                         <td><%=listOffice[i].CreatedDate%></td>
 
                         <td>
-                            <a href="#"  data-toggle="modal" data-target="#myModal7" style="margin-right: 20px;text-decoration:none;"><i style="width: 25px" class="fas fa-pen"></i></a>
+                            <a href="#" onclick="edit1(<%=listOffice[i].OfficeId%>)" data-toggle="modal" data-target="#myModal7" style="margin-right: 20px;text-decoration:none;"  ><i style="width: 25px" class="fas fa-pen"></i></a>
                          
-                            <button type="button" style="border:none;background-color:floralwhite" onclick="clickdelete(<%=listOffice[i].OfficeId%>)" <%--onclick="del()"--%>><i class="fas fa-trash-alt" style="color:red"></i></button>
+                            <button type="button" style="border:none;background-color:floralwhite" onclick="clickdelete(<%=listOffice[i].OfficeId%>)"><i class="fas fa-trash-alt" style="color:red"></i></button>
                         </td>
                          <%}%>
                     </tr>
@@ -730,11 +730,11 @@
                                         <div style="margin-right: 10px;">
                                             <span>Name</span>
                                             <span style="color:red;">*</span>
-                                            <input style="display:block;height:25px" type="text" />
+                                            <input id="txtName1" style="display:block;height:25px" type="text" />
                                         </div>
                                         <div style="margin-right: 10px;">
                                             <span>Address</span>
-                                            <input style="display:block;height:25px" type="text" />
+                                            <input id="txtAddress1" style="display:block;height:25px" type="text" />
                                         </div>
                                         <div style="margin-right: 10px;">
                                             <span>City</span>
@@ -746,9 +746,15 @@
                                                 <option>Can Tho</option>
                                             </select>
                                         </div>
-                                        <div style="margin-right:10px;">
-                                            
-                                        </div>
+                                        <div style="margin-right: 10px;">
+                                                    <label for="pwd">Company</label>
+                                                     <select id="selectList1" class="form-control" style="height: 38px;margin-top: -10px;width: 175px;">
+                                                         <%for (int j = 0; j < listCompany.Count; j++)
+                                                             { %>
+                                                            <option value="<%=listCompany[j].CompanyId %>"><%=listCompany[j].CompanyName %></option>
+                                                            <%} %>
+                                                        </select>
+                                                </div>
                                         <%--<div style="margin-right: 10px;">
                                             <span>IP is timed <i class="fa fa-info-circle" style="cursor:pointer;" title="Your current IP is 15.169.34.171"></i></span>
                                             <input style="display:block;height:25px" type="text" />
@@ -1248,7 +1254,7 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal" style="border: none;border-radius: 17px;margin-right: 10px;padding-left: 20px;padding-right: 20px;">Close</button>
-                            <button type="submit" class="btn btn-facebook" style="border:none;padding-left: 20px;padding-right: 20px;"><a href="AddOffice.aspx" style="color:white;text-decoration:none;">Update</a></button>
+                            <button type="button" class="btn btn-facebook" style="border:none;padding-left: 20px;padding-right: 20px;" onclick="edit(<%=editoffice.OfficeId%>)">Update</button>
                         </div>
                     </div>
 
@@ -1276,26 +1282,53 @@
                     location.href = "/Setting/Office.aspx";
                 }
                 else {
-                    alertify.alert("Error", data);
+                    alert("Error", data);
                 }
             });
             }
         function clickdelete(id) {
-            alertify.confirm("Are you sure Delete?", function () {
-                $.post("/do/delete-office.aspx", {
+            confirm("Are you sure Delete?", function () {
+                $.post("/do/Setting/delete-office.aspx", {
                     id: id,
                 }, function (data) {
                     if (data == 1) {
-                        alertify.alert("Success")
+                        alert("Success")
                         location.href = "/Setting/Office.aspx";
                     }
                     else {
-                        alerify.alert("Error", data)
+                        alert("Error", data)
                     }
                 })
             });
         }
-        
+
+        function edit(id)
+        {
+            var name = $("#txtName1").val();
+            var address = $("#txtAddress1").val();
+            var company = $("#selectList1").val();
+            $.post('/do/Setting/edit-office.aspx', {
+                id:id,
+                name: name,
+                address: address,
+                company: company
+
+            }, function (data) {
+                    if (data == 1) {
+                        alert("Success");
+                        location.href = "/Setting/Office.aspx";
+                    }
+                    else {
+                        alert("Error", data)
+                    }
+                });
+
+
+        }
+
+        function edit1(id) {
+            location.href = "/cp/Edit-User.aspx?id=" + id;
+        }
     </script>
 </asp:Content>
 
