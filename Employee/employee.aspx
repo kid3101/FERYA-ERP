@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="employee.aspx.cs" Inherits="NhanVien_Employees" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="employee.aspx.cs" Inherits="Employee_employee" %>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="head" runat="Server">
     <link href="../css/employee.css/employee1.css" rel="stylesheet" />
@@ -123,33 +123,40 @@
                         <thead>
                             <tr>
                                 <th>Id </th>
-                                <th>Name </th>
-                                <th>Office </th>
-                                <th>Rank</th>
-                                <th>Type</th>
-                                <th>Email </th>
-                                <th>Status</th>
-                                <th>Create Day</th>
+                                <th>EmployeeCode </th>
+                                <th>FirstName </th>
+                                <th>LastName</th>
+                                <th>Email</th>
+                                <th>Address </th>
+                                <th>Phone</th>
+                                <th>ManagerId</th>
+                                <th>BasicSalary</th>
+                                <th>KPISalary</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
 
                         <tbody>
+                             <%for (int i = listEmployees.Count - 1; i > -1; i--)
+                    {%>
                             <tr>
-                                <td>1</td>
-                                <td>Thong Huyen Trang</td>
-                                <td>Hoa Sứ</td>
-                                <td>Employees</td>
-                                <td>Official Staff</td>
-                                <td>trang@gmail.com</td>
-                                <td>Effective</td>
-                                <td>22/3/2019</td>
+                                <td><%=listEmployees[i].EmployeeId %></td>
+                                <td><%=listEmployees[i].EmployeeCode %></td>
+                                <td><%=listEmployees[i].FirstName %></td>
+                                <td><%=listEmployees[i].LastName %></td>
+                                <td><%=listEmployees[i].Email %></td>
+                                <td><%=listEmployees[i].Address %></td>
+                                <td><%=listEmployees[i].Phone %></td>
+                                <td><%=listEmployees[i].ManagerId %></td>
+                                <td><%=listEmployees[i].BasicSalary %></td>
+                                <td><%=listEmployees[i].KPISalary %></td>
                                 <td>
 
-                                  <a href=" edit-employee.aspx" title="Edit"><i style="width: 25px" class="fas fa-pen"></i></a>
-                                    <button type="button" style="border:none;background-color:floralwhite"  onclick="del()" title="Delete"><i class="fas fa-trash-alt" style="color:red"></i></button>
+                                  <a href=" edit-employee.aspx" onclick="edit(<%=listEmployees[i].EmployeeId %>)" title="Edit"><i style="width: 25px" class="fas fa-pen"></i></a>
+                                    <button type="button" style="border:none;background-color:floralwhite" onclick="clickdelete(<%=listEmployees[i].EmployeeId %>)" title="Delete"><i class="fas fa-trash-alt" style="color:red"></i></button>
 
                                 </td>
+                                <%}%>
                             </tr>
                         </tbody>
                     </table>
@@ -551,11 +558,29 @@
 
         function addemployees() {
             location.href = "/Employee/add-employees.aspx";
+       }
+
+
+
+       function clickdelete(id) {
+           $.post("../do/Employee/delete-employee.aspx", {
+               id: id,
+           }, function (data) {
+               if (data == 1) {
+                   alertify.alert("Success")
+                   location.href = "employee.aspx";
+               }
+               else {
+                   alerify.alert("Error", data)
+               }
+           });
         }
-    </script>
+        function edit(id) {
+            location.href = "edit-employee.aspx?id=" + id;
+        }
+
+
+
+   </script>
 </asp:Content>
-
-
-
-
 
