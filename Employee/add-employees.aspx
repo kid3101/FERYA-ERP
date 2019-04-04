@@ -22,10 +22,18 @@
                     </div>
                     <div class="right">
                         <div class="col-xs-5">
-                            <label>Name<span class="star-sign">*</span></label>
-                            <input class="form-control" type="text">
+                            <label>EmployeeCode<span class="star-sign">*</span></label>
+                            <input class="form-control" type="text" id="txtEmployeeCode">
                         </div>
                         <div class="col-xs-5">
+                            <label>FirstName<span class="star-sign">*</span></label>
+                            <input class="form-control" type="text" id="txtFirstName">
+                        </div>
+                        <div class="col-xs-5">
+                            <label>LastName<span class="star-sign">*</span></label>
+                            <input class="form-control" type="text" id="LastName">
+                        </div>
+                        <%--<div class="col-xs-5">
                             <label>
                                 Gender
                             </label>
@@ -35,15 +43,19 @@
                                     Male
                                 </option>
                             </select>
-                        </div>
+                        </div>--%>
                         <div class="col-xs-5">
                             <label>Email<span class="star-sign">*</span></label>
                             <input class="form-control" type="text">
                             <div class="email">Email must work. Password will be sent to this email address.</div>
                         </div>
                         <div class="col-xs-5">
-                            <label>Tel</label>
-                            <input class="form-control" type="text">
+                            <label>Address</label>
+                            <input class="form-control" type="text" id="txtAddress">
+                        </div>
+                        <div class="col-xs-5">
+                            <label>Phone</label>
+                            <input class="form-control" type="text" id="txtPhone">
                         </div>
                     </div>
                 </div>
@@ -109,7 +121,11 @@
 
                         <div class="col-xs-5">
                             <label>Position<span class="star-sign">*</span></label>
-                            <input class="form-control" type="text">
+                            <input class="form-control" type="text" id="txtPosition">
+                        </div>
+                        <div class="col-xs-5">
+                            <label>Status<span class="star-sign">*</span></label>
+                            <input class="form-control" type="text" id="txtStatus">
                         </div>
                     </div>  
                 </div>
@@ -118,7 +134,7 @@
 
             <div class="col-sm-8" id="col-8" >
                 <div >
-                    <a href="update-employee.aspx" class="btn btn-info"> Add</a>
+                    <a href="update-employee.aspx" onclick="addnew()" class="btn btn-info"> Add</a>
                 </div>
             </div>
         </div>
@@ -126,4 +142,39 @@
 
             </form>
         </div>
+
+    <script>
+        function addnew()
+        {
+            var name = $("#txtEmployeeCode").val();
+            var name = $("#txtFirstName").val();
+            var name = $("#txtLastName").val();
+            var email = $("#txtEmail").val();
+            var name = $("#txtAddress").val();
+            var phone = $("#txtPhone").val();
+            var phone = $("#txtPosition").val();
+            var phone = $("#txtStatus").val();
+   
+            $.post ("/do/add-employee.aspx", {
+                name: name,
+                email: email,
+                phone: phone,
+             
+            }, function (data) {
+                if (data == 1) {
+                    alertify.alert("Success");
+                    location.href = "employee.aspx";
+                }
+                else {
+                    alertify.alert("Error", data);
+                }
+            });
+            }
+
+        
+    </script>
+
+
+
+
 </asp:Content>

@@ -2,9 +2,7 @@
 
 
 <asp:Content ID="Content3" ContentPlaceHolderID="head" runat="Server">
-    <link href="../css/Attendance/History.css" rel="stylesheet" />
-    <link href="../css/employee.css/list-point-employee.css" rel="stylesheet" />
-    <link href="../css/employee.css/employee.css" rel="stylesheet" />
+    <link href="../css/employee.css/employee1.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
 
@@ -110,47 +108,91 @@
         <%--  <a class="dropdown-toggle" data-toggle="dropdown" title="Turn on / off the search function">Filter & search ...</a>--%>
         <%-- <ul class="dropdown-menu filterbarfull filterbar" style="top: 0px; transform: translate3d(0px, 26px, 0px); width: 354px; margin-top: 215px;">--%>
         <%--  <li>--%>
-        <div style=">
+        <div class="icon1">
           <a class="ls dropdown-toggle" title="For management"  data-toggle="dropdown"><i class="fas fa-cloud-upload-alt"></i> Import</a>
-        <button type="button"class="btn btn-info" onclick="addemployess()"> Add Employees</button>
+            <ul class="dropdown-menu " role="menu" aria-labelledby="menu1" style="width: 200px;">
+                <li role="presentation" class="icons"><a role="menuitem" tabindex="-1" class="iconses" href="import-list.aspx"><i class="fas fa-cloud-upload-alt"></i>Import employee list</a></li>
+                <li role="presentation" class="icons"><a role="menuitem" tabindex="-1" class="iconses" href="import-vitae.aspx"><i class="fas fa-cloud-upload-alt"></i>Import curriculum vitae</a></li>
+                <li role="presentation" class="icons"><a role="menuitem" tabindex="-1" class="iconses" href="import-transfer.aspx"><i class="fas fa-cloud-upload-alt"></i>Import work transfer</a></li>
+            </ul>
+        <button type="button"class="btn btn-info"  onclick="addemployees()"> Add Employees</button>
       </div>
           
-
-       
         <div class="row">
             <div class="col-md-12">
                 <div class="table-responsive">
-
-                    <table class="table table-bordered" id="dataTable">
+                    <table class="table table-bordered" id="dataTable" >
                         <thead>
                             <tr>
-                                 <td>Id </td>
-                                <td>Name </td>
-                                <td>Office </td>
-                                <td>Rank</td>
-                                <td>Type</td>
-                             
-                                <td>Email </td>
-                                <td>Status</td>
-                                <td>Create Day</td>
-                                <td>Action</td>
+                                <th>Id </th>
+                                <th>Name </th>
+                                <th>Office </th>
+                                <th>Rank</th>
+                                <th>Type</th>
+                                <th>Email </th>
+                                <th>Status</th>
+                                <th>Create Day</th>
+                                <th>Action</th>
                             </tr>
                         </thead>
+
                         <tbody>
                             <tr>
                                 <td>1</td>
                                 <td>Thong Huyen Trang</td>
                                 <td>Hoa Sứ</td>
-                                <td>EMPLOYEES</td>
-                                <td>OFFICIAL STAFF</td>
+                                <td>Employees</td>
+                                <td>Official Staff</td>
                                 <td>trang@gmail.com</td>
-                                  <td>Effective</td>
-                                  <td>22/3/2019</td>
-                               <td  <a href="edit_employee.html" class="edit" title="Click here to update data"><i style="width: 25px" class="fas fa-pen"></i></a>
-                                <a href="#"><i style="width: 25px" class="fas fa-trash-alt"></i></a>
+                                <td>Effective</td>
+                                <td>22/3/2019</td>
+                                <td>
 
-                               </td>
+                                  <a href=" edit-employee.aspx" title="Edit"><i style="width: 25px" class="fas fa-pen"></i></a>
+                                    <button type="button" style="border:none;background-color:floralwhite"  onclick="del()" title="Delete"><i class="fas fa-trash-alt" style="color:red"></i></button>
+
+                                </td>
                             </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="export">
+            <button class="btn btn-facebook" data-toggle="modal" data-target="#myModal">
+                <i class="fa fa-download"></i>
+                <span>Export data
+                </span>
+                <span>
+                    <span>(</span><span>1</span><span> </span><span>current</span><span>)</span>
+                </span>
+            </button>
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">You want to export 1 lines from the system.</h4>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button class="btn btn-facebook">Download</button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+       
+       
                            <%-- <tr>
                                 <td>
                                     <label class="lables">
@@ -260,13 +302,7 @@
                                     <a href="#" class="close">Closed</a>
                                 </td>
                             </tr>--%>
-                        </tbody>
-                    </table>
                 </div>
-            </div>
-        </div>
-        </li>
-        </div>
     
               <%--  </ul>--%>
         <%--  </li>--%>
@@ -424,6 +460,9 @@
         $(document).ready(function () {
             $('[data-toggle="tooltip"]').tooltip();
         });
+        function addemployees() {
+            location.href = "/Employee/add-employees.aspx";
+        }
     </script>
 </asp:Content>
 
