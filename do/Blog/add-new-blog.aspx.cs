@@ -17,8 +17,7 @@ public partial class do_Blog_add_new_blog : System.Web.UI.Page
         blog.BlogContent = Request["content"];
         blog.CreatedDate = DateTime.Now;
         blog.CompanyId = 1;
-        blog.CreatedByEmployeeId = 1;
-        
+        blog.CreatedByEmployeeId = 1;      
         bm.AddNew(blog);
         bm.Save();
     }

@@ -73,8 +73,8 @@
                     <td><%=Listblog[i].Company.CompanyName %></td>
                     <td><%=Listblog[i].Employee.FirstName %></td>
                     <td>
-                         <a href="/project/list-work.aspx" title="Detail"><i style="width: 25px" class="fas fa-exclamation-circle"></i><a>
-                         <a href="/project/list-work.aspx" title="Edit"><i style="width: 25px" class="fas fa-pen"></i></a>
+                         <a href="#" onclick="detail(<%=Listblog[i].BlogId %>)" title="Detail"><i style="width: 25px" class="fas fa-exclamation-circle"></i><a>
+                         <a href="#" onclick="edit(<%=Listblog[i].BlogId %>)" title="Edit"><i style="width: 25px" class="fas fa-pen"></i></a>
                          <button type="button" style="border:none;background-color:floralwhite"  onclick="del(<%=Listblog[i] %>)"title="Delete"><i class="fas fa-trash-alt" style="color:red"></i></button>
 
                     </td>
@@ -86,6 +86,9 @@
     </div>
         </div>
     <script>
+        function edit(id) {
+            location.href = "/Blog/edit-blog.aspx?id=" + id;
+        }
         function del(){
             alert("Are You Sure?");
         }
