@@ -51,7 +51,7 @@
                         <div class="form-group">
                             <label for="birthDate" class="col-sm-3 control-label">Content</label>
                             <div class="col-sm-9">
-                                <textarea id="txtcontent" class="tinymce" placeholder="Write something ..." style="border-radius:10px;"></textarea>
+                                <textarea id="txtContent" class="tinymce" placeholder="Write something ..." style="border-radius:10px;"></textarea>
                             </div>
                         </div>
                          <div class="form-group">
@@ -85,8 +85,8 @@
           {
               var title = $("#txttitle").val();
               var desc = $("#txtdesc").val();
-              var status = $("txtstatus").val();
-              var content = $("#txtcontent").val();
+              var status = $("#txtstatus").val();
+              var content = tinymce.get("txtContent").getContent();
               try {
                   $.post("/do/Blog/add-new-blog.aspx", {
                       title: title,
@@ -98,7 +98,8 @@
                           alert("Error");
                       }
                       else {
-                           alert("success")
+                          alert("success")
+                          location.href = "/Blog/manager-blog.aspx";
                       }
                   }
                   )

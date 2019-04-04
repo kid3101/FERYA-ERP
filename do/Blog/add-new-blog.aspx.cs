@@ -13,14 +13,7 @@ public partial class do_Blog_add_new_blog : System.Web.UI.Page
         Blog blog = new Blog();
         blog.BlogTitle = Request["title"];
         blog.BlogDesc = Request["desc"];
-        if (Request["status"] == "Active")
-        {
-            blog.Status = 1;
-        }
-        else
-        {
-            blog.Status = -1;
-        }
+        blog.Status = 1;
         blog.BlogContent = Request["content"];
         blog.CreatedDate = DateTime.Now;
         blog.CompanyId = 1;
