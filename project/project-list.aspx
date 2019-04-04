@@ -6,7 +6,12 @@
     <div class="container-fluid">
         <!-- Page Heading -->
         <h1 class="h3 mb-4 text-gray-800">Project List</h1>
-        <button id="btn1" type="button" class="btn btn-info" style="" onclick="addproject()">Create Project</button>
+     
+        <button  type="button" class="btn btn-info" style="margin-top:-85px;margin-left:860px" onclick="addproject()">Create Project</button>
+        <div class="page">    
+                        
+                        </div>
+                    
 <%--        <div>
             <select id="slt1"class="form-control">
                 <option value="">Search</option>
