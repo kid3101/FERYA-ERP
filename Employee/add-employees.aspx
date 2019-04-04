@@ -1,8 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="add-employees.aspx.cs" Inherits="Employee_AddEmployees" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
-    <link href="../css/employee.css/addemployee.css" rel="stylesheet" />
-    <link href="../css/employee.css/add-point-employee.css" rel="stylesheet" />
+    <link href="../css/employee.css/employee1.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
@@ -46,7 +45,7 @@
                         </div>--%>
                         <div class="col-xs-5">
                             <label>Email<span class="star-sign">*</span></label>
-                            <input class="form-control" type="text">
+                            <input class="form-control" type="text" placeholder="Email" autofocus="autofocus" >
                             <div class="email">Email must work. Password will be sent to this email address.</div>
                         </div>
                         <div class="col-xs-5">
@@ -66,7 +65,7 @@
                     </div>
                     <div class="right">
 
-                        <div class="col-xs-5">
+                        <%--<div class="col-xs-5">
                             <label>Office</label>
                             <select class="form-control">
                                 <option>Office 1</option>
@@ -110,7 +109,7 @@
                                 <option>Shop management assistant</option>
                                 <option>Manager</option>
                             </select>
-                        </div>
+                        </div>--%>
 
                         <%--<div class="col-xs-4" >
                             <label>Internal ID<i class="fa fa-exclamation-circle" data-toggle="tooltip" title="If your company / group is running (or has) a system to manage all accounts, this field will store the user ID of your current system. (Allow A-Z, 0-9 characters). Example: E16217, CE40128 ..." ></i></label>
@@ -123,9 +122,17 @@
                             <label>Position<span class="star-sign">*</span></label>
                             <input class="form-control" type="text" id="txtPosition">
                         </div>
+                         <div class="col-xs-5">
+                            <label>ManagerId<span class="star-sign">*</span></label>
+                            <input class="form-control" type="text" id="txtManagerId">
+                        </div>
                         <div class="col-xs-5">
-                            <label>Status<span class="star-sign">*</span></label>
-                            <input class="form-control" type="text" id="txtStatus">
+                            <label>BasicSalary<span class="star-sign">*</span></label>
+                            <input class="form-control" type="text" id="txtBasicSalary">
+                        </div>
+                        <div class="col-xs-5">
+                            <label>KPISalary<span class="star-sign">*</span></label>
+                            <input class="form-control" type="text" id="txtKPISalary">
                         </div>
                     </div>  
                 </div>
@@ -134,7 +141,7 @@
 
             <div class="col-sm-8" id="col-8" >
                 <div >
-                    <a href="update-employee.aspx" onclick="addnew()" class="btn btn-info"> Add</a>
+                    <a href="<%--&quot;update-employee.aspx&quot;--%> employee.aspx" onclick="addnew()" class="btn btn-info"> Add</a>
                 </div>
             </div>
         </div>
@@ -146,24 +153,33 @@
     <script>
         function addnew()
         {
-            var name = $("#txtEmployeeCode").val();
-            var name = $("#txtFirstName").val();
-            var name = $("#txtLastName").val();
+            var code = $("#txtEmployeeCode").val();
+            var first = $("#txtFirstName").val();
+            var last = $("#txtLastName").val();
             var email = $("#txtEmail").val();
-            var name = $("#txtAddress").val();
+            var address = $("#txtAddress").val();
             var phone = $("#txtPhone").val();
-            var phone = $("#txtPosition").val();
-            var phone = $("#txtStatus").val();
+            var position = $("#txtPosition").val();
+            var manager = $("#txtManagerId").val();
+            var basic = $("#txtBasicSalary").val();
+            var kpi = $("#txtKPISalary").val();
    
-            $.post ("/do/add-employee.aspx", {
-                name: name,
+            $.post("../do/Employee/add-new-employee.aspx", {
+                code: code,
+                first: first,
+                last: last,
                 email: email,
+                address: address,
                 phone: phone,
+                position: position,
+                manager: manager,
+                basic: basic,
+                kpi: kpi,
              
             }, function (data) {
                 if (data == 1) {
                     alertify.alert("Success");
-                    location.href = "employee.aspx";
+                    location.href = "employee.aspx"; 
                 }
                 else {
                     alertify.alert("Error", data);
