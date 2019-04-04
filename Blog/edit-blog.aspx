@@ -51,7 +51,7 @@
                         <div class="form-group">
                             <label for="birthDate" class="col-sm-3 control-label">Content</label>
                             <div class="col-sm-9">
-                                <textarea id="txtContent"  aria-valuetext="<%=blog.BlogContent %>" class="tinymce" placeholder="Write something ..." style="border-radius:10px;"></textarea>
+                                <textarea id="txtContent"  class="tinymce required" placeholder="Write something ..." style="border-radius:10px;"> <%=blog.BlogContent %></textarea>
                             </div>
                         </div>
                          <div class="form-group">
