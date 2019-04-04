@@ -696,7 +696,7 @@
                         <td><%=listOffice[i].CreatedDate%></td>
 
                         <td>
-                            <a href="#" onclick="edit1(<%=listOffice[i].OfficeId%>)" data-toggle="modal" data-target="#myModal7" style="margin-right: 20px;text-decoration:none;"  ><i style="width: 25px" class="fas fa-pen"></i></a>
+                            <a href="#" <%--onclick="edit1(<%=listOffice[i].OfficeId%>)"--%> data-toggle="modal" data-target="#myModal7" style="margin-right: 20px;text-decoration:none;" data-id="<%=listOffice[i].OfficeId %>" ><i style="width: 25px" class="fas fa-pen"></i></a>
                          
                             <button type="button" style="border:none;background-color:floralwhite" onclick="clickdelete(<%=listOffice[i].OfficeId%>)"><i class="fas fa-trash-alt" style="color:red"></i></button>
                         </td>
@@ -1278,7 +1278,7 @@
              
             }, function (data) {
                 if (data == 1) {
-                    alert("Success");
+                    alert("Create new success!");
                     location.href = "/Setting/Office.aspx";
                 }
                 else {
@@ -1287,19 +1287,22 @@
             });
             }
         function clickdelete(id) {
-            confirm("Are you sure Delete?", function () {
-                $.post("/do/Setting/delete-office.aspx", {
+            var txt;
+            var r = confirm("Are you sure Delete?");
+            if (r == true) {
+            txt = $.post("/do/Setting/delete-office.aspx", {
                     id: id,
                 }, function (data) {
                     if (data == 1) {
-                        alert("Success")
+                        alert("Delete success!")
                         location.href = "/Setting/Office.aspx";
                     }
                     else {
                         alert("Error", data)
                     }
                 })
-            });
+                ;
+                }
         }
 
         function edit(id)
