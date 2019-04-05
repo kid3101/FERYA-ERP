@@ -45,8 +45,8 @@
                     <div class="col-sm-6">
                         <label for="ex1">Start Day</label>
 
-                        <div id="txtStartDay" class="input-group date" data-date-format="dd-mm-yyyy">
-                            <input class="form-control" type="date">
+                        <div class="input-group date" data-date-format="dd-mm-yyyy">
+                            <input  id="txtStartDay" class="form-control" type="date">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
                         </div>
                     </div>
@@ -54,8 +54,8 @@
                     <div class="col-sm-6">
 
                         <label for="ex2">Finish Day</label>
-                        <div id="txtFinishDay" class="input-group date" data-date-format="dd-mm-yyyy">
-                            <input class="form-control" type="date">
+                        <div class="input-group date" data-date-format="dd-mm-yyyy">
+                            <input  id="txtFinishDay" class="form-control" type="date">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
                         </div>
                     </div>

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="create-project.aspx.cs" Inherits="project_CreateProject_CreateProject" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="edit-project.aspx.cs" Inherits="roject_edit_project" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
      <link href="../css/Setting/AccessRight.css" rel="stylesheet" />
