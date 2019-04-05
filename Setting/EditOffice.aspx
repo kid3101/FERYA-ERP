@@ -5,22 +5,23 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <div class="container-fluid">
         <h1 class="h3 mb-4 text-gray-800">Setting  > Update Office</h1>
-        <div style="display: flex;">
+        <h1 class="h3 mb-4 text-gray-800" style="text-align:center;">Office</h1>
+        <div style="display: flex;margin-top: 40px;">
             <div class="col-sm-2"></div>
             <div class="col-sm-8" >
-        <div style="display:flex;margin-bottom: 30px;">
+        <form style="display:flex;margin-bottom: 30px;">
         <div style="margin-right: 10px;" >
             <span>Name</span>
             <span style="color:red;">*</span>
-            <input  id="txtName1" value="<%=editoffice.OfficeName %>"" style="display:block;height:25px" type="text" />
+            <input class="form-control" id="txtName1" value="<%=editoffice.OfficeName %>"" style="display:block;" type="text" />
         </div>
         <div style="margin-right: 10px;">
             <span>Address</span>
-            <input  id="txtAddress1" value="<%=editoffice.OfficeAddress %>" style="display:block;height:25px" type="text" />
+            <input class="form-control" id="txtAddress1" value="<%=editoffice.OfficeAddress %>" style="display:block;" type="text" />
         </div>
         <div style="margin-right: 10px;">
             <span>City</span>
-            <select  style="display:block;height:25px;width:140px;">
+            <select class="form-control" style="display:block;width:140px;">
                 <option>---</option>
                 <option>Ho Chi Minh </option>
                 <option>Ha Noi</option>
@@ -30,7 +31,7 @@
         </div>
         <div style="margin-right: 10px;">
                     <label for="pwd">Company</label>
-                        <select  id="selectList1"  class="form-control" style="height: 35px;margin-top: -10px;width: 175px;">
+                        <select class="form-control" id="selectList1" style="margin-top: -10px;width: 175px;">
                             <%for (int j = 0; j < listCompany.Count; j++)
                                 { %>
                             <option value="<%=listCompany[j].CompanyId %>"><%=listCompany[j].CompanyName %></option>
@@ -41,11 +42,11 @@
             <span>IP is timed <i class="fa fa-info-circle" style="cursor:pointer;" title="Your current IP is 15.169.34.171"></i></span>
             <input style="display:block;height:25px" type="text" />
         </div>--%>
-    </div>
+    </form>
     <div style="display:flex;">
         <div style="margin-right: 10px;">
             <span>Work time</span>
-            <select  style="display:block;height:25px;width:179px;">
+            <select class="form-control" style="display:block;width:179px;">
                 <option>---</option>
                 <option>00 Hours</option>
                 <option>01 Hours</option>
@@ -75,7 +76,7 @@
         </div>
         <div style="margin-right: 10px;">
             <input type="hidden" />
-            <select  style="display:block;height:25px;width:178px;margin-top: 23px;">
+            <select class="form-control" style="display:block;width:178px;margin-top: 23px;">
                 <option>---</option>
                 <option>00 Minutes</option>
                 <option>01 Minutes</option>
@@ -141,7 +142,7 @@
         </div>
         <div style="margin-right: 10px;">
             <span>Shift hour</span>
-            <select  style="display:block;height:25px;width:140px;">
+            <select class="form-control" style="display:block;width:140px;">
                 <option>---</option>
                 <option>00 Hours</option>
                 <option>01 Hours</option>
@@ -171,7 +172,7 @@
         </div>
         <div style="margin-right: 10px;">
             <input type="hidden" />
-            <select  style="display:block;height:25px;width:177px;margin-top: 24px;">
+            <select class="form-control" style="display:block;width:177px;margin-top: 24px;">
                 <option>---</option>
                 <option>00 Minutes</option>
                 <option>01 Minutes</option>
@@ -239,28 +240,28 @@
     <div style="margin-top:20px;display:flex;">
         <div style="margin-right: 7px;margin-top: 24px;">
             <div>Public reviewer</div>
-            <select  style="height:25px;width:179px;">
+            <select class="form-control" style="width:179px;">
                 <option>---</option>
             </select>
         </div>
         <div style="margin-right: 7px;">
             <div>Limit date of public review</div>
-            <input type="text" value="0" style="height:25px;" />
+            <input class="form-control" type="text" value="0"  />
         </div>
         <div style="margin-right: 7px;">
             <div>Time to work late <span><i class="fa fa-info-circle" style="cursor:pointer;" title="Calculated in minutes (equal to 0 if not installed)"></i></span></div>
-            <input  type="text" value="0" style="height:25px;width: 135px;" />
+            <input class="form-control" type="text" value="0" style="width: 135px;" />
         </div>
         <div style="margin-top: 24px;">
             <div>Time to leave early <span><i class="fa fa-info-circle" style="cursor:pointer;" title="Calculated in minutes (equal to 0 if not installed)"></i></span></div>
-            <input  type="text" value="0" style="height:25px;" />
+            <input class="form-control" type="text" value="0"  />
         </div>
     </div>
                 </div>
            
             <div class="col-sm-2"></div>
   </div>
-    
+    <h1 class="h3 mb-4 text-gray-800" style="text-align:center;margin-top:40px;">Shift</h1>
     <div class=" container-fluid table-responsive" style="margin-top:40px;">
         <table class="table  table-bordered">
             <thead>

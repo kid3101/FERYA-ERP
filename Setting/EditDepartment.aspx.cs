@@ -15,6 +15,8 @@ public partial class Setting_EditDepartment : System.Web.UI.Page
 
     public List<Employee> listEmployees;
 
+    public Department editdepartment;
+
     protected void Page_Load(object sender, EventArgs e)
     {
         DepartmentManager dm = new DepartmentManager();
@@ -28,5 +30,9 @@ public partial class Setting_EditDepartment : System.Web.UI.Page
 
         EmployeeManager em = new EmployeeManager();
         listEmployees = em.GetUser();
+
+        int id = Convert.ToInt32(Request["id"]);
+
+        editdepartment = dm.GetById(id);
     }
 }

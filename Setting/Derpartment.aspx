@@ -162,52 +162,7 @@
                 </tbody>
             </table>
         </div>
-        <!-- Modal -->
-    <%--<div class="modal fade" id="myModal2" role="dialog">
-        <div class="modal-dialog">
-
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    
-                    <h2 class="modal-title kk">Update departments</h2>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-group">
-                            <label style="float:left;">Name</label>
-                            <span class="mau">*</span>
-                            <input class="form-control" value="Department 1">
-                        </div>
-                        <div class="form-group">
-                            <label >Office</label>
-                            <select class="officee" id="selectList3">
-                                <%for (int j = 0; j < listOffice.Count; j++)
-                                { %>
-                                    <option value="<%=listOffice[j].OfficeId %>"><%=listOffice[j].OfficeName %></option>
-                                <%} %>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label>Company</label>
-                            <select class="officee" id="selectList4">
-                                <%for (int j = 0; j < listCompany.Count; j++)
-                                { %>
-                                    <option value="<%=listCompany[j].CompanyId %>"><%=listCompany[j].CompanyName %></option>
-                                <%} %>
-                            </select>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <a href="#" onclick="del()" class="av">Delete this department</a>
-                    <button type="button" class="btn btn-default closee" data-dismiss="modal" >Close</button>
-                    <button type="submit" class="btn btn-facebook addd" ><a href="Derpartment.aspx" class="hv">Update</a></button>
-                </div>
-            </div>
-
-        </div>
-    </div>--%>
+        
     </div>
     <script>
         function edit1(id) {

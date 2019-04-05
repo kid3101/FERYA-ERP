@@ -4,59 +4,48 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <div class="container-fluid">
-        <div class="modal fade" id="myModal2" role="dialog">
-        <div class="modal-dialog">
-
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    
-                    <h2 class="modal-title kk">Update departments</h2>
-                </div>
-                <div class="modal-body">
+           <h1 class="h3 mb-4 text-gray-800">Setting  > Update Departments</h1>
+                <div>
                     <form>
-                        <div class="form-group">
+                        <div>
                             <label style="float:left;">Name</label>
                             <span class="mau">*</span>
-                            <input id="txtName" class="form-control" value="Department 1">
+                            <input id="txtName" class="form-control" value="<%=editdepartment.DeparmentName %>">
                         </div>
-                        <div class="form-group">
+                        <div>
                             <label >Office</label>
-                            <select class="officee" id="selectList3">
+                            <select class="officee form-control" id="selectList3">
                                 <%for (int j = 0; j < listOffice.Count; j++)
                                 { %>
                                     <option value="<%=listOffice[j].OfficeId %>"><%=listOffice[j].OfficeName %></option>
                                 <%} %>
                             </select>
                         </div>
-                        <div class="form-group">
+                        <div>
                             <label>Company</label>
-                            <select class="officee" id="selectList4">
-                                <%for (int j = 0; j < listCompany.Count; j++)
+                            <select class="officee form-control" id="selectList4">
+                                <%for (int i = 0; i < listCompany.Count; i++)
                                 { %>
-                                    <option value="<%=listCompany[j].CompanyId %>"><%=listCompany[j].CompanyName %></option>
+                                    <option value="<%=listCompany[i].CompanyId %>"><%=listCompany[i].CompanyName %></option>
                                 <%} %>
                             </select>
                         </div>
-                        <div class="form-group">
+                        <div>
                             <label>Manager</label>
-                            <select class="officee" id="selectList5">
-                                <%for (int j = 0; j < listEmployees.Count; j++)
+                            <select class="officee form-control" id="selectList5">
+                                <%for (int k = 0; k < listEmployees.Count; k++)
                                 { %>
-                                    <option value="<%=listEmployees[j].ManagerId %>"><%=listEmployees[j].LastName %></option>
+                                    <option value="<%=listEmployees[k].ManagerId %>"><%=listEmployees[k].LastName %></option>
                                 <%} %>
                             </select>
                         </div>
                     </form>
                 </div>
-                <div style="text-align:center;">
-                    <button type="submit" class="btn btn-facebook addd" ><a href="Derpartment.aspx" class="hv">Update</a></button>
+                <div style="text-align:center;margin-top: 40px;">
+                    <button type="button" class="btn btn-facebook addd" onclick="edit(<%=editdepartment.DepartmentId%>)">Update</button>
                 </div>
             </div>
 
-        </div>
-    </div>
-    </div>
     <script>
         function edit(id)
         {
@@ -64,10 +53,10 @@
            var office = $("#selectList3").val();
             var company = $("#selectList4").val();
             var manager = $("#selectList5").val();
-            $.post('/do/Setting/edit-office.aspx', {
+            $.post('/do/Setting/edit-department.aspx', {
                 id:id,
                 name: name,
-                address: address,
+                office: office,
                 company: company,
                 manager: manager
 
