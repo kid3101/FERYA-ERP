@@ -12,15 +12,7 @@
                         
                         </div>
                     
-<%--        <div>
-            <select id="slt1"class="form-control">
-                <option value="">Search</option>
-                <option value="">New</option>
-                <option value="">Working</option>
-                <option value="">Finish</option>
-                <option value="">Close</option>
-            </select>
-        </div>--%>
+
         <div class="row">
             <div class="col-md-12">
                 <div class="table-responsive">
@@ -29,68 +21,44 @@
                             <tr>
                                 <th>No</th>
                                 <th>Name</th>
-                                <th>Work</th>
-                                <th>Member</th>
-                                <th>Start date</th>
+                                <th>Manager</th>
+                                <th>Company</th>
+                                <th>Start Day</th>
+                                <th>Finish Day</th>
+                                <th>Create Day</th>
+
                                 <th>Status</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
 
                         <tbody>
+                              <%for (int i = listProject.Count - 1 ; i > -1; i-- )
+                   {%>
                             <tr>
-                                <td>1</td>
-                                <td>System Architect</td>
-                                <td>Edinburgh</td>
-                                <td>61</td>
-                                <td>2011/04/25</td>
-                                <td>New</td>
+                                <td><%=listProject[i].ProjectId%></td>
+                                <td><%=listProject[i].ProjectTitle%></td>
+                              <td><%=listProject[i].ManagerId%></td>
+                               <td><%=listProject[i].CompanyId%></td>
+                               <td><%=listProject[i].StartTime%></td>
+                              <td><%=listProject[i].FinishTime%></td>
+                                 <td><%=listProject[i].CreatedDate%></td>
+                                 <td><%=listProject[i].Status%></td>
                                 <td>
 
                                    <%-- <a href="/project/category-list.aspx"><i style="width: 25px" class="fas fa-book-open"></i></a>--%>
 
                                     <a href="/project/list-work.aspx" title="Add work"><i style="width: 25px" class="fas fa-exclamation-circle"></i></a>
                                     <a href=" /project/edit-project.aspx" title="Edit"><i style="width: 25px" class="fas fa-pen"></i></a>
-                                    <button type="button" style="border:none;background-color:floralwhite"  onclick="del()" title="Delete"><i class="fas fa-trash-alt" style="color:red"></i></button>
+                                    <button type="button" style="border:none;background-color:floralwhite"  onclick="del(<%=listProject[i].ProjectId %>)" title="Delete"><i class="fas fa-trash-alt" style="color:red"></i></button>
 
                                 </td>
+                                <%}%>
                             </tr>
 
 
                         </tbody>
-                        <tbody>
-                            <tr>
-                                <td>2</td>
-                                <td>App ERP</td>
-                                <td>Create app</td>
-                                <td>61</td>
-                                <td>2011/04/25</td>
-                                <td>New</td>
-                                <td>
-                                   <%-- <a href="/project/category-list.aspx"><i style="width: 25px" class="fas fa-book-open"></i></a>--%>
-                                     <a href="/project/list-work.aspx" title="Add work"><i style="width: 25px" class="fas fa-exclamation-circle"></i></a>
-                                    <a href=" /project/edit-project.aspx" title="Edit"><i style="width: 25px" class="fas fa-pen"></i></a>
-                                    <button type="button" style="border:none;background-color:floralwhite"  onclick="del()" title="Delete"><i class="fas fa-trash-alt" style="color:red"></i></button>
-                                </td>
-                            </tr>
-                        </tbody>
-
-                        <tbody>
-                            <tr>
-                                <td>3</td>
-                                <td>App ERP333</td>
-                                <td>Create app33</td>
-                                <td>61</td>
-                                <td>2011/04/25</td>
-                                <td>New</td>
-                                <td>
-                                   <%-- <a href="/project/category-list.aspx"><i style="width: 25px" class="fas fa-book-open"></i></a>--%>
-                                     <a href="/project/list-work.aspx" title="Add work"><i style="width: 25px" class="fas fa-exclamation-circle"></i></a>
-                                    <a href=" /project/edit-project.aspx" title="Edit"><i style="width: 25px" class="fas fa-pen"></i></a>
-                                    <button type="button" style="border:none;background-color:floralwhite"  onclick="del()" title="Delete"><i class="fas fa-trash-alt" style="color:red"></i></button>
-                                </td>
-                            </tr>
-                        </tbody>
+                       
 
                     </table>
                 </div>
@@ -101,9 +69,24 @@
         function addproject() {
             location.href = "/project/create-project.aspx";
         }
-         function del(){
-            alert("Are You Sure?");
+         function del(id){
+            alert("Are you sure Delete?", function () {
+                $.post("/do/delete-project.aspx", {
+                    id: id,
+                },
+                    function (data) {
+                        if (data == 1) {
+                            alertify.alert("Success")
+                            location.href = "/project/project-list.aspx";
+                        }
+                        else {
+                            alertify.alert("Error", data)
+                        }
+                    })
+                });
         }
+
+        
     </script>
 
 </asp:Content>
