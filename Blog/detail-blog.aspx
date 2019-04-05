@@ -14,22 +14,16 @@
                     <div class="row" style="margin-top:10px;">
         <div class="col-sm-9" id="bodydetail">
             <div class="contentblog">
-                <div><b style="color:red">DEGITAL MARKETING</b></div>
+                <div><b style="color:red"><%=detail.BlogTitle %></b></div>
                 <br />
                 <div>
-                    Amy normally hated Monday mornings, but this year was different. Kamal was in her art class and she liked Kamal. She was waiting outside the classroom when her friend Tara arrived.
-
-                    “Hi Amy! Your mum sent me a text. You forgot your inhaler. Why don’t you turn your phone on?” Amy didn’t like technology. She never sent text messages and she hated Facebook too.
-
-                    “Did Kamal ask you to the disco?” Tara was Amy’s best friend, and she wanted to know everything that was happening in Amy’s life. “I don’t think he likes me,” said Amy. “And I never see him alone. He’s always with Grant.” Amy and Tara didn’t like Grant.
-
-                    “Do you know about their art project?” asked Amy. “It’s about graffiti, I think,” said Tara. “They’re working on it at the old house behind the factory.” “But that building is dangerous,” said Amy. “Aah, are you worried he’s going to get hurt?" Tara teased. “Shut up, Tara! Hey look, here they come!”
-                </div>             
+                    <%=detail.BlogContent %>
+               </div>             
                 <div class="comment" >
-                    <a>1 Comment</a>
-                    <a >1 View </a>
-                    <a >Kate Winlesss</a>
-                    <span>Created: 10:00, Today</span>
+                    <span> 1 Comment </span>
+                    <span> 1 View </span>
+                    <a ><%=detail.Employee.FirstName %></a>
+                    <span><%=detail.CreatedDate %></span>
                 </div>
             </div>
             <hr/>
@@ -48,7 +42,7 @@
             </div>
             <div class="entercmt">
                 <form>
-                    <textarea class="form-control" id="exampleFormControlTextarea3" rows="7" placeholder="Write comment ..."></textarea>
+                    <textarea class="form-control" id="exampleFormControlTextarea3" rows="7" placeholder="Write comment ..."><%=detail.BlogContent %></textarea>
                 </form>
                 <button type="button" class="btn btn-facebook" ><b>Comment</b></button>
             </div>
