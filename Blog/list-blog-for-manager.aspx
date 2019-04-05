@@ -76,7 +76,7 @@
                     <td>
                         <button type="button" style="border:none;background-color:floralwhite"  title="Detail" onclick="detail(<%=Listblog[i] %>)"><i style="width: 25px" class="fas fa-exclamation-circle"></i></button>
                         <button type="button" style="border:none;background-color:floralwhite" title="Edit" onclick="edit(<%=Listblog[i] %>)"><i style="width: 25px" class="fas fa-pen"></i> </button>
-                         <button type="button" style="border:none;background-color:floralwhite"  onclick="del(<%=Listblog[i] %>)"title="Delete"><i class="fas fa-trash-alt" style="color:red"></i></button>
+                         <button type="button" style="border:none;background-color:floralwhite"  onclick="del(<%=Listblog[i].BlogId %>)"title="Delete"><i class="fas fa-trash-alt" style="color:red"></i></button>
 
                     </td>
                     <%} %>
@@ -86,8 +86,9 @@
     </div>
         </div>
     <script>
-        function del(){
-            alert("Are You Sure?");
+        function del(id){
+             var txt;
+            var r = confirm("Are you sure Delete?");
         }
     </script>
 </asp:Content>

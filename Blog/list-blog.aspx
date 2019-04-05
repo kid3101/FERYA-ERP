@@ -14,7 +14,7 @@
           <div class="col-sm-5" id="col-5">
                   <div class="linkmanagerblog">
                     <div class="managerblog">
-                        <a class="btn btn-info" data-toggle="tooltip" href="list-blog-for-manager.aspx" title="Timekeeping">For Manager</a>
+                        <a class="btn btn-info" data-toggle="tooltip" href="manager-blog.aspx">For Manager</a>
                     </div>
                       <br />
                     <div class="page">    
@@ -48,81 +48,36 @@
     </div>
     <div class="body-list">
          <table class="table">
+             <thead>
+                 <tr></tr>
+             </thead>
              <tbody>
+                 <%for (int i = Listblog.Count - 1; i > -1; i--)
+                     { %>
                  <tr>
-                     <td>
-                         <div class="col-sm-3">
-                           <a href="detail-blog.aspx">  <img src="/imgs/zerodata/ys3.jpg"/></a>
-                         </div>
-                     </td>
-                     <td>
-                            <div class="col-sm-7">
-                                <div class="nametitle"><b>Leaning digital marketing...................</b></div>
-                              <br />
-                                <div><span class="fas fa-user-edit" ></span>   Kate Winlesss</div>
-                                <div><span class="far fa-clock" ></span>  12:20 PM</div>
-                                <div><span class="far fa-eye"></span>  6999 Views</div>
-                                <div><span class="far fa-comments"></span>  555 Comment</div>
-                          </div>
-                     </td>
-                 </tr>
+                     <td style="width:500px;height:250px;">
 
-
-                  <tr>
-                     <td>
-                         <div class="col-sm-3">
-                           <a href="detail-blog.aspx">  <img src="/imgs/zerodata/ys3.jpg"/></a>
-                         </div>
+                           <a onclick="detail(<%=Listblog[i].BlogId %>)">  <img src="/imgs/zerodata/ys3.jpg"/ width="300" height="200"></a>
                      </td>
                      <td>
-                            <div class="col-sm-7">
-                                <div class="nametitle"><b>Leaning digital marketing...................</b></div>
-                              <br />
-                                <div><span class="fas fa-user-edit" ></span>   Kate Winlesss</div>
-                                <div><span class="far fa-clock" ></span>  12:20 PM</div>
-                                <div><span class="far fa-eye"></span>  6999 Views</div>
-                                <div><span class="far fa-comments"></span>  555 Comment</div>
-                          </div>
-                     </td>
-                 </tr>
-
-                 <tr>
-                     <td>
-                         <div class="col-sm-3">
-                           <a href="detail-blog.aspx">  <img src="/imgs/zerodata/ys3.jpg" /></a>
-                         </div>
-                     </td>
-                     <td>
-                          <div class="col-sm-7">
-                                <div class="nametitle"><b>Leaning digital marketing...................</b></div>
-                              <br />
-                                <div><span class="fas fa-user-edit" ></span>   Kate Winlesss</div>
-                                <div><span class="far fa-clock" ></span>  12:20 PM</div>
-                                <div><span class="far fa-eye"></span>  6999 Views</div>
-                                <div><span class="far fa-comments"></span>  555 Comment</div>
-                          </div>
-                     </td>
-                 </tr>
-                 <tr>
-                     <td>
-                         <div class="col-sm-3">
-                           <a href="detail-blog.aspx">  <img src="/imgs/zerodata/ys3.jpg"/></a>
-                         </div>
-                     </td>
-                     <td>
-                            <div class="col-sm-7">
-                                <div class="nametitle"><b>Leaning digital marketing...................</b></div>
-                              <br />
-                                <div><span class="fas fa-user-edit" ></span>   Kate Winlesss</div>
-                                <div><span class="far fa-clock" ></span>  12:20 PM</div>
-                                <div><span class="far fa-eye"></span>  6999 Views</div>
-                                <div><span class="far fa-comments"></span>  555 Comment</div>
-                          </div>
-                     </td>
-                 </tr>
-              </tbody>
+                              <a href="#" onclick="detail(<%=Listblog[i].BlogId %>)"><%=Listblog[i].BlogTitle%></a>
+                                     <br />
+                                        <br />
+                               <span class="fas fa-user-edit" ></span>   <%=Listblog[i].Employee.FirstName %> <br />
+                               <span class="far fa-clock" ></span> <%=Listblog[i].CreatedDate %><br />
+                               <span class="far fa-eye"></span>  6999 Views <br />
+                               <span class="far fa-comments"></span>  555 Comment
+                     </td>                  
+                 </tr>  
+                   <%} %>       
+             </tbody>
          </table>
     </div>
         </div>
+    <script>
+        function detail(id) {
+            location.href = "/Blog/detail-blog.aspx?id" + id;
+        }
+    </script>
 </asp:Content>
 
