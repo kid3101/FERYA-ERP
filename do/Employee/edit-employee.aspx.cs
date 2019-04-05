@@ -18,9 +18,10 @@ public partial class do_Employee_edit_employee : System.Web.UI.Page
         string address = Request["address"];
         string phone = Request["phone"];
         string position = Request["position"];
-        int manager = Convert.ToInt32(Request["manager"]);
-        int basic = Convert.ToInt32(Request["basic"]);
-        int kpi = Convert.ToInt32(Request["kpi"]);
+        string manager = Request["manager"];
+        string basic = Request["basic"];
+        string kpi = Request["kpi"];
+
         EmployeeManager em = new EmployeeManager();
         editEmployee = em.GetById(id);
         editEmployee.EmployeeCode = code;
@@ -30,10 +31,10 @@ public partial class do_Employee_edit_employee : System.Web.UI.Page
         editEmployee.Address = address;
         editEmployee.Phone = phone;
         editEmployee.Position = position;
-        editEmployee.ManagerId = manager;
-        editEmployee.BasicSalary = basic;
-        editEmployee.KPISalary = kpi;
+        editEmployee.ManagerId = Convert.ToInt32(manager);
+        editEmployee.BasicSalary = Convert.ToInt32(basic);
+        editEmployee.KPISalary = Convert.ToInt32(kpi);
         em.Save();
-        Response.Write(1);
+        Response.Write("1");
     }
 }

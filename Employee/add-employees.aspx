@@ -33,7 +33,7 @@
                         </div>
                         <div class="col-xs-5">
                             <label>LastName<span class="star-sign">*</span></label>
-                            <input class="form-control" type="text" id="LastName">
+                            <input class="form-control" type="text" id="txtLastName">
                         </div>
                         <%--<div class="col-xs-5">
                             <label>
@@ -48,7 +48,7 @@
                         </div>--%>
                         <div class="col-xs-5">
                             <label>Email<span class="star-sign">*</span></label>
-                            <input class="form-control" type="text" placeholder="Email" >
+                            <input id="txtEmail" class="form-control" type="text" placeholder="Email" >
                             <div class="email">Email must work. Password will be sent to this email address.</div>
                         </div>
                         <div class="col-xs-5">
@@ -144,7 +144,7 @@
 
             <div class="col-sm-8" id="col-8" >
                 <div >
-                    <a href="<%--&quot;update-employee.aspx&quot;--%> employee.aspx" onclick="addnew()" class="btn btn-info"> Add</a>
+                    <button  onclick="addnew()" class="btn btn-info"> Add</button>
                 </div>
             </div>
         </div>
@@ -177,18 +177,18 @@
                 position: position,
                 manager: manager,
                 basic: basic,
-                kpi: kpi,
+                kpi: kpi
              
             }, function (data) {
                 if (data == 1) {
-                    alertify.alert("Success");
-                    location.href = "employee.aspx"; 
+                   alert("Success");
+                    location.href = "/Employee/employee.aspx"; 
                 }
                 else {
-                    alertify.alert("Error", data);
+                   alert("Error", data);
                 }
             });
-            }
+        }
 
         
     </script>

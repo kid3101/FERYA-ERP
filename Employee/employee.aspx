@@ -152,8 +152,8 @@
                                 <td><%=listEmployees[i].KPISalary %></td>
                                 <td>
 
-                                  <a href=" edit-employee.aspx" onclick="edit(<%=listEmployees[i].EmployeeId %>)" title="Edit"><i class="fas fa-pen"></i></a>
-                                    <button type="button" style="border:none;background-color:floralwhite" onclick="clickdelete(<%=listEmployees[i].EmployeeId %>)" title="Delete"><i class="fas fa-trash-alt" style="color:red"></i></button>
+                                  <button onclick="edit(<%=listEmployees[i].EmployeeId %>)" title="Edit"><i class="fas fa-pen"></i></button>
+                                  <button type="button" style="border:none;background-color:floralwhite" onclick="clickdelete(<%=listEmployees[i].EmployeeId %>)" title="Delete"><i class="fas fa-trash-alt" style="color:red"></i></button>
 
                                 </td>
                                 <%}%>
@@ -563,12 +563,12 @@
 
 
        function clickdelete(id) {
-           $.post("../do/Employee/delete-employee.aspx", {
+           $.post("/do/Employee/delete-employee.aspx", {
                id: id,
            }, function (data) {
                if (data == 1) {
                    alertify.alert("Success")
-                   location.href = "employee.aspx";
+                   location.href = "/Employee/employee.aspx";
                }
                else {
                    alerify.alert("Error", data)
@@ -576,7 +576,7 @@
            });
         }
         function edit(id) {
-            location.href = "edit-employee.aspx?id=" + id;
+            location.href = "/Employee/edit-employee.aspx?id=" + id;
         }
 
 
