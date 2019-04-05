@@ -31,11 +31,11 @@
                         </div>
                         <div class="col-xs-5">
                             <label>LastName<span class="star-sign">*</span></label>
-                            <input class="form-control" type="text" id="LastName" value="<%=editEmployee.LastName %>">
+                            <input class="form-control" type="text" id="txtLastName" value="<%=editEmployee.LastName %>">
                         </div>
                         <div class="col-xs-5">
                             <label>Email<span class="star-sign">*</span></label>
-                            <input class="form-control" type="text" placeholder="Email" autofocus="autofocus" value="<%=editEmployee.Email %>">
+                            <input class="form-control" type="text" placeholder="Email" id="txtEmail" value="<%=editEmployee.Email %>">
                             <div class="email">Email must work. Password will be sent to this email address.</div>
                         </div>
                         <div class="col-xs-5">
@@ -73,13 +73,12 @@
                         </div>
                     </div>  
                 </div>
-           
-
             </form>
+        <button type="button" class="btn btn-info" onclick="editem(<%=editEmployee.EmployeeId%>)">Edit</button>
         </div>
 
     <script>
-         function submit(id)
+        function editem(id)
         {
            var code = $("#txtEmployeeCode").val();
             var first = $("#txtFirstName").val();
@@ -90,30 +89,29 @@
             var position = $("#txtPosition").val();
             var manager = $("#txtManagerId").val();
             var basic = $("#txtBasicSalary").val();
-            var kpi = $("#txtKPISalary").val();
-            $.post('../do/Employee/edit-employee.aspx', {
-                code: code,
-                first: first,
-                last: last,
-                email: email,
-                address: address,
-                phone: phone,
-                position: position,
-                manager: manager,
-                basic: basic,
-                kpi: kpi,
+             var kpi = $("#txtKPISalary").val();
 
+            $.post('/do/Employee/edit-employee.aspx', {
+            id: id,
+            code: code,
+            first: first,
+            last: last,
+            email: email,
+            address: address,
+            phone: phone,
+            position: position,
+            manager: manager,
+            basic: basic,
+            kpi: kpi
             }, function (data) {
-                    if (data == 1) {
-                        alertify.alert("Success");
-                        location.href = "employee.aspx" ; 
-                    }
-                    else {
-                        alertify.alert("Error", data)
-                    }
-                });
-
-
+                if (data == 1) {
+                    alertify.alert("Success");
+                    location.href = "/Employee/employee.aspx";
+                }
+                else {
+                    alertify.alert("Error", data)
+                }
+            });
         }
     </script>
 

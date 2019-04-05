@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="delete-project.aspx.cs" Inherits="do_Project_delete_project" %>

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="create-project.aspx.cs" Inherits="project_CreateProject_CreateProject" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="edit-project.aspx.cs" Inherits="roject_edit_project" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
      <link href="../css/Setting/AccessRight.css" rel="stylesheet" />
@@ -17,26 +17,32 @@
     <div class="container-fluid">
       <div style="display:flex;">
           <h1 class="h3 mb-4 text-gray-800">System Architect > Edit</h1></div>
-        <div class="row">
+      <div class="row">
             <div class="col-sm-3">
                 <div>
                     <div><b>Overview</b></div>
 
                 </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-8">
                 <br>
                 <label>Name <i style="color:red">*</i></label>
                 <div>
                     <input class="form-control" type="text">
                     <br>
                 </div>
-                <label>Describe</label>
+
+                <label>Description</label>
                 <div>
-                    <textarea class="form-control" ></textarea>
+                    <textarea style="width:700px" class="tinymce form-control " ></textarea>
                 </div>
+                 <label>Content</label>
+                <div>
+                    <textarea style="width:700px" class="tinymce form-control " ></textarea>
+                </div>
+                <br />
                 <div class="col-sm" style="display: flex;margin-left:-22px;">
-                    <div class="col-sm-8">
+                    <div class="col-sm-6">
                         <label for="ex1">Start Day</label>
 
                         <div id="datepicker" class="input-group date" data-date-format="dd-mm-yyyy">
@@ -45,18 +51,17 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-8">
+                    <div class="col-sm-6">
 
                         <label for="ex2">Finish Day</label>
                         <div id="datepicker1" class="input-group date" data-date-format="dd-mm-yyyy">
                             <input class="form-control" type="date">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
                         </div>
-                    </div>
-
+                    </div>                   
                 </div>
                 <br />
-                 <div class="col-sm-5" style="margin-left:-10px;">
+                <div class="col-sm-5" style="margin-left:-10px;">
                         <label>Status </label>
                         <select class="form-control">
                             <option> New </option>
@@ -65,15 +70,9 @@
                             <option> Close </option>
                         </select>
                     </div>
-            </div>
 
-            <div class="col-sm-4">
-                <br>
-                <label>Position</label>
-                <div>
-                    <input class="form-control" type="text">
-                </div>
             </div>
+          
             <br />
 
 
@@ -83,27 +82,27 @@
 
             <div class="col-sm-3">
 
-                <div>Assigned </div>
+                <div>Manager Project </div>
                 <br /><br />
                 <br />
                 <br /><br />
-                <div>Assign employees to the project <i style="color:red">*</i></div>
+                <div>Company <i style="color:red">*</i></div>
             </div>
 
             <div class="col-sm-6">
                 <div>
                     <div>Member</div>
                     <div>
-                        <select style="height:8px" class="multipleSelect" multiple name="language">
-                <option value="Bangladesh">Bangladesh</option>
-                <option selected value="Barbados">Barbados</option>
-                <option selected value="Belarus">Belarus</option>
+                        <select id="10" style="height:8px" class="multipleSelect" multiple name="language">
+                <option value="Bangladesh">Mr Peter</option>
+                <option selected value="Barbados">Mr TomMy</option>
+                <option selected value="Belarus">Mr Anh</option>
                 <option value="Belgium">Belgium</option>
             </select>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-3">
+           <%-- <div class="col-sm-3">
                 <div class="flew" style=" margin-top:31px">
                     <label class="switch">
                         <input type="checkbox" checked>
@@ -113,10 +112,8 @@
 
                     <span>Can create work</span>
                 </div>
-            </div>
+            </div>--%>
         </div>
-
-
         <div class="row">
 
             <div class="col-sm-3">
@@ -126,39 +123,39 @@
                     <div>Member</div>
                     <div>
                         <select style="height:8px" class="multipleSelect" multiple name="language">
-                <option value="Bangladesh">Bangladesh</option>
-                <option selected value="Barbados">Barbados</option>
-                <option selected value="Belarus">Belarus</option>
-                <option value="Belgium">Belgium</option>
+                <option value="Bangladesh">FERYA</option>
+                <option selected value="Barbados">GOOGLE</option>
+                <option selected value="Belarus">AMAZON</option>
+                <option value="Belgium">SAMSUNG</option>
             </select>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-3">
+          <%--  <div class="col-sm-3">
                 <div class="flew" style=" margin-top:31px" >
                     <label class="switch">
                         <input type="checkbox" checked>
                         <span class="slider round"></span>
-
                     </label>
-
                     <span>Can create work</span>
                 </div>
-            </div>
+            </div>--%>
         </div>
         <hr />
-        <span><i style="color:red">*</i>:Obligatory
-        </span>
-        <button type="button" onclick="editproject()" class="btn btn-facebook">Edit Project</button>
+      
+        <button type="button" onclick="editproject()" class="btn btn-info">Edit Project</button>
 
     </div>
 
     <script>
          $('.multipleSelect').fastselect();
-        function editproject() {
+        function createproject() {
             location.href = "/project/project-list.aspx";
+        }
+
+        function myfunction() {
+
         }
     </script>
 
 </asp:Content>
-

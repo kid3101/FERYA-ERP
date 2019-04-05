@@ -19,9 +19,9 @@ public partial class do_Employee_add_new_employee : System.Web.UI.Page
             string address = Request["address"];
             string phone = Request["phone"];
             string position = Request["position"];
-            int manager = Convert.ToInt32(Request["manager"]);
-            int basic = Convert.ToInt32(Request["basic"]);
-            int kpi = Convert.ToInt32(Request["kpi"]);
+            string manager = Request["manager"];
+            string basic = Request["basic"];
+            string kpi = Request["kpi"];
 
             //DateTime registerdate = Convert.ToDateTime(Request["registerdate"]);
             EmployeeManager em = new EmployeeManager();
@@ -32,12 +32,12 @@ public partial class do_Employee_add_new_employee : System.Web.UI.Page
             addemployee.Address = address;
             addemployee.Phone = phone;
             addemployee.Position = position;
-            addemployee.ManagerId = manager;
-            addemployee.BasicSalary = basic;
-            addemployee.KPISalary = kpi;
+            addemployee.ManagerId = Convert.ToInt32(manager);
+            addemployee.BasicSalary = Convert.ToInt32(basic);
+            addemployee.KPISalary = Convert.ToInt32(kpi);
             addemployee.Status = 1;
             em.AddNew(addemployee);
-            Response.Write(1);
+            Response.Write("1");
         }
 
         catch (Exception EX)

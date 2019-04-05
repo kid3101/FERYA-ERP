@@ -2,7 +2,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <link href="../css/employee.css/add-point-employee.css" rel="stylesheet" />
-
+    <link href="../css/employee.css/add-leave.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
@@ -56,21 +56,14 @@
                         </div>
                     </div>  
                 </div>
-                <div class="bottom" style="border-top-style:outset; margin-top: 10px;">
-                    <div class="Begin" style=" margin-top: 10px;">
-                        <p class="requirebox">
-                            <span>* : </span>
-                            <span>
-                                Obligatory
-                            </span>
-                        </p>
-                    </div>
-                    <div class="add" style=" margin-top: -35px; margin-left:280px">
-                        <a class="btn btn-info" href="#">
-                            SAVE
-                        </a>
-                    </div>
+                <div >
+
+            <div class="col-sm-8" id="col-8" >
+                <div >
+                    <a href="list-point-employee.aspx" class="btn btn-info"> Save</a>
                 </div>
+            </div>
+        </div>
             </form>
         </div>
 </asp:Content>

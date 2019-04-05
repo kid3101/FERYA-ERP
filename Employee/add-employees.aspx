@@ -1,7 +1,10 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="add-employees.aspx.cs" Inherits="Employee_AddEmployees" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
-    <link href="../css/employee.css/employee1.css" rel="stylesheet" />
+    <link href="../css/Attendance/History.css" rel="stylesheet" />
+    <link href="../css/employee.css/addemployee.css" rel="stylesheet" />
+    <link href="../css/Setting/AccessRight.css" rel="stylesheet" />
+    <link href="../css/employee.css/add-point-employee.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
@@ -30,7 +33,7 @@
                         </div>
                         <div class="col-xs-5">
                             <label>LastName<span class="star-sign">*</span></label>
-                            <input class="form-control" type="text" id="LastName">
+                            <input class="form-control" type="text" id="txtLastName">
                         </div>
                         <%--<div class="col-xs-5">
                             <label>
@@ -45,7 +48,7 @@
                         </div>--%>
                         <div class="col-xs-5">
                             <label>Email<span class="star-sign">*</span></label>
-                            <input class="form-control" type="text" placeholder="Email" autofocus="autofocus" >
+                            <input id="txtEmail" class="form-control" type="text" placeholder="Email" >
                             <div class="email">Email must work. Password will be sent to this email address.</div>
                         </div>
                         <div class="col-xs-5">
@@ -141,7 +144,7 @@
 
             <div class="col-sm-8" id="col-8" >
                 <div >
-                    <a href="<%--&quot;update-employee.aspx&quot;--%> employee.aspx" onclick="addnew()" class="btn btn-info"> Add</a>
+                    <button  onclick="addnew()" class="btn btn-info"> Add</button>
                 </div>
             </div>
         </div>
@@ -164,7 +167,7 @@
             var basic = $("#txtBasicSalary").val();
             var kpi = $("#txtKPISalary").val();
    
-            $.post("../do/Employee/add-new-employee.aspx", {
+            $.post("/do/Employee/add-new-employee.aspx", {
                 code: code,
                 first: first,
                 last: last,
@@ -174,18 +177,18 @@
                 position: position,
                 manager: manager,
                 basic: basic,
-                kpi: kpi,
+                kpi: kpi
              
             }, function (data) {
                 if (data == 1) {
-                    alertify.alert("Success");
-                    location.href = "employee.aspx"; 
+                   alert("Success");
+                    location.href = "/Employee/employee.aspx"; 
                 }
                 else {
-                    alertify.alert("Error", data);
+                   alert("Error", data);
                 }
             });
-            }
+        }
 
         
     </script>

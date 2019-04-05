@@ -1,9 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="browser-leave.aspx.cs" Inherits="Employee_browser_leave" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
-     <link href="../css/Attendance/History.css" rel="stylesheet" />
-    <link href="../css/employee.css/list-point-employee.css" rel="stylesheet" />
-    <link href="../css/employee.css/employee.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
@@ -116,37 +113,54 @@
         </div>
         <br>
     </div>
-    <div class="table">
-        <table class="tables">
-            <thead>
-                    <tr>
-                        <th>
-                            <a class="sortable" style="text-decoration:none; cursor: pointer; color:black;">SID</a>
-                        </th>
-                        <th></th>
-                        <th class="clo">
-                            EMPLOYEES
-                        </th>
-                        <th class="clo">
-                            REASON
-                        </th>
-                        <th class="clo">TIME</th>
-                        <th class="clo">ROUND 1</th>
-                        <th class="clo">ROUND 2</th>
-                        <th class="clo">ROUND 3</th>
-                        <th class="clo">STATUS</th>
-                        <th class="clo">
-                            DATE CREATED
-                        </th>
-                        <th></th>
-                    </tr>
-                </thead>
-            </table>
-            <div style="color:black; margin-left:500px; margin-top:10px;">
-                <i class="fa fa-exclamation-circle"></i>There are no applications!
+    
+
+    <div class="row">
+            <div class="col-md-12">
+                <div>
+                    <table class="table table-bordered" id="dataTable" >
+                        <thead>
+                            <tr>
+                                <th>SID</th>
+                                <th>EMPLOYEES</th>
+                                <th>REASON</th>
+                                <th>TIME</th>
+                                <th>ROUND 1</th>
+                                <th>STATUS</th>
+                                <th>DATE CREATED</th>
+                                <th>ACTION</th>
+                            </tr>
+                        </thead>
+
+                       <%-- <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>System Architect</td>
+                                <td>Edinburgh</td>
+                                <td>61</td>
+                                <td>2011/04/25</td>
+                                <td>New</td>
+                                <td>
+
+                                   
+
+                                    <a href="/project/list-work.aspx" title="Add work"><i style="width: 25px" class="fas fa-exclamation-circle"></i></a>
+                                    <a href=" /project/edit-project.aspx" title="Edit"><i style="width: 25px" class="fas fa-pen"></i></a>
+                                    <button type="button" style="border:none;background-color:floralwhite"  onclick="del()" title="Delete"><i class="fas fa-trash-alt" style="color:red"></i></button>
+
+                                </td>
+                            </tr>
+
+
+                        </tbody>--%>
+
+                    </table>
+                    <div style="color:black; margin-left:500px; margin-top:10px;">
+                        <i class="fa fa-exclamation-circle"></i>There are no applications!
+                    </div>
+                </div>
             </div>
         </div>
-
 
 </asp:Content>
 

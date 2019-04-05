@@ -148,7 +148,7 @@
           <div class="bg-white py-2 collapse-inner rounded">
             <a class="collapse-item" href="/Blog/list-blog.aspx">Blog</a>
             <a class="collapse-item" href="/Blog/manager-blog.aspx">Manage Blog</a>
-            <a class="collapse-item" href="/Blog/add-new-blog.aspx">New Entry</a>
+            <a class="collapse-item" href="/Blog/add-new-blog-for-manager.aspx">New Entry</a>
           </div>
         </div>
       </li>

@@ -109,16 +109,16 @@
         <div class="icon1">
           <a class="ls dropdown-toggle" title="For management"  data-toggle="dropdown"><i class="fas fa-cloud-upload-alt"></i> Import</a>
             <ul class="dropdown-menu " role="menu" aria-labelledby="menu1" style="width: 200px;">
-                <li role="presentation" class="icons"><a role="menuitem" tabindex="-1" class="iconses" href="import-list.aspx"><i class="fas fa-cloud-upload-alt"></i>Import employee list</a></li>
-                <li role="presentation" class="icons"><a role="menuitem" tabindex="-1" class="iconses" href="import-vitae.aspx"><i class="fas fa-cloud-upload-alt"></i>Import curriculum vitae</a></li>
-                <li role="presentation" class="icons"><a role="menuitem" tabindex="-1" class="iconses" href="import-transfer.aspx"><i class="fas fa-cloud-upload-alt"></i>Import work transfer</a></li>
+                <li role="presentation" class="icons"><a role="menuitem" tabindex="-1" class="iconses" href="import-list.aspx"><i class="fas fa-cloud-upload-alt"></i> Import employee list</a></li>
+                <li role="presentation" class="icons"><a role="menuitem" tabindex="-1" class="iconses" href="import-vitae.aspx"><i class="fas fa-cloud-upload-alt"></i> Import curriculum vitae</a></li>
+                <li role="presentation" class="icons"><a role="menuitem" tabindex="-1" class="iconses" href="import-transfer.aspx"><i class="fas fa-cloud-upload-alt"></i> Import work transfer</a></li>
             </ul>
         <button type="button"class="btn btn-info"  onclick="addemployees()"> Add Employees</button>
       </div>
           
         <div class="row">
             <div class="col-md-12">
-                <div class="table-responsive">
+                <div >
                     <table class="table table-bordered" id="dataTable" >
                         <thead>
                             <tr>
@@ -152,8 +152,8 @@
                                 <td><%=listEmployees[i].KPISalary %></td>
                                 <td>
 
-                                  <a href=" edit-employee.aspx" onclick="edit(<%=listEmployees[i].EmployeeId %>)" title="Edit"><i style="width: 25px" class="fas fa-pen"></i></a>
-                                    <button type="button" style="border:none;background-color:floralwhite" onclick="clickdelete(<%=listEmployees[i].EmployeeId %>)" title="Delete"><i class="fas fa-trash-alt" style="color:red"></i></button>
+                                  <button onclick="edit(<%=listEmployees[i].EmployeeId %>)" title="Edit"><i class="fas fa-pen"></i></button>
+                                  <button type="button" style="border:none;background-color:floralwhite" onclick="clickdelete(<%=listEmployees[i].EmployeeId %>)" title="Delete"><i class="fas fa-trash-alt" style="color:red"></i></button>
 
                                 </td>
                                 <%}%>
@@ -563,12 +563,12 @@
 
 
        function clickdelete(id) {
-           $.post("../do/Employee/delete-employee.aspx", {
+           $.post("/do/Employee/delete-employee.aspx", {
                id: id,
            }, function (data) {
                if (data == 1) {
                    alertify.alert("Success")
-                   location.href = "employee.aspx";
+                   location.href = "/Employee/employee.aspx";
                }
                else {
                    alerify.alert("Error", data)
@@ -576,7 +576,7 @@
            });
         }
         function edit(id) {
-            location.href = "edit-employee.aspx?id=" + id;
+            location.href = "/Employee/edit-employee.aspx?id=" + id;
         }
 
 
