@@ -16,10 +16,12 @@ public partial class do_add_new_department : System.Web.UI.Page
             string office = Request["office"];
             string company = Request["company"];
             string manager = Request["manager"];
+            
 
             addnewdepartment.DeparmentName = name;
             addnewdepartment.OfficeId = Convert.ToInt32(office);
             addnewdepartment.CompanyId = Convert.ToInt32(company);
+            addnewdepartment.CreatedDate = DateTime.Now;
             addnewdepartment.ManagerId = Convert.ToInt32(manager);
             addnewdepartment.Status = 1;
 

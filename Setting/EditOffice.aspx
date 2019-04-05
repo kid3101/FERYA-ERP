@@ -12,15 +12,15 @@
         <div style="margin-right: 10px;" >
             <span>Name</span>
             <span style="color:red;">*</span>
-            <input class="form-control" id="txtName1" value="<%=editoffice.OfficeName %>"" style="display:block;height:25px" type="text" />
+            <input  id="txtName1" value="<%=editoffice.OfficeName %>"" style="display:block;height:25px" type="text" />
         </div>
         <div style="margin-right: 10px;">
             <span>Address</span>
-            <input class="form-control" id="txtAddress1" value="<%=editoffice.OfficeAddress %>" style="display:block;height:25px" type="text" />
+            <input  id="txtAddress1" value="<%=editoffice.OfficeAddress %>" style="display:block;height:25px" type="text" />
         </div>
         <div style="margin-right: 10px;">
             <span>City</span>
-            <select class="form-control" style="display:block;height:25px;width:140px;">
+            <select  style="display:block;height:25px;width:140px;">
                 <option>---</option>
                 <option>Ho Chi Minh </option>
                 <option>Ha Noi</option>
@@ -45,7 +45,7 @@
     <div style="display:flex;">
         <div style="margin-right: 10px;">
             <span>Work time</span>
-            <select class="form-control" style="display:block;height:25px;width:179px;">
+            <select  style="display:block;height:25px;width:179px;">
                 <option>---</option>
                 <option>00 Hours</option>
                 <option>01 Hours</option>
@@ -75,7 +75,7 @@
         </div>
         <div style="margin-right: 10px;">
             <input type="hidden" />
-            <select class="form-control" style="display:block;height:25px;width:178px;margin-top: 23px;">
+            <select  style="display:block;height:25px;width:178px;margin-top: 23px;">
                 <option>---</option>
                 <option>00 Minutes</option>
                 <option>01 Minutes</option>
@@ -141,7 +141,7 @@
         </div>
         <div style="margin-right: 10px;">
             <span>Shift hour</span>
-            <select class="form-control" style="display:block;height:25px;width:140px;">
+            <select  style="display:block;height:25px;width:140px;">
                 <option>---</option>
                 <option>00 Hours</option>
                 <option>01 Hours</option>
@@ -171,7 +171,7 @@
         </div>
         <div style="margin-right: 10px;">
             <input type="hidden" />
-            <select class="form-control" style="display:block;height:25px;width:177px;margin-top: 24px;">
+            <select  style="display:block;height:25px;width:177px;margin-top: 24px;">
                 <option>---</option>
                 <option>00 Minutes</option>
                 <option>01 Minutes</option>
@@ -239,21 +239,21 @@
     <div style="margin-top:20px;display:flex;">
         <div style="margin-right: 7px;margin-top: 24px;">
             <div>Public reviewer</div>
-            <select class="form-control" style="height:25px;width:179px;">
+            <select  style="height:25px;width:179px;">
                 <option>---</option>
             </select>
         </div>
         <div style="margin-right: 7px;">
             <div>Limit date of public review</div>
-            <input class="form-control" type="text" value="0" style="height:25px;" />
+            <input type="text" value="0" style="height:25px;" />
         </div>
         <div style="margin-right: 7px;">
             <div>Time to work late <span><i class="fa fa-info-circle" style="cursor:pointer;" title="Calculated in minutes (equal to 0 if not installed)"></i></span></div>
-            <input class="form-control" type="text" value="0" style="height:25px;width: 135px;" />
+            <input  type="text" value="0" style="height:25px;width: 135px;" />
         </div>
         <div style="margin-top: 24px;">
             <div>Time to leave early <span><i class="fa fa-info-circle" style="cursor:pointer;" title="Calculated in minutes (equal to 0 if not installed)"></i></span></div>
-            <input class="form-control" type="text" value="0" style="height:25px;" />
+            <input  type="text" value="0" style="height:25px;" />
         </div>
     </div>
                 </div>
@@ -545,7 +545,7 @@
   
        </div>
     <script>
-function edit(id)
+    function edit(id)
         {
             var name = $("#txtName1").val();
             var address = $("#txtAddress1").val();

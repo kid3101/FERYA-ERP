@@ -138,7 +138,6 @@
                         <th>Office name</th>
                         <th>Company name</th>
                         <th>Create Date</th>
-                        <th>Curent Employee</th>
                         <th>Manager Employee</th>
                         <th>Action</th>
                     </tr>
@@ -152,12 +151,11 @@
                         <td><%=listDepartment[i].Company.CompanyName %></td>
                         <td><%=listDepartment[i].CreatedDate %></td>
                         <td><%=listDepartment[i].Employee.LastName %></td>
-                        <td><%=listDepartment[i].Employee.LastName %></td>
                         <td>
-                            <a data-toggle="modal" data-target="#myModal2">
+                            <a href="#" onclick="edit1(<%=listDepartment[i].DepartmentId%>)"  <%--data-toggle="modal" data-target="#myModal2"--%>>
                                 <i class="fa fa-pen"></i>
                             </a>
-                            <button type="button" style="border:none;background-color:floralwhite" onclick="del()"><i class="fas fa-trash-alt" style="color:red"></i></button>
+                            <button type="button" style="border:none;background-color:floralwhite" onclick="clickdelete(<%=listDepartment[i].DepartmentId%>)"><i class="fas fa-trash-alt" style="color:red"></i></button>
                         </td>
                         <%}%>
                     </tr>
@@ -165,7 +163,7 @@
             </table>
         </div>
         <!-- Modal -->
-    <div class="modal fade" id="myModal2" role="dialog">
+    <%--<div class="modal fade" id="myModal2" role="dialog">
         <div class="modal-dialog">
 
             <!-- Modal content-->
@@ -209,11 +207,11 @@
             </div>
 
         </div>
-    </div>
+    </div>--%>
     </div>
     <script>
-        function del(){
-            alert("Are You Sure?");
+        function edit1(id) {
+            location.href = "/Setting/EditDepartment.aspx?id=" + id;
         }
 
         function addnew()
@@ -238,7 +236,25 @@
                     alert("Error", data);
                 }
             });
-            }
+        }
+        function clickdelete(id) {
+            var txt;
+            var r = confirm("Are you sure Delete?");
+            if (r == true) {
+            txt = $.post("/do/Setting/delete-department.aspx", {
+                    id: id,
+                }, function (data) {
+                    if (data == 1) {
+                        alert("Delete success!")
+                        location.href = "/Setting/Derpartment.aspx";
+                    }
+                    else {
+                        alert("Error", data)
+                    }
+                })
+                ;
+                }
+        }
     </script>
 </asp:Content>
 

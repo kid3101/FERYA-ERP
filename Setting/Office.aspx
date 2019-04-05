@@ -696,7 +696,7 @@
                         <td><%=listOffice[i].CreatedDate%></td>
 
                         <td>
-                            <a  onclick="edit1(<%=listOffice[i].OfficeId%>)" <%--data-toggle="modal" data-target="#myModal7"--%> style="margin-right: 20px;text-decoration:none;"  ><i style="width: 25px" class="fas fa-pen"></i></a>
+                            <a href="#"  onclick="edit1(<%=listOffice[i].OfficeId%>)" <%--data-toggle="modal" data-target="#myModal7"--%> style="margin-right: 20px;text-decoration:none;"  ><i style="width: 25px" class="fas fa-pen"></i></a>
                          
                             <button type="button" style="border:none;background-color:floralwhite" onclick="clickdelete(<%=listOffice[i].OfficeId%>)"><i class="fas fa-trash-alt" style="color:red"></i></button>
                         </td>
