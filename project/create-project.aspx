@@ -98,7 +98,7 @@
                     <div>
                         <select id="txtManager" class="form-control">
                             <option>Select </option>
-                             <%for (int i = 0; i < listemployees.Count; i++)
+                             <%for (int i = listemployees.Count-1; i >-1; i--)
                                  {%>
                             <option value="<%=listemployees[i].ManagerId%>"><%=listemployees[i].LastName%> </option>
                             <%}%>
@@ -144,9 +144,9 @@
                         <select id="txtComPaNy" class="form-control">
                            
                              <option>Select </option>
-                             <%for (int j = 0; j < listemployees.Count; j++)
+                             <%for (int j = listemployees.Count-1 ; j >-1; j--)
                                  {%>
-                            <option value="<%=listCompany[j].CompanyId%>"><%=listCompany[j].CompanyName%> </option>
+                           <option value="<%=listemployees[j].ManagerId%>"><%=listemployees[j].LastName%> </option>
                           <%}%>
                         </select>
                     </div>
