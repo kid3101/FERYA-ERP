@@ -48,49 +48,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <div class="container-fluid">
         <h1 class="h3 mb-4 text-gray-800">Setting  > Office</h1>
-        
-        <%--<ul class="nav" style=" margin-block-start: 1em;padding-inline-start: 40px;margin-top: 48px;">
-            <li class="active " style="margin-right: 20px;">
-                <a data-toggle="tab" href="#" style="cursor:pointer;">
-                    <span style="color:black;">All</span>
-                    <span class="number">0</span>
-                </a>
-            </li>
-            <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" style="padding-right: 30px;color:black;cursor:pointer;" title="Turn on / off the search function">Filter & search ...</a>
-                <ul class="dropdown-menu filterbarfull filterbar" style="top: 41.1146px;left: -2.319px;">
-                    <li>
-                        <form class="ui form">
-                            <table width="100%" cellpadding="10">
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <label style="float:left;margin-top: 13px;">
-                                                <span>Key word</span>
-                                            </label>
-                                            <input style="float: left;margin-left: 20px;margin-bottom: 20px;height: 37px;width: 76%;" type="text" />
-                                        </td>
-
-                                    </tr>
-                                    <tr>
-                                        <td colspan="2">
-                                            <button class="timkiem"><a style="color:white;text-decoration:none;" href="SearchOffice.aspx">Search</a></button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="2" style="text-align:center;padding-top: 17px;">
-                                            <a href="#">Closed</a>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </form>
-                    </li>
-
-                </ul>
-            </li>
-        </ul>--%>
-        <div class="container-fluid" style="margin-top: -34px;margin-left: 791px;margin-top: -24px;">
+         <div class="container-fluid" style="margin-top: -34px;margin-left: 791px;margin-top: -24px;">
             <div class="container" style="float:left;">
                 <div class="row">
                     <div class="col-sm-5 sidenav" style="margin-top: -52px;margin-left: -168px;">
@@ -142,23 +100,7 @@
                                                             <%} %>
                                                         </select>
                                                 </div>
-                                               <%-- <%for (int i = 0; i < listOffice.Count; i++) { %>
-                                                <div style="margin-right: 10px;">
-                                                    <%List<Company> listOfficeCat = new List<Company>();
-                                                        CompanyManager om = new CompanyManager();
-                                                        listOfficeCat = om.GetListID(listOffice[i].OfficeId);
-                                                        for(int e=0;e<listOfficeCat.Count;e++)
-                                                        {%>
-                                                            <%=listOfficeCat[e].CompanyName %></br>
-                                                       <% }
-                                                            %>
-                                                </div>
-                                                 <%} %>--%>
-                                                <%--<div style="margin-right: 10px;">
-                                                    <span>IP is timed <i class="fa fa-info-circle" style="cursor:pointer;" title="Your current IP is 15.169.34.171"></i></span>
-                                                    <input style="display:block;height:25px" type="text" />
-                                                </div>--%>
-                                            </div>
+                                             </div>
                                             <div style="display:flex;">
                                                 <div style="margin-right: 10px;">
                                                     <span>Work time</span>
@@ -668,10 +610,10 @@
                         <th rowspan="2">Office Name</th>
                         <th>Company Name</th>
                         <th>Address</th>
-                        <th>Working Time</th>
+                        <%--<th>Working Time</th>--%>
                         <%--<th>Public People</th>--%>
                        <%-- <th>Ip Attenđe</th>--%>
-                        <th>Telephone</th>
+                        <%--<th>Telephone</th>--%>
                         <th>Date Created <i class="fa fa-info-circle" style="cursor:pointer;" title="Your current IP is 15.169.34.171"></i></th>
                         <th>Action</th>
                         
@@ -691,8 +633,8 @@
                         <%}%>  
                             </td>
                         <td><%=listOffice[i].OfficeAddress%></td>
-                        <td></td>
-                        <td><%=listOffice[i].Phone%></td>
+                        <%--<td></td>
+                        <td><%=listOffice[i].Phone%></td>--%>
                         <td><%=listOffice[i].CreatedDate%></td>
 
                         <td>
@@ -1261,10 +1203,7 @@
                 </div>
             </div>
     <script>
-        function del(){
-            alert("Are You Sure?");
-        }
-
+   
         function addnew()
         {
             var name = $("#txtName").val();

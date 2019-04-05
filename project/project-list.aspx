@@ -70,20 +70,22 @@
             location.href = "/project/create-project.aspx";
         }
          function del(id){
-            alert("Are you sure Delete?", function () {
-                $.post("/do/delete-project.aspx", {
+            var txt;
+            var r = confirm("Are you sure Delete?");
+            if (r == true) {
+            txt = $.post("/do/Project/delete-project.aspx", {
                     id: id,
-                },
-                    function (data) {
-                        if (data == 1) {
-                            alertify.alert("Success")
-                            location.href = "/project/project-list.aspx";
-                        }
-                        else {
-                            alertify.alert("Error", data)
-                        }
-                    })
-                });
+                }, function (data) {
+                    if (data == 1) {
+                        alert("Delete success!")
+                        location.href = "/project/project-list.aspx";
+                    }
+                    else {
+                        alert("Error", data)
+                    }
+                })
+                ;
+                }
         }
 
         

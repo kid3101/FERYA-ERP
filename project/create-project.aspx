@@ -252,7 +252,7 @@
                 finish: finish,
                 manager: manager,
                 company: company,
-                status: status,
+                status: status
             }, function (data) {
                 if (data == 1) {
                     alert("Success");
@@ -260,7 +260,7 @@
                 }
                 else {
                    alert("Error", data);
-                    location.href = "/do/Project/add-project.aspx";
+                    
                 }
             }
             );

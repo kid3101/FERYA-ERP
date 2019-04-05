@@ -19,6 +19,7 @@ public partial class do_add_new_office : System.Web.UI.Page
             addnewoffice.OfficeName = name;
             addnewoffice.OfficeAddress = address;
             addnewoffice.CompanyId = Convert.ToInt32(company);
+            addnewoffice.CreatedDate = DateTime.Now;
             addnewoffice.Status = 1;
 
             OfficeManager om = new OfficeManager();

@@ -32,7 +32,7 @@ public partial class do_Project_add_project : System.Web.UI.Page
             project.ManagerId = manager;
            
             PM.AddNew(project);
-            Response.Write(1);
+            Response.Write("1");
         }
         catch (Exception)
         {
