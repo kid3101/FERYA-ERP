@@ -57,10 +57,10 @@
                  <tr>
                      <td style="width:500px;height:250px;">
 
-                           <a onclick="detail(<%=Listblog[i].BlogId %>)">  <img src="/imgs/zerodata/ys3.jpg"/ width="300" height="200"></a>
+                           <a href="#" onclick="detail(<%=Listblog[i].BlogId %>)">  <img src="/imgs/zerodata/ys3.jpg"/ width="300" height="200"></a>
                      </td>
                      <td>
-                              <a href="#" onclick="detail(<%=Listblog[i].BlogId %>)"><%=Listblog[i].BlogTitle%></a>
+                              <a href="#" onclick="detail(<%=Listblog[i].BlogId %>)" style="text-decoration:none;"><b><%=Listblog[i].BlogTitle%></b></a>
                                      <br />
                                         <br />
                                <span class="fas fa-user-edit" ></span>   <%=Listblog[i].Employee.FirstName %> <br />
@@ -76,7 +76,7 @@
         </div>
     <script>
         function detail(id) {
-            location.href = "/Blog/detail-blog.aspx?id" + id;
+            location.href = "/Blog/detail-blog.aspx?id=" + id;
         }
     </script>
 </asp:Content>
