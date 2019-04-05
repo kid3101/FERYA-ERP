@@ -163,7 +163,7 @@
                 </div>
             </div>
         </div>
-        <div class="export">
+        <div class="export a">
             <button class="btn btn-facebook" data-toggle="modal" data-target="#myModal">
                 <i class="fa fa-download"></i>
                 <span>Export data
@@ -563,17 +563,21 @@
 
 
        function clickdelete(id) {
-           $.post("/do/Employee/delete-employee.aspx", {
-               id: id,
-           }, function (data) {
-               if (data == 1) {
-                   alertify.alert("Success")
-                   location.href = "/Employee/employee.aspx";
-               }
-               else {
-                   alerify.alert("Error", data)
-               }
-           });
+           var txt;
+           var r = confirm("Are you sure Delete?");
+           if (r == true) {
+               txt = $.post("/do/Employee/delete-employee.aspx", {
+                   id: id,
+               }, function (data) {
+                   if (data == 1) {
+                       alert("Delete success!")
+                       location.href = "/Employee/employee.aspx";
+                   }
+                   else {
+                       alert("Error", data)
+                   }
+               });
+           }
         }
         function edit(id) {
             location.href = "/Employee/edit-employee.aspx?id=" + id;

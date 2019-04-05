@@ -144,7 +144,7 @@
 
             <div class="col-sm-8" id="col-8" >
                 <div >
-                    <button  onclick="addnew()" class="btn btn-info"> Add</button>
+                    <button type="button"  onclick="addnew()" class="btn btn-info"> Add</button>
                 </div>
             </div>
         </div>
@@ -183,7 +183,7 @@
                 if (data == 1) {
                    alert("Success");
                     location.href = "/Employee/employee.aspx"; 
-                }
+                } 
                 else {
                    alert("Error", data);
                 }

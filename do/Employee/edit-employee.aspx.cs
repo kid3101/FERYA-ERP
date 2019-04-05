@@ -35,6 +35,6 @@ public partial class do_Employee_edit_employee : System.Web.UI.Page
         editEmployee.BasicSalary = Convert.ToInt32(basic);
         editEmployee.KPISalary = Convert.ToInt32(kpi);
         em.Save();
-        Response.Write("1");
+        Response.Write(1);
     }
 }

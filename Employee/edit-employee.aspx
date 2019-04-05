@@ -105,11 +105,11 @@
             kpi: kpi
             }, function (data) {
                 if (data == 1) {
-                    alertify.alert("Success");
+                    alert("Success");
                     location.href = "/Employee/employee.aspx";
                 }
                 else {
-                    alertify.alert("Error", data)
+                    alert("Error", data)
                 }
             });
         }

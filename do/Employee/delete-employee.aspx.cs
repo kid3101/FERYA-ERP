@@ -17,7 +17,7 @@ public partial class do_Employee_delete_employee : System.Web.UI.Page
             delete = em.GetById(id);
             delete.Status = -1;
             em.Save();
-            Response.Write(1);
+            Response.Write("1");
         }
         catch (Exception ex)
         {

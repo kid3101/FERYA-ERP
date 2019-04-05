@@ -544,7 +544,7 @@
         <button type="button" class="btn btn-facebook" style="border:none;padding-left: 20px;padding-right: 20px;" onclick="edit(<%=editoffice.OfficeId%>)">Update</button>
     </div>
   
-       </div>
+       
     <script>
     function edit(id)
         {
