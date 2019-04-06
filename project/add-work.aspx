@@ -28,118 +28,109 @@
             <div class="col-md-8" style="border-right-style: inset">
                 <div class="row">
                     <div class="col-md-8">
-                        Name work
-                   <input type="text" class="form-control" />
+                        <label>Name project</label>
+                    <select class="officee form-control" id="txtNameProject">
+                        <%for (int j = 0; j < listProject.Count; j++)
+                    { %>
+                        <option value="<%=listProject[j].ProjectId %>"><%=listProject[j].ProjectTitle %></option>
+                    <%} %>            
+                    </select>
+                   
                     </div>
 
                     <div class="col-md-3">
-                        Critical level<br />
-                        <select class="form-control">
-                            <option>Emergency</option>
-                            <option>High</option>
-                            <option>Normal</option>
-                            <option>Low</option>
-                        </select>
-                    </div>
-
-
-                    <div class="col-md-8">
-                        Status<br />
-                        <select class="form-control">
-                            <option>Assigned the job</option>
-                            <option>Solving</option>
-                            <option>Need to be approved</option>
-                            <option>Browsing</option>
-                            <option>Complete but error</option>
-                            <option>completed</option>
-                            <option>Cancel</option>
-                        </select>
+                        Name task
+                        <input id="txtNameTask" type="text" class="form-control" />
                     </div>
                     <div class="col-md-8">
-                       <%-- Tag<br />
-                        <input class="form-control">
-                          
-                        </input >--%>
                     </div>
+                    <div class="col-md-8">
+                     </div>
                     <div  class="col-md-8">
-                    Appoint
-                  <div>
-                        <select  style="height:8px" class="multipleSelect" multiple name="language">
-                <option value="Bangladesh">Bangladesh</option>
-                <option selected value="Barbados">Barbados</option>
-                <option selected value="Belarus">Belarus</option>
-                <option value="Belgium">Belgium</option>
-            </select>
-                    </div>
+                 </div>
                 </div>
-                </div>
-
-
                 <div>
                     Content
                     <div>
                         <textarea id="txtDesc" class="tinymce required"></textarea>
                     </div>
                 </div>
-                File Attach
+                <%--File Attach
                 <input type="file" class="form-check" />
-                <br />
+                <br />--%>
 
             </div>
             <div class="col-md-4">
-                <div>
-                    Type
-                  <select class="form-control">
-                      Function
-                      <option>problem</option>
-                      <option>improve</option>
-                      <option>offer</option>
-                      <option>design</option>
-                  </select>
+            <div>
                 </div>
-
-                
-
-
-                <div>
-
-                  <%--  <select class="form-control">
-                        Vision
-                      <option>123</option>
-                    </select>--%>
-                </div>
-
-
-
                 <div>
                     Start day
-                        <input type="date" class="form-control" />
+                        <input id="txtStartDay" type="date" class="form-control" />
                 </div>
                 <div>
-                    Complete Day
-                        <input type="date" class="form-control" />
+                    Finish day
+                        <input id="txtFinishDay" type="date" class="form-control" />
                 </div>
-               <%-- <div>
-                    
-                  Attach
-                    <input type="file" />
-                </div>--%>
-            </div>
+                <div>
+                    End day
+                        <input id="txtEndDay" type="date" class="form-control" />
+                </div>
+                <div>
+                    <label>Manager</label>
+                    <select class="form-control" id="selectListManager">
+                        <%for (int i = 0; i < listEmployees.Count; i++)
+                    { %>
+                        <option value="<%=listEmployees[i].ManagerId %>"><%=listEmployees[i].LastName %></option>
+                    <%} %>            
+                    </select>
+                </div>
+             </div>
 
             <div class="col-md-8">
-                Tag
-                   <input type="text" class="form-control" />
             </div>
          
 
-        </div><div style="color:white"> 0</div>
-           <button type="button" onclick="addwork1()" class="btn btn-info">Save infomation</button>
+        </div>
+        <div style="color:white;"> 0</div>
+        <div>
+           <button type="button" onclick="addnew()" class="btn btn-info">Add new</button>
     </div>
+        </div>
 <script>
          $('.multipleSelect').fastselect();
     function addwork1() {
         location.href = "/project/list-work.aspx";
     }
+
+    function addnew()
+        {
+            var project = $("#txtNameProject").val();
+            var task = $("#txtNameTask").val();
+            var content = tinymce.get("txtDesc").getContent();
+            var start = $("#txtStartDay").val();
+            var finish = $("#txtFinishDay").val();
+            var end = $("#txtEndDay").val();
+            //var employee = $("#selectListManager").val();
+   
+            $.post ("../do/Project/add-new-task.aspx", {
+                project: project,
+                task: task,
+                content: content,
+                start: start,
+                finish: finish,
+                end: end
+                //employee:employee
+             
+            }, function (data) {
+                if (data == 1) {
+                    alert("Create new success!");
+                    location.href = "/project/list-work.aspx";
+                }
+                else {
+                    alert("Error", data);
+                }
+            });
+        }
 </script>
 
 </asp:Content>

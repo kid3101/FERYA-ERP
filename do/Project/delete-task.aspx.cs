@@ -5,19 +5,18 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class do_delete_office : System.Web.UI.Page
+public partial class do_Project_delete_task : System.Web.UI.Page
 {
-    public Office deleteoffice;
-
+    public Task deletetask;
     protected void Page_Load(object sender, EventArgs e)
     {
         try
         {
             int id = Convert.ToInt32(Request["id"]);
-            OfficeManager OM = new OfficeManager();
-            deleteoffice = OM.GetById(id);
-            deleteoffice.Status = -1;
-            OM.Save();
+            TastManager TM = new TastManager();
+            deletetask = TM.GetById(id);
+            deletetask.Status = -1;
+            TM.Save();
             Response.Write("1");
         }
         catch (Exception ex)

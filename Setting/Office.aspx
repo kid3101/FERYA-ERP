@@ -586,7 +586,7 @@
                 </div>
 
             </div>
-            <div class="container" style="display: inline-flex;padding-left: 114px;">
+            <%--<div class="container" style="display: inline-flex;padding-left: 114px;">
                 <a href="#" style="height: 20px;width: 20px;color: #555;"><i class="fa fa-chevron-left"></i></a>
                 <div style="margin-right: 6px;">
                     <a href="#" style="color:#555;text-decoration:none;">
@@ -597,7 +597,7 @@
                     </a>
                 </div>
                 <a href="#" style="height: 48px;width: 48px;color: #555;"><i class="fa fa-chevron-right"></i></a>
-            </div>
+            </div>--%>
         </div>
         <br>
 

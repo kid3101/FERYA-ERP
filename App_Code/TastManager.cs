@@ -15,6 +15,7 @@ public class TastManager
         //
     }
     DataClassesDataContext DB = new DataClassesDataContext();
+
     public void Save()
     {
         DB.SubmitChanges();
