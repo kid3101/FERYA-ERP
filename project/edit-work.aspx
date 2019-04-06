@@ -64,15 +64,15 @@
                 </div>
                 <div>
                     Start day
-                        <input value="<%=edittask.StartTime.ToString() %>" id="txtStartDay" type="date" class="form-control" />
+                        <input value="<%=edittask.StartTime %>" id="txtStartDay" name="date" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'" type="text" class="form-control" />
                 </div>
                 <div>
                     Finish day
-                        <input value="<%=edittask.FinishTime %>" id="txtFinishDay" type="date" class="form-control" />
+                        <input value="<%=edittask.FinishTime %>" id="txtFinishDay" name="date" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'" type="text" class="form-control"  />
                 </div>
                 <div>
                     End day
-                        <input value="<%=edittask.EndTime %>" id="txtEndDay" type="date" class="form-control" />
+                        <input value="<%=edittask.EndTime %>" id="txtEndDay" name="date" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'" type="text" class="form-control" />
                 </div>
                 <div>
                     <label>Manager</label>
