@@ -48,7 +48,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <div class="container-fluid">
-        <div class="row content">
+        <%--<div class="row content">
             <div class="col-sm-2 sidenav sidepanel tong"  id="mySidepanel">
                 <h4 class="hh">
                     <h1 class="h3 mb-4 text-gray-800">DATA FILTER</h1>
@@ -85,9 +85,9 @@
 
 
             </div>
-            <%--<button title="Show filters" style="position: fixed;margin-top: 3px;z-index: 1;" onclick="openNav()">
+            <button title="Show filters" style="position: fixed;margin-top: 3px;z-index: 1;" onclick="openNav()">
                 <i class="fa fa-search"></i>
-            </button>--%>
+            </button>
 
             <div class="col-sm-10">
                 <div>
@@ -182,7 +182,65 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>--%>
+        <h1 class="h3 mb-4 text-gray-800">History  > Working plan</h1>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Task</th>
+                    <th>Employee</th>
+                    <th>Note</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <%for (int i = listWorkingPlan.Count - 1; i > -1; i--)
+                    {%>
+                <tr>
+                    <td><%=listWorkingPlan[i].Task.TaskName %></td>
+                    <td><%=listWorkingPlan[i].Employee.LastName %></td>
+                    <td><%=listWorkingPlan[i].Note %></td>
+                    <td>
+                        <a href="#"  onclick="add()"  class="nut"  ><i style="width: 25px" class="fas fa-plus"></i></a>
+
+                        <a href="#"  onclick="edit(<%=listWorkingPlan[i].WorkingPlanId%>)"  class="nut"  ><i style="width: 25px" class="fas fa-pen"></i></a>
+                         
+                        <button type="button" class="nut2" onclick="clickdelete(<%=listWorkingPlan[i].WorkingPlanId %>)"><i class="fas fa-trash-alt" style="color:red"></i></button>
+                        
+                    </td>
+                    <%}%>
+                </tr>
+            </tbody>
+        </table>
     </div>
+    <script>
+
+    function add() {
+                location.href = "/Attendance/AddWorkingPlan.aspx";
+        }
+
+    function edit(id) {
+            location.href = "/Attendance/EditWorkingPlan.aspx?id=" + id;
+    }
+
+    function clickdelete(id) {
+            var txt;
+            var r = confirm("Are you sure Delete?");
+            if (r == true) {
+            txt = $.post("/do/Attendance/delete-workingplan.aspx", {
+                    id: id,
+                }, function (data) {
+                    if (data == 1) {
+                        alert("Delete success!")
+                        location.href = "/Attendance/WorkingPlan.aspx";
+                    }
+                    else {
+                        alert("Error", data)
+                    }
+                })
+                ;
+                }
+        }
+    </script>
 </asp:Content>
 

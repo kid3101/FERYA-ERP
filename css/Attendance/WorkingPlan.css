@@ -401,4 +401,13 @@ th, td {
     padding-left: 20px;
     padding-right: 20px;
 }
+.nut {
+    margin-right: 20px;
+    text-decoration: none;
+}
+.nut2 {
+    border: none;
+    background-color: floralwhite
+}
+
 
