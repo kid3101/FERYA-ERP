@@ -37,7 +37,7 @@
                         <label for="ex1">Start Day</label>
 
                         <div class="input-group date" data-date-format="dd-mm-yyyy">
-                            <input  id="txtStartDay"value="<%=project.StartTime%>" class="form-control" onfocus="(this.type='date')" onblur="if(!this.value).this.type='text'" >
+                            <input  id="txtStartDay"value="<%=project.StartTime%>" class="form-control" onfocus="(this.type='date')" onblur="if(!this.value).this.type='text'" type="text"/>
                             <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
                         </div>
                     </div>
@@ -47,7 +47,7 @@
                         <label for="ex2">Finish Day</label>
                         <div class="input-group date" data-date-format="dd-mm-yyyy">
                          
-                            <input  id="txtFinishDay"value="<%=project.FinishTime%>"class="form-control" onfocus="(this.type='date')" onblur="if(!this.value).this.type='text'" >
+                            <input  id="txtFinishDay"value="<%=project.FinishTime%>"class="form-control" onfocus="(this.type='date')" onblur="if(!this.value).this.type='text'" type="text"/>
                             <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
                         </div>
                     </div>
@@ -242,7 +242,7 @@
            
             $.post("/do/Project/edit-project.aspx", {
                  id: <%=editproject.ProjectId%>,
-                idmanager: idmanager,
+               
                 name: name,
                 desc: desc,
                 content: content,
