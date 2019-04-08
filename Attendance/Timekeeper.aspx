@@ -58,21 +58,21 @@
                 <h1 class="h3 mb-4 text-gray-800">ATTENDANCE</h1>
                 <div>
                      <label>Choose an office for attendance</label>
-                    <select class="officee form-control" id="selectListOffice" name="office" >
+                    <select class="officee form-control" id="selectListOffice">
                         <%for (int j = 0; j < listOffice.Count; j++)
                         { %>
-                            <option onclick="selectoff(<%=listOffice[j].OfficeId %>)" value="<%=listOffice[j].OfficeId %>"><%=listOffice[j].OfficeName %> </option>
+                            <option value="<%=listOffice[j].OfficeId %>"><%=listOffice[j].OfficeName %></option>
                         <%} %>            
                     </select>
                 </div>
                  <div  style="margin-top:20px;">
                     <%--<input class="form-control" placeholder="Find staff for attendance" style="height: 35px;cursor: pointer;margin-top:20px;" />--%>
                       <label>Choose an employee for attendance</label>
-                     <select class="officee form-control"  id="selectListEmployee"  id ="hienthi">
-                      <%--  <%for (int i = 0; i< data.Count; i++)
+                     <select class="officee form-control" id="selectListEmployee">
+                        <%for (int i = 0; i< listEmployees.Count; i++)
                         { %>
                             <option value="<%=listEmployees[i].EmployeeId %>"><%=listEmployees[i].LastName %></option>
-                        <%} %>            --%>
+                        <%} %>            
                     </select>
                     
                     <a href="MainOffice2.aspx" class="main"><button class="btn btn-primary but" >Continue</button></a>
@@ -83,8 +83,6 @@
             </div>
         </div>
     </div>
- <script>
 
-</script>
 </asp:Content>
 

@@ -26,12 +26,13 @@
                             <span>0</span>
                             <a href="#"><i class="fa fa-chevron-right"></i></a>
                         </div>
+
                     </div>
                 </div>
             </div>
         </div>
 
-        <%--<div class="col-sm-5" id="searchblog">
+<%--        <div class="col-sm-5" id="searchblog">
             <div class="count">
                 <span>All</span>
                 <span class="number">0</span>
@@ -75,7 +76,9 @@
                          <a href="#" onclick="detail(<%=Listblog[i].BlogId %>)" title="Detail"><i style="width: 25px" class="fas fa-exclamation-circle"></i><a>
                          <a href="#" onclick="edit(<%=Listblog[i].BlogId %>)" title="Edit"><i style="width: 25px" class="fas fa-pen"></i></a>
                          <button type="button" style="border:none;background-color:floralwhite"  onclick="del(<%=Listblog[i].BlogId %>)"title="Delete"><i class="fas fa-trash-alt" style="color:red"></i></button>
-                    </td>                 
+
+                    </td>
+                  
                 </tr>    
                   <%} %>
             </tbody>
@@ -107,6 +110,7 @@
         function detail(id) {
             location.href = "/Blog/detail-blog.aspx?id=" + id;
         }
+       
     </script>
 </asp:Content>
 
