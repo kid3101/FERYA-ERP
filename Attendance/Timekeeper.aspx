@@ -83,6 +83,14 @@
             </div>
         </div>
     </div>
-
+    <script>
+        $(document).ready(function(){
+            $('#selectListOffice').on('change',function(){
+        
+                var optionText = $("#selectListOffice option:selected").val();
+                alert("Selected Option Text: "+optionText);
+            });
+        });
+    </script>
 </asp:Content>
 

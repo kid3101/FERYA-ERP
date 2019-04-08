@@ -60,7 +60,7 @@
                     </h1>
                     
                 </div>
-                <a href="MainOffice.aspx"><i class="fa fa-chevron-left" style="font-size:20px;float: left;margin-top: -33px;color:#767676"></i></a>
+                <a href="Timekeeper.aspx"><i class="fa fa-chevron-left" style="font-size:20px;float: left;margin-top: -33px;color:#767676"></i></a>
                 <div>
 
                     <%--<input class="form-control" style="height: 58px;font-size: 27px;cursor: pointer;" />

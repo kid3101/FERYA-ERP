@@ -54,7 +54,7 @@
             <div class="col-sm-8">
 
                 <h1 style="padding-top:40px;text-align:center;text-transform:uppercase;">Main office</h1>
-                <a href="MainOffice.aspx"><i class="fa fa-chevron-left" style="font-size:20px;float: left;margin-top: -33px;color:#767676"></i></a>
+                <a href="Timekeeper.aspx"><i class="fa fa-chevron-left" style="font-size:20px;float: left;margin-top: -33px;color:#767676"></i></a>
                 <div>
 
                     <%--<input class="form-control" style="height: 58px;font-size: 27px;cursor: pointer;" />
@@ -68,7 +68,7 @@
                         <div class="col-sm-9" style="height: 121px;color:black;background-color:#eee;margin-top: -6px;">
                             <i class="fa fa-sign-in" style="font-size:39px;"></i>
                             <br />
-                            <span style="font-size: 26px;color:grey;">Time out</span>
+                            <span style="font-size: 26px;">Time out</span>
                         </div>
                     </div>
                     <div class="form-control" style="display:flex;margin-top: 15px;height: 300px;background-color:#eee" ">
