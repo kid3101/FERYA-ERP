@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="edit-project.aspx.cs" Inherits="roject_edit_project" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="edit-project.aspx.cs" Inherits="project_edit_project" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
      <link href="../css/Setting/AccessRight.css" rel="stylesheet" />
@@ -159,3 +159,4 @@
     </script>
 
 </asp:Content>
+

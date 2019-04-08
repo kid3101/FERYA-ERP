@@ -87,7 +87,7 @@
         $(document).ready(function(){
             $('#selectListOffice').on('change',function(){
         
-                var optionText = $("#selectListOffice option:selected").val();
+                var optionText = $("#selectListOffice option:selected").val().;
                 alert("Selected Option Text: "+optionText);
             });
         });
