@@ -28,17 +28,17 @@
                 <br>
                 <label>Name <i style="color:red">*</i></label>
                 <div>
-                    <input class="form-control" type="text">
+                   <input id="txtName"value="<%=project.ProjectTitle%>" class="form-control" type="text">
                     <br>
                 </div>
 
                 <label>Description</label>
                 <div>
-                    <textarea style="width:700px" class="tinymce form-control " ></textarea>
+                    <textarea id="txtDesc" style="width: 700px" class="tinymce form-control "><%=project.ProjectDesc%></textarea>
                 </div>
                  <label>Content</label>
                 <div>
-                    <textarea style="width:700px" class="tinymce form-control " ></textarea>
+                    <textarea id="txtContent" style="width: 700px"  class="tinymce form-control "><%=project.ProjectContent%></textarea>
                 </div>
                 <br />
                 <div class="col-sm" style="display: flex;margin-left:-22px;">
@@ -46,7 +46,7 @@
                         <label for="ex1">Start Day</label>
 
                         <div id="datepicker" class="input-group date" data-date-format="dd-mm-yyyy">
-                            <input class="form-control" type="date">
+                            <input  id="txtStartDay"value="<%=project.StartTime%>" class="form-control" onfocus="(this.type='date')" onblur="if(!this.value).this.type='text'" >
                             <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
                         </div>
                     </div>
@@ -55,7 +55,7 @@
 
                         <label for="ex2">Finish Day</label>
                         <div id="datepicker1" class="input-group date" data-date-format="dd-mm-yyyy">
-                            <input class="form-control" type="date">
+                           <input  id="txtFinishDay"value="<%=project.FinishTime%>"class="form-control" onfocus="(this.type='date')" onblur="if(!this.value).this.type='text'" >
                             <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
                         </div>
                     </div>                   
@@ -156,6 +156,46 @@
         function myfunction() {
 
         }
+
+        function editproject() {
+               
+          
+            var name = $("#txtName").val();
+            var desc = tinymce.get("txtDesc").getContent();
+          var content = tinymce.get("txtContent").getContent();
+           var startday = $("#txtStartDay").val();
+          var finish = $("#txtFinishDay").val();
+           var manager = $("#txtManager").val();
+            var company = $("#txtComPaNy").val();
+           
+
+        function myfunction() {
+           
+            $.post("/do/Project/edit-project.aspx", {
+                 id: <%=editproject.ProjectId%>,
+                idmanager: idmanager,
+                name: name,
+                desc: desc,
+                content: content,
+                startday: startday,
+                finish: finish,
+                manager: manager,
+                company: company,
+               
+            }, function (data) {
+                if (data == 1) {
+                    alert("Success");
+                    location.href = "/project/project-list.aspx";
+                }
+                else {
+                   alert("Error", data);
+                    
+                }
+            }
+            );
+
+        }
+
     </script>
 
 </asp:Content>

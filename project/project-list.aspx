@@ -49,7 +49,7 @@
                                    <%-- <a href="/project/category-list.aspx"><i style="width: 25px" class="fas fa-book-open"></i></a>--%>
 
                                     <a href="/project/list-work.aspx" title="Add work"><i style="width: 25px" class="fas fa-exclamation-circle"></i></a>
-                                    <a href=" /project/edit-project.aspx" title="Edit"><i style="width: 25px" class="fas fa-pen"></i></a>
+                                    <a href="#" onclick="edit(<%=listProject[i].ProjectId %>)" title="Edit"><i style="width: 25px" class="fas fa-pen"></i></a>
                                     <button type="button" style="border:none;background-color:floralwhite"  onclick="del(<%=listProject[i].ProjectId %>)" title="Delete"><i class="fas fa-trash-alt" style="color:red"></i></button>
 
                                 </td>
@@ -66,6 +66,9 @@
         </div>
     </div>
     <script>
+        function edit(id) {
+            location.href = "/project/edit-project.aspx?id=" + id;
+        }
         function addproject() {
             location.href = "/project/create-project.aspx";
         }
