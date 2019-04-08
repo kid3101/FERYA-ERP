@@ -40,6 +40,7 @@ public class DepartmentManager
     }
     public List<Department> GetDepartment()
     {
+        
         try
         {
             return DB.Departments.Where(u => u.Status != -1).ToList();
@@ -49,4 +50,16 @@ public class DepartmentManager
             return null;
         }
     }
+    //public List<Department> GetDepartmentByIdOff(int id)
+    //{
+    //    try
+    //    {
+    //        return DB.Departments.Where(u => u.Status != -1 && u.OfficeId == id).ToList();
+    //    }
+    //    catch (Exception)
+    //    {
+    //        return null;
+    //    }
+    //}
+
 }

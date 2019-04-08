@@ -16,7 +16,7 @@ public partial class Attendance_Timekeeper : System.Web.UI.Page
         OfficeManager om = new OfficeManager();
         listOffice = om.GetOffice();
 
-        EmployeeManager em = new EmployeeManager();
-        listEmployees = em.GetUser();
+        //EmployeeManager em = new EmployeeManager();
+        //listEmployees = em.GetUser();
     }
 }
