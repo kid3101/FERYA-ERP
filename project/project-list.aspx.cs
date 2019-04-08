@@ -7,14 +7,10 @@ using System.Web.UI.WebControls;
 
 public partial class ListProject : System.Web.UI.Page
 {
-    public List<Employee> employees;
     public List<Project> listProject;
     protected void Page_Load(object sender, EventArgs e)
     {
         ProjectManager PM = new ProjectManager();
         listProject = PM.GetList();
-
-        EmployeeManager EM = new EmployeeManager();
-        employees = EM.GetUser();
     }
 }

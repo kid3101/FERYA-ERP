@@ -26,7 +26,7 @@
             </div>
             <div class="col-sm-8">
                 <br>
-                <label for="txtName" >Name <i style="color: red">*</i></label>
+                <label for="txtName">Name <i style="color: red">*</i></label>
                 <div>
                     <input id="txtName" class="form-control" type="text">
                     <br>
@@ -61,7 +61,7 @@
                     </div>
                 </div>
                 <br />
-               <%-- <div class="col-sm-5" style="margin-left: -10px;">
+                <div class="col-sm-5" style="margin-left: -10px;">
                     <label>Status </label>
                     <select id="txtStatus" class="form-control">
                         <option>New </option>
@@ -69,7 +69,7 @@
                         <option>Finish </option>
                         <option>Close </option>
                     </select>
-                </div>--%>
+                </div>
 
             </div>
 
@@ -144,9 +144,9 @@
                         <select id="txtComPaNy" class="form-control">
                            
                              <option>Select </option>
-                             <%for (int j = listCompany.Count-1 ; j >-1; j--)
+                             <%for (int j = listemployees.Count-1 ; j >-1; j--)
                                  {%>
-                           <option value="<%=listCompany[j].CompanyId%>"><%=listCompany[j].CompanyName%> </option>
+                           <option value="<%=listemployees[j].ManagerId%>"><%=listemployees[j].LastName%> </option>
                           <%}%>
                         </select>
                     </div>
@@ -241,7 +241,7 @@
           var finish = $("#txtFinishDay").val();
            var manager = $("#txtManager").val();
             var company = $("#txtComPaNy").val();
-           
+            var status = $("#txtStatus").val();
 
            
             $.post("/do/Project/add-project.aspx", {
@@ -252,7 +252,7 @@
                 finish: finish,
                 manager: manager,
                 company: company,
-               
+                status: status
             }, function (data) {
                 if (data == 1) {
                     alert("Success");
