@@ -9,7 +9,6 @@ public partial class do_Project_add_project : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-  
         try
         {
             string name = Request["name"];
@@ -20,26 +19,25 @@ public partial class do_Project_add_project : System.Web.UI.Page
             int status = Convert.ToInt32(Request["status"]);
             int company = Convert.ToInt32(Request["company"]);
             int manager = Convert.ToInt32(Request["manager"]);
-            ProjectManager PMm = new ProjectManager();
+            ProjectManager PM = new ProjectManager();
             Project project = new Project();
             project.ProjectTitle = name;
             project.ProjectDesc = desc;
             project.ProjectContent = content;
             project.StartTime = startday;
             project.FinishTime = finish;
-            project.Status = 1;
+            project.Status = status;
             project.CreatedDate = DateTime.Now;
             project.CompanyId = company;
             project.ManagerId = manager;
-            project.Status = 1;
-            PMm.AddNew(project);
-            Response.Write(1);
+           
+            PM.AddNew(project);
+            Response.Write("1");
         }
-        catch (Exception ex)
+        catch (Exception)
         {
 
-            Response.Write(ex);
-            
+            throw;
         }
     }
 }

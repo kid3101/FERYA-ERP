@@ -19,7 +19,7 @@
                     <table class="table table-bordered" id="dataTable" >
                         <thead>
                             <tr>
-                                
+                                <th>No</th>
                                 <th>Name</th>
                                 <th>Manager</th>
                                 <th>Company</th>
@@ -36,20 +36,22 @@
                               <%for (int i = listProject.Count - 1 ; i > -1; i-- )
                    {%>
                             <tr>
-                               
+                                <td><%=listProject[i].ProjectId%></td>
                                 <td><%=listProject[i].ProjectTitle%></td>
-                              <td><%=listProject[i].Employee.LastName%></td>
-                               <td><%=listProject[i].Company.CompanyName%></td>
+                              <td><%=listProject[i].ManagerId%></td>
+                               <td><%=listProject[i].CompanyId%></td>
                                <td><%=listProject[i].StartTime%></td>
                               <td><%=listProject[i].FinishTime%></td>
                                  <td><%=listProject[i].CreatedDate%></td>
                                  <td><%=listProject[i].Status%></td>
                                 <td>
+
                                    <%-- <a href="/project/category-list.aspx"><i style="width: 25px" class="fas fa-book-open"></i></a>--%>
 
                                     <a href="/project/list-work.aspx" title="Add work"><i style="width: 25px" class="fas fa-exclamation-circle"></i></a>
-                                    <a onclick="editproject(<%=listProject[i].ProjectId%>)"title="Edit"><i style="width: 25px" class="fas fa-pen"></i></a>
-                                    <button type="button" style="border:none;background-color:floralwhite"  onclick="del(<%=listProject[i].ProjectId%>)" title="Delete"><i class="fas fa-trash-alt" style="color:red"></i></button>
+                                    <a href=" /project/edit-project.aspx" title="Edit"><i style="width: 25px" class="fas fa-pen"></i></a>
+                                    <button type="button" style="border:none;background-color:floralwhite"  onclick="del(<%=listProject[i].ProjectId %>)" title="Delete"><i class="fas fa-trash-alt" style="color:red"></i></button>
+
                                 </td>
                                 <%}%>
                             </tr>
@@ -67,10 +69,6 @@
         function addproject() {
             location.href = "/project/create-project.aspx";
         }
-        function editproject(id) {
-            location.href = "/project/edit-project.aspx?id=" + id;
-        }
-
          function del(id){
             var txt;
             var r = confirm("Are you sure Delete?");
