@@ -39,17 +39,17 @@ public class TaskCommentManager
         }
     }
 
-    //public List<TaskComment> GetTaskComment()
-    //{
-    //    try
-    //    {
-    //        return DB.TaskComments.Where(u => u.Status != -1).ToList();
-    //    }
-    //    catch (Exception)
-    //    {
-    //        return null;
-    //    }
-    //}
+    public List<TaskComment> GetTaskComment()
+    {
+        try
+        {
+            return DB.TaskComments.Where(u => u.Status != -1).ToList();
+        }
+        catch (Exception)
+        {
+            return null;
+        }
+    }
     public List<TaskComment> GetListID(long id)
     {
         return DB.TaskComments.Where(u => u.TaskCommentId == id).ToList();

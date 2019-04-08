@@ -57,13 +57,13 @@
                 <a href="MainOffice.aspx"><i class="fa fa-chevron-left" style="font-size:20px;float: left;margin-top: -33px;color:#767676"></i></a>
                 <div>
 
-                    <input class="form-control" style="height: 58px;font-size: 27px;cursor: pointer;" />
-                    <a href="MainOffice.aspx" style="color:grey;"><i class="fa fa-times" style="cursor: pointer;font-size: 33px;float: right;margin-top: -46px;margin-right: 20px;"></i></a>
+                    <%--<input class="form-control" style="height: 58px;font-size: 27px;cursor: pointer;" />
+                    <a href="MainOffice.aspx" style="color:grey;"><i class="fa fa-times" style="cursor: pointer;font-size: 33px;float: right;margin-top: -46px;margin-right: 20px;"></i></a>--%>
                     <div class="form-control" style="display: flex;margin-top: 15px;height: 123px;background-color: #eee;">
                         <div class="col-sm-3 sidenav" style="background-color: white;height: 121px;margin-top: -6px;margin-left: -12px;">
                             <i class="fa fa-sign-in" style="font-size:39px;color:grey;"></i>
                             <br />
-                            <span style="font-size: 26px;">Time attendance</span>
+                            <span ><a href="MainOffice2.aspx" style="font-size: 26px;text-decoration:none;color:grey;">Time attendance</a></span>
                         </div>
                         <div class="col-sm-9" style="height: 121px;color:black;background-color:#eee;margin-top: -6px;">
                             <i class="fa fa-sign-in" style="font-size:39px;"></i>

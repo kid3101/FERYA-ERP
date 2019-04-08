@@ -20,8 +20,8 @@ public partial class project_comment_work : System.Web.UI.Page
         TastManager tm = new TastManager();
         listTask = tm.GetTask();
 
-        //TaskCommentManager tcm = new TaskCommentManager();
-        //listTaskComment = tcm.GetTaskComment();
+        TaskCommentManager tcm = new TaskCommentManager();
+        listTaskComment = tcm.GetTaskComment();
 
         ProjectManager pm = new ProjectManager();
         listProject = pm.GetList();

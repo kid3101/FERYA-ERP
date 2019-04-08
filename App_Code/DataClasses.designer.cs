@@ -4093,8 +4093,10 @@ public partial class TaskComment : INotifyPropertyChanging, INotifyPropertyChang
 			}
 		}
 	}
-	
-	public event PropertyChangingEventHandler PropertyChanging;
+
+    public int Status { get; internal set; }
+
+    public event PropertyChangingEventHandler PropertyChanging;
 	
 	public event PropertyChangedEventHandler PropertyChanged;
 	
