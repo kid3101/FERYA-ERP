@@ -82,23 +82,25 @@
 
             <div class="col-sm-3">
 
-                <div>Manager Project </div>
+                <%--<div>Manager Project </div>--%>
                 <br /><br />
                 <br />
                 <br /><br />
-                <div>Company <i style="color:red">*</i></div>
+                <%--<div>Company <i style="color:red">*</i></div>--%>
             </div>
 
             <div class="col-sm-6">
                 <div>
-                    <div>Member</div>
+                    <div>Manager Project</div>
                     <div>
-                        <select id="10" style="height:8px" class="multipleSelect" multiple name="language">
-                <option value="Bangladesh">Mr Peter</option>
-                <option selected value="Barbados">Mr TomMy</option>
-                <option selected value="Belarus">Mr Anh</option>
-                <option value="Belgium">Belgium</option>
-            </select>
+                        <select id="txtManager" class="form-control" value="<%=editproject.ProjectId%>">
+                            <option>Select </option>
+                             <%for (int  i = 0; i < listemployee.Count; i++)
+                                 {%>
+                            <option value="<%=listemployee[i].ManagerId%>" <% if (listemployee[i].ManagerId == editproject.ManagerId)
+                                    { %>selected<%} %> ><%=listemployee[i].LastName%> </option>
+                            <%}%>
+                        </select>
                     </div>
                 </div>
             </div>
@@ -120,14 +122,17 @@
             </div>
             <div class="col-sm-6">
                 <div>
-                    <div>Member</div>
+                    <div>Company <i style="color:red">*</i></div>
                     <div>
-                        <select style="height:8px" class="multipleSelect" multiple name="language">
-                <option value="Bangladesh">FERYA</option>
-                <option selected value="Barbados">GOOGLE</option>
-                <option selected value="Belarus">AMAZON</option>
-                <option value="Belgium">SAMSUNG</option>
-            </select>
+                        <select id="txtComPaNy" class="form-control" value="<%=editproject.CompanyId%>" >
+                           
+                             <option>Select </option>
+                             <%for (int j = listcom.Count-1 ; j >-1; j--)
+                                 {%>
+                           <option value="<%=listcom[j].CompanyId%>" <% if (listcom[j].CompanyId == editproject.CompanyId)
+                                    { %>selected<%} %>><%=listcom[j].CompanyName%> </option>
+                              <%}%>
+                        </select>
                     </div>
                 </div>
             </div>
