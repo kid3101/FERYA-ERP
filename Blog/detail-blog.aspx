@@ -31,20 +31,16 @@
             <hr/>
             <div class="formcmt">
                 <div class="cmt" >
-                    <b>User 123:</b> today, 20:20pm : Hello, .................
-                    <br />
-                    <b>User 456:</b> today, 20:20pm : Hi, ......................
-                      <br />
-                     <b>User 789:</b> today, 20:20pm : Hello, ........................
-                    <br />
-                    <b>User 999:</b> today, 20:20pm : Hi, ......................
+               <% for (int i = listcmt.Count -1; i>-1;i--)  { %>
+                        <span><b><%=listcmt[i].Employee.FirstName %></b></span> : <span><%=listcmt[i].CommentNote %></span><br />
+                  <%} %>
                 </div>
             </div>
             <div class="entercmt">
                 <form>
-                    <textarea class="form-control" id="exampleFormControlTextarea3" rows="7" placeholder="Write comment ..."><%=detail.BlogContent %></textarea>
+                    <textarea class="form-control" id="contentcmt" rows="7" placeholder="Write comment ..."></textarea>
                 </form>
-                <button type="button" class="btn btn-facebook" ><b>Comment</b></button>
+                <button type="button" class="btn btn-facebook" onclick ="comment(<%=detail.BlogId %>)"><b>Comment</b></button>
             </div>
         </div>
         <div class="col-sm-3">
@@ -53,5 +49,28 @@
     </div>
             </div>
         </div>
+    <script>
+        function comment(id) {
+            var content = $('textarea#contentcmt').val();
+               try {
+                  $.post("/do/Comment/add-comment.aspx", {
+                      id: id,
+                      comment :content
+                  }, function (data) {
+                      if (data == 1) {                        
+                          location.href = "/Blog/detail-blog.aspx?id=" + id;
+                      }
+                      else {
+                          alert("error")
+                           location.href = "/Blog/detail-blog.aspx?id=" + id;
+                      }
+                  }
+                  )
+              } catch (e) {
+                   alert("Error");
+                    location.href = "/Blog/detail-blog.aspx?id=" + id;
+              }
+        }
+    </script>
 </asp:Content>
 

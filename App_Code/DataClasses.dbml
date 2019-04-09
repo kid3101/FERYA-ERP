@@ -1,5 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Database Name="ERP4" Class="DataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="WebSettings" ConnectionString="Data Source=DESKTOP-U15BKMG\SQLEXPRESS;Initial Catalog=ERP4;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="ERP4" Provider="System.Data.SqlClient" />
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="erpDBx" Class="DataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=198.71.225.145;Initial Catalog=erpDBx;User ID=minh740" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="erpDBxConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.Attendant" Member="Attendants">
     <Type Name="Attendant">
       <Column Name="AttendantId" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -38,19 +38,6 @@
       <Association Name="Blog_BlogComment" Member="BlogComments" ThisKey="BlogId" OtherKey="BlogId" Type="BlogComment" />
       <Association Name="Company_Blog" Member="Company" ThisKey="CompanyId" OtherKey="CompanyId" Type="Company" IsForeignKey="true" />
       <Association Name="Employee_Blog" Member="Employee" ThisKey="CreatedByEmployeeId" OtherKey="EmployeeId" Type="Employee" IsForeignKey="true" />
-    </Type>
-  </Table>
-  <Table Name="dbo.BlogComment" Member="BlogComments">
-    <Type Name="BlogComment">
-      <Column Name="BlogCommentId" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="CommentTitle" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
-      <Column Name="CommentNote" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
-      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="EmployeeId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
-      <Column Name="Status" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="BlogId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
-      <Association Name="Blog_BlogComment" Member="Blog" ThisKey="BlogId" OtherKey="BlogId" Type="Blog" IsForeignKey="true" />
-      <Association Name="Employee_BlogComment" Member="Employee" ThisKey="EmployeeId" OtherKey="EmployeeId" Type="Employee" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.Company" Member="Companies">
@@ -101,12 +88,12 @@
       <Association Name="Employee_Attendant" Member="Attendants" ThisKey="EmployeeId" OtherKey="EmployeeId" Type="Attendant" />
       <Association Name="Employee_WorkingPlan" Member="WorkingPlans" ThisKey="EmployeeId" OtherKey="EmployeeId" Type="WorkingPlan" />
       <Association Name="Employee_Blog" Member="Blogs" ThisKey="EmployeeId" OtherKey="CreatedByEmployeeId" Type="Blog" />
-      <Association Name="Employee_BlogComment" Member="BlogComments" ThisKey="EmployeeId" OtherKey="EmployeeId" Type="BlogComment" />
       <Association Name="Employee_Department" Member="Departments" ThisKey="EmployeeId" OtherKey="ManagerId" Type="Department" />
       <Association Name="Employee_Project" Member="Projects" ThisKey="EmployeeId" OtherKey="ManagerId" Type="Project" />
       <Association Name="Employee_Task" Member="Tasks" ThisKey="EmployeeId" OtherKey="CreatedByEmpId" Type="Task" />
       <Association Name="Employee_TaskComment" Member="TaskComments" ThisKey="EmployeeId" OtherKey="EmployeeId" Type="TaskComment" />
       <Association Name="Employee_WorkingLocation" Member="WorkingLocations" ThisKey="EmployeeId" OtherKey="EmployeeId" Type="WorkingLocation" />
+      <Association Name="Employee_BlogComment" Member="BlogComments" ThisKey="EmployeeId" OtherKey="EmployeeId" Type="BlogComment" />
     </Type>
   </Table>
   <Table Name="dbo.Office" Member="Offices">
@@ -186,6 +173,19 @@
       <Association Name="Company_WorkingLocation" Member="Company" ThisKey="CompanyId" OtherKey="CompanyId" Type="Company" IsForeignKey="true" />
       <Association Name="Department_WorkingLocation" Member="Department" ThisKey="DepartmentId" OtherKey="DepartmentId" Type="Department" IsForeignKey="true" />
       <Association Name="Employee_WorkingLocation" Member="Employee" ThisKey="EmployeeId" OtherKey="EmployeeId" Type="Employee" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.BlogComment" Member="BlogComments">
+    <Type Name="BlogComment">
+      <Column Name="BlogCommentId" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CommentTitle" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="CommentNote" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EmployeeId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BlogId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Association Name="Blog_BlogComment" Member="Blog" ThisKey="BlogId" OtherKey="BlogId" Type="Blog" IsForeignKey="true" />
+      <Association Name="Employee_BlogComment" Member="Employee" ThisKey="EmployeeId" OtherKey="EmployeeId" Type="Employee" IsForeignKey="true" />
     </Type>
   </Table>
 </Database>

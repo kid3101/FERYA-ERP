@@ -21,7 +21,7 @@ using System.Reflection;
 
 
 
-[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="ERP4")]
+[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="erpDBx")]
 public partial class DataClassesDataContext : System.Data.Linq.DataContext
 {
 	
@@ -38,9 +38,6 @@ public partial class DataClassesDataContext : System.Data.Linq.DataContext
   partial void InsertBlog(Blog instance);
   partial void UpdateBlog(Blog instance);
   partial void DeleteBlog(Blog instance);
-  partial void InsertBlogComment(BlogComment instance);
-  partial void UpdateBlogComment(BlogComment instance);
-  partial void DeleteBlogComment(BlogComment instance);
   partial void InsertCompany(Company instance);
   partial void UpdateCompany(Company instance);
   partial void DeleteCompany(Company instance);
@@ -65,6 +62,9 @@ public partial class DataClassesDataContext : System.Data.Linq.DataContext
   partial void InsertWorkingLocation(WorkingLocation instance);
   partial void UpdateWorkingLocation(WorkingLocation instance);
   partial void DeleteWorkingLocation(WorkingLocation instance);
+  partial void InsertBlogComment(BlogComment instance);
+  partial void UpdateBlogComment(BlogComment instance);
+  partial void DeleteBlogComment(BlogComment instance);
   #endregion
 	
 	public DataClassesDataContext() : 
@@ -118,14 +118,6 @@ public partial class DataClassesDataContext : System.Data.Linq.DataContext
 		get
 		{
 			return this.GetTable<Blog>();
-		}
-	}
-	
-	public System.Data.Linq.Table<BlogComment> BlogComments
-	{
-		get
-		{
-			return this.GetTable<BlogComment>();
 		}
 	}
 	
@@ -190,6 +182,14 @@ public partial class DataClassesDataContext : System.Data.Linq.DataContext
 		get
 		{
 			return this.GetTable<WorkingLocation>();
+		}
+	}
+	
+	public System.Data.Linq.Table<BlogComment> BlogComments
+	{
+		get
+		{
+			return this.GetTable<BlogComment>();
 		}
 	}
 }
@@ -1086,294 +1086,6 @@ public partial class Blog : INotifyPropertyChanging, INotifyPropertyChanged
 	}
 }
 
-[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.BlogComment")]
-public partial class BlogComment : INotifyPropertyChanging, INotifyPropertyChanged
-{
-	
-	private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-	
-	private long _BlogCommentId;
-	
-	private string _CommentTitle;
-	
-	private string _CommentNote;
-	
-	private System.Nullable<System.DateTime> _CreatedDate;
-	
-	private System.Nullable<long> _EmployeeId;
-	
-	private System.Nullable<int> _Status;
-	
-	private System.Nullable<long> _BlogId;
-	
-	private EntityRef<Blog> _Blog;
-	
-	private EntityRef<Employee> _Employee;
-	
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnBlogCommentIdChanging(long value);
-    partial void OnBlogCommentIdChanged();
-    partial void OnCommentTitleChanging(string value);
-    partial void OnCommentTitleChanged();
-    partial void OnCommentNoteChanging(string value);
-    partial void OnCommentNoteChanged();
-    partial void OnCreatedDateChanging(System.Nullable<System.DateTime> value);
-    partial void OnCreatedDateChanged();
-    partial void OnEmployeeIdChanging(System.Nullable<long> value);
-    partial void OnEmployeeIdChanged();
-    partial void OnStatusChanging(System.Nullable<int> value);
-    partial void OnStatusChanged();
-    partial void OnBlogIdChanging(System.Nullable<long> value);
-    partial void OnBlogIdChanged();
-    #endregion
-	
-	public BlogComment()
-	{
-		this._Blog = default(EntityRef<Blog>);
-		this._Employee = default(EntityRef<Employee>);
-		OnCreated();
-	}
-	
-	[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_BlogCommentId", DbType="BigInt NOT NULL", IsPrimaryKey=true)]
-	public long BlogCommentId
-	{
-		get
-		{
-			return this._BlogCommentId;
-		}
-		set
-		{
-			if ((this._BlogCommentId != value))
-			{
-				this.OnBlogCommentIdChanging(value);
-				this.SendPropertyChanging();
-				this._BlogCommentId = value;
-				this.SendPropertyChanged("BlogCommentId");
-				this.OnBlogCommentIdChanged();
-			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CommentTitle", DbType="NVarChar(150)")]
-	public string CommentTitle
-	{
-		get
-		{
-			return this._CommentTitle;
-		}
-		set
-		{
-			if ((this._CommentTitle != value))
-			{
-				this.OnCommentTitleChanging(value);
-				this.SendPropertyChanging();
-				this._CommentTitle = value;
-				this.SendPropertyChanged("CommentTitle");
-				this.OnCommentTitleChanged();
-			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CommentNote", DbType="NVarChar(MAX)")]
-	public string CommentNote
-	{
-		get
-		{
-			return this._CommentNote;
-		}
-		set
-		{
-			if ((this._CommentNote != value))
-			{
-				this.OnCommentNoteChanging(value);
-				this.SendPropertyChanging();
-				this._CommentNote = value;
-				this.SendPropertyChanged("CommentNote");
-				this.OnCommentNoteChanged();
-			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CreatedDate", DbType="DateTime")]
-	public System.Nullable<System.DateTime> CreatedDate
-	{
-		get
-		{
-			return this._CreatedDate;
-		}
-		set
-		{
-			if ((this._CreatedDate != value))
-			{
-				this.OnCreatedDateChanging(value);
-				this.SendPropertyChanging();
-				this._CreatedDate = value;
-				this.SendPropertyChanged("CreatedDate");
-				this.OnCreatedDateChanged();
-			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_EmployeeId", DbType="BigInt")]
-	public System.Nullable<long> EmployeeId
-	{
-		get
-		{
-			return this._EmployeeId;
-		}
-		set
-		{
-			if ((this._EmployeeId != value))
-			{
-				if (this._Employee.HasLoadedOrAssignedValue)
-				{
-					throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-				}
-				this.OnEmployeeIdChanging(value);
-				this.SendPropertyChanging();
-				this._EmployeeId = value;
-				this.SendPropertyChanged("EmployeeId");
-				this.OnEmployeeIdChanged();
-			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Status", DbType="Int")]
-	public System.Nullable<int> Status
-	{
-		get
-		{
-			return this._Status;
-		}
-		set
-		{
-			if ((this._Status != value))
-			{
-				this.OnStatusChanging(value);
-				this.SendPropertyChanging();
-				this._Status = value;
-				this.SendPropertyChanged("Status");
-				this.OnStatusChanged();
-			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_BlogId", DbType="BigInt")]
-	public System.Nullable<long> BlogId
-	{
-		get
-		{
-			return this._BlogId;
-		}
-		set
-		{
-			if ((this._BlogId != value))
-			{
-				if (this._Blog.HasLoadedOrAssignedValue)
-				{
-					throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-				}
-				this.OnBlogIdChanging(value);
-				this.SendPropertyChanging();
-				this._BlogId = value;
-				this.SendPropertyChanged("BlogId");
-				this.OnBlogIdChanged();
-			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Blog_BlogComment", Storage="_Blog", ThisKey="BlogId", OtherKey="BlogId", IsForeignKey=true)]
-	public Blog Blog
-	{
-		get
-		{
-			return this._Blog.Entity;
-		}
-		set
-		{
-			Blog previousValue = this._Blog.Entity;
-			if (((previousValue != value) 
-						|| (this._Blog.HasLoadedOrAssignedValue == false)))
-			{
-				this.SendPropertyChanging();
-				if ((previousValue != null))
-				{
-					this._Blog.Entity = null;
-					previousValue.BlogComments.Remove(this);
-				}
-				this._Blog.Entity = value;
-				if ((value != null))
-				{
-					value.BlogComments.Add(this);
-					this._BlogId = value.BlogId;
-				}
-				else
-				{
-					this._BlogId = default(Nullable<long>);
-				}
-				this.SendPropertyChanged("Blog");
-			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Employee_BlogComment", Storage="_Employee", ThisKey="EmployeeId", OtherKey="EmployeeId", IsForeignKey=true)]
-	public Employee Employee
-	{
-		get
-		{
-			return this._Employee.Entity;
-		}
-		set
-		{
-			Employee previousValue = this._Employee.Entity;
-			if (((previousValue != value) 
-						|| (this._Employee.HasLoadedOrAssignedValue == false)))
-			{
-				this.SendPropertyChanging();
-				if ((previousValue != null))
-				{
-					this._Employee.Entity = null;
-					previousValue.BlogComments.Remove(this);
-				}
-				this._Employee.Entity = value;
-				if ((value != null))
-				{
-					value.BlogComments.Add(this);
-					this._EmployeeId = value.EmployeeId;
-				}
-				else
-				{
-					this._EmployeeId = default(Nullable<long>);
-				}
-				this.SendPropertyChanged("Employee");
-			}
-		}
-	}
-	
-	public event PropertyChangingEventHandler PropertyChanging;
-	
-	public event PropertyChangedEventHandler PropertyChanged;
-	
-	protected virtual void SendPropertyChanging()
-	{
-		if ((this.PropertyChanging != null))
-		{
-			this.PropertyChanging(this, emptyChangingEventArgs);
-		}
-	}
-	
-	protected virtual void SendPropertyChanged(String propertyName)
-	{
-		if ((this.PropertyChanged != null))
-		{
-			this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-		}
-	}
-}
-
 [global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Company")]
 public partial class Company : INotifyPropertyChanging, INotifyPropertyChanged
 {
@@ -2113,8 +1825,6 @@ public partial class Employee : INotifyPropertyChanging, INotifyPropertyChanged
 	
 	private EntitySet<Blog> _Blogs;
 	
-	private EntitySet<BlogComment> _BlogComments;
-	
 	private EntitySet<Department> _Departments;
 	
 	private EntitySet<Project> _Projects;
@@ -2124,6 +1834,8 @@ public partial class Employee : INotifyPropertyChanging, INotifyPropertyChanged
 	private EntitySet<TaskComment> _TaskComments;
 	
 	private EntitySet<WorkingLocation> _WorkingLocations;
+	
+	private EntitySet<BlogComment> _BlogComments;
 	
     #region Extensibility Method Definitions
     partial void OnLoaded();
@@ -2160,12 +1872,12 @@ public partial class Employee : INotifyPropertyChanging, INotifyPropertyChanged
 		this._Attendants = new EntitySet<Attendant>(new Action<Attendant>(this.attach_Attendants), new Action<Attendant>(this.detach_Attendants));
 		this._WorkingPlans = new EntitySet<WorkingPlan>(new Action<WorkingPlan>(this.attach_WorkingPlans), new Action<WorkingPlan>(this.detach_WorkingPlans));
 		this._Blogs = new EntitySet<Blog>(new Action<Blog>(this.attach_Blogs), new Action<Blog>(this.detach_Blogs));
-		this._BlogComments = new EntitySet<BlogComment>(new Action<BlogComment>(this.attach_BlogComments), new Action<BlogComment>(this.detach_BlogComments));
 		this._Departments = new EntitySet<Department>(new Action<Department>(this.attach_Departments), new Action<Department>(this.detach_Departments));
 		this._Projects = new EntitySet<Project>(new Action<Project>(this.attach_Projects), new Action<Project>(this.detach_Projects));
 		this._Tasks = new EntitySet<Task>(new Action<Task>(this.attach_Tasks), new Action<Task>(this.detach_Tasks));
 		this._TaskComments = new EntitySet<TaskComment>(new Action<TaskComment>(this.attach_TaskComments), new Action<TaskComment>(this.detach_TaskComments));
 		this._WorkingLocations = new EntitySet<WorkingLocation>(new Action<WorkingLocation>(this.attach_WorkingLocations), new Action<WorkingLocation>(this.detach_WorkingLocations));
+		this._BlogComments = new EntitySet<BlogComment>(new Action<BlogComment>(this.attach_BlogComments), new Action<BlogComment>(this.detach_BlogComments));
 		OnCreated();
 	}
 	
@@ -2448,19 +2160,6 @@ public partial class Employee : INotifyPropertyChanging, INotifyPropertyChanged
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Employee_BlogComment", Storage="_BlogComments", ThisKey="EmployeeId", OtherKey="EmployeeId")]
-	public EntitySet<BlogComment> BlogComments
-	{
-		get
-		{
-			return this._BlogComments;
-		}
-		set
-		{
-			this._BlogComments.Assign(value);
-		}
-	}
-	
 	[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Employee_Department", Storage="_Departments", ThisKey="EmployeeId", OtherKey="ManagerId")]
 	public EntitySet<Department> Departments
 	{
@@ -2526,6 +2225,19 @@ public partial class Employee : INotifyPropertyChanging, INotifyPropertyChanged
 		}
 	}
 	
+	[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Employee_BlogComment", Storage="_BlogComments", ThisKey="EmployeeId", OtherKey="EmployeeId")]
+	public EntitySet<BlogComment> BlogComments
+	{
+		get
+		{
+			return this._BlogComments;
+		}
+		set
+		{
+			this._BlogComments.Assign(value);
+		}
+	}
+	
 	public event PropertyChangingEventHandler PropertyChanging;
 	
 	public event PropertyChangedEventHandler PropertyChanged;
@@ -2577,18 +2289,6 @@ public partial class Employee : INotifyPropertyChanging, INotifyPropertyChanged
 	}
 	
 	private void detach_Blogs(Blog entity)
-	{
-		this.SendPropertyChanging();
-		entity.Employee = null;
-	}
-	
-	private void attach_BlogComments(BlogComment entity)
-	{
-		this.SendPropertyChanging();
-		entity.Employee = this;
-	}
-	
-	private void detach_BlogComments(BlogComment entity)
 	{
 		this.SendPropertyChanging();
 		entity.Employee = null;
@@ -2649,6 +2349,18 @@ public partial class Employee : INotifyPropertyChanging, INotifyPropertyChanged
 	}
 	
 	private void detach_WorkingLocations(WorkingLocation entity)
+	{
+		this.SendPropertyChanging();
+		entity.Employee = null;
+	}
+	
+	private void attach_BlogComments(BlogComment entity)
+	{
+		this.SendPropertyChanging();
+		entity.Employee = this;
+	}
+	
+	private void detach_BlogComments(BlogComment entity)
 	{
 		this.SendPropertyChanging();
 		entity.Employee = null;
@@ -4093,10 +3805,8 @@ public partial class TaskComment : INotifyPropertyChanging, INotifyPropertyChang
 			}
 		}
 	}
-
-    public int Status { get; internal set; }
-
-    public event PropertyChangingEventHandler PropertyChanging;
+	
+	public event PropertyChangingEventHandler PropertyChanging;
 	
 	public event PropertyChangedEventHandler PropertyChanged;
 	
@@ -4471,6 +4181,294 @@ public partial class WorkingLocation : INotifyPropertyChanging, INotifyPropertyC
 	{
 		this.SendPropertyChanging();
 		entity.WorkingLocation = null;
+	}
+}
+
+[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.BlogComment")]
+public partial class BlogComment : INotifyPropertyChanging, INotifyPropertyChanged
+{
+	
+	private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+	
+	private long _BlogCommentId;
+	
+	private string _CommentTitle;
+	
+	private string _CommentNote;
+	
+	private System.Nullable<System.DateTime> _CreatedDate;
+	
+	private System.Nullable<long> _EmployeeId;
+	
+	private System.Nullable<int> _Status;
+	
+	private System.Nullable<long> _BlogId;
+	
+	private EntityRef<Blog> _Blog;
+	
+	private EntityRef<Employee> _Employee;
+	
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnBlogCommentIdChanging(long value);
+    partial void OnBlogCommentIdChanged();
+    partial void OnCommentTitleChanging(string value);
+    partial void OnCommentTitleChanged();
+    partial void OnCommentNoteChanging(string value);
+    partial void OnCommentNoteChanged();
+    partial void OnCreatedDateChanging(System.Nullable<System.DateTime> value);
+    partial void OnCreatedDateChanged();
+    partial void OnEmployeeIdChanging(System.Nullable<long> value);
+    partial void OnEmployeeIdChanged();
+    partial void OnStatusChanging(System.Nullable<int> value);
+    partial void OnStatusChanged();
+    partial void OnBlogIdChanging(System.Nullable<long> value);
+    partial void OnBlogIdChanged();
+    #endregion
+	
+	public BlogComment()
+	{
+		this._Blog = default(EntityRef<Blog>);
+		this._Employee = default(EntityRef<Employee>);
+		OnCreated();
+	}
+	
+	[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_BlogCommentId", AutoSync=AutoSync.OnInsert, DbType="BigInt NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+	public long BlogCommentId
+	{
+		get
+		{
+			return this._BlogCommentId;
+		}
+		set
+		{
+			if ((this._BlogCommentId != value))
+			{
+				this.OnBlogCommentIdChanging(value);
+				this.SendPropertyChanging();
+				this._BlogCommentId = value;
+				this.SendPropertyChanged("BlogCommentId");
+				this.OnBlogCommentIdChanged();
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CommentTitle", DbType="NVarChar(150)")]
+	public string CommentTitle
+	{
+		get
+		{
+			return this._CommentTitle;
+		}
+		set
+		{
+			if ((this._CommentTitle != value))
+			{
+				this.OnCommentTitleChanging(value);
+				this.SendPropertyChanging();
+				this._CommentTitle = value;
+				this.SendPropertyChanged("CommentTitle");
+				this.OnCommentTitleChanged();
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CommentNote", DbType="NVarChar(MAX)")]
+	public string CommentNote
+	{
+		get
+		{
+			return this._CommentNote;
+		}
+		set
+		{
+			if ((this._CommentNote != value))
+			{
+				this.OnCommentNoteChanging(value);
+				this.SendPropertyChanging();
+				this._CommentNote = value;
+				this.SendPropertyChanged("CommentNote");
+				this.OnCommentNoteChanged();
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CreatedDate", DbType="DateTime")]
+	public System.Nullable<System.DateTime> CreatedDate
+	{
+		get
+		{
+			return this._CreatedDate;
+		}
+		set
+		{
+			if ((this._CreatedDate != value))
+			{
+				this.OnCreatedDateChanging(value);
+				this.SendPropertyChanging();
+				this._CreatedDate = value;
+				this.SendPropertyChanged("CreatedDate");
+				this.OnCreatedDateChanged();
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_EmployeeId", DbType="BigInt")]
+	public System.Nullable<long> EmployeeId
+	{
+		get
+		{
+			return this._EmployeeId;
+		}
+		set
+		{
+			if ((this._EmployeeId != value))
+			{
+				if (this._Employee.HasLoadedOrAssignedValue)
+				{
+					throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+				}
+				this.OnEmployeeIdChanging(value);
+				this.SendPropertyChanging();
+				this._EmployeeId = value;
+				this.SendPropertyChanged("EmployeeId");
+				this.OnEmployeeIdChanged();
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Status", DbType="Int")]
+	public System.Nullable<int> Status
+	{
+		get
+		{
+			return this._Status;
+		}
+		set
+		{
+			if ((this._Status != value))
+			{
+				this.OnStatusChanging(value);
+				this.SendPropertyChanging();
+				this._Status = value;
+				this.SendPropertyChanged("Status");
+				this.OnStatusChanged();
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_BlogId", DbType="BigInt")]
+	public System.Nullable<long> BlogId
+	{
+		get
+		{
+			return this._BlogId;
+		}
+		set
+		{
+			if ((this._BlogId != value))
+			{
+				if (this._Blog.HasLoadedOrAssignedValue)
+				{
+					throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+				}
+				this.OnBlogIdChanging(value);
+				this.SendPropertyChanging();
+				this._BlogId = value;
+				this.SendPropertyChanged("BlogId");
+				this.OnBlogIdChanged();
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Blog_BlogComment", Storage="_Blog", ThisKey="BlogId", OtherKey="BlogId", IsForeignKey=true)]
+	public Blog Blog
+	{
+		get
+		{
+			return this._Blog.Entity;
+		}
+		set
+		{
+			Blog previousValue = this._Blog.Entity;
+			if (((previousValue != value) 
+						|| (this._Blog.HasLoadedOrAssignedValue == false)))
+			{
+				this.SendPropertyChanging();
+				if ((previousValue != null))
+				{
+					this._Blog.Entity = null;
+					previousValue.BlogComments.Remove(this);
+				}
+				this._Blog.Entity = value;
+				if ((value != null))
+				{
+					value.BlogComments.Add(this);
+					this._BlogId = value.BlogId;
+				}
+				else
+				{
+					this._BlogId = default(Nullable<long>);
+				}
+				this.SendPropertyChanged("Blog");
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Employee_BlogComment", Storage="_Employee", ThisKey="EmployeeId", OtherKey="EmployeeId", IsForeignKey=true)]
+	public Employee Employee
+	{
+		get
+		{
+			return this._Employee.Entity;
+		}
+		set
+		{
+			Employee previousValue = this._Employee.Entity;
+			if (((previousValue != value) 
+						|| (this._Employee.HasLoadedOrAssignedValue == false)))
+			{
+				this.SendPropertyChanging();
+				if ((previousValue != null))
+				{
+					this._Employee.Entity = null;
+					previousValue.BlogComments.Remove(this);
+				}
+				this._Employee.Entity = value;
+				if ((value != null))
+				{
+					value.BlogComments.Add(this);
+					this._EmployeeId = value.EmployeeId;
+				}
+				else
+				{
+					this._EmployeeId = default(Nullable<long>);
+				}
+				this.SendPropertyChanged("Employee");
+			}
+		}
+	}
+	
+	public event PropertyChangingEventHandler PropertyChanging;
+	
+	public event PropertyChangedEventHandler PropertyChanged;
+	
+	protected virtual void SendPropertyChanging()
+	{
+		if ((this.PropertyChanging != null))
+		{
+			this.PropertyChanging(this, emptyChangingEventArgs);
+		}
+	}
+	
+	protected virtual void SendPropertyChanged(String propertyName)
+	{
+		if ((this.PropertyChanged != null))
+		{
+			this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+		}
 	}
 }
 #pragma warning restore 1591

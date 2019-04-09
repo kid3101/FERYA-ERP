@@ -44,4 +44,5 @@ public class BlogManager
             return null;
         }
     }
+    
 }
