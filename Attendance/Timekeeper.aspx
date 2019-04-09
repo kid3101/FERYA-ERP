@@ -58,7 +58,7 @@
                 <h1 class="h3 mb-4 text-gray-800">ATTENDANCE</h1>
                 <div>
                      <label>Choose an office for attendance</label>
-                    <select class="officee form-control" id="selectListOffice">
+                    <select class="officee form-control" id="selectListOffice" <%--onchange="showEmployee(this.value)"--%> name ="office">
                         <%for (int j = 0; j < listOffice.Count; j++)
                         { %>
                             <option value="<%=listOffice[j].OfficeId %>"><%=listOffice[j].OfficeName %></option>
@@ -68,13 +68,15 @@
                  <div  style="margin-top:20px;">
                     <%--<input class="form-control" placeholder="Find staff for attendance" style="height: 35px;cursor: pointer;margin-top:20px;" />--%>
                       <label>Choose an employee for attendance</label>
-                     <select class="officee form-control" id="selectListEmployee">
+                   <%--  <select class="officee form-control" id="selectListEmployee">
                         <%for (int i = 0; i< listEmployees.Count; i++)
                         { %>
                             <option value="<%=listEmployees[i].EmployeeId %>"><%=listEmployees[i].LastName %></option>
                         <%} %>            
-                    </select>
-                    
+                    </select>--%>
+                    <select class="officee form-control" id="hienthi">
+                      
+                  </select>
                     <a href="MainOffice2.aspx" class="main"><button class="btn btn-primary but" >Continue</button></a>
                 </div>
             </div>
@@ -83,7 +85,7 @@
             </div>
         </div>
     </div>
-    <script>
+   <%-- <script>
         $(document).ready(function(){
             $('#selectListOffice').on('change',function(){
         
@@ -91,6 +93,42 @@
                 alert("Selected Option Text: "+optionText);
             });
         });
-    </script>
+    </script>--%>
+<%--<script>
+            function showEmployee(id) {
+              var xhttp;    
+              if (id == "") {
+                document.getElementById("txtHint").innerHTML = "";
+                return;
+              }
+              xhttp = new XMLHttpRequest();
+              xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                  document.getElementById("txtHint").innerHTML = this.responseText;
+                }
+              };
+              xhttp.open("GET", "do/Attendance/getlistemployee.aspx"+id, true);
+              xhttp.send();
+            }
+</script>--%>
+    <script>
+$(document).ready(function(){ 
+    $("select[name=office]").change(function(){ 
+        var id = $(this).val();        
+         $.post("../do/Attendance/getlistemployee.aspx", {
+                    id: id,
+                }, function(data) {                   
+                     $("#hienthi").html(data);
+             }
+         )
+    });    
+       $.post("../do/Attendance/getlistemployee.aspx", {
+                    id: $("select[name=office]").val(),
+                }, function(data) {                   
+                     $("#hienthi").html(data);
+             }
+         )
+});
+</script>
 </asp:Content>
 

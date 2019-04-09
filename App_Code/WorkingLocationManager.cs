@@ -58,5 +58,6 @@ public class WorkingLocationManager
     {
 
         return DB.WorkingLocations.Where(t => t.CompanyId == id).ToList().Select(t => t.Employee).ToList();
+
     }
 }
