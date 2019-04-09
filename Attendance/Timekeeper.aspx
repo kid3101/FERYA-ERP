@@ -68,12 +68,6 @@
                  <div  style="margin-top:20px;">
                     <%--<input class="form-control" placeholder="Find staff for attendance" style="height: 35px;cursor: pointer;margin-top:20px;" />--%>
                       <label>Choose an employee for attendance</label>
-                   <%--  <select class="officee form-control" id="selectListEmployee">
-                        <%for (int i = 0; i< listEmployees.Count; i++)
-                        { %>
-                            <option value="<%=listEmployees[i].EmployeeId %>"><%=listEmployees[i].LastName %></option>
-                        <%} %>            
-                    </select>--%>
                     <select class="officee form-control" id="hienthi">
                       
                   </select>
@@ -85,32 +79,6 @@
             </div>
         </div>
     </div>
-   <%-- <script>
-        $(document).ready(function(){
-            $('#selectListOffice').on('change',function(){
-        
-                var optionText = $("#selectListOffice option:selected").val().;
-                alert("Selected Option Text: "+optionText);
-            });
-        });
-    </script>--%>
-<%--<script>
-            function showEmployee(id) {
-              var xhttp;    
-              if (id == "") {
-                document.getElementById("txtHint").innerHTML = "";
-                return;
-              }
-              xhttp = new XMLHttpRequest();
-              xhttp.onreadystatechange = function() {
-                if (this.readyState == 4 && this.status == 200) {
-                  document.getElementById("txtHint").innerHTML = this.responseText;
-                }
-              };
-              xhttp.open("GET", "do/Attendance/getlistemployee.aspx"+id, true);
-              xhttp.send();
-            }
-</script>--%>
     <script>
 $(document).ready(function(){ 
     $("select[name=office]").change(function(){ 
