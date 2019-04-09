@@ -32,8 +32,7 @@
             <div class="formcmt">
                 <div class="cmt" >
                <% for (int i = listcmt.Count -1; i>-1;i--)  { %>
-                        <div class="cmt-content">
-                            
+                        <div class="cmt-content">                         
                             <span class="cmt-item">
                                 <b><%=listcmt[i].Employee.FirstName %></b> : <%=listcmt[i].CommentNote %>
                                 <i class="fas fa-times cmt-close-btn"></i>
@@ -89,16 +88,26 @@
                     console.log(this);
                     curElCmtContent = $(this).parents('.cmt-item');
                     $(curElCmtContent).remove();
+                         //$.ajax({ type: "POST",
+                         //   url: "WebService.asmx/Delete",
+                         //   data: "{item_id:" + parent_id + "}",
+                         //   contentType: "application/json; charset=utf-8",
+                         //   dataType: "json",
+                         //   success: function(response) {
+                         //   $('#msg').html("Record was deleted successfully,,");
+                         //   },
+                         //   error: function(msg) {
+                         //   $('#msg').html("Error while calling web service,,");
+                         //   }
+                         //   });
                 })
-            };
-            
+            };           
             return {
                 init() {
                     _closeCmtContent();                    
                 }
             }
         })();
-
         DetailBlogPage.init();
     </script>
 </asp:Content>
