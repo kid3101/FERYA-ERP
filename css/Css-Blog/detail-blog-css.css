@@ -55,3 +55,37 @@ hr {
             border-radius: 20px;
             margin-top: 30px;
         }
+
+.cmt-content {
+    margin-bottom: 10px;
+}
+
+.cmt-content:last-child{
+    margin-bottom: 0;
+}
+.cmt-content span {
+    position: relative;
+    display: inline-block;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+    .cmt-content span:hover {
+        border-color: #808080;
+        padding: 10px;
+    }
+
+    .cmt-content span:hover .cmt-close-btn {
+        display: block;
+    }
+    .cmt-close-btn {
+        display: none;
+        position: absolute;
+        cursor: pointer;
+        top: -5px;
+        right: -5px;
+    }
+.cmt-close-btn:before {
+    font-size: 20px;
+    color: crimson;
+}

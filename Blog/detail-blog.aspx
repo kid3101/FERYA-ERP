@@ -32,8 +32,15 @@
             <div class="formcmt">
                 <div class="cmt" >
                <% for (int i = listcmt.Count -1; i>-1;i--)  { %>
-                        <span><b><%=listcmt[i].Employee.FirstName %></b></span> : <span><%=listcmt[i].CommentNote %></span><br />
-                  <%} %>
+                        <div class="cmt-content">
+                            
+                            <span class="cmt-item">
+                                <b><%=listcmt[i].Employee.FirstName %></b> : <%=listcmt[i].CommentNote %>
+                                <i class="fas fa-times cmt-close-btn"></i>
+                            </span>                            
+                        </div>                        
+                  <%} %>                    
+                   
                 </div>
             </div>
             <div class="entercmt">
@@ -71,6 +78,28 @@
                     location.href = "/Blog/detail-blog.aspx?id=" + id;
               }
         }
+
+        var DetailBlogPage = (function () {
+            var _closeCmtContent = function () {
+                var elCloseBnt = document.getElementsByClassName('cmt-close-btn');
+                if (!elCloseBnt) { return; }
+                elCloseBnt = $(elCloseBnt);
+                var curElCmtContent;
+                elCloseBnt.on('click', function (elTarget) {                    
+                    console.log(this);
+                    curElCmtContent = $(this).parents('.cmt-item');
+                    $(curElCmtContent).remove();
+                })
+            };
+            
+            return {
+                init() {
+                    _closeCmtContent();                    
+                }
+            }
+        })();
+
+        DetailBlogPage.init();
     </script>
 </asp:Content>
 
