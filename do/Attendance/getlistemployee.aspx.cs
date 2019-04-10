@@ -16,7 +16,7 @@ public partial class do_Attendance_getlistemployee : System.Web.UI.Page
         listemployee = wm.getbyoffice(id);
         foreach(var i in listemployee)
         {
-            Response.Write("<option>" + i.FirstName + "</option>");
+            Response.Write("<option value='"+i.EmployeeId+"' >" + i.FirstName + "</option>");
         }
     }
 }

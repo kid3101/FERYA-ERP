@@ -18,5 +18,6 @@ public partial class Attendance_Timekeeper : System.Web.UI.Page
 
         EmployeeManager em = new EmployeeManager();
         listEmployees = em.GetUser();
+
     }
 }

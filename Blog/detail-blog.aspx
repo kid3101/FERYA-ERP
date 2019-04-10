@@ -20,10 +20,10 @@
                     <%=detail.BlogContent %>
                </div>             
                 <div class="comment" >
-                    <span> <%=listcmt.Count %> Comments </span>
-                    <span> 1 View </span>
-                    <a ><%=detail.Employee.FirstName %></a>
-                    <span><%=detail.CreatedDate %></span>
+                    <span  class="far fa-comments"> <%=listcmt.Count %> Comments </span>
+                    <span class="far fa-eye"> 1 View </span>
+                    <span class="fas fa-user-edit" > <%=detail.Employee.FirstName %></span>
+                    <span class="far fa-clock">  <%=detail.CreatedDate %></span>
                 </div>
             </div>
             <hr/>
