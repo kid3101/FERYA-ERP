@@ -28,7 +28,7 @@ public class BlogCommentManager
     {
         try
         {
-            return DB.BlogComments.Where(n => n.BlogId == id && n.Status != -1).First();
+            return DB.BlogComments.Where(n => n.BlogCommentId==id).First();
         }
         catch (Exception)
         {
@@ -48,7 +48,7 @@ public class BlogCommentManager
     }
     public List<BlogComment> GetListComment(int id)
     {
-        return DB.BlogComments.Where(n => n.BlogId == id).ToList();
+        return DB.BlogComments.Where(n => n.BlogId == id && n.Status != -1).ToList();
     }
 }
         

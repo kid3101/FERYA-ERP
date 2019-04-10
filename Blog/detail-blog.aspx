@@ -35,7 +35,7 @@
                         <div class="cmt-content">                         
                             <span class="cmt-item" >
                                 <b><%=listcmt[i].Employee.FirstName %></b> : <%=listcmt[i].CommentNote %>
-                                <i class="fas fa-times cmt-close-btn"></i>
+                                <i class="fas fa-times cmt-close-btn" onclick="delcmt(<%=listcmt[i].BlogCommentId %>)"></i>
                             </span>                            
                         </div>                        
                   <%} %>                    
@@ -77,38 +77,54 @@
                     location.href = "/Blog/detail-blog.aspx?id=" + id;
               }
         }
-
-        var DetailBlogPage = (function () {
-            var _closeCmtContent = function () {
-                var elCloseBnt = document.getElementsByClassName('cmt-close-btn');
-                if (!elCloseBnt) { return; }
-                elCloseBnt = $(elCloseBnt);
-                var curElCmtContent;
-                elCloseBnt.on('click', function (elTarget) {                    
-                    console.log(this);
-                    curElCmtContent = $(this).parents('.cmt-item');
-                    $(curElCmtContent).remove();
-                         //$.ajax({ type: "POST",
-                         //   url: "WebService.asmx/Delete",
-                         //   data: "{item_id:" + parent_id + "}",
-                         //   contentType: "application/json; charset=utf-8",
-                         //   dataType: "json",
-                         //   success: function(response) {
-                         //   $('#msg').html("Record was deleted successfully,,");
-                         //   },
-                         //   error: function(msg) {
-                         //   $('#msg').html("Error while calling web service,,");
-                         //   }
-                         //   });
-                })
-            };           
-            return {
-                init() {
-                    _closeCmtContent();                    
+        function delcmt(id) {
+            var txt;
+            var r = confirm("Are you sure Delete?");
+            if (r == true) {
+               txt = $.post("/do/Blogcomment/Delete.aspx", {
+                    id: id
+                }, function (data) {
+                    if (data == 1) {
+                        location.reload();
+                    }
+                    else {
+                        alert("Error", data);
+                    }
                 }
+                )
             }
-        })();
-        DetailBlogPage.init();
+        }
+        //var DetailBlogPage = (function () {
+        //    var _closeCmtContent = function () {
+        //        var elCloseBnt = document.getElementsByClassName('cmt-close-btn');
+        //        if (!elCloseBnt) { return; }
+        //        elCloseBnt = $(elCloseBnt);
+        //        var curElCmtContent;
+        //        elCloseBnt.on('click', function (elTarget) {                    
+        //            console.log(this);
+        //            curElCmtContent = $(this).parents('.cmt-item');
+        //            $(curElCmtContent).remove();
+        //                 //$.ajax({ type: "POST",
+        //                 //   url: "WebService.asmx/Delete",
+        //                 //   data: "{item_id:" + parent_id + "}",
+        //                 //   contentType: "application/json; charset=utf-8",
+        //                 //   dataType: "json",
+        //                 //   success: function(response) {
+        //                 //   $('#msg').html("Record was deleted successfully,,");
+        //                 //   },
+        //                 //   error: function(msg) {
+        //                 //   $('#msg').html("Error while calling web service,,");
+        //                 //   }
+        //                 //   });
+        //        })
+        //    };           
+        //    return {
+        //        init() {
+        //            _closeCmtContent();                    
+        //        }
+        //    }
+        //})();
+        //DetailBlogPage.init();
     </script>
 </asp:Content>
 
