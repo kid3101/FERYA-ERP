@@ -20,7 +20,7 @@
                     <%=detail.BlogContent %>
                </div>             
                 <div class="comment" >
-                    <span> 1 Comment </span>
+                    <span> <%=listcmt.Count %> Comments </span>
                     <span> 1 View </span>
                     <a ><%=detail.Employee.FirstName %></a>
                     <span><%=detail.CreatedDate %></span>
