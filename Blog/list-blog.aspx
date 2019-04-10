@@ -54,21 +54,21 @@
              <tbody>
                  <%for (int i = Listblog.Count - 1; i > -1; i--)
                      { %>
-                 <tr>
-                     <td style="width:500px;height:250px;">
+                         <tr>
+                             <td style="width:500px;height:250px;">
 
-                           <a href="#" onclick="detail(<%=Listblog[i].BlogId %>)">  <img src="/imgs/zerodata/ys3.jpg"/ width="300" height="200"></a>
-                     </td>
-                     <td>
-                              <a href="#" onclick="detail(<%=Listblog[i].BlogId %>)" style="text-decoration:none;"><b><%=Listblog[i].BlogTitle%></b></a>
-                                     <br />
-                                        <br />
-                               <span class="fas fa-user-edit" ></span>   <%=Listblog[i].Employee.FirstName %> <br />
-                               <span class="far fa-clock" ></span> <%=Listblog[i].CreatedDate %><br />
-                               <span class="far fa-eye"></span>  6999 Views <br />
-                               <span class="far fa-comments"></span>  555 Comment
-                     </td>                  
-                 </tr>  
+                                   <a href="#" onclick="detail(<%=Listblog[i].BlogId %>)">  <img src="/imgs/zerodata/ys3.jpg"/ width="300" height="200"></a>
+                             </td>
+                             <td>
+                                      <a href="#" onclick="detail(<%=Listblog[i].BlogId %>)" style="text-decoration:none;"><b><%=Listblog[i].BlogTitle%></b></a>
+                                             <br />
+                                                <br />
+                                       <span class="fas fa-user-edit" ></span>   <%=Listblog[i].Employee.FirstName %> <br />
+                                       <span class="far fa-clock" ></span> <%=Listblog[i].CreatedDate %><br />
+                                       <span class="far fa-eye"></span>  6999 Views <br />
+                                       <span class="far fa-comments"></span>  555 Comment
+                             </td>                  
+                         </tr>  
                    <%} %>       
              </tbody>
          </table>
