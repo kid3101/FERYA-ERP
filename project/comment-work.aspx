@@ -16,9 +16,11 @@
             <div class="contentblog">
                 <div><b style="color:red"><%=task.TaskName %></b></div>
                 <br />
-                         
+                 <div>
+                     <%=task.TaskContent %>
+                 </div>
                 <div style="margin-top:20px;">
-                    <a style="margin-right:10px;"><%=listTaskComment.Count %></a>
+                    <a style="margin-right:10px;"><%=listTaskComment.Count %> Comments</a>
                  <%--   <a style="margin-right:10px;"><%=task.Employee.FirstName %></a>--%>
                     <span style="margin-right:10px;"><%=task.CreatedDate %></span>
                 </div>
@@ -68,7 +70,6 @@
                         }
                     }
                 )
-
             }
             catch (e){
                 alert("Error");
