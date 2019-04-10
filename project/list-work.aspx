@@ -74,7 +74,7 @@
 
                                     <a href="/project/change-work.aspx" title="Change Status"><i style="width: 25px" class="fas fa-book-open"></i></a>                                 
                                     <a href="#" onclick="edit(<%=listTask[i].TaskId %>)" title="Edit"><i style="width: 25px" class="fas fa-pen"></i></a>
-                                    <a href=" /project/comment-work.aspx" title="Comment"><i style="width: 25px" class="fas fa-comments"></i></a>
+                                    <a href="#<%-- /project/comment-work.aspx--%> " onclick="cmt(<%=listTask[i].TaskId %>)" title="Comment"><i style="width: 25px" class="fas fa-comments"></i></a>
                                     <button type="button" style="border:none;background-color:floralwhite" onclick="clickdelete(<%=listTask[i].TaskId %>)" title="Delete"><i class="fas fa-trash-alt" style="color:red"></i></button>
 
                                 </td>
@@ -140,7 +140,9 @@
                 ;
                 }
         }
-
+        function cmt(id) {
+            location.href = "/project/comment-work.aspx?id=" + id;
+        }
     </script>
 </asp:Content>
 

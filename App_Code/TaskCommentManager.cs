@@ -50,8 +50,8 @@ public class TaskCommentManager
     //        return null;
     //    }
     //}
-    public List<TaskComment> GetListID(long id)
+    public List<TaskComment> GetListCommentbyTaskId(int id)
     {
-        return DB.TaskComments.Where(u => u.TaskCommentId == id).ToList();
+        return DB.TaskComments.Where(u => u.TaskId == id).ToList();
     }
 }

@@ -11,22 +11,17 @@ public partial class project_comment_work : System.Web.UI.Page
 
     public List<TaskComment> listTaskComment;
 
-    public List<Project> listProject;
-
-    public List<Employee> listEmployee;
+    public Task task;
 
     protected void Page_Load(object sender, EventArgs e)
     {
+        int id = Convert.ToInt32(Request["id"]);
         TastManager tm = new TastManager();
-        listTask = tm.GetTask();
 
         TaskCommentManager tcm = new TaskCommentManager();
-        //listTaskComment = tcm.GetTaskComment();
+        listTaskComment = tcm.GetListCommentbyTaskId(id);
+   
+        task = tm.GetById(id);
 
-        ProjectManager pm = new ProjectManager();
-        listProject = pm.GetList();
-
-        EmployeeManager em = new EmployeeManager();
-        listEmployee = em.GetUser();
     }
 }
