@@ -43,6 +43,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <link href="../css/Attendance/TimeOut.css" rel="stylesheet" />
+    <script src="../dist/webcam.js"></script>
+    
+    <style type="text/css">
+		body { font-family: Helvetica, sans-serif; }
+		h2, h3 { margin-top:0; }
+		form { margin-top: 15px; }
+		form > input { margin-right: 15px; }
+		#results { float:right; margin:20px; padding:20px; border:1px solid; background:#ccc; }
+	</style>
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <div class="container-fluid">
@@ -54,6 +64,11 @@
             <div class="col-sm-8">
 
                 <h1 style="padding-top:40px;text-align:center;text-transform:uppercase;">Main office</h1>
+                <div id="my_camera" >
+
+                <video autoplay="autoplay" style="width: 320px;height: 240px;"></video>
+                        <script src="../dist/webcam.js"></script>
+                </div>
                 <a href="Timekeeper.aspx"><i class="fa fa-chevron-left" style="font-size:20px;float: left;margin-top: -33px;color:#767676"></i></a>
                 <div>
 
@@ -71,7 +86,7 @@
                             <span style="font-size: 26px;">Time out</span>
                         </div>
                     </div>
-                    <div class="form-control" style="display:flex;margin-top: 15px;height: 300px;background-color:#eee" ">
+                    <div class="form-control" style="display:flex;margin-top: 15px;height: 100%;background-color:#eee" ">
                         <div class="col-sm-8 sidenav" style="color:black;">
                             <div>
                                 <label style="float: left;">The shift worked</label>
@@ -87,12 +102,15 @@
                             <div>
                                 <label style="float: left;margin-top: 8px;margin-bottom: 18px;">Webcam / camera snapshot</label>
                                 <br />
+                                <div>
+                                    <div id="results">Your captured image will appear here...</div>
+                                </div>
                                 <a class="maychamcong" style="color:white;">ATTENDANCE</a>
                             </div>
                         </div>
                         <div class="col-sm-4 " style="margin-top: 192px;">
                             <div>
-                                <a href="#" class="chuphinh" style="text-decoration:none;">Take a picture</a>
+                                <a href="#" class="chuphinh" style="text-decoration:none;" onClick="take_snapshot()">Take a picture</a>
                             </div>
                         </div>
                     </div>
@@ -103,5 +121,25 @@
             </div>
         </div>
     </div>
+    <script>
+		        Webcam.set({
+			        width: 320,
+			        height: 240,
+			        image_format: 'jpeg',
+			        jpeg_quality: 90
+		        });
+		        Webcam.attach( '#my_camera' );
+	        </script>
+    <script>
+		function take_snapshot() {
+			// take snapshot and get image data
+			Webcam.snap( function(data_uri) {
+				// display results in page
+				document.getElementById('results').innerHTML = 
+					'<h2>Here is your image:</h2>' + 
+					'<img src="'+data_uri+'"/>';
+			} );
+		}
+	</script>
 </asp:Content>
 
