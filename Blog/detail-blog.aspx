@@ -33,7 +33,7 @@
                 <div class="cmt" >
                <% for (int i = listcmt.Count -1; i>-1;i--)  { %>
                         <div class="cmt-content">                         
-                            <span class="cmt-item">
+                            <span class="cmt-item" >
                                 <b><%=listcmt[i].Employee.FirstName %></b> : <%=listcmt[i].CommentNote %>
                                 <i class="fas fa-times cmt-close-btn"></i>
                             </span>                            
