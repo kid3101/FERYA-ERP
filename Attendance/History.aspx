@@ -150,7 +150,7 @@
                 <a class="nutchamcong att" data-toggle="tooltip" href="TimeKeeping.aspx" title="Atendancing" ><i class="fa fa-plus-circle"></i> ATTENDANCING</a>
             </div>
             <div class="container tong2">
-                <a href="#" class="aaa"><i class="fa fa-chevron-left"></i></a>
+                <%--<a href="#" class="aaa"><i class="fa fa-chevron-left"></i></a>
                 <div class="kk2">
                     <a href="#" class="au">
                         <span>Page</span>
@@ -159,7 +159,7 @@
                         <span>0</span>
                     </a>
                 </div>
-                <a href="#" class="mau2"><i class="fa fa-chevron-right"></i></a>
+                <a href="#" class="mau2"><i class="fa fa-chevron-right"></i></a>--%>
             </div>
         </div>
         <br>
@@ -169,7 +169,7 @@
             <table class="table table-bordered tablee" >
                 <thead>
                     <tr>
-                        <th class="mg">Sid</th>
+                        <%--<th class="mg">Sid</th>
                         <th rowspan="2">Date</th>
                         <th>Headquaters</th>
                         <th>Shift</th>
@@ -180,11 +180,17 @@
                         <th>On Late (CP)</th>
                         <th>Early Out (CP)</th>
                         <th>Status</th>
-                        <th>Confirmer</th>
+                        <th>Confirmer</th>--%>
+                        <th>Department</th>
+                        <th>Employee</th>
+                        <th>Checkin Time</th>
+                        <th>Checkout Time</th>
+                        <th>Working date</th>
+
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    <%--<tr>
                         <td>1</td>
                         <td>01/01/2019</td>
                         <td>Hoa Sứ</td>
@@ -223,7 +229,17 @@
                         <td class="g"><i class="fa fa-square" ></i></td>
                         <td>Working</td>
                         <td>Dan</td>
+                    </tr>--%>
+                    <tr>
+                    <%for (int i = 0; i < listAttendant.Count; i++)
+                    { %>
+                        <td><%=listAttendant[i].WorkingLocation.Department.DeparmentName %></td>
+                        <td><%=listAttendant[i].Employee.LastName %></td>
+                        <td><%=listAttendant[i].CheckinTime %></td>
+                        <td><%=listAttendant[i].CheckoutTime %></td>
+                        <td><%=listAttendant[i].WorkingDate %></td>
                     </tr>
+                    <%} %>   
                 </tbody>
             </table>
 

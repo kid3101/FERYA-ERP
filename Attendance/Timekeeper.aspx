@@ -71,7 +71,10 @@
                     <select class="officee form-control" id="hienthi">
                       
                   </select>
-                    <a href="MainOffice2.aspx" class="main"><button class="btn btn-primary but" >Continue</button></a>
+                     <%for (int i = 0; i < listOffice.Count; i++)
+                        { %>
+                    <a href="#" onclick="continuee(<%=listOffice[i].OfficeId %>)" class="main"><button class="btn btn-primary but" >Continue</button></a>
+                     <%} %>   
                 </div>
             </div>
             <div class="col-sm-2 sidenav">
@@ -96,7 +99,11 @@ $(document).ready(function(){
                      $("#hienthi").html(data);
              }
          )
-});
+        });
+
+        function continuee(id) {
+            location.href = "/Attendance/MainOffice2.aspx?id=" + id;
+        }
 </script>
 </asp:Content>
 
