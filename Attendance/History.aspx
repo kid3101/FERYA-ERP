@@ -180,13 +180,13 @@
                         <th>On Late (CP)</th>
                         <th>Early Out (CP)</th>
                         <th>Status</th>
-                        <th>Confirmer</th>--%>
-                        <th>Department</th>
+                        <th>Confirmer</th>--%>                       
                         <th>Employee</th>
-                        <th>Checkin Time</th>
-                        <th>Checkout Time</th>
-                        <th>Working date</th>
-
+                        <th>Department</th>
+                        <th>Photo Time</th>
+                        <th>Photo</th>
+                        <th>WorkingDate</th>
+                        <th>PhotoType</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -231,15 +231,17 @@
                         <td>Dan</td>
                     </tr>--%>
                     <tr>
-                    <%--<%for (int i = 0; i < listAttendant.Count; i++)
+                    <%for (int i = 0; i < list.Count; i++)
                     { %>
-                        <td><%=listAttendant[i].WorkingLocation.Department.DeparmentName %></td>
-                        <td><%=listAttendant[i].Employee.LastName %></td>
-                        <td><%=listAttendant[i].CheckinTime %></td>
-                        <td><%=listAttendant[i].CheckoutTime %></td>
-                        <td><%=listAttendant[i].WorkingDate %></td>
+                        
+                        <td><%=list[i].at.LastName%></td>
+                        <td><%=list[i].wk.Department.DeparmentName %></td>
+                        <td><%=list[i].PhoToTimeTest %></td>
+                        <td><%=list[i].PhotoURL %></td>
+                        <td><%=list[i].WorkingDate %></td>
+                        <td><%=list[i].PhotoType %></td>
                     </tr>
-                    <%} %>  --%> 
+                    <%} %>   
                 </tbody>
             </table>
 
