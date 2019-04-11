@@ -185,7 +185,7 @@
                         <td><%=list[i].wk.Department.DeparmentName %></td>
                         <td><%=list[i].PhoToTimeTest %></td>
                         <td><%=list[i].PhotoURL %></td>
-                        <td><%=list[i].WorkingDate %></td>
+                        <td><%=list[i].WorkingDate%></td>
                         <td><%=list[i].PhotoType %></td>
                     </tr>
                     <%} %>   
