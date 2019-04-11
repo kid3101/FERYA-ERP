@@ -168,19 +168,7 @@
         <div>
             <table class="table table-bordered tablee" >
                 <thead>
-                    <tr>
-                        <%--<th class="mg">Sid</th>
-                        <th rowspan="2">Date</th>
-                        <th>Headquaters</th>
-                        <th>Shift</th>
-                        <th>Time</th>
-                        <th>TIME</th>
-                        <th>Coefficient</th>
-                        <th>Ot</th>
-                        <th>On Late (CP)</th>
-                        <th>Early Out (CP)</th>
-                        <th>Status</th>
-                        <th>Confirmer</th>--%>                       
+                    <tr>                  
                         <th>Employee</th>
                         <th>Department</th>
                         <th>Photo Time</th>
@@ -190,50 +178,9 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <%--<tr>
-                        <td>1</td>
-                        <td>01/01/2019</td>
-                        <td>Hoa Sứ</td>
-                        <td>
-                            <a href="Shift.aspx" class="shift"></a>
-                            <span class="kk1">
-                                <span>09:00</span>
-                                <span>17:00</span>
-                            </span>
-                        </td>
-                        <td>10:00-17:00</td>
-                        <td>-</td>
-                        <td>0</td>
-                        <td class="g"><i class="fa fa-square" title="Arrive later than specified"></i></td>
-                        <td class="g"><i class="fa fa-square" title=" Out early "></i></td>
-                        <td class="g"><i class="fa fa-square" ></i></td>
-                        <td>Doing</td>
-                        <td>Jonh</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>30/01/2019</td>
-                        <td>Hoa Hồng</td>
-                        <td>
-                            <a href="Shift.aspx" class="shift"></a>
-                            <span class="kk1">
-                                <span>08:00</span>
-                                <span>18:00</span>
-                            </span>
-                        </td>
-                        <td>08:00-17:00</td>
-                        <td>-</td>
-                        <td>0</td>
-                        <td class="g"><i class="fa fa-square" title="Arrive later than specified"></i></td>
-                        <td class="g"><i class="fa fa-square" title=" Out early "></i></td>
-                        <td class="g"><i class="fa fa-square" ></i></td>
-                        <td>Working</td>
-                        <td>Dan</td>
-                    </tr>--%>
                     <tr>
                     <%for (int i = 0; i < list.Count; i++)
-                    { %>
-                        
+                    { %>                       
                         <td><%=list[i].at.LastName%></td>
                         <td><%=list[i].wk.Department.DeparmentName %></td>
                         <td><%=list[i].PhoToTimeTest %></td>
