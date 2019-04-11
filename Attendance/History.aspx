@@ -231,7 +231,7 @@
                         <td>Dan</td>
                     </tr>--%>
                     <tr>
-                    <%for (int i = 0; i < listAttendant.Count; i++)
+                    <%--<%for (int i = 0; i < listAttendant.Count; i++)
                     { %>
                         <td><%=listAttendant[i].WorkingLocation.Department.DeparmentName %></td>
                         <td><%=listAttendant[i].Employee.LastName %></td>
@@ -239,7 +239,7 @@
                         <td><%=listAttendant[i].CheckoutTime %></td>
                         <td><%=listAttendant[i].WorkingDate %></td>
                     </tr>
-                    <%} %>   
+                    <%} %>  --%> 
                 </tbody>
             </table>
 
