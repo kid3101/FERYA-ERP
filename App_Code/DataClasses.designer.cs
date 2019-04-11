@@ -29,9 +29,6 @@ public partial class DataClassesDataContext : System.Data.Linq.DataContext
 	
   #region Extensibility Method Definitions
   partial void OnCreated();
-  partial void InsertAttendant(Attendant instance);
-  partial void UpdateAttendant(Attendant instance);
-  partial void DeleteAttendant(Attendant instance);
   partial void InsertWorkingPlan(WorkingPlan instance);
   partial void UpdateWorkingPlan(WorkingPlan instance);
   partial void DeleteWorkingPlan(WorkingPlan instance);
@@ -65,6 +62,9 @@ public partial class DataClassesDataContext : System.Data.Linq.DataContext
   partial void InsertBlogComment(BlogComment instance);
   partial void UpdateBlogComment(BlogComment instance);
   partial void DeleteBlogComment(BlogComment instance);
+  partial void InsertAttendant(Attendant instance);
+  partial void UpdateAttendant(Attendant instance);
+  partial void DeleteAttendant(Attendant instance);
   #endregion
 	
 	public DataClassesDataContext() : 
@@ -95,14 +95,6 @@ public partial class DataClassesDataContext : System.Data.Linq.DataContext
 			base(connection, mappingSource)
 	{
 		OnCreated();
-	}
-	
-	public System.Data.Linq.Table<Attendant> Attendants
-	{
-		get
-		{
-			return this.GetTable<Attendant>();
-		}
 	}
 	
 	public System.Data.Linq.Table<WorkingPlan> WorkingPlans
@@ -192,316 +184,12 @@ public partial class DataClassesDataContext : System.Data.Linq.DataContext
 			return this.GetTable<BlogComment>();
 		}
 	}
-}
-
-[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Attendant")]
-public partial class Attendant : INotifyPropertyChanging, INotifyPropertyChanged
-{
 	
-	private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-	
-	private long _AttendantId;
-	
-	private System.Nullable<long> _EmployeeId;
-	
-	private System.Nullable<long> _WorkingLocationId;
-	
-	private System.Nullable<System.DateTime> _CheckinTime;
-	
-	private System.Nullable<System.DateTime> _CheckoutTime;
-	
-	private string _PhotoURL;
-	
-	private System.Nullable<int> _Status;
-	
-	private System.Nullable<int> _WorkingDate;
-	
-	private EntityRef<Employee> _Employee;
-	
-	private EntityRef<WorkingLocation> _WorkingLocation;
-	
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnAttendantIdChanging(long value);
-    partial void OnAttendantIdChanged();
-    partial void OnEmployeeIdChanging(System.Nullable<long> value);
-    partial void OnEmployeeIdChanged();
-    partial void OnWorkingLocationIdChanging(System.Nullable<long> value);
-    partial void OnWorkingLocationIdChanged();
-    partial void OnCheckinTimeChanging(System.Nullable<System.DateTime> value);
-    partial void OnCheckinTimeChanged();
-    partial void OnCheckoutTimeChanging(System.Nullable<System.DateTime> value);
-    partial void OnCheckoutTimeChanged();
-    partial void OnPhotoURLChanging(string value);
-    partial void OnPhotoURLChanged();
-    partial void OnStatusChanging(System.Nullable<int> value);
-    partial void OnStatusChanged();
-    partial void OnWorkingDateChanging(System.Nullable<int> value);
-    partial void OnWorkingDateChanged();
-    #endregion
-	
-	public Attendant()
-	{
-		this._Employee = default(EntityRef<Employee>);
-		this._WorkingLocation = default(EntityRef<WorkingLocation>);
-		OnCreated();
-	}
-	
-	[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_AttendantId", DbType="BigInt NOT NULL", IsPrimaryKey=true)]
-	public long AttendantId
+	public System.Data.Linq.Table<Attendant> Attendants
 	{
 		get
 		{
-			return this._AttendantId;
-		}
-		set
-		{
-			if ((this._AttendantId != value))
-			{
-				this.OnAttendantIdChanging(value);
-				this.SendPropertyChanging();
-				this._AttendantId = value;
-				this.SendPropertyChanged("AttendantId");
-				this.OnAttendantIdChanged();
-			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_EmployeeId", DbType="BigInt")]
-	public System.Nullable<long> EmployeeId
-	{
-		get
-		{
-			return this._EmployeeId;
-		}
-		set
-		{
-			if ((this._EmployeeId != value))
-			{
-				if (this._Employee.HasLoadedOrAssignedValue)
-				{
-					throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-				}
-				this.OnEmployeeIdChanging(value);
-				this.SendPropertyChanging();
-				this._EmployeeId = value;
-				this.SendPropertyChanged("EmployeeId");
-				this.OnEmployeeIdChanged();
-			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_WorkingLocationId", DbType="BigInt")]
-	public System.Nullable<long> WorkingLocationId
-	{
-		get
-		{
-			return this._WorkingLocationId;
-		}
-		set
-		{
-			if ((this._WorkingLocationId != value))
-			{
-				if (this._WorkingLocation.HasLoadedOrAssignedValue)
-				{
-					throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-				}
-				this.OnWorkingLocationIdChanging(value);
-				this.SendPropertyChanging();
-				this._WorkingLocationId = value;
-				this.SendPropertyChanged("WorkingLocationId");
-				this.OnWorkingLocationIdChanged();
-			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CheckinTime", DbType="DateTime")]
-	public System.Nullable<System.DateTime> CheckinTime
-	{
-		get
-		{
-			return this._CheckinTime;
-		}
-		set
-		{
-			if ((this._CheckinTime != value))
-			{
-				this.OnCheckinTimeChanging(value);
-				this.SendPropertyChanging();
-				this._CheckinTime = value;
-				this.SendPropertyChanged("CheckinTime");
-				this.OnCheckinTimeChanged();
-			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CheckoutTime", DbType="DateTime")]
-	public System.Nullable<System.DateTime> CheckoutTime
-	{
-		get
-		{
-			return this._CheckoutTime;
-		}
-		set
-		{
-			if ((this._CheckoutTime != value))
-			{
-				this.OnCheckoutTimeChanging(value);
-				this.SendPropertyChanging();
-				this._CheckoutTime = value;
-				this.SendPropertyChanged("CheckoutTime");
-				this.OnCheckoutTimeChanged();
-			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PhotoURL", DbType="NVarChar(300)")]
-	public string PhotoURL
-	{
-		get
-		{
-			return this._PhotoURL;
-		}
-		set
-		{
-			if ((this._PhotoURL != value))
-			{
-				this.OnPhotoURLChanging(value);
-				this.SendPropertyChanging();
-				this._PhotoURL = value;
-				this.SendPropertyChanged("PhotoURL");
-				this.OnPhotoURLChanged();
-			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Status", DbType="Int")]
-	public System.Nullable<int> Status
-	{
-		get
-		{
-			return this._Status;
-		}
-		set
-		{
-			if ((this._Status != value))
-			{
-				this.OnStatusChanging(value);
-				this.SendPropertyChanging();
-				this._Status = value;
-				this.SendPropertyChanged("Status");
-				this.OnStatusChanged();
-			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_WorkingDate", DbType="Int")]
-	public System.Nullable<int> WorkingDate
-	{
-		get
-		{
-			return this._WorkingDate;
-		}
-		set
-		{
-			if ((this._WorkingDate != value))
-			{
-				this.OnWorkingDateChanging(value);
-				this.SendPropertyChanging();
-				this._WorkingDate = value;
-				this.SendPropertyChanged("WorkingDate");
-				this.OnWorkingDateChanged();
-			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Employee_Attendant", Storage="_Employee", ThisKey="EmployeeId", OtherKey="EmployeeId", IsForeignKey=true)]
-	public Employee Employee
-	{
-		get
-		{
-			return this._Employee.Entity;
-		}
-		set
-		{
-			Employee previousValue = this._Employee.Entity;
-			if (((previousValue != value) 
-						|| (this._Employee.HasLoadedOrAssignedValue == false)))
-			{
-				this.SendPropertyChanging();
-				if ((previousValue != null))
-				{
-					this._Employee.Entity = null;
-					previousValue.Attendants.Remove(this);
-				}
-				this._Employee.Entity = value;
-				if ((value != null))
-				{
-					value.Attendants.Add(this);
-					this._EmployeeId = value.EmployeeId;
-				}
-				else
-				{
-					this._EmployeeId = default(Nullable<long>);
-				}
-				this.SendPropertyChanged("Employee");
-			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.AssociationAttribute(Name="WorkingLocation_Attendant", Storage="_WorkingLocation", ThisKey="WorkingLocationId", OtherKey="WorkingLocationId", IsForeignKey=true)]
-	public WorkingLocation WorkingLocation
-	{
-		get
-		{
-			return this._WorkingLocation.Entity;
-		}
-		set
-		{
-			WorkingLocation previousValue = this._WorkingLocation.Entity;
-			if (((previousValue != value) 
-						|| (this._WorkingLocation.HasLoadedOrAssignedValue == false)))
-			{
-				this.SendPropertyChanging();
-				if ((previousValue != null))
-				{
-					this._WorkingLocation.Entity = null;
-					previousValue.Attendants.Remove(this);
-				}
-				this._WorkingLocation.Entity = value;
-				if ((value != null))
-				{
-					value.Attendants.Add(this);
-					this._WorkingLocationId = value.WorkingLocationId;
-				}
-				else
-				{
-					this._WorkingLocationId = default(Nullable<long>);
-				}
-				this.SendPropertyChanged("WorkingLocation");
-			}
-		}
-	}
-	
-	public event PropertyChangingEventHandler PropertyChanging;
-	
-	public event PropertyChangedEventHandler PropertyChanged;
-	
-	protected virtual void SendPropertyChanging()
-	{
-		if ((this.PropertyChanging != null))
-		{
-			this.PropertyChanging(this, emptyChangingEventArgs);
-		}
-	}
-	
-	protected virtual void SendPropertyChanged(String propertyName)
-	{
-		if ((this.PropertyChanged != null))
-		{
-			this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			return this.GetTable<Attendant>();
 		}
 	}
 }
@@ -1819,8 +1507,6 @@ public partial class Employee : INotifyPropertyChanging, INotifyPropertyChanged
 	
 	private System.Nullable<decimal> _KPISalary;
 	
-	private EntitySet<Attendant> _Attendants;
-	
 	private EntitySet<WorkingPlan> _WorkingPlans;
 	
 	private EntitySet<Blog> _Blogs;
@@ -1836,6 +1522,8 @@ public partial class Employee : INotifyPropertyChanging, INotifyPropertyChanged
 	private EntitySet<WorkingLocation> _WorkingLocations;
 	
 	private EntitySet<BlogComment> _BlogComments;
+	
+	private EntitySet<Attendant> _Attendants;
 	
     #region Extensibility Method Definitions
     partial void OnLoaded();
@@ -1869,7 +1557,6 @@ public partial class Employee : INotifyPropertyChanging, INotifyPropertyChanged
 	
 	public Employee()
 	{
-		this._Attendants = new EntitySet<Attendant>(new Action<Attendant>(this.attach_Attendants), new Action<Attendant>(this.detach_Attendants));
 		this._WorkingPlans = new EntitySet<WorkingPlan>(new Action<WorkingPlan>(this.attach_WorkingPlans), new Action<WorkingPlan>(this.detach_WorkingPlans));
 		this._Blogs = new EntitySet<Blog>(new Action<Blog>(this.attach_Blogs), new Action<Blog>(this.detach_Blogs));
 		this._Departments = new EntitySet<Department>(new Action<Department>(this.attach_Departments), new Action<Department>(this.detach_Departments));
@@ -1878,6 +1565,7 @@ public partial class Employee : INotifyPropertyChanging, INotifyPropertyChanged
 		this._TaskComments = new EntitySet<TaskComment>(new Action<TaskComment>(this.attach_TaskComments), new Action<TaskComment>(this.detach_TaskComments));
 		this._WorkingLocations = new EntitySet<WorkingLocation>(new Action<WorkingLocation>(this.attach_WorkingLocations), new Action<WorkingLocation>(this.detach_WorkingLocations));
 		this._BlogComments = new EntitySet<BlogComment>(new Action<BlogComment>(this.attach_BlogComments), new Action<BlogComment>(this.detach_BlogComments));
+		this._Attendants = new EntitySet<Attendant>(new Action<Attendant>(this.attach_Attendants), new Action<Attendant>(this.detach_Attendants));
 		OnCreated();
 	}
 	
@@ -2121,19 +1809,6 @@ public partial class Employee : INotifyPropertyChanging, INotifyPropertyChanged
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Employee_Attendant", Storage="_Attendants", ThisKey="EmployeeId", OtherKey="EmployeeId")]
-	public EntitySet<Attendant> Attendants
-	{
-		get
-		{
-			return this._Attendants;
-		}
-		set
-		{
-			this._Attendants.Assign(value);
-		}
-	}
-	
 	[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Employee_WorkingPlan", Storage="_WorkingPlans", ThisKey="EmployeeId", OtherKey="EmployeeId")]
 	public EntitySet<WorkingPlan> WorkingPlans
 	{
@@ -2238,6 +1913,19 @@ public partial class Employee : INotifyPropertyChanging, INotifyPropertyChanged
 		}
 	}
 	
+	[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Employee_Attendant", Storage="_Attendants", ThisKey="EmployeeId", OtherKey="EmployeeId")]
+	public EntitySet<Attendant> Attendants
+	{
+		get
+		{
+			return this._Attendants;
+		}
+		set
+		{
+			this._Attendants.Assign(value);
+		}
+	}
+	
 	public event PropertyChangingEventHandler PropertyChanging;
 	
 	public event PropertyChangedEventHandler PropertyChanged;
@@ -2256,18 +1944,6 @@ public partial class Employee : INotifyPropertyChanging, INotifyPropertyChanged
 		{
 			this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 		}
-	}
-	
-	private void attach_Attendants(Attendant entity)
-	{
-		this.SendPropertyChanging();
-		entity.Employee = this;
-	}
-	
-	private void detach_Attendants(Attendant entity)
-	{
-		this.SendPropertyChanging();
-		entity.Employee = null;
 	}
 	
 	private void attach_WorkingPlans(WorkingPlan entity)
@@ -2361,6 +2037,18 @@ public partial class Employee : INotifyPropertyChanging, INotifyPropertyChanged
 	}
 	
 	private void detach_BlogComments(BlogComment entity)
+	{
+		this.SendPropertyChanging();
+		entity.Employee = null;
+	}
+	
+	private void attach_Attendants(Attendant entity)
+	{
+		this.SendPropertyChanging();
+		entity.Employee = this;
+	}
+	
+	private void detach_Attendants(Attendant entity)
 	{
 		this.SendPropertyChanging();
 		entity.Employee = null;
@@ -4447,6 +4135,318 @@ public partial class BlogComment : INotifyPropertyChanging, INotifyPropertyChang
 					this._EmployeeId = default(Nullable<long>);
 				}
 				this.SendPropertyChanged("Employee");
+			}
+		}
+	}
+	
+	public event PropertyChangingEventHandler PropertyChanging;
+	
+	public event PropertyChangedEventHandler PropertyChanged;
+	
+	protected virtual void SendPropertyChanging()
+	{
+		if ((this.PropertyChanging != null))
+		{
+			this.PropertyChanging(this, emptyChangingEventArgs);
+		}
+	}
+	
+	protected virtual void SendPropertyChanged(String propertyName)
+	{
+		if ((this.PropertyChanged != null))
+		{
+			this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+		}
+	}
+}
+
+[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Attendant")]
+public partial class Attendant : INotifyPropertyChanging, INotifyPropertyChanged
+{
+	
+	private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+	
+	private long _AttendantId;
+	
+	private System.Nullable<long> _EmployeeId;
+	
+	private System.Nullable<long> _WorkingLocationId;
+	
+	private System.Nullable<System.DateTime> _PhotoTime;
+	
+	private string _PhotoURL;
+	
+	private System.Nullable<int> _Status;
+	
+	private System.Nullable<int> _WorkingDate;
+	
+	private System.Nullable<int> _PhotoType;
+	
+	private EntityRef<Employee> _Employee;
+	
+	private EntityRef<WorkingLocation> _WorkingLocation;
+	
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnAttendantIdChanging(long value);
+    partial void OnAttendantIdChanged();
+    partial void OnEmployeeIdChanging(System.Nullable<long> value);
+    partial void OnEmployeeIdChanged();
+    partial void OnWorkingLocationIdChanging(System.Nullable<long> value);
+    partial void OnWorkingLocationIdChanged();
+    partial void OnPhotoTimeChanging(System.Nullable<System.DateTime> value);
+    partial void OnPhotoTimeChanged();
+    partial void OnPhotoURLChanging(string value);
+    partial void OnPhotoURLChanged();
+    partial void OnStatusChanging(System.Nullable<int> value);
+    partial void OnStatusChanged();
+    partial void OnWorkingDateChanging(System.Nullable<int> value);
+    partial void OnWorkingDateChanged();
+    partial void OnPhotoTypeChanging(System.Nullable<int> value);
+    partial void OnPhotoTypeChanged();
+    #endregion
+	
+	public Attendant()
+	{
+		this._Employee = default(EntityRef<Employee>);
+		this._WorkingLocation = default(EntityRef<WorkingLocation>);
+		OnCreated();
+	}
+	
+	[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_AttendantId", AutoSync=AutoSync.OnInsert, DbType="BigInt NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+	public long AttendantId
+	{
+		get
+		{
+			return this._AttendantId;
+		}
+		set
+		{
+			if ((this._AttendantId != value))
+			{
+				this.OnAttendantIdChanging(value);
+				this.SendPropertyChanging();
+				this._AttendantId = value;
+				this.SendPropertyChanged("AttendantId");
+				this.OnAttendantIdChanged();
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_EmployeeId", DbType="BigInt")]
+	public System.Nullable<long> EmployeeId
+	{
+		get
+		{
+			return this._EmployeeId;
+		}
+		set
+		{
+			if ((this._EmployeeId != value))
+			{
+				if (this._Employee.HasLoadedOrAssignedValue)
+				{
+					throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+				}
+				this.OnEmployeeIdChanging(value);
+				this.SendPropertyChanging();
+				this._EmployeeId = value;
+				this.SendPropertyChanged("EmployeeId");
+				this.OnEmployeeIdChanged();
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_WorkingLocationId", DbType="BigInt")]
+	public System.Nullable<long> WorkingLocationId
+	{
+		get
+		{
+			return this._WorkingLocationId;
+		}
+		set
+		{
+			if ((this._WorkingLocationId != value))
+			{
+				if (this._WorkingLocation.HasLoadedOrAssignedValue)
+				{
+					throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+				}
+				this.OnWorkingLocationIdChanging(value);
+				this.SendPropertyChanging();
+				this._WorkingLocationId = value;
+				this.SendPropertyChanged("WorkingLocationId");
+				this.OnWorkingLocationIdChanged();
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PhotoTime", DbType="DateTime")]
+	public System.Nullable<System.DateTime> PhotoTime
+	{
+		get
+		{
+			return this._PhotoTime;
+		}
+		set
+		{
+			if ((this._PhotoTime != value))
+			{
+				this.OnPhotoTimeChanging(value);
+				this.SendPropertyChanging();
+				this._PhotoTime = value;
+				this.SendPropertyChanged("PhotoTime");
+				this.OnPhotoTimeChanged();
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PhotoURL", DbType="NVarChar(300)")]
+	public string PhotoURL
+	{
+		get
+		{
+			return this._PhotoURL;
+		}
+		set
+		{
+			if ((this._PhotoURL != value))
+			{
+				this.OnPhotoURLChanging(value);
+				this.SendPropertyChanging();
+				this._PhotoURL = value;
+				this.SendPropertyChanged("PhotoURL");
+				this.OnPhotoURLChanged();
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Status", DbType="Int")]
+	public System.Nullable<int> Status
+	{
+		get
+		{
+			return this._Status;
+		}
+		set
+		{
+			if ((this._Status != value))
+			{
+				this.OnStatusChanging(value);
+				this.SendPropertyChanging();
+				this._Status = value;
+				this.SendPropertyChanged("Status");
+				this.OnStatusChanged();
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_WorkingDate", DbType="Int")]
+	public System.Nullable<int> WorkingDate
+	{
+		get
+		{
+			return this._WorkingDate;
+		}
+		set
+		{
+			if ((this._WorkingDate != value))
+			{
+				this.OnWorkingDateChanging(value);
+				this.SendPropertyChanging();
+				this._WorkingDate = value;
+				this.SendPropertyChanged("WorkingDate");
+				this.OnWorkingDateChanged();
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PhotoType", DbType="Int")]
+	public System.Nullable<int> PhotoType
+	{
+		get
+		{
+			return this._PhotoType;
+		}
+		set
+		{
+			if ((this._PhotoType != value))
+			{
+				this.OnPhotoTypeChanging(value);
+				this.SendPropertyChanging();
+				this._PhotoType = value;
+				this.SendPropertyChanged("PhotoType");
+				this.OnPhotoTypeChanged();
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Employee_Attendant", Storage="_Employee", ThisKey="EmployeeId", OtherKey="EmployeeId", IsForeignKey=true)]
+	public Employee Employee
+	{
+		get
+		{
+			return this._Employee.Entity;
+		}
+		set
+		{
+			Employee previousValue = this._Employee.Entity;
+			if (((previousValue != value) 
+						|| (this._Employee.HasLoadedOrAssignedValue == false)))
+			{
+				this.SendPropertyChanging();
+				if ((previousValue != null))
+				{
+					this._Employee.Entity = null;
+					previousValue.Attendants.Remove(this);
+				}
+				this._Employee.Entity = value;
+				if ((value != null))
+				{
+					value.Attendants.Add(this);
+					this._EmployeeId = value.EmployeeId;
+				}
+				else
+				{
+					this._EmployeeId = default(Nullable<long>);
+				}
+				this.SendPropertyChanged("Employee");
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.AssociationAttribute(Name="WorkingLocation_Attendant", Storage="_WorkingLocation", ThisKey="WorkingLocationId", OtherKey="WorkingLocationId", IsForeignKey=true)]
+	public WorkingLocation WorkingLocation
+	{
+		get
+		{
+			return this._WorkingLocation.Entity;
+		}
+		set
+		{
+			WorkingLocation previousValue = this._WorkingLocation.Entity;
+			if (((previousValue != value) 
+						|| (this._WorkingLocation.HasLoadedOrAssignedValue == false)))
+			{
+				this.SendPropertyChanging();
+				if ((previousValue != null))
+				{
+					this._WorkingLocation.Entity = null;
+					previousValue.Attendants.Remove(this);
+				}
+				this._WorkingLocation.Entity = value;
+				if ((value != null))
+				{
+					value.Attendants.Add(this);
+					this._WorkingLocationId = value.WorkingLocationId;
+				}
+				else
+				{
+					this._WorkingLocationId = default(Nullable<long>);
+				}
+				this.SendPropertyChanged("WorkingLocation");
 			}
 		}
 	}
