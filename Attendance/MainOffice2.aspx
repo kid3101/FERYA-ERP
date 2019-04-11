@@ -63,9 +63,9 @@
             <div class="col-sm-8">
                 <div>
                     <h1 class="h3 mb-4 text-gray-800">
-                        <%=attendant.WorkingLocation.Department.Office.OfficeName %>
+                        <%=office.OfficeName %>
                         >
-                        <span style="text-transform: capitalize;"> <%=attendant.Employee.FirstName %> </span>
+                        <span style="text-transform: capitalize;"> <%=employee.FirstName %> </span>
                     </h1>
                     <div id="my_camera" >
 

@@ -71,10 +71,9 @@
                     <select class="officee form-control" id="hienthi">
                       
                   </select>
-                     <%for (int i = 0; i < listOffice.Count; i++)
-                        { %>
-                    <a href="#" onclick="continuee(<%=listOffice[i].OfficeId %>)" class="main"><button class="btn btn-primary but" >Continue</button></a>
-                     <%} %>   
+
+                    <a href="#" class="main"><button type="button" class="btn btn-primary but"  onclick="continuee()">Continue</button></a>
+
                 </div>
             </div>
             <div class="col-sm-2 sidenav">
@@ -101,8 +100,20 @@ $(document).ready(function(){
          )
         });
 
-        function continuee(id) {
-            location.href = "/Attendance/MainOffice2.aspx?id=" + id;
+        function continuee() {
+            var idemployee = $('#hienthi').val();
+            var idoffice = $('#selectListOffice').val();
+               location.href="/Attendance/MainOffice2.aspx?id='"+idemployee+"'& idoffice='"+idoffice+"'";
+            //$.post("../Attendance/MainOffice2.aspx",{
+            //    idoffice: idoffice,
+            //    idemployee: idemployee              
+            //}, function (data) {
+            //    if (data == 1) {
+                 
+            //    }
+            //}
+            //);
+           
         }
 </script>
 </asp:Content>
