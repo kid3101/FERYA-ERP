@@ -20,22 +20,9 @@ public partial class Attendance_History : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
-        //DepartmentManager dm = new DepartmentManager();
-        //listDepartment = dm.GetDepartment();
-
-        //OfficeManager om = new OfficeManager();
-        //listOffice = om.GetOffice();
-
-        //CompanyManager cm = new CompanyManager();
-        //listCompany = cm.GetCompany();
-
-        //EmployeeManager em = new EmployeeManager();
-        //listEmployees = em.GetUser();
-
         AttendantManager am = new AttendantManager();
         listAttendant = am.GetAttendant();
         listAttendant = listAttendant.OrderBy(n => n.PhotoTime).ToList();
-         //var listtuTest = listAttendant.Select(n => new { n.EmployeeId, n.PhotoTime.Value.Date }).Distinct().ToList();
         
         foreach (var item in listAttendant)
        {
