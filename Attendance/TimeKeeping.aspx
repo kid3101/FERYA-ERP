@@ -105,7 +105,7 @@
                     
                 </div>
                 <div class="container nut2" >
-                    <button class="nutchamcong nut3" ><a href="History.aspx" class="nut4">ATTENDANCE</a></button>
+                    <button class="nutchamcong nut3" ><a href="/Attendance/History.aspx" class="nut4">ATTENDANCE</a></button>
                 </div>
             </div>
             
