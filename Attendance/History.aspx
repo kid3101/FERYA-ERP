@@ -130,7 +130,7 @@
             </li>
         </ul>--%>
         <div class="container-fluid tongg" >
-            <div class="container kk" >
+         <%--   <div class="container kk" >
 
                 <div class="dropdown dro" >
 
@@ -148,7 +148,7 @@
                 <a class="ls ls2" href="WorkingPlan.aspx""><i class="fa fa-calendar"></i> Calendar</a>
                 <a class="maychamcong att2" data-toggle="tooltip" href="Timekeeper.aspx"" title="Allowing attendance for other employees or accessing from timekeeping equipment"><i class="fa fa-desktop"></i> ATTENDANCE</a>
                 <a class="nutchamcong att" data-toggle="tooltip" href="TimeKeeping.aspx" title="Atendancing" ><i class="fa fa-plus-circle"></i> ATTENDANCING</a>
-            </div>
+            </div>--%>
             <div class="container tong2">
                 <%--<a href="#" class="aaa"><i class="fa fa-chevron-left"></i></a>
                 <div class="kk2">

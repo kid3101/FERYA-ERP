@@ -72,7 +72,7 @@
                 </div>
                 <div class="container tong2" >
                     <div class="hp">
-                        <div class="form-group">
+                        <%--<div class="form-group">
                             <label for="usr">Office 1 (<a href="Attendant.aspx" class="nut">Change office</a>)<span class="mau"> *</span></label>
                             <div>
                                 <select class="form-control" id="sel1">
@@ -81,7 +81,7 @@
                                     <option>Shift 2 (10:00 - 19:00)</option>
                                 </select>
                             </div>
-                        </div>
+                        </div>--%>
                         <div class="form-group">
                             <label for="comment">Note</label>
                             <textarea class="form-control" rows="5" id="comment"></textarea>
@@ -105,7 +105,7 @@
                     
                 </div>
                 <div class="container nut2" >
-                    <button class="nutchamcong nut3" ><a href="TimeAttendance.aspx" class="nut4">ATTENDANCE</a></button>
+                    <button class="nutchamcong nut3" ><a href="History.aspx" class="nut4">ATTENDANCE</a></button>
                 </div>
             </div>
             
