@@ -1,5 +1,9 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="search-employee.aspx.cs" Inherits="do_Employee_search_employee" %>
-
+ <link href="../do/Employee/StyleSheet.css" rel="stylesheet" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="../do/Employee/bootstrap-table-pagination.js"></script>
+    <script src="../do/Employee/pagination.js"></script>
 <table class="table table-bordered table-responsive" id="dataTable" >
                         <thead>
                             <tr>
@@ -17,7 +21,7 @@
                             </tr>
                         </thead>
 
-                        <tbody>
+                        <tbody id="developers">
                              <%for (int i = listEmployees.Count - 1; i > -1; i--)
                     {%>
                             <tr>
