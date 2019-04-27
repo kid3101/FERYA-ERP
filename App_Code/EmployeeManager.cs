@@ -50,4 +50,10 @@ public class EmployeeManager
             return null;
         }
     }
+
+    public List<Employee> GetEmployeeByServiceName(string name)
+    {
+
+        return DB.Employees.Where(u => u.FirstName.Contains(name) && u.Status == 1).ToList();
+    }
 }

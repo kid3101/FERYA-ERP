@@ -64,7 +64,7 @@
                             <input class="form-control" type="text" id="txtPosition">
                         </div>
                          <div class="col-xs-5">
-                            <label>ManagerId<span class="star-sign">*</span></label>
+                            <label>Manager<span class="star-sign">*</span></label>
                              <p></p>
                             <%--<input class="form-control" type="text" id="txtManagerId">--%>
                              <select id="txtManagerId" class="form-control" style="height: 38px;margin-top: -10px;width: 276px;">

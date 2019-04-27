@@ -37,7 +37,7 @@ public partial class do_Employee_add_new_employee : System.Web.UI.Page
             addemployee.KPISalary = Convert.ToInt32(kpi);
             addemployee.Status = 1;
             em.AddNew(addemployee);
-            Response.Write("1");
+            Response.Write(1);
         }
 
         catch (Exception EX)
