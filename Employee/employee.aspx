@@ -119,7 +119,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div >
-                    <table class="table table-bordered" id="dataTable" >
+                    <table class="table table-bordered table-responsive" id="dataTable" >
                         <thead>
                             <tr>
                                 <th>Id </th>
