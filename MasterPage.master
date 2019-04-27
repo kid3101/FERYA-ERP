@@ -20,6 +20,8 @@
     <%--<link href="/css/Css-Blog/blog-company-css.css" rel="stylesheet" />--%>
     <%-- Css tab Mailbox --%>
 	 <!-- Bootstrap core JavaScript-->
+  <!-- phan trang-->
+
   <script src="/vendor/jquery/jquery.min.js"></script>
   <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>

@@ -1,8 +1,14 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="manager-blog.aspx.cs" Inherits="Blog_manager_blog" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+     <link href="../do/Employee/StyleSheet.css" rel="stylesheet" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="../do/Employee/bootstrap-table-pagination.js"></script>
+    <script src="../do/Employee/pagination.js"></script>
+
     <link href="../css/Css-Blog/blog-company-css.css" rel="stylesheet" />
     <link href="../css/Css-Blog/list-blog-for-manager.css" rel="stylesheet" />
     <div class="container-fluid">
@@ -47,7 +53,7 @@
         <br>
     </div>
     <div class="body-manager-list-blog">
-         <table class="table table-bordered" id="dataTable">
+         <table class="table table-bordered" id="dataTable ">
             <thead>
                 <tr>
                     <th>ID</th>
@@ -61,7 +67,7 @@
                    <%-- <th>Action</th>--%>
                 </tr>
             </thead>
-            <tbody>
+             <tbody id="developers">
                 <% for (int i = Listblog.Count -1; i>-1;i--) 
                 { %>
                 <tr>
@@ -83,6 +89,9 @@
                 </tr>               
             </tbody>
         </table>
+         <div class="col-md-12 text-center">
+			 <ul class="pagination pagination-lg pager" id="developer_page"></ul>
+		 </div>
     </div>
         </div>
     <script>

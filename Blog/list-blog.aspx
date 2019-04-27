@@ -3,8 +3,14 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
      <link href="../css/Css-Blog/blog-company-css.css" rel="stylesheet" />
     <link href="../css/Css-Blog/list-blog-css.css" rel="stylesheet" />
+    <link href="../do/Employee/StyleSheet.css" rel="stylesheet" />
+      
+     <script src="../do/Employee/bootstrap-table-pagination.js"></script>
+    <script src="../do/Employee/pagination.js"></script>
     <div class="container-fluid">
           <div class="header-blog">
           <div style="display:flex;">
@@ -51,7 +57,7 @@
              <thead>
                  <tr></tr>
              </thead>
-             <tbody>
+              <tbody id="developers">
                  <%for (int i = Listblog.Count - 1; i > -1; i--)
                      { %>
                          <tr>
@@ -72,6 +78,9 @@
                    <%} %>       
              </tbody>
          </table>
+         <div class="col-md-12 text-center">
+			                <ul class="pagination pagination-lg pager" id="developer_page"></ul>
+		 </div>
     </div>
         </div>
     <script>
