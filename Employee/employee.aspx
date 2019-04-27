@@ -2,14 +2,13 @@
 
 <asp:Content ID="Content3" ContentPlaceHolderID="head" runat="Server">
     <link href="../css/employee.css/employee1.css" rel="stylesheet" />
+    <link href="../do/Employee/StyleSheet.css" rel="stylesheet" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="../do/Employee/bootstrap-table-pagination.js"></script>
+    <script src="../do/Employee/pagination.js"></script>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
-
-  
-
-
-
-
     <div class="container-fluid">    
            
         <h1 class="h3 mb-4 text-gray-800">Employee </h1>
@@ -51,7 +50,7 @@
                             </tr>
                         </thead>
 
-                        <tbody>
+                        <tbody id="developers">
                              <%for (int i = listEmployees.Count - 1; i > -1; i--)
                     {%>
                             <tr>
@@ -75,6 +74,9 @@
                             </tr>
                         </tbody>
                     </table>
+                        <div class="col-md-12 text-center">
+			                <ul class="pagination pagination-lg pager" id="developer_page"></ul>
+		                </div>
                 </div>
             </div>
         </div>

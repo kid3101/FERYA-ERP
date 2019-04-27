@@ -5,6 +5,7 @@
     <link href="../css/employee.css/addemployee.css" rel="stylesheet" />
     <link href="../css/Setting/AccessRight.css" rel="stylesheet" />
     <link href="../css/employee.css/add-point-employee.css" rel="stylesheet" />
+    
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
@@ -126,12 +127,13 @@
                 kpi: kpi
              
             }, function (data) {
-                if (data == 1) {
-                   alert("Success");
-                    location.href = "/Employee/employee.aspx"; 
+                if (data == -1) {
+                   alert("Error", data);
                 } 
                 else {
-                   alert("Error", data);
+                    
+                    alert("Success");
+                    location.href = "/Employee/employee.aspx"; 
                 }
             });
         }
