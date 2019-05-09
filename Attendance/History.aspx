@@ -196,18 +196,17 @@
                 </tbody>
             </table>
 
-            <div id="myModal"  class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="width:90%">
+            <div id="myModal"  class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
-<div class="modal-content">
-
-    <div id="aaa" style="width:210%;background-color:white; margin-left: -40%;">
+            <div class="modal-content">
+                <div id="aaa" style="width:210%;background-color:white; margin-left: -40%;">
 
        
-  </div>
-    </div>
+              </div>
+                </div>
 	
 	
-</div>
+            </div>
 
             </div>
 
@@ -216,7 +215,7 @@
     </div>
     <script>
         function detail(id) {
-            $.post("/do/Attendance/getdetailattendant.aspx", {
+            $.post("../do/Attendance/getdetailattendant.aspx", {
                 id: id,
             }, function (data) {
                 $("#aaa").html(data);
