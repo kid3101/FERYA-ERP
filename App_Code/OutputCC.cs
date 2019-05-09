@@ -6,7 +6,7 @@ using System.Web;
 /// <summary>
 /// Summary description for OutputCC
 /// </summary>
-public class OutputCC
+public class  OutputCC
 {
     public long? EmployeeId;
     public Employee at;
@@ -15,7 +15,7 @@ public class OutputCC
     public WorkingLocation wk;
     public string PhotoURL;
     public int? WorkingDate;
-    public int? PhotoType;
+    public string PhotoType;
     public OutputCC()
     {
         //

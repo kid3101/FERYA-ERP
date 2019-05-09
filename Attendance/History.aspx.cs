@@ -26,15 +26,27 @@ public partial class Attendance_History : System.Web.UI.Page
         
         foreach (var item in listAttendant)
        {
-            if (list.Count == 0 || list.FirstOrDefault(t => t.EmployeeId == item.EmployeeId && t.PhotoTime.Value.Date == item.PhotoTime.Value.Date) == null)
+            if (list.Count == 0|| /*item.PhotoType==1*/  list.FirstOrDefault(t => t.EmployeeId == item.EmployeeId && t.PhotoTime.Value.Date == item.PhotoTime.Value.Date && t.PhotoType == "1" ) == null)
             {
-                list.Add(new OutputCC { PhoToTimeTest = item.PhotoTime.ToString(), wk=item.WorkingLocation, at = item.Employee, EmployeeId = item.EmployeeId, PhotoTime = item.PhotoTime, PhotoURL=item.PhotoURL, WorkingDate=item.WorkingDate, PhotoType=item.PhotoType });
+                list.Add(new OutputCC { PhoToTimeTest = item.PhotoTime.ToString(), wk=item.WorkingLocation, at = item.Employee, EmployeeId = item.EmployeeId, PhotoTime = item.PhotoTime, PhotoURL=item.PhotoURL, WorkingDate=item.WorkingDate, PhotoType=item.PhotoType.ToString() });
             }
             else
             {
-                var checkUser = list.FirstOrDefault(t => t.EmployeeId == item.EmployeeId && t.PhotoTime.Value.Date == item.PhotoTime.Value.Date);
-                checkUser.PhoToTimeTest = checkUser.PhotoTime + " - " + item.PhotoTime;
+                var checkUser = list.LastOrDefault(t => t.EmployeeId == item.EmployeeId && t.PhotoTime.Value.Date == item.PhotoTime.Value.Date && t.PhotoType == "1");
+                if (checkUser != null)
+                {
+                    //checkUser.PhotoType = checkUser.PhotoType + " - " + item.PhotoType;
+                    checkUser.PhoToTimeTest = checkUser.PhotoTime + " - " + item.PhotoTime;
+                    checkUser.PhotoURL = "<img src = ../Upload/Attendant/" + checkUser.PhotoURL + " width='200px'/>" + " - " + " <img src = ../Upload/Attendant/" + item.PhotoURL + " width='200px'/>";
+
+
+
+
+                        /*"../Upload/Attendant/"  + " - " + "../Upload/Attendant/"+item.PhotoURL;*/
+                }
+               
+                //checkUser.PhotoType = int.Parse(checkUser.PhotoType + "-" + item.PhotoType);
             }
         }
     }
-}
+} 

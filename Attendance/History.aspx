@@ -174,7 +174,7 @@
                         <th>Photo Time</th>
                         <th>Photo</th>
                         <th>WorkingDate</th>
-                        <th>PhotoType</th>
+                        <%--<th>PhotoType</th>--%>
                     </tr>
                 </thead>
                 <tbody>
@@ -186,7 +186,6 @@
                         <td><%=list[i].PhoToTimeTest %></td>
                         <td><%=list[i].PhotoURL %></td>
                         <td><%=list[i].WorkingDate%></td>
-                        <td><%=list[i].PhotoType %></td>
                     </tr>
                     <%} %>   
                 </tbody>
