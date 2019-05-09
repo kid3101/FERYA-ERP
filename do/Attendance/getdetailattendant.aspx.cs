@@ -30,7 +30,6 @@ public partial class do_Attendance_getdetailattendant : System.Web.UI.Page
 
                     checkUser.PhoToTimeTest = checkUser.PhotoTime + " - " + item.PhotoTime;
                     checkUser.PhotoTimeOut = item.PhotoTime;
-                    //checkUser.PhotoURL = "<img src = ../Upload/Attendant/" + checkUser.PhotoURL + " width='200px'/>" + " - " + " <img src = ../Upload/Attendant/" + item.PhotoURL + " width='200px'/>";
                     checkUser.PhotoURLOUT = "<img src = ../Upload/Attendant/"+item.PhotoURL + " width='180px' height='180px'/>";
                 }
 
