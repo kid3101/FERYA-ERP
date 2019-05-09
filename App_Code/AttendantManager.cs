@@ -49,6 +49,17 @@ public class AttendantManager
             return null;
         }
     }
+    public List<Attendant> GetAttendantByEmployeeID(int id )
+    {
+        try
+        {
+            return DB.Attendants.Where(u => u.Status != -1 && u.EmployeeId==id).ToList();
+        }
+        catch (Exception)
+        {
+            return null;
+        }
+    }
     public List<Attendant> GetListID(long id)
     {
         return DB.Attendants.Where(u => u.AttendantId == id).ToList();

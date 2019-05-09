@@ -12,10 +12,17 @@ public class  OutputCC
     public Employee at;
     public string PhoToTimeTest;
     public DateTime? PhotoTime;
+    public DateTime? PhotoTimeIn;
+    public DateTime? PhotoTimeOut;
     public WorkingLocation wk;
     public string PhotoURL;
+    public string PhotoURLIN;
+    public string PhotoURLOUT;
     public int? WorkingDate;
     public string PhotoType;
+    public string PhotoTypeIn;
+    public string PhotoTypeOut;
+
     public OutputCC()
     {
         //

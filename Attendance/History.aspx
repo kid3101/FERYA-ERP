@@ -169,33 +169,59 @@
             <table class="table table-bordered tablee" >
                 <thead>
                     <tr>                  
-                        <th>Employee</th>
+                        <th>EmployeeCode</th>
                         <th>Department</th>
-                        <th>Photo Time</th>
-                        <th>Photo</th>
-                        <th>WorkingDate</th>
+                        <th>EmployeeName</th>
+                        <th>Detail Attendant</th>
+                        <%--<th>Photo</th>
+                        <th>WorkingDate</th>--%>
                         <%--<th>PhotoType</th>--%>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                    <%for (int i = 0; i < list.Count; i++)
+                    <%for (int i = 0; i < listEmployees.Count; i++)
                     { %>                       
-                        <td><%=list[i].at.LastName%></td>
+                        <%--<td><%=list[i].at.LastName%></td>
                         <td><%=list[i].wk.Department.DeparmentName %></td>
                         <td><%=list[i].PhoToTimeTest %></td>
                         <td><%=list[i].PhotoURL %></td>
-                        <td><%=list[i].WorkingDate%></td>
+                        <td><%=list[i].WorkingDate%></td>--%>
+                        <td><%=listEmployees[i].EmployeeCode %></td>
+                        <td><%=listEmployees[i].Departments.Select(e=>e.DeparmentName).FirstOrDefault() %></td>
+                        <td><%=listEmployees[i].FirstName +" "+ listEmployees[i].LastName %></td>
+                        <td> <a href="#myModal" role="button" class="btn btn-info" data-toggle="modal" onclick="detail(<%=listEmployees[i].EmployeeId %>)">Detail Attendant</a> </td>
                     </tr>
                     <%} %>   
                 </tbody>
             </table>
 
+            <div id="myModal"  class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="width:90%">
+                <div class="modal-dialog">
+<div class="modal-content">
+
+    <div id="aaa" style="width:210%;background-color:white; margin-left: -40%;">
+
+       
+  </div>
+    </div>
+	
+	
+</div>
+
+            </div>
+
         </div>
     </div>
     </div>
-    
-
-    
+    <script>
+        function detail(id) {
+            $.post("/do/Attendance/getdetailattendant.aspx", {
+                id: id,
+            }, function (data) {
+                $("#aaa").html(data);
+            });
+        }
+    </script>
 </asp:Content>
 

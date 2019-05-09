@@ -13,14 +13,17 @@ public partial class Attendance_History : System.Web.UI.Page
 
     //public List<Company> listCompany;
 
-    //public List<Employee> listEmployees;
+    public List<Employee> listEmployees;
 
     public List<Attendant> listAttendant;
+    
     public List<OutputCC> list = new List<OutputCC>();
 
     protected void Page_Load(object sender, EventArgs e)
     {
+        EmployeeManager em = new EmployeeManager();
         AttendantManager am = new AttendantManager();
+        listEmployees = em.GetUser();
         listAttendant = am.GetAttendant();
         listAttendant = listAttendant.OrderBy(n => n.PhotoTime).ToList();
         
@@ -35,17 +38,12 @@ public partial class Attendance_History : System.Web.UI.Page
                 var checkUser = list.LastOrDefault(t => t.EmployeeId == item.EmployeeId && t.PhotoTime.Value.Date == item.PhotoTime.Value.Date && t.PhotoType == "1");
                 if (checkUser != null)
                 {
-                    //checkUser.PhotoType = checkUser.PhotoType + " - " + item.PhotoType;
+                 
                     checkUser.PhoToTimeTest = checkUser.PhotoTime + " - " + item.PhotoTime;
-                    checkUser.PhotoURL = "<img src = ../Upload/Attendant/" + checkUser.PhotoURL + " width='200px'/>" + " - " + " <img src = ../Upload/Attendant/" + item.PhotoURL + " width='200px'/>";
+                    checkUser.PhotoURL = "<img src = ../Upload/Attendant/" + checkUser.PhotoURL + " width='200px' />" + " - " + " <img src = ../Upload/Attendant/" + item.PhotoURL + " width='200px'/>";
 
-
-
-
-                        /*"../Upload/Attendant/"  + " - " + "../Upload/Attendant/"+item.PhotoURL;*/
                 }
-               
-                //checkUser.PhotoType = int.Parse(checkUser.PhotoType + "-" + item.PhotoType);
+
             }
         }
     }
