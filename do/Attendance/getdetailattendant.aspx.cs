@@ -14,13 +14,13 @@ public partial class do_Attendance_getdetailattendant : System.Web.UI.Page
         int id = Convert.ToInt32(Request["id"]);
         AttendantManager am = new AttendantManager();
         at = am.GetAttendantByEmployeeID(id);
-        at.OrderBy(n => n.PhotoTime).ToList();
+        //at.OrderByDescending(n => n.PhotoTime);
 
         foreach (var item in at)
         {
             if (list.Count == 0 || /*item.PhotoType==1*/  list.FirstOrDefault(t=>t.PhotoTimeIn.Value.Date == item.PhotoTime.Value.Date && t.PhotoType == "1") == null)
             {
-                list.Add(new OutputCC { PhotoTimeIn = item.PhotoTime, wk = item.WorkingLocation, at = item.Employee, EmployeeId = item.EmployeeId,/* PhotoTime = item.PhotoTime,*/ PhotoURLIN = "<img src = ../Upload/Attendant/" + item.PhotoURL + " width='180px' height='180px'/>", WorkingDate = item.WorkingDate, PhotoType = item.PhotoType.ToString() });
+                list.Add(new OutputCC { PhotoTimeIn = item.PhotoTime, /*wk = item.WorkingLocation, at = item.Employee, EmployeeId = item.EmployeeId,*//* PhotoTime = item.PhotoTime,*/ PhotoURLIN = "<img src = ../Upload/Attendant/" + item.PhotoURL + " width='180px' height='180px'/>", WorkingDate = item.WorkingDate, PhotoType = item.PhotoType.ToString() });
             }
             else
             {
@@ -28,12 +28,15 @@ public partial class do_Attendance_getdetailattendant : System.Web.UI.Page
                 if (checkUser != null)
                 {
 
-                    checkUser.PhoToTimeTest = checkUser.PhotoTime + " - " + item.PhotoTime;
+                    //checkUser.PhoToTimeTest = checkUser.PhotoTime + " - " + item.PhotoTime;
                     checkUser.PhotoTimeOut = item.PhotoTime;
                     checkUser.PhotoURLOUT = "<img src = ../Upload/Attendant/"+item.PhotoURL + " width='180px' height='180px'/>";
+
                 }
 
             }
+            list.OrderByDescending(n => n.PhotoTimeIn);
         }
+        
     }
 }

@@ -53,7 +53,7 @@ public class AttendantManager
     {
         try
         {
-            return DB.Attendants.Where(u => u.Status != -1 && u.EmployeeId==id).ToList();
+            return DB.Attendants.Where(u => u.Status != -1 && u.EmployeeId==id).OrderByDescending(u=>u.PhotoTime.Value.Date).ToList();
         }
         catch (Exception)
         {

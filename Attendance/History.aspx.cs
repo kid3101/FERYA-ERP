@@ -25,7 +25,7 @@ public partial class Attendance_History : System.Web.UI.Page
         AttendantManager am = new AttendantManager();
         listEmployees = em.GetUser();
         listAttendant = am.GetAttendant();
-        listAttendant = listAttendant.OrderBy(n => n.PhotoTime).ToList();
+        listAttendant = listAttendant.OrderByDescending(n => n.PhotoTime).ToList();
         
        // foreach (var item in listAttendant)
        //{
