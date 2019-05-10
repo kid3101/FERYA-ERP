@@ -52,7 +52,7 @@
    <asp:ContentPlaceHolder id="head" runat="server">
    </asp:ContentPlaceHolder>
 </head>
-<body id="page-top">
+<body id="page-top"  style="all:unset">
 
 
 	  <!-- Page Wrapper -->
@@ -76,7 +76,7 @@
       <li class="nav-item">
         <a class="nav-link collapsed" data-toggle="collapse" data-target="#collapseAttendace1" aria-expanded="true" aria-controls="collapseAttendace" href="#">
           <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Dashboard</span>
+          <span>DASHBOARD</span>
         </a>
         <div id="collapseAttendace1" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
@@ -435,9 +435,13 @@
      <a class="scroll-to-top rounded" href="#page-top">
     <i class="fas fa-angle-up"></i>
   </a>
-  
+    <div  onclick="ScrollTop()"></div>
     <script>
+        function ScrollTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
 
+        }
         $(function () {
             $("#sidebarToggle, #sidebarToggleTop").on('click', function(e) {
             $("body").toggleClass("sidebar-toggled");
